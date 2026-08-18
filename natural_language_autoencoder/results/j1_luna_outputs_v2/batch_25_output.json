@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "batch_id": 25,
+  "agent_task": "/root/luna_batch_25",
+  "role": "luna_worker",
+  "model": "gpt-5.6-luna",
+  "reasoning": "max",
+  "public_prompt_sha256": "dc4eb31ce8577c16f16a54cc9df3e4a9c5cb28c0ce4c97e77cc2bfccfd8a7664",
+  "cases": [
+    {
+      "case_id": "case_umfrarwmc6q194wgyw",
+      "hypothesis": "The active span is the binary plus/addition operator in arithmetic and code expressions.",
+      "positive_cues": [
+        "All four markers are '+' in arithmetic or Boolean/code expressions.",
+        "Examples include 16 + -18, !+[]+!+[], 2 - 1 + 2*g, and 199 + -194."
+      ],
+      "exclusion_cues": [
+        "The markers are not minus, multiplication, or equality symbols.",
+        "The evidence contains no prose, medical, travel, or legal usage of the active span."
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_ts6dukzkt9k34hllf5",
+      "hypothesis": "The active words modify health professional(s), appearing in healthcare, health, and health-care phrases.",
+      "positive_cues": [
+        "qualified healthcare professional",
+        "other health professionals",
+        "health professional",
+        "health care professionals"
+      ],
+      "exclusion_cues": [
+        "The active spans are not names of people, institutions, or actions.",
+        "Each marker occurs in a health-professional noun phrase rather than an unrelated domain."
+      ],
+      "abstain": false,
+      "confidence": 0.98
+    },
+    {
+      "case_id": "case_tj7ijzfnmyi7mwnjo5",
+      "hypothesis": "The active spans are plural nouns naming physical service locations or public venues.",
+      "positive_cues": [
+        "health facilities",
+        "Restaurants serving local cuisine",
+        "stores belonging to The Co-operative",
+        "countless bars for drinks or tapas"
+      ],
+      "exclusion_cues": [
+        "The markers are plural count nouns, not verbs, adjectives, or personal names.",
+        "They denote venues or facilities rather than abstract quantities or events."
+      ],
+      "abstain": false,
+      "confidence": 0.91
+    },
+    {
+      "case_id": "case_eyezvg5t967617w0zz",
+      "hypothesis": "The examples share Microsoft-oriented technology prose, including service lists, employment references, and Microsoft URLs.",
+      "positive_cues": [
+        "MSN.com and Skype appear in a Microsoft online-services list.",
+        "The employment disclosure says the speaker works for Microsoft.",
+        "Microsoft Graph/Intune and Microsoft Build/Channel 9 links appear in the other contexts."
+      ],
+      "exclusion_cues": [
+        "Markers vary between a conjunction, the company name, and URL delimiters, so no single token class fits.",
+        "The contexts are consistently Microsoft technology material rather than general medical, travel, or legal prose."
+      ],
+      "abstain": false,
+      "confidence": 0.78
+    },
+    {
+      "case_id": "case_v8w1cy551b5yitz77b",
+      "hypothesis": "The active word is the preposition for used in legal counsel or party-attribution boilerplate.",
+      "positive_cues": [
+        "United States v. United States Steel Corporation citation uses for in counsel attribution.",
+        "Ohio appellate filing labels Attorney for a party.",
+        "The EEOC/Allied Chemical record uses for in a plaintiff listing.",
+        "The Oklahoma Supreme Court citation repeats for plaintiff and counsel."
+      ],
+      "exclusion_cues": [
+        "The evidence does not show ordinary purpose, duration, or beneficiary uses of for.",
+        "All four snippets are formal legal case or filing records."
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    }
+  ]
+}

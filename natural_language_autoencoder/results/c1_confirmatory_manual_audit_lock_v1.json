@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "experiment": "C1 confirmatory synthetic concept cohort v2",
+  "stage": "pre_manual_inspection",
+  "status": "rubric_frozen",
+  "created_at_utc": "2026-07-30T06:33:04Z",
+  "rubric": {
+    "path": "server/c1_confirmatory_manual_audit_rubric_v1.json",
+    "sha256": "821eb57d3b8c2109acd623137b7f6ba35cb67e74f459bded791ad2eb2d7ec48a",
+    "bytes": 2912
+  },
+  "state_at_lock": {
+    "generator_running": true,
+    "checkpoint_rows": 8,
+    "mechanically_accepted_concepts": 7,
+    "combined_manifest_exists": false,
+    "activation_parquet_exists": false,
+    "sae_output_exists": false,
+    "av_output_exists": false,
+    "ar_output_exists": false
+  },
+  "inspection_attestation": "Before this lock, only concept IDs, attempt numbers, admissible booleans, word-count error codes, and resource telemetry were inspected. No generated request text was displayed or semantically reviewed.",
+  "decision_rule": "Two independent rubric reviews; any failure or disagreement stops v2 before activation extraction. No document is edited or selectively regenerated.",
+  "operations": {
+    "server_must_remain_on": true,
+    "no_shutdown_logic": true
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "agent_task": "codex-cli://j1/luna_batch_44",
+  "batch_id": 44,
+  "cases": [
+    {
+      "abstain": false,
+      "case_id": "case_tem9d8gv9k9acopu5k",
+      "confidence": 0.96,
+      "exclusion_cues": [
+        "No evidence of ordinary prose usage.",
+        "The examples do not establish one specific programming language or API."
+      ],
+      "hypothesis": "Programming-language identifier fragments are highlighted, especially components of camelCase variable and method names.",
+      "positive_cues": [
+        "All four examples are source code.",
+        "Each highlight lies inside an identifier or identifier-like name.",
+        "Examples include createNewSpriteWithID, startTime, currentNode, and toDateString."
+      ]
+    },
+    {
+      "abstain": false,
+      "case_id": "case_t6v1vgvhj50wrfkcng",
+      "confidence": 0.99,
+      "exclusion_cues": [
+        "No product-specific legal advice or unique contractual terms.",
+        "The language is generic licensing text rather than application logic."
+      ],
+      "hypothesis": "Apache License 2.0 legal boilerplate is the dominant pattern, specifically the standard software-distribution disclaimer.",
+      "positive_cues": [
+        "Every context is LICENSE-2.0 or Apache-license-style boilerplate.",
+        "Repeated phrases include \"Unless required by applicable law\" and \"distributed under the License\"."
+      ]
+    },
+    {
+      "abstain": false,
+      "case_id": "case_b5ckh6o5nhf42r8w9b",
+      "confidence": 0.97,
+      "exclusion_cues": [
+        "No programming-language syntax or legal boilerplate.",
+        "The snippets do not support one narrower mathematical subfield."
+      ],
+      "hypothesis": "Formal mathematical writing uses LaTeX roman-font commands such as \\rm and \\mathrm within topology, algebra, and category-theory notation.",
+      "positive_cues": [
+        "All examples are academic mathematical exposition.",
+        "Repeated LaTeX roman-font notation and equations appear.",
+        "Topics include topology, Lie groups, approximation, and category theory."
+      ]
+    },
+    {
+      "abstain": false,
+      "case_id": "case_d2lyjys7balk2uvg0u",
+      "confidence": 0.99,
+      "exclusion_cues": [
+        "No occurrence is clearly locative, such as \"over there.\"",
+        "Surrounding topics vary widely, so topic is not the common label."
+      ],
+      "hypothesis": "The highlighted word is existential or dummy \"there,\" introducing clauses such as \"there is,\" \"there's,\" or \"there was.\"",
+      "positive_cues": [
+        "All highlights are there or There.",
+        "Following verbs are is, 's, or was.",
+        "Each occurrence begins an existential-style clause."
+      ]
+    },
+    {
+      "abstain": false,
+      "case_id": "case_jplrl6u50kz85qttv3",
+      "confidence": 0.99,
+      "exclusion_cues": [
+        "No single subject domain recurs.",
+        "The evidence does not indicate a specialized technical meaning."
+      ],
+      "hypothesis": "The highlighted word is \"slow,\" expressing low speed or gradual onset as an adjective, adverb, or imperative.",
+      "positive_cues": [
+        "Every highlight is slow or Slow, including slow-boiling and slow-moving.",
+        "One use is the imperative \"Slow down.\"",
+        "Contexts span video, anxiety, policy, and dialogue."
+      ]
+    }
+  ],
+  "labeler": "luna",
+  "model": "gpt-5.6-luna",
+  "prompt_sha256": "91a620e91a20ade65b1137893677800a4482bfbd378d4f7b0ee21020e0dc1cd8",
+  "provenance": {
+    "agent_task": "codex-cli://j1/luna_batch_44",
+    "codex_cli_version": "codex-cli 0.146.1",
+    "manifest_sha256": "3a8f2003d66bea44f5a942c52d4232c557918d5ad7b3f856cf9e4c2b454dc09d",
+    "model": "gpt-5.6-luna",
+    "model_input_sha256": "188584b6ee84de0b21b4ae7939aa270428746e451047b689391c8a79ffe6dcdf",
+    "raw_attempt_artifact": "batch_44_attempt_01.json",
+    "raw_attempt_artifact_sha256": "7cae803dfab26dc4491655b343ccc11f7555108129d47c22ee5ce9482e7b08c9",
+    "reasoning": "max",
+    "role": "luna_worker",
+    "script_sha256": "a471cc4f71260461324d7c9aea4efbc66b191c09bf2f813992ef4b5f21514d51",
+    "tool_calls_detected": false,
+    "transport": "codex_cli_ephemeral"
+  },
+  "public_prompt_sha256": "98fbc9f68c19e7160bea7de376e95d3a052b7b997eadc4bc85475ff6431c0e7b",
+  "reasoning": "max",
+  "role": "luna_worker",
+  "schema_version": 1,
+  "status": "ok"
+}

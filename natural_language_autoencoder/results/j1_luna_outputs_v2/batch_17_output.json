@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "batch_id": 17,
+  "agent_task": "/root/luna_batch_17",
+  "role": "luna_worker",
+  "model": "gpt-5.6-luna",
+  "reasoning": "max",
+  "public_prompt_sha256": "5507ad4477ba0fc2c19585e321f6713707278eb60da752b4520fbc4021d3c717",
+  "cases": [
+    {
+      "case_id": "case_yp0kq87cy9hafud3f3",
+      "hypothesis": "Clause-linking connective or boundary punctuation introducing a following clause.",
+      "positive_cues": [
+        "Semicolon and comma appear at clause boundaries before a new clause.",
+        "But and that introduce linked or subordinate clauses.",
+        "Each context places the target at a syntactic transition between clauses."
+      ],
+      "exclusion_cues": [
+        "Standalone content words that do not connect clauses.",
+        "Punctuation or conjunctions used without a following clause transition."
+      ],
+      "abstain": false,
+      "confidence": 0.86
+    },
+    {
+      "case_id": "case_f2rzfe44tufh1n9c8u",
+      "hypothesis": "Inflected forms of the verb make expressing causation or creation.",
+      "positive_cues": [
+        "The active forms are made, makes, and make.",
+        "Occurrences describe making work good, making someone faithful, making food tastier, or prompting a belief."
+      ],
+      "exclusion_cues": [
+        "Other lexical verbs unrelated to making or causing.",
+        "Noun uses of make without the repeated verb inflection pattern."
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_7m6c0p33vjrqhx7iyq",
+      "hypothesis": "The v or v. separator used in formal legal case citations.",
+      "positive_cues": [
+        "Every active token is v in a party-versus-party legal citation.",
+        "Surrounding text is court or appellate case-law prose with citation formatting."
+      ],
+      "exclusion_cues": [
+        "Ordinary letter v outside a case citation.",
+        "Sports scores or other nonlegal uses of versus abbreviations."
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_jyu2aae0qrmzzl0oqm",
+      "hypothesis": "Turkish verb stems or inflectional subword fragments in agglutinative prose.",
+      "positive_cues": [
+        "The repeated target anlam is the Turkish understand stem in truncated phrases.",
+        "vermem and erm are Turkish verbal material awaiting or carrying inflectional continuation.",
+        "All snippets are Turkish conversational, narrative, or news text."
+      ],
+      "exclusion_cues": [
+        "Complete non-Turkish words or nominal fragments without verbal morphology.",
+        "Unrelated punctuation or isolated lexical items not embedded in Turkish syntax."
+      ],
+      "abstain": false,
+      "confidence": 0.78
+    },
+    {
+      "case_id": "case_rjsjejb895phhsu2ym",
+      "hypothesis": "Mojibake or encoding-corrupted CJK character fragments.",
+      "positive_cues": [
+        "Active spans contain visibly garbled CJK-looking sequences and replacement characters.",
+        "The surrounding strings show consistent mojibake rather than well-formed natural-language text."
+      ],
+      "exclusion_cues": [
+        "Well-formed Chinese, French, or other correctly encoded text.",
+        "Plain ASCII tokens without encoding artifacts."
+      ],
+      "abstain": false,
+      "confidence": 0.98
+    }
+  ]
+}

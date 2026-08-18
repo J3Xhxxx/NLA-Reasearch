@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "batch_id": 19,
+  "agent_task": "/root/luna_batch_19",
+  "role": "luna_worker",
+  "model": "gpt-5.6-luna",
+  "reasoning": "max",
+  "public_prompt_sha256": "fe254cae1bf575a85fb834afac0bf9d1b77338b24d1a5b1077bb9681897aa7b3",
+  "cases": [
+    {
+      "case_id": "case_vsjj4vft07rt48tom9",
+      "hypothesis": "Words in clauses marked by negation, inability, or a negative conditional.",
+      "positive_cues": [
+        "cannot issue",
+        "can never",
+        "No ... can't",
+        "does not support"
+      ],
+      "exclusion_cues": [
+        "affirmative contexts without negation",
+        "targets unrelated to a conditional or prohibition"
+      ],
+      "abstain": false,
+      "confidence": 0.68
+    },
+    {
+      "case_id": "case_wouu8g5w3rdpbw20ay",
+      "hypothesis": "French-language passages, including fragmented tokens inside phone numbers, addresses, and French prose.",
+      "positive_cues": [
+        "French vocabulary and accents",
+        "French phone-number and postal-address formats",
+        "French narrative verbs and dialogue"
+      ],
+      "exclusion_cues": [
+        "English-only passages",
+        "non-French language contexts"
+      ],
+      "abstain": false,
+      "confidence": 0.91
+    },
+    {
+      "case_id": "case_xor2kuhpign7vddgwr",
+      "hypothesis": "The token v in formal legal case citations, abbreviating versus and introducing the opposing party.",
+      "positive_cues": [
+        "Hargett v",
+        "Md. Ct. of Appeals v",
+        "Fong v",
+        "Miller v"
+      ],
+      "exclusion_cues": [
+        "ordinary letter v in nonlegal text",
+        "non-citation prose"
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_5rbress8hi52t5rp8g",
+      "hypothesis": "Inflected forms of the English verb make, expressing creation, causation, or production.",
+      "positive_cues": [
+        "made",
+        "makes",
+        "make",
+        "makes"
+      ],
+      "exclusion_cues": [
+        "other verbs",
+        "words merely adjacent to make forms"
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_m0ruwcoetqjlmqr2xx",
+      "hypothesis": "Clause-linking discourse markers and punctuation connecting, contrasting, or introducing a following proposition.",
+      "positive_cues": [
+        "semicolon after a clause",
+        "comma at a clause boundary",
+        "But",
+        "that"
+      ],
+      "exclusion_cues": [
+        "content words inside clauses",
+        "punctuation without clause-linking function"
+      ],
+      "abstain": false,
+      "confidence": 0.87
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+ssh.exe : sha256sum: WARNING: 1 computed checksum did NOT match
+ËùÔÚÎ»ÖÃ D:\Projects\natural_language_autoencoder\server\n6_launch_monitor_pull.ps1:133 ×Ö·û: 16
++     $lines = @(& $Program @ArgumentList 2>&1 | ForEach-Object { "$_"  ...
++                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (sha256sum: WARN...m did NOT match:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

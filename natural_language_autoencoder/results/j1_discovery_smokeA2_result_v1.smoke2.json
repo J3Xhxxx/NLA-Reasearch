@@ -1,0 +1,81 @@
+{
+  "checks": {
+    "feature_count_in_rows": 1,
+    "n_features": 45,
+    "n_rows": 2
+  },
+  "claim_scope": "discovery_only_no_confirmatory_inference",
+  "confirmatory": false,
+  "contract_sha256": "46368450c43940a21d82314e2fea88a891ad973e2404bc624093dc27cdb4bf16",
+  "experiment": "J1 NLA-to-SAE exploratory discovery pilot",
+  "freeze_sha256": "8f7690f8b12842b32ce5cb32af7ee941b2ce2f71fcc0270768cf0f84edcb50d3",
+  "generation": {
+    "checkpoint_rows": 2,
+    "do_sample": false,
+    "max_new_tokens": 200,
+    "no_ar": true,
+    "no_judge": true,
+    "temperature": 0.0
+  },
+  "itt": {
+    "n_features": 45,
+    "recorded": 45
+  },
+  "models": {
+    "av_manifest_sha256": "eaafb1a6ee0858d1430055d34d07cf4fef307818a0d59e6c30c5a85fe827fbc9",
+    "av_name": "NLA Gemma-3-12B L32 AV",
+    "av_path": "/root/autodl-tmp/models/nla-gemma3-12b-L32-av",
+    "base_model_manifest_sha256": "27d9fb44e571ba0ddca8da80f9f7281640e653e4d8184dea4b2680bf8c454170",
+    "base_model_name": "Gemma-3-12B-IT",
+    "base_model_path": "/root/autodl-tmp/models/gemma-3-12b-it",
+    "pilot_common_sha256": "69fb1b40d60d075c615acdaa23acf4f85c17b5b4cf02e2cc18113c4e14ecf63a",
+    "sae_manifest_sha256": "5ce64b683ccec6021f5f18f644b3cbe12a16da4e180717d0441fb468fedd5791",
+    "sae_name": "GemmaScope small SAE (layer 32 width 16k l0_small)",
+    "sae_path": "/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small"
+  },
+  "raw_texts": {
+    "2389": {
+      "context_windows": [
+        ".org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing,\n * software distributed under the"
+      ],
+      "sha256": "19f7180c97edb5d848f6084073890c1ef3f72bd39a450b17a1207c275e11313e"
+    }
+  },
+  "rows": [
+    {
+      "arm": "NLA_RAW",
+      "context_text": ".org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing,\n * software distributed under the",
+      "control": false,
+      "discovery_index": 0,
+      "doc_id": 2389,
+      "explanation": "Apache License boilerplate structure: standard open-source software license text is being reproduced, following the Apache Software Foundation license format.\n\nThe phrase \"Unless otherwise stated, the software is distributed under the terms of the Apache License 2.0\" establishes a list of prohibited distributions.\n\nFinal token \"writ,\" ends a standard Apache license clause (\"without the contribution of Apache Software Foundation.\"), immediately requiring a noun phrase like \"software is distributed as is\" or \"this name\" — likely \"no additional tooling\" or \"the name of the project\" or \"software and all rights are retained\" or \"this is a part of the Hadoop ecosystem.\"",
+      "feature": 1543,
+      "idx": 0,
+      "position": 129,
+      "raw_text_ref": "2389",
+      "role": "discovery",
+      "vector_sha256": "e7e7283d28b9196dc872c52894aef27de86411522ce6d67bbe8ced5d4624ae24"
+    },
+    {
+      "ablation_activation": 7066.5166015625,
+      "ablation_cosine": 0.9923744201660156,
+      "ablation_norm_x": 53318.73046875,
+      "ablation_norm_x_minus": 55508.9140625,
+      "arm": "NLA_CONTRASTIVE",
+      "context_text": ".org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing,\n * software distributed under the",
+      "control": false,
+      "discovery_index": 0,
+      "doc_id": 2389,
+      "explanation": "Apache License boilerplate structure: standard open-source software license text is being reproduced, following the Apache Software Foundation copyright notice format.\n\nThe phrase \"Unless required by applicable law, no contribution of any kind will be distributed under the terms of the Apache Software License 2.0\" signals a standard legal disclaimer block.\n\nFinal token \"writing,\" ends a copyright notice clause (\"including without limitation,\") — immediately expects a list of prohibited behaviors or redistribution terms, likely \"software\" or \"no person or organization\" or \"this distribution and all information\" or \"neither the Apache Software Foundation nor any contributor\" or \"to the Apache Software Foundation.\" mirroring the privacy policy.",
+      "feature": 1543,
+      "idx": 1,
+      "position": 129,
+      "raw_text_ref": "2389",
+      "role": "sae_feature_ablated",
+      "vector_sha256": "5be4fb9a2d95ccfe176b14a45245684f61b29ba329a92ca46c1b4623e59ac798"
+    }
+  ],
+  "schema_version": 1,
+  "script_sha256": "a551287053802673a269ae364c34ebe002ca00829d9316845acf9056472f583d",
+  "status": "SMOKE_ONLY_STOP_AFTER_AV_JOBS"
+}

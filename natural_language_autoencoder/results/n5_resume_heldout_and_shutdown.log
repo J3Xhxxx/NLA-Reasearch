@@ -1,0 +1,9 @@
+2026-07-31 23:56:07 CST SUPERVISOR_START checkpoint_rows=348
+2026-07-31 23:56:07 CST START stage=heldout_reconstruct runner=/root/autodl-tmp/nla_compare/n5_heldout_reconstruct_remote.sh
+2026-08-01 00:04:10 CST COMPLETE stage=heldout_reconstruct
+2026-08-01 00:04:10 CST START stage=heldout_causal runner=/root/autodl-tmp/nla_compare/n5_heldout_causal_remote.sh
+2026-08-01 00:09:11 CST COMPLETE stage=heldout_causal
+2026-08-01 00:09:11 CST START stage=analyze runner=/root/autodl-tmp/nla_compare/n5_analyze_remote.sh
+2026-08-01 00:09:13 CST COMPLETE stage=analyze
+2026-08-01 00:09:13 CST PIPELINE_COMPLETE
+2026-08-01 00:09:13 CST POWER_OFF exit=0

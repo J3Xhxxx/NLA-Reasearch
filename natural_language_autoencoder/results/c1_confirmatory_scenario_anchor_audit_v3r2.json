@@ -1,0 +1,808 @@
+{
+  "schema_version": 1,
+  "status": "FAIL",
+  "scenario_anchors_path": "server/c1_confirmatory_scenario_anchors_v3r2.json",
+  "scenario_anchors_sha256": "3b38876a663ea3a3a9a1623017242a06e0f51b667109cf60bb8de549cb21600a",
+  "created_at_utc": "2026-07-30T07:42:28Z",
+  "auditor": {
+    "id": "Codex:/root/c1_run_analysis_binding",
+    "role": "independent conservative pre-generation semantic auditor",
+    "independent_of_anchor_authorship": true,
+    "decision_rule": "Any substantive failure or unresolved doubt makes the affected unit and the overall audit FAIL."
+  },
+  "audit_scope": {
+    "concepts": 24,
+    "anchors": 144,
+    "discovery_anchors": 96,
+    "heldout_anchors": 48,
+    "reciprocal_pairs": 12,
+    "concept_checks": [
+      "structure and six-anchor coverage",
+      "target relevance",
+      "reciprocal hard-negative safety",
+      "absence of proper names, specific places, and supplied-answer leakage",
+      "ordered common slot and discourse-role schedule",
+      "substantive distinctness of all six mechanisms and applications",
+      "heldout separation from all four discovery anchors"
+    ],
+    "pair_checks": [
+      "reciprocal mapping",
+      "hard-negative semantic separation",
+      "semantic difficulty balance",
+      "style and framing balance"
+    ],
+    "special_rechecks": [
+      "all 20 concepts that failed the v3 anchor audit",
+      "all 33 anchors changed from v3",
+      "fault_rupture_mechanics versus slope_failure_mechanics"
+    ],
+    "inputs": {
+      "concept_spec_v2": {
+        "path": "server/c1_confirmatory_concepts_v2.json",
+        "sha256": "4e7d6b2ca3d4fe87406cde09b664f9bfee47e00f2630e0c251c0ad3b7422750e"
+      },
+      "base_rubric": {
+        "path": "server/c1_confirmatory_manual_audit_rubric_v1.json",
+        "sha256": "821eb57d3b8c2109acd623137b7f6ba35cb67e74f459bded791ad2eb2d7ec48a"
+      },
+      "v3_rubric_addendum": {
+        "path": "server/c1_confirmatory_manual_audit_addendum_v3.json",
+        "sha256": "a390975dd97729d82f346f1d3cbd48114cfc2f94ed25ec7a29ee38e86f333b77"
+      },
+      "v3_amendment": {
+        "path": "results/c1_confirmatory_preregistration_v3_amendment.md",
+        "sha256": "3ef67bfd29549afa966fa003bc37a2ef58e0e97b32f9a99df85b63b7f8787314"
+      },
+      "prior_v3_anchor_audit": {
+        "path": "results/c1_confirmatory_scenario_anchor_audit_v3.json",
+        "sha256": "5dcc267ad9f6bf9765bbb7c6ab3965498c275c7df3165780f5f1d79301c2a396",
+        "status": "FAIL"
+      }
+    }
+  },
+  "structure_checks": {
+    "status": "PASS",
+    "json_parse": "PASS",
+    "concept_count_24": "PASS",
+    "anchor_count_144": "PASS",
+    "discovery_count_96": "PASS",
+    "heldout_count_48": "PASS",
+    "reciprocal_pair_count_12": "PASS",
+    "four_discovery_two_heldout_per_concept": "PASS",
+    "unique_anchor_ids_144": "PASS",
+    "unique_scenario_texts_144": "PASS",
+    "concept_ids_match_spec": "PASS",
+    "hard_negative_mappings_match_spec_and_are_reciprocal": "PASS",
+    "slot_ids_roles_splits_and_ordinals_match_schedule": "PASS",
+    "embedded_source_hashes_match_files": "PASS",
+    "no_url_or_four_digit_year": "PASS",
+    "no_named_person_organization_product_or_specific_place": "PASS"
+  },
+  "summary": {
+    "concepts_pass": 17,
+    "concepts_fail": 7,
+    "pair_level_checks_pass": 12,
+    "pair_level_checks_fail": 0,
+    "pairs_overall_pass": 6,
+    "pairs_overall_fail": 6,
+    "failures": 7,
+    "fault_slope_pair_recheck": "PASS",
+    "overall": "FAIL"
+  },
+  "concept_decisions": [
+    {
+      "concept_id": "automatic_memory_reclamation",
+      "hard_negative_id": "dynamic_memory_allocation",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "PASS",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "dynamic_memory_allocation",
+      "hard_negative_id": "automatic_memory_reclamation",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "PASS",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "cryptographic_authentication",
+      "hard_negative_id": "error_detecting_codes",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "PASS",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "error_detecting_codes",
+      "hard_negative_id": "cryptographic_authentication",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "FAIL",
+        "heldout_separation": "FAIL"
+      },
+      "failure_ids": [
+        "F001"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "protein_quality_control",
+      "hard_negative_id": "membrane_vesicle_trafficking",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "FAIL",
+        "heldout_separation": "FAIL"
+      },
+      "failure_ids": [
+        "F007"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "membrane_vesicle_trafficking",
+      "hard_negative_id": "protein_quality_control",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "PASS",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "microbial_quorum_sensing",
+      "hard_negative_id": "microbial_cross_feeding",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "FAIL",
+        "heldout_separation": "FAIL"
+      },
+      "failure_ids": [
+        "F002"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "microbial_cross_feeding",
+      "hard_negative_id": "microbial_quorum_sensing",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "FAIL",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [
+        "F003"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "fault_rupture_mechanics",
+      "hard_negative_id": "slope_failure_mechanics",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "PASS",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "slope_failure_mechanics",
+      "hard_negative_id": "fault_rupture_mechanics",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "PASS",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "groundwater_contaminant_transport",
+      "hard_negative_id": "coastal_saltwater_intrusion",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "FAIL",
+        "heldout_separation": "FAIL"
+      },
+      "failure_ids": [
+        "F004"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "coastal_saltwater_intrusion",
+      "hard_negative_id": "groundwater_contaminant_transport",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "PASS",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "census_classification",
+      "hard_negative_id": "cadastral_land_taxation",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "PASS",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "cadastral_land_taxation",
+      "hard_negative_id": "census_classification",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "PASS",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "quarantine_regimes",
+      "hard_negative_id": "passport_mobility_controls",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "FAIL",
+        "heldout_separation": "FAIL"
+      },
+      "failure_ids": [
+        "F005"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "passport_mobility_controls",
+      "hard_negative_id": "quarantine_regimes",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "PASS",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "lexical_semantic_ambiguity",
+      "hard_negative_id": "syntactic_attachment_ambiguity",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "PASS",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "syntactic_attachment_ambiguity",
+      "hard_negative_id": "lexical_semantic_ambiguity",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "PASS",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "phonological_assimilation",
+      "hard_negative_id": "morphological_agreement",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "FAIL",
+        "heldout_separation": "FAIL"
+      },
+      "failure_ids": [
+        "F006"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "morphological_agreement",
+      "hard_negative_id": "phonological_assimilation",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "PASS",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "feedback_control_stability",
+      "hard_negative_id": "dynamical_state_estimation",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "PASS",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "dynamical_state_estimation",
+      "hard_negative_id": "feedback_control_stability",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "PASS",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "fatigue_crack_growth",
+      "hard_negative_id": "creep_deformation",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "PASS",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "creep_deformation",
+      "hard_negative_id": "fatigue_crack_growth",
+      "anchors_audited": 6,
+      "checks": {
+        "structure": "PASS",
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "no_proper_names_or_answer_leakage": "PASS",
+        "slot_role_schedule": "PASS",
+        "substantive_distinctness": "PASS",
+        "heldout_separation": "PASS"
+      },
+      "failure_ids": [],
+      "status": "PASS"
+    }
+  ],
+  "pair_decisions": [
+    {
+      "pair_id": "automatic_memory_reclamation__dynamic_memory_allocation",
+      "concept_ids": [
+        "automatic_memory_reclamation",
+        "dynamic_memory_allocation"
+      ],
+      "checks": {
+        "reciprocal_mapping": "PASS",
+        "hard_negative_separation": "PASS",
+        "semantic_difficulty_balance": "PASS",
+        "style_framing_balance": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "PASS",
+        "PASS"
+      ],
+      "status": "PASS"
+    },
+    {
+      "pair_id": "cryptographic_authentication__error_detecting_codes",
+      "concept_ids": [
+        "cryptographic_authentication",
+        "error_detecting_codes"
+      ],
+      "checks": {
+        "reciprocal_mapping": "PASS",
+        "hard_negative_separation": "PASS",
+        "semantic_difficulty_balance": "PASS",
+        "style_framing_balance": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "PASS",
+        "FAIL"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "pair_id": "protein_quality_control__membrane_vesicle_trafficking",
+      "concept_ids": [
+        "protein_quality_control",
+        "membrane_vesicle_trafficking"
+      ],
+      "checks": {
+        "reciprocal_mapping": "PASS",
+        "hard_negative_separation": "PASS",
+        "semantic_difficulty_balance": "PASS",
+        "style_framing_balance": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "FAIL",
+        "PASS"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "pair_id": "microbial_quorum_sensing__microbial_cross_feeding",
+      "concept_ids": [
+        "microbial_quorum_sensing",
+        "microbial_cross_feeding"
+      ],
+      "checks": {
+        "reciprocal_mapping": "PASS",
+        "hard_negative_separation": "PASS",
+        "semantic_difficulty_balance": "PASS",
+        "style_framing_balance": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "FAIL",
+        "FAIL"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "pair_id": "fault_rupture_mechanics__slope_failure_mechanics",
+      "concept_ids": [
+        "fault_rupture_mechanics",
+        "slope_failure_mechanics"
+      ],
+      "checks": {
+        "reciprocal_mapping": "PASS",
+        "hard_negative_separation": "PASS",
+        "semantic_difficulty_balance": "PASS",
+        "style_framing_balance": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "PASS",
+        "PASS"
+      ],
+      "status": "PASS",
+      "special_recheck": "The matched reservoir/snowmelt causal frames, material contrasts, transport-infrastructure design frames, propagation/runout failures, distant-wave counterfactuals, and measurement-based heldout interpretations are now comparably specific without crossing the reciprocal concepts."
+    },
+    {
+      "pair_id": "groundwater_contaminant_transport__coastal_saltwater_intrusion",
+      "concept_ids": [
+        "groundwater_contaminant_transport",
+        "coastal_saltwater_intrusion"
+      ],
+      "checks": {
+        "reciprocal_mapping": "PASS",
+        "hard_negative_separation": "PASS",
+        "semantic_difficulty_balance": "PASS",
+        "style_framing_balance": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "FAIL",
+        "PASS"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "pair_id": "census_classification__cadastral_land_taxation",
+      "concept_ids": [
+        "census_classification",
+        "cadastral_land_taxation"
+      ],
+      "checks": {
+        "reciprocal_mapping": "PASS",
+        "hard_negative_separation": "PASS",
+        "semantic_difficulty_balance": "PASS",
+        "style_framing_balance": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "PASS",
+        "PASS"
+      ],
+      "status": "PASS"
+    },
+    {
+      "pair_id": "quarantine_regimes__passport_mobility_controls",
+      "concept_ids": [
+        "quarantine_regimes",
+        "passport_mobility_controls"
+      ],
+      "checks": {
+        "reciprocal_mapping": "PASS",
+        "hard_negative_separation": "PASS",
+        "semantic_difficulty_balance": "PASS",
+        "style_framing_balance": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "FAIL",
+        "PASS"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "pair_id": "lexical_semantic_ambiguity__syntactic_attachment_ambiguity",
+      "concept_ids": [
+        "lexical_semantic_ambiguity",
+        "syntactic_attachment_ambiguity"
+      ],
+      "checks": {
+        "reciprocal_mapping": "PASS",
+        "hard_negative_separation": "PASS",
+        "semantic_difficulty_balance": "PASS",
+        "style_framing_balance": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "PASS",
+        "PASS"
+      ],
+      "status": "PASS"
+    },
+    {
+      "pair_id": "phonological_assimilation__morphological_agreement",
+      "concept_ids": [
+        "phonological_assimilation",
+        "morphological_agreement"
+      ],
+      "checks": {
+        "reciprocal_mapping": "PASS",
+        "hard_negative_separation": "PASS",
+        "semantic_difficulty_balance": "PASS",
+        "style_framing_balance": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "FAIL",
+        "PASS"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "pair_id": "feedback_control_stability__dynamical_state_estimation",
+      "concept_ids": [
+        "feedback_control_stability",
+        "dynamical_state_estimation"
+      ],
+      "checks": {
+        "reciprocal_mapping": "PASS",
+        "hard_negative_separation": "PASS",
+        "semantic_difficulty_balance": "PASS",
+        "style_framing_balance": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "PASS",
+        "PASS"
+      ],
+      "status": "PASS"
+    },
+    {
+      "pair_id": "fatigue_crack_growth__creep_deformation",
+      "concept_ids": [
+        "fatigue_crack_growth",
+        "creep_deformation"
+      ],
+      "checks": {
+        "reciprocal_mapping": "PASS",
+        "hard_negative_separation": "PASS",
+        "semantic_difficulty_balance": "PASS",
+        "style_framing_balance": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "PASS",
+        "PASS"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "failures": [
+    {
+      "failure_id": "F001",
+      "scope": "concept_batch",
+      "concept_id": "error_detecting_codes",
+      "check": "heldout_scenario_separation",
+      "anchor_ids": [
+        "error_detecting_codes_train_02",
+        "error_detecting_codes_test_00"
+      ],
+      "reason": "The discovery design anchor varies check-value length and complexity against overhead and accidental-error coverage, while the held-out anchor varies payload length with the check length fixed and asks for the same overhead-versus-undetected-error tradeoff. This is the same substantive design variable rather than a new held-out mechanism or application."
+    },
+    {
+      "failure_id": "F002",
+      "scope": "concept_batch",
+      "concept_id": "microbial_quorum_sensing",
+      "check": "heldout_scenario_separation",
+      "anchor_ids": [
+        "microbial_quorum_sensing_train_00",
+        "microbial_quorum_sensing_test_01"
+      ],
+      "reason": "Both anchors center on a sharp density-dependent extracellular-signal threshold followed by abrupt transcriptional or reporter activation; the held-out reporter and hysteresis evidence is not a genuinely separate mechanism from the discovery threshold response."
+    },
+    {
+      "failure_id": "F003",
+      "scope": "concept_batch",
+      "concept_id": "microbial_cross_feeding",
+      "check": "distinct_scenarios",
+      "anchor_ids": [
+        "microbial_cross_feeding_train_00",
+        "microbial_cross_feeding_train_01",
+        "microbial_cross_feeding_test_00"
+      ],
+      "reason": "The held-out recipient is the same auxotrophic vitamin-dependent partner introduced in discovery and merely acquires the ability to synthesize the formerly supplied vitamin. It is a direct counterfactual continuation of the discovery partnership; train_01 already continues with the same two strains, so neither the mechanism nor application is independent."
+    },
+    {
+      "failure_id": "F004",
+      "scope": "concept_batch",
+      "concept_id": "groundwater_contaminant_transport",
+      "check": "heldout_scenario_separation",
+      "anchor_ids": [
+        "groundwater_contaminant_transport_train_01",
+        "groundwater_contaminant_transport_test_00",
+        "groundwater_contaminant_transport_test_01"
+      ],
+      "reason": "Discovery already uses degradation to explain differential chemical mobility, and both held-out anchors reuse in-situ plume degradation: one predicts effects of a faster rate and the other interprets parent-product and electron-acceptor evidence. Prediction versus evidence wording does not create a new mechanism or application."
+    },
+    {
+      "failure_id": "F005",
+      "scope": "concept_batch",
+      "concept_id": "quarantine_regimes",
+      "check": "heldout_scenario_separation",
+      "anchor_ids": [
+        "quarantine_regimes_train_00",
+        "quarantine_regimes_train_02",
+        "quarantine_regimes_test_00",
+        "quarantine_regimes_test_01"
+      ],
+      "reason": "The revised evidence anchor still reuses the batch's dominant detention-duration scenario: incubation uncertainty, station detention length and release criteria, faster diagnostics, and symptom-onset timing all ask how long exposed travelers should be detained and what residual release risk remains."
+    },
+    {
+      "failure_id": "F006",
+      "scope": "concept_batch",
+      "concept_id": "phonological_assimilation",
+      "check": "heldout_scenario_separation",
+      "anchor_ids": [
+        "phonological_assimilation_train_01",
+        "phonological_assimilation_test_01"
+      ],
+      "reason": "Both anchors manipulate speaking rate and ask whether neighboring-sound influence is gradient or categorical. The held-out acoustic-continuum and listener-boundary evidence restates the discovery careful-versus-fast-speech comparison."
+    },
+    {
+      "failure_id": "F007",
+      "scope": "concept_batch",
+      "concept_id": "protein_quality_control",
+      "check": "heldout_scenario_separation",
+      "anchor_ids": [
+        "protein_quality_control_train_00",
+        "protein_quality_control_test_00",
+        "protein_quality_control_test_01"
+      ],
+      "reason": "Discovery and both held-out anchors center on defective newly made or nascent proteins imposing chaperone load followed by tagging, disposal, or aggregation. Heat-induced folding failure, proofreading error, and ribosome stalling are different triggers for the same cotranslational quality-control application and do not provide an independent held-out mechanism."
+    }
+  ],
+  "embargo_attestation": "This audit was performed only on the frozen v3r2 scenario-anchor file and the explicitly frozen concept, rubric, amendment, and prior anchor-audit materials listed above. The auditor did not inspect or use residual activations, SAE activations or feature IDs, AV output, AR output, generated held-out metrics, model-selection results, or any primary or secondary downstream endpoint. The scenario-anchor file was not modified."
+}

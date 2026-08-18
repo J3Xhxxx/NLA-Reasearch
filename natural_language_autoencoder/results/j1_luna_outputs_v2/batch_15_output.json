@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "batch_id": 15,
+  "agent_task": "/root/luna_batch_15",
+  "role": "luna_worker",
+  "model": "gpt-5.6-luna",
+  "reasoning": "max",
+  "public_prompt_sha256": "0d3d0be16ce586838b29b41ec06f2a31fdaebd4c4967303e4d5ba1f8f213f4c6",
+  "cases": [
+    {
+      "case_id": "case_spqh6piig8sk1h3ww5",
+      "hypothesis": "The active token is v., a legal case-citation abbreviation meaning versus and separating opposing parties.",
+      "positive_cues": [
+        "McCree v. Hampton, Slater v. Warden, Liang v. Holder, and Miller v. Alabama are case names.",
+        "Each occurrence sits between two litigant names and precedes a citation."
+      ],
+      "exclusion_cues": [
+        "The token is not ordinary prose usage of the letter v or a verb."
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_ft116k8lmg68648wr4",
+      "hypothesis": "The active words function as attributive modifiers, including demonstrative, evaluative, and technical adjectives or determiners, before nouns.",
+      "positive_cues": [
+        "this time and This upper series place demonstratives before nouns.",
+        "favorite section and quantitative component place descriptive modifiers before nouns."
+      ],
+      "exclusion_cues": [
+        "The words are not shown as standalone verbs, names, or post-nominal complements."
+      ],
+      "abstain": false,
+      "confidence": 0.95
+    },
+    {
+      "case_id": "case_quzhec0u8ulny98ctm",
+      "hypothesis": "The highlighted Chinese spans occur inside modifier phrases before a following noun or nominal marker, including adjectival and help-related compounds.",
+      "positive_cues": [
+        "The visible phrases correspond to different-type, help-person, interested-news, and distant-place constructions before nouns or 的.",
+        "All occurrences are Chinese prose, although the displayed encoding is corrupted."
+      ],
+      "exclusion_cues": [
+        "The snippets do not establish one exact translation or part of speech for every highlighted span."
+      ],
+      "abstain": false,
+      "confidence": 0.68
+    },
+    {
+      "case_id": "case_70xf2kb3uqyb0m5g8t",
+      "hypothesis": "The highlighted item is a newline or control boundary in a technical README or C++ code block, not a lexical word.",
+      "positive_cues": [
+        "All four examples are identical technical README or code-problem snippets.",
+        "Each snippet explicitly identifies the final token as \\n opening a metadata or solution block."
+      ],
+      "exclusion_cues": [
+        "No surrounding lexical token or semantic topic is provided beyond the repeated generic snippet."
+      ],
+      "abstain": false,
+      "confidence": 0.87
+    },
+    {
+      "case_id": "case_b833a6srw2msrp3h2q",
+      "hypothesis": "The highlighted spans are Turkish verb material, appearing as roots or inflected verbal forms inside clauses.",
+      "positive_cues": [
+        "anlam occurs in anlamadim and anlamasam, both forms of understand.",
+        "vermem is used in the reporting obligation, and erm begins the inflected form ermesinin."
+      ],
+      "exclusion_cues": [
+        "The spans are not Turkish case names, punctuation, or isolated English words."
+      ],
+      "abstain": false,
+      "confidence": 0.94
+    }
+  ]
+}

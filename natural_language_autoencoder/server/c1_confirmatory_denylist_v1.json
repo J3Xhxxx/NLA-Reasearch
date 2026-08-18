@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "experiment": "C1 confirmatory synthetic concept cohort v1",
+  "purpose": "Conservatively prevent reuse of every real SAE feature direction exposed in a prior human-readable candidate or selection asset.",
+  "resolution_rule": "Take the union of every nonnegative feature in both JSON paths from the frozen B6 selection source and every ID in legacy_exclude.",
+  "sources": [
+    {
+      "path": "results/b6b4_factorial_selection.json",
+      "sha256": "cb058a04a8fbe539391bd266abf04bfc5c446f7d64727193c6db9dd10219497d",
+      "json_paths": [
+        "selected_directions[*].feature",
+        "top_candidates_by_label.*[*].feature"
+      ],
+      "filter": "integer feature >= 0"
+    },
+    {
+      "path": "server/12_select_factorial_features.py",
+      "sha256": "64d3a242ebdd0091076ea568971abf7ce73d44b242aa3c3a3eb70627d9533b46",
+      "field": "LEGACY_EXCLUDE",
+      "note": "The exact values are duplicated below so selection does not parse Python source."
+    }
+  ],
+  "legacy_exclude": [
+    161,
+    166,
+    443,
+    490,
+    565,
+    5389,
+    1491,
+    7508,
+    2190,
+    11642,
+    276,
+    239,
+    4524,
+    10497,
+    8461,
+    5146,
+    717,
+    13957
+  ],
+  "expected_unique_resolved_ids": 1282
+}

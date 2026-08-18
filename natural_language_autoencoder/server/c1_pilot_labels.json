@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "scope": "C1 protocol pilot only; researcher-authored from frozen train contexts before C1 AR scoring",
+  "language": "en",
+  "records": [
+    {
+      "feature": 8347,
+      "reference": "Viral infection and immune-response mechanisms, including immune cells, antibodies, and immune memory.",
+      "reference_paraphrase": "Biological discussion of how the immune system responds to viruses and develops lasting protection.",
+      "hard_negative": "Computer-virus and cybersecurity mechanisms, including infected machines, malware signatures, and system recovery."
+    },
+    {
+      "feature": 6809,
+      "reference": "Monsoon river basins, seasonal rainfall, flooding, dams, and upstream-downstream trade-offs.",
+      "reference_paraphrase": "Geographic discussion of monsoon-fed rivers, flood risk, water infrastructure, and competing basin interests.",
+      "hard_negative": "Desert groundwater basins, prolonged drought, wells, aquifer depletion, and recharge trade-offs."
+    },
+    {
+      "feature": 14470,
+      "reference": "The printing press and its historical effects on literacy, institutions, religion, and knowledge exchange.",
+      "reference_paraphrase": "Historical discussion of movable-type printing and its uneven social, political, and intellectual consequences.",
+      "hard_negative": "Social media platforms and their modern effects on influencers, advertising, entertainment, and online engagement."
+    },
+    {
+      "feature": 10000,
+      "reference": "Reliable event-processing software using message queues, brokers, retries, idempotency, and bounded streaming.",
+      "reference_paraphrase": "Software engineering for resilient event streams, including queues, message brokers, retries, and duplicate handling.",
+      "hard_negative": "Reliable image-processing software using pixel filters, codecs, resizing, color correction, and batch rendering."
+    },
+    {
+      "feature": 309,
+      "reference": "English-language explanatory prose and common English content words.",
+      "reference_paraphrase": "Analytical or instructional text written in English with ordinary English vocabulary.",
+      "hard_negative": "German-language explanatory prose and common German content words."
+    },
+    {
+      "feature": 293,
+      "reference": "Spanish-language text, especially characteristic Spanish word stems and inflections.",
+      "reference_paraphrase": "Prose written in Spanish, recognizable from Spanish morphology and vocabulary.",
+      "hard_negative": "Portuguese-language text, especially characteristic Portuguese word stems and inflections."
+    },
+    {
+      "feature": 115,
+      "reference": "Chinese-language explanatory text using common Chinese characters and connective phrases.",
+      "reference_paraphrase": "Analytical or instructional prose written in Chinese with ordinary Chinese wording.",
+      "hard_negative": "Japanese-language explanatory text using common Japanese characters and connective phrases."
+    },
+    {
+      "feature": 992,
+      "reference": "Cells, viral infection, and regulated immune-response mechanisms involving different cell types.",
+      "reference_paraphrase": "Biological processes involving infected cells and coordinated cellular defenses against a virus.",
+      "hard_negative": "Servers, requests, and regulated software execution across APIs and event pipelines."
+    },
+    {
+      "feature": 3800,
+      "reference": "Floods, inundation, and river-basin risks affecting communities and infrastructure.",
+      "reference_paraphrase": "Geographic discussion of flooding and the exposure of settlements and infrastructure in river basins.",
+      "hard_negative": "Droughts, water scarcity, and desert-basin risks affecting communities and infrastructure."
+    },
+    {
+      "feature": 969,
+      "reference": "Historical change involving printing, literacy, institutions, and uneven social outcomes.",
+      "reference_paraphrase": "Social history shaped by printing technology, institutions, literacy, and unequal regional consequences.",
+      "hard_negative": "Contemporary software change involving deployment, automation, services, and system outages."
+    },
+    {
+      "feature": 507,
+      "reference": "Software applications, messages, queues, and event-processing systems.",
+      "reference_paraphrase": "Technical discussion of application software, message handling, queues, and event pipelines.",
+      "hard_negative": "Biological cells, proteins, genes, and immune-response systems."
+    },
+    {
+      "feature": 624,
+      "reference": "English-language analytical prose using abstract nouns about evidence, responses, and interventions.",
+      "reference_paraphrase": "Abstract explanatory writing in English about evidence, change, institutional responses, or intervention.",
+      "hard_negative": "French-language analytical prose using abstract nouns about evidence, responses, and interventions."
+    },
+    {
+      "feature": 485,
+      "reference": "Spanish-language analytical prose with characteristic verbs, nouns, and inflectional endings.",
+      "reference_paraphrase": "Explanatory Spanish text marked by common Spanish vocabulary and morphology.",
+      "hard_negative": "Italian-language analytical prose with characteristic verbs, nouns, and inflectional endings."
+    },
+    {
+      "feature": 918,
+      "reference": "Chinese-language text identified by Chinese characters across technical and scientific topics.",
+      "reference_paraphrase": "Technical, historical, or scientific prose written with Chinese vocabulary and script.",
+      "hard_negative": "Korean-language text identified by Hangul characters across technical and scientific topics."
+    },
+    {
+      "feature": 15207,
+      "reference": "Viruses, infected cells, and immune mechanisms for neutralizing infection.",
+      "reference_paraphrase": "Biological discussion of viral infection, affected cells, and immune defenses against the virus.",
+      "hard_negative": "Computer viruses, infected devices, and cybersecurity mechanisms for removing malware."
+    },
+    {
+      "feature": 15066,
+      "reference": "Human migration and population movement within geographic and environmental systems.",
+      "reference_paraphrase": "Geographic discussion of people moving between regions under environmental and institutional pressures.",
+      "hard_negative": "Database migration and data movement within software and cloud systems."
+    },
+    {
+      "feature": 13887,
+      "reference": "Political power, institutions, and historical variation in the spread of printing.",
+      "reference_paraphrase": "Historical discussion of how political authority and institutions shaped the diffusion of print.",
+      "hard_negative": "Electrical power, grids, and engineering variation in the distribution of energy."
+    },
+    {
+      "feature": 15234,
+      "reference": "Software retries, repeated operations, and recovery behavior in event-processing pipelines.",
+      "reference_paraphrase": "Technical discussion of retrying failed software operations and recovering reliable service behavior.",
+      "hard_negative": "Vaccine boosters, repeated doses, and immune protection after infection."
+    },
+    {
+      "feature": 304,
+      "reference": "English-language prose marked by ordinary English modifiers and sequencing words.",
+      "reference_paraphrase": "Text written in English, recognizable from common descriptive and ordering vocabulary.",
+      "hard_negative": "Dutch-language prose marked by ordinary Dutch modifiers and sequencing words."
+    },
+    {
+      "feature": 1394,
+      "reference": "Spanish-language prose with plural abstract nouns and common Spanish derivational endings.",
+      "reference_paraphrase": "Spanish explanatory text recognizable from abstract vocabulary and characteristic suffixes.",
+      "hard_negative": "Italian-language prose with plural abstract nouns and common Italian derivational endings."
+    },
+    {
+      "feature": 4581,
+      "reference": "Chinese-language content words appearing across technical, historical, and scientific explanations.",
+      "reference_paraphrase": "Chinese vocabulary used in explanatory writing across several subject areas.",
+      "hard_negative": "Japanese-language content words appearing across technical, historical, and scientific explanations."
+    },
+    {
+      "feature": 2725,
+      "reference": "Vaccines, immune memory, and protection against later viral exposure.",
+      "reference_paraphrase": "Biological discussion of vaccination and faster immune responses after future exposure to a virus.",
+      "hard_negative": "Antivirus software, malware signatures, and protection against later cyberattacks."
+    },
+    {
+      "feature": 935,
+      "reference": "Unequal environmental exposure and risk across places, communities, and river-basin settlements.",
+      "reference_paraphrase": "Geographic inequality in how different communities experience hazards and flood exposure.",
+      "hard_negative": "Unequal API access and request quotas across tenants, services, and cloud regions."
+    },
+    {
+      "feature": 7176,
+      "reference": "Demand, institutions, and social conditions shaping historical economic change.",
+      "reference_paraphrase": "Historical discussion of how demand and institutions influence uneven social and economic transformation.",
+      "hard_negative": "Request demand, token buckets, and traffic conditions shaping API rate limits."
+    }
+  ]
+}

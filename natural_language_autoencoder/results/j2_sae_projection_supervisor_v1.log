@@ -1,0 +1,543 @@
+[2026-08-07T11:03:45+08:00] J2_START
+NVIDIA A800-SXM4-80GB, 81920 MiB, 0 MiB, 0 %
+[J2-P0] contract=8ee91239f024019bb174f6b5e774e45cb8f7bb183d53e8d62a5f391ec9e12625 complete=0/400 missing=400 dry_run=False
+[NLAClient] nla-gemma3-12b-L32-av: d_model=3840 inj_scale=80000.0 embed_scale=61.97 inj_char='㈜'(id=246566)
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/626 [00:00<?, ?it/s]Loading weights:   0%|          | 1/626 [00:00<02:52,  3.62it/s]Loading weights:   3%|▎         | 16/626 [00:00<00:12, 49.14it/s]Loading weights:   5%|▍         | 29/626 [00:00<00:08, 69.13it/s]Loading weights:   7%|▋         | 42/626 [00:00<00:07, 81.73it/s]Loading weights:   9%|▊         | 54/626 [00:00<00:06, 85.01it/s]Loading weights:  11%|█         | 68/626 [00:00<00:05, 95.18it/s]Loading weights:  13%|█▎        | 81/626 [00:01<00:05, 99.41it/s]Loading weights:  15%|█▌        | 94/626 [00:01<00:05, 105.39it/s]Loading weights:  17%|█▋        | 107/626 [00:01<00:05, 102.85it/s]Loading weights:  19%|█▉        | 120/626 [00:01<00:04, 104.52it/s]Loading weights:  21%|██        | 133/626 [00:01<00:04, 109.65it/s]Loading weights:  23%|██▎       | 145/626 [00:01<00:04, 103.51it/s]Loading weights:  25%|██▌       | 158/626 [00:01<00:04, 107.33it/s]Loading weights:  27%|██▋       | 172/626 [00:01<00:04, 107.02it/s]Loading weights:  30%|██▉       | 185/626 [00:01<00:04, 107.48it/s]Loading weights:  32%|███▏      | 198/626 [00:02<00:03, 109.43it/s]Loading weights:  34%|███▎      | 210/626 [00:02<00:03, 106.87it/s]Loading weights:  35%|███▌      | 221/626 [00:02<00:04, 98.86it/s] Loading weights:  37%|███▋      | 231/626 [00:02<00:04, 92.26it/s]Loading weights:  38%|███▊      | 241/626 [00:02<00:04, 87.44it/s]Loading weights:  40%|████      | 251/626 [00:02<00:04, 88.60it/s]Loading weights:  42%|████▏     | 263/626 [00:02<00:03, 93.25it/s]Loading weights:  44%|████▍     | 276/626 [00:02<00:03, 97.19it/s]Loading weights:  46%|████▋     | 290/626 [00:03<00:03, 99.82it/s]Loading weights:  48%|████▊     | 303/626 [00:03<00:03, 105.89it/s]Loading weights:  50%|█████     | 316/626 [00:03<00:02, 103.90it/s]Loading weights:  53%|█████▎    | 329/626 [00:03<00:02, 108.78it/s]Loading weights:  55%|█████▍    | 342/626 [00:03<00:02, 104.97it/s]Loading weights:  57%|█████▋    | 355/626 [00:03<00:02, 102.67it/s]Loading weights:  59%|█████▉    | 368/626 [00:03<00:02, 103.12it/s]Loading weights:  61%|██████    | 381/626 [00:03<00:02, 105.56it/s]Loading weights:  63%|██████▎   | 394/626 [00:04<00:02, 108.32it/s]Loading weights:  65%|██████▍   | 406/626 [00:04<00:01, 110.58it/s]Loading weights:  67%|██████▋   | 418/626 [00:04<00:01, 112.85it/s]Loading weights:  69%|██████▊   | 430/626 [00:04<00:01, 105.59it/s]Loading weights:  70%|███████   | 441/626 [00:04<00:01, 101.94it/s]Loading weights:  72%|███████▏  | 452/626 [00:04<00:01, 98.27it/s] Loading weights:  74%|███████▍  | 462/626 [00:04<00:01, 90.96it/s]Loading weights:  76%|███████▌  | 473/626 [00:04<00:01, 88.91it/s]Loading weights:  78%|███████▊  | 486/626 [00:05<00:01, 94.08it/s]Loading weights:  80%|███████▉  | 499/626 [00:05<00:01, 97.80it/s]Loading weights:  82%|████████▏ | 512/626 [00:05<00:01, 101.72it/s]Loading weights:  84%|████████▍ | 525/626 [00:05<00:00, 104.53it/s]Loading weights:  86%|████████▌ | 538/626 [00:05<00:00, 106.43it/s]Loading weights:  88%|████████▊ | 551/626 [00:05<00:00, 107.13it/s]Loading weights:  90%|█████████ | 564/626 [00:05<00:00, 104.40it/s]Loading weights:  92%|█████████▏| 577/626 [00:05<00:00, 105.96it/s]Loading weights:  94%|█████████▍| 590/626 [00:05<00:00, 106.73it/s]Loading weights:  96%|█████████▋| 603/626 [00:06<00:00, 108.27it/s]Loading weights:  98%|█████████▊| 615/626 [00:06<00:00, 110.42it/s]Loading weights: 100%|██████████| 626/626 [00:06<00:00, 100.17it/s]
+[AV   1/400] sae_small idx=0 chars=772 'Academic abstract structure: scientific summary format with '
+[AV   2/400] sae_small idx=1 chars=678 'Academic advising document structure: formal institutional d'
+[AV   3/400] sae_small idx=2 chars=635 'Structured guide format with practical advice for Kindle/rea'
+[AV   4/400] sae_small idx=3 chars=682 'Biblical study guide format: structured lesson summary with '
+[AV   5/400] sae_small idx=4 chars=681 'Structured legal document outlining a comprehensive loan agr'
+[AV   6/400] sae_small idx=5 chars=696 'Legal document structure: formal contract advisory memo outl'
+[AV   7/400] sae_small idx=6 chars=702 'Structured parliamentary speech format: formal UK parliament'
+[AV   8/400] sae_small idx=7 chars=686 'Parliamentary speech report structure: formal political docu'
+[AV   9/400] sae_small idx=8 chars=672 'Legal case structure signals a structured appellate brief fo'
+[AV  10/400] sae_small idx=9 chars=694 'Legal case structure: formal case summary establishing factu'
+[AV  11/400] sae_small idx=10 chars=653 'Structured tutorial format with Unity/NavMesh AI documentati'
+[AV  12/400] sae_small idx=11 chars=641 'Structured documentation pattern: a Unity/behavioral scripti'
+[AV  13/400] sae_small idx=12 chars=630 'Literary description of a classic book, following a formal V'
+[AV  14/400] sae_small idx=13 chars=606 'Victorian English literary structure: formal book descriptio'
+[AV  15/400] sae_small idx=14 chars=672 'Repeating pattern of structured Q&A format: the text is repr'
+[AV  16/400] sae_small idx=15 chars=673 'Structured advisory framing: a practical tech/consulting pos'
+[AV  17/400] sae_small idx=16 chars=630 'Structured scientific narrative: the text follows a structur'
+[AV  18/400] sae_small idx=17 chars=677 'Structured academic summary format: the text is explaining a'
+[AV  19/400] sae_small idx=18 chars=668 'Structured dialogue format with Japanese characters, followi'
+[AV  20/400] sae_small idx=19 chars=638 'Structured anime/dating advice format with conversational to'
+[AV  21/400] sae_small idx=20 chars=599 'Video description format: conversational, local news tone es'
+[AV  22/400] sae_small idx=21 chars=654 'News brief format: structured reporting of a city incident, '
+[AV  23/400] sae_small idx=22 chars=727 'Structured translation format: Spanish bilingual structure w'
+[AV  24/400] sae_small idx=23 chars=625 'Philosophical structure: the text is articulating a theologi'
+[AV  25/400] sae_small idx=24 chars=688 'Structured travel guide format with Dutch holiday accommodat'
+[AV  26/400] sae_small idx=25 chars=681 'Structured booking/course guide format with numbered steps, '
+[AV  27/400] sae_small idx=26 chars=730 'Medical Q&A format with structured clinical presentation, es'
+[AV  28/400] sae_small idx=27 chars=680 'Medical/academic text format: bibliographic reference to a c'
+[AV  29/400] sae_small idx=28 chars=607 'Medical/academic question format: structured prompt requirin'
+[AV  30/400] sae_small idx=29 chars=680 'Structured biomedical/academic format: formal clinical descr'
+[AV  31/400] sae_small idx=30 chars=658 'Explanatory/consumer advice tone established: practical inte'
+[AV  32/400] sae_small idx=31 chars=542 'Structured list format with bullet points explaining WiMAX/L'
+[AV  33/400] sae_small idx=32 chars=737 'Structured technical paper format with formal academic phras'
+[AV  34/400] sae_small idx=33 chars=784 'Structured ML/geostatistics paper format: technical explanat'
+[AV  35/400] sae_small idx=34 chars=671 'Technical troubleshooting post structure: bug report format '
+[AV  36/400] sae_small idx=35 chars=687 'Technical troubleshooting post structure: instructional tone'
+[AV  37/400] sae_small idx=36 chars=666 'Encyclopedic/Wikipedia structure: a structured article forma'
+[AV  38/400] sae_small idx=37 chars=680 'Structured document format: informational guide on internati'
+[AV  39/400] sae_small idx=38 chars=609 'Structured article format with consistent instructional pros'
+[AV  40/400] sae_small idx=39 chars=619 'Structured article format with a concluding narrative: the s'
+[AV  41/400] sae_small idx=40 chars=668 'Structured article format with translated German content, co'
+[AV  42/400] sae_small idx=41 chars=714 'Repeating pattern of structured forum/essay content: the tex'
+[AV  43/400] sae_small idx=42 chars=626 'Interview format with structured quotes continues: a woman i'
+[AV  44/400] sae_small idx=43 chars=688 'Academic prompt structure: a creative writing prompt establi'
+[AV  45/400] sae_small idx=44 chars=642 'Repeating pattern of document structure: each section follow'
+[AV  46/400] sae_small idx=45 chars=608 'Article structure: a listicle de texto sobre la vida rural, '
+[AV  47/400] sae_small idx=46 chars=578 'Repeating structure of Q&A format with fragmented, incoheren'
+[AV  48/400] sae_small idx=47 chars=661 'Repeating structure of forum/FAQ content: the text follows a'
+[AV  49/400] sae_small idx=48 chars=626 'Article structure: informational/tutorial tone with AI chatb'
+[AV  50/400] sae_small idx=49 chars=594 'Article structure: a Hindi/poetry forum post with ongoing na'
+[AV  51/400] sae_small idx=50 chars=683 'Repeating pattern of verbatim transcript structure: each ent'
+[AV  52/400] sae_small idx=51 chars=676 'Article structure: informational/instructional format with a'
+[AV  53/400] sae_small idx=52 chars=630 'Article structure: informational blog format with structured'
+[AV  54/400] sae_small idx=53 chars=578 'Repeating pattern of structured article format: each section'
+[AV  55/400] sae_small idx=54 chars=474 'Repeating pattern of verbatim copy-paste structure: the text'
+[AV  56/400] sae_small idx=55 chars=520 'Repeating structure of the essay: the text is reproducing a '
+[AV  57/400] sae_small idx=56 chars=780 'Academic econometrics paper structure: formal technical expo'
+[AV  58/400] sae_small idx=57 chars=777 'Academic econometrics context: structured answer explaining '
+[AV  59/400] sae_small idx=58 chars=577 'Structured book description format: article follows a standa'
+[AV  60/400] sae_small idx=59 chars=689 'Structured article format with bullet-point advice, progress'
+[AV  61/400] sae_small idx=60 chars=583 'Structured educational text format: a summary of a German fa'
+[AV  62/400] sae_small idx=61 chars=610 'Academic literary/historical reference format: structured ar'
+[AV  63/400] sae_small idx=62 chars=670 'Educational post structure: explaining a bookkeeping/busines'
+[AV  64/400] sae_small idx=63 chars=698 'Instructional workflow format: structured guidance for recon'
+[AV  65/400] sae_small idx=64 chars=651 'Article structure: formal analytical piece systematically ex'
+[AV  66/400] sae_small idx=65 chars=676 'Political document structure: formal parliamentary article c'
+[AV  67/400] sae_small idx=66 chars=549 'Structured legal article format with consistent pattern: det'
+[AV  68/400] sae_small idx=67 chars=678 'Legal document structure: a case summary describing a trial,'
+[AV  69/400] sae_small idx=68 chars=625 'Structured Kotlin/Android code block with a code block patte'
+[AV  70/400] sae_small idx=69 chars=613 'Catalogue of periodical publications, establishing a formal '
+[AV  71/400] sae_small idx=70 chars=618 'Manual of household economy, with formal Victorian didactic '
+[AV  72/400] sae_small idx=71 chars=637 'Structured tutorial format with a summary/conclusion tone, e'
+[AV  73/400] sae_small idx=72 chars=683 'Technical 3D printing forum answer structure: explaining a c'
+[AV  74/400] sae_small idx=73 chars=752 'Structured scientific context: a mechanistic summary establi'
+[AV  75/400] sae_small idx=74 chars=695 'Scientific/academic summary format: structured description o'
+[AV  76/400] sae_small idx=75 chars=647 'Structured dialogue format with a translated Japanese narrat'
+[AV  77/400] sae_small idx=76 chars=645 'Anime episode synopsis format: structured description of a J'
+[AV  78/400] sae_small idx=77 chars=702 'Structured narrative format with legal/crime context: a form'
+[AV  79/400] sae_small idx=78 chars=662 'Structured interview format with a quoted activist voice, es'
+[AV  80/400] sae_small idx=79 chars=711 'Standard UK copyright disclaimer boilerplate format, followi'
+[AV  81/400] sae_small idx=80 chars=717 'Structured article format with standardized academic citatio'
+[AV  82/400] sae_small idx=81 chars=605 'Forum/chat structure: user is asking for advice, establishin'
+[AV  83/400] sae_small idx=82 chars=666 'Structured FAQ/definition format signals a standard informat'
+[AV  84/400] sae_small idx=83 chars=624 'Medical/academic article structure: informational format wit'
+[AV  85/400] sae_small idx=84 chars=581 'Structured medical/genetic database format with consistent c'
+[AV  86/400] sae_small idx=85 chars=756 'Academic biomechanical structure: formal anatomical question'
+[AV  87/400] sae_small idx=86 chars=756 'Medical Q&A format with structured clinical guidance, establ'
+[AV  88/400] sae_small idx=87 chars=636 'Structured Q&A format with instructional/tutorial tone, prov'
+[AV  89/400] sae_small idx=88 chars=635 'Technical tutorial structure: Java/OOP example with code blo'
+[AV  90/400] sae_small idx=89 chars=691 'Structured financial advisory explanation, with a bullet-poi'
+[AV  91/400] sae_small idx=90 chars=703 'Structured business/strategy document establishing a framewo'
+[AV  92/400] sae_small idx=91 chars=656 'Structured tutorial format with French/programming advice, g'
+[AV  93/400] sae_small idx=92 chars=641 'Ongoing forum/roleplay post structure: a playful, humorous F'
+[AV  94/400] sae_small idx=93 chars=582 'Structured document format with Urdu/Pakistan context, prese'
+[AV  95/400] sae_small idx=94 chars=637 'Structured article format with factual, informational tone —'
+[AV  96/400] sae_small idx=95 chars=673 'Structured guide format with instructional tone, establishin'
+[AV  97/400] sae_small idx=96 chars=677 'Structured interview format with a video transcript, establi'
+[AV  98/400] sae_small idx=97 chars=562 'Q&A format with instructional/reflective tone signals a prom'
+[AV  99/400] sae_small idx=98 chars=626 'Repeating structure of Arabic translation pattern: the text '
+[AV 100/400] sae_small idx=99 chars=696 'Article structure: instructional guide format with numbered '
+[AV 101/400] sae_small idx=100 chars=545 'Repeating pattern of structured forum/translation post with '
+[AV 102/400] sae_small idx=101 chars=663 'Repeating pattern of structured Q&A format: each entry follo'
+[AV 103/400] sae_small idx=102 chars=686 'Repeating pattern of structured document template: each sect'
+[AV 104/400] sae_small idx=103 chars=654 'Article structure: informational text about a pirate/naval g'
+[AV 105/400] sae_small idx=104 chars=640 'Military manual format with ongoing narrative of a book exce'
+[AV 106/400] sae_small idx=105 chars=657 'Article structure: listicle/advice format with fragmented, i'
+[AV 107/400] sae_small idx=106 chars=661 "Article structure: you're presenting a listicle or advice pi"
+[AV 108/400] sae_small idx=107 chars=607 'Structured article format with Hindi/English translation pat'
+[AV 109/400] sae_small idx=108 chars=602 'Article structure: instructional/tutorial format with AI wri'
+[AV 110/400] sae_small idx=109 chars=674 'Structured essay format with a social/political analysis ton'
+[AV 111/400] sae_small idx=110 chars=638 'Academic/educational article structure: text is a Russian la'
+[AV 112/400] sae_small idx=111 chars=613 'Conversational structure of a Q&A forum format, with a Turki'
+[AV 113/400] sae_small idx=112 chars=654 'Repeating pattern of structured document format: each sectio'
+[AV 114/400] sae_small idx=113 chars=642 'Structured article format with repeating pattern: answer/exp'
+[AV 115/400] sae_small idx=114 chars=608 'Article structure: AI chatbot transcript format with ongoing'
+[AV 116/400] sae_small idx=115 chars=621 'Structured article format with repeating pattern: text is an'
+[AV 117/400] sae_small idx=116 chars=450 'Article structure: instructional guide format with informati'
+[AV 118/400] sae_small idx=117 chars=664 'Academic/tutorial structure: French ML/NLP post explaining a'
+[AV 119/400] sae_small idx=118 chars=552 'Structured weather/ML model metadata format: code block with'
+[AV 120/400] sae_small idx=119 chars=654 'Structured list of literary/cultural topics with bibliograph'
+[AV 121/400] sae_small idx=120 chars=697 'Academic literary/cultural studies format: bibliographic cit'
+[AV 122/400] sae_small idx=121 chars=601 'Structured training document format: bulleted instructional '
+[AV 123/400] sae_small idx=122 chars=504 'Structured instructional pattern: the response is walking th'
+[AV 124/400] sae_small idx=123 chars=650 'Structured article format with formal EU policy language con'
+[AV 125/400] sae_small idx=124 chars=621 'Formal parliamentary document structure: official EU institu'
+[AV 126/400] sae_small idx=125 chars=668 'Legal document format: structured case summary with formal b'
+[AV 127/400] sae_small idx=126 chars=682 'Legal document structure signals a case summary format, esta'
+[AV 128/400] sae_small idx=127 chars=722 'Structured documentation pattern: technical statistical expl'
+[AV 129/400] sae_small idx=128 chars=679 'Structured instructional format: explaining a data visualiza'
+[AV 130/400] sae_small idx=129 chars=668 'Conversational forum post tone established, with casual comm'
+[AV 131/400] sae_small idx=130 chars=602 'Structured article format with numbered/listed content sugge'
+[AV 132/400] sae_small idx=131 chars=779 'Scientific framing establishes structured academic summary, '
+[AV 133/400] sae_small idx=132 chars=696 'Scientific paper structure: formal description of a postdoc '
+[AV 134/400] sae_small idx=133 chars=659 'Structured dialogue format with quoted dialogue exchanges, e'
+[AV 135/400] sae_small idx=134 chars=649 'Conversational, humorous blog format with a dialogue structu'
+[AV 136/400] sae_small idx=135 chars=618 'Narrative structure: a character interview format establishe'
+[AV 137/400] sae_small idx=136 chars=702 'Structured document format: bullet-point analysis of a presi'
+[AV 138/400] sae_small idx=137 chars=624 'Academic paper structure: structured English paper format wi'
+[AV 139/400] sae_small idx=138 chars=713 'Structured academic paper format: explanation of a ML/contro'
+[AV 140/400] sae_small idx=139 chars=629 'Informational/persuasive tone with a moral message: a charac'
+[AV 141/400] sae_small idx=140 chars=624 'Ongoing sermon/quote structure: a theological message about '
+[AV 142/400] sae_small idx=141 chars=758 'Structured academic paper format: abstract summarizing a mat'
+[AV 143/400] sae_small idx=142 chars=724 'Scientific paper structure: abstract presenting a Chinese dy'
+[AV 144/400] sae_small idx=143 chars=720 'Medical/clinical structure: formal structured report on medi'
+[AV 145/400] sae_small idx=144 chars=755 'Structured medical paper format with structured abstract, pr'
+[AV 146/400] sae_small idx=145 chars=680 'Technical troubleshooting guidance format: instructional ton'
+[AV 147/400] sae_small idx=146 chars=631 'Code walkthrough structure: technical debugging context with'
+[AV 148/400] sae_small idx=147 chars=793 'Patent document structure: formal definition of a classifica'
+[AV 149/400] sae_small idx=148 chars=698 'Patent claim structure: formal legal definition of a technic'
+[AV 150/400] sae_small idx=149 chars=765 'Technical documentation pattern: structured explanation of a'
+[AV 151/400] sae_small idx=150 chars=650 'Technical Apple WWDC documentation listing macOS SSD/storage'
+[AV 152/400] sae_small idx=151 chars=698 'Structured physics explanation: a formal Q&A format with a c'
+[AV 153/400] sae_small idx=152 chars=703 'Physics explanation is building toward a conceptual contrast'
+[AV 154/400] sae_small idx=153 chars=558 'Structured article pattern: repeating structure of translate'
+[AV 155/400] sae_small idx=154 chars=643 'Structured answer format with a translation/analysis of a Sp'
+[AV 156/400] sae_small idx=155 chars=637 'Article structure: informational web content with AI-generat'
+[AV 157/400] sae_small idx=156 chars=636 'Document structure: grammar/vocabulary webpage with fragment'
+[AV 158/400] sae_small idx=157 chars=644 'Repeating pattern of structured Q&A format: each section fol'
+[AV 159/400] sae_small idx=158 chars=622 'Repeating pattern of structured literary analysis: the text '
+[AV 160/400] sae_small idx=159 chars=657 'Informational/cultural article structure: a response format '
+[AV 161/400] sae_small idx=160 chars=721 'Structured prompt format: a list of creative/roleplaying pro'
+[AV 162/400] sae_small idx=161 chars=633 'Text/forum structure: instructional writing prompt format, w'
+[AV 163/400] sae_small idx=162 chars=672 'Repeating pattern of structured Q&A format: each section fol'
+[AV 164/400] sae_small idx=163 chars=586 'Structured answer format with Hindi/English question-answer '
+[AV 165/400] sae_small idx=164 chars=634 'Repeating pattern of structured forum post: each section fol'
+[AV 166/400] sae_small idx=165 chars=656 'Article structure: informative prose about a historical/lite'
+[AV 167/400] sae_small idx=166 chars=613 'Repeating pattern of forum post structure: grammar/quote for'
+[AV 168/400] sae_small idx=167 chars=653 'Repeating structure of Q&A format with verbatim repeated tex'
+[AV 169/400] sae_small idx=168 chars=594 'Structured educational/personal blog format with numbered pr'
+[AV 170/400] sae_small idx=169 chars=622 'Article structure: informational/SEO content format with tra'
+[AV 171/400] sae_small idx=170 chars=589 'Article structure: bài viết tổng hợp về SEO đang cung cấp th'
+[AV 172/400] sae_small idx=171 chars=543 'Repeating pattern of structured document: each section follo'
+[AV 173/400] sae_small idx=172 chars=562 'Repeating pattern of structured Q&A format: the text is repr'
+[AV 174/400] sae_small idx=173 chars=565 'Academic paper structure: bibliographic/abstract format with'
+[AV 175/400] sae_small idx=174 chars=749 'Structured article format: informational overview of the Bla'
+[AV 176/400] sae_small idx=175 chars=632 'Structured narrative pattern: a summary of a fantasy story, '
+[AV 177/400] sae_small idx=176 chars=639 'Structured narrative format: a scene description establishin'
+[AV 178/400] sae_small idx=177 chars=513 'Structured Q&A format with consistent pattern: each answer f'
+[AV 179/400] sae_small idx=178 chars=549 'Structured Q&A format with numbered math problems, requiring'
+[AV 180/400] sae_small idx=179 chars=644 'Scheduling/meeting message format: instructional tone with p'
+[AV 181/400] sae_small idx=180 chars=669 'Structured wellness/scheduling guide format: practical advic'
+[AV 182/400] sae_small idx=181 chars=696 'Structured political analysis format signals a formal UK bri'
+[AV 183/400] sae_small idx=182 chars=697 'Political document structure: formal German policy statement'
+[AV 184/400] sae_small idx=183 chars=695 'Legal document structure: formal opinion analyzing a contrac'
+[AV 185/400] sae_small idx=184 chars=692 'Legal case summary format: structured narrative recounting a'
+[AV 186/400] sae_small idx=185 chars=753 'Structured legal/medical disclaimer format: boilerplate Apac'
+[AV 187/400] sae_small idx=186 chars=688 'Legal disclaimer boilerplate format: structured listing of s'
+[AV 188/400] sae_small idx=187 chars=657 'Established conversational framing signals a structured Q&A '
+[AV 189/400] sae_small idx=188 chars=723 'Structured Q&A format with a conversational, instructional t'
+[AV 190/400] sae_small idx=189 chars=716 'Academic policy/health discourse structure: formal argumenta'
+[AV 191/400] sae_small idx=190 chars=755 'Academic paper structure: structured abstract format with fo'
+[AV 192/400] sae_small idx=191 chars=620 'Dialogue format with structured conversational exchanges est'
+[AV 193/400] sae_small idx=192 chars=592 'Conversational food blog register established, with casual t'
+[AV 194/400] sae_small idx=193 chars=683 'Structured film analysis format: analytical summary framing '
+[AV 195/400] sae_small idx=194 chars=654 'Structured analysis format: answer is building a character i'
+[AV 196/400] sae_small idx=195 chars=673 'Structured article format with a clear summary statement, fo'
+[AV 197/400] sae_small idx=196 chars=730 'Structured academic framing: formal German philosophical quo'
+[AV 198/400] sae_small idx=197 chars=642 'Travel guide format with structured descriptions of Edinburg'
+[AV 199/400] sae_small idx=198 chars=614 'Structured UK food/cafe listing format: descriptive venue co'
+[AV 200/400] sae_small idx=199 chars=809 'Scientific biochemistry textbook format: formal academic pro'
+[AV 201/400] sae_big idx=0 chars=772 'Academic/scientific forum structure: abstract summarizing a '
+[AV 202/400] sae_big idx=1 chars=609 'Structured document listing theological/academic resources, '
+[AV 203/400] sae_big idx=2 chars=676 'Structured instructional format with practical advice for Ki'
+[AV 204/400] sae_big idx=3 chars=686 'Structured Bible study format with theological reflection, r'
+[AV 205/400] sae_big idx=4 chars=669 'Structured project documentation with bullet-point action it'
+[AV 206/400] sae_big idx=5 chars=759 'Legal document analyzing a contract drafting guidance note, '
+[AV 207/400] sae_big idx=6 chars=644 'Structured parliamentary speech format: formal procedural la'
+[AV 208/400] sae_big idx=7 chars=646 'Institutional document on European Parliament voting policy,'
+[AV 209/400] sae_big idx=8 chars=659 'Legal document structure: formal judicial analysis framing s'
+[AV 210/400] sae_big idx=9 chars=662 'Legal document structure: formal case summary format, presen'
+[AV 211/400] sae_big idx=10 chars=615 'Structured tutorial format with numbered steps and Unity/Nav'
+[AV 212/400] sae_big idx=11 chars=633 'Structured UScripting API documentation pattern: code block '
+[AV 213/400] sae_big idx=12 chars=694 'Historical book review register: analytical, descriptive ton'
+[AV 214/400] sae_big idx=13 chars=650 'Book description format: structured bibliographic entry with'
+[AV 215/400] sae_big idx=14 chars=643 'Repeating pattern of Q&A forum structure: the text is reprod'
+[AV 216/400] sae_big idx=15 chars=595 'Bullet-point list structure with ongoing discussion of dev/t'
+[AV 217/400] sae_big idx=16 chars=675 'Structured scientific paper format: structured summary with '
+[AV 218/400] sae_big idx=17 chars=642 'Structured scientific review format: abstract summarizing a '
+[AV 219/400] sae_big idx=18 chars=685 'Dialogue structure with Russian/Japanese language learning f'
+[AV 220/400] sae_big idx=19 chars=659 'Japanese fishing/dating advice format: instructional manga d'
+[AV 221/400] sae_big idx=20 chars=627 'Safety advisory format with ongoing list of fire/neighbour t'
+[AV 222/400] sae_big idx=21 chars=649 'Incident report format: factual, descriptive tone with a vid'
+[AV 223/400] sae_big idx=22 chars=727 'Structured article format with Spanish translation, followin'
+[AV 224/400] sae_big idx=23 chars=634 'Academic theological framework structure: formal presentatio'
+[AV 225/400] sae_big idx=24 chars=660 'Tourism/holiday guide structure: descriptive Dutch holiday a'
+[AV 226/400] sae_big idx=25 chars=618 'Dutch/booking page structure: listing course information wit'
+[AV 227/400] sae_big idx=26 chars=726 'Medical case report structure: formal clinical presentation '
+[AV 228/400] sae_big idx=27 chars=721 'Medical textbook format: structured abstract presenting a cl'
+[AV 229/400] sae_big idx=28 chars=615 'Structured medical/academic format with a list of drug class'
+[AV 230/400] sae_big idx=29 chars=697 'Structured medical/pharmacological review format: academic c'
+[AV 231/400] sae_big idx=30 chars=683 'Ongoing explanatory article about ISP broadband tiers, with '
+[AV 232/400] sae_big idx=31 chars=551 'Structured article format with consistent tech explainer sty'
+[AV 233/400] sae_big idx=32 chars=703 'Academic paper structure: structured English-Arabic engineer'
+[AV 234/400] sae_big idx=33 chars=728 'Structured academic paper format: technical tutorial on PCA/'
+[AV 235/400] sae_big idx=34 chars=654 'Structured bug report format with technical Linux/Debian ter'
+[AV 236/400] sae_big idx=35 chars=640 'Technical bug report structure: forum post explaining a UI/f'
+[AV 237/400] sae_big idx=36 chars=630 'Structured article format with a factual summary of a topic,'
+[AV 238/400] sae_big idx=37 chars=725 'Structured informational article format: factual summary of '
+[AV 239/400] sae_big idx=38 chars=574 'Narrative structure: a romantic/spiritual fiction story with'
+[AV 240/400] sae_big idx=39 chars=594 'Article structure: gothic horror/fantasy description with po'
+[AV 241/400] sae_big idx=40 chars=631 'Conversational, humorous tone with a German/English mix sign'
+[AV 242/400] sae_big idx=41 chars=636 'Repeating structure of forum post format: structured Q&A wit'
+[AV 243/400] sae_big idx=42 chars=604 'Interview format with a grieving mother, continuing a narrat'
+[AV 244/400] sae_big idx=43 chars=634 'Literary/academic format: a study guide or story summary, es'
+[AV 245/400] sae_big idx=44 chars=632 'Repeating pattern of forum post structure: each entry follow'
+[AV 246/400] sae_big idx=45 chars=610 'Narrative structure: a detective puzzle story with a classic'
+[AV 247/400] sae_big idx=46 chars=599 'Repeating pattern of forum/essay structure: text is reproduc'
+[AV 248/400] sae_big idx=47 chars=630 'Repeating pattern of structured Q&A format: each section fol'
+[AV 249/400] sae_big idx=48 chars=607 'AI/chatbot prompt format: text is a web search query or writ'
+[AV 250/400] sae_big idx=49 chars=636 'Ongoing article structure: instructional AI/poetry guide wit'
+[AV 251/400] sae_big idx=50 chars=564 'Repeating pattern of structured Q&A format with verbatim rep'
+[AV 252/400] sae_big idx=51 chars=630 'Forum/chat request structure: a user is asking for a literar'
+[AV 253/400] sae_big idx=52 chars=659 'Article structure: informational/analytical tone with Vietna'
+[AV 254/400] sae_big idx=53 chars=603 'Article structure: translation/SEO content with repeating pa'
+[AV 255/400] sae_big idx=54 chars=467 'Repeating pattern of structured text: the chapter follows a '
+[AV 256/400] sae_big idx=55 chars=464 'Repeating pattern of dialogue structure: formatted text with'
+[AV 257/400] sae_big idx=56 chars=762 'Academic econometrics context establishes formal statistical'
+[AV 258/400] sae_big idx=57 chars=789 'Academic econometrics paper structure: abstract/paper summar'
+[AV 259/400] sae_big idx=58 chars=576 'Book description format: structured review of an ebook, foll'
+[AV 260/400] sae_big idx=59 chars=691 'Structured article format with alternating dialogue and narr'
+[AV 261/400] sae_big idx=60 chars=619 'Structured essay format with a summary/analysis pattern: the'
+[AV 262/400] sae_big idx=61 chars=571 'Structured article format with consistent pattern: informati'
+[AV 263/400] sae_big idx=62 chars=696 'Ongoing client walkthrough explaining a reconciliation repor'
+[AV 264/400] sae_big idx=63 chars=691 'Support/resolution instruction format: agent is guiding a us'
+[AV 265/400] sae_big idx=64 chars=691 'Structured artykuł analyzing legal and philosophical absurdi'
+[AV 266/400] sae_big idx=65 chars=636 'Article structure: argumentative essay format with ongoing c'
+[AV 267/400] sae_big idx=66 chars=531 'Structured FAQ format with consistent pattern: answer blocks'
+[AV 268/400] sae_big idx=67 chars=669 'Legal document structure: narrative summary of a trial, syst'
+[AV 269/400] sae_big idx=68 chars=675 'Structured Kotlin/Android code block with a function definit'
+[AV 270/400] sae_big idx=69 chars=684 'Literary History Manual format: formal instructional descrip'
+[AV 271/400] sae_big idx=70 chars=666 'Standard Victorian literary format: formal catalog of a book'
+[AV 272/400] sae_big idx=71 chars=626 'Tutorial structure: explaining 3D printing in Spain, with a '
+[AV 273/400] sae_big idx=72 chars=635 'Forum/community post structure: technical 3D printing discus'
+[AV 274/400] sae_big idx=73 chars=759 'Scientific abstract structure: established context of a mech'
+[AV 275/400] sae_big idx=74 chars=722 'Scientific paper structure: abstract summarizing a biomedica'
+[AV 276/400] sae_big idx=75 chars=670 'Ongoing narrative dialogue format: a GM instructing a player'
+[AV 277/400] sae_big idx=76 chars=642 'Anime/manga battle dialogue format: a Japanese RPG narrative'
+[AV 278/400] sae_big idx=77 chars=723 'Structured news report format with factual, journalistic ton'
+[AV 279/400] sae_big idx=78 chars=607 'Ongoing forum/discussion post structure: a rambling, philoso'
+[AV 280/400] sae_big idx=79 chars=717 'Legal disclaimer boilerplate format: standard UK/OUP copyrig'
+[AV 281/400] sae_big idx=80 chars=696 'Encyclopedic/Wikipedia format with structured definitions an'
+[AV 282/400] sae_big idx=81 chars=655 'Conversational/advice format: text is providing a humorous, '
+[AV 283/400] sae_big idx=82 chars=695 'Wiki/forum format with structured metadata block: "About the'
+[AV 284/400] sae_big idx=83 chars=690 'Medical/genetic reference document structure: technical desc'
+[AV 285/400] sae_big idx=84 chars=672 'Structured medical/genetic database format with standardized'
+[AV 286/400] sae_big idx=85 chars=660 'Academic biomechanics/medical article structure: structured '
+[AV 287/400] sae_big idx=86 chars=738 'Medical/clinical structure: structured article format with e'
+[AV 288/400] sae_big idx=87 chars=622 'Technical Q&A forum structure: answer format established, wi'
+[AV 289/400] sae_big idx=88 chars=644 'Technical tutorial structure: Java/algorithm explanation wit'
+[AV 290/400] sae_big idx=89 chars=662 'Structured healthcare billing guidance document, explaining '
+[AV 291/400] sae_big idx=90 chars=727 'Structured business/financial advisory explanation establish'
+[AV 292/400] sae_big idx=91 chars=675 'Technical tutorial structure: French/linux/web dev advice wi'
+[AV 293/400] sae_big idx=92 chars=643 'Forum/discussion structure with French/english mix, listing '
+[AV 294/400] sae_big idx=93 chars=581 'Structured article format with factual, formal Pakistani ele'
+[AV 295/400] sae_big idx=94 chars=669 'Academic legal/agricultural paper structure signals a struct'
+[AV 296/400] sae_big idx=95 chars=664 'Tutorial structure: instructional post about math/programmin'
+[AV 297/400] sae_big idx=96 chars=683 'Scientific explainer article structure: educational tone wit'
+[AV 298/400] sae_big idx=97 chars=568 'Literary/forum register: a poetic, humorous prompt format wi'
+[AV 299/400] sae_big idx=98 chars=633 'Repeating pattern of structured Arabic/academic text: verbat'
+[AV 300/400] sae_big idx=99 chars=667 'Article structure: informational essay format with repetitiv'
+[AV 301/400] sae_big idx=100 chars=556 'Structured translation pattern: German-language content with'
+[AV 302/400] sae_big idx=101 chars=598 'Repeating pattern of structured Q&A format: the text is repr'
+[AV 303/400] sae_big idx=102 chars=684 'Repeating pattern of structured document with consistent Q&A'
+[AV 304/400] sae_big idx=103 chars=643 'Literary/narrative structure: a short story synopsis or Span'
+[AV 305/400] sae_big idx=104 chars=637 'Literary/academic writing guide format: fragmented, incohere'
+[AV 306/400] sae_big idx=105 chars=624 'Forum/chat thread structure: informational text about weed/d'
+[AV 307/400] sae_big idx=106 chars=679 'Conversational interview format with quoted speech, establis'
+[AV 308/400] sae_big idx=107 chars=580 'Educational/informational structure: answer format with Hind'
+[AV 309/400] sae_big idx=108 chars=618 'AI/text generator content pattern: fragmented, incoherent sn'
+[AV 310/400] sae_big idx=109 chars=659 'Literary analysis format: structured description of a novel,'
+[AV 311/400] sae_big idx=110 chars=670 'Academic/forum discussion structure: text is analyzing a Pol'
+[AV 312/400] sae_big idx=111 chars=609 'Chat forum structure: answering a question about calculator/'
+[AV 313/400] sae_big idx=112 chars=612 'Repeating pattern of verbatim text: the forum post is reprod'
+[AV 314/400] sae_big idx=113 chars=591 'Repeating structure of essay format: structured analysis of '
+[AV 315/400] sae_big idx=114 chars=620 'Conversational AI transcript format: ongoing dialogue with a'
+[AV 316/400] sae_big idx=115 chars=484 'Encyclopedic/dictionary format with structured definition of'
+[AV 317/400] sae_big idx=116 chars=477 'Article structure: informational/listicle format with a summ'
+[AV 318/400] sae_big idx=117 chars=662 'Structured document explaining a ML/PhD paper, with ongoing '
+[AV 319/400] sae_big idx=118 chars=597 'Technical forum post structure: ongoing discussion with code'
+[AV 320/400] sae_big idx=119 chars=667 'Structured list of canonical literary works continues, with '
+[AV 321/400] sae_big idx=120 chars=689 'Academic literary/cultural studies format: bibliographic cit'
+[AV 322/400] sae_big idx=121 chars=628 'Instructional document listing training manual procedures, w'
+[AV 323/400] sae_big idx=122 chars=522 'Structured bullet-point document listing logistics/schedulin'
+[AV 324/400] sae_big idx=123 chars=603 'Article structure: informative piece on EU vehicle noise reg'
+[AV 325/400] sae_big idx=124 chars=576 'Formal parliamentary/institutional report structure: officia'
+[AV 326/400] sae_big idx=125 chars=671 'Legal document structure: formal federal district court opin'
+[AV 327/400] sae_big idx=126 chars=688 'Legal document structure: formal case summary format signals'
+[AV 328/400] sae_big idx=127 chars=688 'Structured tutorial format establishes explanatory context: '
+[AV 329/400] sae_big idx=128 chars=703 'Structured explainer article establishing a pedagogical patt'
+[AV 330/400] sae_big idx=129 chars=640 'Forum/advice post structure: user is giving a gaming/financi'
+[AV 331/400] sae_big idx=130 chars=558 'Structured documentation pattern: technical AI/ML reference '
+[AV 332/400] sae_big idx=131 chars=707 'Scientific abstract structure: formal biomedical framing est'
+[AV 333/400] sae_big idx=132 chars=703 'Structured scientific paper format: academic framing establi'
+[AV 334/400] sae_big idx=133 chars=613 'Podcast transcript format: dialogue structure with conversat'
+[AV 335/400] sae_big idx=134 chars=607 'Forum post rambling style: casual, conversational tone with '
+[AV 336/400] sae_big idx=135 chars=629 'Narrative structure: a character arc post is building toward'
+[AV 337/400] sae_big idx=136 chars=680 'Political analysis format: structured Q&A with factual repor'
+[AV 338/400] sae_big idx=137 chars=624 'Academic paper structure: abstract/methodology description f'
+[AV 339/400] sae_big idx=138 chars=663 'Academic paper structure: article is explaining ML/AI topic '
+[AV 340/400] sae_big idx=139 chars=631 'Ongoing persuasive/promotional speech structure: a fitness/a'
+[AV 341/400] sae_big idx=140 chars=659 'Ongoing forum/discussion post structure: a philosophical/fan'
+[AV 342/400] sae_big idx=141 chars=755 'Structured paper abstract format: formal scientific paper pr'
+[AV 343/400] sae_big idx=142 chars=717 'Scientific paper structure: abstract describing a photonic c'
+[AV 344/400] sae_big idx=143 chars=715 'Medical/clinical structure: formal academic paper describing'
+[AV 345/400] sae_big idx=144 chars=754 'Medical abstract structure: structured academic paper presen'
+[AV 346/400] sae_big idx=145 chars=659 'Technical debugging post structure: explaining a workaround '
+[AV 347/400] sae_big idx=146 chars=644 'Technical troubleshooting post structure: developer is provi'
+[AV 348/400] sae_big idx=147 chars=713 'Patent/technical document structure: formal description of a'
+[AV 349/400] sae_big idx=148 chars=720 'Patent document structure: formal technical description esta'
+[AV 350/400] sae_big idx=149 chars=715 'Technical documentation listing storage/VMware HA best pract'
+[AV 351/400] sae_big idx=150 chars=636 'Technical documentation pattern: formal description of a sto'
+[AV 352/400] sae_big idx=151 chars=738 'Structured physics explanation with a pedagogical narrative:'
+[AV 353/400] sae_big idx=152 chars=741 'Physics pedagogical structure: explaining classical mechanic'
+[AV 354/400] sae_big idx=153 chars=596 'Structured article pattern: repeating structure of translate'
+[AV 355/400] sae_big idx=154 chars=665 'Structured grammar/writing analysis format: answer is explai'
+[AV 356/400] sae_big idx=155 chars=645 'Structured article format with numbered list of dialogue/spe'
+[AV 357/400] sae_big idx=156 chars=675 'Forum/chat post structure: text is a fragmented, incoherent '
+[AV 358/400] sae_big idx=157 chars=644 'Repeating pattern of structured document format: each sectio'
+[AV 359/400] sae_big idx=158 chars=578 'Repeating pattern of structured Q&A format: verbatim copy of'
+[AV 360/400] sae_big idx=159 chars=606 'Educational/cultural context: a linguistic or etymological d'
+[AV 361/400] sae_big idx=160 chars=702 'Structured prompt format: a list of discussion questions wit'
+[AV 362/400] sae_big idx=161 chars=673 'Encyclopedic/educational format with fragmented, incoherent '
+[AV 363/400] sae_big idx=162 chars=633 'Repeating pattern of structured French/English translation w'
+[AV 364/400] sae_big idx=163 chars=556 'Hindi/Indian language answer format: conversational tone wit'
+[AV 365/400] sae_big idx=164 chars=613 'Repeating pattern of structured Q&A format with verbatim rep'
+[AV 366/400] sae_big idx=165 chars=578 'Historical/literary article structure: text is presenting a '
+[AV 367/400] sae_big idx=166 chars=649 'Repeating pattern of verbatim text: the document is reproduc'
+[AV 368/400] sae_big idx=167 chars=587 'Structured translation pattern: repeating format of "X anlam'
+[AV 369/400] sae_big idx=168 chars=611 'Fragmented, incoherent text pattern: scattered literary/word'
+[AV 370/400] sae_big idx=169 chars=592 'Article/forum format with fragmented, incoherent content sug'
+[AV 371/400] sae_big idx=170 chars=639 'Forum/thread structure: a conversational post with fragmente'
+[AV 372/400] sae_big idx=171 chars=436 'Repeating pattern of structured article format: each section'
+[AV 373/400] sae_big idx=172 chars=458 'Structured academic essay pattern: repeating format of poeti'
+[AV 374/400] sae_big idx=173 chars=550 'Academic/institutional context: structured article format wi'
+[AV 375/400] sae_big idx=174 chars=681 'Structured article format signals a formal mathematical/fina'
+[AV 376/400] sae_big idx=175 chars=624 'Narrative structure: a short story format with alternating d'
+[AV 377/400] sae_big idx=176 chars=666 'Literary narrative structure: a recipe/food description is b'
+[AV 378/400] sae_big idx=177 chars=509 'Structured document listing divisibility rules, with a consi'
+[AV 379/400] sae_big idx=178 chars=575 'Structured Q&A format with numbered math problems, requiring'
+[AV 380/400] sae_big idx=179 chars=615 'Business/scheduling communication tone: instructional email '
+[AV 381/400] sae_big idx=180 chars=626 'Ongoing meeting/scheduling advice is being delivered, with p'
+[AV 382/400] sae_big idx=181 chars=660 'Political document structure: a formal British Jewish voice '
+[AV 383/400] sae_big idx=182 chars=701 'Political argumentative structure: a formal socialist critiq'
+[AV 384/400] sae_big idx=183 chars=702 'Legal document structure: formal case summary explaining a s'
+[AV 385/400] sae_big idx=184 chars=614 'Legal case summary structure: the document is presenting a f'
+[AV 386/400] sae_big idx=185 chars=651 'Legal disclaimer boilerplate pattern: structured template fo'
+[AV 387/400] sae_big idx=186 chars=679 'Structured legal document format: boilerplate disclaimer boi'
+[AV 388/400] sae_big idx=187 chars=585 'Conversational forum post structure signals a brief philosop'
+[AV 389/400] sae_big idx=188 chars=634 'Conversational meta-commentary format: structured advice exc'
+[AV 390/400] sae_big idx=189 chars=732 'Academic/policy framework structure: formal EU health resear'
+[AV 391/400] sae_big idx=190 chars=715 'Academic paper structure: structured document with ongoing s'
+[AV 392/400] sae_big idx=191 chars=617 'Dialogue format with a character speaking, establishing a co'
+[AV 393/400] sae_big idx=192 chars=571 'Conversational foodie/lifestyle blog tone established, with '
+[AV 394/400] sae_big idx=193 chars=696 'Analytical structure: a cultural critique framing establishe'
+[AV 395/400] sae_big idx=194 chars=700 'Structured article format with a clear argumentative arc: a '
+[AV 396/400] sae_big idx=195 chars=625 'Structured article format with bullet-point list of AI/tech '
+[AV 397/400] sae_big idx=196 chars=739 'Academic article structure: formal German-cultural analysis '
+[AV 398/400] sae_big idx=197 chars=683 'Structured travel guide format with UK/Edinburgh location de'
+[AV 399/400] sae_big idx=198 chars=638 'Structured review format with descriptive, UK food guide ton'
+[AV 400/400] sae_big idx=199 chars=796 'Scientific paper structure: formal biochemical context estab'
+[freeze] explanations=c7d1be1c81ee371d9a90945495d49ba6e0d7dc379b2c0dc8f56b8740b9f481db
+Loading weights:   0%|          | 0/430 [00:00<?, ?it/s]Loading weights: 100%|██████████| 430/430 [00:00<00:00, 10001.39it/s]
+[transformers] [1mGemma3ForCausalLM LOAD REPORT[0m from: /root/autodl-tmp/models/nla-gemma3-12b-L32-ar
+Key               | Status  | 
+------------------+---------+-
+model.norm.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[NLACritic] 33 layers  d_model=3840  mse_scale=61.97
+[AR] sae_small 25/200
+[AR] sae_small 50/200
+[AR] sae_small 75/200
+[AR] sae_small 100/200
+[AR] sae_small 125/200
+[AR] sae_small 150/200
+[AR] sae_small 175/200
+[AR] sae_small 200/200
+[AR] sae_big 25/200
+[AR] sae_big 50/200
+[AR] sae_big 75/200
+[AR] sae_big 100/200
+[AR] sae_big 125/200
+[AR] sae_big 150/200
+[AR] sae_big 175/200
+[AR] sae_big 200/200
+[SAE fixed point] sae_small J=0.8309 code_cos=0.9603
+[SAE fixed point] sae_big J=0.7360 code_cos=0.9427
+J2_P0_RECON_COMPLETE result=946a399163fa9b5fc80088e1bede032fad26dca00331f2493e1b84028e1ed0f6 vectors=f08bd51344e9687f3f6885ce41e29374418ca4fb8b008cab829a704e3d5e3b0a elapsed=2918.2s
+[J2 causal] contract=bf0756fe865b7ab802aaddc50b3b1cf2907ceefe24f44a5730e41d5c32a4015a checkpoint=0/200 dry_run=False
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]Loading weights:   0%|          | 3/1065 [00:00<00:41, 25.35it/s]Loading weights:   2%|▏         | 18/1065 [00:00<00:12, 82.19it/s]Loading weights:   3%|▎         | 31/1065 [00:00<00:11, 93.78it/s]Loading weights:   4%|▍         | 44/1065 [00:00<00:10, 96.48it/s]Loading weights:   5%|▌         | 57/1065 [00:00<00:10, 97.96it/s]Loading weights:   7%|▋         | 70/1065 [00:00<00:09, 103.50it/s]Loading weights:   8%|▊         | 83/1065 [00:00<00:09, 107.83it/s]Loading weights:   9%|▉         | 96/1065 [00:00<00:08, 111.96it/s]Loading weights:  10%|█         | 109/1065 [00:01<00:08, 109.39it/s]Loading weights:  11%|█▏        | 121/1065 [00:01<00:09, 102.91it/s]Loading weights:  13%|█▎        | 135/1065 [00:01<00:08, 111.21it/s]Loading weights:  14%|█▍        | 148/1065 [00:01<00:08, 113.68it/s]Loading weights:  15%|█▌        | 161/1065 [00:01<00:08, 108.15it/s]Loading weights:  16%|█▋        | 174/1065 [00:01<00:08, 106.21it/s]Loading weights:  18%|█▊        | 187/1065 [00:01<00:08, 105.09it/s]Loading weights:  19%|█▉        | 200/1065 [00:01<00:08, 104.18it/s]Loading weights:  20%|█▉        | 212/1065 [00:02<00:08, 100.69it/s]Loading weights:  21%|██        | 224/1065 [00:02<00:08, 101.78it/s]Loading weights:  22%|██▏       | 237/1065 [00:02<00:08, 101.64it/s]Loading weights:  23%|██▎       | 250/1065 [00:02<00:08, 101.28it/s]Loading weights:  25%|██▍       | 261/1065 [00:02<00:07, 102.41it/s]Loading weights:  26%|██▌       | 272/1065 [00:02<00:09, 88.10it/s] Loading weights:  26%|██▋       | 282/1065 [00:02<00:08, 87.77it/s]Loading weights:  27%|██▋       | 291/1065 [00:02<00:09, 82.72it/s]Loading weights:  29%|██▊       | 304/1065 [00:03<00:08, 88.34it/s]Loading weights:  30%|██▉       | 316/1065 [00:03<00:08, 88.54it/s]Loading weights:  31%|███       | 327/1065 [00:03<00:08, 90.28it/s]Loading weights:  32%|███▏      | 339/1065 [00:03<00:07, 97.49it/s]Loading weights:  33%|███▎      | 349/1065 [00:03<00:08, 87.60it/s]Loading weights:  34%|███▎      | 359/1065 [00:03<00:09, 78.32it/s]Loading weights:  35%|███▍      | 368/1065 [00:03<00:08, 80.78it/s]Loading weights:  36%|███▌      | 380/1065 [00:03<00:07, 87.72it/s]Loading weights:  37%|███▋      | 391/1065 [00:04<00:07, 92.70it/s]Loading weights:  38%|███▊      | 401/1065 [00:04<00:07, 87.06it/s]Loading weights:  38%|███▊      | 410/1065 [00:04<00:08, 73.85it/s]Loading weights:  39%|███▉      | 420/1065 [00:04<00:08, 79.65it/s]Loading weights:  40%|████      | 430/1065 [00:04<00:07, 84.13it/s]Loading weights:  42%|████▏     | 443/1065 [00:04<00:06, 95.48it/s]Loading weights:  43%|████▎     | 453/1065 [00:04<00:06, 89.16it/s]Loading weights:  43%|████▎     | 463/1065 [00:04<00:07, 80.16it/s]Loading weights:  44%|████▍     | 473/1065 [00:05<00:07, 79.29it/s]Loading weights:  46%|████▌     | 486/1065 [00:05<00:06, 86.12it/s]Loading weights:  47%|████▋     | 498/1065 [00:05<00:06, 93.94it/s]Loading weights:  48%|████▊     | 510/1065 [00:05<00:05, 100.24it/s]Loading weights:  49%|████▉     | 523/1065 [00:05<00:05, 103.12it/s]Loading weights:  50%|█████     | 534/1065 [00:05<00:05, 103.14it/s]Loading weights:  51%|█████     | 545/1065 [00:05<00:05, 90.84it/s] Loading weights:  52%|█████▏    | 555/1065 [00:05<00:05, 90.79it/s]Loading weights:  53%|█████▎    | 565/1065 [00:06<00:05, 87.92it/s]Loading weights:  54%|█████▍    | 577/1065 [00:06<00:05, 90.79it/s]Loading weights:  55%|█████▌    | 589/1065 [00:06<00:05, 81.06it/s]Loading weights:  57%|█████▋    | 603/1065 [00:06<00:05, 87.86it/s]Loading weights:  58%|█████▊    | 615/1065 [00:06<00:04, 90.89it/s]Loading weights:  64%|██████▍   | 679/1065 [00:06<00:01, 224.02it/s]Loading weights:  78%|███████▊  | 829/1065 [00:06<00:00, 551.59it/s]Loading weights:  85%|████████▌ | 910/1065 [00:07<00:00, 480.99it/s]Loading weights: 100%|██████████| 1065/1065 [00:07<00:00, 150.12it/s]
+[doc 1/101] id=2934 rows=2 eta=3.7m
+[doc 2/101] id=6583 rows=2 eta=2.8m
+[doc 3/101] id=2477 rows=2 eta=2.5m
+[doc 4/101] id=8924 rows=2 eta=2.1m
+[doc 5/101] id=404 rows=2 eta=2.1m
+[doc 6/101] id=8724 rows=2 eta=2.0m
+[doc 7/101] id=4332 rows=2 eta=2.0m
+[doc 8/101] id=6387 rows=2 eta=1.9m
+[doc 9/101] id=504 rows=2 eta=1.9m
+[doc 10/101] id=5065 rows=2 eta=1.9m
+[doc 11/101] id=4107 rows=2 eta=1.8m
+[doc 12/101] id=8766 rows=2 eta=1.8m
+[doc 13/101] id=2901 rows=2 eta=1.7m
+[doc 14/101] id=1471 rows=2 eta=1.6m
+[doc 15/101] id=7703 rows=2 eta=1.6m
+[doc 16/101] id=4168 rows=2 eta=1.6m
+[doc 17/101] id=6570 rows=2 eta=1.6m
+[doc 18/101] id=6923 rows=2 eta=1.6m
+[doc 19/101] id=8079 rows=2 eta=1.5m
+[doc 20/101] id=3509 rows=2 eta=1.5m
+[doc 21/101] id=9589 rows=2 eta=1.5m
+[doc 22/101] id=9176 rows=2 eta=1.4m
+[doc 23/101] id=9305 rows=2 eta=1.4m
+[doc 24/101] id=9780 rows=2 eta=1.4m
+[doc 25/101] id=10053 rows=2 eta=1.3m
+[doc 26/101] id=9898 rows=2 eta=1.3m
+[doc 27/101] id=10348 rows=2 eta=1.3m
+[doc 28/101] id=9522 rows=2 eta=1.3m
+[doc 29/101] id=293 rows=2 eta=1.2m
+[doc 30/101] id=785 rows=2 eta=1.2m
+[doc 31/101] id=1053 rows=2 eta=1.2m
+[doc 32/101] id=2376 rows=2 eta=1.2m
+[doc 33/101] id=5398 rows=2 eta=1.2m
+[doc 34/101] id=1204 rows=2 eta=1.2m
+[doc 35/101] id=5428 rows=1 eta=1.1m
+[doc 36/101] id=6279 rows=2 eta=1.1m
+[doc 37/101] id=4432 rows=2 eta=1.1m
+[doc 38/101] id=8198 rows=2 eta=1.1m
+[doc 39/101] id=5849 rows=2 eta=1.1m
+[doc 40/101] id=6854 rows=2 eta=1.1m
+[doc 41/101] id=4280 rows=2 eta=1.0m
+[doc 42/101] id=4211 rows=2 eta=1.0m
+[doc 43/101] id=532 rows=2 eta=1.0m
+[doc 44/101] id=4304 rows=2 eta=1.0m
+[doc 45/101] id=55 rows=2 eta=1.0m
+[doc 46/101] id=3153 rows=2 eta=0.9m
+[doc 47/101] id=1604 rows=2 eta=0.9m
+[doc 48/101] id=8850 rows=2 eta=0.9m
+[doc 49/101] id=7741 rows=2 eta=0.9m
+[doc 50/101] id=9910 rows=2 eta=0.9m
+[doc 51/101] id=9542 rows=2 eta=0.9m
+[doc 52/101] id=9212 rows=2 eta=0.8m
+[doc 53/101] id=9390 rows=2 eta=0.8m
+[doc 54/101] id=9661 rows=2 eta=0.8m
+[doc 55/101] id=10128 rows=2 eta=0.8m
+[doc 56/101] id=9787 rows=2 eta=0.8m
+[doc 57/101] id=10199 rows=2 eta=0.7m
+[doc 58/101] id=10322 rows=2 eta=0.7m
+[doc 59/101] id=9530 rows=2 eta=0.7m
+[doc 60/101] id=6316 rows=2 eta=0.7m
+[doc 61/101] id=7623 rows=2 eta=0.7m
+[doc 62/101] id=5109 rows=2 eta=0.7m
+[doc 63/101] id=3422 rows=2 eta=0.6m
+[doc 64/101] id=8699 rows=2 eta=0.6m
+[doc 65/101] id=949 rows=2 eta=0.6m
+[doc 66/101] id=3627 rows=2 eta=0.6m
+[doc 67/101] id=1174 rows=2 eta=0.6m
+[doc 68/101] id=5578 rows=2 eta=0.6m
+[doc 69/101] id=5024 rows=2 eta=0.5m
+[doc 70/101] id=4666 rows=2 eta=0.5m
+[doc 71/101] id=8780 rows=2 eta=0.5m
+[doc 72/101] id=2765 rows=2 eta=0.5m
+[doc 73/101] id=4833 rows=2 eta=0.5m
+[doc 74/101] id=8080 rows=2 eta=0.5m
+[doc 75/101] id=7721 rows=2 eta=0.4m
+[doc 76/101] id=636 rows=2 eta=0.4m
+[doc 77/101] id=6312 rows=2 eta=0.4m
+[doc 78/101] id=9982 rows=2 eta=0.4m
+[doc 79/101] id=9555 rows=2 eta=0.4m
+[doc 80/101] id=9280 rows=2 eta=0.4m
+[doc 81/101] id=9358 rows=2 eta=0.3m
+[doc 82/101] id=9758 rows=2 eta=0.3m
+[doc 83/101] id=10048 rows=2 eta=0.3m
+[doc 84/101] id=9900 rows=2 eta=0.3m
+[doc 85/101] id=10182 rows=2 eta=0.3m
+[doc 86/101] id=10340 rows=2 eta=0.2m
+[doc 87/101] id=9529 rows=2 eta=0.2m
+[doc 88/101] id=269 rows=2 eta=0.2m
+[doc 89/101] id=6899 rows=2 eta=0.2m
+[doc 90/101] id=9102 rows=2 eta=0.2m
+[doc 91/101] id=4815 rows=2 eta=0.2m
+[doc 92/101] id=4461 rows=2 eta=0.1m
+[doc 93/101] id=3268 rows=2 eta=0.1m
+[doc 94/101] id=3557 rows=2 eta=0.1m
+[doc 95/101] id=5862 rows=2 eta=0.1m
+[doc 96/101] id=4716 rows=2 eta=0.1m
+[doc 97/101] id=1287 rows=2 eta=0.1m
+[doc 98/101] id=7098 rows=2 eta=0.1m
+[doc 99/101] id=6087 rows=2 eta=0.0m
+[doc 100/101] id=2801 rows=2 eta=0.0m
+[doc 101/101] id=6007 rows=1 eta=0.0m
+J2_CAUSAL_COMPLETE sha256=d021b5fd1cf89ea2a37be4b5ca74ee6f3f43c0442b8143ef3791607b31651bfe forwards=1301 elapsed=110.9s
+J2_ANALYSIS_COMPLETE analysis=692f7dd0e7cf6eeb5b3e62c6cebb2afd3c0989bd54b76454f9c5d86b0e774642 shortlist=b21a53bda1a6672b1327f303f978f67ac7eb1a0f3933e607c210cdb539fea405 markdown=660579d8ef54f4e6f05740a1b9ead17ee9667ad3884a943a60463964a487a7d6
+J2_CASE_BUNDLE_COMPLETE json=5985442c9e389bc90d9c1acfbb4c454e57ea52cb3fa9b88a14a5e95b0d3557a8 markdown=04f36d076665c0505f8f1c6aa987c6dffab3388b96934131962ea6c8dc509bc3 cases=35
+[2026-08-07T11:57:10+08:00] J2_COMPLETE

@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "experiment": "C1 confirmatory synthetic concept cohort v3",
+  "status": "frozen_before_v3r2_generation",
+  "purpose": "Apply the already frozen v3 semantic checks to the final v3r2 scenario-anchor asset before any generated v3 text exists.",
+  "inherits": {
+    "path": "server/c1_confirmatory_manual_audit_rubric_v1.json",
+    "sha256": "821eb57d3b8c2109acd623137b7f6ba35cb67e74f459bded791ad2eb2d7ec48a",
+    "all_inherited_checks_remain_mandatory": true
+  },
+  "scenario_anchors": {
+    "path": "server/c1_confirmatory_scenario_anchors_v3r2.json",
+    "sha256": "3b38876a663ea3a3a9a1623017242a06e0f51b667109cf60bb8de549cb21600a",
+    "status": "frozen_before_v3r2_generation"
+  },
+  "review_blinding": {
+    "permitted": [
+      "frozen target concept title and summary",
+      "frozen reciprocal hard-negative title and summary",
+      "the assigned v3 scenario anchor and discourse role",
+      "all six generated requests for the target concept",
+      "both six-request batches in the reciprocal pair",
+      "mechanical v3 corpus report",
+      "the inherited rubric and this addendum"
+    ],
+    "prohibited": [
+      "the other independent review or any partial judgment from it",
+      "residual activations",
+      "SAE activations or feature IDs",
+      "AV or AR output",
+      "held-out metrics",
+      "any primary or secondary endpoint"
+    ]
+  },
+  "inherited_document_check_order": [
+    "central_topic_adherence",
+    "no_hard_negative_contamination",
+    "no_named_entity_or_product",
+    "request_not_answer",
+    "prose_only"
+  ],
+  "additional_document_checks": [
+    {
+      "id": "scenario_anchor_adherence",
+      "pass_rule": "The request centrally instantiates both the assigned scenario_anchor and its frozen discourse role; changing to an adjacent application or generic concept summary fails."
+    },
+    {
+      "id": "no_anchor_copy_or_meta_discussion",
+      "pass_rule": "The request does not quote the anchor as a heading, list item, instruction, dataset label, split label, or meta-description. Natural reuse of necessary generic content words is allowed."
+    },
+    {
+      "id": "no_exact_target_or_hard_negative_title",
+      "pass_rule": "The normalized exact target title and normalized exact reciprocal hard-negative title are both absent from the request."
+    },
+    {
+      "id": "single_english_prose_question",
+      "pass_rule": "The text is one English prose paragraph that functions as one user question, ends in a question mark, and contains no answer, list, code, formula block, table, or heading."
+    }
+  ],
+  "inherited_concept_batch_check_order": [
+    "distinct_scenarios",
+    "heldout_scenario_separation",
+    "style_balance"
+  ],
+  "additional_concept_batch_checks": [
+    {
+      "id": "discourse_schedule_adherence",
+      "pass_rule": "In the frozen order, the six requests fulfill causal mechanism, contrastive diagnosis, design tradeoff, failure analysis, counterfactual prediction, and evidence interpretation respectively; no slot is replaced or duplicated."
+    },
+    {
+      "id": "anchor_set_coverage",
+      "pass_rule": "Every one of the concept's six frozen anchors is realized once and only once, with no merged, omitted, or reassigned scenario."
+    }
+  ],
+  "reciprocal_pair_checks": [
+    {
+      "id": "reciprocal_mapping_integrity",
+      "pass_rule": "The two batches are the two frozen reciprocal concepts in the same superdomain and each names the other as its hard negative in the frozen specification."
+    },
+    {
+      "id": "pair_hard_negative_separation",
+      "pass_rule": "No request on either side centrally requires, promises, or tests the reciprocal concept as a co-equal goal; contextual adjacency alone is allowed only when the target remains sufficient for the requested explanation."
+    },
+    {
+      "id": "reciprocal_pair_style_balance",
+      "pass_rule": "Both sides realize the same ordered discourse-role schedule with comparable request form and specificity; wording, template, named-entity, code, equation, or repeated-frame shortcuts cannot identify the pair member independently of content."
+    }
+  ],
+  "decision_rule": "Every inherited and additional document, concept-batch, and reciprocal-pair check must pass in both independently hash-locked reviews. Any failure or disagreement stops v3 before activation extraction. Generated text is not edited and no document or concept is selectively regenerated.",
+  "independence_protocol": {
+    "reviewers": 2,
+    "each_reviews_all_documents_concepts_and_pairs": true,
+    "each_review_locked_before_aggregation": true,
+    "reviewers_cannot_view_or_coordinate_with_each_other": true,
+    "aggregation": "deterministic conservative conjunction after both review hashes are locked"
+  },
+  "required_output": {
+    "status_values": [
+      "PASS",
+      "FAIL"
+    ],
+    "document_check_order": [
+      "central_topic_adherence",
+      "no_hard_negative_contamination",
+      "no_named_entity_or_product",
+      "request_not_answer",
+      "prose_only",
+      "scenario_anchor_adherence",
+      "no_anchor_copy_or_meta_discussion",
+      "no_exact_target_or_hard_negative_title",
+      "single_english_prose_question"
+    ],
+    "concept_batch_check_order": [
+      "distinct_scenarios",
+      "heldout_scenario_separation",
+      "style_balance",
+      "discourse_schedule_adherence",
+      "anchor_set_coverage"
+    ],
+    "pair_check_order": [
+      "reciprocal_mapping_integrity",
+      "pair_hard_negative_separation",
+      "reciprocal_pair_style_balance"
+    ],
+    "coverage": {
+      "documents": 144,
+      "document_checks": 1296,
+      "concept_batches": 24,
+      "concept_batch_checks": 120,
+      "reciprocal_pairs": 12,
+      "pair_checks": 36
+    },
+    "fields": [
+      "schema_version",
+      "experiment",
+      "status",
+      "base_rubric_sha256",
+      "addendum_sha256",
+      "scenario_anchors_sha256",
+      "combined_manifest_sha256",
+      "discovery_manifest_sha256",
+      "heldout_manifest_sha256",
+      "reviewer",
+      "document_decisions",
+      "concept_batch_decisions",
+      "pair_decisions",
+      "failure_reasons",
+      "coverage",
+      "attestation"
+    ]
+  },
+  "revision": {
+    "type": "final pre-text anchor-design iteration",
+    "failed_anchor_draft_sha256": "061903133b748ccffe2f85f697c5e6a7d53fd631e63fb1c0302ae42fbd59e6d5",
+    "failed_anchor_audit_sha256": "5dcc267ad9f6bf9765bbb7c6ab3965498c275c7df3165780f5f1d79301c2a396",
+    "generated_v3_text_existed_before_revision": false,
+    "further_anchor_iteration_if_v3r2_fails": false,
+    "all_document_batch_and_pair_checks_unchanged": true
+  }
+}

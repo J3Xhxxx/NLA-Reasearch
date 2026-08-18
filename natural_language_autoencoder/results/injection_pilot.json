@@ -1,0 +1,852 @@
+{
+  "method": "injection_pilot",
+  "summary": {
+    "features": [
+      166,
+      443,
+      239,
+      490
+    ],
+    "resid_rows": [
+      0,
+      10,
+      20,
+      30
+    ],
+    "target_norm": 67024.4,
+    "detection_curve": {
+      "0.0": {
+        "n": 16,
+        "mean_abs_cos_sig": 0.9187,
+        "max": 0.9572,
+        "frac_gt_0.5": 1.0
+      },
+      "0.25": {
+        "n": 16,
+        "mean_abs_cos_sig": 0.9014,
+        "max": 0.9526,
+        "frac_gt_0.5": 1.0
+      },
+      "0.5": {
+        "n": 16,
+        "mean_abs_cos_sig": 0.9033,
+        "max": 0.9526,
+        "frac_gt_0.5": 1.0
+      },
+      "1.0": {
+        "n": 16,
+        "mean_abs_cos_sig": 0.9095,
+        "max": 0.9493,
+        "frac_gt_0.5": 1.0
+      },
+      "2.0": {
+        "n": 16,
+        "mean_abs_cos_sig": 0.9189,
+        "max": 0.9491,
+        "frac_gt_0.5": 1.0
+      }
+    }
+  },
+  "rows": [
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 166,
+      "alpha": 0.0,
+      "overlap": 0.1166,
+      "explanation": "Article structure: informational/review format with a detailed explainer on the Fibonacci sequence, following a standard academic tone.\n\nThe phrase \"The Fibonacci sequence is a mathematical sequence in which each term is the sum of the previous two'\" signals a repeating boilerplate description of the topic, likely a citation or reference block.\n\nFinal token \"it'\" opens a closing sentence fragment (\"it'\") — immediately expects a noun phrase like \"the Eiffel Tower\" or \"the article\" or \"a list of historical examples,\" likely \"s\" or \"This article\" or \"the Fibonacci number is...\" or \"by the BBC\" or \"is a classic example\" continuing the sentence.",
+      "cos_sig": -0.9464,
+      "cos_res": -0.1073
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 443,
+      "alpha": 0.0,
+      "overlap": 0.1115,
+      "explanation": "Article structure: informational/review format with a detailed explainer on the Fibonacci sequence, following a standard academic tone.\n\nThe phrase \"The Fibonacci sequence is a mathematical sequence in which each term is the sum of the previous two'\" signals a repeating boilerplate description of the topic, likely a citation or reference block.\n\nFinal token \"it'\" opens a closing sentence fragment (\"it'\") — immediately expects a noun phrase like \"the Eiffel Tower\" or \"the article\" or \"a list of historical examples,\" likely \"s\" or \"This article\" or \"the Fibonacci number is...\" or \"by the BBC\" or \"is a classic example\" continuing the sentence.",
+      "cos_sig": -0.9412,
+      "cos_res": -0.1073
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 239,
+      "alpha": 0.0,
+      "overlap": -0.1056,
+      "explanation": "Article structure: informational/review format with a detailed explainer on the Fibonacci sequence, following a standard academic tone.\n\nThe phrase \"The Fibonacci sequence is a mathematical sequence in which each term is the sum of the previous two'\" signals a repeating boilerplate description of the topic, likely a citation or reference block.\n\nFinal token \"it'\" opens a closing sentence fragment (\"it'\") — immediately expects a noun phrase like \"the Eiffel Tower\" or \"the article\" or \"a list of historical examples,\" likely \"s\" or \"This article\" or \"the Fibonacci number is...\" or \"by the BBC\" or \"is a classic example\" continuing the sentence.",
+      "cos_sig": 0.8969,
+      "cos_res": -0.1073
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 490,
+      "alpha": 0.0,
+      "overlap": -0.0993,
+      "explanation": "Article structure: informational/review format with a detailed explainer on the Fibonacci sequence, following a standard academic tone.\n\nThe phrase \"The Fibonacci sequence is a mathematical sequence in which each term is the sum of the previous two'\" signals a repeating boilerplate description of the topic, likely a citation or reference block.\n\nFinal token \"it'\" opens a closing sentence fragment (\"it'\") — immediately expects a noun phrase like \"the Eiffel Tower\" or \"the article\" or \"a list of historical examples,\" likely \"s\" or \"This article\" or \"the Fibonacci number is...\" or \"by the BBC\" or \"is a classic example\" continuing the sentence.",
+      "cos_sig": 0.8822,
+      "cos_res": -0.1073
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 166,
+      "alpha": 0.25,
+      "overlap": 0.1166,
+      "explanation": "Article structure: informational/review format with a detailed explainer on the Fibonacci sequence, following a standard academic tone.\n\nThe phrase \"The Fibonacci sequence is a mathematical sequence in which...\" signals a repeating pattern of descriptive prose, likely continuing with a summary or conclusion about the article.\n\nFinal token \"it'\" opens a new sentence fragment mid-paragraph (\"it'\"), immediately requiring a verb phrase — likely \"s\" or \"the Eiffel Tower\" or \"This is...\" or \"a classic example\" or \"the text is...\" or \"the function\" — likely a citation or closing remark like \"the city\" or \"the beauty of the algorithm.\"",
+      "cos_sig": -0.9441,
+      "cos_res": -0.1075
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 166,
+      "alpha": 0.5,
+      "overlap": 0.1166,
+      "explanation": "Article structure: informational/review format with a detailed explainer on the Fibonacci sequence, following a standard academic tone.\n\nThe phrase \"The Fibonacci sequence is the most beautiful of all\" signals a repeating pattern of the article's content, likely a citation or reference to the Wikipedia entry.\n\nFinal token \"it'\" opens a closing sentence fragment (\"it'\") — immediately expects a noun phrase like \"the Eiffel Tower\" or \"the city\" or \"a list of historical examples,\" likely \"s\" or \"This article\" or \"the Fibonacci number\" or \"are...\" continuing the sentence about the function's role or a section header like \"The.\"",
+      "cos_sig": -0.9409,
+      "cos_res": -0.1064
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 166,
+      "alpha": 1.0,
+      "overlap": 0.1166,
+      "explanation": "Article structure: informational/review format with a long-form essay on a specific topic, following standard academic writing conventions.\n\nThe phrase \"The Eiffel Tower is one of the most famous landmarks in the world'\" signals a repeating citation pattern, likely a bibliographic or source reference to the paper.\n\nFinal token \"it'\" opens a closing clause (\"it'\"), immediately requiring a verb phrase — likely \"world\" or \"the city\" to complete the sentence, then likely \"This article\" or \"the Fibonacci sequence\" or \"a detailed analysis...\" or \"However, the function is...\" or \"9.\" continuing the sentence about the mathematical context or a footnote/citation.",
+      "cos_sig": -0.9462,
+      "cos_res": -0.1081
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 166,
+      "alpha": 2.0,
+      "overlap": 0.1166,
+      "explanation": "Article structure: informational/review format with a factual, encyclopedic tone covering a specific historical landmark and architectural topic.\n\nThe phrase \"the Eiffel Tower is a landmark in Paris.\" signals a repeating pattern of boilerplate description, suggesting a standard Wikipedia-style summary sentence about the Eiffel Tower.\n\nFinal token \"it'\" opens a closing clause (\"it'\"), immediately requiring a verb phrase — likely \"s\" or \"the city\" or \"the Eiffel Tower\" — continuing the sentence with \"This is the most...\" or \"a classic example of...\" or \"However, the...\" or \"1999.\" referencing the article's content or a citation/footnote.",
+      "cos_sig": -0.947,
+      "cos_res": -0.0945
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 443,
+      "alpha": 0.25,
+      "overlap": 0.1115,
+      "explanation": "Article structure: informational/review format with a detailed explainer on the Fibonacci sequence, following a standard academic tone.\n\nThe phrase \"The Fibonacci sequence is a mathematical sequence in which each term is the sum of the previous two'\" signals a repeating boilerplate description of the topic, likely a citation or summary block.\n\nFinal token \"it'\" opens a new sentence fragment (\"it'\") — immediately expects a noun phrase like \"the Eiffel Tower\" or \"the article\" or \"a list of...\" likely continuing with \"This is...\" or \"the Fibonacci number\" or \"or\" or \"is a classic example\" or \"The text is...\" to complete the closing sentence.",
+      "cos_sig": -0.9408,
+      "cos_res": -0.1078
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 443,
+      "alpha": 0.5,
+      "overlap": 0.1115,
+      "explanation": "Article structure: informational/review format with a detailed explainer on the Fibonacci sequence, following a standard academic tone.\n\nThe phrase \"The Fibonacci sequence is...\" signals a repeating pattern of descriptive prose, likely continuing with a citation or reference to the Wikipedia article.\n\nFinal token \"it'\" opens a new sentence fragment after \"it'\" — strongly expects a noun phrase like \"the city\" or \"the Fibonacci number\" or \"This article\" to follow, likely \"s\" or \"a list of...\" or \"The Eiffel Tower\" or \"is a classic example\" or \"The text is...\" continuing the closing boilerplate about the article's content.",
+      "cos_sig": -0.9372,
+      "cos_res": -0.1073
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 443,
+      "alpha": 1.0,
+      "overlap": 0.1115,
+      "explanation": "Article structure: a long-form explainer on a specific topic, following a standard review format with factual, informative prose.\n\nThe phrase \"The Fibonacci sequence is a mathematical pattern...\" signals a repeating pattern of \"The Fibonacci sequence\" as a section header or citation, suggesting a concluding summary or reference.\n\nFinal token \"it'\" opens a new sentence fragment after \"it'\" — likely a citation marker or transitional phrase like \"This is the most...\" or \"the article\" or \"a list of the best...\" or \"However, the game is...\" or \"the name\" — likely \"s\" or \"the text\" or \"a classic example of...\"",
+      "cos_sig": -0.9394,
+      "cos_res": -0.1097
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 443,
+      "alpha": 2.0,
+      "overlap": 0.1115,
+      "explanation": "Article structure: a long-form review of a specific game, following a standard format of technical description and narrative summary.\n\nThe phrase \"The game is a classic RPG, with a rating of 9/10\" signals a repeating pattern of listing the key characteristics of the game.\n\nFinal token \"it'\" opens a new sentence after the repeated phrase \"This is the most popular game in the world'\" — immediately expects a citation or continuation like \"s\" or \"the text\" or \"The Fibonacci sequence\" or \"This section covers...\" or \"a list of facts\" or \"or.\" — likely a closing boilerplate or section header referencing the Wikipedia.",
+      "cos_sig": -0.9414,
+      "cos_res": -0.1104
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 239,
+      "alpha": 0.25,
+      "overlap": -0.1056,
+      "explanation": "Article structure: informational/educational format with a detailed explainer on the Fibonacci sequence, following a standard review pattern.\n\nThe phrase \"The Fibonacci sequence is a mathematical sequence in which...\" signals a repeating or concluding summary statement, likely referencing the article's core topic of the Fibonacci number.\n\nFinal token \"it'\" opens a new sentence fragment (\"it'\") — immediately expects a citation or section marker like \"This article\" or \"the Fibonacci number\" or \"a list of...\" or \"s.\" — likely \"the first\" or \"The Eiffel Tower\" or \"is a classic example\" or \"The text is a review of...\" continuing the grammatical construction.",
+      "cos_sig": 0.8968,
+      "cos_res": -0.107
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 239,
+      "alpha": 0.5,
+      "overlap": -0.1056,
+      "explanation": "Article structure: informational/educational format with a structured overview of a specific topic, following a standard explainer pattern for the Fibonacci sequence.\n\nThe phrase \"The Fibonacci sequence is...\" signals a concluding section, with the text now transitioning to a summary or citation of the article.\n\nFinal token \"it'\" opens a new sentence fragment (\"it'\"), immediately requiring a noun phrase — likely \"the Fibonacci numbers\" or \"a classic example\" or \"This article\" or \"s.\" — likely continuing with \"the history of...\" or \"is...\" or \"The function\" or \"a detailed analysis\" to complete the sentence about the mathematical context or the book.",
+      "cos_sig": 0.8989,
+      "cos_res": -0.1073
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 239,
+      "alpha": 1.0,
+      "overlap": -0.1056,
+      "explanation": "Structured article format with a formal explainer tone signals a structured overview of the topic, following standard academic/SEO conventions.\n\nThe phrase \"The Fibonacci sequence is a mathematical concept\" introduces a section header or introductory paragraph, establishing a detailed discussion of the topic.\n\nFinal token \"it'\" opens a new sentence or section header (\"it'\"), immediately requiring a noun phrase — likely \"the Fibonacci sequence\" or \"This article\" or \"a detailed overview\" — or a transitional phrase like \"s\" or \"is a classic example\" or \"The history of...\" or \"by the author\" continuing the boilerplate boilerplate disclaimer about the article.",
+      "cos_sig": 0.9006,
+      "cos_res": -0.1061
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 239,
+      "alpha": 2.0,
+      "overlap": -0.1056,
+      "explanation": "Structured article format with a formal explainer tone signals a structured response covering the topic of mathematical optimization.\n\nThe phrase \"The topic of the article is...\" establishes a standard academic/educational framing, with \"The answer is...\" now beginning a section header or introductory paragraph typical to the article.\n\nFinal token \"it'\" opens a section header or transitional phrase (\"it's...\"), immediately requiring a topic sentence like \"The Fibonacci sequence\" or \"the answer is...\" — likely \"There are several reasons why...\" or \"mathematics\" or \"This article\" or \"the section\" or \"a classic example of...\" to introduce the discussion of the broader context.",
+      "cos_sig": 0.9044,
+      "cos_res": -0.1061
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 490,
+      "alpha": 0.25,
+      "overlap": -0.0993,
+      "explanation": "Article structure: informational/review format with a detailed analysis of a specific math problem, following a standard academic tone.\n\nThe phrase \"The Fibonacci sequence is the most famous of all\" signals a repeating pattern of the article's boilerplate description, likely continuing with a summary or conclusion.\n\nFinal token \"it'\" opens a new sentence fragment mid-paragraph (\"it'\"), immediately requiring a verb phrase — likely \"s\" or \"the Eiffel Tower\" or \"This is...\" or \"a list of...\" or \"the answer\" or \"However, the function is...\" or \"the first.\" — a citation or closing remark about the Python/C++ code block.",
+      "cos_sig": 0.8565,
+      "cos_res": -0.1014
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 490,
+      "alpha": 0.5,
+      "overlap": -0.0993,
+      "explanation": "Article structure: informational/review format with a summary of a specific research paper, following standard academic writing conventions.\n\nThe phrase \"The most important thing is that...\" signals a repeating pattern of the \"The Eiffel Tower\" example, suggesting a concluding or illustrative statement about the Fibonacci sequence.\n\nFinal token \"it'\" opens a closing clause (\"it'\") — likely \"the Fibonacci sequence\" or \"this\" — immediately expecting a verb phrase like \"s\" or \"is a classic example\" or \"The city\" or \"The article is...\" or \"a blog post\" or \"9.\" continuing the sentence about the 1999 paper or the overall context.",
+      "cos_sig": 0.8778,
+      "cos_res": -0.1067
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 490,
+      "alpha": 1.0,
+      "overlap": -0.0993,
+      "explanation": "Article structure: informational/review format with a Wikipedia-style summary of a specific architectural landmark, following standard academic tone.\n\nThe phrase \"This is the most famous building in the world'\" signals a repeating pattern of factual elaboration about the Eiffel Tower, likely continuing with a citation or source reference.\n\nFinal token \"it'\" opens a closing sentence fragment (\"it'\"), immediately requiring a verb phrase — likely \"world\" or \"the Eiffel Tower\" to complete the clause, or \"This article\" or \"a list of...\" or \"The result is...\" or \"by the French.\" or \"The text is a technical description\" — a standard bibliographic/citation closing.",
+      "cos_sig": 0.8839,
+      "cos_res": -0.1043
+    },
+    {
+      "resid_idx": 0,
+      "token": ",",
+      "feature": 490,
+      "alpha": 2.0,
+      "overlap": -0.0993,
+      "explanation": "Article structure: informational/encyclopedic format with a technical review of a specific architectural landmark, following standard Wikipedia style.\n\nThe phrase \"This is because the building'\" signals a repeating pattern of explaining why the Eiffel Tower is notable, with a concluding summary statement about its historical significance.\n\nFinal token \"it'\" opens a new clause mid-sentence (\"it'\"), immediately requiring a verb phrase — likely \"s\" or \"the Eiffel Tower\" or \"a detailed description\" or \"is considered...\" or \"This article covers...\" or \"the answer.\" or \"by.\" — completing the grammatical predicate about the article's content or a citation/reference to the code.",
+      "cos_sig": 0.8858,
+      "cos_res": -0.0982
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 166,
+      "alpha": 0.0,
+      "overlap": -0.0858,
+      "explanation": "Structured article format with a technical explainer pattern: \"The Role of X\" signals a standard academic/review summary for a game/engineering topic.\n\nThe phrase \"The role of the Fourier transform is to analyze the signal\" establishes a repeating pattern of listing key topics, now introducing the full article summary.\n\nFinal token \"...\" ends a topic sentence opener (\"including...\"), immediately requiring a list of enumerated topics or a continuation like \"the user\" or \"The first three topics...\" — likely \"This article\" or \"energy efficiency\" or \"the game's mechanics\" or \"described\" or \"a structured overview of...\" mirroring the three listed sections.",
+      "cos_sig": -0.9545,
+      "cos_res": 0.093
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 443,
+      "alpha": 0.0,
+      "overlap": -0.077,
+      "explanation": "Structured article format with a technical explainer pattern: \"The Role of X\" signals a standard academic/review summary for a game/engineering topic.\n\nThe phrase \"The role of the Fourier transform is to analyze the signal\" establishes a repeating pattern of listing key topics, now introducing the full article summary.\n\nFinal token \"...\" ends a topic sentence opener (\"including...\"), immediately requiring a list of enumerated topics or a continuation like \"the user\" or \"The first three topics...\" — likely \"This article\" or \"energy efficiency\" or \"the game's mechanics\" or \"described\" or \"a structured overview of...\" mirroring the three listed sections.",
+      "cos_sig": -0.9386,
+      "cos_res": 0.093
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 239,
+      "alpha": 0.0,
+      "overlap": 0.0735,
+      "explanation": "Structured article format with a technical explainer pattern: \"The Role of X\" signals a standard academic/review summary for a game/engineering topic.\n\nThe phrase \"The role of the Fourier transform is to analyze the signal\" establishes a repeating pattern of listing key topics, now introducing the full article summary.\n\nFinal token \"...\" ends a topic sentence opener (\"including...\"), immediately requiring a list of enumerated topics or a continuation like \"the user\" or \"The first three topics...\" — likely \"This article\" or \"energy efficiency\" or \"the game's mechanics\" or \"described\" or \"a structured overview of...\" mirroring the three listed sections.",
+      "cos_sig": 0.8999,
+      "cos_res": 0.093
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 490,
+      "alpha": 0.0,
+      "overlap": 0.0764,
+      "explanation": "Structured article format with a technical explainer pattern: \"The Role of X\" signals a standard academic/review summary for a game/engineering topic.\n\nThe phrase \"The role of the Fourier transform is to analyze the signal\" establishes a repeating pattern of listing key topics, now introducing the full article summary.\n\nFinal token \"...\" ends a topic sentence opener (\"including...\"), immediately requiring a list of enumerated topics or a continuation like \"the user\" or \"The first three topics...\" — likely \"This article\" or \"energy efficiency\" or \"the game's mechanics\" or \"described\" or \"a structured overview of...\" mirroring the three listed sections.",
+      "cos_sig": 0.8787,
+      "cos_res": 0.093
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 166,
+      "alpha": 0.25,
+      "overlap": -0.0858,
+      "explanation": "Structured article format with a technical explainer tone signals a repeating pattern of \"Topic: X\" sections covering the game.\n\nThe phrase \"The first topic is the role of the...\" establishes a standard academic/review summary, with \"The main topics include...\" introducing a list of key concepts.\n\nFinal token \"it'\" opens a new sentence after \"including the...\" — immediately expects a topic continuation like \"water\" or \"the game\" or \"the following three sections,\" likely \"The role of the sun\" or \"a structured article\" or \"This article is...\" or \"the user manual\" or \"the 3D model\" mirroring the enumerated list.",
+      "cos_sig": -0.95,
+      "cos_res": 0.0944
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 166,
+      "alpha": 0.5,
+      "overlap": -0.0858,
+      "explanation": "Structured article format with a technical review of a specific topic, following a pattern of presenting detailed automotive/engineering content.\n\nThe phrase \"The main topics covered include the role of the engine\" signals a repeating boilerplate section header, establishing a standard academic summary of the article.\n\nFinal token \"it'\" opens a new sentence after \"the engine'\" — immediately expects a list of three core topics (\"The role of the engine...\"), likely \"water\" or \"the article\" or \"three key concepts\" or \"The first section...\" or \"This article is a...\" or \"a list of three topics\" mirroring the standard academic citation/summary phrasing.",
+      "cos_sig": -0.9483,
+      "cos_res": 0.0975
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 166,
+      "alpha": 1.0,
+      "overlap": -0.0858,
+      "explanation": "Article structure: a technical explainer format with a structured overview of a specific topic, now delivering a detailed analysis of the \"heat transfer equation.\"\n\nThe phrase \"The heat transfer equation is...\" signals a repeating pattern of listing key topics, suggesting a standard academic/blog boilerplate introduction to the article.\n\nFinal token \"it'\" opens a new sentence fragment (\"This includes...\"), immediately requiring a continuation like \"the role of...\" or \"The first topic\" — likely \"article\" or \"The Arduino IDE\" or \"This article covers...\" or \"water\" or \"However, the...\" or \"a summary statement\" mirroring the standard academic citation/overview phrasing.",
+      "cos_sig": -0.9489,
+      "cos_res": 0.0919
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 166,
+      "alpha": 2.0,
+      "overlap": -0.0858,
+      "explanation": "Article structure: automotive/HVAC technical writing with a structured review format, now presenting a detailed analysis of the \"three Rs\" framework.\n\nThe phrase \"The goal of the heating system is to...\" signals a repeating pattern of summarizing/listing key topics, suggesting a standard academic summary statement about the broader argument.\n\nFinal token \"it'\" opens a new sentence fragment (\"it's...the most important role of...\"), immediately requiring a continuation like \"the heating system\" or \"This article\" — likely \"However...\" or \"The role of the heating system\" or \"article is...\" or \"a list of common misconceptions\" or \"to be.\"",
+      "cos_sig": -0.9482,
+      "cos_res": 0.0917
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 443,
+      "alpha": 0.25,
+      "overlap": -0.077,
+      "explanation": "Structured article format with a Q&A pattern: \"What is X?\" signals a standard technical explainer, requiring a summary or conclusion.\n\nThe phrase \"The role of the thermostat is to regulate the temperature\" establishes a repeating enumeration of key topics, now listing the three main components.\n\nFinal token \"it'\" opens a new sentence after \"including the...\" — immediately expects a topic continuation like \"the article\" or \"energy\" or \"The first topic\" or \"This article covers...\" or \"a list of three topics\" or \"However, the answer is...\" or \"the user manual\" — a formal academic/blog closing phrase referencing the full analysis.",
+      "cos_sig": -0.9424,
+      "cos_res": 0.0921
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 443,
+      "alpha": 0.5,
+      "overlap": -0.077,
+      "explanation": "Structured article format with a Q&A pattern: \"What is X?\" signals a standard technical explainer, requiring a summary or conclusion.\n\nThe phrase \"The role of the thermostat is to optimize the temperature\" establishes a repeating list of three key topics: the algorithm, the dataset, and the model.\n\nFinal token \"it'\" opens a new sentence after \"including the dataset.\" — immediately expects a continuation like \"the model\" or \"This article covers...\" or \"The first topic...\" or \"The article follows...\" or \"are three key components\" or \"by default.\" — likely a citation or section header referencing the full answer or a list of topics.",
+      "cos_sig": -0.9413,
+      "cos_res": 0.0936
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 443,
+      "alpha": 1.0,
+      "overlap": -0.077,
+      "explanation": "Structured article format with a list of parameters, requiring a detailed technical description of the \"The Elder Scrolls IV: Oblivion\" mod.\n\nThe phrase \"The main parameters include: the light source, the skybox, and the fog\" signals a repeating pattern of listing key components.\n\nFinal token \"it'\" opens a new sentence after \"the shader.\" — immediately expects a continuation like \"The shader\" or \"the topic\" or \"This article follows...\" or \"the game\" or \"The role of the sun\" or \"a summary/conclusion.\" or \"are enumerated\" — likely \"3.\" or \"the game description\" mirroring the intro.",
+      "cos_sig": -0.9403,
+      "cos_res": 0.0932
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 443,
+      "alpha": 2.0,
+      "overlap": -0.077,
+      "explanation": "Structured article format with a list of parameters, requiring a detailed technical description of the game/model.\n\nThe phrase \"The goal of the algorithm is to find the optimal solution\" signals a repeating pattern of \"X is the most important parameter\" — the article is now listing the three main parameters.\n\nFinal token \"it'\" opens a repeated section header (\"Light intensity...\"), immediately requiring continuation like \"The role of the sun\" or \"article follows\" or \"The article is...\" — likely \"3 parameters\" or \"This article\" or \"The first parameter is...\" or \"or\" or \"a standard academic review format\" mirroring the enumerated list of inputs.",
+      "cos_sig": -0.9403,
+      "cos_res": 0.0934
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 239,
+      "alpha": 0.25,
+      "overlap": 0.0735,
+      "explanation": "Structured article format with a factual, encyclopedic tone signals a standard academic summary of a video game/engineering topic.\n\nThe phrase \"The main topics covered include the role of the Fourier transform\" establishes a repeating pattern of listing key concepts, with \"The first topic\" explicitly introducing a structured overview.\n\nFinal token \"...\" ends a section header (\"The role of...\"), immediately requiring a topic continuation — likely \"the Fourier transform\" or \"The 3D model\" or \"the article follows\" or \"energy efficiency\" or \"three sections.\" or \"This is a technical overview...\" or \"the user's guide\" — a formal enumeration of the response.",
+      "cos_sig": 0.9026,
+      "cos_res": 0.1016
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 239,
+      "alpha": 0.5,
+      "overlap": 0.0735,
+      "explanation": "Structured article format with a formal academic/technical overview of a specific topic, following standard encyclopedic conventions for describing the Fibonacci sequence.\n\nThe phrase \"The Fibonacci sequence is a mathematical concept...\" signals a repeating section header \"Overview of the Fibonacci sequence,\" establishing a structured summary of the article.\n\nFinal token \"...\" ends a section header (\"The role of...\"), immediately requiring a topic sentence or elaboration — likely \"the Fibonacci number\" or \"The role of the user interface\" or \"a detailed explanation\" or \"This article covers...\" or \"However, the topic...\" or \"3. The Fibonacci sequence\" — a topic introduction addressing the three main components.",
+      "cos_sig": 0.9037,
+      "cos_res": 0.0941
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 239,
+      "alpha": 1.0,
+      "overlap": 0.0735,
+      "explanation": "Structured article format with formal academic tone signals a structured overview of a topic, following standard encyclopedic conventions for \"the role of X.\"\n\nThe phrase \"The role of the cerebellum in motor learning\" establishes a repeating pattern: \"The cerebellum...\" introduces a section header or topic sentence.\n\nFinal token \"\n\" ends a section header (\"The role of the cerebellum...\"), immediately requiring a topic sentence or elaboration — likely \"The cerebellum\" or \"This article\" or \"a detailed analysis\" or \"the topic of...\" or \"are...\" or \"However, the following sections...\" or \"dietary guidelines\" — a transitional phrase introducing the full explanation of the comparison.",
+      "cos_sig": 0.911,
+      "cos_res": 0.0922
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 239,
+      "alpha": 2.0,
+      "overlap": 0.0735,
+      "explanation": "Structured article format with formal academic framing signals a structured overview of a specific topic, following standard essay conventions.\n\nThe phrase \"The role of the Kalman filter in machine learning\" introduces a section header, establishing a direct discussion of the limitations of the dataset.\n\nFinal token \"\n\" ends a section transition opener (\"The role of...\"), immediately requiring a topic sentence or elaboration — likely \"The Kalman filter\" or \"The topic of...\" or \"a detailed analysis\" or \"The answer is...\" or \"This section...\" or \"neural networks are...\" or \"not all aspects are relevant\" — a transitional phrase addressing the introductory framing of the paper.",
+      "cos_sig": 0.923,
+      "cos_res": 0.0893
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 490,
+      "alpha": 0.25,
+      "overlap": 0.0764,
+      "explanation": "Structured article format with a technical review of a specific topic, following a pattern of presenting detailed information about the Fibonacci sequence.\n\nThe phrase \"The Fibonacci sequence is the basis of the algorithm'\" signals a repeating section header or summary statement, establishing a standard academic/blog boilerplate about the topic.\n\nFinal token \"it'\" opens a new sentence after \"the...\" — immediately expects a topic continuation like \"water\" or \"the article\" or \"components\" to introduce the section header or restatement. Likely \"This article covers...\" or \"the Fibonacci number\" or \"However, the user experience...\" or \"a list of three key areas\" mirroring the intro.",
+      "cos_sig": 0.8834,
+      "cos_res": 0.0908
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 490,
+      "alpha": 0.5,
+      "overlap": 0.0764,
+      "explanation": "Article structure: technical blog format with structured analysis of a specific topic, following a pattern of explaining a concept.\n\nThe phrase \"The main objective of the algorithm is to find the best solution\" signals a repeating boilerplate summary statement, now transitioning to a section header or elaboration on the broader context.\n\nFinal token \"it'\" opens a repeated sentence fragment (\"it'\"), immediately requiring a continuation like \"the role of the...\" or \"This article\" — likely \"s\" or \"The first parameter\" or \"article is...\" or \"a review of...\" or \"However, the function is...\" or \"to the user's experience\" mirroring the standard academic phrasing.",
+      "cos_sig": 0.8842,
+      "cos_res": 0.0911
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 490,
+      "alpha": 1.0,
+      "overlap": 0.0764,
+      "explanation": "Article structure: technical review of a specific automotive/IoT topic, with a structured FAQ format now presenting a detailed explanation of the algorithm.\n\nThe phrase \"The goal of the algorithm is to optimize the performance of the...\" signals a repeating boilerplate description of the Kalman filter, establishing a pattern of summarizing the broader context.\n\nFinal token \"it'\" opens a closing sentence fragment (\"it'\"), immediately requiring a continuation like \"s\" or \"the sensor\" — likely \"This article\" or \"article\" or \"The Arduino IDE\" or \"However, the key role of the sensor is...\" or \"a long-form article answering...\" mirroring the repeated phrase about the topic.",
+      "cos_sig": 0.8863,
+      "cos_res": 0.0899
+    },
+    {
+      "resid_idx": 10,
+      "token": ",",
+      "feature": 490,
+      "alpha": 2.0,
+      "overlap": 0.0764,
+      "explanation": "Technical article structure: informational/review piece about a specific embedded systems topic, with a consistent pattern of explaining component roles.\n\nThe phrase \"The goal of the function is to capture the entire...\" signals a repeating summary statement about the broader context of the FPGA/UART/interrupt controller.\n\nFinal token \"it'\" opens a closing sentence fragment (\"it'\"), immediately requiring a continuation like \"s\" or \"the article\" — likely \"This article\" or \"to the point\" or \"However...\" or \"The role of the UART...\" or \"article is...\" or \"a detailed walkthrough of...\" mirroring the boilerplate disclaimer about the light/dark mode.",
+      "cos_sig": 0.8895,
+      "cos_res": 0.0891
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 166,
+      "alpha": 0.0,
+      "overlap": 0.1151,
+      "explanation": "Structured article format with academic/technical documentation style: a detailed explanation of a mathematical concept, following a pattern of presenting the Bernoulli equation.\n\nThe phrase \"The integral of the Bernoulli equation is:\" signals a repeating pattern of section headers and code blocks, suggesting a summary or conclusion block is underway.\n\nFinal token \"in\" ends a section header \"1.1. The integral of the Bernoulli equation.\" — immediately expects a closing phrase like \"s\" or \"19\" to complete \"15 and 16\" or \"The article\" or \"are being listed\" or \"by the chapter\" mirroring the \"1.0\" chapter structure.",
+      "cos_sig": -0.9572,
+      "cos_res": -0.0961
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 443,
+      "alpha": 0.0,
+      "overlap": 0.1126,
+      "explanation": "Structured article format with academic/technical documentation style: a detailed explanation of a mathematical concept, following a pattern of presenting the Bernoulli equation.\n\nThe phrase \"The integral of the Bernoulli equation is:\" signals a repeating pattern of section headers and code blocks, suggesting a summary or conclusion block is underway.\n\nFinal token \"in\" ends a section header \"1.1. The integral of the Bernoulli equation.\" — immediately expects a closing phrase like \"s\" or \"19\" to complete \"15 and 16\" or \"The article\" or \"are being listed\" or \"by the chapter\" mirroring the \"1.0\" chapter structure.",
+      "cos_sig": -0.9458,
+      "cos_res": -0.0961
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 239,
+      "alpha": 0.0,
+      "overlap": -0.1049,
+      "explanation": "Structured article format with academic/technical documentation style: a detailed explanation of a mathematical concept, following a pattern of presenting the Bernoulli equation.\n\nThe phrase \"The integral of the Bernoulli equation is:\" signals a repeating pattern of section headers and code blocks, suggesting a summary or conclusion block is underway.\n\nFinal token \"in\" ends a section header \"1.1. The integral of the Bernoulli equation.\" — immediately expects a closing phrase like \"s\" or \"19\" to complete \"15 and 16\" or \"The article\" or \"are being listed\" or \"by the chapter\" mirroring the \"1.0\" chapter structure.",
+      "cos_sig": 0.9006,
+      "cos_res": -0.0961
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 490,
+      "alpha": 0.0,
+      "overlap": -0.0797,
+      "explanation": "Structured article format with academic/technical documentation style: a detailed explanation of a mathematical concept, following a pattern of presenting the Bernoulli equation.\n\nThe phrase \"The integral of the Bernoulli equation is:\" signals a repeating pattern of section headers and code blocks, suggesting a summary or conclusion block is underway.\n\nFinal token \"in\" ends a section header \"1.1. The integral of the Bernoulli equation.\" — immediately expects a closing phrase like \"s\" or \"19\" to complete \"15 and 16\" or \"The article\" or \"are being listed\" or \"by the chapter\" mirroring the \"1.0\" chapter structure.",
+      "cos_sig": 0.8823,
+      "cos_res": -0.0961
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 166,
+      "alpha": 0.25,
+      "overlap": 0.1151,
+      "explanation": "Structured article format with academic/technical documentation style: a detailed explanation of a mathematical problem, following a pattern of presenting the Bernoulli equation.\n\nThe phrase \"The integral of the differential equation is:\" signals a repeating pattern of section headers and code blocks, suggesting a summary or conclusion block is underway.\n\nFinal token \"in'\" ends a section header \"1.1. The Bernoulli equation.\" — immediately requires a closing phrase like \"s\" or \"19\" to complete \"15 and 16\" or \"The article\" or \"are being discussed\" or \"This section covers...\" mirroring the chapter structure \"1. The Bernoulli equation.\"",
+      "cos_sig": -0.9526,
+      "cos_res": -0.0965
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 166,
+      "alpha": 0.5,
+      "overlap": 0.1151,
+      "explanation": "Structured article format with academic/technical writing conventions: a detailed explanation of a mathematical problem, following a pattern of presenting the Descartes' Rule of Signs.\n\nThe phrase \"The polynomial p(x) = x^3 - 3x^2 + 5\" signals a repeating pattern of chapter headers and section summaries.\n\nFinal token \"in'\" opens a section citation/reference tag (\"1.1. The polynomial...\"), immediately requiring a closing phrase like \"s\" to complete \"15 and 16\" or \"The article follows...\" or \"are enumerated\" or \"19.\" — likely \"The chapter\" or \"summary\" mirroring the header.",
+      "cos_sig": -0.9526,
+      "cos_res": -0.0953
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 166,
+      "alpha": 1.0,
+      "overlap": 0.1151,
+      "explanation": "Structured article format with academic/technical writing conventions: a detailed comparison of Renaissance vs Baroque music, following a pattern of explaining the topic.\n\nThe phrase \"This is the period of the Renaissance. The main characteristics of the Baroque period are:\" signals a repeating citation pattern, suggesting a summary or bibliographic reference.\n\nFinal token \"it'\" opens a repeated section header (\"1. The Renaissance...\"), immediately requiring a continuation like \"s\" to complete \"it.\" — likely \"16th century\" or \"The text is...\" or \"The article follows...\" or \"are...\" or \"by the book\" or \"the text is a standard reference\" mirroring the citation.",
+      "cos_sig": -0.9493,
+      "cos_res": -0.0917
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 166,
+      "alpha": 2.0,
+      "overlap": 0.1151,
+      "explanation": "Article structure: a comprehensive historical survey of Renaissance drama, following a pattern of summarizing key concepts and citations.\n\nThe phrase \"This is the main idea of the Renaissance period\" signals a repeating bibliographic/citation block, with \"Shakespeare's Hamlet\" now being introduced as a reference.\n\nFinal token \"it'\" opens a repeated citation phrase (\"it's...\"), immediately requiring a continuation like \"s\" or \"the period\" to complete the pattern \"This is the period of...\" or \"The text is...\" or \"However, the work is...\" or \"16th century.\" — likely \"a summary\" or \"the work\" mirroring the section.",
+      "cos_sig": -0.9491,
+      "cos_res": -0.0911
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 443,
+      "alpha": 0.25,
+      "overlap": 0.1126,
+      "explanation": "Structured article format with academic/technical documentation style: a detailed explanation of a mathematical problem, following a pattern of presenting code blocks and prose.\n\nThe phrase \"The function f(x) = x^3 - 3x\" signals a repeating pattern of section headers and structured analysis, suggesting a summary or conclusion block.\n\nFinal token \"in\" ends a section header \"1.1. The integral of the function.\" — immediately requires a closing label like \"s\" or \"19\" to complete the chapter heading \"1.1. The integral of the function.\" or \"The code block\" or \"are being listed\" mirroring the earlier.",
+      "cos_sig": -0.9469,
+      "cos_res": -0.0972
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 443,
+      "alpha": 0.5,
+      "overlap": 0.1126,
+      "explanation": "Structured article format with technical documentation style: a detailed explanation of a mathematical/historical topic, following a pattern of presenting code blocks and prose.\n\nThe phrase \"The function f(x) = x^3 - 3x\" signals a repeating pattern of section headers and code blocks, suggesting a summary or conclusion block.\n\nFinal token \"in\" ends a section header \"1.1. The function f(x).\" — immediately expects a closing label like \"s\" or \"19\" to complete the chapter citation \"1.1. The function...\". Then likely \"The period\" or \"by the Renaissance\" or \"with the full explanation.\"",
+      "cos_sig": -0.9464,
+      "cos_res": -0.0972
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 443,
+      "alpha": 1.0,
+      "overlap": 0.1126,
+      "explanation": "Structured article format with code block and technical documentation pattern: the response follows a consistent pattern of explaining a mathematical/programming topic.\n\nThe phrase \"The function f(x) = x^2 + 1\" signals a repeating pattern of section headers and code blocks, suggesting a summary or conclusion block.\n\nFinal token \"in\" ends a section header \"1. 15.1. The function f(x).\" — immediately expects a closing label like \"19\" or \"The period\" to complete the chapter citation, then likely \"s\" or \"16 and 17\" or \"The tutorial is organized...\" mirroring the \"16 and 17.\"",
+      "cos_sig": -0.9464,
+      "cos_res": -0.0948
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 443,
+      "alpha": 2.0,
+      "overlap": 0.1126,
+      "explanation": "Structured article format with code block and technical documentation pattern: the response follows a consistent pattern of listing Python/MATLAB code snippets.\n\nThe phrase \"import numpy as np\" signals a repeating pattern of section headers and code blocks, suggesting a second block listing the full function with the `np.linalg.solve` result.\n\nFinal token \"in\" closes a section header (\"1.  np.linalg.solve\"), immediately requiring a continuation like \"19\" or \"The function\" to complete the pair with \"15 and 16\" or \"The code is...\" or \"a tutorial structure\" or \"16\" matching the period/year.",
+      "cos_sig": -0.9433,
+      "cos_res": -0.0949
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 239,
+      "alpha": 0.25,
+      "overlap": -0.1049,
+      "explanation": "Structured academic document with a formal mathematical exposition, following a pattern of explaining the Bernoulli equation with Spanish/Latin terminology.\n\nThe phrase \"The integral of the Bernoulli equation is:\" signals a section header or chapter transition, with \"1.1. The Bernoulli equation\" suggesting a structured textbook format.\n\nFinal token \"in\" ends a repeating section header (\"1.1. The Bernoulli equation...\"), immediately requiring a closing phrase like \"s\" or \"The first part\" to complete the chapter heading. Then likely \"is\" or \"The Bernoulli equation\" or \"In this article we...\" or \"1. Overview\" to match the chapter structure.",
+      "cos_sig": 0.9,
+      "cos_res": -0.0962
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 239,
+      "alpha": 0.5,
+      "overlap": -0.1049,
+      "explanation": "Structured academic document with formal mathematical exposition, following a pattern of explaining Bernoulli's equation with Spanish terminology.\n\nThe phrase \"The integral of the differential equation is:\" signals a section header or chapter transition, with \"The Bernoulli equation\" now being introduced as a summary or elaboration of the previous content.\n\nFinal token \"in\" opens a section header repetition (\"1. The Bernoulli equation...\"), immediately requiring a closing phrase like \"s\" or \"The function\" to complete the heading. Then likely \"The Bernoulli equation\" or \"are grouped together\" or \"In the following\" or \"1. The first part...\" mirroring the chapter structure.",
+      "cos_sig": 0.9016,
+      "cos_res": -0.0973
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 239,
+      "alpha": 1.0,
+      "overlap": -0.1049,
+      "explanation": "Structured academic document format: a formal mathematical textbook response, with a structured exposition of the Bernoulli equation.\n\nThe phrase \"The Bernoulli equation is given by:\" signals a section header or chapter transition, with \"The integral of the Bernoulli equation\" now being introduced as a concluding summary statement.\n\nFinal token \"in\" opens a section header (\"The integral of the Bernoulli equation...\"), requiring a closing phrase like \"The context of...\" or \"with a detailed explanation\" — likely \"s\" or \"The following\" or \"are often called...\" or \"In the 18th century...\" or \"The argument follows...\" mirroring the chapter heading pattern.",
+      "cos_sig": 0.9036,
+      "cos_res": -0.0989
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 239,
+      "alpha": 2.0,
+      "overlap": -0.1049,
+      "explanation": "Structured academic document format: formal mathematical exposition with structured argumentation, following standard textbook conventions for explaining the Kalman filter.\n\nThe phrase \"The LQR control problem is the following:\" signals a section header or transition, establishing a concluding summary statement about the theoretical framework.\n\nFinal token \"in\" opens a section heading (\"Linear quadratic regulator...\"), immediately requiring a continuation like \"The concept of...\" or \"academic writing\" — likely \"While the...\" or \"The following discussion...\" or \"are often overlooked\" or \"The LQR framework is...\" or \"section\" or \"or\" to introduce a citation or transition phrase referencing the paper's core argument.",
+      "cos_sig": 0.9085,
+      "cos_res": -0.0983
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 490,
+      "alpha": 0.25,
+      "overlap": -0.0797,
+      "explanation": "Structured article format with technical documentation style: a detailed explanation of a mathematical/historical topic, following standard academic conventions.\n\nThe phrase \"The formula for the integral of the sine function is:\" signals a repeating pattern of section headers and code blocks, suggesting a summary or conclusion is underway.\n\nFinal token \"in'\" opens a repeated section header (\"15.1...\"), immediately requiring a closing phrase like \"the period\" or \"16th century\" to complete the citation/reference block. Then likely \"This article\" or \"is...\" or \"The answer is...\" or \"by the Renaissance\" mirroring the \"between 15 and 16.\"",
+      "cos_sig": 0.8819,
+      "cos_res": -0.0971
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 490,
+      "alpha": 0.5,
+      "overlap": -0.0797,
+      "explanation": "Technical article structure: a structured tutorial on cryptography/networking, with a summary section now presenting a code block or explanation of the algorithm.\n\nThe phrase \"This is the result of the following algorithm\" signals a repeating pattern of academic citation/reference formatting, with \"The function is:\" introducing a section header.\n\nFinal token \"it'\" opens a repeated section header (\"1. The function is...\"), immediately requiring a closing phrase like \"s\" or \"the period\" to complete \"1598.\" — likely \"This article\" or \"The article\" or \"from the 16th century\" or \"a summary of the code\" mirroring the.",
+      "cos_sig": 0.8835,
+      "cos_res": -0.0955
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 490,
+      "alpha": 1.0,
+      "overlap": -0.0797,
+      "explanation": "Technical tutorial structure: article follows standard documentation format, with a summary/explanation of a mathematical algorithm for a specific device.\n\nThe phrase \"y = f(x)\" signals a repeating pattern of code block or citation block, suggesting a transition to a concluding summary or section header.\n\nFinal token \"it'\" opens a repeated phrase \"it'\" — likely \"This article\" or \"the period\" or \"16\" continuing the block header \"The result is...\" or \"The code\" or \"The article is...\" or \"a long-form article\" or \"However, the algorithm...\" — a transitional phrase referencing the broader context of the two-part structure.",
+      "cos_sig": 0.8826,
+      "cos_res": -0.0904
+    },
+    {
+      "resid_idx": 20,
+      "token": "th",
+      "feature": 490,
+      "alpha": 2.0,
+      "overlap": -0.0797,
+      "explanation": "Technical documentation pattern: structured article about a programming/networking topic, with a tutorial walkthrough explaining a specific algorithm.\n\nThe phrase \"for the purpose of this article we will use the following formula\" signals a repeating boilerplate disclaimer about the code block, establishing a pedagogical narrative of demonstrating the algorithm.\n\nFinal token \"it'\" opens a closing sentence fragment (\"it'\"), immediately requiring a repeated phrase like \"this\" or \"the result\" — likely \"s\" or \"the article\" or \"The algorithm is...\" or \"However, the result is...\" or \"1.\" continuing the \"we will consider...\" clause referencing the two-part conditional structure or the period.",
+      "cos_sig": 0.885,
+      "cos_res": -0.0882
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 166,
+      "alpha": 0.0,
+      "overlap": 0.2615,
+      "explanation": "Academic/technical writing structure: article is presenting a detailed analysis of a specific research paper, with a structured argument about the US economy.\n\nThe phrase \"The result is a 100% increase in the unemployment rate\" signals a citation or reference pattern, likely a URL or bibliographic snippet from the Wikipedia article.\n\nFinal token \"it'\" opens a repeated phrase \"https://en.wikipedia.org/\" — immediately expects a closing word like \"s\" or \"the article\" to complete the URL citation, likely \"9\" or \"9. The function\" or \"by the team\" or \"a number\" matching the truncated URL pattern for the Python code.",
+      "cos_sig": -0.9487,
+      "cos_res": -0.2412
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 443,
+      "alpha": 0.0,
+      "overlap": 0.255,
+      "explanation": "Academic/technical writing structure: article is presenting a detailed analysis of a specific research paper, with a structured argument about the US economy.\n\nThe phrase \"The result is a 100% increase in the unemployment rate\" signals a citation or reference pattern, likely a URL or bibliographic snippet from the Wikipedia article.\n\nFinal token \"it'\" opens a repeated phrase \"https://en.wikipedia.org/\" — immediately expects a closing word like \"s\" or \"the article\" to complete the URL citation, likely \"9\" or \"9. The function\" or \"by the team\" or \"a number\" matching the truncated URL pattern for the Python code.",
+      "cos_sig": -0.9426,
+      "cos_res": -0.2412
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 239,
+      "alpha": 0.0,
+      "overlap": -0.2381,
+      "explanation": "Academic/technical writing structure: article is presenting a detailed analysis of a specific research paper, with a structured argument about the US economy.\n\nThe phrase \"The result is a 100% increase in the unemployment rate\" signals a citation or reference pattern, likely a URL or bibliographic snippet from the Wikipedia article.\n\nFinal token \"it'\" opens a repeated phrase \"https://en.wikipedia.org/\" — immediately expects a closing word like \"s\" or \"the article\" to complete the URL citation, likely \"9\" or \"9. The function\" or \"by the team\" or \"a number\" matching the truncated URL pattern for the Python code.",
+      "cos_sig": 0.897,
+      "cos_res": -0.2412
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 490,
+      "alpha": 0.0,
+      "overlap": -0.1833,
+      "explanation": "Academic/technical writing structure: article is presenting a detailed analysis of a specific research paper, with a structured argument about the US economy.\n\nThe phrase \"The result is a 100% increase in the unemployment rate\" signals a citation or reference pattern, likely a URL or bibliographic snippet from the Wikipedia article.\n\nFinal token \"it'\" opens a repeated phrase \"https://en.wikipedia.org/\" — immediately expects a closing word like \"s\" or \"the article\" to complete the URL citation, likely \"9\" or \"9. The function\" or \"by the team\" or \"a number\" matching the truncated URL pattern for the Python code.",
+      "cos_sig": 0.8862,
+      "cos_res": -0.2412
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 166,
+      "alpha": 0.25,
+      "overlap": 0.2615,
+      "explanation": "Academic/technical writing structure: article is presenting a detailed analysis of a specific cybersecurity vulnerability, with a structured argument about the US economy.\n\nThe phrase \"The average annual loss of the US economy is estimated to be...\" signals a citation or reference to the paper, establishing a pattern of quoting the report.\n\nFinal token \"it'\" opens a repeated phrase (\"it'\") — likely \"s\" or \"the\" to complete \"it'\" or \"19\" or \"9.\" — immediately following the truncated citation \"the paper by the\" or likely \"9.\" or \"a number\" or \"the article\" continuing the pattern of the timestamp/citation format.",
+      "cos_sig": -0.8645,
+      "cos_res": -0.2176
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 166,
+      "alpha": 0.5,
+      "overlap": 0.2615,
+      "explanation": "Academic/technical article structure: a structured argument about a specific cybersecurity topic, with a citation/reference block now being presented.\n\nThe phrase \"The results of the study are in the following paper:\" signals a standard bibliographic citation pattern, with \"the 1999 paper\" establishing a specific reference to the Unix/Linux kernel.\n\nFinal token \"it'\" opens a repeated phrase (\"it'\") — likely continuing with \"s\" or \"the\" to complete \"the user'\" or \"the Unix shell\" or \"9.\" or \"This article\" or \"a truncated version\" or \"9. The command\" — a truncated citation or copyright footer closing.",
+      "cos_sig": -0.8714,
+      "cos_res": -0.2192
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 166,
+      "alpha": 1.0,
+      "overlap": 0.2615,
+      "explanation": "Technical article structure: informational/academic tone with a detailed comparison of a specific cybersecurity vulnerability, following a pattern of explaining the problem.\n\nThe phrase \"The algorithm is the most efficient way to find the...\" signals a citation or reference block, likely a URL or timestamp, continuing the pattern of the \"http://www....\" URL.\n\nFinal token \"it'\" opens a repeated phrase (\"it'\") — likely \"it\" or \"the code\" or \"the article\" or \"s\" completing a truncated citation/footer phrase like \"9. The article\" or \"9. The Windows 95\" or \"a truncated URL\" mirroring the timestamp.",
+      "cos_sig": -0.8791,
+      "cos_res": -0.222
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 166,
+      "alpha": 2.0,
+      "overlap": 0.2615,
+      "explanation": "Article structure: technical cybersecurity/networking explainer, with a structured argument about IoT/network security vulnerabilities in a specific US context.\n\nThe phrase \"The most common method is the\" signals a citation or reference to a specific paper or statistic, likely a timestamp or publication detail about the 1999 Linux kernel.\n\nFinal token \"it'\" opens a repeated phrase (\"it'\") — likely \"it\" or \"the code\" or \"a detailed analysis\" or \"9.\" continuing the pattern \"the 90s\" or \"the Linux kernel\" or \"However, the...\" or \"s.\" completing the sentence about the timestamp or a closing summary statement.",
+      "cos_sig": -0.9009,
+      "cos_res": -0.2291
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 443,
+      "alpha": 0.25,
+      "overlap": 0.255,
+      "explanation": "Academic/technical writing structure: article is presenting a detailed analysis of a specific cybersecurity vulnerability, following a standard research paper format with citations.\n\nThe phrase \"The algorithm is called the Bellman-Ford algorithm\" signals a repeating pattern of code block or citation reference, likely continuing with a structured comparison or summary statement.\n\nFinal token \"it'\" opens a closing phrase (\"it'\") — immediately expects a word like \"s\" or \"the\" to complete \"the\" or \"9\" or \"19\" — likely \"s\" or \"the article\" or \"a blog post\" or \"by the user\" or \"0\" to complete the timestamp/citation.",
+      "cos_sig": -0.8584,
+      "cos_res": -0.2163
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 443,
+      "alpha": 0.5,
+      "overlap": 0.255,
+      "explanation": "Academic/technical article structure: a structured argument about a specific cybersecurity topic, with a citation block now presenting a paper summary.\n\nThe phrase \"The algorithm is called the Bellman equation\" signals a repeating pattern of code/reference block formatting, suggesting a truncated citation or section header.\n\nFinal token \"it'\" opens a closing phrase (\"it'\") — immediately expects a word like \"s\" or \"the\" to complete \"it'\" likely continuing with \"s\" or \"19\" or \"the article\" or \"a detailed walkthrough\" or \"However, the result...\" or \"9.\" matching the timestamp or a phrase like \"by the team.\"",
+      "cos_sig": -0.8637,
+      "cos_res": -0.2177
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 443,
+      "alpha": 1.0,
+      "overlap": 0.255,
+      "explanation": "Technical article structure: a detailed analysis of a specific malware/networking topic, with a structured argument about the Linux/Windows vulnerability.\n\nThe phrase \"The result is a 1000-bit AES encryption key\" signals a repeating pattern of code block formatting, suggesting a citation or reference snippet follows.\n\nFinal token \"it'\" opens a closing pattern (\"it'\") — likely \"s\" or \"the article\" or \"1.\" — immediately following the truncated citation \"The result is...\" or \"However, the...\" or \"by the way\" or \"0\" completing the numeric value or repeating \"the command\" or \"a list of...\" to match.",
+      "cos_sig": -0.8867,
+      "cos_res": -0.2259
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 443,
+      "alpha": 2.0,
+      "overlap": 0.255,
+      "explanation": "Technical article structure: a detailed walkthrough of a specific game/hardware topic, with a summary of the Linux/OpenGL/shader pipeline.\n\nThe phrase \"The result is 1024\" signals a repeating pattern of code block formatting, suggesting a citation or reference to the article's conclusion.\n\nFinal token \"it'\" opens a closing pattern (\"The result is...\"), immediately requiring a repeated label like \"1\" or \"1. The OpenGL...\" or \"The code\" — likely \"s\" or \"The answer is...\" or \"or\" or \"However, the function is...\" or \"a list of the three parameters\" matching the \"1.\"",
+      "cos_sig": -0.9434,
+      "cos_res": -0.2418
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 239,
+      "alpha": 0.25,
+      "overlap": -0.2381,
+      "explanation": "Academic/technical writing structure: a structured argument about a specific topic, with a citation block now presenting a paper summary.\n\nThe phrase \"The algorithm is called the Kalman filter\" signals a standard citation format, with \"1981\" suggesting a year or publication reference for the paper.\n\nFinal token \"it'\" opens a repeated phrase (\"it'\") — likely continuing with \"s\" or \"the paper\" to complete a truncated citation/reference tag, or \"19\" to complete the year, or \"The Bayesian framework\" or \"or\" — likely \"s\" or \"the article\" or \"by the team\" mirroring the truncated.",
+      "cos_sig": 0.8702,
+      "cos_res": -0.2281
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 239,
+      "alpha": 0.5,
+      "overlap": -0.2381,
+      "explanation": "Academic paper structure: structured argument with citations, establishing a technical analysis of a specific historical/political topic.\n\nThe phrase \"The first step is to understand the role of the Soviet Union\" signals a standard academic citation format, with \"1999\" beginning a reference to the paper.\n\nFinal token \"it'\" opens a repeated citation marker (\"it'\") — immediately expects a closing phrase like \"s\" or \"the article\" to complete the pattern \"the article is titled...\" or \"9.\" or \"The answer is...\" or \"9. The algorithm...\" or \"a section of the paper\" — likely a truncated bibliographic or copyright footer reference.",
+      "cos_sig": 0.8637,
+      "cos_res": -0.2266
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 239,
+      "alpha": 1.0,
+      "overlap": -0.2381,
+      "explanation": "Academic paper structure: structured argument with formal tone, establishing a technical analysis of a specific historical/political topic.\n\nThe phrase \"The following paper is focused on the role of the Soviet Union\" signals a standard citation/reference block, with \"The paper is titled\" introducing a bibliographic or section header.\n\nFinal token \"it'\" opens a repeated phrase (\"it'\"), immediately requiring a closing word like \"s\" or \"the\" — likely \"the Bayesian inference\" or \"The answer is...\" or \"This article\" or \"9.\" — a section header or citation marker like \"9. The Bayesian framework\" or \"the article\" continuing the truncated sentence.",
+      "cos_sig": 0.8971,
+      "cos_res": -0.2389
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 239,
+      "alpha": 2.0,
+      "overlap": -0.2381,
+      "explanation": "Academic paper structure signals a structured response: formal argumentation with a structured overview of the field of computational social science.\n\nThe phrase \"This paper is a survey of the field of causal inference\" establishes a standard academic citation/introduction pattern, priming a transition to the paper's core argument.\n\nFinal token \"it'\" opens a section header or transitional phrase (\"In this paper...\"), immediately requiring a topic sentence or citation marker — likely \"The Bayesian approach\" or \"This article\" or \"The answer is...\" or \"However, the problem...\" or \"s\" to complete the phrase \"the following section\" or \"a detailed analysis of...\" referencing the code block.",
+      "cos_sig": 0.9031,
+      "cos_res": -0.2412
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 490,
+      "alpha": 0.25,
+      "overlap": -0.1833,
+      "explanation": "Technical article structure: academic/review format with a detailed comparison of a specific algorithm, following a pattern of explaining the problem.\n\nThe phrase \"The algorithm is called the\" signals a citation or reference to the paper, likely repeating the title or a truncated phrase about the dataset/model.\n\nFinal token \"it'\" opens a closing clause (\"it'\") — immediately expects a word like \"s\" or \"the\" to complete \"it's\" or \"the dataset,\" likely \"9\" or \"19\" or \"a blog post\" or \"the result\" or \"by the user\" — a standard citation phrase referencing the Python/C++ code.",
+      "cos_sig": 0.8317,
+      "cos_res": -0.2239
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 490,
+      "alpha": 0.5,
+      "overlap": -0.1833,
+      "explanation": "Technical article structure: informational/tutorial format with a structured argument about a specific software vulnerability, following a pattern of explaining the problem.\n\nThe phrase \"The following code is the result of the\" signals a citation or reference to the paper, likely a specific timestamp or URL, continuing the academic/documentation style.\n\nFinal token \"it'\" opens a repeated phrase (\"it'\") — likely \"it\" or \"the game\" or \"a detailed walkthrough\" or \"19\" completing a truncated timestamp or citation phrase like \"the 1990s\" or \"the following.\" or \"s.\" or \"a blog post\" mirroring the \"the game.\"",
+      "cos_sig": 0.8376,
+      "cos_res": -0.2259
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 490,
+      "alpha": 1.0,
+      "overlap": -0.1833,
+      "explanation": "Technical documentation pattern: structured article about a specific software/hardware topic, with a reference to a specific paper on distributed computing in a game engine.\n\nThe phrase \"This article is a tutorial on the C++ API'\" signals a concluding summary statement, likely referencing the code block or the overall algorithm.\n\nFinal token \"it'\" opens a repeated phrase (\"it'\") — likely \"it\" or \"the game\" or \"a detailed walkthrough,\" continuing the sentence \"the result is...\" or \"However, the...\" or \"9.\" or \"to the point\" or \"or 10.\" — a citation or copyright boilerplate phrase typical to academic/forum post endings.",
+      "cos_sig": 0.8505,
+      "cos_res": -0.2298
+    },
+    {
+      "resid_idx": 30,
+      "token": "<start_of_turn>",
+      "feature": 490,
+      "alpha": 2.0,
+      "overlap": -0.1833,
+      "explanation": "Technical documentation pattern: structured tutorial format with code examples, establishing a walkthrough of a procedural algorithm for a game/educational context.\n\nThe phrase \"This is the result of the Fibonacci sequence\" signals a concluding summary statement, likely referencing the calculated average or the overall data structure used to store the function.\n\nFinal token \"it'\" opens a repeated phrase (\"it'\"), immediately requiring a closing clause — likely \"s\" or \"the code\" or \"a tutorial\" or \"to be used\" or \"However, the function...\" or \"9. The...\" continuing the sentence about the constraints of the dataset or the documentation's role in the single-file setup.",
+      "cos_sig": 0.8891,
+      "cos_res": -0.2382
+    }
+  ]
+}

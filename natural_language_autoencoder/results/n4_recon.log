@@ -1,0 +1,276 @@
+[2026-07-30T20:34:23+08:00] N4_RECON_START
+bf6bc602fef54aefa3a24b11e5b224545af9c36c9a3f18640b35b107683ca773  39_n4_real_recon.py
+44bd48998f6436616347bb2d74d9b8a569a85a3639c314ce9711a252c8075f1c  /root/autodl-tmp/results/n4_real_content_preregistration_v1.md
+eb9a686a4cdea1f97134b2367d7c8a74a35351678d3c043eddae2f993e17ab66  /root/autodl-tmp/activations/acts_L32_n3_v1.parquet
+NVIDIA A800-SXM4-80GB, 81920 MiB, 0 MiB, 0 %
+[input] n=200 docs=101 sha256=eb9a686a4cdea1f97134b2367d7c8a74a35351678d3c043eddae2f993e17ab66 checkpoint=0 missing=200
+[NLAClient] nla-gemma3-12b-L32-av: d_model=3840 inj_scale=80000.0 embed_scale=61.97 inj_char='㈜'(id=246566)
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/626 [00:00<?, ?it/s]Loading weights:   0%|          | 1/626 [00:00<02:51,  3.64it/s]Loading weights:   3%|▎         | 17/626 [00:00<00:10, 56.65it/s]Loading weights:   5%|▍         | 31/626 [00:00<00:07, 79.46it/s]Loading weights:   7%|▋         | 44/626 [00:00<00:06, 93.89it/s]Loading weights:   9%|▉         | 57/626 [00:00<00:05, 100.38it/s]Loading weights:  11%|█         | 70/626 [00:00<00:05, 99.62it/s] Loading weights:  13%|█▎        | 83/626 [00:00<00:05, 99.73it/s]Loading weights:  15%|█▌        | 95/626 [00:01<00:05, 100.96it/s]Loading weights:  17%|█▋        | 107/626 [00:01<00:04, 105.17it/s]Loading weights:  19%|█▉        | 121/626 [00:01<00:04, 109.45it/s]Loading weights:  21%|██▏       | 134/626 [00:01<00:04, 106.22it/s]Loading weights:  23%|██▎       | 147/626 [00:01<00:04, 103.35it/s]Loading weights:  25%|██▌       | 159/626 [00:01<00:04, 102.64it/s]Loading weights:  28%|██▊       | 174/626 [00:01<00:04, 105.47it/s]Loading weights:  30%|██▉       | 186/626 [00:01<00:04, 100.07it/s]Loading weights:  32%|███▏      | 200/626 [00:02<00:03, 108.83it/s]Loading weights:  34%|███▍      | 213/626 [00:02<00:03, 114.06it/s]Loading weights:  36%|███▌      | 226/626 [00:02<00:03, 113.35it/s]Loading weights:  38%|███▊      | 239/626 [00:02<00:03, 109.21it/s]Loading weights:  40%|████      | 252/626 [00:02<00:03, 111.92it/s]Loading weights:  42%|████▏     | 265/626 [00:02<00:03, 108.75it/s]Loading weights:  44%|████▍     | 278/626 [00:02<00:03, 110.65it/s]Loading weights:  47%|████▋     | 297/626 [00:02<00:02, 130.63it/s]Loading weights:  50%|████▉     | 312/626 [00:02<00:02, 135.84it/s]Loading weights:  52%|█████▏    | 326/626 [00:03<00:02, 128.75it/s]Loading weights:  54%|█████▍    | 340/626 [00:03<00:02, 117.06it/s]Loading weights:  57%|█████▋    | 354/626 [00:03<00:02, 119.53it/s]Loading weights:  59%|█████▊    | 367/626 [00:03<00:02, 118.35it/s]Loading weights:  61%|██████    | 380/626 [00:03<00:02, 117.12it/s]Loading weights:  63%|██████▎   | 393/626 [00:03<00:02, 112.74it/s]Loading weights:  65%|██████▍   | 406/626 [00:03<00:01, 113.96it/s]Loading weights:  67%|██████▋   | 419/626 [00:03<00:01, 115.30it/s]Loading weights:  69%|██████▉   | 433/626 [00:04<00:01, 117.94it/s]Loading weights:  71%|███████   | 446/626 [00:04<00:01, 113.76it/s]Loading weights:  73%|███████▎  | 459/626 [00:04<00:01, 117.20it/s]Loading weights:  75%|███████▌  | 472/626 [00:04<00:01, 120.12it/s]Loading weights:  78%|███████▊  | 486/626 [00:04<00:01, 122.44it/s]Loading weights:  81%|████████  | 504/626 [00:04<00:00, 138.53it/s]Loading weights:  83%|████████▎ | 518/626 [00:04<00:00, 131.96it/s]Loading weights:  85%|████████▍ | 532/626 [00:04<00:00, 129.92it/s]Loading weights:  87%|████████▋ | 546/626 [00:04<00:00, 127.84it/s]Loading weights:  89%|████████▉ | 559/626 [00:05<00:00, 125.14it/s]Loading weights:  91%|█████████▏| 572/626 [00:05<00:00, 115.09it/s]Loading weights:  93%|█████████▎| 584/626 [00:05<00:00, 112.36it/s]Loading weights:  95%|█████████▌| 596/626 [00:05<00:00, 114.09it/s]Loading weights:  97%|█████████▋| 608/626 [00:05<00:00, 114.11it/s]Loading weights:  99%|█████████▉| 620/626 [00:05<00:00, 112.55it/s]Loading weights: 100%|██████████| 626/626 [00:05<00:00, 111.44it/s]
+[AV   1/200] doc=2934 pos=123 chars=752 'Academic/scientific paper structure: formal abstract tone with te'
+[AV   2/200] doc=2934 pos=289 chars=636 'Academic article structure: a standard science/research webpage f'
+[AV   3/200] doc=6583 pos=66 chars=657 'Book description format: standard Amazon Kindle/eBook boilerplate'
+[AV   4/200] doc=6583 pos=350 chars=612 'Religious/devotional teaching context: a sermon or Bible study de'
+[AV   5/200] doc=2477 pos=248 chars=654 'Legal/financial document describing a client project, with formal'
+[AV   6/200] doc=2477 pos=286 chars=730 'Legal document summarizing a draft UCC contract amendment, with o'
+[AV   7/200] doc=8924 pos=80 chars=654 'Structured parliamentary/committee format: formal European Parlia'
+[AV   8/200] doc=8924 pos=123 chars=661 'Institutional report structure: formal parliamentary speech conti'
+[AV   9/200] doc=404 pos=178 chars=681 'Legal document format: formal appellate opinion structure, with j'
+[AV  10/200] doc=404 pos=325 chars=655 'Legal document structure: formal case summary format, presenting '
+[AV  11/200] doc=8724 pos=451 chars=626 'Unity/Unity3D documentation format: structured tutorial pattern w'
+[AV  12/200] doc=8724 pos=455 chars=603 'Structured scripting documentation pattern: Unity/C# behavioral r'
+[AV  13/200] doc=4332 pos=78 chars=675 'Literary criticism register: formal Victorian English description'
+[AV  14/200] doc=4332 pos=145 chars=582 'Standard Google Books bibliographic format: structured descriptio'
+[AV  15/200] doc=6387 pos=195 chars=650 'Repeating pattern of Q&A forum structure: the text is reproducing'
+[AV  16/200] doc=6387 pos=406 chars=655 'Technical blog post rant about Ruby/Rails tooling, with ongoing a'
+[AV  17/200] doc=504 pos=201 chars=704 'Scientific grant/research summary structure: academic biomedical '
+[AV  18/200] doc=504 pos=376 chars=716 'Scientific review document structure: abstract summarizing a sign'
+[AV  19/200] doc=5065 pos=202 chars=659 'Japanese anime episode transcript format: dialogue structure with'
+[AV  20/200] doc=5065 pos=323 chars=654 'Structured article format with Japanese anime/fishing trope comme'
+[AV  21/200] doc=4107 pos=151 chars=631 'News article format with local reporting tone, providing safety a'
+[AV  22/200] doc=4107 pos=168 chars=644 'News article format with local PD announcement, establishing fact'
+[AV  23/200] doc=8766 pos=216 chars=669 'Academic translation structure: formal Spanish-to-English structu'
+[AV  24/200] doc=8766 pos=377 chars=673 'Academic philosophical/theological formulation: formal articulati'
+[AV  25/200] doc=2901 pos=89 chars=656 'Tourism/holiday accommodation description in Dutch, with a promot'
+[AV  26/200] doc=2901 pos=176 chars=624 'Webpage/booking page structure for a Dutch language school, with '
+[AV  27/200] doc=1471 pos=71 chars=730 'Medical reference article format: structured clinical summary pre'
+[AV  28/200] doc=1471 pos=74 chars=704 'Medical textbook format: formal bibliographic/abstract structure '
+[AV  29/200] doc=7703 pos=398 chars=611 'Medical/academic context: structured clinical question format, li'
+[AV  30/200] doc=7703 pos=457 chars=640 'Medical/pharmacological textbook structure: formal drug descripti'
+[AV  31/200] doc=4168 pos=434 chars=641 'Article is explaining a technical telecom/internet marketing piec'
+[AV  32/200] doc=4168 pos=470 chars=534 'Listicle/explainer article structure: article is cataloguing WiMA'
+[AV  33/200] doc=6570 pos=318 chars=716 'Academic paper structure: technical paper presenting a research r'
+[AV  34/200] doc=6570 pos=417 chars=793 'Academic paper structure: technical geophysics article systematic'
+[AV  35/200] doc=6923 pos=194 chars=624 'Technical bug report format: structured troubleshooting narrative'
+[AV  36/200] doc=6923 pos=248 chars=620 'Technical bug report tone with Linux/Ubuntu user post, suggesting'
+[AV  37/200] doc=8079 pos=300 chars=636 'Wikipedia article structure: encyclopedic format with structured '
+[AV  38/200] doc=8079 pos=357 chars=706 'News article structure: informational format with factual reporti'
+[AV  39/200] doc=3509 pos=74 chars=592 'Narrative structure: article follows a classic fantasy/horror syn'
+[AV  40/200] doc=3509 pos=127 chars=603 'Dark gothic horror article structure: narrative prose with poetic'
+[AV  41/200] doc=9589 pos=64 chars=622 'Interview transcript format with quoted German/English dialogue, '
+[AV  42/200] doc=9589 pos=77 chars=670 'Repeating pattern of German language translation/forum structure:'
+[AV  43/200] doc=9176 pos=99 chars=581 'Interview transcript format with a woman talking about a family s'
+[AV  44/200] doc=9176 pos=118 chars=641 'Dictionary/word-lookup format with structured entries, establishi'
+[AV  45/200] doc=9305 pos=104 chars=665 'Repeating pattern of fragmented, incoherent text snippets from a '
+[AV  46/200] doc=9305 pos=139 chars=619 'Writing guide format: instructional prose with narrative advice, '
+[AV  47/200] doc=9780 pos=124 chars=615 'Repeating structure of forum/review content: the text follows a p'
+[AV  48/200] doc=9780 pos=131 chars=586 'Repeating structure of article format: FAQ/forum content with tra'
+[AV  49/200] doc=10053 pos=87 chars=600 'AI/SEO content generator pattern: text is a fragmented, incoheren'
+[AV  50/200] doc=10053 pos=214 chars=602 'Ongoing instructional narrative: a student is giving advice to a '
+[AV  51/200] doc=9898 pos=168 chars=558 'Repeating pattern of structured Q&A transcript format: verbatim q'
+[AV  52/200] doc=9898 pos=179 chars=669 'Literary/analytical prose style: a book review or narrative excer'
+[AV  53/200] doc=10348 pos=87 chars=613 'Article structure: informational/analytical tone with quotes from'
+[AV  54/200] doc=10348 pos=175 chars=617 'Article structure: translation/article compilation format with co'
+[AV  55/200] doc=9522 pos=96 chars=500 'Repeating pattern of structured dialogue format: verbatim copy of'
+[AV  56/200] doc=9522 pos=115 chars=469 'Repeating pattern of verbatim text: the dialogue format with "你他妈'
+[AV  57/200] doc=293 pos=438 chars=711 'Academic econometrics paper structure: formal technical expositio'
+[AV  58/200] doc=293 pos=444 chars=783 'Academic paper abstract structure signals a formal econometrics d'
+[AV  59/200] doc=785 pos=144 chars=542 'Book description format: structured review of a romance/paranorma'
+[AV  60/200] doc=785 pos=309 chars=651 'Article structure: family wellness piece with a narrative, buildi'
+[AV  61/200] doc=1053 pos=298 chars=649 'Structured article format with German fairy tale context, followi'
+[AV  62/200] doc=1053 pos=378 chars=559 'Structured article format with German-language citation pattern: '
+[AV  63/200] doc=2376 pos=90 chars=689 'Training document is walking through a reconciliation/cash flow s'
+[AV  64/200] doc=2376 pos=103 chars=674 'Email thread communication requesting a reconciliation/investigat'
+[AV  65/200] doc=5398 pos=398 chars=661 'Political article structure: ongoing parliamentary debate format,'
+[AV  66/200] doc=5398 pos=414 chars=637 'Political document structure: a formal policy article is presenti'
+[AV  67/200] doc=1204 pos=405 chars=600 'Structured legal document format with consistent pattern: case su'
+[AV  68/200] doc=1204 pos=417 chars=658 'Legal document format: structured case summary with formal langua'
+[AV  69/200] doc=5428 pos=346 chars=631 'Structured Kotlin/Android code block with a pattern of function d'
+[AV  70/200] doc=6279 pos=135 chars=598 'Magazine publication listing format: bibliographic description of'
+[AV  71/200] doc=6279 pos=325 chars=685 'Book catalog/reference format: standard publication description l'
+[AV  72/200] doc=4432 pos=178 chars=640 'Technical maker/DIY article tone with informative, educational to'
+[AV  73/200] doc=4432 pos=185 chars=632 'Technical maker/DIY forum post tone: casual German/Dutch descript'
+[AV  74/200] doc=8198 pos=125 chars=762 'Scientific abstract structure: formal biomedical framing establis'
+[AV  75/200] doc=8198 pos=220 chars=742 'Scientific abstract structure: formal biomedical grant descriptio'
+[AV  76/200] doc=5849 pos=276 chars=669 'Structured narrative format with ongoing dialogue: a formal anime'
+[AV  77/200] doc=5849 pos=302 chars=595 'Ongoing narrative structure: a Japanese anime/novel excerpt prese'
+[AV  78/200] doc=6854 pos=170 chars=699 'News report structure: factual, formal tone describing a British '
+[AV  79/200] doc=6854 pos=324 chars=624 'Ongoing interview transcript with Canadian activist, building tow'
+[AV  80/200] doc=4280 pos=315 chars=694 'Academic/legal boilerplate disclaimer format: structured copyrigh'
+[AV  81/200] doc=4280 pos=342 chars=663 'Academic paper structure: copyright notice and bibliographic meta'
+[AV  82/200] doc=4211 pos=236 chars=603 'Web/comic/tutorial page format: humorous product description with'
+[AV  83/200] doc=4211 pos=279 chars=619 'Instructional/forum post format: a quote from a DIY/car mod guide'
+[AV  84/200] doc=532 pos=89 chars=629 'Medical/academic structure: formal description of a genetic syndr'
+[AV  85/200] doc=532 pos=91 chars=617 'Medical/genetic database entry format: structured description of '
+[AV  86/200] doc=4304 pos=110 chars=673 'Academic biomedical paper structure: formal scientific writing es'
+[AV  87/200] doc=4304 pos=379 chars=775 'Medical/academic article structure: formal biomechanical overview'
+[AV  88/200] doc=55 pos=353 chars=642 'Q&A forum structure signals a technical question about Haskell/C#'
+[AV  89/200] doc=55 pos=455 chars=639 'Code block structure signals a Java tutorial pattern: a solution '
+[AV  90/200] doc=3153 pos=100 chars=715 'Policy explainer document structure: informational prose explaini'
+[AV  91/200] doc=3153 pos=132 chars=710 'Educational/policy document explaining a legal service model, bui'
+[AV  92/200] doc=1604 pos=169 chars=650 'Forum Q&A structure: technical Linux/networking advice post, with'
+[AV  93/200] doc=1604 pos=426 chars=651 'Forum/chat thread structure with ongoing list of geek/french/linu'
+[AV  94/200] doc=8850 pos=64 chars=618 'Structured Pakistani political/electoral article format, with fac'
+[AV  95/200] doc=8850 pos=66 chars=667 'Structured Urdu/Pakistan news format with paper exam question for'
+[AV  96/200] doc=7741 pos=243 chars=630 'Educational blog post structure: post is building a discussion ab'
+[AV  97/200] doc=7741 pos=409 chars=671 'Scientific explainer video transcript structure: ongoing pedagogi'
+[AV  98/200] doc=9910 pos=211 chars=600 'Literary review format: humorous, conversational tone with fragme'
+[AV  99/200] doc=9910 pos=257 chars=581 'Repeating pattern of structured article format: each section foll'
+[AV 100/200] doc=9542 pos=78 chars=663 'Conversational, humorous tone with a YouTube transcript format — '
+[AV 101/200] doc=9542 pos=116 chars=550 'Translation article structure: a translated text is being reprodu'
+[AV 102/200] doc=9212 pos=100 chars=690 'Repeating pattern of verbatim copy-paste structure: the text is r'
+[AV 103/200] doc=9212 pos=104 chars=658 'Repeating pattern of verbatim Q&A format: each entry follows "the'
+[AV 104/200] doc=9390 pos=143 chars=611 'Historical fiction narrative momentum: a literary essay is buildi'
+[AV 105/200] doc=9390 pos=152 chars=608 'Military/historical fiction dialogue format: a character is deliv'
+[AV 106/200] doc=9661 pos=100 chars=651 'Chat forum structure: conversational, fragmented, drug-related co'
+[AV 107/200] doc=9661 pos=101 chars=635 'Conversational drug/music forum post structure: a person is venti'
+[AV 108/200] doc=10128 pos=112 chars=662 'Educational article structure: Hindi/English translation format w'
+[AV 109/200] doc=10128 pos=128 chars=667 'Fantasy/literary text pattern: fragmented, incoherent prose with '
+[AV 110/200] doc=9787 pos=86 chars=679 'Literary/cultural context: a translation of a Russian novel excer'
+[AV 111/200] doc=9787 pos=111 chars=624 'Literary/academic discourse pattern: a long quotation from a book'
+[AV 112/200] doc=10199 pos=118 chars=604 'Forum/chat format with fragmented, incoherent political commentar'
+[AV 113/200] doc=10199 pos=204 chars=591 'Repeating pattern of forum/copy-paste structure: the text is repr'
+[AV 114/200] doc=10322 pos=73 chars=601 'Repeating structure "Tôi không chắc về... Tôi không thích..." est'
+[AV 115/200] doc=10322 pos=215 chars=636 'Ongoing transcript of a podcast or article compilation, with frag'
+[AV 116/200] doc=9530 pos=66 chars=502 'Repeating pattern of forum/text excerpt structure: a quoted phras'
+[AV 117/200] doc=9530 pos=100 chars=486 'Article follows a standard book review format, with a narrative s'
+[AV 118/200] doc=6316 pos=346 chars=661 'Academic paper structure: French/mathematical modelling document '
+[AV 119/200] doc=6316 pos=349 chars=600 'Scientific post structure: document is listing a paper/tutorial o'
+[AV 120/200] doc=7623 pos=289 chars=677 'Academic literary criticism format: structured survey of canonica'
+[AV 121/200] doc=7623 pos=389 chars=616 'Academic anthology format: bibliographic citation block followed '
+[AV 122/200] doc=5109 pos=128 chars=603 'Meeting minutes format: document listing distribution report for '
+[AV 123/200] doc=5109 pos=129 chars=569 'Business/operational report format: document listing weekly distr'
+[AV 124/200] doc=3422 pos=105 chars=616 'Official EU policy/regulatory context: formal quotation from Euro'
+[AV 125/200] doc=3422 pos=134 chars=593 'Official EU parliamentary press release format, with formal insti'
+[AV 126/200] doc=8699 pos=368 chars=600 'Legal document structure: bankruptcy court opinion format signals'
+[AV 127/200] doc=8699 pos=391 chars=691 'Legal document structure: formal motion to dismiss, following sta'
+[AV 128/200] doc=949 pos=108 chars=672 'Statistical visualization guidance is being established, explaini'
+[AV 129/200] doc=949 pos=153 chars=736 'Academic paper describing a visualization tool, establishing a fo'
+[AV 130/200] doc=3627 pos=145 chars=648 'Forum post tone: casual tech complaint/review, with a user expres'
+[AV 131/200] doc=3627 pos=206 chars=604 'Technical documentation pattern: structured Q&A format with code '
+[AV 132/200] doc=1174 pos=233 chars=744 'Scientific review structure: formal biomedical framing establishe'
+[AV 133/200] doc=1174 pos=281 chars=754 'Scientific grant proposal structure: document is describing a PhD'
+[AV 134/200] doc=5578 pos=148 chars=603 'Podcast transcript format: dialogue structure with quoted speech,'
+[AV 135/200] doc=5578 pos=464 chars=638 'Conversational podcast transcript structure: dialogue format with'
+[AV 136/200] doc=5024 pos=132 chars=636 'Ongoing interview transcript format: a quote from Joe Biden is be'
+[AV 137/200] doc=5024 pos=263 chars=677 'News article format: factual, journalistic structure reporting on'
+[AV 138/200] doc=4666 pos=116 chars=636 'Academic paper structure: abstract/paper introduction format, wit'
+[AV 139/200] doc=4666 pos=316 chars=728 'Academic paper structure: technical paper in Arabic/engineering d'
+[AV 140/200] doc=8780 pos=258 chars=661 'Blog post structure: persuasive/emotional tone with a student tes'
+[AV 141/200] doc=8780 pos=426 chars=659 'Religious/reflective blog post structure: theological discourse w'
+[AV 142/200] doc=2765 pos=157 chars=747 'Scientific paper structure: abstract of a Chinese materials paper'
+[AV 143/200] doc=2765 pos=173 chars=709 'Scientific paper structure: abstract of Chinese perovskite solar '
+[AV 144/200] doc=4833 pos=185 chars=763 'Medical/academic paper structure: formal surgical description of '
+[AV 145/200] doc=4833 pos=401 chars=791 'Medical paper structure: structured abstract format with Chinese '
+[AV 146/200] doc=8080 pos=73 chars=661 'Technical troubleshooting post structure: user is explaining a bu'
+[AV 147/200] doc=8080 pos=120 chars=599 'Technical troubleshooting post structure: user is documenting a b'
+[AV 148/200] doc=7721 pos=67 chars=755 'Patent document genre establishing formal technical description o'
+[AV 149/200] doc=7721 pos=69 chars=704 'Patent document genre establishing formal technical description o'
+[AV 150/200] doc=636 pos=136 chars=684 'Technical storage system documentation describing EMC Network App'
+[AV 151/200] doc=636 pos=159 chars=668 'Technical documentation listing Apple Xsan/NAS storage system com'
+[AV 152/200] doc=6312 pos=149 chars=763 'Scientific explainer article structure: educational physics descr'
+[AV 153/200] doc=6312 pos=470 chars=747 'Physics educational exposition is explaining classical mechanics,'
+[AV 154/200] doc=9982 pos=91 chars=539 'Ongoing literary-philosophical essay structure: the text is prese'
+[AV 155/200] doc=9982 pos=181 chars=590 'The text is a translation/copy of a phrase, establishing a patter'
+[AV 156/200] doc=9555 pos=141 chars=643 'Structured educational content with transcript format, continuing'
+[AV 157/200] doc=9555 pos=150 chars=623 'Dictionary/word-puzzle site format: fragmented, incoherent text w'
+[AV 158/200] doc=9280 pos=106 chars=590 'Repeating pattern of structured literary quotation format: each e'
+[AV 159/200] doc=9280 pos=121 chars=616 'Repetitive pattern of verbatim quotation from the text: the answe'
+[AV 160/200] doc=9358 pos=123 chars=635 'Article/list format with informational tone: a cultural/historica'
+[AV 161/200] doc=9358 pos=153 chars=635 'AI/language model format: structured prompt with a translation/te'
+[AV 162/200] doc=9758 pos=78 chars=601 'Literary/historical text format: a book excerpt or instructional '
+[AV 163/200] doc=9758 pos=127 chars=657 'Repeating pattern of structured translation: the text follows a s'
+[AV 164/200] doc=10048 pos=80 chars=622 'Article structure: Hindi astrology/Hindi forum format with answer'
+[AV 165/200] doc=10048 pos=130 chars=604 'Repeating pattern of forum/textbook structure: each section follo'
+[AV 166/200] doc=9900 pos=127 chars=625 'Article structure: informational/listicle format with a narrative'
+[AV 167/200] doc=9900 pos=168 chars=663 'Repeating pattern of verbatim text: the text is reproducing a str'
+[AV 168/200] doc=10182 pos=119 chars=585 'Repeating pattern of verbatim text from the book: structured Q&A '
+[AV 169/200] doc=10182 pos=147 chars=604 'Literary/creative writing site format: text is a collage of fragm'
+[AV 170/200] doc=10340 pos=65 chars=611 'Article structure: informational/SEO content with translated AI-g'
+[AV 171/200] doc=10340 pos=146 chars=579 'Article structure: SEO/content-farm style with fragmented, incohe'
+[AV 172/200] doc=9529 pos=127 chars=521 'Repeating pattern of structured book-summary content: each sectio'
+[AV 173/200] doc=9529 pos=165 chars=459 'Repeating pattern of verbatim text: the phrase "我们正在重复这段内容" mirro'
+[AV 174/200] doc=269 pos=129 chars=522 'Academic paper structure: French research announcement format, wi'
+[AV 175/200] doc=269 pos=265 chars=722 'Academic paper structure: formal mathematical finance context, es'
+[AV 176/200] doc=6899 pos=238 chars=638 'Narrative pattern: structured book summary continuing to plot the'
+[AV 177/200] doc=6899 pos=405 chars=637 'Literary structure: a British detective novel description, with f'
+[AV 178/200] doc=9102 pos=131 chars=571 'Structured math problem format: a list of divisibility/number the'
+[AV 179/200] doc=9102 pos=410 chars=525 'Mathematical puzzle structure: a word problem listing prime facto'
+[AV 180/200] doc=4815 pos=390 chars=609 'Email thread/scheduling message format is being used, with a plan'
+[AV 181/200] doc=4815 pos=392 chars=634 'Meeting/scheduling email tone: instructional planning document fo'
+[AV 182/200] doc=4461 pos=189 chars=677 'Political document format: formal British diplomatic statement, n'
+[AV 183/200] doc=4461 pos=446 chars=744 'Political document structure: formal German policy statement with'
+[AV 184/200] doc=3268 pos=330 chars=638 'Legal case summary format: formal judicial record describing a la'
+[AV 185/200] doc=3268 pos=337 chars=602 'Legal case report format: judicial opinion summarizing a bankrupt'
+[AV 186/200] doc=3557 pos=98 chars=640 'Software license agreement boilerplate pattern: standard Apache L'
+[AV 187/200] doc=3557 pos=210 chars=720 'Legal disclaimer boilerplate format: structured document listing '
+[AV 188/200] doc=5862 pos=135 chars=625 'Forum reply structure: conversational, opinionated tone establish'
+[AV 189/200] doc=5862 pos=285 chars=657 'Conversational forum post structure: a meta-commentary is being d'
+[AV 190/200] doc=4716 pos=80 chars=761 'Academic public health paper structure: formal policy/research ar'
+[AV 191/200] doc=4716 pos=307 chars=753 'Academic policy paper systematically reviewing the theoretical mo'
+[AV 192/200] doc=1287 pos=181 chars=617 'Dialogue format with a waitress, following a pattern of conversat'
+[AV 193/200] doc=1287 pos=195 chars=576 'Dialogue format with a character speaking in a casual, hungry ton'
+[AV 194/200] doc=7098 pos=171 chars=691 'Article structure: entertainment journalism analyzing a problemat'
+[AV 195/200] doc=7098 pos=337 chars=677 'Article structure: ongoing analysis of a media piece, with a conc'
+[AV 196/200] doc=6087 pos=149 chars=666 'Academic/cultural article structure: book description format with'
+[AV 197/200] doc=6087 pos=262 chars=786 'Academic article structure: formal German-cultural publication pr'
+[AV 198/200] doc=2801 pos=88 chars=656 'UK travel guide format: practical Edinburgh review with descripti'
+[AV 199/200] doc=2801 pos=153 chars=597 'UK food/cafe review format: practical guide listing a cosy cake s'
+[AV 200/200] doc=6007 pos=103 chars=749 'Scientific paper structure: formal biomedical abstract describing'
+[freeze] explanations=b656ded845c8fd122e4dcb1391ba5d81e1a903f80a69c30575bf26910e200942 variants=458d6c549e1bbda49694348e886a0a964bf02e6e6b158cbf608852e84bd475b8 paragraphs={3: 200}
+Loading weights:   0%|          | 0/430 [00:00<?, ?it/s]Loading weights: 100%|██████████| 430/430 [00:00<00:00, 7481.94it/s]
+[transformers] [1mGemma3ForCausalLM LOAD REPORT[0m from: /root/autodl-tmp/models/nla-gemma3-12b-L32-ar
+Key               | Status  | 
+------------------+---------+-
+model.norm.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[NLACritic] 33 layers  d_model=3840  mse_scale=61.97
+[AR] 50 unique texts
+[AR] 100 unique texts
+[AR] 150 unique texts
+[AR] 200 unique texts
+[AR] variant orig complete
+[AR] 250 unique texts
+[AR] 300 unique texts
+[AR] 350 unique texts
+[AR] 400 unique texts
+[AR] variant p1_only complete
+[AR] 450 unique texts
+[AR] 500 unique texts
+[AR] 550 unique texts
+[AR] 600 unique texts
+[AR] variant p2_only complete
+[AR] 650 unique texts
+[AR] 700 unique texts
+[AR] 750 unique texts
+[AR] 800 unique texts
+[AR] variant p3_only complete
+[AR] 850 unique texts
+[AR] 900 unique texts
+[AR] 950 unique texts
+[AR] 1000 unique texts
+[AR] variant p12 complete
+[AR] 1050 unique texts
+[AR] 1100 unique texts
+[AR] 1150 unique texts
+[AR] 1200 unique texts
+[AR] variant quote_strip_p2 complete
+[AR] 1250 unique texts
+[AR] 1300 unique texts
+[AR] 1350 unique texts
+[AR] 1400 unique texts
+[AR] variant quote_strip_p3 complete
+[AR] 1450 unique texts
+[AR] 1500 unique texts
+[AR] 1550 unique texts
+[AR] 1600 unique texts
+[AR] variant quote_strip_all complete
+[AR] 1650 unique texts
+[AR] 1700 unique texts
+[AR] 1750 unique texts
+[AR] 1800 unique texts
+[AR] variant word_shuffle complete
+
+=== N4 reconstruction summary ===
+generic floor: +0.0034
+orig             cos_c=+0.8357 lodo=+0.8376 share=1.000 top1=0.995
+p3_only          cos_c=+0.7791 lodo=+0.7817 share=0.932 top1=0.995
+p12              cos_c=+0.6315 lodo=+0.6359 share=0.755 top1=0.950
+quote_strip_p3   cos_c=+0.1910 lodo=+0.1980 share=0.225 top1=0.355
+sae_small        cos_c=+0.5869 lodo=+0.5922 share=nan top1=1.000
+sae_big          cos_c=+0.6408 lodo=+0.6452 share=nan top1=1.000
+N4_RECON_COMPLETE -> /root/autodl-tmp/results/n4_recon_analysis_v1.json (747f92e024a7aeb5a47e05e1d006b0403760f908229c6451f7a844c33223cdcd) + /root/autodl-tmp/results/n4_recon_vectors_v1.npz (e9d89713dc64381a52f05224d6522abb0ec547777a8c6a7f08b841a72a339967)
+[2026-07-30T21:01:54+08:00] N4_RECON_COMPLETE
+[2026-07-30T21:01:54+08:00] N4_RECON_EXIT status=0

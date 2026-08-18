@@ -1,0 +1,52 @@
+{
+  "checks": {
+    "activation_width": 3840,
+    "all_finite": true,
+    "content_group_id_unique": true,
+    "norm_max": 96332.08388410363,
+    "norm_mean": 68575.20099035217,
+    "norm_min": 38687.82855931736,
+    "row_uid_unique": true
+  },
+  "elapsed_seconds": 17.911,
+  "experiment": "N5 frozen-plan layer-32 activation extraction",
+  "forward_count": 200,
+  "inputs": {
+    "base_config_sha256": "39172c4124d3470341bbbb25f2926fd97edf68f0fe3a9fa4cde6acb9b7ed2cc6",
+    "base_model": "/root/autodl-tmp/models/gemma-3-12b-it",
+    "model_manifest": "/root/autodl-tmp/results/n5_model_weights_v1.sha256",
+    "model_manifest_sha256": "4a5c6212dcf5851b9bea2313b4898f977fef0ee36aecc922d10f0375cbc94735",
+    "plan": "/root/autodl-tmp/results/n5_cohort_plan_v2.json",
+    "plan_sha256": "6e7394476c4769bcb3334bbc82ca078fc778e4f006d9d600dac3882983cafb4c",
+    "plan_sha256_sidecar": "/root/autodl-tmp/results/n5_cohort_plan_v2.json.sha256",
+    "preregistration_sha256": "63dc31b4f9607e54ac15f1c364fcae2ee903f228fe0afb4d388c6dad1a6f9103",
+    "script_sha256": "0d641183a29a8f7adfc931f087b2e95f0207061688d207e46d62af8ac0cdaf01",
+    "tokenizer_file_sha256": {
+      "added_tokens.json": "50b2f405ba56a26d4913fd772089992252d7f942123cc0a034d96424221ba946",
+      "config.json": "39172c4124d3470341bbbb25f2926fd97edf68f0fe3a9fa4cde6acb9b7ed2cc6",
+      "generation_config.json": "fd9324becc53c4be610db39e13a613006f09fd6ef71a95fb6320dc33157490a3",
+      "special_tokens_map.json": "2f7b0adf4fb469770bb1490e3e35df87b1dc578246c5e7e6fc76ecf33213a397",
+      "tokenizer.json": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795",
+      "tokenizer.model": "1299c11d7cf632ef3b4e11937501358ada021bbdf7c47638d13c0ee982f2e79c",
+      "tokenizer_config.json": "bfe25c2735e395407beb78456ea9a6984a1f00d8c16fa04a8b75f2a614cf53e1"
+    }
+  },
+  "n_content_groups": 200,
+  "n_rows": 200,
+  "outputs": {
+    "parquet": "/root/autodl-tmp/activations/acts_L32_n5_discovery_v2.parquet",
+    "parquet_sha256": "62f19dba7c4d6771d3319af155fe4ffbace0d5f39cb30b51ffc5bfaee46cbc67"
+  },
+  "protocol": {
+    "batch_size": 1,
+    "dtype": "bfloat16",
+    "early_exit_after_layer": 32,
+    "full_frozen_sequence": true,
+    "layer_index": 32,
+    "resampled": false,
+    "retokenized": false
+  },
+  "schema_version": 1,
+  "split": "discovery",
+  "status": "complete"
+}

@@ -1,0 +1,32 @@
++ PY=/root/miniconda3/bin/python
++ CMP=/root/autodl-tmp/nla_compare
++ MODELS=/root/autodl-tmp/models
++ cd /root/autodl-tmp/nla_compare
++ export HF_HOME=/root/autodl-tmp/hf
++ HF_HOME=/root/autodl-tmp/hf
++ /root/miniconda3/bin/python 09_rescore_centered.py --ar /root/autodl-tmp/models/nla-gemma3-12b-L32-ar --sae-small /root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small --sae-big /root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_big --activations /root/autodl-tmp/activations/acts_L32.parquet --results /root/autodl-tmp/results --out /root/autodl-tmp/results/centered_rescore.json --vecs-out /root/autodl-tmp/results/recon_vectors.npz
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/430 [00:00<?, ?it/s]Loading weights: 100%|██████████| 430/430 [00:00<00:00, 7840.57it/s]
+[transformers] [1mGemma3ForCausalLM LOAD REPORT[0m from: /root/autodl-tmp/models/nla-gemma3-12b-L32-ar
+Key               | Status  | 
+------------------+---------+-
+model.norm.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[NLACritic] 33 layers  d_model=3840  mse_scale=61.97
+HEAD2HEAD_C: 0.8593 0.6584 0.7246
+RESID_C: {"cos_rx_c(generic floor)": 0.041, "cos_rr_c": -0.0287, "resid_mean_alignment": 0.0407}
+WDEC_C: {"top": 0.1892, "rand": 0.1051, "gauss": 0.0112}
+CURVE_C: {"0.0": {"n": 16, "mean_abs_cos_sig_c": 0.072, "max": 0.1986, "frac_gt_0.3": 0.0}, "0.25": {"n": 16, "mean_abs_cos_sig_c": 0.0435, "max": 0.1434, "frac_gt_0.3": 0.0}, "0.5": {"n": 16, "mean_abs_cos_sig_c": 0.0436, "max": 0.1387, "frac_gt_0.3": 0.0}, "1.0": {"n": 16, "mean_abs_cos_sig_c": 0.0556, "max": 0.1714, "frac_gt_0.3": 0.0}, "2.0": {"n": 16, "mean_abs_cos_sig_c": 0.0915, "max": 0.3645, "frac_gt_0.3": 0.062}}
+wrote -> /root/autodl-tmp/results/centered_rescore.json + /root/autodl-tmp/results/recon_vectors.npz
++ echo '=== RESCORE_COMPLETE ==='
+=== RESCORE_COMPLETE ===
++ finish 0
+++ date
++ echo '=== RESCORE EXIT (status=0) at Fri Jul 10 23:47:14 CST 2026 ==='
+=== RESCORE EXIT (status=0) at Fri Jul 10 23:47:14 CST 2026 ===
++ sync
++ sleep 300
++ shutdown
++ exit 0

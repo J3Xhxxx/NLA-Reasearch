@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "batch_id": 26,
+  "agent_task": "/root/luna_batch_26",
+  "role": "luna_worker",
+  "model": "gpt-5.6-luna",
+  "reasoning": "max",
+  "public_prompt_sha256": "ffe8d50a5f98eb64db2fe04ee57926c2b182b9d624ab70c993b451128bf3836e",
+  "cases": [
+    {
+      "case_id": "case_2fycsy8r1mujoui0ol",
+      "hypothesis": "Plural nouns naming physical venues or facilities where services and activities occur.",
+      "positive_cues": [
+        "Facilities, restaurants, stores, and bars are physical establishments or service locations.",
+        "Contexts describe health, retail, and dining operations at those locations."
+      ],
+      "exclusion_cues": [
+        "The terms do not denote people, actions, products, or abstract concepts."
+      ],
+      "abstain": false,
+      "confidence": 0.96
+    },
+    {
+      "case_id": "case_28ci62y1009llthzer",
+      "hypothesis": "Microsoft ecosystem references in technology and corporate web content.",
+      "positive_cues": [
+        "All contexts explicitly reference Microsoft products, services, APIs, licensing, or company employment.",
+        "MSN, Skype, Intune, go.microsoft.com, Windows Runtime, and Channel 9 are technology ecosystem cues."
+      ],
+      "exclusion_cues": [
+        "Target spans are heterogeneous, including a conjunction, a proper noun, and URL punctuation.",
+        "The supplied snippets discuss unrelated domains and do not establish one target-token meaning."
+      ],
+      "abstain": false,
+      "confidence": 0.88
+    },
+    {
+      "case_id": "case_ypa0t171iufwng9l0z",
+      "hypothesis": "Health-care terminology involving medical providers, records, and patient care.",
+      "positive_cues": [
+        "Every active span is health, healthcare, or health care in a medical or policy context.",
+        "Examples mention qualified professionals, health records, diabetes care, and nursing."
+      ],
+      "exclusion_cues": [
+        "No active span is used for a nonmedical meaning such as economic or mechanical health."
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_rchnr9d46dr1iu9eq8",
+      "hypothesis": "Weekend-related temporal expressions, including Sunday and weekend variants.",
+      "positive_cues": [
+        "Active spans are Weekend, Sunday, weekend, and weekends.",
+        "Contexts concern leisure, meals, personal time, and delivery timing around weekends."
+      ],
+      "exclusion_cues": [
+        "No weekday or non-temporal lexical category is represented."
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_gqrcqn635ds2ewnx7s",
+      "hypothesis": "Plus signs used as addition operators in arithmetic, algebra, and JavaScript expressions.",
+      "positive_cues": [
+        "Every active span is a plus sign embedded in a numeric, algebraic, or JavaScript expression.",
+        "Surrounding text asks for calculations or explains unary plus and coercion."
+      ],
+      "exclusion_cues": [
+        "The evidence does not show plus signs as prose punctuation or a non-operator symbol."
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    }
+  ]
+}

@@ -1,0 +1,209 @@
++ PY=/root/miniconda3/bin/python
++ CMP=/root/autodl-tmp/nla_compare
++ RES=/root/autodl-tmp/results
++ MODELS=/root/autodl-tmp/models
++ cd /root/autodl-tmp/nla_compare
++ export HF_ENDPOINT=https://hf-mirror.com
++ HF_ENDPOINT=https://hf-mirror.com
++ export HF_HOME=/root/autodl-tmp/hf
++ HF_HOME=/root/autodl-tmp/hf
++ export HUGGINGFACE_HUB_CACHE=/root/autodl-tmp/hf/hub
++ HUGGINGFACE_HUB_CACHE=/root/autodl-tmp/hf/hub
++ export PYTHONUNBUFFERED=1
++ PYTHONUNBUFFERED=1
++ export NLA_REPO=/root/autodl-tmp/nla_repo
++ NLA_REPO=/root/autodl-tmp/nla_repo
+++ date -u
++ echo 'N3_START Thu Jul 30 11:52:25 UTC 2026'
+N3_START Thu Jul 30 11:52:25 UTC 2026
++ nvidia-smi --query-gpu=memory.used,utilization.gpu --format=csv,noheader
+0 MiB, 0 %
++ '[' '!' -f /root/autodl-tmp/results/n3_corpus_v1.json ']'
++ /root/miniconda3/bin/python 33_n3_build_corpus.py --out-dir /root/autodl-tmp/results --tag v1
+[1/3] pile-10k ...
+      9164 docs, sources=[('Pile-CC', 2283), ('PubMed Abstracts', 1392), ('StackExchange', 1377), ('OpenWebText2', 1359), ('Github', 703), ('Wikipedia (en)', 635), ('USPTO Backgrounds', 502), ('PubMed Central', 247), ('FreeLaw', 215), ('NIH ExPorter', 99), ('DM Mathematics', 99), ('ArXiv', 91), ('HackerNews', 65), ('Enron Emails', 34), ('OpenSubtitles', 27), ('YoutubeSubtitles', 10), ('Books3', 9), ('EuroParl', 6), ('PhilPapers', 5), ('BookCorpus2', 2), ('Ubuntu IRC', 2), ('Gutenberg (PG-19)', 2)]
+[2/3] xnli all_languages validation ...
+      1240 passages over 10 languages
+[3/3] frozen.
+      docs        : 10404 (9164 pile + 1240 xnli)
+      chars       : 61,353,286
+      parallel ok : True
+      unique docs : True
+      -> /root/autodl-tmp/results/n3_corpus_v1.jsonl
+      -> /root/autodl-tmp/results/n3_corpus_v1.json
+++ date -u
++ echo 'N3_CORPUS_EXIT status=0 Thu Jul 30 11:52:28 UTC 2026'
+N3_CORPUS_EXIT status=0 Thu Jul 30 11:52:28 UTC 2026
++ /root/miniconda3/bin/python 34_n3_feature_stats.py --corpus /root/autodl-tmp/results/n3_corpus_v1.jsonl --base-model /root/autodl-tmp/models/gemma-3-12b-it --sae-root /root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all --batch-size 16 --seq-len 512 --topk 16 --ckpt-every 40 --max-pile-tokens 8000000 --out-prefix /root/autodl-tmp/results/n3_feature_stats_v1
+corpus: 10404 docs, 32 sources
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1065 [00:00<03:24,  5.20it/s]Loading weights:   2%|▏         | 16/1065 [00:00<00:17, 61.66it/s]Loading weights:   3%|▎         | 28/1065 [00:00<00:13, 78.06it/s]Loading weights:   4%|▍         | 41/1065 [00:00<00:11, 85.36it/s]Loading weights:   5%|▌         | 55/1065 [00:00<00:10, 92.71it/s]Loading weights:   6%|▋         | 67/1065 [00:00<00:10, 91.67it/s]Loading weights:   8%|▊         | 82/1065 [00:00<00:10, 98.08it/s]Loading weights:   9%|▉         | 95/1065 [00:01<00:09, 103.47it/s]Loading weights:  10%|█         | 108/1065 [00:01<00:09, 103.29it/s]Loading weights:  11%|█▏        | 120/1065 [00:01<00:09, 98.27it/s] Loading weights:  13%|█▎        | 134/1065 [00:01<00:09, 100.07it/s]Loading weights:  14%|█▎        | 146/1065 [00:01<00:09, 97.46it/s] Loading weights:  15%|█▍        | 159/1065 [00:01<00:08, 105.46it/s]Loading weights:  16%|█▌        | 170/1065 [00:01<00:08, 105.69it/s]Loading weights:  17%|█▋        | 181/1065 [00:01<00:08, 99.54it/s] Loading weights:  18%|█▊        | 192/1065 [00:02<00:08, 99.00it/s]Loading weights:  19%|█▉        | 202/1065 [00:02<00:09, 92.22it/s]Loading weights:  20%|█▉        | 212/1065 [00:02<00:09, 88.24it/s]Loading weights:  21%|██        | 224/1065 [00:02<00:09, 92.74it/s]Loading weights:  22%|██▏       | 237/1065 [00:02<00:08, 94.24it/s]Loading weights:  23%|██▎       | 248/1065 [00:02<00:08, 98.13it/s]Loading weights:  24%|██▍       | 258/1065 [00:02<00:08, 91.90it/s]Loading weights:  25%|██▌       | 268/1065 [00:02<00:10, 79.48it/s]Loading weights:  26%|██▌       | 277/1065 [00:03<00:09, 80.88it/s]Loading weights:  27%|██▋       | 290/1065 [00:03<00:09, 85.42it/s]Loading weights:  28%|██▊       | 303/1065 [00:03<00:08, 92.65it/s]Loading weights:  29%|██▉       | 314/1065 [00:03<00:07, 95.43it/s]Loading weights:  31%|███       | 326/1065 [00:03<00:07, 100.80it/s]Loading weights:  32%|███▏      | 338/1065 [00:03<00:07, 103.59it/s]Loading weights:  33%|███▎      | 349/1065 [00:03<00:07, 98.19it/s] Loading weights:  34%|███▎      | 359/1065 [00:03<00:07, 91.79it/s]Loading weights:  35%|███▌      | 373/1065 [00:03<00:06, 102.23it/s]Loading weights:  36%|███▌      | 384/1065 [00:04<00:06, 103.74it/s]Loading weights:  37%|███▋      | 395/1065 [00:04<00:06, 102.98it/s]Loading weights:  38%|███▊      | 407/1065 [00:04<00:06, 107.57it/s]Loading weights:  39%|███▉      | 418/1065 [00:04<00:06, 105.45it/s]Loading weights:  41%|████      | 432/1065 [00:04<00:05, 111.20it/s]Loading weights:  42%|████▏     | 445/1065 [00:04<00:05, 113.03it/s]Loading weights:  43%|████▎     | 458/1065 [00:04<00:05, 105.84it/s]Loading weights:  44%|████▍     | 470/1065 [00:04<00:05, 100.83it/s]Loading weights:  46%|████▌     | 485/1065 [00:05<00:05, 111.90it/s]Loading weights:  47%|████▋     | 499/1065 [00:05<00:04, 116.34it/s]Loading weights:  49%|████▊     | 518/1065 [00:05<00:04, 136.11it/s]Loading weights:  50%|█████     | 533/1065 [00:05<00:03, 138.97it/s]Loading weights:  51%|█████▏    | 548/1065 [00:05<00:03, 135.84it/s]Loading weights:  53%|█████▎    | 562/1065 [00:05<00:03, 131.35it/s]Loading weights:  54%|█████▍    | 577/1065 [00:05<00:03, 132.64it/s]Loading weights:  55%|█████▌    | 591/1065 [00:05<00:03, 128.89it/s]Loading weights:  57%|█████▋    | 608/1065 [00:05<00:03, 139.05it/s]Loading weights:  59%|█████▊    | 625/1065 [00:05<00:02, 147.34it/s]Loading weights:  83%|████████▎ | 879/1065 [00:06<00:00, 826.63it/s]Loading weights: 100%|██████████| 1065/1065 [00:06<00:00, 172.92it/s]
+model: 48 layers, early exit after 32
+saes: ['small', 'big'] width=16384
+  pile      17507 seqs     7,999,792 tok  (available 15,543,622)
+  xnli       1238 seqs       241,153 tok  (available 241,153)
+chunks: 18745 seqs, 8,240,945 tokens
+[40/1172] 277,130 tok  7,169 tok/s  eta 18.5 min
+[80/1172] 559,358 tok  7,230 tok/s  eta 17.7 min
+[120/1172] 844,849 tok  7,262 tok/s  eta 17.0 min
+[160/1172] 1,126,345 tok  7,251 tok/s  eta 16.4 min
+[200/1172] 1,410,229 tok  7,250 tok/s  eta 15.7 min
+[240/1172] 1,691,372 tok  7,246 tok/s  eta 15.1 min
+[280/1172] 1,970,681 tok  7,250 tok/s  eta 14.4 min
+[320/1172] 2,250,126 tok  7,247 tok/s  eta 13.8 min
+[360/1172] 2,536,706 tok  7,256 tok/s  eta 13.1 min
+[400/1172] 2,812,870 tok  7,241 tok/s  eta 12.5 min
+[440/1172] 3,088,887 tok  7,228 tok/s  eta 11.9 min
+[480/1172] 3,366,565 tok  7,220 tok/s  eta 11.3 min
+[520/1172] 3,651,347 tok  7,224 tok/s  eta 10.6 min
+[560/1172] 3,926,870 tok  7,214 tok/s  eta 10.0 min
+[600/1172] 4,212,961 tok  7,219 tok/s  eta 9.3 min
+[640/1172] 4,493,777 tok  7,218 tok/s  eta 8.7 min
+[680/1172] 4,775,871 tok  7,218 tok/s  eta 8.0 min
+[720/1172] 5,058,952 tok  7,219 tok/s  eta 7.3 min
+[760/1172] 5,343,712 tok  7,222 tok/s  eta 6.7 min
+[800/1172] 5,620,460 tok  7,217 tok/s  eta 6.1 min
+[840/1172] 5,899,411 tok  7,214 tok/s  eta 5.4 min
+[880/1172] 6,180,300 tok  7,213 tok/s  eta 4.8 min
+[920/1172] 6,464,690 tok  7,215 tok/s  eta 4.1 min
+[960/1172] 6,740,253 tok  7,210 tok/s  eta 3.5 min
+[1000/1172] 7,023,190 tok  7,211 tok/s  eta 2.8 min
+[1040/1172] 7,304,898 tok  7,211 tok/s  eta 2.2 min
+[1080/1172] 7,585,676 tok  7,211 tok/s  eta 1.5 min
+[1120/1172] 7,872,088 tok  7,214 tok/s  eta 0.9 min
+[1160/1172] 8,156,463 tok  7,216 tok/s  eta 0.2 min
+[1172/1172] 8,240,945 tok  7,217 tok/s  eta 0.0 min
+hook fired 1172 times
+
+=== done ===
+small  tokens=8,240,945 alive=16339/16384 (99.7%) mean_L0=18.0
+big    tokens=8,240,945 alive=16202/16384 (98.9%) mean_L0=122.6
+-> /root/autodl-tmp/results/n3_feature_stats_v1.npz / .json
++ S2=0
+++ date -u
++ echo 'N3_STATS_EXIT status=0 Thu Jul 30 12:12:15 UTC 2026'
+N3_STATS_EXIT status=0 Thu Jul 30 12:12:15 UTC 2026
++ /root/miniconda3/bin/python 35_n3_resample_cohort.py --corpus /root/autodl-tmp/results/n3_corpus_v1.jsonl --base-model /root/autodl-tmp/models/gemma-3-12b-it --n-target 200 --min-position 64 --min-continuation 16 --out /root/autodl-tmp/activations/acts_L32_n3_v1.parquet --out-json /root/autodl-tmp/results/n3_cohort_v1.json
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1065 [00:00<03:16,  5.42it/s]Loading weights:   2%|▏         | 16/1065 [00:00<00:16, 62.25it/s]Loading weights:   3%|▎         | 29/1065 [00:00<00:12, 82.86it/s]Loading weights:   4%|▍         | 42/1065 [00:00<00:11, 90.63it/s]Loading weights:   5%|▌         | 55/1065 [00:00<00:10, 93.24it/s]Loading weights:   6%|▋         | 68/1065 [00:00<00:10, 99.29it/s]Loading weights:   8%|▊         | 81/1065 [00:00<00:09, 102.72it/s]Loading weights:   9%|▉         | 94/1065 [00:01<00:09, 104.70it/s]Loading weights:  10%|█         | 108/1065 [00:01<00:08, 109.71it/s]Loading weights:  11%|█▏        | 122/1065 [00:01<00:08, 112.32it/s]Loading weights:  13%|█▎        | 140/1065 [00:01<00:07, 130.17it/s]Loading weights:  14%|█▍        | 154/1065 [00:01<00:07, 128.08it/s]Loading weights:  16%|█▌        | 169/1065 [00:01<00:06, 131.28it/s]Loading weights:  17%|█▋        | 185/1065 [00:01<00:06, 130.56it/s]Loading weights:  19%|█▉        | 200/1065 [00:01<00:06, 131.59it/s]Loading weights:  20%|██        | 214/1065 [00:01<00:06, 129.35it/s]Loading weights:  22%|██▏       | 232/1065 [00:02<00:05, 142.97it/s]Loading weights:  23%|██▎       | 250/1065 [00:02<00:05, 151.40it/s]Loading weights:  25%|██▍       | 266/1065 [00:02<00:05, 133.43it/s]Loading weights:  27%|██▋       | 286/1065 [00:02<00:05, 150.60it/s]Loading weights:  28%|██▊       | 302/1065 [00:02<00:05, 149.33it/s]Loading weights:  30%|██▉       | 318/1065 [00:02<00:05, 131.29it/s]Loading weights:  32%|███▏      | 336/1065 [00:02<00:05, 143.25it/s]Loading weights:  33%|███▎      | 352/1065 [00:02<00:04, 146.92it/s]Loading weights:  35%|███▍      | 368/1065 [00:02<00:05, 138.56it/s]Loading weights:  36%|███▌      | 383/1065 [00:03<00:05, 131.66it/s]Loading weights:  37%|███▋      | 397/1065 [00:03<00:05, 131.90it/s]Loading weights:  39%|███▊      | 411/1065 [00:03<00:05, 119.35it/s]Loading weights:  40%|███▉      | 424/1065 [00:03<00:05, 120.60it/s]Loading weights:  42%|████▏     | 442/1065 [00:03<00:04, 134.32it/s]Loading weights:  43%|████▎     | 458/1065 [00:03<00:04, 127.46it/s]Loading weights:  44%|████▍     | 473/1065 [00:03<00:04, 126.21it/s]Loading weights:  46%|████▋     | 493/1065 [00:03<00:03, 143.50it/s]Loading weights:  48%|████▊     | 510/1065 [00:04<00:03, 145.79it/s]Loading weights:  49%|████▉     | 525/1065 [00:04<00:04, 131.37it/s]Loading weights:  51%|█████     | 539/1065 [00:04<00:04, 129.95it/s]Loading weights:  52%|█████▏    | 559/1065 [00:04<00:03, 147.67it/s]Loading weights:  54%|█████▍    | 575/1065 [00:04<00:03, 144.76it/s]Loading weights:  55%|█████▌    | 590/1065 [00:04<00:03, 121.43it/s]Loading weights:  58%|█████▊    | 614/1065 [00:04<00:03, 142.90it/s]Loading weights:  71%|███████   | 751/1065 [00:04<00:00, 447.07it/s]Loading weights:  96%|█████████▌| 1021/1065 [00:05<00:00, 1031.34it/s]Loading weights: 100%|██████████| 1065/1065 [00:05<00:00, 210.50it/s] 
+[   2/200] doc=2934 src=ArXiv seq=512 picked=[123, 289]
+[   4/200] doc=6583 src=BookCorpus2 seq=512 picked=[66, 350]
+[   6/200] doc=2477 src=Enron Emails seq=512 picked=[248, 286]
+[   8/200] doc=8924 src=EuroParl seq=160 picked=[80, 123]
+[  10/200] doc=404 src=FreeLaw seq=512 picked=[178, 325]
+[  12/200] doc=8724 src=Github seq=512 picked=[451, 455]
+[  14/200] doc=4332 src=Gutenberg (PG-19) seq=512 picked=[78, 145]
+[  16/200] doc=6387 src=HackerNews seq=512 picked=[195, 406]
+[  18/200] doc=504 src=NIH ExPorter seq=394 picked=[201, 376]
+[  20/200] doc=5065 src=OpenSubtitles seq=512 picked=[202, 323]
+[  22/200] doc=4107 src=OpenWebText2 seq=223 picked=[151, 168]
+[  24/200] doc=8766 src=PhilPapers seq=512 picked=[216, 377]
+[  26/200] doc=2901 src=Pile-CC seq=198 picked=[89, 176]
+[  28/200] doc=1471 src=PubMed Abstracts seq=99 picked=[71, 74]
+[  30/200] doc=7703 src=PubMed Central seq=512 picked=[398, 457]
+[  32/200] doc=4168 src=StackExchange seq=512 picked=[434, 470]
+[  34/200] doc=6570 src=USPTO Backgrounds seq=512 picked=[318, 417]
+[  36/200] doc=6923 src=Ubuntu IRC seq=512 picked=[194, 248]
+[  38/200] doc=8079 src=Wikipedia (en) seq=512 picked=[300, 357]
+[  40/200] doc=3509 src=YoutubeSubtitles seq=170 picked=[74, 127]
+[  42/200] doc=9589 src=xnli:de seq=133 picked=[64, 77]
+[  44/200] doc=9176 src=xnli:en seq=146 picked=[99, 118]
+[  46/200] doc=9305 src=xnli:es seq=218 picked=[104, 139]
+[  48/200] doc=9780 src=xnli:fr seq=216 picked=[124, 131]
+[  50/200] doc=10053 src=xnli:hi seq=263 picked=[87, 214]
+[  52/200] doc=9898 src=xnli:ru seq=216 picked=[168, 179]
+[  54/200] doc=10348 src=xnli:vi seq=226 picked=[87, 175]
+[  56/200] doc=9522 src=xnli:zh seq=132 picked=[96, 115]
+[  58/200] doc=293 src=ArXiv seq=512 picked=[438, 444]
+[  60/200] doc=785 src=BookCorpus2 seq=512 picked=[144, 309]
+[  62/200] doc=1053 src=Books3 seq=512 picked=[298, 378]
+[  64/200] doc=2376 src=Enron Emails seq=157 picked=[90, 103]
+[  66/200] doc=5398 src=EuroParl seq=512 picked=[398, 414]
+[  68/200] doc=1204 src=FreeLaw seq=512 picked=[405, 417]
+[  69/200] doc=5428 src=Github seq=512 picked=[346]
+[  71/200] doc=6279 src=Gutenberg (PG-19) seq=512 picked=[135, 325]
+[  73/200] doc=4432 src=HackerNews seq=235 picked=[178, 185]
+[  75/200] doc=8198 src=NIH ExPorter seq=512 picked=[125, 220]
+[  77/200] doc=5849 src=OpenSubtitles seq=512 picked=[276, 302]
+[  79/200] doc=6854 src=OpenWebText2 seq=357 picked=[170, 324]
+[  81/200] doc=4280 src=PhilPapers seq=512 picked=[315, 342]
+[  83/200] doc=4211 src=Pile-CC seq=343 picked=[236, 279]
+[  85/200] doc=532 src=PubMed Abstracts seq=138 picked=[89, 91]
+[  87/200] doc=4304 src=PubMed Central seq=512 picked=[110, 379]
+[  89/200] doc=55 src=StackExchange seq=512 picked=[353, 455]
+[  91/200] doc=3153 src=USPTO Backgrounds seq=182 picked=[100, 132]
+[  93/200] doc=1604 src=Ubuntu IRC seq=512 picked=[169, 426]
+[  95/200] doc=8850 src=Wikipedia (en) seq=113 picked=[64, 66]
+[  97/200] doc=7741 src=YoutubeSubtitles seq=512 picked=[243, 409]
+[  99/200] doc=9910 src=xnli:ar seq=343 picked=[211, 257]
+[ 101/200] doc=9542 src=xnli:de seq=210 picked=[78, 116]
+[ 103/200] doc=9212 src=xnli:en seq=138 picked=[100, 104]
+[ 105/200] doc=9390 src=xnli:es seq=221 picked=[143, 152]
+[ 107/200] doc=9661 src=xnli:fr seq=120 picked=[100, 101]
+[ 109/200] doc=10128 src=xnli:hi seq=166 picked=[112, 128]
+[ 111/200] doc=9787 src=xnli:ru seq=246 picked=[86, 111]
+[ 113/200] doc=10199 src=xnli:tr seq=222 picked=[118, 204]
+[ 115/200] doc=10322 src=xnli:vi seq=256 picked=[73, 215]
+[ 117/200] doc=9530 src=xnli:zh seq=173 picked=[66, 100]
+[ 119/200] doc=6316 src=ArXiv seq=512 picked=[346, 349]
+[ 121/200] doc=7623 src=Books3 seq=512 picked=[289, 389]
+[ 123/200] doc=5109 src=Enron Emails seq=146 picked=[128, 129]
+[ 125/200] doc=3422 src=EuroParl seq=158 picked=[105, 134]
+[ 127/200] doc=8699 src=FreeLaw seq=512 picked=[368, 391]
+[ 129/200] doc=949 src=Github seq=188 picked=[108, 153]
+[ 131/200] doc=3627 src=HackerNews seq=300 picked=[145, 206]
+[ 133/200] doc=1174 src=NIH ExPorter seq=512 picked=[233, 281]
+[ 135/200] doc=5578 src=OpenSubtitles seq=512 picked=[148, 464]
+[ 137/200] doc=5024 src=OpenWebText2 seq=441 picked=[132, 263]
+[ 139/200] doc=4666 src=PhilPapers seq=512 picked=[116, 316]
+[ 141/200] doc=8780 src=Pile-CC seq=512 picked=[258, 426]
+[ 143/200] doc=2765 src=PubMed Abstracts seq=218 picked=[157, 173]
+[ 145/200] doc=4833 src=PubMed Central seq=512 picked=[185, 401]
+[ 147/200] doc=8080 src=StackExchange seq=512 picked=[73, 120]
+[ 149/200] doc=7721 src=USPTO Backgrounds seq=91 picked=[67, 69]
+[ 151/200] doc=636 src=Wikipedia (en) seq=512 picked=[136, 159]
+[ 153/200] doc=6312 src=YoutubeSubtitles seq=512 picked=[149, 470]
+[ 155/200] doc=9982 src=xnli:ar seq=201 picked=[91, 181]
+[ 157/200] doc=9555 src=xnli:de seq=177 picked=[141, 150]
+[ 159/200] doc=9280 src=xnli:en seq=160 picked=[106, 121]
+[ 161/200] doc=9358 src=xnli:es seq=205 picked=[123, 153]
+[ 163/200] doc=9758 src=xnli:fr seq=147 picked=[78, 127]
+[ 165/200] doc=10048 src=xnli:hi seq=183 picked=[80, 130]
+[ 167/200] doc=9900 src=xnli:ru seq=221 picked=[127, 168]
+[ 169/200] doc=10182 src=xnli:tr seq=168 picked=[119, 147]
+[ 171/200] doc=10340 src=xnli:vi seq=165 picked=[65, 146]
+[ 173/200] doc=9529 src=xnli:zh seq=187 picked=[127, 165]
+[ 175/200] doc=269 src=ArXiv seq=512 picked=[129, 265]
+[ 177/200] doc=6899 src=Books3 seq=512 picked=[238, 405]
+[ 179/200] doc=9102 src=DM Mathematics seq=512 picked=[131, 410]
+[ 181/200] doc=4815 src=Enron Emails seq=512 picked=[390, 392]
+[ 183/200] doc=4461 src=EuroParl seq=512 picked=[189, 446]
+[ 185/200] doc=3268 src=FreeLaw seq=512 picked=[330, 337]
+[ 187/200] doc=3557 src=Github seq=265 picked=[98, 210]
+[ 189/200] doc=5862 src=HackerNews seq=512 picked=[135, 285]
+[ 191/200] doc=4716 src=NIH ExPorter seq=454 picked=[80, 307]
+[ 193/200] doc=1287 src=OpenSubtitles seq=512 picked=[181, 195]
+[ 195/200] doc=7098 src=OpenWebText2 seq=512 picked=[171, 337]
+[ 197/200] doc=6087 src=PhilPapers seq=512 picked=[149, 262]
+[ 199/200] doc=2801 src=Pile-CC seq=210 picked=[88, 153]
+[ 200/200] doc=6007 src=PubMed Abstracts seq=142 picked=[103, 108]
+
+=== cohort self-check ===
+  n_rows                       200
+  template_fraction            0.0
+  min_position_realised        64
+  min_position_honoured        True
+  n_docs_used                  101
+  norm_mean                    65965.21875
+  positions p5/50/95        73 / 168 / 434
+  by_corpus                 {'pile': 144, 'xnli': 56}
+  sample tokens             [' establishment', '0', ' an', ' He', ' online', ' same', 'endo', ' i', ' appeal', ' the', '_', 'ID']
+-> /root/autodl-tmp/activations/acts_L32_n3_v1.parquet
+-> /root/autodl-tmp/results/n3_cohort_v1.json
++ S3=0
+++ date -u
++ echo 'N3_COHORT_EXIT status=0 Thu Jul 30 12:12:37 UTC 2026'
+N3_COHORT_EXIT status=0 Thu Jul 30 12:12:37 UTC 2026
+++ date -u
++ echo 'N3_COMPLETE Thu Jul 30 12:12:37 UTC 2026 stats=0 cohort=0'
+N3_COMPLETE Thu Jul 30 12:12:37 UTC 2026 stats=0 cohort=0

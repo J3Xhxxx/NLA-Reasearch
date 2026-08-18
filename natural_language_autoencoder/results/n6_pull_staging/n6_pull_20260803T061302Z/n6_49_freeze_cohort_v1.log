@@ -1,0 +1,39 @@
+2026-08-03 12:21:57 CST STAGE_START stage=49_freeze_cohort
+2026-08-03 12:21:57 CST VERIFIED sidecar label='binding N6 preregistration' sha256=cbc8a5395844b5a61a3a52a543f978c89273d6e9c786db0262d4a4c936faf6a8 path=/root/autodl-tmp/results/n6_plus_preregistration_v2.md
+2026-08-03 12:21:57 CST VERIFIED sidecar label='frozen N6 code manifest' sha256=4f7e7f612e80a73766d95f2dfd34dcdc37d1b0a6c43a82255d0f3ea87970bc0d path=/root/autodl-tmp/results/n6_code_manifest_v2.txt
+2026-08-03 12:21:57 CST VERIFIED frozen N6 code manifest entries=21 path=/root/autodl-tmp/results/n6_code_manifest_v2.txt
+2026-08-03 12:21:57 CST VERIFIED sidecar label='frozen N5 combined model manifest' sha256=4a5c6212dcf5851b9bea2313b4898f977fef0ee36aecc922d10f0375cbc94735 path=/root/autodl-tmp/results/n5_model_weights_v1.sha256
+/root/autodl-tmp/models/gemma-3-12b-it/config.json: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model.safetensors.index.json: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00001-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00002-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00003-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00004-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00005-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/config.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model.safetensors.index.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00001-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00002-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00003-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00004-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00005-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/config.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model.safetensors.index.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00001-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00002-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00003-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00004-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/value_head.safetensors: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small/config.json: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small/params.safetensors: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_big/config.json: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_big/params.safetensors: OK
+2026-08-03 12:27:00 CST VERIFIED manifest entries label='frozen N5 combined model manifest' path=/root/autodl-tmp/results/n5_model_weights_v1.sha256
+2026-08-03 12:27:00 CST VERIFIED exact hash label='frozen N3 corpus JSONL' sha256=d40069ab51c294ecbe3e76845d1f2f4dff1bb66a6061c5b6b4c612f7d0ff8816 path=/root/autodl-tmp/results/n3_corpus_v1.jsonl
+2026-08-03 12:27:00 CST VERIFIED exact hash label='frozen N3 corpus manifest' sha256=500d5b88b78c8bc06ff7965c0dffcc25cb5b0e9f50bfa8ec1ae009f9312d6046 path=/root/autodl-tmp/results/n3_corpus_v1.json
+2026-08-03 12:27:00 CST VERIFIED exact hash label='frozen N4 activation cohort' sha256=eb9a686a4cdea1f97134b2367d7c8a74a35351678d3c043eddae2f993e17ab66 path=/root/autodl-tmp/activations/acts_L32_n3_v1.parquet
+2026-08-03 12:27:01 CST VERIFIED exact hash label='frozen Pile parquet' sha256=a1a9475a8684ac8f1b17a36eccb2ec49c127edd7aae9beb2f240726972d93f31 path=/root/autodl-tmp/hf/hub/datasets--NeelNanda--pile-10k/blobs/a1a9475a8684ac8f1b17a36eccb2ec49c127edd7aae9beb2f240726972d93f31
+2026-08-03 12:27:01 CST VERIFIED sidecar label='stage input' sha256=6e7394476c4769bcb3334bbc82ca078fc778e4f006d9d600dac3882983cafb4c path=/root/autodl-tmp/results/n5_cohort_plan_v2.json
+N6_PROVISIONAL_PLAN_FROZEN rows=501 source_cap=40 seed=20260803 sha256=d366bca81ac239bc9c68d4361b7bca151f3cd3237ca2a2459e9316280ba40bbc
+2026-08-03 12:27:37 CST VERIFIED sidecar label='stage 49 output' sha256=d366bca81ac239bc9c68d4361b7bca151f3cd3237ca2a2459e9316280ba40bbc path=/root/autodl-tmp/results/n6_provisional_cohort_v1.json
+2026-08-03 12:27:37 CST STAGE_COMPLETE stage=49_freeze_cohort

@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "batch_id": 16,
+  "agent_task": "/root/luna_batch_16",
+  "role": "luna_worker",
+  "model": "gpt-5.6-luna",
+  "reasoning": "max",
+  "public_prompt_sha256": "b0966d061bc207359c811744d1ff52ddd58e81d41ea20fec8b5e3754e342073f",
+  "cases": [
+    {
+      "case_id": "case_7chlhvnk3g33lvyytv",
+      "hypothesis": "The Chinese active span is part of a pre-nominal modifier or relative clause, typically an adjective or verb phrase followed by a noun or 的.",
+      "positive_cues": [
+        "不同 modifies 类型 in 不同类型",
+        "忙 appears in 幫忙的人 before a following noun",
+        "感興趣 precedes 的新聞",
+        "遠 precedes 的地方"
+      ],
+      "exclusion_cues": [
+        "No single lexical item recurs across all four examples",
+        "The spans are not shown as standalone sentence-final predicates"
+      ],
+      "abstain": false,
+      "confidence": 0.88
+    },
+    {
+      "case_id": "case_sj78fm2qewak7athvv",
+      "hypothesis": "The active span is an inflected form of the verb make, used causatively with an object, adjective result, or embedded verb.",
+      "positive_cues": [
+        "The four spans are made, makes, make, and makes",
+        "make takes an object in the original work and it tastier",
+        "make introduces a result or causal complement in makes her faith and makes you think"
+      ],
+      "exclusion_cues": [
+        "The shared lemma is not a noun or an unrelated verb"
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_06kf77x9qbke12v06u",
+      "hypothesis": "The active span is a Turkish verb stem split before its inflectional suffix, rather than a complete standalone word.",
+      "positive_cues": [
+        "anlam is followed by adı in anlamadı",
+        "anlam is followed by asam in anlamasam",
+        "verm is followed by em in vermem",
+        "erm is followed by esinin in ermesinin"
+      ],
+      "exclusion_cues": [
+        "Different stems and suffixes rule out one repeated lexical item",
+        "The spans are not presented as English nouns or adjectives"
+      ],
+      "abstain": false,
+      "confidence": 0.98
+    },
+    {
+      "case_id": "case_fcsrifgrfqc1swgvc6",
+      "hypothesis": "The active span is lowercase v, the versus marker joining two party names in formal legal case citations.",
+      "positive_cues": [
+        "McCree v. Hampton is a case citation",
+        "Slater v. Warden is a case citation",
+        "Liang v. Holder is a case citation",
+        "Miller v. Alabama is a case citation"
+      ],
+      "exclusion_cues": [
+        "The token is not ordinary prose v or a verb in these contexts"
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_6z0xpknq8y4hi3sgas",
+      "hypothesis": "The active English token is a determiner, adjective, or nominal modifier at an incomplete phrase boundary, requiring a following noun or complement.",
+      "positive_cues": [
+        "this appears at the end of a phrase referring to an unspecified segment",
+        "favorite is used as a nominal or adjectival modifier before an omitted section",
+        "This opens an unfinished clause in the cave description",
+        "quantitative is an adjective awaiting a methodological noun"
+      ],
+      "exclusion_cues": [
+        "The examples share no topic or exact lexical lemma",
+        "The evidence does not establish one exact part of speech for every span"
+      ],
+      "abstain": false,
+      "confidence": 0.81
+    }
+  ]
+}

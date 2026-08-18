@@ -1,0 +1,239 @@
+{
+  "schema_version": 2,
+  "experiment": "C1 confirmatory synthetic concept cohort v2",
+  "status": "candidate_until_listed_in_stage0_freeze_manifest",
+  "language": "en",
+  "scope_note": "English-only internal confirmation; multilingual generalization is out of scope.",
+  "documents_per_concept": {
+    "train": 4,
+    "test": 2
+  },
+  "corpus_generation": {
+    "model": "google/gemma-3-12b-it local checkpoint",
+    "seed": 20260731,
+    "temperature": 0.7,
+    "max_new_tokens": 1800,
+    "max_attempts": 4,
+    "top_p": 0.95,
+    "top_k": 64,
+    "repetition_penalty": 1,
+    "required_prompt_words": [
+      70,
+      170
+    ],
+    "target_prompt_words": [
+      105,
+      135
+    ],
+    "rule": "Generate four discovery and two held-out user requests per concept; scenarios and wording must differ while the requested explanatory concept remains fixed."
+  },
+  "quality_gates": {
+    "reciprocal_hard_negative_pairs": true,
+    "exact_title_max_train_documents": 1,
+    "exact_title_max_test_documents": 0,
+    "max_train_test_normalized_5gram_jaccard": 0.15,
+    "reject_exact_duplicate": true,
+    "reject_urls": true,
+    "reject_four_digit_years": true,
+    "prose_only": true,
+    "manual_review_before_activation": "Record a pass/fail reason for topic adherence, named entities, product names, scenario duplication, and hard-negative contamination. Never inspect SAE, AV, AR, or endpoint values. A failure stops v1 rather than editing or selectively regenerating a document."
+  },
+  "excluded_prior_topics": [
+    "event_pipeline",
+    "api_rate_limit",
+    "monsoon_river",
+    "urban_heat",
+    "immune_response",
+    "gene_expression",
+    "printing_press",
+    "industrialization",
+    "eiffel_tower",
+    "photosynthesis",
+    "cats_and_dogs",
+    "parliamentary_lawmaking",
+    "population_genetics",
+    "plant_water_transport",
+    "electromagnetic_induction",
+    "heat_engines",
+    "orbital_dynamics",
+    "monetary_transmission",
+    "bayesian_updating",
+    "constrained_optimization",
+    "causal_inference"
+  ],
+  "reference_templates": [
+    "This feature responds to explanations of {title}, especially {summary}.",
+    "The represented concept is {title}: it concerns {summary}.",
+    "Activation is associated with passages about {title}, including {summary}."
+  ],
+  "concepts": [
+    {
+      "id": "automatic_memory_reclamation",
+      "superdomain": "computer_systems",
+      "title": "automatic memory reclamation",
+      "summary": "unreachable heap objects, roots, tracing, cycles, generations, compaction, pause-time tradeoffs, and concurrent or incremental collection strategies",
+      "hard_negative_id": "dynamic_memory_allocation"
+    },
+    {
+      "id": "dynamic_memory_allocation",
+      "superdomain": "computer_systems",
+      "title": "dynamic memory allocation and fragmentation",
+      "summary": "free lists, block placement, splitting, coalescing, internal and external fragmentation, and allocation latency",
+      "hard_negative_id": "automatic_memory_reclamation"
+    },
+    {
+      "id": "cryptographic_authentication",
+      "superdomain": "computer_systems",
+      "title": "cryptographic authentication",
+      "summary": "secret and public keys, message authentication codes, signatures, challenges, credentials, identity verification, nonce freshness, and replay resistance",
+      "hard_negative_id": "error_detecting_codes"
+    },
+    {
+      "id": "error_detecting_codes",
+      "superdomain": "computer_systems",
+      "title": "error-detecting codes",
+      "summary": "parity, checksums, cyclic redundancy checks, code distance, accidental corruption, and detection without identity verification",
+      "hard_negative_id": "cryptographic_authentication"
+    },
+    {
+      "id": "protein_quality_control",
+      "superdomain": "cell_microbiology",
+      "title": "cellular protein quality control",
+      "summary": "protein folding, molecular chaperones, misfolding, ubiquitin tagging, proteasomal disposal, aggregation, and stress responses",
+      "hard_negative_id": "membrane_vesicle_trafficking"
+    },
+    {
+      "id": "membrane_vesicle_trafficking",
+      "superdomain": "cell_microbiology",
+      "title": "intracellular membrane and vesicle trafficking",
+      "summary": "cargo sorting, vesicle budding, membrane fusion, compartment targeting, endocytosis, recycling, and lysosomal delivery",
+      "hard_negative_id": "protein_quality_control"
+    },
+    {
+      "id": "microbial_quorum_sensing",
+      "superdomain": "cell_microbiology",
+      "title": "microbial quorum sensing and biofilm coordination",
+      "summary": "secreted signals, population-density thresholds, coordinated transcriptional responses, surface attachment, matrix production, and dispersal",
+      "hard_negative_id": "microbial_cross_feeding"
+    },
+    {
+      "id": "microbial_cross_feeding",
+      "superdomain": "cell_microbiology",
+      "title": "metabolic cross-feeding in microbial communities",
+      "summary": "metabolite exchange, auxotrophy, syntrophy, resource partitioning, spatial gradients, community stability, and partner dependence",
+      "hard_negative_id": "microbial_quorum_sensing"
+    },
+    {
+      "id": "fault_rupture_mechanics",
+      "superdomain": "earth_processes",
+      "title": "tectonic fault rupture mechanics",
+      "summary": "stress accumulation, friction, locked patches, elastic rebound, rupture propagation, seismic waves, and aftershock redistribution",
+      "hard_negative_id": "slope_failure_mechanics"
+    },
+    {
+      "id": "slope_failure_mechanics",
+      "superdomain": "earth_processes",
+      "title": "slope failure and landslide mechanics",
+      "summary": "gravity, shear strength, pore pressure, weak layers, weathering, triggering, runout, drainage, and mechanical stabilization",
+      "hard_negative_id": "fault_rupture_mechanics"
+    },
+    {
+      "id": "groundwater_contaminant_transport",
+      "superdomain": "earth_processes",
+      "title": "contaminant transport through groundwater",
+      "summary": "advection, dispersion, sorption, degradation, heterogeneous permeability, contaminant plumes, monitoring wells, remediation, source identification, and cleanup tradeoffs",
+      "hard_negative_id": "coastal_saltwater_intrusion"
+    },
+    {
+      "id": "coastal_saltwater_intrusion",
+      "superdomain": "earth_processes",
+      "title": "saltwater intrusion into coastal aquifers",
+      "summary": "freshwater and seawater density contrast, pumping, hydraulic gradients, interface movement, upconing, recharge, and salinity monitoring",
+      "hard_negative_id": "groundwater_contaminant_transport"
+    },
+    {
+      "id": "census_classification",
+      "superdomain": "historical_governance",
+      "title": "historical census classification",
+      "summary": "household enumeration, administrative categories, undercounting, identity classification, state legibility, representation, resource allocation, record revision, and local resistance",
+      "hard_negative_id": "cadastral_land_taxation"
+    },
+    {
+      "id": "cadastral_land_taxation",
+      "superdomain": "historical_governance",
+      "title": "cadastral surveying and land taxation",
+      "summary": "parcel surveys, boundary records, customary tenure, formal titles, valuation, tax assessment, disputes, and administrative control",
+      "hard_negative_id": "census_classification"
+    },
+    {
+      "id": "quarantine_regimes",
+      "superdomain": "historical_governance",
+      "title": "historical quarantine regimes",
+      "summary": "detention, cordons, health certificates, inspection, commercial disruption, compliance, relief, enforcement, public-health authority, disease surveillance, and port administration",
+      "hard_negative_id": "passport_mobility_controls"
+    },
+    {
+      "id": "passport_mobility_controls",
+      "superdomain": "historical_governance",
+      "title": "passport systems and mobility controls",
+      "summary": "travel documents, identity verification, visas, internal movement restrictions, borders, citizenship, policing, exclusion, and administrative discretion",
+      "hard_negative_id": "quarantine_regimes"
+    },
+    {
+      "id": "lexical_semantic_ambiguity",
+      "superdomain": "language_science",
+      "title": "lexical semantic ambiguity",
+      "summary": "words with multiple senses, contextual disambiguation, homonymy, polysemy, selectional constraints, and interpretation of the same word form",
+      "hard_negative_id": "syntactic_attachment_ambiguity"
+    },
+    {
+      "id": "syntactic_attachment_ambiguity",
+      "superdomain": "language_science",
+      "title": "syntactic attachment ambiguity",
+      "summary": "phrases with multiple grammatical structures, modifier attachment, parse alternatives, structural cues, context, competing sentence interpretations, prepositional phrases, relative clauses, and reading-time preferences",
+      "hard_negative_id": "lexical_semantic_ambiguity"
+    },
+    {
+      "id": "phonological_assimilation",
+      "superdomain": "language_science",
+      "title": "phonological assimilation",
+      "summary": "speech sounds changing through neighboring sounds, place, voicing, nasality, directional effects, categorical rules, and gradient coarticulation",
+      "hard_negative_id": "morphological_agreement"
+    },
+    {
+      "id": "morphological_agreement",
+      "superdomain": "language_science",
+      "title": "morphological agreement",
+      "summary": "number, gender, person, and case features shared between grammatical controllers and targets, including mismatch, locality effects, and long-distance dependencies",
+      "hard_negative_id": "phonological_assimilation"
+    },
+    {
+      "id": "feedback_control_stability",
+      "superdomain": "physical_engineering",
+      "title": "feedback control and stability",
+      "summary": "setpoints, measured outputs, error signals, loop gain, stability, overshoot, settling, actuator limits, and disturbance rejection",
+      "hard_negative_id": "dynamical_state_estimation"
+    },
+    {
+      "id": "dynamical_state_estimation",
+      "superdomain": "physical_engineering",
+      "title": "state estimation in dynamical systems",
+      "summary": "latent states, noisy sensors, model prediction, measurement updates, uncertainty covariance, observability, and model mismatch",
+      "hard_negative_id": "feedback_control_stability"
+    },
+    {
+      "id": "fatigue_crack_growth",
+      "superdomain": "physical_engineering",
+      "title": "fatigue crack initiation and growth",
+      "summary": "cyclic loading, stress concentration, crack nucleation, propagation per cycle, load amplitude, inspection, and eventual fracture",
+      "hard_negative_id": "creep_deformation"
+    },
+    {
+      "id": "creep_deformation",
+      "superdomain": "physical_engineering",
+      "title": "time-dependent creep deformation",
+      "summary": "sustained load, elevated temperature, strain rate, primary, secondary, and tertiary stages, microstructural damage, and rupture time",
+      "hard_negative_id": "fatigue_crack_growth"
+    }
+  ]
+}

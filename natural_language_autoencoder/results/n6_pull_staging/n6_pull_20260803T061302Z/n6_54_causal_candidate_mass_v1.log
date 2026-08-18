@@ -1,0 +1,441 @@
+2026-08-03 13:49:51 CST STAGE_START stage=54_causal_candidate_mass
+2026-08-03 13:49:51 CST VERIFIED sidecar label='binding N6 preregistration' sha256=cbc8a5395844b5a61a3a52a543f978c89273d6e9c786db0262d4a4c936faf6a8 path=/root/autodl-tmp/results/n6_plus_preregistration_v2.md
+2026-08-03 13:49:51 CST VERIFIED sidecar label='frozen N6 code manifest' sha256=4f7e7f612e80a73766d95f2dfd34dcdc37d1b0a6c43a82255d0f3ea87970bc0d path=/root/autodl-tmp/results/n6_code_manifest_v2.txt
+2026-08-03 13:49:51 CST VERIFIED frozen N6 code manifest entries=21 path=/root/autodl-tmp/results/n6_code_manifest_v2.txt
+2026-08-03 13:49:51 CST VERIFIED sidecar label='frozen N5 combined model manifest' sha256=4a5c6212dcf5851b9bea2313b4898f977fef0ee36aecc922d10f0375cbc94735 path=/root/autodl-tmp/results/n5_model_weights_v1.sha256
+/root/autodl-tmp/models/gemma-3-12b-it/config.json: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model.safetensors.index.json: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00001-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00002-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00003-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00004-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00005-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/config.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model.safetensors.index.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00001-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00002-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00003-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00004-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00005-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/config.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model.safetensors.index.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00001-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00002-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00003-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00004-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/value_head.safetensors: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small/config.json: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small/params.safetensors: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_big/config.json: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_big/params.safetensors: OK
+2026-08-03 13:54:55 CST VERIFIED manifest entries label='frozen N5 combined model manifest' path=/root/autodl-tmp/results/n5_model_weights_v1.sha256
+2026-08-03 13:54:56 CST VERIFIED sidecar label='stage input' sha256=d366bca81ac239bc9c68d4361b7bca151f3cd3237ca2a2459e9316280ba40bbc path=/root/autodl-tmp/results/n6_provisional_cohort_v1.json
+2026-08-03 13:54:56 CST VERIFIED sidecar label='stage input' sha256=395426bbff2474e1a23408306a86eae4b3d452f5f89179f90aeaa04a47d60775 path=/root/autodl-tmp/activations/acts_L32_n6_provisional_v1.parquet
+2026-08-03 13:54:56 CST VERIFIED sidecar label='stage input' sha256=8e725b66e24b6434c3164cbf2b0075c056559aaeb7b8795c7fb3b41dc6c2f5d3 path=/root/autodl-tmp/results/n6_variants_donor_v1.json
+2026-08-03 13:54:56 CST VERIFIED sidecar label='stage input' sha256=2c9eef3f660003cb63decb7d6ec62b4b20c53d9014e177a96cbbdce3fa939faa path=/root/autodl-tmp/results/n6_recon_v1.json
+2026-08-03 13:54:56 CST VERIFIED sidecar label='stage input' sha256=f899836af62b01aad7d8b4d9fa40c8f86c911214a4ff42fc8bfdb2b765fcf1c6 path=/root/autodl-tmp/results/n6_recon_vectors_v1.npz
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1065 [00:00<03:14,  5.48it/s]Loading weights:   2%|▏         | 16/1065 [00:00<00:15, 66.96it/s]Loading weights:   3%|▎         | 29/1065 [00:00<00:11, 88.68it/s]Loading weights:   4%|▍         | 42/1065 [00:00<00:10, 97.87it/s]Loading weights:   5%|▌         | 55/1065 [00:00<00:10, 98.55it/s]Loading weights:   6%|▌         | 66/1065 [00:00<00:10, 93.48it/s]Loading weights:   7%|▋         | 79/1065 [00:00<00:09, 103.16it/s]Loading weights:   8%|▊         | 90/1065 [00:00<00:09, 100.87it/s]Loading weights:   9%|▉         | 101/1065 [00:01<00:09, 98.35it/s]Loading weights:  11%|█         | 112/1065 [00:01<00:10, 95.19it/s]Loading weights:  11%|█▏        | 122/1065 [00:01<00:10, 86.75it/s]Loading weights:  13%|█▎        | 135/1065 [00:01<00:10, 91.21it/s]Loading weights:  14%|█▍        | 148/1065 [00:01<00:09, 93.70it/s]Loading weights:  15%|█▌        | 160/1065 [00:01<00:09, 99.68it/s]Loading weights:  16%|█▌        | 173/1065 [00:01<00:08, 99.61it/s]Loading weights:  17%|█▋        | 186/1065 [00:01<00:08, 99.94it/s]Loading weights:  19%|█▊        | 199/1065 [00:02<00:08, 99.83it/s]Loading weights:  20%|█▉        | 211/1065 [00:02<00:08, 102.55it/s]Loading weights:  21%|██        | 222/1065 [00:02<00:08, 95.86it/s] Loading weights:  22%|██▏       | 232/1065 [00:02<00:09, 91.24it/s]Loading weights:  23%|██▎       | 242/1065 [00:02<00:08, 91.68it/s]Loading weights:  24%|██▎       | 252/1065 [00:02<00:09, 87.41it/s]Loading weights:  25%|██▍       | 264/1065 [00:02<00:09, 87.41it/s]Loading weights:  26%|██▌       | 276/1065 [00:02<00:08, 91.78it/s]Loading weights:  27%|██▋       | 289/1065 [00:03<00:08, 94.92it/s]Loading weights:  28%|██▊       | 302/1065 [00:03<00:07, 96.65it/s]Loading weights:  29%|██▉       | 313/1065 [00:03<00:07, 99.57it/s]Loading weights:  30%|███       | 324/1065 [00:03<00:08, 86.09it/s]Loading weights:  31%|███▏      | 333/1065 [00:03<00:08, 84.04it/s]Loading weights:  32%|███▏      | 342/1065 [00:03<00:09, 76.30it/s]Loading weights:  33%|███▎      | 355/1065 [00:03<00:08, 82.43it/s]Loading weights:  34%|███▍      | 367/1065 [00:04<00:08, 87.23it/s]Loading weights:  35%|███▌      | 378/1065 [00:04<00:07, 92.12it/s]Loading weights:  36%|███▋      | 388/1065 [00:04<00:07, 88.52it/s]Loading weights:  37%|███▋      | 397/1065 [00:04<00:07, 83.57it/s]Loading weights:  38%|███▊      | 407/1065 [00:04<00:08, 78.97it/s]Loading weights:  39%|███▉      | 419/1065 [00:04<00:07, 84.92it/s]Loading weights:  40%|████      | 430/1065 [00:04<00:07, 90.38it/s]Loading weights:  41%|████▏     | 440/1065 [00:04<00:07, 87.06it/s]Loading weights:  42%|████▏     | 449/1065 [00:04<00:07, 82.68it/s]Loading weights:  43%|████▎     | 459/1065 [00:05<00:07, 79.02it/s]Loading weights:  44%|████▍     | 471/1065 [00:05<00:06, 84.94it/s]Loading weights:  45%|████▌     | 481/1065 [00:05<00:06, 88.05it/s]Loading weights:  46%|████▌     | 490/1065 [00:05<00:06, 86.38it/s]Loading weights:  47%|████▋     | 499/1065 [00:05<00:07, 79.18it/s]Loading weights:  48%|████▊     | 510/1065 [00:05<00:06, 86.58it/s]Loading weights:  49%|████▉     | 523/1065 [00:05<00:05, 97.08it/s]Loading weights:  50%|█████     | 533/1065 [00:05<00:05, 95.80it/s]Loading weights:  51%|█████     | 543/1065 [00:06<00:06, 79.75it/s]Loading weights:  52%|█████▏    | 552/1065 [00:06<00:06, 76.69it/s]Loading weights:  53%|█████▎    | 563/1065 [00:06<00:06, 80.11it/s]Loading weights:  54%|█████▍    | 576/1065 [00:06<00:05, 84.84it/s]Loading weights:  55%|█████▌    | 588/1065 [00:06<00:05, 87.41it/s]Loading weights:  56%|█████▌    | 597/1065 [00:06<00:05, 82.02it/s]Loading weights:  57%|█████▋    | 606/1065 [00:06<00:05, 80.30it/s]Loading weights:  58%|█████▊    | 616/1065 [00:07<00:05, 78.87it/s]Loading weights:  69%|██████▉   | 733/1065 [00:07<00:00, 349.72it/s]Loading weights:  83%|████████▎ | 887/1065 [00:07<00:00, 661.66it/s]Loading weights:  98%|█████████▊| 1039/1065 [00:07<00:00, 894.62it/s]Loading weights: 100%|██████████| 1065/1065 [00:07<00:00, 145.49it/s]
+[N6 causal 1/400] 7b467d7a7d367e74d8572a794fc3eb8f1e3cee9a208869ffa39c0d3964082229 true=0.123 cross=3.275 Amean=8.65 eta=8.9m
+[N6 causal 2/400] f35c073655e668d871f4d23ccfd21508cbac2495bbb2753429b750ff73ce28a5 true=0.2013 cross=3.489 Amean=10.44 eta=6.9m
+[N6 causal 3/400] e3605b2225c26c3bc3f8ccbea2c73cba13bd7ae136d0ff688f4f09653497e2f3 true=0.1357 cross=0.226 Amean=4.872 eta=6.8m
+[N6 causal 4/400] 01b95c1c82b566d074c90305dc7aff3512a6ec04595262d8cb53af42f8b8eddf true=0.5431 cross=5.961 Amean=13.77 eta=6.3m
+[N6 causal 5/400] 38e5c99f15138ddad2e3fd87fd1797030c614554a139bdef3f6376c93d89c9be true=0.9207 cross=2.441 Amean=3.673 eta=6.4m
+[N6 causal 6/400] e48f9140ea0c4a4af47d6ec07cd9aae7681e70212738d55fc104cffd55f572fa true=0.4892 cross=5.135 Amean=2.295 eta=6.4m
+[N6 causal 7/400] 7dcc37f43563ec04f0d4617a8ea2fe3b975f0d9ca56263876ead3b9f571b1a5d true=0.02693 cross=0.04248 Amean=6.771 eta=6.1m
+[N6 causal 8/400] f492a63c22dcecb552525f1309d2274ec26993afc00d6095eaee4daa41e6a005 true=0.1445 cross=2.534 Amean=3.182 eta=5.8m
+[N6 causal 9/400] 6d709b262dc2b466892ecff52fd2553001fb982c478cd39aea6e26e34807961d true=0.1562 cross=0.4789 Amean=7.185 eta=5.6m
+[N6 causal 10/400] bdabc4c432167c7361fb665777122a39d9b479596fc2fe50a63ba2fc241a5933 true=3.004 cross=0.4234 Amean=3.159 eta=5.4m
+[N6 causal 11/400] e09efbd159ca6e97b56664c49b684d3b337bc2cd79249bb85e82756bf46b622e true=1.065 cross=2.575 Amean=10.44 eta=5.5m
+[N6 causal 12/400] 40d85d32021685250846462714b9c0c2728cb5d76bf646f2cf79c3f75b53b381 true=0.3568 cross=3.566 Amean=9.247 eta=5.6m
+[N6 causal 13/400] 84998d33e25fd461faa0d4abfeb75c5550ec9cf8961c675225a3518d9acd7a86 true=0.01607 cross=0.1704 Amean=18.22 eta=5.4m
+[N6 causal 14/400] 0ecd346b94c5e5fb2cef6da087e3d5494b2d01871baa0f6f29560eae4ef61acd true=0.03424 cross=12.93 Amean=12.22 eta=5.4m
+[N6 causal 15/400] c4e3cb8b2b1b0bc2fa8be93cbb8558be8d2dbea790635eb79f1291e790971069 true=0.09899 cross=2.682 Amean=11.68 eta=5.4m
+[N6 causal 16/400] 9bdfa338dfb42485bbd0f83ed59bc4218359df07b8e72a30d29582cd50cea83e true=0.1851 cross=6.552 Amean=6.375 eta=5.5m
+[N6 causal 17/400] e277956326fd138c284532aa2a1670994ee6f490f7e42d850cc5ccd96aa75abf true=0.04116 cross=0.7321 Amean=6.691 eta=5.5m
+[N6 causal 18/400] 449f0d8dc266aee1a5f74895efce1d111d752cfe4fbb0a8d40a4154cea38d576 true=0.034 cross=2.498 Amean=8.634 eta=5.5m
+[N6 causal 19/400] d480cc63a158eae7a20eb203a172f34ea46603a68a355c0812dd6db0e7748dec true=0.7813 cross=1.802 Amean=0.009013 eta=5.6m
+[N6 causal 20/400] 32edb39a55a5d16110426f645ddff4cb3508e9dda75c630d14bba4ff50ef22c0 true=0.4042 cross=0.2687 Amean=4.211 eta=5.6m
+[N6 causal 21/400] 65121a1d91ee3cb196aaf33dc6fb0cd93ab0194e125c387a3f75357c1ce91bf4 true=0.2521 cross=0.6612 Amean=2.933 eta=5.6m
+[N6 causal 22/400] 4e996918de73b5083c9d281f1a1cabcf06667faa08ec0e0d252b41fb6c79050b true=0.4792 cross=4.576 Amean=15.07 eta=5.5m
+[N6 causal 23/400] 33d7b7a9eb3146a9a181dd7ae9cc9673ae16a94b8d356075e84ab52c21be5dac true=0.3432 cross=1.501 Amean=11.94 eta=5.6m
+[N6 causal 24/400] 1cf599c158944900f8dcddde834adda808c3439ba5e10270c23ac1999a849c91 true=0.003376 cross=0.001004 Amean=5.483 eta=5.5m
+[N6 causal 25/400] e4f923ba5af8fcaaeb60a38548be7a1c9aaae037b339b2585d123f419a6c7db4 true=0.1552 cross=1.557 Amean=5.817 eta=5.4m
+[N6 causal 26/400] 72bc163925e1f6246cc94d8d564ef899a60765e8000169139875906c337586de true=0.2856 cross=1.688 Amean=12.08 eta=5.3m
+[N6 causal 27/400] 503e820ce4956f1f1f8c0a4295f2f95b2215fc34d3313b843b8ede465f5fb22a true=0.1001 cross=0.6303 Amean=2.078 eta=5.2m
+[N6 causal 28/400] cf96836057e6d7a1487cba826fd6775a9fbce092c225434c74015184debc4d7e true=0.02294 cross=1.94 Amean=15.38 eta=5.2m
+[N6 causal 29/400] 19f7c0747473f0c2921c9c20bebaa0a4bf24f4c45928369e496d4126f98106fc true=0.005797 cross=0.001949 Amean=5.235 eta=5.2m
+[N6 causal 30/400] cf5ac9e056306b8e357173c0e83a8258956f97dbe0de473fe29211346db461b3 true=0.0008381 cross=0.005003 Amean=-12.64 eta=5.1m
+[N6 causal 31/400] b50a76583d7755dc754a37388fba8fd5a57cfb5b543d7a25b2fcf421a12b553e true=0.0246 cross=0.1086 Amean=17.71 eta=5.2m
+[N6 causal 32/400] 858d17ac8cf86f3979f8dab778468c0b5e9859f13e2435875649c6b15b9c38a5 true=0.5054 cross=10.44 Amean=6.21 eta=5.2m
+[N6 causal 33/400] 6779df184a1181f0229cae7815daafc52207d9e69d03a7d9c1f9d012ea85f76d true=2.433e-05 cross=4.159e-05 Amean=0 eta=5.2m
+[N6 causal 34/400] 0f26fd79e479afec9ed1efe36ae1a249297f4da93166bf61a4c5e4f89b121ff0 true=0.001237 cross=0.004829 Amean=20.22 eta=5.2m
+[N6 causal 35/400] d5d9d3575af18ca3bc4c533840c66278e2712a048dfad21e59eb27b0eff2e53a true=0.9381 cross=2.517 Amean=0.4277 eta=5.2m
+[N6 causal 36/400] 14310b89e56400ab622c2358f310049cba8d301614728f9862df37fca4fe081c true=0.2787 cross=1.734 Amean=3.104 eta=5.2m
+[N6 causal 37/400] f5c47475196557dfe8805d47f6b9961821ff22c68bbdd80dadd870d8b3ef4a9c true=0.009915 cross=4.372 Amean=13.56 eta=5.2m
+[N6 causal 38/400] d4d71e199cd90e24f74156ae403f90c5e13a41db77378ebe484a1e17c9999b80 true=0.5922 cross=0.8626 Amean=16.05 eta=5.1m
+[N6 causal 39/400] ce89884462b1edd3802d8d2c81b9c75724eb9ab138adef085ac4c8b8cebb5a42 true=0.004634 cross=0.03054 Amean=16.81 eta=5.1m
+[N6 causal 40/400] 4d519d4b0a55235523e0c9cf737fe70b4dc9d068ffd5d3650aebf7ca043ea3c0 true=0.002446 cross=4.513 Amean=15 eta=5.1m
+[N6 causal 41/400] 1bbbf6e4078977f0221f92ff15665747bfeca5eceb546599675c7b28301afc86 true=0.08239 cross=0.08865 Amean=16.54 eta=5.2m
+[N6 causal 42/400] 4287052508f0ff0119a307a02cd4ea1492bdc41db1fc08d1609d4792257c3132 true=0.3395 cross=2.196 Amean=10.5 eta=5.2m
+[N6 causal 43/400] 1bff152b5f6d1df51ba3be8bc53c3f9111aaad815edbf972a6291677c21ed964 true=0.03684 cross=0.8527 Amean=12.44 eta=5.2m
+[N6 causal 44/400] c76d4b4fca74ca8f81954ffb571c7bf06188fcab12212f1d17c9f7537658300e true=0.09827 cross=0.3143 Amean=8.686 eta=5.2m
+[N6 causal 45/400] b9143e02cced5f876c58acd0fc2340edee7bd40068179890c4491bd4d6e53269 true=0.05539 cross=0.9184 Amean=16.06 eta=5.1m
+[N6 causal 46/400] 6bf76cc2dc1221fa5d3f519803fd6631055a3ab8c711dfbd0c9b7708f11ace0c true=0.4971 cross=3.95 Amean=9.377 eta=5.1m
+[N6 causal 47/400] 407cc24375cf7241a6acc80991a8b9387401f97c680e6e3cecbee87815eddc6f true=0.04171 cross=0.06094 Amean=3.793 eta=5.0m
+[N6 causal 48/400] 63d974433c84c335c189288d8d4054d3cea9f1d8014a739beb32f1b44dc9d393 true=0.5423 cross=5.702 Amean=3.117 eta=5.0m
+[N6 causal 49/400] d82b67b3275d526345e96d3bfbcae244afc876fdb3cda500c8943775925313cb true=0.3675 cross=2.37 Amean=11.45 eta=5.0m
+[N6 causal 50/400] 50b05086f4f72e0cd439f02c8f84a673b2fa33385aac464a98f328eedf1be122 true=0.6325 cross=3.607 Amean=14.41 eta=5.0m
+[N6 causal 51/400] a26927a3c7922df5811d7b7ac4dc7d2e71fce04565981784a964463f513d524f true=0.009214 cross=4.653 Amean=7.343 eta=5.0m
+[N6 causal 52/400] 5e03ee128f4476fda3210f1157b2321c716e85b14f33f3fdcddeac962316e251 true=0.08502 cross=0.9277 Amean=10.42 eta=5.0m
+[N6 causal 53/400] 51ef1d47bfc31c8ce166e3af3b83081959d75eab3fb70631e959e4cb6106cee5 true=0.773 cross=2.638 Amean=9.345 eta=5.0m
+[N6 causal 54/400] e8ddd234cf4dc5b2dd9552fca074087eca0e4fc782b1e24c59b4c8e99cdda0d4 true=0.2149 cross=8.61 Amean=7.368 eta=5.0m
+[N6 causal 55/400] 001a999b8d33b1b3f70da9ba190abd309ef669600115ffe60fb91193ba3f0dc6 true=0.03254 cross=0.58 Amean=12.32 eta=5.0m
+[N6 causal 56/400] c0a40aa6612f4b31d90d57301afd8dbf1f1575701e2d45281958a81b9b59e629 true=0.1661 cross=1.686 Amean=12.3 eta=5.0m
+[N6 causal 57/400] 88820a127db4ad9e063f02a78f24bd86322644452b9d904052a942e11c62cd7d true=1.354 cross=4.551 Amean=11.59 eta=5.0m
+[N6 causal 58/400] 4691ddf3015791a14978c954e187dd96bbf00e965aa326487077e51571b20224 true=0.2514 cross=1.721 Amean=15.4 eta=5.0m
+[N6 causal 59/400] 80e2cf4d7522ec91bbb6607304ebbb5754f030c3215021936ba16f494c338b76 true=0.006159 cross=1.29 Amean=15.61 eta=5.0m
+[N6 causal 60/400] f2af87a7ce284339c75874cf13e6ac9e77fcf694b79abe9fa9fe523ccc019680 true=0.2965 cross=4.516 Amean=11.82 eta=5.0m
+[N6 causal 61/400] 8d0356f0e153bdd0a3766945effc2057550ec389fab4c70c6d4a15c3f01e3f88 true=0.1627 cross=3.488 Amean=19.74 eta=5.0m
+[N6 causal 62/400] 1133f68c271036df6fb8122d126bd6829e5a74771008d247835ca5c958f4193a true=0.007372 cross=0.01838 Amean=19.44 eta=5.0m
+[N6 causal 63/400] f2ff85f8a776c57b5e582b8ecf182a13179ba32ea8c78349fd7f7b8a7ac83379 true=0.03441 cross=0.1209 Amean=-7.862 eta=5.0m
+[N6 causal 64/400] b3bdb806906b1323b0101743a02081a560c74d5edd9392efe50257d39238842d true=0.01377 cross=0.01094 Amean=-4.74 eta=5.0m
+[N6 causal 65/400] 2f284cf0b6cf1da75471e052384b037a03124cefd7bcea901f279f5771c33c45 true=0.0001826 cross=0.01352 Amean=18.5 eta=4.9m
+[N6 causal 66/400] 1d405f98066c605cf4cc238230ab70b9703e9ed186c69b58ac00e68b1f53d684 true=1.257 cross=2.11 Amean=11.81 eta=4.9m
+[N6 causal 67/400] d06c9ebb16eca11ed92cfa6bd806b7ae9303d2433c2caad3c05f84f0b4199230 true=0.03976 cross=0.4891 Amean=15.1 eta=4.9m
+[N6 causal 68/400] dc8de24f058e2ba4c9833fc4db773d547f9d23e613fb9c411d94046247ea0743 true=0.1387 cross=0.6272 Amean=3.063 eta=4.9m
+[N6 causal 69/400] 42fe2270fe738fc1c8599831859fa780cec00fc8cc555ebc195db4cd6ae5bbf2 true=0.3895 cross=2.299 Amean=9.537 eta=4.9m
+[N6 causal 70/400] ece802b7d90af633f263f2c16778019f8a8d52a253ef972d44f0f3b5b5dcdbdb true=0.01973 cross=0.182 Amean=16.6 eta=4.9m
+[N6 causal 71/400] d749413970b80be022def43277603b8312ca6becac3583532043b560b55e6a7f true=0.0243 cross=0.2725 Amean=0 eta=4.9m
+[N6 causal 72/400] 8895ba1f3f87473d73448609aeff65ecb4c403e06f09226d9bfe1ffb14b7b6a3 true=0.1092 cross=0.246 Amean=-0.03607 eta=4.9m
+[N6 causal 73/400] f45b1ce8c6b8b729b4354f1c90984c6fc403efda678919405fc78437c0fb42cc true=0.9636 cross=2.972 Amean=3.745 eta=4.9m
+[N6 causal 74/400] 565b5bcba97c12c33d90313d29001440fd086d9f5828ed60f5e615ed64d9e101 true=0.0901 cross=6.686 Amean=18.5 eta=4.9m
+[N6 causal 75/400] 366a37c581ec41e6af1d2bcf03b7d235210c9b42a0758f4f46a9a590cb65132d true=0.2494 cross=0.007142 Amean=8.563 eta=4.9m
+[N6 causal 76/400] cad0dce3811e04132709775c85b028d11b14573da45b29c829d9e29759111067 true=2.484e-06 cross=0.252 Amean=7.371 eta=4.9m
+[N6 causal 77/400] 1e717a4dd18429ef0079d11bc3fa314e9dc27053113c60c081dec19ea7de7dc0 true=0.02863 cross=0.0615 Amean=0.02325 eta=4.8m
+[N6 causal 78/400] 24fcc7e6fb1d793f826fca55e2b9571998db1fbd73a29743bbf1fa804ecfdc82 true=0.3889 cross=1.556 Amean=0.02799 eta=4.8m
+[N6 causal 79/400] 8b44ae28f39c97aa55e00b4d10c6313f8c4b09781d4f9c28ec05f11090e02f70 true=0.2743 cross=1.339 Amean=8.908 eta=4.8m
+[N6 causal 80/400] 25ae1341c11b7f8604d2dc36ce03764820e142be3e2085220294b3b07872f025 true=0.05254 cross=0.07188 Amean=17.5 eta=4.8m
+[N6 causal 81/400] c39165ddf3053ee76212d05d8c79ab42eaf6c02c8079ed5ab07631a90b4369b1 true=0.01163 cross=0.5228 Amean=12.5 eta=4.8m
+[N6 causal 82/400] 6ec4a76c9cfbfb5f5243ae0179893d2129f284699a052a378c9ee48f59ba957a true=0.004473 cross=1.064 Amean=9.998 eta=4.8m
+[N6 causal 83/400] da661b6dec84ea275ad1bc4168bc8dcd03a478a09fb909b38edc2bebb07cbcf9 true=0.1418 cross=1.653 Amean=10.92 eta=4.8m
+[N6 causal 84/400] 82daaefdd89a7f34fa7455dc0a31d86b9d9e4d8efbc1c974f75cb2a78ab530a0 true=0.1505 cross=4.933 Amean=14.78 eta=4.8m
+[N6 causal 85/400] eb2b0f20516dfb74ead4a61f98cc0ba1c3a060706012751a1b68b858ef7f6f6a true=0.1774 cross=4.536 Amean=13.55 eta=4.7m
+[N6 causal 86/400] 6c706729a0a9b6571917d241120069e82a598a54ba597ac2f35b864e87998d0d true=0.01983 cross=0.01983 Amean=3.874e-07 eta=4.7m
+[N6 causal 87/400] 82faf1f014097d97ffee61ca361db6caa54bbd8cefbf567013dc28ce861ad19f true=0.695 cross=3.132 Amean=12.48 eta=4.7m
+[N6 causal 88/400] da1fb024577d2d6b1253d02bcc0e0c22fd1789e1ed02d1a179c363d88ef30c10 true=0.8499 cross=0.8776 Amean=10.78 eta=4.7m
+[N6 causal 89/400] 8ab7cc82696a6a14894b552acaf236637c59277ce1b8635b2c7b99d4c23bfa71 true=0.4693 cross=2.203 Amean=14.75 eta=4.7m
+[N6 causal 90/400] a0ac308629fec5033d504c9e0a77ae863a4eba9da2c139a2c2358169ecd0f168 true=0.6538 cross=1.171 Amean=10.78 eta=4.7m
+[N6 causal 91/400] 2ba6340dd9de120159b87292dcfdec6836dda088d0f423bb4401b80edb5d7f20 true=0.2752 cross=2.63 Amean=10.08 eta=4.7m
+[N6 causal 92/400] db4d64ba2d3bbd4c68022ee28325f91fffd4e7bcaecba3b5f74eee4e87aad625 true=0.003978 cross=0.02055 Amean=10.38 eta=4.6m
+[N6 causal 93/400] 35bbc3afbe202fdf8fdb2f87103b28151b8a3a5c61a3e97e9111d6f1977dc239 true=0.003333 cross=0.005696 Amean=12.56 eta=4.6m
+[N6 causal 94/400] 398f0ae1baa2133c240c955595300eda3ff3035a471f8d92d582e0f2b6d57cbe true=0.03811 cross=0.0418 Amean=0.878 eta=4.6m
+[N6 causal 95/400] 102203577af7739ca191c9c59c5e6ff2a29930f793885f17b66f01eb96ef2ef3 true=0.08781 cross=1.592 Amean=2.27 eta=4.6m
+[N6 causal 96/400] e89d318d9333d9da4632ec686436de4802515cb2260bef93e0f5774fae03cd63 true=0.01187 cross=0.6224 Amean=10.1 eta=4.6m
+[N6 causal 97/400] 29e8eed08dc4028f5062a72b94a4b05ba450f116eb2adb1bd13f776f4f59e311 true=0.035 cross=0.1437 Amean=11.71 eta=4.6m
+[N6 causal 98/400] b764603d26d68b371f74871b9ba7299968c2f2da8b15eabf7bc08018baa223e4 true=0.06565 cross=2.312 Amean=14.24 eta=4.6m
+[N6 causal 99/400] f26edf5dc7cf1d13239d508c2d15b0adda96bd852b628729c83a6d1e307d9422 true=0.1056 cross=6.169 Amean=5.726 eta=4.6m
+[N6 causal 100/400] d9dbb68ae7ede6201f6c93fb25b15c058b75f1620048fdbd291609cf811ccba9 true=0.7592 cross=8.097 Amean=-5.133 eta=4.5m
+[N6 causal 101/400] a1af5b9d0f984e2e75a2e37855f64e22bbc9825c4167e5faa3e3839b74efaec2 true=0.0507 cross=2.261 Amean=8.326 eta=4.5m
+[N6 causal 102/400] 016d670c0d6c5114bdf29b181c5be55524fe86e9939ef419435452d3cf768ca3 true=0.2338 cross=3.862 Amean=11.83 eta=4.5m
+[N6 causal 103/400] f09edd0fe47856103c95d4668ec8b651205b91962ac76efb69f24cbf49e1ca98 true=0.3239 cross=1.775 Amean=0.5217 eta=4.5m
+[N6 causal 104/400] eb4f20dc662f4230340ed12a9278c3a35e0cb320e06930b395867e3dd154dfee true=0.4916 cross=1.478 Amean=10.88 eta=4.5m
+[N6 causal 105/400] 4258cc39544c3db21ea3b63e2e2070b405f8ff8f2670b29ba27c758e467c9bf4 true=0.0228 cross=0.1854 Amean=6.108 eta=4.5m
+[N6 causal 106/400] 5bd61152e42a5ffe040ed87740b9f53d858d6c1d44663ccd5f45896df17c82ae true=0.8054 cross=1.462 Amean=8.686 eta=4.4m
+[N6 causal 107/400] 3f44c80e878a2f2209b0217b01dcb19ecd15771d32a03a4c78193fa8062aa49a true=0.0001145 cross=0.0002349 Amean=0 eta=4.4m
+[N6 causal 108/400] 3e9fbc72576542d33cfdbc28dbd74af1aa2d8d15ef3a7d71c66e14b58cf4ced7 true=0.01874 cross=0.8832 Amean=11.59 eta=4.4m
+[N6 causal 109/400] e0c753a444cd630a7a21f549d3866fdcdcc4967676afbb4a774d9c00fbe2dc17 true=0.03184 cross=0.05359 Amean=0.01009 eta=4.4m
+[N6 causal 110/400] 81ffdaa104310142048962136cf4c04111da94dc1919ff41c4a47875e62e1808 true=0.008535 cross=0.0007769 Amean=3.155 eta=4.4m
+[N6 causal 111/400] 76a8f4bbbfbf66a7283c6b76ca9852c98191a756dd8ed2cbd35f53b25bc7db28 true=0.3738 cross=1.992 Amean=13.09 eta=4.4m
+[N6 causal 112/400] ca64ad9a3b2e3ceb1b18831eddf3427614a974034ac22bd85a4c06378520958e true=0.01537 cross=0.1329 Amean=14.5 eta=4.4m
+[N6 causal 113/400] e2e75f4b770574b87a075a605ee5f59df99e8684b3911ad5e8ca1d1ed2d7f6ae true=0.1505 cross=1.673 Amean=1.01 eta=4.3m
+[N6 causal 114/400] 6ca655ee4027f949bf10e84576d5e77ba16a8e3801755d38d8152f170616218d true=0.07714 cross=2.233 Amean=8.562 eta=4.3m
+[N6 causal 115/400] 7365bb838b7415dca44a1f7683b9a19402426f0c9dfdfe71cf2b0ac5ceb05995 true=0.4006 cross=0.1149 Amean=14.24 eta=4.3m
+[N6 causal 116/400] 976caad967686dc19ba4eb42e1f7a31649fd196399081f044cfe5cb498907228 true=0.2402 cross=3.682 Amean=8.309 eta=4.3m
+[N6 causal 117/400] 101edd558b6de155cec52110599375e68ea003d5f5f0bc3db2d9f36ccfb766aa true=0.2231 cross=2.302 Amean=13.15 eta=4.3m
+[N6 causal 118/400] 9c1695337eda5845b45ff8bf698f71ddc0c62c59d3c571237fcb3b9fef05c5db true=0.3441 cross=0.762 Amean=4.648 eta=4.3m
+[N6 causal 119/400] 114bf9e06a1e1d4b66be6f513fde332633d75f9b802fe76492fa00751c2296ba true=0.1932 cross=6.097 Amean=12.73 eta=4.2m
+[N6 causal 120/400] abd8b68ccf922bf64e7a585d74517bc7638706874219117ae6367eaa8097a33e true=0.04552 cross=0.7916 Amean=6.983 eta=4.2m
+[N6 causal 121/400] 86f9cb964f48885c3eac7c7812725db68b4b4eefd126c728bd3b5eae6fbee31d true=0.08575 cross=2.056 Amean=8.585 eta=4.2m
+[N6 causal 122/400] e88bc83d94ec78450ea2fb4ab16f064bd5089452558d9c4540172f902110defd true=0.1378 cross=1.27 Amean=13.77 eta=4.2m
+[N6 causal 123/400] 98d42df0e52166c4badf955fffe102a515258dc740622aae4cbd790ba4a518dd true=0.01451 cross=0.02893 Amean=0.6931 eta=4.2m
+[N6 causal 124/400] ccedb2743bc24e456af905c33b349a42945f78ad2f258828287c982f52a6924a true=0.4158 cross=1.794 Amean=9.391 eta=4.2m
+[N6 causal 125/400] 5276933e68ccf7d4dc14798b961f320b6fd20cfe72b612d1e466067f3989136f true=0.7082 cross=2.079 Amean=11.27 eta=4.2m
+[N6 causal 126/400] dacbb12fad3db6c7052dc1e7765d5d100b23e380cdaf6f1b62d631fe3b603cc2 true=0.2731 cross=8.257 Amean=-2.305 eta=4.1m
+[N6 causal 127/400] 3b72445b8ed1966c1b5b9333ecfec451908ae822a03a7b939c5fcaa2c6243533 true=0.7889 cross=2.91 Amean=10.17 eta=4.1m
+[N6 causal 128/400] 75d4a7863da76eace85353b892b35c12a659f58734f00cf62fd88ca5e371dee1 true=0.3154 cross=1.004 Amean=5.784 eta=4.1m
+[N6 causal 129/400] 548105cabe39e8367c4a5374f91d1467c474b9af0b2d51dd8d3bdf2d8023f437 true=0.5247 cross=2.19 Amean=1.342 eta=4.1m
+[N6 causal 130/400] 8dd0ead2369b5f846679ebc8a6d6cc865a2e70c9d80fc470976afbcc41e57f61 true=0.2953 cross=3.702 Amean=16.2 eta=4.1m
+[N6 causal 131/400] 816554c82a46c1c4ddd13efad4888f0c1a22d9176507bfee4bf7cd4281d4e8b7 true=0.03976 cross=0.378 Amean=1.085 eta=4.1m
+[N6 causal 132/400] 124798b665cb3c810dd89a887bed705f158ab6ac1a7ffa6c2a87f850455a9dcb true=0.9363 cross=3.272 Amean=6.55 eta=4.0m
+[N6 causal 133/400] c747e6f450f1cc4a6f94079d1cabaccbb50f1392e2549b44d533f802d8b406e4 true=0.2878 cross=2.196 Amean=3.311 eta=4.0m
+[N6 causal 134/400] 04daf75429c79289eb395b89e727c01f4b0f401a0d97c69bc20f7b22acbc3f8e true=0.7563 cross=4.782 Amean=7.564 eta=4.0m
+[N6 causal 135/400] b9bb35483863097b765d6260b18a360bf1dd4176bf2da83a981d41516258a228 true=0.03801 cross=0.1687 Amean=5.876 eta=4.0m
+[N6 causal 136/400] dcd1746b57416f21731a85a5e5909bc2e3c05577d2a10b7ac02d0690c41e3d48 true=0.2746 cross=1.739 Amean=6.786 eta=4.0m
+[N6 causal 137/400] 66c072596baa306f748db757c7a6a5c31ed8924733641dfa103efcefd8ebb049 true=0.06939 cross=0.2114 Amean=1.674 eta=4.0m
+[N6 causal 138/400] 3fbbb82e643e1ec5de20a20cfc876653f59cc4c9203bd98c83c27b4c508b8b83 true=0.02161 cross=7.884 Amean=23.96 eta=4.0m
+[N6 causal 139/400] c1cb4d99b995376765905acf0e0d1b82d57ba678475a7d636ecb7ee1d2beadd1 true=0.1789 cross=0.5281 Amean=11.48 eta=3.9m
+[N6 causal 140/400] c6adfa2df4b0549d21b6c27c0fac000ba2860900d9bf9e4dcb65583e461626bb true=0.0217 cross=2.076 Amean=12.02 eta=3.9m
+[N6 causal 141/400] dc0723dfc80b3ba0ca46481dcf9d54e99e86bb278bb072a11c181a6d92c772e1 true=0.002972 cross=0.001824 Amean=2.464 eta=3.9m
+[N6 causal 142/400] 11a7d38077fcffc0fc0654b916cf861c8ce7123448ae1b980bbd0bea32b780c6 true=0.0002451 cross=0.001748 Amean=6.798 eta=3.9m
+[N6 causal 143/400] 0c5bea806b19688e6f1120d1568b76b6d558547c6bb5b390802f647c2bdf0368 true=0.2064 cross=0.6141 Amean=7.301 eta=3.9m
+[N6 causal 144/400] 9d4447f9d609f070003b696ade69e37cd3f8911db0211b9844ce448d22b6cb57 true=0.02975 cross=2.712 Amean=14.38 eta=3.9m
+[N6 causal 145/400] 2b25b355dcade2d5b64da69b5d89aecb4670c8a780991c54a6018179309e4ec5 true=0.001966 cross=8.004 Amean=16.23 eta=3.9m
+[N6 causal 146/400] 2ece0f4e720ef2165b4e0ebcea9cec02aebffe048a2396e538b1ab207f763df5 true=0.0006962 cross=0.002651 Amean=2.437 eta=3.8m
+[N6 causal 147/400] 33a1be4fdb3290987067324407ac2b8ecefea4bb36f273a6d7f10b3e81b21fd1 true=0.02799 cross=1.228 Amean=7.728 eta=3.8m
+[N6 causal 148/400] 0155395af057b551b205a4b5c81dff4de086cdaa18918eebf81ffe2da574f6e2 true=0.0004297 cross=0.05561 Amean=0.6938 eta=3.8m
+[N6 causal 149/400] 2b792cc59dc4dc0be196edcd78ca6df93e59f08e5f37a21bff8496f94e58aca7 true=0.1394 cross=6.401 Amean=9.254 eta=3.8m
+[N6 causal 150/400] 2bf2189a3be459f5c034bca40c00f0aee49d673b3e9913166f7164a55696800f true=0.6902 cross=0.5117 Amean=8.05 eta=3.8m
+[N6 causal 151/400] 4845e302ec3003b2e3b1ff9c9559611ab544954c23ef2998992e183f85e2392d true=11.17 cross=0.5839 Amean=0.05208 eta=3.8m
+[N6 causal 152/400] 5ebb4b722ce3e21bcc430740a18851abc34805451a8d79b8375a7b3bfd495d99 true=0.0471 cross=1.167 Amean=8.164 eta=3.8m
+[N6 causal 153/400] 0b9ffdaa600a76dc57b9a19fcd80b8b0aebf78714a1fe36fd38590e409f2695e true=0.4328 cross=1.135 Amean=8.152 eta=3.7m
+[N6 causal 154/400] 483642ea1f1000c39b6f4aa13bb8f78a76d9d64025aab1ef559b786711dd3f11 true=0.01387 cross=3.61 Amean=11.39 eta=3.7m
+[N6 causal 155/400] bfb58c87822b34dd73eeb00086bd665e9c941199f4f44c6d35457746e1921996 true=0.008091 cross=0.07112 Amean=9.401 eta=3.7m
+[N6 causal 156/400] 786a4dae3444317b4eb7640c5973267f5487f11cc59d4720f3c28822e82442dc true=0.2211 cross=0.6251 Amean=11.26 eta=3.7m
+[N6 causal 157/400] 87ce3fd041320028e7fdbf403f04f9a68c3ebd5940c28e48cbcc1eb89119ea62 true=2.122e-05 cross=1.755e-05 Amean=7.004 eta=3.7m
+[N6 causal 158/400] 4c80d4a3d82b8099ed658df4cd09652eedc43e9a1cf4ad168ccfea422d92660b true=0.02971 cross=0.3635 Amean=16.13 eta=3.7m
+[N6 causal 159/400] 2f7bfbc1ae070663c58a5eb2d1a6f9d60e9d743392bf55377067228b3d9b6b16 true=0.0001198 cross=19.34 Amean=20.19 eta=3.6m
+[N6 causal 160/400] 0e45f68bc3f00b55f5bd49b5269ac1acc0948b4f6cca0e1e0b0bb4859f05fcbc true=0.09486 cross=0.5738 Amean=10.85 eta=3.6m
+[N6 causal 161/400] f3fdd3d1bcdcbd00242d0943df7676957768b4085dd1c612a8e856281e94c607 true=0.5459 cross=3.077 Amean=17.37 eta=3.6m
+[N6 causal 162/400] 181e3e13d6505cb79c758c08529e16d05e062bce3de36864d6ec04036e48a2a6 true=0.4214 cross=5.398 Amean=9.943 eta=3.6m
+[N6 causal 163/400] 39ef33681dd335dd7383940d60e578251f4f2ee50c95c5f21e8fe1ff65104570 true=0.07877 cross=0.7061 Amean=11.16 eta=3.6m
+[N6 causal 164/400] 5baad6e962575eed2828f54c7c1ad989b4b2624186074c2eae1f2b8c053cf7f8 true=1.212e-05 cross=2.606e-05 Amean=0.7011 eta=3.6m
+[N6 causal 165/400] 98e79d2924898276eee14b919ab98d80a8182186e4ca9788914f2066075ff225 true=0.003203 cross=0.00514 Amean=22.2 eta=3.6m
+[N6 causal 166/400] c46f08d052e98fe268852fdbfd9a1b907ca4e8bfa9d48c978bdfd01d37573d1d true=0.453 cross=1.169 Amean=9.713 eta=3.5m
+[N6 causal 167/400] ce23302d25ff9cec10f9291dad81280c4607727e5157c464a060946d66763241 true=0.3836 cross=2.256 Amean=12.57 eta=3.5m
+[N6 causal 168/400] 93c0f015d669de3ffcb455272e28cf53e94b956b788f5a00a22c49b200a84375 true=0.07577 cross=4.057 Amean=10.52 eta=3.5m
+[N6 causal 169/400] d5c6de14dcc83e0838f2af14b2253245f7c41ffcfce760f9c439047d54e2198f true=0.003368 cross=2.53 Amean=1.471 eta=3.5m
+[N6 causal 170/400] 127833e5a7d9b31f72aa2b247f64c92ea06d3cc50f8acd9bfcdc5f14ee1ae613 true=1.333 cross=0.5038 Amean=9.266 eta=3.5m
+[N6 causal 171/400] 27b671b14bc0218707a2ccd1948acf3d5128bb4e7a88458f63183554e9cb1a20 true=0.2694 cross=0.159 Amean=12.9 eta=3.5m
+[N6 causal 172/400] fd11631f4ba0fe7afabddd46b32c44dcc801d32478c573bdb8d58da31f32f3d9 true=0.1476 cross=0.05876 Amean=7.873 eta=3.4m
+[N6 causal 173/400] 0e6f678e3f36442bbc033068e65f65de011937d0b972c45e87cba1d5bb989b87 true=0.06327 cross=0.9722 Amean=9.646 eta=3.4m
+[N6 causal 174/400] 70a714701f75878148cfba0e77cca6a10aa89d1597b0bb153c32b61b33c1426f true=0.131 cross=4.292 Amean=9.545 eta=3.4m
+[N6 causal 175/400] f9f4fff9aa72b679b6e60cf3ad088d8e95af67f2796a5bd5a95abd2a734acf60 true=8.784e-05 cross=5.45 Amean=19.75 eta=3.4m
+[N6 causal 176/400] d95fb4217818027d017f090a498ea412d83867769167a398ddc301e35d98660c true=0.4378 cross=0.7885 Amean=12.37 eta=3.4m
+[N6 causal 177/400] ef6b008379cc925a7be29e90b7787110fb24967a3def2bd16a6eaa80002fab2c true=2.206e-05 cross=1.099e-05 Amean=4.726 eta=3.4m
+[N6 causal 178/400] 5b143b18f17e05409af016ce6eaaee612dafb6b57b92405161486a44ab945716 true=0.293 cross=2.391 Amean=20.74 eta=3.3m
+[N6 causal 179/400] a08c21a96dc1d74aabf00f384014c794d67428f44e1de2c244c2e2df058ee339 true=0.8108 cross=1.233 Amean=2.193 eta=3.3m
+[N6 causal 180/400] 201c5a7b3a0b4b0d5e7cd13bd985b6961ecc27716e242b18516bb43dd4195d93 true=0.104 cross=1.272 Amean=1.038 eta=3.3m
+[N6 causal 181/400] c8c60d9131433d17098a4888fa07eaa7d357a1e792dd432fa3c916ebcfc8b627 true=0.182 cross=5.659 Amean=11.5 eta=3.3m
+[N6 causal 182/400] 5bb81b48b0d7cd8563c8ce3db09c818f05cc74d542f584cac6eac03046eb1e1d true=0.299 cross=0.9018 Amean=12.76 eta=3.3m
+[N6 causal 183/400] c87d94d46502b148cbacfe7de77d9d6d9577ace291531c42e29339970380d14e true=0.01756 cross=0.06101 Amean=8.302 eta=3.3m
+[N6 causal 184/400] 5bcf33cc05791ca83be5d7e37d11cf0c5a2bd0bc775f3c8ab614b16e0532a5de true=0.0002357 cross=0.000213 Amean=9.423 eta=3.3m
+[N6 causal 185/400] e491ddd838eeebcb3d8fceba900711b0477c319ac1bea02aecf5a81b56ce94ea true=0.0005046 cross=1.016 Amean=3.625 eta=3.2m
+[N6 causal 186/400] 623068c5605e4336eb08390845c66c863519409abd0adbaeba6bd0077ce10ecf true=1.052 cross=5.808 Amean=25.72 eta=3.2m
+[N6 causal 187/400] 6f8a0098bacc431451fa90ea560319b64f665a1443a3175b9971b2b3d6c5d690 true=0.3132 cross=3.361 Amean=11.29 eta=3.2m
+[N6 causal 188/400] a459e13764320bb1b9f77b745c576ec6b0b6fb379fd8187cb123b87988b4bbee true=0.003254 cross=0.03943 Amean=13.44 eta=3.2m
+[N6 causal 189/400] 3c792dff754427aeaa4031ca6021f114f400b10615d68cdfa6b75c07fa227b94 true=0.004797 cross=2.343 Amean=19.86 eta=3.2m
+[N6 causal 190/400] dccb72f61d0ecdf220ecfdda291c3e815c5edd54fef466266622b501ba8aa51b true=0.3905 cross=3.517 Amean=20.25 eta=3.2m
+[N6 causal 191/400] 0de2274d57eed6dc4c626decc05a60fff76dc1d3f7e053a54e5653a3183a872f true=0.2414 cross=9.89 Amean=8.584 eta=3.1m
+[N6 causal 192/400] 6e86b5dd5498d41eb7d6233f417ef891b734352397694058bced4e36e766822d true=0.318 cross=2.05 Amean=2.641 eta=3.1m
+[N6 causal 193/400] fea127b1f35d43e9466eab522f30c01851ee70a531a3b94063d5cc32b4eff12e true=0.06122 cross=2.112 Amean=12.07 eta=3.1m
+[N6 causal 194/400] 7b632b984db2120373593f31fd6ab6c754e5e87e9c7868247728d17f47bbe08b true=0.1928 cross=2.753 Amean=12.45 eta=3.1m
+[N6 causal 195/400] 4c05537a55d7ece68a48e34b36394e335deb4063abf27cf2ca67d1cbec85b942 true=0.08291 cross=0.4879 Amean=4.884 eta=3.1m
+[N6 causal 196/400] d0132cafe152a53ed66fa736be269b48564c0836f0b656c7b037d86064d8388b true=0.2132 cross=0.1954 Amean=11.13 eta=3.1m
+[N6 causal 197/400] 3cc1c5ddda64fbace70eac3fee36d1d9b55941f6185ff82117ec6e65138e662a true=0.15 cross=1.464 Amean=9.319 eta=3.1m
+[N6 causal 198/400] 24da855e1e09d48d22c31e6aeb678300f921bb3c8ec9e4b8ec68c2ff2b738fac true=1.699 cross=0.1631 Amean=10.99 eta=3.0m
+[N6 causal 199/400] 6768ee80df45a3d0de9caa2652e73fdd17a69f14ae98d41f09ec37c3442b18fa true=0.03497 cross=2.255 Amean=3.003 eta=3.0m
+[N6 causal 200/400] b93ff9a73e10b9c498fbd3c1c9cea126920f87def513d002b7796b654808bf31 true=0.1709 cross=5.547 Amean=9.272 eta=3.0m
+[N6 causal 201/400] 65445d303779f57752f64a50c7b1778e33860eccb794fbd48ab8700414f4e71c true=0.03273 cross=1.832 Amean=3.564 eta=3.0m
+[N6 causal 202/400] d4489f14fc28c243bc86b7791c88b0fd1effa7c9a19ce98f2da33a1d843e8387 true=0.08684 cross=0.9801 Amean=3.214 eta=3.0m
+[N6 causal 203/400] 9ba468f96dd6ab35d0a11817071eb99a4f51f57d973f84e7b9caa198b67a3a58 true=0.3163 cross=2.083 Amean=4.352 eta=3.0m
+[N6 causal 204/400] 03ab728b97acb6b1f1fed01950eb5fc3eba522ba2a93b6ff464c995d97c4349f true=0.2838 cross=1.081 Amean=12.3 eta=3.0m
+[N6 causal 205/400] 60ee4472cfd7344dede41d47b087822b1f5ad012e22fc784f4d5383d0db996a4 true=0.1101 cross=1.639 Amean=4.938 eta=2.9m
+[N6 causal 206/400] 051158d872ec970531dd27e3ca80929881409dd53daa35c64628c22724261614 true=0.3413 cross=1.168 Amean=9.135 eta=2.9m
+[N6 causal 207/400] c1244b3dc8ae9eb6bad31acc467f02127a812b4697bf1907e0493c28446980e3 true=0.7641 cross=4.464 Amean=12.86 eta=2.9m
+[N6 causal 208/400] b97a3d955ecd76f32c5b2b80af9dc587c2189a8a54a547deb8d7e73f7438c04f true=0.0004072 cross=0.4367 Amean=14.61 eta=2.9m
+[N6 causal 209/400] 797194a4fe0bb59c12de5f9f6a5aa65747d8fc9cabc5d398026f5bbe31e66e97 true=0.02647 cross=0.02427 Amean=3.994 eta=2.9m
+[N6 causal 210/400] 44c0d22069b673fff1048e208cc7ceeeba8af962f8947f2375c48aad4c793b2f true=0.05569 cross=4.206 Amean=7.784 eta=2.9m
+[N6 causal 211/400] 29ae3306e41d8934b902f90276bc514d04cbef0e5fbc21fb285d4a926691a9c8 true=4.737 cross=6.144 Amean=0.01732 eta=2.9m
+[N6 causal 212/400] 350a73e48c1578c671a4acacd24b8c2455c48bbea8a9d3209b06661c9897d9ac true=0.09937 cross=0.4763 Amean=0.6251 eta=2.8m
+[N6 causal 213/400] 3507a3d2f0c275a991cc1af0ae0616064542c5daa38165453658d2c4daceba35 true=7.441e-06 cross=2.775e-06 Amean=1.412 eta=2.8m
+[N6 causal 214/400] aed06c9a670585f2115c6cb293986e9bdbc25a59c21f46750b6f993ec536d0c4 true=0.001086 cross=0.01958 Amean=6.612 eta=2.8m
+[N6 causal 215/400] cf123ee3b4873edbfd48e7498caea99933e852c8748d62d1d675035190a7c00d true=0.04564 cross=1.011 Amean=11.71 eta=2.8m
+[N6 causal 216/400] d515550342d0f30fba3e99f92b78643f57a663c2a6ebb92259109485eda7b96a true=0.2209 cross=0.4356 Amean=11.71 eta=2.8m
+[N6 causal 217/400] f2883005586771d233bf079f458679d4b7878a1b0021c9990298c66a387e5f37 true=0.0736 cross=0.004055 Amean=9.094 eta=2.8m
+[N6 causal 218/400] 2adf82f005c27fee3d2de7b83c490b025070464de5e510bbb451623de41772d4 true=0.2064 cross=4.908 Amean=8.082 eta=2.7m
+[N6 causal 219/400] 7ca1b69ddc8047e4c86ec06eec3de985faa6ddebfa6cc7594b2a8a49da2b6e58 true=0.4021 cross=4.872 Amean=9.461 eta=2.7m
+[N6 causal 220/400] 198b3bb4b79f3503a5b8baf6a2aa553a5f44144dd9c3a3c59221b93a28be8dd5 true=0.2104 cross=0.9335 Amean=6.922 eta=2.7m
+[N6 causal 221/400] 079b33911aeed2d41bfb9a43117eea3f19882236c67598e487f9ffd3118a62e1 true=0.6557 cross=1.339 Amean=6.797 eta=2.7m
+[N6 causal 222/400] f06c9170e129384e6579a07cde4c252e90be64675d0f4c47cee11e73c406c288 true=0.5292 cross=9.563 Amean=6.057 eta=2.7m
+[N6 causal 223/400] e26cfb160f9d0484edb70f1a3a37a83e40d91907ebee8e1ebe0b63685c9c50d5 true=0.1233 cross=2.825 Amean=14.8 eta=2.7m
+[N6 causal 224/400] 4548d7eff018b4305fb0c481cbb03389d458f620ce76dc3f44514c2047358646 true=0.2388 cross=3.533 Amean=20.14 eta=2.7m
+[N6 causal 225/400] 27ecc4009f93bddb51bcc4aebbecfe3ef31759de64abf4cbb1d126eab022764f true=0.3612 cross=4.04 Amean=10.32 eta=2.6m
+[N6 causal 226/400] bf1a7c4d735c281c39d71ba23b65e7b5745a804ab719740c648a8d4f8467d834 true=0.1269 cross=0.7515 Amean=0.04954 eta=2.6m
+[N6 causal 227/400] 10de92ad00a237a4f0a07a39b0f23ef5a73c4520a646c4c8afd1e448e3a06c9e true=0.2101 cross=5.508 Amean=15.52 eta=2.6m
+[N6 causal 228/400] 102319270fcbc710aab806f7f05e11d556777197ffc88a578fc176253672f599 true=0.3664 cross=5.209 Amean=7.754 eta=2.6m
+[N6 causal 229/400] e389295ab44f3db1a60436c69f4a292c65fec8d18f36b6d4127be29023a2bdc4 true=1.936 cross=5.884 Amean=0.3218 eta=2.6m
+[N6 causal 230/400] 915045b16f66d75fe4d674c03fced454499cfe4f44377912d33734d1137aa08a true=0.2334 cross=7.211 Amean=11.31 eta=2.6m
+[N6 causal 231/400] 1a9db83af230937881e3ad263b13e7ab2b09d2bbfa7fe6e2fbb6527c9e20ab6a true=0.03499 cross=0.8196 Amean=9.134 eta=2.5m
+[N6 causal 232/400] ee25fa868b180f0408c9858ea7b976bd9bb2308961de17fab46cd9a427f06fdf true=3.268 cross=2.716 Amean=10.11 eta=2.5m
+[N6 causal 233/400] 551af0e27e89d81f3942b241517eaaac91b2b343b657332799cadbe0247c929b true=0.08454 cross=4.548 Amean=5.672 eta=2.5m
+[N6 causal 234/400] 16a098292b86524622b19bef106287b2be324e9a4e6555a49ba0c45840e64483 true=0.3701 cross=3.397 Amean=5.089 eta=2.5m
+[N6 causal 235/400] 1eb9371e2689887f3a4380581b6ce3557f5c4a10779258b981cfec9274c6e485 true=0.2067 cross=1.918 Amean=0.08444 eta=2.5m
+[N6 causal 236/400] e5a2b641b6500938584481ef2b4142d0890fe4b259f51a6353538c5a354acd01 true=0.8434 cross=1.831 Amean=10.4 eta=2.5m
+[N6 causal 237/400] 53b4cfcaee639c090bfc988f34f20e2326327fb04a4fb874f10dc8e7b51754c7 true=0.002959 cross=4.396 Amean=12.87 eta=2.4m
+[N6 causal 238/400] 92759d161f4efd53c6be219884e8e54dcdfab7a994ea590ae08c22d1f6179558 true=1.215 cross=0.4818 Amean=3.261 eta=2.4m
+[N6 causal 239/400] 0c565892fb535a4b8a046fdf3db87b589b4d362434a9f328e129c384763a4080 true=0.02233 cross=1.731 Amean=3.691 eta=2.4m
+[N6 causal 240/400] 3a56ddeffbf377e092fc6b8b88ed24ab2f6872eda835870d5c4789145a87d724 true=0.006949 cross=1.067e-05 Amean=12.37 eta=2.4m
+[N6 causal 241/400] f2b4c0c6545d65c67742a8e6f4fffb6391823eb1a8376536b109b2ffc926a460 true=0.07622 cross=0.8222 Amean=1.381 eta=2.4m
+[N6 causal 242/400] 60c22eb2674b569d6c2a4b3072ea81ef587a70fabceb42aada50044200a56c11 true=0.3625 cross=0.434 Amean=12.88 eta=2.4m
+[N6 causal 243/400] 50fbe917d7678f6264380dd70ae5324a09f67b63c0a74be18237e4e70fe9d00e true=0.00964 cross=0.2695 Amean=14.99 eta=2.4m
+[N6 causal 244/400] e775bcb013dace72943077b9cc71527bd2a126a862af74e2a5dc79f0cd715f60 true=0.008234 cross=3.619 Amean=11.26 eta=2.3m
+[N6 causal 245/400] f409b6891dc33f3cfa4369458191d5038cb9acad817e0eac5aac9315fb80a5a2 true=0.0556 cross=3.993 Amean=10.6 eta=2.3m
+[N6 causal 246/400] 659448c2502c31dc6f32af17601280f849e20e20938ac89437c3a99f406f419c true=0.1572 cross=7.097 Amean=7.708 eta=2.3m
+[N6 causal 247/400] 7cf198dbf4e1e191a1b1c2509cf2f991fb27764015689205d8ae7711e172a04e true=0.5538 cross=3.11 Amean=10.71 eta=2.3m
+[N6 causal 248/400] fe3b467c89aa76559cc6d64f65d2f925129b7aff2d1e78d11da458f9d27611cf true=0.9826 cross=0.5806 Amean=7.961 eta=2.3m
+[N6 causal 249/400] a45df2d652e72fa703ea77dd99abc45d408da69f8cd5dc82677b89f6b7c4ef49 true=0.4197 cross=0.9746 Amean=13.6 eta=2.3m
+[N6 causal 250/400] 5de87f0a83fa3af758ed32854bd70048f964f178417780269610eac973dee0c6 true=0.4698 cross=0.4101 Amean=4.979e-05 eta=2.3m
+[N6 causal 251/400] 888e80b1a3286fc613cbf726ab8468239d5053958866beec224ac3068985e146 true=0.01171 cross=0.008074 Amean=11.35 eta=2.2m
+[N6 causal 252/400] 6841efe3626d3a5905a593420ef876a18183b2f8c33f83091fd0fd8135bfd48e true=1.428 cross=4.585 Amean=20.39 eta=2.2m
+[N6 causal 253/400] 1fba1e3b1e994158371d3f7611f4371882166528969919dc2c57bcde13eb6db0 true=0.085 cross=5.749 Amean=18.31 eta=2.2m
+[N6 causal 254/400] b8c106e427d485a9b2faba59fffd7c886a36e5b29729996b77006d9adf62eb38 true=0.006413 cross=0.117 Amean=14.94 eta=2.2m
+[N6 causal 255/400] a74fda0eb27cc62777f71bf6043d27a058c9e882981e9c4dca1675a777c3a324 true=1.47e-06 cross=4.89 Amean=19.87 eta=2.2m
+[N6 causal 256/400] d380eeb3672e83d575700a636c9b677dd9c75768c7b2bb286ec33c6b7d9e7ee9 true=0.5626 cross=1.656 Amean=5.822 eta=2.2m
+[N6 causal 257/400] 3421fe4f12c5da04e2a1b3b40ce8762e5dace9717a75d8ab44538a18c00da5cf true=0.2819 cross=6.79 Amean=12.93 eta=2.1m
+[N6 causal 258/400] 0dbddae3f8e4103d13446d00702df55d39aa13dda8657d0f5ba7dd6e6c19b096 true=0.4236 cross=2.897 Amean=11.32 eta=2.1m
+[N6 causal 259/400] f04e1cd13e1851e8bfd0dc97a034076213360d54e78723ab1be4af0c5749c2c3 true=0.4646 cross=1.513 Amean=4.299 eta=2.1m
+[N6 causal 260/400] 01027c43b011b95815733b29f6779f116511ebbcd664a06a4ba580affb82caed true=0.3696 cross=3.149 Amean=3.403 eta=2.1m
+[N6 causal 261/400] 8b82e3e02d2e85a49ac5ae3872032aca958e2e6e385e435518d5c32013b13986 true=0.001651 cross=0.03373 Amean=22.11 eta=2.1m
+[N6 causal 262/400] 2925593871bfc9434815ae6d321f283ca4cd7d26e062d4856fac80debeda9a1b true=0.2434 cross=2.833 Amean=5.321 eta=2.1m
+[N6 causal 263/400] ddfeb321ef588652dade6915e9722830a031a55d05aeb1776867582737421fd9 true=0.4669 cross=0.109 Amean=0.05625 eta=2.1m
+[N6 causal 264/400] a91bc7561505e51060cba01c0e33d5d26811cfba06adfda71b20f5e1d871236b true=0.2627 cross=1.711 Amean=24.02 eta=2.0m
+[N6 causal 265/400] ebfcfa08874204a608bdc036cfe924d8fd254792906d58a79bcb2760a7ba0151 true=6.43e-06 cross=0.004188 Amean=2.843 eta=2.0m
+[N6 causal 266/400] a8aff1f24aba705101a00e3cb6bbe6e5f638c8c88ea4219dbc66207c5a682e02 true=0.02912 cross=0.01877 Amean=-0.1803 eta=2.0m
+[N6 causal 267/400] 5807df40c2f750d55d742a07f76974a0d96cc18cb3d18fceddd6fce1354e9cea true=0.01769 cross=0.5852 Amean=10.57 eta=2.0m
+[N6 causal 268/400] d32cc433226a2393abbdd4eac31b4aad2d32eecc212a1a4d685928ce8eccc617 true=1.503e-05 cross=0.0004006 Amean=10.47 eta=2.0m
+[N6 causal 269/400] bad00f6415ef4966e8401aed33cf58edb23fdff5ac7e97a5a92597ea73a6064f true=0.0005953 cross=0.000467 Amean=8.33 eta=2.0m
+[N6 causal 270/400] 2ad0d2aec3df1aa9ec99750f93fcffb4418d42c2a070da6e8e11828875240278 true=0.3382 cross=1.088 Amean=15.73 eta=1.9m
+[N6 causal 271/400] 386a697ad5602ca18851f60e260100c3093eef818b6a79101a74b4d35c04d202 true=0.08 cross=2.631 Amean=10.07 eta=1.9m
+[N6 causal 272/400] f7a6774acd7111e39564e57aa7022dac29ba1f7635325dd6a1e475f9d8b332a9 true=0.1915 cross=3.725 Amean=5.293 eta=1.9m
+[N6 causal 273/400] 701968aadaee86205544fbd429aab8c3d184ec102116c4fcdda84af1f6893dc4 true=0.4839 cross=1.903 Amean=8.018 eta=1.9m
+[N6 causal 274/400] cb99d7f4d0e8f1f2963713c9866961fdb939bb3244f4f738d4713c52d2831040 true=1.359 cross=3.888 Amean=8.114 eta=1.9m
+[N6 causal 275/400] a1451866e1587cf284f43181c24cc37e6a5d206fb7b2d7633eed40f08e4716e2 true=0.187 cross=1.331 Amean=14.75 eta=1.9m
+[N6 causal 276/400] 87c37f3c95c80a36911c06974e3c91a1ee015e885194fcc27332442f71748715 true=0.2342 cross=0.5334 Amean=4.494 eta=1.9m
+[N6 causal 277/400] 68d8343171cff8e8521427bc77d91c5f5298e409fd4aadf6238e6140f6a083b5 true=0.005392 cross=2.346 Amean=17.37 eta=1.8m
+[N6 causal 278/400] b69e881a9c5f3532453d537e3dacc1aff1317e209536961c20a5409d3d0b27fe true=0.08973 cross=4.218 Amean=0.2554 eta=1.8m
+[N6 causal 279/400] ab1703fa0d292bb66b27d3d5cc603da1de756e823eb8935440efa55c7d61e462 true=0.003571 cross=0.1155 Amean=3.735 eta=1.8m
+[N6 causal 280/400] db3f0124e976dad68f6517883c301663cad0ffda48098ec7199575c299746119 true=0.006762 cross=0.02421 Amean=19.31 eta=1.8m
+[N6 causal 281/400] 2b8f8691f22fc7ba258bd320e94ddab7c12480dd62ecb1d724fca1b2d421d556 true=0.6301 cross=10.59 Amean=13.38 eta=1.8m
+[N6 causal 282/400] 453adf9fdb91793404220e06884b12e292e1c2c2de606378d5217f0e97b04834 true=0.003582 cross=0.01313 Amean=7.284 eta=1.8m
+[N6 causal 283/400] b71b0b9f80e61963816829ebc2a3585eed7bd3bfb3dfbeaddab9efa87e25a4ef true=0.9162 cross=3.549 Amean=5.378 eta=1.7m
+[N6 causal 284/400] 3893b5ae4d7db4208bdad1a045de399da2897a79399a5359751e8b56f01185f4 true=5.902 cross=4.418 Amean=0.2106 eta=1.7m
+[N6 causal 285/400] b0bce06515a86719c958da53f88b717e841d2cb02fecac675c3d9dc7517a3062 true=0.1618 cross=3.157 Amean=9.94 eta=1.7m
+[N6 causal 286/400] 7dbc4502697a197cd9f241876dbfdfa11a71c296ee67e0fb295f217c68dfbd69 true=0.5387 cross=0.3692 Amean=12.86 eta=1.7m
+[N6 causal 287/400] fe67df9cc9bce1c243f7ccc942e288affeca4a5a133bd3dc7ef809f796991a71 true=7.763e-05 cross=0.0004788 Amean=10.12 eta=1.7m
+[N6 causal 288/400] fbd6c669839ae686248ae1ae77176f1f6ee4a374fa85807821a2db8ab2a05b88 true=0.4774 cross=2.697 Amean=7.922 eta=1.7m
+[N6 causal 289/400] eb535bbdacbe92c1ac7bc54d60e682cfa37071df5ec23153e3d1777be25a1240 true=0.1876 cross=0.0647 Amean=-4.755 eta=1.7m
+[N6 causal 290/400] 7d37249e5699be16bf43b01c101c25b1a8c3d80a1769b7bec73a314710d643cd true=0.2975 cross=1.416 Amean=11.53 eta=1.6m
+[N6 causal 291/400] 374487933c375c125a3b6a8b31db4fd91c65812508ae3016fb0f910a520c4878 true=0.07995 cross=7.42 Amean=10.48 eta=1.6m
+[N6 causal 292/400] bede82a3a5630702d237a3aa8cc1ee56a97d4c66a1f520991f46fb4f319411c7 true=0.1418 cross=0.018 Amean=0.1865 eta=1.6m
+[N6 causal 293/400] 800024e174a910e5ebdc446d3a17de1b85b63039a8f8e7a65a94435b5f230b79 true=0.6585 cross=3.627 Amean=10.71 eta=1.6m
+[N6 causal 294/400] cc59c17e03c6bffe0c2c6a493ead8e2dfeeddf6958fbfb6cb8ca6686b49eeb50 true=2.038 cross=2.679 Amean=11.16 eta=1.6m
+[N6 causal 295/400] 6a2e62a775b412a2c0c5bae1cefb328f0ba6c57210dd92c3c7ebcee6e5a5a142 true=0.01015 cross=0.127 Amean=12.7 eta=1.6m
+[N6 causal 296/400] bfae8a3ab54b782235f0cda7ee36ce8999f1c42cb52042571bd05c5b0cc98645 true=0.2979 cross=1.254 Amean=8.968 eta=1.6m
+[N6 causal 297/400] f2ad82290d8fe96dbc8753a7429e0b6957bea8bda37aa628f41fa4f4766a85b0 true=0.1556 cross=0.3362 Amean=2.752 eta=1.5m
+[N6 causal 298/400] 4f647bd2cbe9528cd4645bf1fdc1023671b0e3da45a214cc6dd5d0771ea59db5 true=0.4648 cross=2.65 Amean=4.075 eta=1.5m
+[N6 causal 299/400] 06d7f4f8bc56c41ada93539c9adf30667d7fb7c28971c6b924f2ad0fbccbd062 true=0.7839 cross=2.167 Amean=11.44 eta=1.5m
+[N6 causal 300/400] fec195e5102414cb56ed898b2ae7fbcfdbf17e670564c57049bd7dbeb3f9dc9f true=0.03766 cross=1.12 Amean=11.62 eta=1.5m
+[N6 causal 301/400] 1db73ece5ed5ddd43f4f6f9600d1d5741bd592bf47f00fbe01cc58b5e35fb4f4 true=0.6047 cross=0.6442 Amean=8.043 eta=1.5m
+[N6 causal 302/400] ae0aaa9e94847a231f68b9e51c3a2b2acbf01e00200414bfe1a3edf88b2e0c36 true=0.04046 cross=2.015 Amean=10.35 eta=1.5m
+[N6 causal 303/400] 7f3d08a17616ff092e8759dbbbfa3cb2e7468f1d82ea6964584eb4e21ecd3fcc true=1.153 cross=4.343 Amean=2.495 eta=1.5m
+[N6 causal 304/400] 16890374d32e5197a876d0b1361325698307ec54496d0115e6ca4c2f260d33ec true=2.162 cross=4.402 Amean=13.11 eta=1.4m
+[N6 causal 305/400] 0875b95f98834dfccd3940a83a930538b33d691b7497236209fc0a6c490c6e29 true=0.1396 cross=1.294 Amean=7.289 eta=1.4m
+[N6 causal 306/400] a7fbdc3755217a0e609d3a0ac662843b3756dfb3a2134b00ad11ae3c25ad5091 true=0.001222 cross=0.03244 Amean=26.1 eta=1.4m
+[N6 causal 307/400] 1890b22ee8e4491c512d4fd0d9bbbf9f92149ae1a2656aaa36be9d75c3e66079 true=0.5272 cross=1.161 Amean=4.558 eta=1.4m
+[N6 causal 308/400] bb0cdca9bf0bdbad3540596435524df969d897a454f286039596181d98e11052 true=1.175 cross=0.7249 Amean=16.74 eta=1.4m
+[N6 causal 309/400] 71d8117bde6db91f7c637d0a9029fddb5647974f5328faf493e9c60c0fb3aa94 true=7.375 cross=12.85 Amean=5.958 eta=1.4m
+[N6 causal 310/400] cf118f47da89e3e76635f2489a97acd305c39f23fa6b41cf1db6520f96f369de true=0.8774 cross=3.03 Amean=8.527 eta=1.3m
+[N6 causal 311/400] c1ef4d51b555b8d2dfa05d966fe6d47487d3e3fa54805ed9df9ce3d45e75f553 true=0.005945 cross=0.113 Amean=26.53 eta=1.3m
+[N6 causal 312/400] 7052becfc2f977b1638aec280e0241aef544252d1cc6f8762181090aff697949 true=0.1364 cross=0.4368 Amean=7.982 eta=1.3m
+[N6 causal 313/400] 27278fd880031a6633328422d180cb2ec0eeb46faa2056e5b2bff1b23ef1f30c true=0.001997 cross=0.0101 Amean=4.437 eta=1.3m
+[N6 causal 314/400] 9186e3d3759522aed96cfb0150d420a798aeaa1fcb730d6de2bfc532f5cc7198 true=0.2214 cross=3.754 Amean=3.315 eta=1.3m
+[N6 causal 315/400] 627cebb92e807129ca496c8ecc87234143e09a9a92417a6d4707257a681ae783 true=0.206 cross=0.3692 Amean=15.12 eta=1.3m
+[N6 causal 316/400] 915c9fa3f0170401fd2119caa708d7a8930d48d39eec642a651fb173ea3524b8 true=0.5992 cross=0.6269 Amean=3.695 eta=1.3m
+[N6 causal 317/400] 15288c89ae9b952aa7e8a4d5fde7986201bacfed5d3869c5762984a446cdbea7 true=0.2196 cross=1.797 Amean=14.71 eta=1.2m
+[N6 causal 318/400] 473b15b60fd7d0f97b6c3b9a4f70b4dcd4533de8b273f983392d13064fc51cbb true=8.399e-05 cross=0.009698 Amean=3.741 eta=1.2m
+[N6 causal 319/400] b56306f9dd6d89ab28bf9a3a8ddb2107da699ae6f87efe60c0d6ebdd31ae909b true=0.1182 cross=0.1714 Amean=15.77 eta=1.2m
+[N6 causal 320/400] f7a79312dfe45622911c687f316f13db1c9ca030d6de74cb30e989c6e2503bd0 true=0.1367 cross=0.3236 Amean=12.93 eta=1.2m
+[N6 causal 321/400] 7851924f5055483bab2db52709f1bdc52f5a0381d7b786e6f53938a6a10165b5 true=0.01222 cross=0.02992 Amean=17.46 eta=1.2m
+[N6 causal 322/400] 59e01bf430a6b2b0318acea42ce9723d086d58b8c9b14dfecc0f6bfc9839c815 true=0.8566 cross=1.567 Amean=11.63 eta=1.2m
+[N6 causal 323/400] bdaafd6bdb5e4337d3714b0611a12928fcdfe50466ceed7254ba86fb1041acef true=0.06139 cross=0.3866 Amean=13.6 eta=1.2m
+[N6 causal 324/400] b650f9ea4143249f295ec8ca1adbd748bfb1f13dfee8a2b70041262d18775273 true=0.005006 cross=0.199 Amean=14.25 eta=1.1m
+[N6 causal 325/400] ab22193d387cde6d74a298601974c3e5bebdd5ae609a0694feab6e3dc7295916 true=0.04563 cross=0.01465 Amean=-0.6914 eta=1.1m
+[N6 causal 326/400] c0091813ccec478114fb5317ebbb9f7c96b958779c2b68de6f7fbff8a7704c5c true=0.02211 cross=0.05476 Amean=6.38 eta=1.1m
+[N6 causal 327/400] 3226779e5ca0b72b09c5c19d79ad3184a0e32fa57090880cd0590b0daf8cbeeb true=0.2544 cross=4.971 Amean=11.83 eta=1.1m
+[N6 causal 328/400] e7cf80cdb62155e22425f4ad8aac595e91f11a827fabebbad9742887e2f85dae true=0.04783 cross=4.578 Amean=18 eta=1.1m
+[N6 causal 329/400] fc8f745bc7dce0313d3f04710ee1f53df3bf63029634a3047813dd62833ad59b true=0.2866 cross=6.173 Amean=9.106 eta=1.1m
+[N6 causal 330/400] cdf22152395e4c95489ec8a3b526e9c1fe83ef52a47a7ca340090c49059f0dab true=0.8733 cross=3.704 Amean=7.339 eta=1.0m
+[N6 causal 331/400] 1e20ffbb05b06162da260405939c05b5596b01c654e38d9862cb3b29ebf41cd1 true=0.5115 cross=8.583 Amean=18.03 eta=1.0m
+[N6 causal 332/400] c3c7ed4a188805f03032200605b876ac332040682f5357c474c04bfcda33e3f6 true=0.03719 cross=2.868 Amean=5.78 eta=1.0m
+[N6 causal 333/400] f32a67917ab4b553e192cefd2ace24def7432ac2d71b87440a09d3d7890b27d6 true=0.3713 cross=1.576 Amean=7.577 eta=1.0m
+[N6 causal 334/400] 731e44ff2df51b9f3b8b794cd01b670ef18bfcfbfb3ac81f15f625f04d10109a true=0.2137 cross=0.5968 Amean=1.094 eta=1.0m
+[N6 causal 335/400] a3fb9c8c646ce3af56105564a3933016b64fa1d7fdb231f69a90a14563b72e64 true=0.3088 cross=1.786 Amean=10.75 eta=1.0m
+[N6 causal 336/400] 7d185a800042a6948bf33b3f842b70d8a64b845e5a7009ac63ad922f2bdb6c7a true=0.172 cross=4.637 Amean=9.589 eta=1.0m
+[N6 causal 337/400] 9d216b2df699b0a2c462062c9c45a557832cbf53ce3a1cb3abf0ee4353219e53 true=0.002427 cross=0.03159 Amean=3.656 eta=0.9m
+[N6 causal 338/400] bdab05db5ddb7a0747cbd20a94f6e542d8c24e844989ae9250c5fa430f7a0af2 true=0.3807 cross=0.5366 Amean=0.394 eta=0.9m
+[N6 causal 339/400] 326fe13292b11f1eb1483982f73e22429c24bb95b2681871a857d41084ad150f true=0.07675 cross=0.7316 Amean=0.2239 eta=0.9m
+[N6 causal 340/400] a18e723c4cd6692557d5000649ca069890d0d8b9a92ca957a40905ea8a94ad08 true=-2.197e-09 cross=8.218e-06 Amean=0.04377 eta=0.9m
+[N6 causal 341/400] 94d91bfb48bef4215345361894a559fc9cb54cf8dee1a6f23cf023cbae3671e4 true=0.4695 cross=2.974 Amean=7.103 eta=0.9m
+[N6 causal 342/400] cae3d96a31716a72f8bdcbca0687ea0306ffd24a7e7664ebf1910fe0605daf58 true=4.462e-05 cross=4.404e-05 Amean=0.01758 eta=0.9m
+[N6 causal 343/400] 90b5dbf3af6b617f455e117074ccb76a557dd70ade45f58963f1b96fdce13722 true=0.2099 cross=6.599 Amean=4.164 eta=0.9m
+[N6 causal 344/400] b2728af9f7c0d2511ce4bbc31f2793572136ca1b15e8bccec37ff07e34feda94 true=1.163e-05 cross=0.0002553 Amean=4.663 eta=0.8m
+[N6 causal 345/400] 8be07123fb08987a1f6e1cfc8c77e93e747b5e669d2ac75a37749cf80ccf5d46 true=0.1285 cross=5.882 Amean=15.19 eta=0.8m
+[N6 causal 346/400] 3d7091b4ebf0623cfe5d74bc13bed1943f03be8960d908244a16166ece76c737 true=0.7464 cross=2.461 Amean=6.6 eta=0.8m
+[N6 causal 347/400] c12764f004606f5d642d1983ef42b877667db81e04a479c6e09caddca32fab9f true=4.688 cross=2.027 Amean=16.88 eta=0.8m
+[N6 causal 348/400] b3fdf4f8abbd9e7ff679b075ed07a9ef3722edb934a3d83211232a59742191cf true=0.001753 cross=7.833 Amean=8.143 eta=0.8m
+[N6 causal 349/400] 662c1a5b153469d4593d5ffccdb07afca79e527e48497ff98067ed2d1793550a true=0.017 cross=0.409 Amean=11.56 eta=0.8m
+[N6 causal 350/400] d56cef1aff8968fca234d8843db1b0403bb0eb0445ebf6a3c3de6f7e9450ab78 true=0.2968 cross=5.54 Amean=9.13 eta=0.7m
+[N6 causal 351/400] 19429d34f33754b19d970b0419b37da2d7ea47a4026d6d98db9be39891660cf1 true=0.234 cross=2.016 Amean=2.707 eta=0.7m
+[N6 causal 352/400] 7dd1566624be5cf287d0e745606735f75bd15f99ee1d8d9873437fda7114dd8b true=1.126 cross=2.442 Amean=-0.5329 eta=0.7m
+[N6 causal 353/400] da3bfae20018b43a8974e287d842ecdf41b7d931f8d1cea0806d08b954fd5914 true=1.528 cross=2.623 Amean=3.842 eta=0.7m
+[N6 causal 354/400] 0fd87344e8dc13a0d28df070190c27bd190d336f3bdd2447fb4dd1ce15ac580e true=3.726 cross=3.762 Amean=14.82 eta=0.7m
+[N6 causal 355/400] cd7d40018e16a84fea193c007489035c7b9b48e7268bbadbc237ec3119561859 true=0.07009 cross=5.374 Amean=4.93 eta=0.7m
+[N6 causal 356/400] b2728327be36c73d38933f427985530da5ff04f289c79f03dede45a2459550b7 true=0.2759 cross=0.4692 Amean=4.186 eta=0.7m
+[N6 causal 357/400] c2c0692587947466b1aeac49071c60862606ef1ce7ab476116fa4034b169a0d7 true=0.2518 cross=0.5882 Amean=14.76 eta=0.6m
+[N6 causal 358/400] c798849b6c7da1aad6d4c3b4ab2542956569fc851eeb702ad312bb1adaffbe0b true=0.7429 cross=5.494 Amean=1.214 eta=0.6m
+[N6 causal 359/400] b4a42207583739e1524cd0910f72adcdb67788404be7cd8436c1f78c0f607d7f true=0.6627 cross=3.178 Amean=8.911 eta=0.6m
+[N6 causal 360/400] 1e79014ed7c89da9a175b507a5aa0e899b3c87e25d402a6843bcf3675ca93fee true=0.2577 cross=2.466 Amean=12.99 eta=0.6m
+[N6 causal 361/400] 2ddd3fc6e6fdd391cd58b7583c8970630e42dd5ed41640e327df3dfdd4a5a564 true=0.2198 cross=1.55 Amean=7.288 eta=0.6m
+[N6 causal 362/400] 7a547bcb766b884eb2730765412bbc3390d49eb73e44355ed7fa52ed46924355 true=1.051 cross=3.687 Amean=15.36 eta=0.6m
+[N6 causal 363/400] d84fbfb0e7084c3ad3f8fc4c021d595a99e08c491cf6ec8c4b49cd0c81644986 true=0.08414 cross=1.394 Amean=3.224 eta=0.6m
+[N6 causal 364/400] 9912b086600e9ccb7774e8df4659c4136b2962a0c6285e01141e5650973301f9 true=0.7518 cross=1.171 Amean=7.306 eta=0.5m
+[N6 causal 365/400] a054000b84428acdb3ff167cbf32f1e93016a34c1cb0dc79f66b73200b11940e true=0.02063 cross=0.4763 Amean=9.095 eta=0.5m
+[N6 causal 366/400] 70fac3ed088697be6685620b913d96739b4ea0d5d0400d0f6f2c6e036e44cc40 true=2.026 cross=2.994 Amean=12 eta=0.5m
+[N6 causal 367/400] 99cf1933606b956f589e45c6dd71b0c66cfea4eb1c92dbd32abf542d7dd95fde true=0.4431 cross=2.753 Amean=11.39 eta=0.5m
+[N6 causal 368/400] e16e224cef766def44e78978e97f88bb1f5908ae5db2359ba791d46a4916c6ca true=0.2936 cross=1.14 Amean=10.24 eta=0.5m
+[N6 causal 369/400] 58b5a50dba0fe84d4ca1633ebfdf86184d363f3c6dd49c8a3a58307f33f34186 true=0.05876 cross=8.146 Amean=9.317 eta=0.5m
+[N6 causal 370/400] c9e580acef993c6ea0f75446fe4afdca3306ff0fbcd2b43e40148aa824ebb0ba true=0.8471 cross=2.347 Amean=5.693 eta=0.4m
+[N6 causal 371/400] 4eeb00bca0a5b6af509414c1c3f0bcc1178a6afaa63e8f6a5708acebeeac9fe7 true=0.4696 cross=3.549 Amean=2.215 eta=0.4m
+[N6 causal 372/400] 9795c081ab1197c268233c8e40952c7a4f4f9be584e8950f0b0b779558f1890e true=0.3495 cross=0.1801 Amean=14.54 eta=0.4m
+[N6 causal 373/400] fe55b580fc268cde6d778ca7283235e9f9966b084ce316ce9ca27e321b633cbd true=0.08771 cross=6.515 Amean=8.507 eta=0.4m
+[N6 causal 374/400] a09b0986356f05be8f9768fe0d48642b6fffc8e542d4728155228dcc9f5fcf09 true=0.0102 cross=2.361 Amean=5.854 eta=0.4m
+[N6 causal 375/400] 34b93c9a97dab35948d35e59686ee8f2fd3a81fb13ee8f967ae649d17773671b true=0.33 cross=1.19 Amean=9.463 eta=0.4m
+[N6 causal 376/400] 441b183fded9eb4ec6743bf60f5342243d6b638994e5ac7eaed047e8e20dbad5 true=0.0311 cross=1.475 Amean=10.99 eta=0.4m
+[N6 causal 377/400] f73670c18c6c43eee0f77db67117ec6ebe468a4e3f48002147221214d6b2ea14 true=0.005616 cross=0.002148 Amean=14.94 eta=0.3m
+[N6 causal 378/400] d38ac2e9a6e051ef19a387122ffda09ae405cd1071b2dfa52c70e591122298c7 true=0.4699 cross=2.891 Amean=6.394 eta=0.3m
+[N6 causal 379/400] e65d737572787c051107c4214b63a2318259c06b3951c37da7d8cd26b7bc1196 true=0.3878 cross=1.893 Amean=9.58 eta=0.3m
+[N6 causal 380/400] 9fc32b681e3792fb4a8f07e6613f9437071489b6873883243d55af3a5ad8c55a true=0.01225 cross=0.05421 Amean=10.3 eta=0.3m
+[N6 causal 381/400] 56f912cb3e4377b0a1c5e50f6290e8705aacf17fa949eb8b04a7f61b3a818a79 true=0.07593 cross=1.922 Amean=12.45 eta=0.3m
+[N6 causal 382/400] 7520ffa1d0a9eb6c1aa2d7dd5117cfeb71f6bdea148b23ea4b637b878c840a15 true=0.6897 cross=2.865 Amean=6.42 eta=0.3m
+[N6 causal 383/400] 3e448cd737313a1b644e729bf8461f05a79610e9030c5729b02abf0f49a98835 true=0.07632 cross=4.964 Amean=14.35 eta=0.3m
+[N6 causal 384/400] 6f50fb1215eb939e5e23ea89a796f71a292a83d9329555e66dc456b6b711648a true=0.07368 cross=4.59 Amean=14.65 eta=0.2m
+[N6 causal 385/400] bb542205adb4cd7ec65c1fa346c38183f3fa6534b2c737db0a6a32d141e3149b true=1.014e-05 cross=5.122e-05 Amean=10.02 eta=0.2m
+[N6 causal 386/400] 568ea362930649831e709ca17a1742077b21234e95804a19de7eb03bf26645f5 true=0.3464 cross=0.2838 Amean=9.898 eta=0.2m
+[N6 causal 387/400] 2e8cda6c2e3d1d137dbc70944594ddb1912153501e7aa3061ffa280509ca50a3 true=0.3954 cross=0.9383 Amean=16.08 eta=0.2m
+[N6 causal 388/400] e66ad636c366d81298466232a65c4b15c9db3da2d711d735008a4f9f7302df4b true=0.3051 cross=2.28 Amean=11.81 eta=0.2m
+[N6 causal 389/400] 972a1eba4a0262db664e5a34160abe774c7a616bd3574b4514d836c915f5bda8 true=0.04546 cross=1.249 Amean=12.15 eta=0.2m
+[N6 causal 390/400] b243af57329768b36b4e75d1bd6aa73376c7788cdc2ff4e886cda460ce145bb8 true=0.6355 cross=3.316 Amean=8.282 eta=0.1m
+[N6 causal 391/400] 7b86ed8fa850ac2ff9d37579d1f828584f00aea0a3d7c45abc52e760b6191e1b true=0.3171 cross=2.059 Amean=17.12 eta=0.1m
+[N6 causal 392/400] f7a6e99160336d20a7d01a6e688e2f16dc254af5f1ba3928beec3443445ec444 true=0.1121 cross=0.3824 Amean=8.458 eta=0.1m
+[N6 causal 393/400] c3d440838d07057a177c8a489cace06a37de68bc9210d7cb3af80112003b4764 true=1.669 cross=2.445 Amean=0.7755 eta=0.1m
+[N6 causal 394/400] ce3f250b8ede6668863ae25583e22510f8e8af4c2596f25be008384bd50a89c5 true=0.00333 cross=0.6937 Amean=9.046 eta=0.1m
+[N6 causal 395/400] 6c3fee282fee06aeb7e4152a64bb064f60e6231e81d37c7fef34a780bae236a7 true=0.7129 cross=4.613 Amean=7.504 eta=0.1m
+[N6 causal 396/400] 492fc317dc5b96743c1514dcbc2563db6d968ee52c494f687b8c64a75f0c264d true=0.1035 cross=0.3567 Amean=9.326 eta=0.1m
+[N6 causal 397/400] d17cb1fa649cff674f564c87acd9d05ab7739e1c3beb698bec6035a98e65e386 true=0.2889 cross=1.649 Amean=8.978 eta=0.0m
+[N6 causal 398/400] e3000031d890b0d3c2217f64d36d82af83966134393711b2152124d247ea7140 true=0.009734 cross=0.7707 Amean=10.47 eta=0.0m
+[N6 causal 399/400] 0d6381d8ab46f7b7c7f47dfce657b7bb5f6f1c2d0fb1ea8385311b8fb479fe9f true=1.436 cross=6.254 Amean=6.473 eta=0.0m
+[N6 causal 400/400] 4609074f90166f6ccd9312f532da95dab155a39bc083c8ef61b170f7d63e96d4 true=0.3323 cross=1.106 Amean=15.35 eta=0.0m
+N6_CAUSAL_COMPLETE rows=400 forwards=4400 sha256=260c1b00cb6a5d498bb436e3b8dba667861af47b77cebcd49fb684a8f6823592
+2026-08-03 14:01:32 CST VERIFIED sidecar label='stage 54 causal and candidate-mass output' sha256=260c1b00cb6a5d498bb436e3b8dba667861af47b77cebcd49fb684a8f6823592 path=/root/autodl-tmp/results/n6_causal_candidate_mass_v1.json
+2026-08-03 14:01:32 CST STAGE_COMPLETE stage=54_causal_candidate_mass

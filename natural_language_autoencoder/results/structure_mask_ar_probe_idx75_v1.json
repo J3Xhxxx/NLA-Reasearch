@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "experiment": "single_case_unquoted_structure_mask_ar_probe",
+  "status": "EXPLORATORY_SINGLE_CASE_COMPLETE",
+  "created_at_utc": "2026-08-16T10:01:55.963509+00:00",
+  "sample": {
+    "idx": 75,
+    "doc_id": 5849,
+    "position": 276,
+    "token": " assume",
+    "corpus": "pile",
+    "source": "OpenSubtitles",
+    "lang": "eng_Latn",
+    "context_tail": "Yes.\" \"I will exercise caution.\" \"shall I kill GennosukeNif given the chance?\" \"Do not assume",
+    "continuation": " heNcan be slain so easily!\" \"His eyes...\" \"Those twoNun",
+    "row_activation_sha256_float32_bytes": "014d980b8b8dff6099a80fa0bf521bd892a56823875c0e1e32a67689266b182c",
+    "source_activation_cohort_sha256": "eb9a686a4cdea1f97134b2367d7c8a74a35351678d3c043eddae2f993e17ab66"
+  },
+  "mask_contract": {
+    "definition": "replace every Unicode alphabetic character outside ASCII double-quoted spans with one ASCII X; preserve all other characters",
+    "character_length": 669,
+    "letters_replaced_by_X": 397,
+    "letters_preserved_inside_quotes": 132,
+    "ascii_double_quote_count": 18,
+    "changed_character_fraction": 0.593423019431988,
+    "original_utf8_sha256": "38a853ac6a50f2dfa2d696ead4592e38f4b99d33dd95536c514757adf12635a4",
+    "masked_utf8_sha256": "1a10a278b70655832eecaa7f90882f63b72021762e9eece0b95f0f65c2ae5528",
+    "quoted_content_preserved": true,
+    "character_length_preserved": true
+  },
+  "texts": {
+    "av_original": "Structured narrative format with ongoing dialogue: a formal anime synopsis, guiding a character's moral lesson through a battle encounter.\n\nThe sentence \"Do not assume\" establishes a directive warning against rash action, with the protagonist's emotional state of grief and uncertainty framing a cautionary statement about the fight.\n\nFinal token \"assume\" ends a prohibition clause (\"Do not assume...Do not assume\"), requiring a verb phrase — likely \"that you can decide\" or \"such authority\" or \"my role.\" or \"you are acting preemptively.\" or \"that the outcome is yours.\" or \"such liberties.\" — a specific overreach or assumption about taking the initiative or killing.",
+    "av_structure_masked": "XXXXXXXXXX XXXXXXXXX XXXXXX XXXX XXXXXXX XXXXXXXX: X XXXXXX XXXXX XXXXXXXX, XXXXXXX X XXXXXXXXX'X XXXXX XXXXXX XXXXXXX X XXXXXX XXXXXXXXX.\n\nXXX XXXXXXXX \"Do not assume\" XXXXXXXXXXX X XXXXXXXXX XXXXXXX XXXXXXX XXXX XXXXXX, XXXX XXX XXXXXXXXXXX'X XXXXXXXXX XXXXX XX XXXXX XXX XXXXXXXXXXX XXXXXXX X XXXXXXXXXX XXXXXXXXX XXXXX XXX XXXXX.\n\nXXXXX XXXXX \"assume\" XXXX X XXXXXXXXXXX XXXXXX (\"Do not assume...Do not assume\"), XXXXXXXXX X XXXX XXXXXX — XXXXXX \"that you can decide\" XX \"such authority\" XX \"my role.\" XX \"you are acting preemptively.\" XX \"that the outcome is yours.\" XX \"such liberties.\" — X XXXXXXXX XXXXXXXXX XX XXXXXXXXXX XXXXX XXXXXX XXX XXXXXXXXXX XX XXXXXXX."
+  },
+  "token_counts": {
+    "explanation_only": {
+      "original": 135,
+      "structure_masked": 211
+    },
+    "full_ar_prompt": {
+      "original": 150,
+      "structure_masked": 226
+    },
+    "warning": "equal character count does not imply equal tokenizer count"
+  },
+  "ar": {
+    "model_path": "/root/autodl-tmp/models/nla-gemma3-12b-L32-ar",
+    "mse_scale": 61.96773353931867,
+    "score_definition": "direction MSE = 2 * (1 - direction cosine)",
+    "original": {
+      "direction_cosine": 0.9961208299612508,
+      "direction_mse": 0.007758340077498316,
+      "centered_cosine": 0.8344063547317512,
+      "reconstruction_l2_norm": 91092.84396213335,
+      "raw_relative_l2_error": 0.17402470894161667
+    },
+    "structure_masked": {
+      "direction_cosine": 0.9907483461524507,
+      "direction_mse": 0.01850330769509867,
+      "centered_cosine": 0.547987141601231,
+      "reconstruction_l2_norm": 53947.76463504995,
+      "raw_relative_l2_error": 0.3401474937557576
+    },
+    "masked_minus_original": {
+      "direction_cosine": -0.005372483808800177,
+      "direction_mse": 0.010744967617600354,
+      "centered_cosine": -0.2864192131305202,
+      "reconstruction_l2_norm": -37145.079327083404,
+      "raw_relative_l2_error": 0.16612278481414092
+    },
+    "reconstruction_comparison": {
+      "raw_cosine_original_vs_masked": 0.9944226076002708,
+      "centered_cosine_original_vs_masked": 0.6583244005454081,
+      "current_original_vs_frozen_original_raw_cosine": 1.0,
+      "current_original_vs_frozen_original_max_abs_diff": 0.0
+    }
+  },
+  "inputs": {
+    "checkpoint": {
+      "path": "/root/autodl-tmp/results/n4_av_checkpoint_v1.jsonl",
+      "sha256": "2ff7c019f10d957b0bd94592e4d32afed549c11fe229a2e22fc90b8643b8e48e"
+    },
+    "vectors": {
+      "path": "/root/autodl-tmp/results/n4_recon_vectors_v1.npz",
+      "sha256": "e9d89713dc64381a52f05224d6522abb0ec547777a8c6a7f08b841a72a339967"
+    },
+    "analysis": {
+      "path": "/root/autodl-tmp/results/n4_recon_analysis_v1.json",
+      "sha256": "747f92e024a7aeb5a47e05e1d006b0403760f908229c6451f7a844c33223cdcd"
+    },
+    "protocol": {
+      "path": "/root/autodl-tmp/results/STRUCTURE_MASK_PROBE_IDX75_PROTOCOL_V1.md",
+      "sha256": "d9880ea86c288dcae9ad6364dcff1cacbd66eb2ee2cbc6509dccefd3a27ed1c9"
+    }
+  },
+  "scope_limits": [
+    "selected single case; no population inference",
+    "X masking changes AR tokenization and creates OOD text",
+    "AR round-trip fidelity is not proposition-level human faithfulness",
+    "quoted lexical evidence and candidates are intentionally preserved"
+  ],
+  "runtime_seconds": 6.611107658594847
+}

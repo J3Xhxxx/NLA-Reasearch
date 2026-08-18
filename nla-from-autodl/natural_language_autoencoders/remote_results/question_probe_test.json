@@ -1,0 +1,53 @@
+{
+  "prompt": "Explain why the Eiffel Tower is famous in two sentences.",
+  "answer": "The Eiffel Tower is famous for its distinctive iron lattice structure designed by Gustave Eiffel and for serving as an iconic symbol of Paris and French engineering prowess. Its stature as both a technological achievement and a cultural landmark makes it one",
+  "layer_index": 20,
+  "prompt_token_count": 43,
+  "question_span": [
+    24,
+    38
+  ],
+  "answer_token_count": 48,
+  "results": [
+    {
+      "target": "question",
+      "target_position": 0,
+      "absolute_position": 24,
+      "token_id": 840,
+      "token": "Ex",
+      "raw_norm": 110.329,
+      "explanation": "Formal English language structure with \"Definition\" context suggesting a product or article prompt about sustainability or scientific topic, implying a question or list format.\n\nThe phrase \"Ex\" is the start of a word or prompt, likely \"Example\" or \"An article about...\" or another prompt continuation, suggesting a second question or task prompt follows.\n\nFinal token \"Ex\" is a truncated word mid-sentence (\"Ex\"), part of a prompt or title structure (\"Question: \"), strongly anticipating a word like \"plain the following\" or \"I want to explore\" or \"A list of...\" or \"This AI model is...\" continuing the prompt context about a scientific concept.",
+      "question_position": 0
+    },
+    {
+      "target": "question",
+      "target_position": 1,
+      "absolute_position": 25,
+      "token_id": 20772,
+      "token": "plain",
+      "raw_norm": 127.691,
+      "explanation": "Formal/structured query format with \"AI\" context suggesting a quiz or prompt format about economics terms, implying a second question or definition task.\n\nThe phrase \"Explain\" signals a prompt or task header, likely a second item or question about a concept, possibly \"The Blockchain\" or similar tech term with educational or explanatory intent.\n\nFinal token \"Explain\" is mid-phrase in \"Explain,\" part of a numbered or list prompt structure (\"Task: Explain\"), strongly expecting a noun phrase like \"the concept of Quantum Computing\" or \"why the following statements are valid\" or \"the difference between entropy and information theory.\"",
+      "question_position": 1
+    },
+    {
+      "target": "question",
+      "target_position": 2,
+      "absolute_position": 26,
+      "token_id": 3170,
+      "token": " why",
+      "raw_norm": 123.054,
+      "explanation": "Formal educational/academic format with a question prompt structure (\"Why is the speed of light important?\"), suggesting a quiz or article format with numbered or labeled questions about physics concepts.\n\nThe phrase \"Write a short essay explaining why\" signals an incomplete prompt, implying another question or concept is expected next, likely continuing a list or exploring a related topic about scientific methodology or economics.\n\nFinal token \"why\" opens a second question prompt (\"Explain why\"), part of a parallel structure (\"List reasons to explain\"), strongly anticipating a specific noun phrase like \"the greenhouse effect is decreasing\" or \"a black hole is not a black hole\" or \"mathematics is important\" or similar.",
+      "question_position": 2
+    },
+    {
+      "target": "question",
+      "target_position": 3,
+      "absolute_position": 27,
+      "token_id": 279,
+      "token": " the",
+      "raw_norm": 115.385,
+      "explanation": "Formal question structure (\"A trivia or puzzle format\") suggests a prompt or question about scientific or literary concepts, likely a multiple-choice or explanatory context about Earth or physics.\n\nThe phrase \"Why the\" signals an incomplete question or claim, implying a second item or concept about a scientific phenomenon or historical fact, likely continuing with a famous concept or property related to the Earth or mathematics.\n\nFinal token \"the\" is an incomplete noun phrase mid-question (\"Why the\"), part of a list or question prompt structure (\"Why certain reasons that\"), strongly expecting a noun like \"Earth's circumference is decreasing\" or \"Higgs boson is important\" or \"area under a curve is zero.\"",
+      "question_position": 3
+    }
+  ]
+}

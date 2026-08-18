@@ -1,0 +1,1157 @@
+{
+  "schema_version": 1,
+  "experiment": "C1 confirmatory synthetic concept cohort v3 scenario anchors",
+  "status": "frozen_before_v3_generation",
+  "purpose": "Freeze generic scenario and intent constraints for a full-batch v3 regeneration without freezing final request wording.",
+  "sources": {
+    "review_A": {
+      "path": "results/c1_confirmatory_manual_review_A_v1.json",
+      "sha256": "06ca5fa5eec08e6ed10f73e5905bbb3bb1e23dfb441a2c6e1b2ce5c19c84a8d3"
+    },
+    "review_B": {
+      "path": "results/c1_confirmatory_manual_review_B_v1.json",
+      "sha256": "78a3708341a5efdc5d620ec1bdc2f9207ebaed3488e7d2f1b6f7b95b5818619f"
+    },
+    "manual_audit_rubric": {
+      "path": "server/c1_confirmatory_manual_audit_rubric_v1.json",
+      "sha256": "821eb57d3b8c2109acd623137b7f6ba35cb67e74f459bded791ad2eb2d7ec48a"
+    },
+    "concept_spec_v2": {
+      "path": "server/c1_confirmatory_concepts_v2.json",
+      "sha256": "4e7d6b2ca3d4fe87406cde09b664f9bfee47e00f2630e0c251c0ad3b7422750e"
+    }
+  },
+  "generation_contract": {
+    "anchors_are_not_final_text": true,
+    "generate_one_prose_user_request_per_anchor": true,
+    "preserve_anchor_scenario_and_intent": true,
+    "do_not_copy_anchor_as_a_list_or_heading": true,
+    "do_not_add_named_people_organizations_products_specific_places_urls_or_four_digit_years": true,
+    "do_not_make_the_reciprocal_hard_negative_a_required_or_co_equal_target": true,
+    "do_not_reuse_a_scenario_within_a_concept": true,
+    "do_not_turn_heldout_anchors_into_continuations_or_paraphrases_of_train_anchors": true,
+    "pair_style_rule": "For every reciprocal pair, both concepts use the same ordered discourse slots and split assignments; content must remain concept-specific."
+  },
+  "discourse_slots": [
+    {
+      "slot_id": "train_00_causal_mechanism",
+      "split": "train",
+      "ordinal": 0,
+      "role": "causal_mechanism",
+      "instruction": "Present one observed phenomenon and request its causal mechanism."
+    },
+    {
+      "slot_id": "train_01_contrastive_diagnosis",
+      "split": "train",
+      "ordinal": 1,
+      "role": "contrastive_diagnosis",
+      "instruction": "Contrast two conditions and request an explanation of the difference."
+    },
+    {
+      "slot_id": "train_02_design_tradeoff",
+      "split": "train",
+      "ordinal": 2,
+      "role": "design_tradeoff",
+      "instruction": "Pose a prospective design decision and request relevant tradeoffs or safeguards."
+    },
+    {
+      "slot_id": "train_03_failure_analysis",
+      "split": "train",
+      "ordinal": 3,
+      "role": "failure_analysis",
+      "instruction": "Describe a concrete failure pattern and request a mechanism-focused diagnosis."
+    },
+    {
+      "slot_id": "test_00_counterfactual_prediction",
+      "split": "test",
+      "ordinal": 0,
+      "role": "counterfactual_prediction",
+      "instruction": "Introduce a new setting and request a prediction under one changed condition."
+    },
+    {
+      "slot_id": "test_01_evidence_interpretation",
+      "split": "test",
+      "ordinal": 1,
+      "role": "evidence_interpretation",
+      "instruction": "Provide a generic observation pattern and request interpretation of the underlying mechanism."
+    }
+  ],
+  "concepts": [
+    {
+      "id": "automatic_memory_reclamation",
+      "hard_negative_id": "dynamic_memory_allocation",
+      "train": [
+        {
+          "anchor_id": "automatic_memory_reclamation_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A long-running graph workspace retains cycles of task objects after every external root to those tasks disappears; request an explanation of root tracing, reachability, cycle handling, and safe reclamation."
+        },
+        {
+          "anchor_id": "automatic_memory_reclamation_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "Short-lived request objects disappear quickly while a smaller set of objects survives through many processing rounds; contrast how generational collection treats young and repeatedly surviving objects without discussing allocator placement."
+        },
+        {
+          "anchor_id": "automatic_memory_reclamation_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "An interactive simulation must reclaim unreachable objects while keeping response pauses small; ask about concurrent or incremental tracing tradeoffs among pause time, throughput, and collector coordination."
+        },
+        {
+          "anchor_id": "automatic_memory_reclamation_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "An extension registry accidentally keeps references to otherwise obsolete objects, so memory remains occupied indefinitely; diagnose why still-reachable objects cannot be collected and how roots or reference lifetimes cause the leak."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "automatic_memory_reclamation_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "A scene graph changes from gradual object retirement to large bursts in which entire disconnected subgraphs lose their roots; predict how tracing workload, reclamation timing, and pause behavior change under bursty unreachability."
+        },
+        {
+          "anchor_id": "automatic_memory_reclamation_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Runtime logs show frequent young-object collections, repeated survivor promotion, and occasional longer full-heap scans; interpret the pattern in terms of generations, survival, roots, and full tracing."
+        }
+      ]
+    },
+    {
+      "id": "dynamic_memory_allocation",
+      "hard_negative_id": "automatic_memory_reclamation",
+      "train": [
+        {
+          "anchor_id": "dynamic_memory_allocation_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A buffer manager has enough total free bytes but cannot satisfy a request for one large contiguous block; request an explanation of external fragmentation, free-block layout, splitting, and coalescing."
+        },
+        {
+          "anchor_id": "dynamic_memory_allocation_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "One workload requests nearly uniform blocks while another alternates many small requests with occasional large ones; contrast internal waste, external fragmentation, and allocation latency across the two size patterns."
+        },
+        {
+          "anchor_id": "dynamic_memory_allocation_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A real-time service needs a free-list policy for variable-size blocks under a strict latency budget; ask about placement, splitting, search cost, and fragmentation tradeoffs without invoking object reachability."
+        },
+        {
+          "anchor_id": "dynamic_memory_allocation_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "An allocator leaves adjacent released blocks separate, and large requests begin failing after prolonged churn; diagnose missing coalescing and the resulting distribution of unusable free regions."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "dynamic_memory_allocation_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "A device changes its alignment requirement so every requested block must begin on a wider boundary; predict how padding, internal fragmentation, and effective capacity change."
+        },
+        {
+          "anchor_id": "dynamic_memory_allocation_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Telemetry shows rising allocation latency, many tiny free regions, and stable total free capacity; interpret the evidence as a placement and fragmentation problem and identify useful allocator statistics."
+        }
+      ]
+    },
+    {
+      "id": "cryptographic_authentication",
+      "hard_negative_id": "error_detecting_codes",
+      "train": [
+        {
+          "anchor_id": "cryptographic_authentication_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A remote actuator must accept commands only from an authorized controller and reject captured commands replayed later; request how keyed authentication, identity binding, nonces, and freshness establish origin and replay resistance."
+        },
+        {
+          "anchor_id": "cryptographic_authentication_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "One message system has a single verifier sharing a secret, while another must let many independent verifiers check the sender; contrast message authentication codes and digital signatures in trust, key distribution, and verification."
+        },
+        {
+          "anchor_id": "cryptographic_authentication_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "An intermittently connected terminal must verify credentials without accepting stale challenge responses; ask about challenge-response design, credential handling, freshness state, and recovery tradeoffs."
+        },
+        {
+          "anchor_id": "cryptographic_authentication_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "A correctly signed transaction is accepted twice because the verifier never records or checks request freshness; diagnose why signature validity alone does not stop replay and how freshness checks repair the protocol."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "cryptographic_authentication_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "A credential system rotates its signing key while some verifiers temporarily retain only the previous verification key; predict authentication failures and security risks during a staged key transition."
+        },
+        {
+          "anchor_id": "cryptographic_authentication_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Audit records show valid authentication tags on duplicated requests that reuse an earlier nonce; interpret the evidence as a freshness or replay-state failure rather than accidental corruption."
+        }
+      ]
+    },
+    {
+      "id": "error_detecting_codes",
+      "hard_negative_id": "cryptographic_authentication",
+      "train": [
+        {
+          "anchor_id": "error_detecting_codes_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A sensor link experiences accidental bit flips during transmission and appends a small check value to each packet; request how parity or checksums reveal accidental changes without making any identity or anti-forgery claim."
+        },
+        {
+          "anchor_id": "error_detecting_codes_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "One noisy channel produces isolated bit flips while another produces short bursts of adjacent errors; contrast how code distance and cyclic redundancy structure affect detection of the two error patterns."
+        },
+        {
+          "anchor_id": "error_detecting_codes_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A storage controller must choose the length and complexity of a check value for fixed-size data blocks; ask about overhead, computation, and accidental-error detection tradeoffs only."
+        },
+        {
+          "anchor_id": "error_detecting_codes_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "A simple checksum fails to flag a recurring accidental byte-reordering pattern; diagnose the checksum weakness and explain why a more structured error-detecting code may cover that pattern."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "error_detecting_codes_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "The payload size grows substantially while the appended accidental-error check remains the same length; predict how the chance of undetected random corruption and the protection-overhead ratio change."
+        },
+        {
+          "anchor_id": "error_detecting_codes_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Controlled noise tests report detection rates for single-bit, double-bit, and burst errors under several check polynomials; interpret which structural properties of the codes explain the observed accidental-error coverage."
+        }
+      ]
+    },
+    {
+      "id": "protein_quality_control",
+      "hard_negative_id": "membrane_vesicle_trafficking",
+      "train": [
+        {
+          "anchor_id": "protein_quality_control_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A brief heat stress causes newly made proteins to expose hydrophobic regions and begin aggregating; request how chaperones, refolding attempts, ubiquitin tagging, and proteasomal disposal protect the cell."
+        },
+        {
+          "anchor_id": "protein_quality_control_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "A stable protein remains soluble while a sequence variant of the same protein repeatedly misfolds under identical conditions; contrast folding stability, chaperone engagement, degradation, and aggregation outcomes."
+        },
+        {
+          "anchor_id": "protein_quality_control_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A cell culture faces oxidative damage to existing proteins rather than a surge in protein synthesis; ask how refolding capacity and selective degradation could be supported without preserving irreparable proteins."
+        },
+        {
+          "anchor_id": "protein_quality_control_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "Ubiquitin-tagged proteins accumulate after proteasomal throughput declines, even though chaperone activity remains intact; diagnose the disposal bottleneck and its consequences for aggregation and stress responses."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "protein_quality_control_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "A long-lived structural protein becomes chemically damaged while the available pool of folding chaperones is reduced; predict how triage between refolding, tagging, degradation, and aggregation changes."
+        },
+        {
+          "anchor_id": "protein_quality_control_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "A pulse-tracking experiment shows decreasing refolded protein, increasing tagged protein, and delayed aggregate formation; interpret which quality-control stage is limiting and why the aggregate signal appears later."
+        }
+      ]
+    },
+    {
+      "id": "membrane_vesicle_trafficking",
+      "hard_negative_id": "protein_quality_control",
+      "train": [
+        {
+          "anchor_id": "membrane_vesicle_trafficking_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A newly synthesized surface receptor remains in an internal compartment instead of reaching the plasma membrane; request the causal sequence of cargo sorting, vesicle budding, targeting, and membrane fusion."
+        },
+        {
+          "anchor_id": "membrane_vesicle_trafficking_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "Two internalized receptors enter the same early compartment, but one returns to the surface while the other proceeds toward degradation; contrast endosomal sorting, recycling signals, and routing to later compartments."
+        },
+        {
+          "anchor_id": "membrane_vesicle_trafficking_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "An artificial membrane carrier must deliver a generic cargo to one intracellular compartment while avoiding off-target fusion; ask about targeting cues, uptake, membrane composition, fusion specificity, and delivery tradeoffs."
+        },
+        {
+          "anchor_id": "membrane_vesicle_trafficking_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "Cargo-filled vesicles accumulate beside the correct target membrane after a tethering or fusion factor is lost; diagnose which trafficking step failed and why cargo sorting alone is insufficient."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "membrane_vesicle_trafficking_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "A surface receptor changes from rapid recycling to entry into a pathway that reaches a degradative compartment; predict changes in surface abundance and the sequence of vesicle-routing events."
+        },
+        {
+          "anchor_id": "membrane_vesicle_trafficking_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Time-lapse imaging shows cargo leaving a donor compartment, pausing in small carriers, and accumulating before one target membrane; interpret whether budding, transport, tethering, or fusion is the likely limiting step."
+        }
+      ]
+    },
+    {
+      "id": "microbial_quorum_sensing",
+      "hard_negative_id": "microbial_cross_feeding",
+      "train": [
+        {
+          "anchor_id": "microbial_quorum_sensing_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A bacterial community begins producing a shared surface matrix only after cell density passes a sharp threshold; request how secreted signal accumulation changes transcription and coordinates matrix production."
+        },
+        {
+          "anchor_id": "microbial_quorum_sensing_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "Communities with the same cell count coordinate in a closed chamber but not under rapid fluid flow; contrast signal retention and washout while keeping nutrient exchange outside the explanation."
+        },
+        {
+          "anchor_id": "microbial_quorum_sensing_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A treatment process aims to delay harmful biofilm formation by degrading extracellular communication signals; ask about threshold shifting, incomplete suppression, dispersal, and selection tradeoffs."
+        },
+        {
+          "anchor_id": "microbial_quorum_sensing_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "A strain that cannot synthesize its usual signal fails to activate a coordinated extracellular-enzyme program at high density; diagnose the signaling failure and distinguish signal production from signal response."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "microbial_quorum_sensing_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "The same number of cells is divided among much smaller sealed droplets instead of one large vessel; predict how local signal concentration and the activation threshold change."
+        },
+        {
+          "anchor_id": "microbial_quorum_sensing_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "A reporter stays quiet across low densities, rises abruptly, and then remains high after modest dilution; interpret thresholding and possible positive feedback in the communication circuit."
+        }
+      ]
+    },
+    {
+      "id": "microbial_cross_feeding",
+      "hard_negative_id": "microbial_quorum_sensing",
+      "train": [
+        {
+          "anchor_id": "microbial_cross_feeding_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "One microbial strain cannot synthesize an essential vitamin and grows only beside a strain that releases that vitamin; request how metabolite exchange, auxotrophy, and partner dependence sustain both populations."
+        },
+        {
+          "anchor_id": "microbial_cross_feeding_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "The same two strains coexist when adjacent in a structured habitat but fail when separated by a long diffusion distance; contrast spatial gradients and access to exchanged metabolites without invoking density signals."
+        },
+        {
+          "anchor_id": "microbial_cross_feeding_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A stable mixed community must partition one primary resource while one partner consumes an inhibitory metabolic byproduct; ask about producer-consumer balance, exchange rates, partner burden, and stability tradeoffs."
+        },
+        {
+          "anchor_id": "microbial_cross_feeding_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "Removing one low-abundance partner causes an exchanged intermediate to accumulate while another strain loses a required downstream product; diagnose the broken metabolic dependency and cascading community failure."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "microbial_cross_feeding_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "Two metabolically dependent strains are placed on opposite sides of a membrane that passes small metabolites but not cells; predict when exchange remains sufficient and how diffusion limits partner growth."
+        },
+        {
+          "anchor_id": "microbial_cross_feeding_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Isotope tracing shows carbon entering one strain and later appearing in a distinct metabolite inside its partner; interpret the evidence for directional cross-feeding and identify alternative non-signaling explanations to rule out."
+        }
+      ]
+    },
+    {
+      "id": "fault_rupture_mechanics",
+      "hard_negative_id": "slope_failure_mechanics",
+      "train": [
+        {
+          "anchor_id": "fault_rupture_mechanics_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A buried fault segment remains locked during slow regional loading and then slips abruptly; request how frictional locking, elastic strain, failure, and rebound produce sudden rupture."
+        },
+        {
+          "anchor_id": "fault_rupture_mechanics_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "A smooth fault patch slips repeatedly in small events while a rough neighboring patch remains locked much longer; contrast friction, stress accumulation, nucleation, and event size across the two patches."
+        },
+        {
+          "anchor_id": "fault_rupture_mechanics_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A hazard model must represent both strong rupture barriers and weaker connections between adjacent fault segments; ask how barrier strength and segment coupling affect whether rupture stops or propagates."
+        },
+        {
+          "anchor_id": "fault_rupture_mechanics_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "A rupture slows at a material contrast, crosses it, and then accelerates along a neighboring fault patch; diagnose changes in available stress, frictional resistance, and rupture propagation."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "fault_rupture_mechanics_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "Only one portion of a previously locked fault slips while the adjacent portion remains intact; predict how stress transfer changes near-term failure tendency on the unslipped portion and nearby faults."
+        },
+        {
+          "anchor_id": "fault_rupture_mechanics_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Wave arrival patterns imply one-way rupture growth, while later small events migrate toward the rupture edge; interpret rupture direction, stress redistribution, and the aftershock pattern without naming a place."
+        }
+      ]
+    },
+    {
+      "id": "slope_failure_mechanics",
+      "hard_negative_id": "fault_rupture_mechanics",
+      "train": [
+        {
+          "anchor_id": "slope_failure_mechanics_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A cut hillside begins moving after prolonged rainfall raises water pressure within the soil; request how gravity, pore pressure, effective strength, and a potential slip surface produce failure."
+        },
+        {
+          "anchor_id": "slope_failure_mechanics_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "Two slopes share the same angle and soil, but one retains deep roots while the other has recently lost vegetation; contrast reinforcement, erosion, water entry, and resistance to downslope motion."
+        },
+        {
+          "anchor_id": "slope_failure_mechanics_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A road embankment needs a combination of drainage and mechanical reinforcement under limited maintenance capacity; ask about stability benefits, failure modes, and tradeoffs of drainage, retaining support, and slope geometry."
+        },
+        {
+          "anchor_id": "slope_failure_mechanics_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "A thin weak layer beneath stronger material fails and produces unexpectedly long downslope runout; diagnose slip-surface formation, material weakening, acceleration, and runout controls."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "slope_failure_mechanics_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "Excavation removes supporting material from the toe of a previously stable slope without changing rainfall; predict changes in resisting forces, deformation, and failure likelihood."
+        },
+        {
+          "anchor_id": "slope_failure_mechanics_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Instruments show rising pore pressure at one depth and accelerating displacement along a narrow subsurface zone; interpret the likely slip surface and whether drainage or structural support addresses the mechanism."
+        }
+      ]
+    },
+    {
+      "id": "groundwater_contaminant_transport",
+      "hard_negative_id": "coastal_saltwater_intrusion",
+      "train": [
+        {
+          "anchor_id": "groundwater_contaminant_transport_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A dissolved accidental spill forms an elongated plume along the direction of groundwater flow; request how advection, dispersion, sorption, and degradation determine plume movement and shape."
+        },
+        {
+          "anchor_id": "groundwater_contaminant_transport_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "Two dissolved chemicals enter the same aquifer, but one advances rapidly while the other remains near the source; contrast mobility through sorption, degradation, and interactions with aquifer material."
+        },
+        {
+          "anchor_id": "groundwater_contaminant_transport_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A cleanup plan must place monitoring wells and choose remediation under strongly heterogeneous permeability; ask about source localization, plume coverage, missed pathways, and cleanup tradeoffs."
+        },
+        {
+          "anchor_id": "groundwater_contaminant_transport_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "Pumping lowers dissolved concentrations quickly, but contamination rebounds after pumping stops; diagnose slow release from low-permeability zones, incomplete source removal, and transport limitations."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "groundwater_contaminant_transport_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "Natural degradation becomes faster while groundwater velocity and source input remain unchanged; predict changes in plume length, peak concentration, and persistence."
+        },
+        {
+          "anchor_id": "groundwater_contaminant_transport_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Concentrations rise first in one monitoring line, later in another, and remain elevated near a low-permeability lens; interpret flow direction, dispersion, heterogeneity, and possible source location."
+        }
+      ]
+    },
+    {
+      "id": "coastal_saltwater_intrusion",
+      "hard_negative_id": "groundwater_contaminant_transport",
+      "train": [
+        {
+          "anchor_id": "coastal_saltwater_intrusion_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A coastal aquifer maintains freshwater above denser seawater under steady natural recharge; request how density contrast and hydraulic gradients establish the freshwater-seawater interface."
+        },
+        {
+          "anchor_id": "coastal_saltwater_intrusion_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "A shallow well and a deep well pump at similar rates, but only the deep well develops rapidly rising salinity; contrast broad interface movement with localized upconing beneath the wells."
+        },
+        {
+          "anchor_id": "coastal_saltwater_intrusion_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A water manager must allocate limited recharge and reduce extraction while maintaining a freshwater supply; ask about recharge placement, pumping distribution, interface stabilization, and monitoring tradeoffs."
+        },
+        {
+          "anchor_id": "coastal_saltwater_intrusion_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "Salinity remains elevated long after a heavily pumped well is shut down; diagnose slow hydraulic recovery, residual saltwater geometry, and why stopping extraction is not immediately restorative."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "coastal_saltwater_intrusion_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "Temporary seawater inundation raises salinity at the aquifer surface while groundwater extraction stays unchanged; predict density-driven movement, flushing, and which aquifer depths recover first."
+        },
+        {
+          "anchor_id": "coastal_saltwater_intrusion_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Vertical salinity profiles rise sharply near one deep well but shift gradually across a wider coastal transect; interpret evidence for localized upconing versus regional landward interface movement."
+        }
+      ]
+    },
+    {
+      "id": "census_classification",
+      "hard_negative_id": "cadastral_land_taxation",
+      "train": [
+        {
+          "anchor_id": "census_classification_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "The same community appears to change composition after an enumeration replaces several identity categories with broader ones; request how administrative classification and record revision can create apparent demographic change."
+        },
+        {
+          "anchor_id": "census_classification_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "Settled households are counted consistently while seasonal workers and temporary lodgers are often missed; contrast enumeration access, residence rules, household definitions, and undercount mechanisms."
+        },
+        {
+          "anchor_id": "census_classification_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "An enumeration form must balance continuity with earlier categories against allowing residents to describe identities not represented before; ask about comparability, state legibility, imposed categories, self-identification, and revision tradeoffs."
+        },
+        {
+          "anchor_id": "census_classification_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "Residents sharing crowded dwellings are recorded as one household, causing some individuals to vanish from official totals; diagnose how household rules, enumerator practice, and local conditions create omission."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "census_classification_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "An enumeration changes from usual residence to location on the counting day for people living in collective housing; predict effects on household composition, local counts, and longitudinal comparability."
+        },
+        {
+          "anchor_id": "census_classification_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Age and occupation totals shift abruptly at the same time category labels and coding instructions change; interpret whether the discontinuity reflects population change, classification revision, or enumeration practice."
+        }
+      ]
+    },
+    {
+      "id": "cadastral_land_taxation",
+      "hard_negative_id": "census_classification",
+      "train": [
+        {
+          "anchor_id": "cadastral_land_taxation_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "Two neighboring parcel records disagree after the physical landmark used in an older boundary description disappears; request how surveys, maps, deeds, and boundary evidence are reconciled in a parcel dispute."
+        },
+        {
+          "anchor_id": "cadastral_land_taxation_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "One landholding follows customary shared-use rights while an adjacent holding has a formal individual title; contrast how each tenure form is represented, transferred, disputed, and brought into a cadastral record."
+        },
+        {
+          "anchor_id": "cadastral_land_taxation_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A land-tax system must choose valuation frequency and evidence requirements for parcels with uneven improvements; ask about assessment accuracy, administrative cost, appeal safeguards, and equitable valuation."
+        },
+        {
+          "anchor_id": "cadastral_land_taxation_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "A parcel was divided informally, but the ledger still treats it as one holding and issues conflicting tax claims; diagnose how delayed survey and title updates create double assessment and boundary disputes."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "cadastral_land_taxation_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "A shared access route is omitted when several informal holdings are converted into registered parcels; predict effects on use rights, parcel value, disputes, and corrective record procedures."
+        },
+        {
+          "anchor_id": "cadastral_land_taxation_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Successive maps show parcel subdivisions that appear in the tax ledger only after long delays; interpret the sequence of surveying, registration, valuation, and administrative control."
+        }
+      ]
+    },
+    {
+      "id": "quarantine_regimes",
+      "hard_negative_id": "passport_mobility_controls",
+      "train": [
+        {
+          "anchor_id": "quarantine_regimes_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A cargo vessel is detained because disease may emerge after arrival even when no crew member is visibly ill; request how incubation uncertainty, inspection, detention, and cargo rules reduce transmission while disrupting trade."
+        },
+        {
+          "anchor_id": "quarantine_regimes_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "Officials consider isolating exposed households or placing a temporary cordon around the entire affected settlement; contrast transmission control, compliance, enforcement burden, relief needs, and collateral disruption."
+        },
+        {
+          "anchor_id": "quarantine_regimes_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A temporary quarantine station has limited inspection, lodging, food, and medical capacity; ask how detention length, surveillance, humane support, and release criteria should be balanced."
+        },
+        {
+          "anchor_id": "quarantine_regimes_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "Potentially infectious goods bypass inspection through an informal unloading route and seed new cases inland; diagnose the enforcement gap, goods-control failure, and surveillance response without making identity documents central."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "quarantine_regimes_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "A faster diagnostic test becomes available while the disease incubation period remains uncertain; predict effects on detention duration, false release risk, capacity, and compliance."
+        },
+        {
+          "anchor_id": "quarantine_regimes_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Case counts fall inside a cordon while evasion reports and shortages rise near its boundary; interpret epidemiological effectiveness alongside enforcement, relief, and legitimacy problems."
+        }
+      ]
+    },
+    {
+      "id": "passport_mobility_controls",
+      "hard_negative_id": "quarantine_regimes",
+      "train": [
+        {
+          "anchor_id": "passport_mobility_controls_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A traveler reaches a border with a document whose identity claim and entry eligibility must be verified; request how credentials, records, inspection, and administrative decisions control admission and residence."
+        },
+        {
+          "anchor_id": "passport_mobility_controls_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "A government uses visas at external borders but travel permits for movement between internal regions; contrast legal authority, identity checks, eligibility rules, policing, and exclusion in the two systems."
+        },
+        {
+          "anchor_id": "passport_mobility_controls_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "Several generic jurisdictions need interoperable travel documents while retaining different admission rules; ask about verification, privacy, fraud resistance, revocation, and administrative discretion tradeoffs."
+        },
+        {
+          "anchor_id": "passport_mobility_controls_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "Conflicting birth and citizenship records cause repeated denial of a resident's travel document and no clear appeal path; diagnose record linkage, status determination, discretion, exclusion, and procedural safeguards."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "passport_mobility_controls_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "A sudden displacement leaves many applicants without complete identity documents while ordinary admission rules remain in force; predict how temporary credentials, verification standards, residency decisions, and fairness pressures may change."
+        },
+        {
+          "anchor_id": "passport_mobility_controls_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Approval records show similar applications receiving different outcomes across offices and applicant categories; interpret the role of administrative discretion, classification, policing priorities, and appeal mechanisms."
+        }
+      ]
+    },
+    {
+      "id": "lexical_semantic_ambiguity",
+      "hard_negative_id": "syntactic_attachment_ambiguity",
+      "train": [
+        {
+          "anchor_id": "lexical_semantic_ambiguity_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A document assistant encounters the word seal in passages about both closing containers and marine animals; request how surrounding words, topic, and selectional constraints identify the intended word sense."
+        },
+        {
+          "anchor_id": "lexical_semantic_ambiguity_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "The same adjective receives a literal physical reading in one sentence and a figurative evaluation in another; contrast contextual evidence for related polysemous senses without discussing competing parse attachments."
+        },
+        {
+          "anchor_id": "lexical_semantic_ambiguity_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A search system must group related senses enough to recover useful documents without merging unrelated homonyms; ask about sense inventories, context representation, recall, precision, and granularity tradeoffs."
+        },
+        {
+          "anchor_id": "lexical_semantic_ambiguity_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "A clinical note tool interprets a common word by its everyday sense rather than its specialized medical sense; diagnose domain-sensitive word-sense disambiguation failure and the contextual cues that were ignored."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "lexical_semantic_ambiguity_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "A familiar word acquires a new technical sense in a previously unseen domain while retaining its ordinary senses; predict how sparse domain context affects sense selection and what evidence could support adaptation."
+        },
+        {
+          "anchor_id": "lexical_semantic_ambiguity_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Readers slow down after an ambiguous noun only when the following verb is incompatible with its initially preferred sense; interpret contextual reanalysis, sense preference, and whether the senses behave like homonymy or polysemy."
+        }
+      ]
+    },
+    {
+      "id": "syntactic_attachment_ambiguity",
+      "hard_negative_id": "lexical_semantic_ambiguity",
+      "train": [
+        {
+          "anchor_id": "syntactic_attachment_ambiguity_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A prepositional phrase follows a verb and a noun, and either element can grammatically host the modifier; request how competing attachments create two structural interpretations and how context favors one."
+        },
+        {
+          "anchor_id": "syntactic_attachment_ambiguity_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "A relative clause after two nouns attaches to the nearer noun in one context and the more distant noun in another; contrast structural, semantic, and locality cues while keeping individual word senses fixed."
+        },
+        {
+          "anchor_id": "syntactic_attachment_ambiguity_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A technical-writing guide must reduce modifier ambiguity without making every sentence unnaturally repetitive; ask about reordering, punctuation, explicit relative clauses, and clarity-style tradeoffs."
+        },
+        {
+          "anchor_id": "syntactic_attachment_ambiguity_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "A parser attaches a location phrase to an action rather than the object being selected, causing an incorrect procedure; diagnose the competing parse structures and the missing attachment cues."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "syntactic_attachment_ambiguity_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "A spoken instruction gains a pause before its final modifier while all words remain unchanged; predict how prosody shifts attachment preference and the resulting sentence interpretation."
+        },
+        {
+          "anchor_id": "syntactic_attachment_ambiguity_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Reading time rises at a late phrase that forces a modifier to attach differently from the reader's initial parse; interpret structural reanalysis and evidence for competing attachment preferences."
+        }
+      ]
+    },
+    {
+      "id": "phonological_assimilation",
+      "hard_negative_id": "morphological_agreement",
+      "train": [
+        {
+          "anchor_id": "phonological_assimilation_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "In rapid speech, a word-final consonant shifts its place of articulation toward the following consonant; request how neighboring articulation produces regressive place assimilation and affects intelligibility."
+        },
+        {
+          "anchor_id": "phonological_assimilation_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "A consonant keeps its underlying voicing in careful speech but adopts a neighbor's voicing in fast speech; contrast rate, direction, categorical rules, and gradient phonetic realization."
+        },
+        {
+          "anchor_id": "phonological_assimilation_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A speech synthesizer must add realistic coarticulation without making adjacent segments difficult to distinguish; ask about naturalness, clarity, context sensitivity, and gradient-control tradeoffs."
+        },
+        {
+          "anchor_id": "phonological_assimilation_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "A transcription system consistently misses vowel nasalization before nasal consonants and treats each vowel as context-free; diagnose anticipatory assimilation and the acoustic evidence the system ignores."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "phonological_assimilation_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "A sound sequence changes so the influencing consonant comes before rather than after the target sound; predict how progressive versus regressive influence changes the location and direction of assimilation."
+        },
+        {
+          "anchor_id": "phonological_assimilation_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Acoustic measurements form a continuum across speaking rates, but listeners report a sharp category boundary; interpret gradient coarticulation, categorical perception, and evidence for rule-like versus continuous assimilation."
+        }
+      ]
+    },
+    {
+      "id": "morphological_agreement",
+      "hard_negative_id": "phonological_assimilation",
+      "train": [
+        {
+          "anchor_id": "morphological_agreement_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A speaker produces an adjective with gender marking that conflicts with the noun controlling it; request how controller and target features are represented and why a mismatch is ungrammatical."
+        },
+        {
+          "anchor_id": "morphological_agreement_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "Subject-verb number agreement is reliable when adjacent but attracts errors when an intervening noun has the opposite number; contrast locality, feature attraction, and long-distance controller-target dependencies."
+        },
+        {
+          "anchor_id": "morphological_agreement_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "Teaching material must explain case agreement in a language where word order can vary widely; ask how grammatical roles, visible morphology, distance, and example complexity should be balanced."
+        },
+        {
+          "anchor_id": "morphological_agreement_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "A copied narrative changes a pronoun's person and number after a long intervening clause, breaking agreement with its controller; diagnose feature transmission, distance effects, and the resulting morphological mismatch."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "morphological_agreement_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "The grammatical person of a coordinated subject changes while number and sentence structure remain fixed; predict the target verb form and explain how person-resolution rules determine agreement."
+        },
+        {
+          "anchor_id": "morphological_agreement_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Agreement errors rise with controller-target distance and are highest when an intervening noun carries conflicting features; interpret locality, attraction, and feature-matching mechanisms without discussing speech-sound influence."
+        }
+      ]
+    },
+    {
+      "id": "feedback_control_stability",
+      "hard_negative_id": "dynamical_state_estimation",
+      "train": [
+        {
+          "anchor_id": "feedback_control_stability_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A temperature regulator overshoots its setpoint and oscillates after a sudden external disturbance; request how error feedback, loop gain, delay, and damping produce overshoot and settling."
+        },
+        {
+          "anchor_id": "feedback_control_stability_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "Two motor-speed loops use the same measured output, but one has low gain and responds slowly while the other has high gain and rings; contrast response speed, disturbance rejection, overshoot, and stability margins."
+        },
+        {
+          "anchor_id": "feedback_control_stability_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A liquid-level controller must reject inflow disturbances without commanding abrupt valve motion; ask about tuning, settling time, actuator wear, measurement noise, and robustness tradeoffs."
+        },
+        {
+          "anchor_id": "feedback_control_stability_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "A controller keeps integrating error while its actuator is saturated, then produces a large overshoot when the actuator recovers; diagnose saturation, integral windup, instability risk, and anti-windup safeguards."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "feedback_control_stability_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "A fixed sensing delay is added to a previously stable position-control loop without changing its gain; predict changes in phase lag, overshoot, oscillation, and stability."
+        },
+        {
+          "anchor_id": "feedback_control_stability_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "A step response rises quickly, overshoots repeatedly, and settles only after several diminishing oscillations; interpret loop damping and tuning from the response while keeping latent-state inference out of scope."
+        }
+      ]
+    },
+    {
+      "id": "dynamical_state_estimation",
+      "hard_negative_id": "feedback_control_stability",
+      "train": [
+        {
+          "anchor_id": "dynamical_state_estimation_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A moving platform must infer position and velocity from noisy sensors and an imperfect motion model; request how prediction, measurement updates, and uncertainty combine into a latent-state estimate."
+        },
+        {
+          "anchor_id": "dynamical_state_estimation_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "One sensor becomes much noisier while a second sensor and the dynamical model remain unchanged; contrast measurement weighting, covariance, and estimate confidence before and after the noise increase."
+        },
+        {
+          "anchor_id": "dynamical_state_estimation_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A monitoring system must choose a small sensor set that makes all important internal states observable; ask about observability, redundancy, uncertainty, cost, and model-dependence tradeoffs without requesting control actions."
+        },
+        {
+          "anchor_id": "dynamical_state_estimation_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "State estimates drift in one direction because the prediction model omits a persistent disturbance; diagnose model mismatch, biased innovations, covariance consistency, and possible estimator augmentation."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "dynamical_state_estimation_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "All measurements disappear for a short interval while the prediction model continues to run; predict how estimate uncertainty and error evolve before measurements resume."
+        },
+        {
+          "anchor_id": "dynamical_state_estimation_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Innovation residuals remain biased and reported covariance stays small despite growing disagreement with later observations; interpret model mismatch and overconfidence in the estimator."
+        }
+      ]
+    },
+    {
+      "id": "fatigue_crack_growth",
+      "hard_negative_id": "creep_deformation",
+      "train": [
+        {
+          "anchor_id": "fatigue_crack_growth_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A rotating shaft develops a small surface crack after many load reversals even though no single load is extreme; request how cyclic stress initiates a crack and drives propagation per cycle."
+        },
+        {
+          "anchor_id": "fatigue_crack_growth_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "A smooth specimen and a notched specimen experience the same cyclic load, but the notched one cracks much earlier; contrast stress concentration, crack nucleation, and early growth."
+        },
+        {
+          "anchor_id": "fatigue_crack_growth_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A maintenance plan must choose inspection intervals for a component with measurable crack growth under repeated loading; ask about detection limits, growth rate, load spectrum, safety margin, and downtime tradeoffs."
+        },
+        {
+          "anchor_id": "fatigue_crack_growth_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "A component fails sooner under occasional overload cycles mixed into an otherwise moderate cyclic history; diagnose how variable amplitude and crack-tip effects alter initiation and propagation."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "fatigue_crack_growth_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "The cyclic load amplitude is reduced while material, geometry, and cycle frequency stay fixed; predict changes in crack initiation time, growth per cycle, and service life."
+        },
+        {
+          "anchor_id": "fatigue_crack_growth_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "Inspection data show a long period with no visible crack followed by steadily accelerating crack length across later cycles; interpret initiation, detectable growth, stress intensity, and approach to fracture."
+        }
+      ]
+    },
+    {
+      "id": "creep_deformation",
+      "hard_negative_id": "fatigue_crack_growth",
+      "train": [
+        {
+          "anchor_id": "creep_deformation_train_00",
+          "slot_id": "train_00_causal_mechanism",
+          "role": "causal_mechanism",
+          "scenario_anchor": "A polymer beam under an unchanging load develops slow permanent sag even though the load never cycles; request how sustained stress produces time-dependent strain and eventual loss of shape."
+        },
+        {
+          "anchor_id": "creep_deformation_train_01",
+          "slot_id": "train_01_contrastive_diagnosis",
+          "role": "contrastive_diagnosis",
+          "scenario_anchor": "Identical alloy samples carry the same constant stress, but the hotter sample deforms much faster; contrast temperature-dependent creep rate, microstructural mechanisms, and rupture time."
+        },
+        {
+          "anchor_id": "creep_deformation_train_02",
+          "slot_id": "train_02_design_tradeoff",
+          "role": "design_tradeoff",
+          "scenario_anchor": "A high-temperature support must balance allowable sustained stress against required service duration; ask about material choice, steady creep rate, safety margin, inspection, and lifetime tradeoffs."
+        },
+        {
+          "anchor_id": "creep_deformation_train_03",
+          "slot_id": "train_03_failure_analysis",
+          "role": "failure_analysis",
+          "scenario_anchor": "A heated bolted joint gradually loses preload despite an unchanged external load; diagnose creep or stress relaxation in the joint materials and the resulting loss of clamping force."
+        }
+      ],
+      "test": [
+        {
+          "anchor_id": "creep_deformation_test_00",
+          "slot_id": "test_00_counterfactual_prediction",
+          "role": "counterfactual_prediction",
+          "scenario_anchor": "The grain structure of a hot loaded component is changed while sustained stress and temperature stay fixed; predict how microstructural deformation mechanisms, creep rate, and lifetime may change."
+        },
+        {
+          "anchor_id": "creep_deformation_test_01",
+          "slot_id": "test_01_evidence_interpretation",
+          "role": "evidence_interpretation",
+          "scenario_anchor": "A strain-time record under constant load first slows, then becomes nearly linear, and finally accelerates toward rupture; interpret primary, secondary, and tertiary creep and what the transition says about damage."
+        }
+      ]
+    }
+  ],
+  "validation_attestation": {
+    "concepts": 24,
+    "reciprocal_pairs": 12,
+    "anchors": 144,
+    "train_anchors": 96,
+    "test_anchors": 48,
+    "exactly_four_train_and_two_test_per_concept": true,
+    "anchor_ids_unique": true,
+    "scenario_texts_unique": true,
+    "all_concept_ids_match_v2_spec": true,
+    "all_hard_negative_mappings_match_v2_spec_and_are_reciprocal": true,
+    "paired_slot_distributions_identical": true,
+    "all_six_scenarios_substantively_distinct_within_each_concept": true,
+    "heldout_scenarios_do_not_duplicate_or_continue_train_scenarios": true,
+    "no_named_person_organization_product_specific_place_url_or_four_digit_year": true,
+    "no_anchor_requires_the_reciprocal_hard_negative_or_both_concepts_as_co_equal_targets": true,
+    "review_A_failure_frameworks_avoided": true,
+    "review_B_failure_frameworks_avoided": true,
+    "final_prompt_text_generated": false
+  }
+}

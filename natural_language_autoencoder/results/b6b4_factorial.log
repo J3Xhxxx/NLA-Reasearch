@@ -1,0 +1,116 @@
++ PY=/root/miniconda3/bin/python
++ CMP=/root/autodl-tmp/nla_compare
++ MODELS=/root/autodl-tmp/models
++ RESULTS=/root/autodl-tmp/results
++ cd /root/autodl-tmp/nla_compare
++ export HF_HOME=/root/autodl-tmp/hf
++ HF_HOME=/root/autodl-tmp/hf
++ /root/miniconda3/bin/python 13_probe_factorial_polarity.py --av /root/autodl-tmp/models/nla-gemma3-12b-L32-av --ar /root/autodl-tmp/models/nla-gemma3-12b-L32-ar --selection /root/autodl-tmp/results/b6b4_factorial_selection.json --vectors /root/autodl-tmp/results/b6b4_factorial_vectors.npz --checkpoint /root/autodl-tmp/results/b6b4_factorial_av_rows.jsonl --out /root/autodl-tmp/results/b6b4_factorial_result.json --vectors-out /root/autodl-tmp/results/b6b4_factorial_recon_vectors.npz --samples-per-sign 5 --temperature 0.7 --max-new-tokens 200 --seed 20260726 --bootstrap 20000
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[plan] total_jobs=590 complete=2 pending=588 directions=45 semantic_carriers=28
+[NLAClient] nla-gemma3-12b-L32-av: d_model=3840 inj_scale=80000.0 embed_scale=61.97 inj_char='㈜'(id=246566)
+Loading weights:   0%|          | 0/626 [00:00<?, ?it/s]Loading weights:   0%|          | 1/626 [00:00<02:11,  4.74it/s]Loading weights:   3%|▎         | 17/626 [00:00<00:10, 60.62it/s]Loading weights:   5%|▍         | 30/626 [00:00<00:07, 80.93it/s]Loading weights:   7%|▋         | 43/626 [00:00<00:06, 90.52it/s]Loading weights:   9%|▉         | 56/626 [00:00<00:05, 98.84it/s]Loading weights:  11%|█         | 70/626 [00:00<00:05, 108.41it/s]Loading weights:  13%|█▎        | 83/626 [00:00<00:04, 113.70it/s]Loading weights:  15%|█▌        | 96/626 [00:01<00:04, 113.31it/s]Loading weights:  17%|█▋        | 109/626 [00:01<00:04, 113.65it/s]Loading weights:  19%|█▉        | 122/626 [00:01<00:04, 115.62it/s]Loading weights:  22%|██▏       | 135/626 [00:01<00:04, 116.66it/s]Loading weights:  24%|██▎       | 148/626 [00:01<00:04, 117.78it/s]Loading weights:  26%|██▌       | 161/626 [00:01<00:03, 116.27it/s]Loading weights:  29%|██▉       | 180/626 [00:01<00:03, 136.52it/s]Loading weights:  32%|███▏      | 198/626 [00:01<00:03, 135.90it/s]Loading weights:  34%|███▍      | 212/626 [00:01<00:03, 134.57it/s]Loading weights:  36%|███▌      | 226/626 [00:02<00:03, 120.74it/s]Loading weights:  38%|███▊      | 239/626 [00:02<00:03, 119.59it/s]Loading weights:  42%|████▏     | 263/626 [00:02<00:02, 144.87it/s]Loading weights:  44%|████▍     | 278/626 [00:02<00:02, 131.68it/s]Loading weights:  48%|████▊     | 298/626 [00:02<00:02, 148.28it/s]Loading weights:  50%|█████     | 314/626 [00:02<00:02, 144.34it/s]Loading weights:  53%|█████▎    | 329/626 [00:02<00:02, 143.04it/s]Loading weights:  55%|█████▍    | 344/626 [00:02<00:02, 134.35it/s]Loading weights:  58%|█████▊    | 362/626 [00:02<00:01, 144.52it/s]Loading weights:  60%|██████    | 377/626 [00:03<00:01, 141.12it/s]Loading weights:  63%|██████▎   | 392/626 [00:03<00:01, 139.75it/s]Loading weights:  65%|██████▌   | 407/626 [00:03<00:01, 134.42it/s]Loading weights:  67%|██████▋   | 421/626 [00:03<00:01, 133.44it/s]Loading weights:  69%|██████▉   | 435/626 [00:03<00:01, 131.58it/s]Loading weights:  73%|███████▎  | 455/626 [00:03<00:01, 146.59it/s]Loading weights:  75%|███████▌  | 470/626 [00:03<00:01, 143.01it/s]Loading weights:  77%|███████▋  | 485/626 [00:03<00:01, 133.11it/s]Loading weights:  80%|███████▉  | 499/626 [00:03<00:00, 134.42it/s]Loading weights:  82%|████████▏ | 513/626 [00:04<00:00, 135.71it/s]Loading weights:  85%|████████▍ | 532/626 [00:04<00:00, 148.66it/s]Loading weights:  87%|████████▋ | 547/626 [00:04<00:00, 147.87it/s]Loading weights:  90%|████████▉ | 562/626 [00:04<00:00, 138.97it/s]Loading weights:  92%|█████████▏| 577/626 [00:04<00:00, 125.72it/s]Loading weights:  94%|█████████▍| 590/626 [00:04<00:00, 125.72it/s]Loading weights:  96%|█████████▋| 603/626 [00:04<00:00, 122.39it/s]Loading weights:  98%|█████████▊| 616/626 [00:04<00:00, 121.51it/s]Loading weights: 100%|██████████| 626/626 [00:04<00:00, 127.15it/s]
+[AV 1/588] key=direction:f8347:s+1:sample2 tag=True 8.4s eta=163.6m
+[AV 10/588] key=direction:f6809:s+1:sample1 tag=True 7.9s eta=82.0m
+[AV 20/588] key=direction:f14470:s+1:sample1 tag=True 7.7s eta=75.3m
+[AV 30/588] key=direction:f10000:s+1:sample1 tag=True 7.2s eta=72.3m
+[AV 40/588] key=direction:f309:s+1:sample1 tag=True 7.9s eta=70.0m
+[AV 50/588] key=direction:f293:s+1:sample1 tag=True 7.7s eta=71.4m
+[AV 60/588] key=direction:f115:s+1:sample1 tag=True 7.8s eta=69.1m
+[AV 70/588] key=direction:f992:s+1:sample1 tag=True 7.8s eta=67.7m
+[AV 80/588] key=direction:f3800:s+1:sample1 tag=True 6.8s eta=66.2m
+[AV 90/588] key=direction:f969:s+1:sample1 tag=True 7.7s eta=64.3m
+[AV 100/588] key=direction:f507:s+1:sample1 tag=True 7.9s eta=63.0m
+[AV 110/588] key=direction:f624:s+1:sample1 tag=True 7.6s eta=61.7m
+[AV 120/588] key=direction:f485:s+1:sample1 tag=True 7.2s eta=60.9m
+[AV 130/588] key=direction:f918:s+1:sample1 tag=True 7.4s eta=59.3m
+[AV 140/588] key=direction:f15207:s+1:sample1 tag=True 7.3s eta=57.7m
+[AV 150/588] key=direction:f15066:s+1:sample1 tag=True 7.2s eta=56.3m
+[AV 160/588] key=direction:f13887:s+1:sample1 tag=True 7.5s eta=54.9m
+[AV 170/588] key=direction:f15234:s+1:sample1 tag=True 7.5s eta=53.6m
+[AV 180/588] key=direction:f304:s+1:sample1 tag=True 7.3s eta=52.2m
+[AV 190/588] key=direction:f1394:s+1:sample1 tag=True 7.6s eta=50.9m
+[AV 200/588] key=direction:f4581:s+1:sample1 tag=True 8.1s eta=49.7m
+[AV 210/588] key=direction:f2725:s+1:sample1 tag=True 7.8s eta=48.4m
+[AV 220/588] key=direction:f935:s+1:sample1 tag=True 7.3s eta=47.0m
+[AV 230/588] key=direction:f7176:s+1:sample1 tag=True 7.9s eta=45.6m
+[AV 240/588] key=direction:f1491:s+1:sample1 tag=True 7.7s eta=44.3m
+[AV 250/588] key=direction:f5389:s+1:sample1 tag=True 7.1s eta=43.0m
+[AV 260/588] key=direction:f239:s+1:sample1 tag=True 7.7s eta=41.7m
+[AV 270/588] key=direction:f276:s+1:sample1 tag=True 6.8s eta=40.3m
+[AV 280/588] key=direction:f609:s+1:sample1 tag=True 7.3s eta=38.9m
+[AV 290/588] key=direction:f4916:s+1:sample1 tag=True 7.1s eta=37.6m
+[AV 300/588] key=direction:f8224:s+1:sample1 tag=True 7.7s eta=36.3m
+[AV 310/588] key=direction:f2687:s+1:sample1 tag=True 7.2s eta=35.0m
+[AV 320/588] key=direction:f5500:s+1:sample1 tag=True 7.0s eta=33.7m
+[AV 330/588] key=direction:f2036:s+1:sample1 tag=True 7.3s eta=32.4m
+[AV 340/588] key=direction:f6704:s+1:sample1 tag=True 7.7s eta=31.1m
+[AV 350/588] key=direction:f5718:s+1:sample1 tag=True 7.9s eta=29.9m
+[AV 360/588] key=direction:f498:s+1:sample1 tag=True 7.5s eta=28.6m
+[AV 370/588] key=direction:f-1:s+1:sample1 tag=True 7.8s eta=27.4m
+[AV 380/588] key=direction:f-2:s+1:sample1 tag=True 7.1s eta=26.1m
+[AV 390/588] key=direction:f-3:s+1:sample1 tag=True 7.8s eta=24.9m
+[AV 400/588] key=direction:f-4:s+1:sample1 tag=True 7.9s eta=23.6m
+[AV 410/588] key=direction:f-5:s+1:sample1 tag=True 7.9s eta=22.4m
+[AV 420/588] key=direction:f-6:s+1:sample1 tag=True 7.7s eta=21.1m
+[AV 430/588] key=direction:f-7:s+1:sample1 tag=True 7.9s eta=19.9m
+[AV 440/588] key=direction:f-8:s+1:sample1 tag=True 7.8s eta=18.6m
+[AV 450/588] key=carrier:f8347:high_amplify:row883 tag=True 7.8s eta=17.4m
+[AV 460/588] key=carrier:f14470:high_amplify:row1198 tag=True 7.1s eta=16.1m
+[AV 470/588] key=carrier:f309:high_amplify:row572 tag=True 7.6s eta=14.8m
+[AV 480/588] key=carrier:f115:high_amplify:row1303 tag=True 7.0s eta=13.6m
+[AV 490/588] key=carrier:f3800:high_amplify:row660 tag=True 7.1s eta=12.3m
+[AV 500/588] key=carrier:f507:high_amplify:row206 tag=True 7.1s eta=11.0m
+[AV 510/588] key=carrier:f485:high_amplify:row1037 tag=True 7.8s eta=9.8m
+[AV 520/588] key=carrier:f15207:high_amplify:row883 tag=True 7.7s eta=8.5m
+[AV 530/588] key=carrier:f13887:high_amplify:row1198 tag=True 7.7s eta=7.3m
+[AV 540/588] key=carrier:f304:high_amplify:row562 tag=True 7.6s eta=6.0m
+[AV 550/588] key=carrier:f4581:high_amplify:row947 tag=True 8.0s eta=4.8m
+[AV 560/588] key=carrier:f935:high_amplify:row660 tag=True 7.9s eta=3.5m
+[AV 570/588] key=carrier:f1491:high_amplify:row995 tag=True 7.3s eta=2.3m
+[AV 580/588] key=carrier:f239:high_amplify:row1364 tag=True 7.0s eta=1.0m
+[AV 588/588] key=carrier:f276:low_insert:row193 tag=True 6.9s eta=0.0m
+Loading weights:   0%|          | 0/430 [00:00<?, ?it/s]Loading weights: 100%|██████████| 430/430 [00:00<00:00, 9738.87it/s]
+[transformers] [1mGemma3ForCausalLM LOAD REPORT[0m from: /root/autodl-tmp/models/nla-gemma3-12b-L32-ar
+Key               | Status  | 
+------------------+---------+-
+model.norm.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[NLACritic] 33 layers  d_model=3840  mse_scale=61.97
+[AR 1/537]
+[AR 25/537]
+[AR 50/537]
+[AR 75/537]
+[AR 100/537]
+[AR 125/537]
+[AR 150/537]
+[AR 175/537]
+[AR 200/537]
+[AR 225/537]
+[AR 250/537]
+[AR 275/537]
+[AR 300/537]
+[AR 325/537]
+[AR 350/537]
+[AR 375/537]
+[AR 400/537]
+[AR 425/537]
+[AR 450/537]
+[AR 475/537]
+[AR 500/537]
+[AR 525/537]
+[AR 537/537]
+B6B4_FACTORIAL_COMPLETE
+{"semantic_new_intention_to_test": {"n_features": 24, "q_plus_median": 0.11357125639041357, "r_minus_median": 0.030578489775834643, "polarity_median": 0.07081677369072242, "sign_accuracy": 0.75, "signed_retrieval_top1": 0.3333333333333333, "feature_retrieval_top1": 0.3333333333333333}, "semantic_new_heldout_valid": {"n_features": 14, "q_plus_median": 0.1814978606999868, "r_minus_median": 0.04229548553191812, "polarity_median": 0.10171204348918447, "sign_accuracy": 0.8571428571428571, "signed_retrieval_top1": 0.39285714285714285, "feature_retrieval_top1": 0.39285714285714285}, "semantic_legacy": {"n_features": 4, "q_plus_median": 0.40409084166574455, "r_minus_median": 0.013478936229955243, "polarity_median": 0.20698487007923796, "sign_accuracy": 1.0, "signed_retrieval_top1": 0.5, "feature_retrieval_top1": 0.5}, "structural": {"n_features": 1, "q_plus_median": 0.4139081386621464, "r_minus_median": 0.0056132183347529525, "polarity_median": 0.20976067849844968, "sign_accuracy": 1.0, "signed_retrieval_top1": 0.5, "feature_retrieval_top1": 0.5}, "active_nonselective": {"n_features": 8, "q_plus_median": -0.00360988028426625, "r_minus_median": 0.02500423725897502, "polarity_median": 0.014805874878513287, "sign_accuracy": 0.25, "signed_retrieval_top1": 0.1875, "feature_retrieval_top1": 0.1875}, "gaussian": {"n_features": 8, "q_plus_median": 0.00451365001059704, "r_minus_median": 0.0011388581826626675, "polarity_median": 0.0043471512762494275, "sign_accuracy": 0.375, "signed_retrieval_top1": 0.0, "feature_retrieval_top1": 0.0}}
+wrote -> /root/autodl-tmp/results/b6b4_factorial_result.json + /root/autodl-tmp/results/b6b4_factorial_recon_vectors.npz
++ status=0
+++ date -Is
++ echo '=== B6B4_FACTORIAL_EXIT (status=0) at 2026-07-26T16:57:29+08:00 ==='
+=== B6B4_FACTORIAL_EXIT (status=0) at 2026-07-26T16:57:29+08:00 ===
++ test 0 -eq 0
++ echo '=== B6B4_FACTORIAL_COMPLETE ==='
+=== B6B4_FACTORIAL_COMPLETE ===
++ sync
++ exit 0

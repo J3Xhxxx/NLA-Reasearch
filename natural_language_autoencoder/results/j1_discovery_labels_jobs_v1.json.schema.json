@@ -1,0 +1,55 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "cases": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "abstain": {
+            "type": "boolean"
+          },
+          "case_id": {
+            "type": "string"
+          },
+          "confidence": {
+            "maximum": 1,
+            "minimum": 0,
+            "type": "number"
+          },
+          "exclusion_cues": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "hypothesis": {
+            "maxLength": 256,
+            "type": "string"
+          },
+          "positive_cues": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "case_id",
+          "hypothesis",
+          "positive_cues",
+          "exclusion_cues",
+          "abstain",
+          "confidence"
+        ],
+        "type": "object"
+      },
+      "maxItems": 5,
+      "minItems": 5,
+      "type": "array"
+    }
+  },
+  "required": [
+    "cases"
+  ],
+  "type": "object"
+}

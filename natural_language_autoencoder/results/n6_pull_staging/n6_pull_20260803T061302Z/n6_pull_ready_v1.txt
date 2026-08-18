@@ -1,0 +1,11 @@
+ack_token=528633c5965d19f2f0e3fa873128c2d4c8466f82c6f0831d12af633ad56d65c3
+ready_at=2026-08-03 14:11:45 CST
+analysis=/root/autodl-tmp/results/n6_analysis_v1.json
+analysis_sha256=c31d114f9909c2f5371b49730ab60d156a59d238457ada5e48b1a9fa1999789b
+independent_audit=/root/autodl-tmp/results/n6_independent_audit_v1.json
+independent_audit_sha256=d15badffd6b33e986364a5d3d0925cb95e68461dc27b172e44b447046fea6fe0
+resource_report=/root/autodl-tmp/results/n6_resource_report_v1.txt
+resource_report_sha256=7eb7977ed4524387c560f142c893f25f3a0a58a511523ea5fb5a7e35c43226b5
+ack_file=/root/autodl-tmp/results/n6_pull_ack_v1.txt
+ack_format=exact ack_token value followed by newline
+ack_deadline_seconds=300

@@ -1,0 +1,412 @@
+{
+  "method": "nla",
+  "summary": {
+    "n": 40,
+    "backend": "local",
+    "mean_cos": 0.996,
+    "median_cos": 0.9972,
+    "mean_mse_nrm": 0.008
+  },
+  "rows": [
+    {
+      "idx": 0,
+      "doc_id": 0,
+      "position": 19,
+      "token": ",",
+      "raw_norm": 61925.441,
+      "explanation": "Academic/cultural question format signals a structured response about a landmark building, establishing an inquiry about the Eiffel Tower's fame.\n\nThe phrase \"So, what makes the Eiffel Tower so iconic?\" sets up a direct answer exploring the reasons for its global renown and popularity.\n\nFinal token \"it'\" opens a repeated question phrase (\"Why has it become so famous,\") — immediately expects a noun phrase like \"its popularity\" or \"the Eiffel Tower's fame\" or \"several reasons for its iconic status\" or \"its fame includes...\" or \"the Eiffel Tower has become iconic for many reasons\" mirroring the listed cultural/media/historical factors.",
+      "nla_mse_nrm": 0.0053,
+      "nla_cos": 0.9973
+    },
+    {
+      "idx": 1,
+      "doc_id": 0,
+      "position": 22,
+      "token": " what",
+      "raw_norm": 72181.969,
+      "explanation": "Q&A format with factual, informational tone signals a structured answer about a specific landmark or attraction.\n\nThe phrase \"Describe what\" introduces a question prompt about the Eiffel Tower, establishing a topic sentence asking about the subject's characteristics or significance.\n\nFinal token \"what\" opens a question clause (\"Describe what...\"), requiring a noun phrase — likely \"it was like inside/during the visit\" or \"makes the Eiffel Tower special\" or \"the building contains/represents.\" or \"it would have been like to experience it.\" or \"kinds of features/construction details it has\" — a question about the visitor experience or historical context.",
+      "nla_mse_nrm": 0.0056,
+      "nla_cos": 0.9972
+    },
+    {
+      "idx": 2,
+      "doc_id": 0,
+      "position": 24,
+      "token": " typically",
+      "raw_norm": 68539.359,
+      "explanation": "Question-answer format signals a prompt requesting a factual/descriptive response about a tourist attraction or travel guide.\n\nThe phrase \"What do visitors typically\" establishes a question about the visitor experience at the museum, implying a list of common activities or observations at the Chicago Museum of Illusions.\n\nFinal token \"typically\" opens a question phrase (\"What visitors typically...what visitors typically\"), requiring a verb phrase like \"do during their visit\" or \"experience\" — likely \"do\" or \"see/find\" or \"expect during a tour\" or \"do when visiting the itinerary.\" or \"experience during the tour include...\" referencing the typical tourist activities or itinerary items.",
+      "nla_mse_nrm": 0.0046,
+      "nla_cos": 0.9977
+    },
+    {
+      "idx": 3,
+      "doc_id": 0,
+      "position": 27,
+      "token": " they",
+      "raw_norm": 64748.414,
+      "explanation": "Structured travel guide format: description of a Parisian landmark, establishing factual, tourist-guide tone with specific details about the Eiffel Tower.\n\nThe phrase \"Take the elevators to the three levels of the Eiffel Tower\" signals a standard French tourist phrase about the Eiffel Tower, specifically the ascent/elevator experience.\n\nFinal token \"they'\" opens a noun phrase (\"three levels of the tower'\"), requiring a noun phrase — almost certainly \"the elevators\" or \"up to the three levels\" or \"Restaurants\" or \"by the stairs\" — describing the Eiffel Tower's ascent or ticket/access information. \"There are three levels\" sets up a specific destination.",
+      "nla_mse_nrm": 0.0054,
+      "nla_cos": 0.9973
+    },
+    {
+      "idx": 4,
+      "doc_id": 0,
+      "position": 29,
+      "token": " to",
+      "raw_norm": 58605.91,
+      "explanation": "Travel guide format with structured prompts establishes a factual, descriptive tone about a landmark/attraction in Paris.\n\nThe phrase \"How to get to the Eiffel Tower? Tickets to the Eiffel Tower\" signals a question about visiting the tower, specifically the experience of visiting the Paris landmark.\n\nFinal token \"to'\" ends a noun phrase (\"visited to...\"), requiring a location noun — almost certainly \"the Eiffel Tower\" or \"the tower\" to complete the phrase, then likely \"visit\" or \"it.\" or \"the Eiffel Tower.\" or \"the top\" — describing the tourist experience or ticket/booking context for the observation deck or specific Parisian attraction.",
+      "nla_mse_nrm": 0.009,
+      "nla_cos": 0.9955
+    },
+    {
+      "idx": 5,
+      "doc_id": 0,
+      "position": 32,
+      "token": ".",
+      "raw_norm": 64243.555,
+      "explanation": "Established Q&A format signals a structured travel guide response, with a factual description of a specific landmark or attraction.\n\nThe phrase \"The climb up the tower is quite interesting, but the experience at the top is...\" sets up a summary of the visitor experience at the London Eye.\n\nFinal token \"it'\" opens a repeated topic sentence (\"What's it like...\"), immediately requiring a noun phrase — likely \"The experience of visiting the London Eye\" or \"The journey up/the reward\" or \"The experience at the top\" or \"Visiting the London Eye.\" or \"What visitors can expect\" — describing the experience or the payoff of the ride.",
+      "nla_mse_nrm": 0.0108,
+      "nla_cos": 0.9946
+    },
+    {
+      "idx": 6,
+      "doc_id": 0,
+      "position": 34,
+      "token": "\n",
+      "raw_norm": 68897.398,
+      "explanation": "Structured travel guide format: factual description of a landmark, establishing context for the Eiffel Tower in Paris.\n\nThe phrase \"The Eiffel Tower, a must-see attraction\" signals a standard tourist description, implying visitor information about the iconic landmark — queues, tickets, or practical details.\n\nFinal token \"it'\" opens a noun phrase (\"the elevators...are long\") — strongly expects a visitor statistic or descriptor like \"Millions of visitors\" or \"visiting the Eiffel Tower each year\" or \"long queues\" or \"The Eiffel Tower\" or \"by foot or by metro\" — a specific logistical detail about the experience or the Parisian landmark's crowds or timing.",
+      "nla_mse_nrm": 0.0139,
+      "nla_cos": 0.993
+    },
+    {
+      "idx": 7,
+      "doc_id": 0,
+      "position": 37,
+      "token": "\n",
+      "raw_norm": 71279.805,
+      "explanation": "Structured Q&A format signals a response is incoming, establishing an informative, conversational tone about a cultural/pop culture topic.\n\nThe phrase \"So, why is the Eiffel Tower so beloved?\" sets up a direct answer explaining the two reasons, priming a summary or breakdown of the article.\n\nFinal token \"\n\" ends a transitional framing phrase (\"So...\"), immediately expecting a response header or answer introduction like \"The Eiffel Tower is...\" or \"Let's explore why...\" or \"The Eiffel Tower is truly fascinating.\" or \"Okay, the answer is...\" or \"There are two reasons...\" — a definitive explanation or categorization of why it ranks as a top topic.",
+      "nla_mse_nrm": 0.0099,
+      "nla_cos": 0.995
+    },
+    {
+      "idx": 8,
+      "doc_id": 1,
+      "position": 16,
+      "token": " the",
+      "raw_norm": 64220.629,
+      "explanation": "Educational biology context establishes a structured Q&A format, requiring a definition of photosynthesis.\n\nThe phrase \"Photosynthesis involves two main stages\" signals a textbook summary statement, priming a description of the light-dependent and Calvin cycle reactions.\n\nFinal token \"it'\" opens a new clause (\"divided into two stages...\"), immediately requiring a noun phrase — likely \"light-dependent reactions\" or \"the light reactions\" or \"two processes\" or \"chlorophyll a\" or \"the thylakoid membrane\" or \"first phase\" — naming the overall process or restating the photosynthesis equation in terms of capturing/converting light energy.",
+      "nla_mse_nrm": 0.0047,
+      "nla_cos": 0.9977
+    },
+    {
+      "idx": 9,
+      "doc_id": 1,
+      "position": 18,
+      "token": " of",
+      "raw_norm": 70630.32,
+      "explanation": "Educational biology question format: a question about photosynthesis, establishing a topic requiring a summary answer about plant processes.\n\nThe phrase \"What are the factors involved in photosynthesis? The process of photosynthesis needs the role of\" signals a list of topics or concepts, priming a specific topic statement about photosynthesis.\n\nFinal token \"of\" opens a noun phrase (\"the role of...factors involving the role of\"), requiring a noun or noun phrase — likely \"chlorophyll,\" \"light,\" or \"chlorophyll and pigments\" or \"special structures called chloroplasts\" or \"each pigment.\" or \"water and carbon dioxide\" — naming the key ingredients or the chlorophyll/light context.",
+      "nla_mse_nrm": 0.0044,
+      "nla_cos": 0.9978
+    },
+    {
+      "idx": 10,
+      "doc_id": 1,
+      "position": 20,
+      "token": ",",
+      "raw_norm": 65593.328,
+      "explanation": "Educational Q&A format signals a structured explanation of photosynthesis, establishing a topic question about plant biology.\n\nThe phrase \"What are the requirements for photosynthesis? Sunlight,\" sets up a list of inputs/requirements, priming a summary statement about the process.\n\nFinal token \"sunlight,\" ends a list opener (\"role of sunlight,\") requiring immediate enumeration of additional inputs — likely \"chlorophyll, carbon dioxide, and water\" or \"the chloroplast\" or \"chlorophyll and carbon dioxide\" or \"energy.\" or \"cells and chlorophyll\" — naming specific components or the role of chlorophyll/the chloroplast in capturing light during photosynthesis.",
+      "nla_mse_nrm": 0.0053,
+      "nla_cos": 0.9974
+    },
+    {
+      "idx": 11,
+      "doc_id": 1,
+      "position": 22,
+      "token": ",",
+      "raw_norm": 65856.375,
+      "explanation": "Educational resource format: structured Q&A format with a definition of photosynthesis, establishing a topic summary for a science diagram.\n\nThe phrase \"Photosynthesis needs water, light,\" signals a list of required inputs for photosynthesis, implying the three ingredients — water, carbon dioxide, and chlorophyll — are being enumerated.\n\nFinal token \"water, \" ends a list of inputs (\"needs water,\") requiring parallel noun phrases — most likely \"carbon dioxide\" or \"and chlorophyll\" to complete the list, then likely \"carbon dioxide from the air\" or \"chlorophyll from the plant\" or \"and nutrients\" or \"CO2\" — the plant's inputs/process.",
+      "nla_mse_nrm": 0.0087,
+      "nla_cos": 0.9957
+    },
+    {
+      "idx": 12,
+      "doc_id": 1,
+      "position": 25,
+      "token": " dioxide",
+      "raw_norm": 63878.375,
+      "explanation": "Educational biology question format: a question about photosynthesis, establishing a topic requiring a structured answer about plant processes.\n\nThe phrase \"The reactants are water and carbon dioxide\" signals a question about photosynthesis, priming a list of inputs/ingredients for the plant.\n\nFinal token \"carbon dioxide\" ends a list of three inputs (\"water, carbon dioxide...\"), immediately requiring a noun phrase completing the topic — likely \"in the atmosphere\" or \"carbon dioxide\" to name the gas, or \"and are taken in by the plant.\" or \"as the raw materials.\" or \"CO2.\" — the subject of the question about the gas's role in photosynthesis.",
+      "nla_mse_nrm": 0.0053,
+      "nla_cos": 0.9974
+    },
+    {
+      "idx": 13,
+      "doc_id": 1,
+      "position": 27,
+      "token": "<end_of_turn>",
+      "raw_norm": 58538.316,
+      "explanation": "Educational Q&A format signals a structured answer response, establishing a definition/explanation of photosynthesis.\n\nThe phrase \"Here's a summary of the process\" signals a standard FAQ or explainer format, suggesting a concluding or introductory context typical for a biology/educational platform.\n\nFinal token \"]\" ends a repeated question prompt (\"Please answer the question...\"), immediately expecting a source citation or question metadata tag like \"Answer\" or \"The text\" — likely \"The article\" or \"biology, with a detailed explanation\" or \"This question is...\" or \"In addition,...\" or \"The topic is...\" to introduce the full answer or a source attribution.",
+      "nla_mse_nrm": 0.0278,
+      "nla_cos": 0.9861
+    },
+    {
+      "idx": 14,
+      "doc_id": 1,
+      "position": 29,
+      "token": "<start_of_turn>",
+      "raw_norm": 66061.914,
+      "explanation": "Educational biology context signals a definition/explanation of photosynthesis, establishing a structured lesson format with a topic introduction.\n\nThe phrase \"Photosynthesis is the process by which plants make food\" sets up a formal definition of photosynthesis, priming a summary statement about the plant's role.\n\nFinal token \"it'\" opens a restatement or definition sentence (\"Photosynthesis is...\"), requiring a noun phrase like \"the process of converting light energy\" or \"food production\" — likely \"plants use photosynthesis\" or \"the most important process\" or \"creating sugar\" or \"by the plant is called photosynthesis.\" or \"energy.\" — a subject predicate about the overall plant function.",
+      "nla_mse_nrm": 0.0036,
+      "nla_cos": 0.9982
+    },
+    {
+      "idx": 15,
+      "doc_id": 1,
+      "position": 31,
+      "token": "\n",
+      "raw_norm": 80556.305,
+      "explanation": "Structured educational explainer format signals a response is underway, establishing a Q&A or informational breakdown about photosynthesis.\n\nThe phrase \"Okay, let's break down photosynthesis!\" signals a summary or explanation is incoming, priming a detailed, accessible walkthrough of the process.\n\nFinal token \"\n\" opens a response header or introduction — \"So, photosynthesis is a fascinating process.\" signals a structured answer is beginning, likely \"Okay, let's dive into photosynthesis\" or \"Photosynthesis is awesome!\" or \"Let's explain the process of photosynthesis.\" or \"Great! The explanation of photosynthesis is here.\" — a full answer or tutorial summary follows.",
+      "nla_mse_nrm": 0.0029,
+      "nla_cos": 0.9986
+    },
+    {
+      "idx": 16,
+      "doc_id": 2,
+      "position": 16,
+      "token": " the",
+      "raw_norm": 69721.812,
+      "explanation": "Academic historical survey format signals a structured argument about the printing press, establishing context of early modern European intellectual change.\n\nThe phrase \"The invention of printing revolutionized communication. The rise of the printing press led to...\" sets up a direct causal claim about the Reformation's relationship to book production and dissemination.\n\nFinal token \"it'\" opens a topic sentence about the impact of printing — likely \"books,\" \"ideas,\" or \"mass dissemination of knowledge\" — strongly expecting a noun phrase like \"Reproducible texts\" or \"faster dissemination of humanist ideas\" or \"Luther's writings at lower cost\" or \"standardization of knowledge\" as the new era of accessibility.",
+      "nla_mse_nrm": 0.004,
+      "nla_cos": 0.998
+    },
+    {
+      "idx": 17,
+      "doc_id": 2,
+      "position": 18,
+      "token": "1",
+      "raw_norm": 56153.918,
+      "explanation": "Historical/academic framing signals a Q&A format: a factual question about printing, establishing context of the printing press and early book production.\n\nThe phrase \"So, what was the key invention? The invention of the printing press'\" sets up a discussion of Johannes Gutenberg and the Renaissance, implying a specific historical example.\n\nFinal token \"it'\" opens a temporal or biographical clause (\"dates from the 15th century, and it'\"), immediately expecting a continuation like \"Gutenberg\" or \"before the Reformation\" or \"Johannes Gutenberg\" or \"The change was gradual\" or \"in Europe during...\" — a specific context about the transition or a key turning point.",
+      "nla_mse_nrm": 0.0073,
+      "nla_cos": 0.9963
+    },
+    {
+      "idx": 18,
+      "doc_id": 2,
+      "position": 21,
+      "token": " and",
+      "raw_norm": 57318.656,
+      "explanation": "Academic/historical context establishes a structured question format, signaling a scholarly response about European intellectual history.\n\nThe phrase \"the impact of the Renaissance and 16th and\" signals a topic sentence framing the book's focus on the English Reformation, specifically the transformation of knowledge during the 16th and 17th centuries.\n\nFinal token \"15th and\" opens a time period phrase (\"during the 16th and\"), requiring a parallel century reference — almost certainly \"17th\" to complete the timeframe, then likely \"17th centuries\" or \"18th centuries\" or \"following centuries during the period.\"",
+      "nla_mse_nrm": 0.0081,
+      "nla_cos": 0.9959
+    },
+    {
+      "idx": 19,
+      "doc_id": 2,
+      "position": 23,
+      "token": "1",
+      "raw_norm": 70183.312,
+      "explanation": "Historical argument structure: academic essay establishing context of the printing press, now explaining the Renaissance's impact on literacy and knowledge dissemination.\n\nThe phrase \"The rise of printing led to a dramatic increase in the circulation of knowledge'\" signals a concrete example of the humanist ideal of widespread literacy.\n\nFinal token \"it'\" opens a noun phrase (\"the popularity of books...increased...\"), requiring a specific subject — likely \"ideas,\" \"religious texts,\" or \"education\" — continuing with \"books were cheaper\" or \"knowledge could be read by more people\" or \"legal texts\" or \"the same information as the Bible\" — a specific category of standardized content.",
+      "nla_mse_nrm": 0.004,
+      "nla_cos": 0.998
+    },
+    {
+      "idx": 20,
+      "doc_id": 2,
+      "position": 25,
+      "token": "th",
+      "raw_norm": 52299.055,
+      "explanation": "Academic historical question format signals a structured answer about Renaissance English literature, establishing context of intellectual transformation.\n\nThe phrase \"This work explores the English Renaissance in the 15th and 16th\" sets up a period framing, suggesting a summary or discussion of the book's content.\n\nFinal token \"16th\" ends a repeating temporal phrase \"in the 15th and 16th,\" requiring a parallel completion like \"centuries\" or \"centuries\" to close the time period. Then likely \"centuries\" or \"centuries, with...\" or \"periods\" to name the period or the changes in the poetry.",
+      "nla_mse_nrm": 0.0068,
+      "nla_cos": 0.9966
+    },
+    {
+      "idx": 21,
+      "doc_id": 2,
+      "position": 27,
+      "token": ".",
+      "raw_norm": 66338.281,
+      "explanation": "Historical framing signals a structured academic/cultural essay, establishing a prompt about the printing press and its transformative impact.\n\nThe phrase \"Before we delve into the invention of the printing press'\" sets up a classic introductory question, priming a dramatic before/after narrative about the revolution in communication and knowledge dissemination.\n\nFinal token \"it'\" opens a noun phrase (\"the printing press'\") — immediately requires a noun or adjective like \"the printing press\" or \"revolution\" to name the subject, likely \"Before the printing press changed everything\" or \"the invention of the printing press changed...\" or \"This transformative device\" or \"a profound shift before...\" echoing the European intellectual upheaval.",
+      "nla_mse_nrm": 0.0075,
+      "nla_cos": 0.9962
+    },
+    {
+      "idx": 22,
+      "doc_id": 2,
+      "position": 30,
+      "token": "<start_of_turn>",
+      "raw_norm": 61620.43,
+      "explanation": "Historical/educational structure signals a structured article format: introduction to a topic, establishing context about the printing press and early modern communication.\n\nThe phrase \"Before Gutenberg, the printing press was the key invention\" sets up a classic historical narrative — the invention of the printing press as the subject.\n\nFinal token \"it'\" opens a declarative sentence (\"Before this...\"), immediately requiring a verb phrase — likely \"invented by Johannes Gutenberg\" or \"Before Johannes Gutenberg\" or \"The printing press, invented by Johannes Gutenberg\" or \"Until now, developed by Johannes Gutenberg.\" or \"Before the invention, the movable type was a tedious process\" — a prior innovation or arrival.",
+      "nla_mse_nrm": 0.0093,
+      "nla_cos": 0.9954
+    },
+    {
+      "idx": 23,
+      "doc_id": 2,
+      "position": 32,
+      "token": "\n",
+      "raw_norm": 80385.242,
+      "explanation": "Established structure signals a narrative introduction framing a historical/cultural explainer, priming a structured answer about the invention of the printing press.\n\nThe phrase \"This story is the story of the rise of the printing press\" signals a formal essay or chapter heading, establishing a narrative pivot toward the transformative impact.\n\nFinal token \"\n\" opens a chapter or article header (\"So, the story begins...\"), immediately expecting a title or introductory framing like \"The story of the printing press is...\" or \"Before diving into...\" or \"The year 1493...\" or \"The transformative impact of the printing press was...\" — a dramatic summary or introduction to the medieval context.",
+      "nla_mse_nrm": 0.0049,
+      "nla_cos": 0.9976
+    },
+    {
+      "idx": 24,
+      "doc_id": 3,
+      "position": 14,
+      "token": " covering",
+      "raw_norm": 69046.469,
+      "explanation": "Question format signals a request for a structured comparison or guide, establishing a prompt about cat breed differences.\n\nThe phrase \"This answer should cover the comparison, covering\" signals an introductory framing, priming a topic overview or list of categories to address.\n\nFinal token \"covering\" opens a directive phrase (\"cover the topic, covering...\"), requiring a noun phrase specifying the comparison categories — likely \"aspects like personality, care, and history\" or \"diet, behavior, and cost\" or \"the following categories: physical traits, suitability...\" or \"their physical traits, care, and overall experience\" — a list of topics to be addressed in the comparison.",
+      "nla_mse_nrm": 0.0044,
+      "nla_cos": 0.9978
+    },
+    {
+      "idx": 25,
+      "doc_id": 3,
+      "position": 16,
+      "token": ",",
+      "raw_norm": 63950.812,
+      "explanation": "Structured article format signals a list or comparison of cat breed traits, establishing a guide to the Chinese Crested Dog.\n\nThe phrase \"Differences in temperament,\" introduces a category header, implying a list of comparison categories like temperament, care needs, or lifestyle.\n\nFinal token \"temperament,\" opens a topic heading (\"Comparing cat vs dog, regarding temperament,\") requiring a noun phrase continuation — likely \"care requirements, and training\" or \"behavioral needs\" or \"cost, activity level\" or \"ease of training\" or \"lifestyle compatibility\" — a list of practical aspects or \"They are relatively low-maintenance\" matching the pet owner perspective.",
+      "nla_mse_nrm": 0.0073,
+      "nla_cos": 0.9964
+    },
+    {
+      "idx": 26,
+      "doc_id": 3,
+      "position": 18,
+      "token": " requirements",
+      "raw_norm": 69489.883,
+      "explanation": "Structured Q&A format signals a prompt requesting a comparison/discussion, establishing a pet care advice context.\n\nThe phrase \"Let's discuss the cat, comparing care requirements\" sets up a topic introduction — the two categories of pet ownership (personality vs. goldfish) are being framed.\n\nFinal token \"requirements\" ends a list header (\"Care requirements\"), immediately requiring a noun phrase like \"diet, grooming, and costs\" or \"by the dog\" or \"are relatively modest\" — likely \" , time, and costs\" or \"for the pet, basic needs\" or \"specific demands of dog ownership\" or \"and the first category\" listing practical needs.",
+      "nla_mse_nrm": 0.0042,
+      "nla_cos": 0.9979
+    },
+    {
+      "idx": 27,
+      "doc_id": 3,
+      "position": 20,
+      "token": " and",
+      "raw_norm": 63555.812,
+      "explanation": "Structured guide format signals a list of topics, establishing a Q&A or informational breakdown about cats vs dogs.\n\nThe phrase \"Consider their temperament, care requirements, and\" sets up a final category list covering the comparison between cats and dogs, likely additional aspects like costs or lifestyle differences.\n\nFinal token \"and\" ends a coordinating conjunction mid-list (\"temperament, care requirements, and\"), requiring a parallel noun phrase — likely \"overall costs\" or \"pros/cons\" or \"behavioral traits\" or \"fun/relationship aspects.\" or \"their suitability for owners\" or \"common pitfalls/activities\" — a concluding category summarizing the comparison or pet ownership.",
+      "nla_mse_nrm": 0.007,
+      "nla_cos": 0.9965
+    },
+    {
+      "idx": 28,
+      "doc_id": 3,
+      "position": 21,
+      "token": " companionship",
+      "raw_norm": 72122.922,
+      "explanation": "Structured pet care/advice format signals a list of topics, establishing a question about a specific dog behavioral trait.\n\nThe phrase \"Discusses: care, training, and companionship\" sets up a topic summary statement about the dog-human relationship, framing the core comparison between the cat and dog.\n\nFinal token \"companionship\" ends a category label (\"Companionship...and companionship\"), immediately requiring a noun phrase completion — likely \"style\" or \"offerings\" or \"with cats.\" or \"type.\" or \"They provide.\" or \"behavior.\" — the topic of what kind of companionship the dog offers, likely contrasting emotional needs or loyalty/bonding.",
+      "nla_mse_nrm": 0.0046,
+      "nla_cos": 0.9977
+    },
+    {
+      "idx": 29,
+      "doc_id": 3,
+      "position": 23,
+      "token": "<end_of_turn>",
+      "raw_norm": 60124.48,
+      "explanation": "Structured Q&A format signals a standard essay/comparison answer, establishing a factual, informative tone with a summary of a text.\n\nThe phrase \"This article explores the differences between...\" signals a typical AI/essay boilerplate, suggesting a concluding or introductory framing typical to educational content.\n\nFinal token \"]\" closes a prompt header (\"Here's a comparison...\"), immediately expecting a question or topic label like \"The essay\" or \"Answer\" — likely \"Here's the answer\" or \"The topic\" or \"or\" or \"In addition,...\" or \"This article is...\" or \"moral/ethical considerations\" to introduce the broader context or audience.",
+      "nla_mse_nrm": 0.0303,
+      "nla_cos": 0.9849
+    },
+    {
+      "idx": 30,
+      "doc_id": 3,
+      "position": 25,
+      "token": "<start_of_turn>",
+      "raw_norm": 55917.734,
+      "explanation": "Structured pet care guide format signals a list of behavioral traits, establishing a classic cat/cat behavior description.\n\nThe phrase \"Cats are independent creatures, known for their aloofness\" sets up a behavioral contrast — cats are self-sufficient, suggesting a stereotype about feline independence or cleanliness.\n\nFinal token \"cats'\" opens a noun phrase (\"a cat...a solitary animal...cats'\") — immediately requires a noun like \"self-sufficient\" or \"more independent\" to complete the trait description, likely \"often...\" or \"self-care\" or \"more affordable\" or \"Generally...\" or \"Cats tend to be...\" referencing the cat's grooming or litter habits.",
+      "nla_mse_nrm": 0.0087,
+      "nla_cos": 0.9956
+    },
+    {
+      "idx": 31,
+      "doc_id": 3,
+      "position": 27,
+      "token": "\n",
+      "raw_norm": 76542.086,
+      "explanation": "Structured article format signals a comprehensive comparison piece, establishing a guide-style introduction to cats vs dogs.\n\nThe phrase \"This article will break down the differences between cats and dogs\" signals a concluding summary statement, priming a definitive, informative overview of the topic.\n\nFinal token \"\n\" ends a section header (\"\"), immediately expecting a structured comparison or article body — likely \"Cats and dogs are both great pets\" or \"Let's dive into...\" or \"Okay, comparing cats vs dogs.\" or \"Both cats and dogs are...\" or \"So, the comparison is quite nuanced.\" — a framing introduction to the article's topic of choosing between the two.",
+      "nla_mse_nrm": 0.0099,
+      "nla_cos": 0.9951
+    },
+    {
+      "idx": 32,
+      "doc_id": 4,
+      "position": 14,
+      "token": " typical",
+      "raw_norm": 70568.547,
+      "explanation": "Academic/educational context signals a question format, establishing a definition or explanation of legislative process in US state government.\n\nThe phrase \"In a typical\" sets up a question about the legislative process, priming a general scenario or example to illustrate the topic.\n\nFinal token \"typical\" opens a noun phrase (\"In a typical...in a typical\"), requiring a noun like \"US state\" or \"case\" to complete the question — likely \"typical legislative session\" or \"United States\" or \"day.\" or \"state legislative scenario\" or \"non-federal case.\" — framing the question about the process in a specific scenario involving the bill's passage.",
+      "nla_mse_nrm": 0.0045,
+      "nla_cos": 0.9978
+    },
+    {
+      "idx": 33,
+      "doc_id": 4,
+      "position": 16,
+      "token": " democracy",
+      "raw_norm": 63674.895,
+      "explanation": "Academic/political discussion prompt establishing a question format, signaling a request for a comparative or explanatory response about parliamentary systems.\n\nThe phrase \"In a representative parliamentary democracy\" sets up a hypothetical or conceptual framing, priming a topic introduction about a specific country or system.\n\nFinal token \"democracy\" ends a phrase opener (\"In a typical parliamentary democracy...in a parliamentary democracy\"), immediately requiring a noun phrase like \"such as Canada\" or \"with proportional representation\" or \"system.\" or \"like the UK.\" or \"where the voting system is...\" — likely \"with a comparison to...\" or \"e.g., Australia\" referencing the governing model or example.",
+      "nla_mse_nrm": 0.005,
+      "nla_cos": 0.9975
+    },
+    {
+      "idx": 34,
+      "doc_id": 4,
+      "position": 18,
+      "token": " from",
+      "raw_norm": 74786.773,
+      "explanation": "Educational explainer format signals a structured definition/process description, establishing a formal overview of a legislative topic.\n\nThe phrase \"We will walk through the journey of a bill, from\" sets up a direct comparison or summary statement about the legislative process, framing the topic of bills in a specific country.\n\nFinal token \"from\" opens a temporal/process phrase (\"from...to the drafting of a bill, from\"), requiring a starting point — likely \"the initial idea\" or \"first proposal to becoming law\" or \"when it is first conceived to the idea.\" or \"its inception to when it enters the legislative process\" — the full process or initial trigger.",
+      "nla_mse_nrm": 0.0072,
+      "nla_cos": 0.9964
+    },
+    {
+      "idx": 35,
+      "doc_id": 4,
+      "position": 20,
+      "token": " to",
+      "raw_norm": 87187.094,
+      "explanation": "Structured explainer format: definition of a legislative process, establishing a framework for describing the journey of a bill through a country.\n\nThe phrase \"From proposal to drafting to...\" signals a standard legislative process sequence, implying a final stage or summary statement about the bill becoming law.\n\nFinal token \"to\" ends a phrase \"from proposal to...the process to,\" requiring a noun phrase completing the lifecycle — likely \"enactment\" or \"final signature\" — or \"law on the statute book.\" or \"completion/signing.\" or \"actual law.\" — the final stage of the bill becoming law, likely \"when it becomes a law\" or \"final enactment.\"",
+      "nla_mse_nrm": 0.0042,
+      "nla_cos": 0.9979
+    },
+    {
+      "idx": 36,
+      "doc_id": 4,
+      "position": 22,
+      "token": " approval",
+      "raw_norm": 69106.969,
+      "explanation": "Definitional/legal structure: question format establishes a formal explanation of legislative process, seeking a definition of a bill becoming law.\n\nThe phrase \"Final stage: bill reaches final approval\" signals a procedural sequence — the process of drafting, debate, and passage is being described, implying a concluding step.\n\nFinal token \"approval\" ends a noun phrase (\"to final approval...before final approval\"), requiring a completion like \"by the legislature\" or \"and enactment.\" — likely \"by the parliament\" or \"or ratification.\" or \"into law.\" or \"and the vote.\" or \"of the legislation.\" — the final required outcome phrase for the legislative process.",
+      "nla_mse_nrm": 0.007,
+      "nla_cos": 0.9965
+    },
+    {
+      "idx": 37,
+      "doc_id": 4,
+      "position": 24,
+      "token": "<end_of_turn>",
+      "raw_norm": 59081.207,
+      "explanation": "Q&A format signals a structured answer response, establishing a factual, educational tone typical of explainer content.\n\nThe phrase \"Here's a summary of the process\" signals a standard academic/technical answer, priming a question-answer or FAQ structure about the topic.\n\nFinal token \"]\" closes a repeated phrase \"Please read the following explanation\" — immediately expects a source citation or question prompt like \"The role of...\" or \"Answer\" or \"This article\" or \"In a legal/academic context.\" or \"The text is...\" or \"However, the topic is...\" — likely a question or elaboration on the broader context of the UK/US comparison.",
+      "nla_mse_nrm": 0.0246,
+      "nla_cos": 0.9877
+    },
+    {
+      "idx": 38,
+      "doc_id": 4,
+      "position": 26,
+      "token": "<start_of_turn>",
+      "raw_norm": 60907.613,
+      "explanation": "Definition/educational format: UK parliamentary context establishes structured explanation of legislative process, with formal terminology like \"Bill\" and \"Parliamentary system.\"\n\nThe phrase \"The process by which a bill is introduced into Parliament\" signals a definition of legislation, implying a factual, neutral description of the bill's origin or purpose.\n\nFinal token \"it'\" opens a noun phrase (\"the idea behind a bill'\") — immediately requires a noun like \"bills\" or \"legislation\" completing the phrase, likely \"a proposal\" or \"the bill becoming law\" or \"a new law\" or \"sometimes called a Private Member's Bill\" referencing the legislative drafting or policy intent.",
+      "nla_mse_nrm": 0.0057,
+      "nla_cos": 0.9972
+    },
+    {
+      "idx": 39,
+      "doc_id": 4,
+      "position": 28,
+      "token": "\n",
+      "raw_norm": 85135.328,
+      "explanation": "Structured Q&A format signals a response is incoming, establishing a walkthrough of the legislative process for voting/democracy in a specific country.\n\nThe phrase \"Okay, let's walk through the process\" signals a tutorial or explainer, priming a detailed breakdown of how the voting system works across different countries.\n\nFinal token \"\n'\" ends a transitional heading (\"The process of creating a law.\"), immediately expecting a response like \"Okay, let's break down...\" or \"The process is fascinating\" or \"Let's explore the process of creating a law in the UK/US.\" or \"Great! So, here's a guide to the answer.\"",
+      "nla_mse_nrm": 0.0049,
+      "nla_cos": 0.9975
+    }
+  ]
+}

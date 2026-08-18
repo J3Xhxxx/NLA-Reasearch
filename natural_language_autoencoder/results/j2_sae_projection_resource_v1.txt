@@ -1,0 +1,27 @@
+captured_at=2026-08-07T11:57:10+08:00
+pipeline_exit=0
+
+[df]
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/md0        150G   70G   81G  47% /root/autodl-tmp
+
+[memory]
+               total        used        free      shared  buff/cache   available
+Mem:           1.0Ti        54Gi       230Gi       3.0Gi       723Gi       944Gi
+Swap:             0B          0B          0B
+
+[gpu]
+NVIDIA A800-SXM4-80GB, GPU-936c826b-dd49-6d32-53f3-6640860c5e47, 81920 MiB, 0 MiB, 0 %
+
+[artifacts]
+16406b67501f2771070ce35f61574f1bfd50607e49d39113c87e142edff45563  /root/autodl-tmp/results/j2_sae_projection_av_checkpoint_v1.jsonl
+c7d1be1c81ee371d9a90945495d49ba6e0d7dc379b2c0dc8f56b8740b9f481db  /root/autodl-tmp/results/j2_sae_projection_explanations_v1.json
+f08bd51344e9687f3f6885ce41e29374418ca4fb8b008cab829a704e3d5e3b0a  /root/autodl-tmp/results/j2_sae_projection_vectors_v1.npz
+946a399163fa9b5fc80088e1bede032fad26dca00331f2493e1b84028e1ed0f6  /root/autodl-tmp/results/j2_sae_projection_recon_v1.json
+b87620f2ad2421ec8e3307638176877c9e7d877d16e1021da0a018a4a367e511  /root/autodl-tmp/results/j2_sae_projection_causal_checkpoint_v1.jsonl
+d021b5fd1cf89ea2a37be4b5ca74ee6f3f43c0442b8143ef3791607b31651bfe  /root/autodl-tmp/results/j2_sae_projection_causal_v1.json
+692f7dd0e7cf6eeb5b3e62c6cebb2afd3c0989bd54b76454f9c5d86b0e774642  /root/autodl-tmp/results/j2_sae_projection_analysis_v1.json
+b21a53bda1a6672b1327f303f978f67ac7eb1a0f3933e607c210cdb539fea405  /root/autodl-tmp/results/j2_sae_projection_case_shortlist_v1.json
+660579d8ef54f4e6f05740a1b9ead17ee9667ad3884a943a60463964a487a7d6  /root/autodl-tmp/results/J2_SAE_PROJECTION_ANALYSIS_V1.md
+5985442c9e389bc90d9c1acfbb4c454e57ea52cb3fa9b88a14a5e95b0d3557a8  /root/autodl-tmp/results/j2_sae_projection_case_bundle_v1.json
+04f36d076665c0505f8f1c6aa987c6dffab3388b96934131962ea6c8dc509bc3  /root/autodl-tmp/results/J2_SAE_PROJECTION_CASE_BUNDLE_V1.md

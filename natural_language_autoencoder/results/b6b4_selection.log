@@ -1,0 +1,3 @@
+FACTORIAL_SELECTION_COMPLETE
+{"new_semantic": 24, "strict": 24, "exploratory": 0, "label_counts": {"domain:biology": 4, "domain:geography": 4, "domain:history": 4, "domain:software": 3, "language:en": 3, "language:es": 3, "language:zh": 3}, "structural": 1, "active_control": 8, "gaussian": 8, "total": 45}
+wrote -> /root/autodl-tmp/results/b6b4_factorial_selection.json + /root/autodl-tmp/results/b6b4_factorial_vectors.npz + /root/autodl-tmp/results/b6b4_factorial_feature_stats.npz

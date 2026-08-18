@@ -1,0 +1,5256 @@
+{
+  "schema_version": 1,
+  "experiment": "C1 confirmatory synthetic concept cohort v2",
+  "status": "FAIL",
+  "rubric_sha256": "821eb57d3b8c2109acd623137b7f6ba35cb67e74f459bded791ad2eb2d7ec48a",
+  "combined_manifest_sha256": "a3d3ffdd18c8b26891031c08dba0cce5b5eea5ec8182ceef0656d8b248106c51",
+  "discovery_manifest_sha256": "7b1ce526e8bc897b7f5c22e8ec7d2b0b5e04d70a30c3ca74411f40f8bec4fd2a",
+  "heldout_manifest_sha256": "2d83053ac2bfd62722bbaa92e06e1c1408a83e5e032e0cd17ba8878db7f56b8a",
+  "created_at_utc": "2026-07-30T07:02:39.395448+00:00",
+  "decision_rule": "Conservative conjunction: both complete independent reviews must PASS; any reviewer failure or disagreement is aggregate FAIL.",
+  "counts": {
+    "concepts": 24,
+    "combined_documents": 144,
+    "discovery_documents": 96,
+    "heldout_documents": 48,
+    "reciprocal_pairs": 12
+  },
+  "reviewers": [
+    {
+      "reviewer_id": "A",
+      "path": "D:\\Projects\\natural_language_autoencoder\\results\\c1_confirmatory_manual_review_A_v1.json",
+      "sha256": "06ca5fa5eec08e6ed10f73e5905bbb3bb1e23dfb441a2c6e1b2ce5c19c84a8d3",
+      "status": "FAIL",
+      "failure_count": 26
+    },
+    {
+      "reviewer_id": "B",
+      "path": "D:\\Projects\\natural_language_autoencoder\\results\\c1_confirmatory_manual_review_B_v1.json",
+      "sha256": "78a3708341a5efdc5d620ec1bdc2f9207ebaed3488e7d2f1b6f7b95b5818619f",
+      "status": "FAIL",
+      "failure_count": 35
+    }
+  ],
+  "document_decisions": [
+    {
+      "reviewer_id": "A",
+      "decisions": [
+        {
+          "concept_id": "automatic_memory_reclamation",
+          "hard_negative_id": "dynamic_memory_allocation",
+          "concept_status": "PASS",
+          "doc_ids": [
+            "c1c_automatic_memory_reclamation_train_00",
+            "c1c_automatic_memory_reclamation_train_01",
+            "c1c_automatic_memory_reclamation_train_02",
+            "c1c_automatic_memory_reclamation_train_03",
+            "c1c_automatic_memory_reclamation_test_00",
+            "c1c_automatic_memory_reclamation_test_01"
+          ],
+          "documents": {
+            "c1c_automatic_memory_reclamation_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_automatic_memory_reclamation_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_automatic_memory_reclamation_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_automatic_memory_reclamation_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_automatic_memory_reclamation_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_automatic_memory_reclamation_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "dynamic_memory_allocation",
+          "hard_negative_id": "automatic_memory_reclamation",
+          "concept_status": "PASS",
+          "doc_ids": [
+            "c1c_dynamic_memory_allocation_train_00",
+            "c1c_dynamic_memory_allocation_train_01",
+            "c1c_dynamic_memory_allocation_train_02",
+            "c1c_dynamic_memory_allocation_train_03",
+            "c1c_dynamic_memory_allocation_test_00",
+            "c1c_dynamic_memory_allocation_test_01"
+          ],
+          "documents": {
+            "c1c_dynamic_memory_allocation_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_dynamic_memory_allocation_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_dynamic_memory_allocation_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_dynamic_memory_allocation_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_dynamic_memory_allocation_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_dynamic_memory_allocation_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "cryptographic_authentication",
+          "hard_negative_id": "error_detecting_codes",
+          "concept_status": "PASS",
+          "doc_ids": [
+            "c1c_cryptographic_authentication_train_00",
+            "c1c_cryptographic_authentication_train_01",
+            "c1c_cryptographic_authentication_train_02",
+            "c1c_cryptographic_authentication_train_03",
+            "c1c_cryptographic_authentication_test_00",
+            "c1c_cryptographic_authentication_test_01"
+          ],
+          "documents": {
+            "c1c_cryptographic_authentication_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_cryptographic_authentication_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_cryptographic_authentication_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_cryptographic_authentication_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_cryptographic_authentication_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_cryptographic_authentication_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "error_detecting_codes",
+          "hard_negative_id": "cryptographic_authentication",
+          "concept_status": "FAIL",
+          "doc_ids": [
+            "c1c_error_detecting_codes_train_00",
+            "c1c_error_detecting_codes_train_01",
+            "c1c_error_detecting_codes_train_02",
+            "c1c_error_detecting_codes_train_03",
+            "c1c_error_detecting_codes_test_00",
+            "c1c_error_detecting_codes_test_01"
+          ],
+          "documents": {
+            "c1c_error_detecting_codes_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_error_detecting_codes_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_error_detecting_codes_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_error_detecting_codes_train_03": [
+              "PASS",
+              "PASS",
+              "FAIL",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_error_detecting_codes_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_error_detecting_codes_test_01": [
+              "PASS",
+              "FAIL",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "protein_quality_control",
+          "hard_negative_id": "membrane_vesicle_trafficking",
+          "concept_status": "FAIL",
+          "doc_ids": [
+            "c1c_protein_quality_control_train_00",
+            "c1c_protein_quality_control_train_01",
+            "c1c_protein_quality_control_train_02",
+            "c1c_protein_quality_control_train_03",
+            "c1c_protein_quality_control_test_00",
+            "c1c_protein_quality_control_test_01"
+          ],
+          "documents": {
+            "c1c_protein_quality_control_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_protein_quality_control_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_protein_quality_control_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_protein_quality_control_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_protein_quality_control_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_protein_quality_control_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "membrane_vesicle_trafficking",
+          "hard_negative_id": "protein_quality_control",
+          "concept_status": "PASS",
+          "doc_ids": [
+            "c1c_membrane_vesicle_trafficking_train_00",
+            "c1c_membrane_vesicle_trafficking_train_01",
+            "c1c_membrane_vesicle_trafficking_train_02",
+            "c1c_membrane_vesicle_trafficking_train_03",
+            "c1c_membrane_vesicle_trafficking_test_00",
+            "c1c_membrane_vesicle_trafficking_test_01"
+          ],
+          "documents": {
+            "c1c_membrane_vesicle_trafficking_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_membrane_vesicle_trafficking_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_membrane_vesicle_trafficking_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_membrane_vesicle_trafficking_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_membrane_vesicle_trafficking_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_membrane_vesicle_trafficking_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "microbial_quorum_sensing",
+          "hard_negative_id": "microbial_cross_feeding",
+          "concept_status": "PASS",
+          "doc_ids": [
+            "c1c_microbial_quorum_sensing_train_00",
+            "c1c_microbial_quorum_sensing_train_01",
+            "c1c_microbial_quorum_sensing_train_02",
+            "c1c_microbial_quorum_sensing_train_03",
+            "c1c_microbial_quorum_sensing_test_00",
+            "c1c_microbial_quorum_sensing_test_01"
+          ],
+          "documents": {
+            "c1c_microbial_quorum_sensing_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_microbial_quorum_sensing_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_microbial_quorum_sensing_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_microbial_quorum_sensing_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_microbial_quorum_sensing_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_microbial_quorum_sensing_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "microbial_cross_feeding",
+          "hard_negative_id": "microbial_quorum_sensing",
+          "concept_status": "FAIL",
+          "doc_ids": [
+            "c1c_microbial_cross_feeding_train_00",
+            "c1c_microbial_cross_feeding_train_01",
+            "c1c_microbial_cross_feeding_train_02",
+            "c1c_microbial_cross_feeding_train_03",
+            "c1c_microbial_cross_feeding_test_00",
+            "c1c_microbial_cross_feeding_test_01"
+          ],
+          "documents": {
+            "c1c_microbial_cross_feeding_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_microbial_cross_feeding_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_microbial_cross_feeding_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_microbial_cross_feeding_train_03": [
+              "PASS",
+              "PASS",
+              "FAIL",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_microbial_cross_feeding_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_microbial_cross_feeding_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "fault_rupture_mechanics",
+          "hard_negative_id": "slope_failure_mechanics",
+          "concept_status": "FAIL",
+          "doc_ids": [
+            "c1c_fault_rupture_mechanics_train_00",
+            "c1c_fault_rupture_mechanics_train_01",
+            "c1c_fault_rupture_mechanics_train_02",
+            "c1c_fault_rupture_mechanics_train_03",
+            "c1c_fault_rupture_mechanics_test_00",
+            "c1c_fault_rupture_mechanics_test_01"
+          ],
+          "documents": {
+            "c1c_fault_rupture_mechanics_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_fault_rupture_mechanics_train_01": [
+              "PASS",
+              "PASS",
+              "FAIL",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_fault_rupture_mechanics_train_02": [
+              "PASS",
+              "PASS",
+              "FAIL",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_fault_rupture_mechanics_train_03": [
+              "PASS",
+              "PASS",
+              "FAIL",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_fault_rupture_mechanics_test_00": [
+              "PASS",
+              "PASS",
+              "FAIL",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_fault_rupture_mechanics_test_01": [
+              "PASS",
+              "PASS",
+              "FAIL",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "slope_failure_mechanics",
+          "hard_negative_id": "fault_rupture_mechanics",
+          "concept_status": "PASS",
+          "doc_ids": [
+            "c1c_slope_failure_mechanics_train_00",
+            "c1c_slope_failure_mechanics_train_01",
+            "c1c_slope_failure_mechanics_train_02",
+            "c1c_slope_failure_mechanics_train_03",
+            "c1c_slope_failure_mechanics_test_00",
+            "c1c_slope_failure_mechanics_test_01"
+          ],
+          "documents": {
+            "c1c_slope_failure_mechanics_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_slope_failure_mechanics_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_slope_failure_mechanics_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_slope_failure_mechanics_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_slope_failure_mechanics_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_slope_failure_mechanics_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "groundwater_contaminant_transport",
+          "hard_negative_id": "coastal_saltwater_intrusion",
+          "concept_status": "PASS",
+          "doc_ids": [
+            "c1c_groundwater_contaminant_transport_train_00",
+            "c1c_groundwater_contaminant_transport_train_01",
+            "c1c_groundwater_contaminant_transport_train_02",
+            "c1c_groundwater_contaminant_transport_train_03",
+            "c1c_groundwater_contaminant_transport_test_00",
+            "c1c_groundwater_contaminant_transport_test_01"
+          ],
+          "documents": {
+            "c1c_groundwater_contaminant_transport_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_groundwater_contaminant_transport_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_groundwater_contaminant_transport_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_groundwater_contaminant_transport_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_groundwater_contaminant_transport_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_groundwater_contaminant_transport_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "coastal_saltwater_intrusion",
+          "hard_negative_id": "groundwater_contaminant_transport",
+          "concept_status": "PASS",
+          "doc_ids": [
+            "c1c_coastal_saltwater_intrusion_train_00",
+            "c1c_coastal_saltwater_intrusion_train_01",
+            "c1c_coastal_saltwater_intrusion_train_02",
+            "c1c_coastal_saltwater_intrusion_train_03",
+            "c1c_coastal_saltwater_intrusion_test_00",
+            "c1c_coastal_saltwater_intrusion_test_01"
+          ],
+          "documents": {
+            "c1c_coastal_saltwater_intrusion_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_coastal_saltwater_intrusion_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_coastal_saltwater_intrusion_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_coastal_saltwater_intrusion_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_coastal_saltwater_intrusion_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_coastal_saltwater_intrusion_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "census_classification",
+          "hard_negative_id": "cadastral_land_taxation",
+          "concept_status": "FAIL",
+          "doc_ids": [
+            "c1c_census_classification_train_00",
+            "c1c_census_classification_train_01",
+            "c1c_census_classification_train_02",
+            "c1c_census_classification_train_03",
+            "c1c_census_classification_test_00",
+            "c1c_census_classification_test_01"
+          ],
+          "documents": {
+            "c1c_census_classification_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_census_classification_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_census_classification_train_02": [
+              "PASS",
+              "FAIL",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_census_classification_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_census_classification_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_census_classification_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "cadastral_land_taxation",
+          "hard_negative_id": "census_classification",
+          "concept_status": "PASS",
+          "doc_ids": [
+            "c1c_cadastral_land_taxation_train_00",
+            "c1c_cadastral_land_taxation_train_01",
+            "c1c_cadastral_land_taxation_train_02",
+            "c1c_cadastral_land_taxation_train_03",
+            "c1c_cadastral_land_taxation_test_00",
+            "c1c_cadastral_land_taxation_test_01"
+          ],
+          "documents": {
+            "c1c_cadastral_land_taxation_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_cadastral_land_taxation_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_cadastral_land_taxation_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_cadastral_land_taxation_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_cadastral_land_taxation_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_cadastral_land_taxation_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "quarantine_regimes",
+          "hard_negative_id": "passport_mobility_controls",
+          "concept_status": "FAIL",
+          "doc_ids": [
+            "c1c_quarantine_regimes_train_00",
+            "c1c_quarantine_regimes_train_01",
+            "c1c_quarantine_regimes_train_02",
+            "c1c_quarantine_regimes_train_03",
+            "c1c_quarantine_regimes_test_00",
+            "c1c_quarantine_regimes_test_01"
+          ],
+          "documents": {
+            "c1c_quarantine_regimes_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_quarantine_regimes_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_quarantine_regimes_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_quarantine_regimes_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_quarantine_regimes_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_quarantine_regimes_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "passport_mobility_controls",
+          "hard_negative_id": "quarantine_regimes",
+          "concept_status": "PASS",
+          "doc_ids": [
+            "c1c_passport_mobility_controls_train_00",
+            "c1c_passport_mobility_controls_train_01",
+            "c1c_passport_mobility_controls_train_02",
+            "c1c_passport_mobility_controls_train_03",
+            "c1c_passport_mobility_controls_test_00",
+            "c1c_passport_mobility_controls_test_01"
+          ],
+          "documents": {
+            "c1c_passport_mobility_controls_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_passport_mobility_controls_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_passport_mobility_controls_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_passport_mobility_controls_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_passport_mobility_controls_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_passport_mobility_controls_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "lexical_semantic_ambiguity",
+          "hard_negative_id": "syntactic_attachment_ambiguity",
+          "concept_status": "PASS",
+          "doc_ids": [
+            "c1c_lexical_semantic_ambiguity_train_00",
+            "c1c_lexical_semantic_ambiguity_train_01",
+            "c1c_lexical_semantic_ambiguity_train_02",
+            "c1c_lexical_semantic_ambiguity_train_03",
+            "c1c_lexical_semantic_ambiguity_test_00",
+            "c1c_lexical_semantic_ambiguity_test_01"
+          ],
+          "documents": {
+            "c1c_lexical_semantic_ambiguity_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_lexical_semantic_ambiguity_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_lexical_semantic_ambiguity_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_lexical_semantic_ambiguity_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_lexical_semantic_ambiguity_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_lexical_semantic_ambiguity_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "syntactic_attachment_ambiguity",
+          "hard_negative_id": "lexical_semantic_ambiguity",
+          "concept_status": "FAIL",
+          "doc_ids": [
+            "c1c_syntactic_attachment_ambiguity_train_00",
+            "c1c_syntactic_attachment_ambiguity_train_01",
+            "c1c_syntactic_attachment_ambiguity_train_02",
+            "c1c_syntactic_attachment_ambiguity_train_03",
+            "c1c_syntactic_attachment_ambiguity_test_00",
+            "c1c_syntactic_attachment_ambiguity_test_01"
+          ],
+          "documents": {
+            "c1c_syntactic_attachment_ambiguity_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_syntactic_attachment_ambiguity_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_syntactic_attachment_ambiguity_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_syntactic_attachment_ambiguity_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_syntactic_attachment_ambiguity_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_syntactic_attachment_ambiguity_test_01": [
+              "FAIL",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "phonological_assimilation",
+          "hard_negative_id": "morphological_agreement",
+          "concept_status": "PASS",
+          "doc_ids": [
+            "c1c_phonological_assimilation_train_00",
+            "c1c_phonological_assimilation_train_01",
+            "c1c_phonological_assimilation_train_02",
+            "c1c_phonological_assimilation_train_03",
+            "c1c_phonological_assimilation_test_00",
+            "c1c_phonological_assimilation_test_01"
+          ],
+          "documents": {
+            "c1c_phonological_assimilation_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_phonological_assimilation_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_phonological_assimilation_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_phonological_assimilation_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_phonological_assimilation_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_phonological_assimilation_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "morphological_agreement",
+          "hard_negative_id": "phonological_assimilation",
+          "concept_status": "FAIL",
+          "doc_ids": [
+            "c1c_morphological_agreement_train_00",
+            "c1c_morphological_agreement_train_01",
+            "c1c_morphological_agreement_train_02",
+            "c1c_morphological_agreement_train_03",
+            "c1c_morphological_agreement_test_00",
+            "c1c_morphological_agreement_test_01"
+          ],
+          "documents": {
+            "c1c_morphological_agreement_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_morphological_agreement_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_morphological_agreement_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_morphological_agreement_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_morphological_agreement_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_morphological_agreement_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "feedback_control_stability",
+          "hard_negative_id": "dynamical_state_estimation",
+          "concept_status": "PASS",
+          "doc_ids": [
+            "c1c_feedback_control_stability_train_00",
+            "c1c_feedback_control_stability_train_01",
+            "c1c_feedback_control_stability_train_02",
+            "c1c_feedback_control_stability_train_03",
+            "c1c_feedback_control_stability_test_00",
+            "c1c_feedback_control_stability_test_01"
+          ],
+          "documents": {
+            "c1c_feedback_control_stability_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_feedback_control_stability_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_feedback_control_stability_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_feedback_control_stability_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_feedback_control_stability_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_feedback_control_stability_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "dynamical_state_estimation",
+          "hard_negative_id": "feedback_control_stability",
+          "concept_status": "PASS",
+          "doc_ids": [
+            "c1c_dynamical_state_estimation_train_00",
+            "c1c_dynamical_state_estimation_train_01",
+            "c1c_dynamical_state_estimation_train_02",
+            "c1c_dynamical_state_estimation_train_03",
+            "c1c_dynamical_state_estimation_test_00",
+            "c1c_dynamical_state_estimation_test_01"
+          ],
+          "documents": {
+            "c1c_dynamical_state_estimation_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_dynamical_state_estimation_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_dynamical_state_estimation_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_dynamical_state_estimation_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_dynamical_state_estimation_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_dynamical_state_estimation_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "fatigue_crack_growth",
+          "hard_negative_id": "creep_deformation",
+          "concept_status": "PASS",
+          "doc_ids": [
+            "c1c_fatigue_crack_growth_train_00",
+            "c1c_fatigue_crack_growth_train_01",
+            "c1c_fatigue_crack_growth_train_02",
+            "c1c_fatigue_crack_growth_train_03",
+            "c1c_fatigue_crack_growth_test_00",
+            "c1c_fatigue_crack_growth_test_01"
+          ],
+          "documents": {
+            "c1c_fatigue_crack_growth_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_fatigue_crack_growth_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_fatigue_crack_growth_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_fatigue_crack_growth_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_fatigue_crack_growth_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_fatigue_crack_growth_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        },
+        {
+          "concept_id": "creep_deformation",
+          "hard_negative_id": "fatigue_crack_growth",
+          "concept_status": "FAIL",
+          "doc_ids": [
+            "c1c_creep_deformation_train_00",
+            "c1c_creep_deformation_train_01",
+            "c1c_creep_deformation_train_02",
+            "c1c_creep_deformation_train_03",
+            "c1c_creep_deformation_test_00",
+            "c1c_creep_deformation_test_01"
+          ],
+          "documents": {
+            "c1c_creep_deformation_train_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_creep_deformation_train_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_creep_deformation_train_02": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_creep_deformation_train_03": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_creep_deformation_test_00": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ],
+            "c1c_creep_deformation_test_01": [
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS",
+              "PASS"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "reviewer_id": "B",
+      "decisions": [
+        {
+          "concept_id": "automatic_memory_reclamation",
+          "hard_negative_id": "dynamic_memory_allocation",
+          "document_ids": [
+            "c1c_automatic_memory_reclamation_train_00",
+            "c1c_automatic_memory_reclamation_train_01",
+            "c1c_automatic_memory_reclamation_train_02",
+            "c1c_automatic_memory_reclamation_train_03",
+            "c1c_automatic_memory_reclamation_test_00",
+            "c1c_automatic_memory_reclamation_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_automatic_memory_reclamation_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_automatic_memory_reclamation_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_automatic_memory_reclamation_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_automatic_memory_reclamation_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_automatic_memory_reclamation_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_automatic_memory_reclamation_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "dynamic_memory_allocation",
+          "hard_negative_id": "automatic_memory_reclamation",
+          "document_ids": [
+            "c1c_dynamic_memory_allocation_train_00",
+            "c1c_dynamic_memory_allocation_train_01",
+            "c1c_dynamic_memory_allocation_train_02",
+            "c1c_dynamic_memory_allocation_train_03",
+            "c1c_dynamic_memory_allocation_test_00",
+            "c1c_dynamic_memory_allocation_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_dynamic_memory_allocation_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_dynamic_memory_allocation_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_dynamic_memory_allocation_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_dynamic_memory_allocation_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_dynamic_memory_allocation_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_dynamic_memory_allocation_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "cryptographic_authentication",
+          "hard_negative_id": "error_detecting_codes",
+          "document_ids": [
+            "c1c_cryptographic_authentication_train_00",
+            "c1c_cryptographic_authentication_train_01",
+            "c1c_cryptographic_authentication_train_02",
+            "c1c_cryptographic_authentication_train_03",
+            "c1c_cryptographic_authentication_test_00",
+            "c1c_cryptographic_authentication_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_cryptographic_authentication_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_cryptographic_authentication_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_cryptographic_authentication_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_cryptographic_authentication_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_cryptographic_authentication_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_cryptographic_authentication_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "error_detecting_codes",
+          "hard_negative_id": "cryptographic_authentication",
+          "document_ids": [
+            "c1c_error_detecting_codes_train_00",
+            "c1c_error_detecting_codes_train_01",
+            "c1c_error_detecting_codes_train_02",
+            "c1c_error_detecting_codes_train_03",
+            "c1c_error_detecting_codes_test_00",
+            "c1c_error_detecting_codes_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_error_detecting_codes_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_error_detecting_codes_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_error_detecting_codes_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_error_detecting_codes_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "FAIL",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": [
+                "D001"
+              ]
+            },
+            {
+              "id": "c1c_error_detecting_codes_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_error_detecting_codes_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "FAIL",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": [
+                "D002"
+              ]
+            }
+          ]
+        },
+        {
+          "concept_id": "protein_quality_control",
+          "hard_negative_id": "membrane_vesicle_trafficking",
+          "document_ids": [
+            "c1c_protein_quality_control_train_00",
+            "c1c_protein_quality_control_train_01",
+            "c1c_protein_quality_control_train_02",
+            "c1c_protein_quality_control_train_03",
+            "c1c_protein_quality_control_test_00",
+            "c1c_protein_quality_control_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_protein_quality_control_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_protein_quality_control_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_protein_quality_control_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_protein_quality_control_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_protein_quality_control_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_protein_quality_control_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "membrane_vesicle_trafficking",
+          "hard_negative_id": "protein_quality_control",
+          "document_ids": [
+            "c1c_membrane_vesicle_trafficking_train_00",
+            "c1c_membrane_vesicle_trafficking_train_01",
+            "c1c_membrane_vesicle_trafficking_train_02",
+            "c1c_membrane_vesicle_trafficking_train_03",
+            "c1c_membrane_vesicle_trafficking_test_00",
+            "c1c_membrane_vesicle_trafficking_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_membrane_vesicle_trafficking_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_membrane_vesicle_trafficking_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_membrane_vesicle_trafficking_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_membrane_vesicle_trafficking_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_membrane_vesicle_trafficking_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_membrane_vesicle_trafficking_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "microbial_quorum_sensing",
+          "hard_negative_id": "microbial_cross_feeding",
+          "document_ids": [
+            "c1c_microbial_quorum_sensing_train_00",
+            "c1c_microbial_quorum_sensing_train_01",
+            "c1c_microbial_quorum_sensing_train_02",
+            "c1c_microbial_quorum_sensing_train_03",
+            "c1c_microbial_quorum_sensing_test_00",
+            "c1c_microbial_quorum_sensing_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_microbial_quorum_sensing_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_microbial_quorum_sensing_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_microbial_quorum_sensing_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_microbial_quorum_sensing_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_microbial_quorum_sensing_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_microbial_quorum_sensing_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "microbial_cross_feeding",
+          "hard_negative_id": "microbial_quorum_sensing",
+          "document_ids": [
+            "c1c_microbial_cross_feeding_train_00",
+            "c1c_microbial_cross_feeding_train_01",
+            "c1c_microbial_cross_feeding_train_02",
+            "c1c_microbial_cross_feeding_train_03",
+            "c1c_microbial_cross_feeding_test_00",
+            "c1c_microbial_cross_feeding_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_microbial_cross_feeding_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_microbial_cross_feeding_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_microbial_cross_feeding_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_microbial_cross_feeding_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "FAIL",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": [
+                "D003"
+              ]
+            },
+            {
+              "id": "c1c_microbial_cross_feeding_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_microbial_cross_feeding_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "fault_rupture_mechanics",
+          "hard_negative_id": "slope_failure_mechanics",
+          "document_ids": [
+            "c1c_fault_rupture_mechanics_train_00",
+            "c1c_fault_rupture_mechanics_train_01",
+            "c1c_fault_rupture_mechanics_train_02",
+            "c1c_fault_rupture_mechanics_train_03",
+            "c1c_fault_rupture_mechanics_test_00",
+            "c1c_fault_rupture_mechanics_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_fault_rupture_mechanics_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_fault_rupture_mechanics_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "FAIL",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": [
+                "D004"
+              ]
+            },
+            {
+              "id": "c1c_fault_rupture_mechanics_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "FAIL",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": [
+                "D005"
+              ]
+            },
+            {
+              "id": "c1c_fault_rupture_mechanics_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "FAIL",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": [
+                "D006"
+              ]
+            },
+            {
+              "id": "c1c_fault_rupture_mechanics_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "FAIL",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": [
+                "D007"
+              ]
+            },
+            {
+              "id": "c1c_fault_rupture_mechanics_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "FAIL",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": [
+                "D008"
+              ]
+            }
+          ]
+        },
+        {
+          "concept_id": "slope_failure_mechanics",
+          "hard_negative_id": "fault_rupture_mechanics",
+          "document_ids": [
+            "c1c_slope_failure_mechanics_train_00",
+            "c1c_slope_failure_mechanics_train_01",
+            "c1c_slope_failure_mechanics_train_02",
+            "c1c_slope_failure_mechanics_train_03",
+            "c1c_slope_failure_mechanics_test_00",
+            "c1c_slope_failure_mechanics_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_slope_failure_mechanics_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_slope_failure_mechanics_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_slope_failure_mechanics_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_slope_failure_mechanics_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_slope_failure_mechanics_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_slope_failure_mechanics_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "groundwater_contaminant_transport",
+          "hard_negative_id": "coastal_saltwater_intrusion",
+          "document_ids": [
+            "c1c_groundwater_contaminant_transport_train_00",
+            "c1c_groundwater_contaminant_transport_train_01",
+            "c1c_groundwater_contaminant_transport_train_02",
+            "c1c_groundwater_contaminant_transport_train_03",
+            "c1c_groundwater_contaminant_transport_test_00",
+            "c1c_groundwater_contaminant_transport_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_groundwater_contaminant_transport_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_groundwater_contaminant_transport_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_groundwater_contaminant_transport_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_groundwater_contaminant_transport_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_groundwater_contaminant_transport_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_groundwater_contaminant_transport_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "coastal_saltwater_intrusion",
+          "hard_negative_id": "groundwater_contaminant_transport",
+          "document_ids": [
+            "c1c_coastal_saltwater_intrusion_train_00",
+            "c1c_coastal_saltwater_intrusion_train_01",
+            "c1c_coastal_saltwater_intrusion_train_02",
+            "c1c_coastal_saltwater_intrusion_train_03",
+            "c1c_coastal_saltwater_intrusion_test_00",
+            "c1c_coastal_saltwater_intrusion_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_coastal_saltwater_intrusion_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_coastal_saltwater_intrusion_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_coastal_saltwater_intrusion_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_coastal_saltwater_intrusion_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_coastal_saltwater_intrusion_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_coastal_saltwater_intrusion_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "census_classification",
+          "hard_negative_id": "cadastral_land_taxation",
+          "document_ids": [
+            "c1c_census_classification_train_00",
+            "c1c_census_classification_train_01",
+            "c1c_census_classification_train_02",
+            "c1c_census_classification_train_03",
+            "c1c_census_classification_test_00",
+            "c1c_census_classification_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_census_classification_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_census_classification_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_census_classification_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "FAIL",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": [
+                "D009"
+              ]
+            },
+            {
+              "id": "c1c_census_classification_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_census_classification_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_census_classification_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "cadastral_land_taxation",
+          "hard_negative_id": "census_classification",
+          "document_ids": [
+            "c1c_cadastral_land_taxation_train_00",
+            "c1c_cadastral_land_taxation_train_01",
+            "c1c_cadastral_land_taxation_train_02",
+            "c1c_cadastral_land_taxation_train_03",
+            "c1c_cadastral_land_taxation_test_00",
+            "c1c_cadastral_land_taxation_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_cadastral_land_taxation_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_cadastral_land_taxation_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_cadastral_land_taxation_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_cadastral_land_taxation_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_cadastral_land_taxation_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_cadastral_land_taxation_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "quarantine_regimes",
+          "hard_negative_id": "passport_mobility_controls",
+          "document_ids": [
+            "c1c_quarantine_regimes_train_00",
+            "c1c_quarantine_regimes_train_01",
+            "c1c_quarantine_regimes_train_02",
+            "c1c_quarantine_regimes_train_03",
+            "c1c_quarantine_regimes_test_00",
+            "c1c_quarantine_regimes_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_quarantine_regimes_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_quarantine_regimes_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_quarantine_regimes_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_quarantine_regimes_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_quarantine_regimes_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_quarantine_regimes_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "passport_mobility_controls",
+          "hard_negative_id": "quarantine_regimes",
+          "document_ids": [
+            "c1c_passport_mobility_controls_train_00",
+            "c1c_passport_mobility_controls_train_01",
+            "c1c_passport_mobility_controls_train_02",
+            "c1c_passport_mobility_controls_train_03",
+            "c1c_passport_mobility_controls_test_00",
+            "c1c_passport_mobility_controls_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_passport_mobility_controls_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_passport_mobility_controls_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_passport_mobility_controls_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_passport_mobility_controls_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_passport_mobility_controls_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_passport_mobility_controls_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "lexical_semantic_ambiguity",
+          "hard_negative_id": "syntactic_attachment_ambiguity",
+          "document_ids": [
+            "c1c_lexical_semantic_ambiguity_train_00",
+            "c1c_lexical_semantic_ambiguity_train_01",
+            "c1c_lexical_semantic_ambiguity_train_02",
+            "c1c_lexical_semantic_ambiguity_train_03",
+            "c1c_lexical_semantic_ambiguity_test_00",
+            "c1c_lexical_semantic_ambiguity_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_lexical_semantic_ambiguity_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_lexical_semantic_ambiguity_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_lexical_semantic_ambiguity_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_lexical_semantic_ambiguity_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_lexical_semantic_ambiguity_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_lexical_semantic_ambiguity_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "syntactic_attachment_ambiguity",
+          "hard_negative_id": "lexical_semantic_ambiguity",
+          "document_ids": [
+            "c1c_syntactic_attachment_ambiguity_train_00",
+            "c1c_syntactic_attachment_ambiguity_train_01",
+            "c1c_syntactic_attachment_ambiguity_train_02",
+            "c1c_syntactic_attachment_ambiguity_train_03",
+            "c1c_syntactic_attachment_ambiguity_test_00",
+            "c1c_syntactic_attachment_ambiguity_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_syntactic_attachment_ambiguity_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_syntactic_attachment_ambiguity_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_syntactic_attachment_ambiguity_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_syntactic_attachment_ambiguity_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_syntactic_attachment_ambiguity_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_syntactic_attachment_ambiguity_test_01",
+              "split": "test",
+              "checks": [
+                "FAIL",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": [
+                "D010"
+              ]
+            }
+          ]
+        },
+        {
+          "concept_id": "phonological_assimilation",
+          "hard_negative_id": "morphological_agreement",
+          "document_ids": [
+            "c1c_phonological_assimilation_train_00",
+            "c1c_phonological_assimilation_train_01",
+            "c1c_phonological_assimilation_train_02",
+            "c1c_phonological_assimilation_train_03",
+            "c1c_phonological_assimilation_test_00",
+            "c1c_phonological_assimilation_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_phonological_assimilation_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_phonological_assimilation_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_phonological_assimilation_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_phonological_assimilation_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_phonological_assimilation_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_phonological_assimilation_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "morphological_agreement",
+          "hard_negative_id": "phonological_assimilation",
+          "document_ids": [
+            "c1c_morphological_agreement_train_00",
+            "c1c_morphological_agreement_train_01",
+            "c1c_morphological_agreement_train_02",
+            "c1c_morphological_agreement_train_03",
+            "c1c_morphological_agreement_test_00",
+            "c1c_morphological_agreement_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_morphological_agreement_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_morphological_agreement_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_morphological_agreement_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_morphological_agreement_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_morphological_agreement_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_morphological_agreement_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "feedback_control_stability",
+          "hard_negative_id": "dynamical_state_estimation",
+          "document_ids": [
+            "c1c_feedback_control_stability_train_00",
+            "c1c_feedback_control_stability_train_01",
+            "c1c_feedback_control_stability_train_02",
+            "c1c_feedback_control_stability_train_03",
+            "c1c_feedback_control_stability_test_00",
+            "c1c_feedback_control_stability_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_feedback_control_stability_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_feedback_control_stability_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_feedback_control_stability_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_feedback_control_stability_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_feedback_control_stability_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_feedback_control_stability_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "dynamical_state_estimation",
+          "hard_negative_id": "feedback_control_stability",
+          "document_ids": [
+            "c1c_dynamical_state_estimation_train_00",
+            "c1c_dynamical_state_estimation_train_01",
+            "c1c_dynamical_state_estimation_train_02",
+            "c1c_dynamical_state_estimation_train_03",
+            "c1c_dynamical_state_estimation_test_00",
+            "c1c_dynamical_state_estimation_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_dynamical_state_estimation_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_dynamical_state_estimation_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_dynamical_state_estimation_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_dynamical_state_estimation_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_dynamical_state_estimation_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_dynamical_state_estimation_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "fatigue_crack_growth",
+          "hard_negative_id": "creep_deformation",
+          "document_ids": [
+            "c1c_fatigue_crack_growth_train_00",
+            "c1c_fatigue_crack_growth_train_01",
+            "c1c_fatigue_crack_growth_train_02",
+            "c1c_fatigue_crack_growth_train_03",
+            "c1c_fatigue_crack_growth_test_00",
+            "c1c_fatigue_crack_growth_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_fatigue_crack_growth_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_fatigue_crack_growth_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_fatigue_crack_growth_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_fatigue_crack_growth_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_fatigue_crack_growth_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_fatigue_crack_growth_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        },
+        {
+          "concept_id": "creep_deformation",
+          "hard_negative_id": "fatigue_crack_growth",
+          "document_ids": [
+            "c1c_creep_deformation_train_00",
+            "c1c_creep_deformation_train_01",
+            "c1c_creep_deformation_train_02",
+            "c1c_creep_deformation_train_03",
+            "c1c_creep_deformation_test_00",
+            "c1c_creep_deformation_test_01"
+          ],
+          "documents": [
+            {
+              "id": "c1c_creep_deformation_train_00",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_creep_deformation_train_01",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_creep_deformation_train_02",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_creep_deformation_train_03",
+              "split": "train",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_creep_deformation_test_00",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            },
+            {
+              "id": "c1c_creep_deformation_test_01",
+              "split": "test",
+              "checks": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+              ],
+              "failure_ids": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "concept_batch_decisions": [
+    {
+      "reviewer_id": "A",
+      "decisions": [
+        {
+          "concept_id": "automatic_memory_reclamation",
+          "doc_ids": [
+            "c1c_automatic_memory_reclamation_train_00",
+            "c1c_automatic_memory_reclamation_train_01",
+            "c1c_automatic_memory_reclamation_train_02",
+            "c1c_automatic_memory_reclamation_train_03",
+            "c1c_automatic_memory_reclamation_test_00",
+            "c1c_automatic_memory_reclamation_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "dynamic_memory_allocation",
+          "doc_ids": [
+            "c1c_dynamic_memory_allocation_train_00",
+            "c1c_dynamic_memory_allocation_train_01",
+            "c1c_dynamic_memory_allocation_train_02",
+            "c1c_dynamic_memory_allocation_train_03",
+            "c1c_dynamic_memory_allocation_test_00",
+            "c1c_dynamic_memory_allocation_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "cryptographic_authentication",
+          "doc_ids": [
+            "c1c_cryptographic_authentication_train_00",
+            "c1c_cryptographic_authentication_train_01",
+            "c1c_cryptographic_authentication_train_02",
+            "c1c_cryptographic_authentication_train_03",
+            "c1c_cryptographic_authentication_test_00",
+            "c1c_cryptographic_authentication_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "error_detecting_codes",
+          "doc_ids": [
+            "c1c_error_detecting_codes_train_00",
+            "c1c_error_detecting_codes_train_01",
+            "c1c_error_detecting_codes_train_02",
+            "c1c_error_detecting_codes_train_03",
+            "c1c_error_detecting_codes_test_00",
+            "c1c_error_detecting_codes_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "protein_quality_control",
+          "doc_ids": [
+            "c1c_protein_quality_control_train_00",
+            "c1c_protein_quality_control_train_01",
+            "c1c_protein_quality_control_train_02",
+            "c1c_protein_quality_control_train_03",
+            "c1c_protein_quality_control_test_00",
+            "c1c_protein_quality_control_test_01"
+          ],
+          "checks": [
+            "FAIL",
+            "FAIL",
+            "PASS"
+          ],
+          "status": "FAIL"
+        },
+        {
+          "concept_id": "membrane_vesicle_trafficking",
+          "doc_ids": [
+            "c1c_membrane_vesicle_trafficking_train_00",
+            "c1c_membrane_vesicle_trafficking_train_01",
+            "c1c_membrane_vesicle_trafficking_train_02",
+            "c1c_membrane_vesicle_trafficking_train_03",
+            "c1c_membrane_vesicle_trafficking_test_00",
+            "c1c_membrane_vesicle_trafficking_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "microbial_quorum_sensing",
+          "doc_ids": [
+            "c1c_microbial_quorum_sensing_train_00",
+            "c1c_microbial_quorum_sensing_train_01",
+            "c1c_microbial_quorum_sensing_train_02",
+            "c1c_microbial_quorum_sensing_train_03",
+            "c1c_microbial_quorum_sensing_test_00",
+            "c1c_microbial_quorum_sensing_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "microbial_cross_feeding",
+          "doc_ids": [
+            "c1c_microbial_cross_feeding_train_00",
+            "c1c_microbial_cross_feeding_train_01",
+            "c1c_microbial_cross_feeding_train_02",
+            "c1c_microbial_cross_feeding_train_03",
+            "c1c_microbial_cross_feeding_test_00",
+            "c1c_microbial_cross_feeding_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "fault_rupture_mechanics",
+          "doc_ids": [
+            "c1c_fault_rupture_mechanics_train_00",
+            "c1c_fault_rupture_mechanics_train_01",
+            "c1c_fault_rupture_mechanics_train_02",
+            "c1c_fault_rupture_mechanics_train_03",
+            "c1c_fault_rupture_mechanics_test_00",
+            "c1c_fault_rupture_mechanics_test_01"
+          ],
+          "checks": [
+            "FAIL",
+            "FAIL",
+            "FAIL"
+          ],
+          "status": "FAIL"
+        },
+        {
+          "concept_id": "slope_failure_mechanics",
+          "doc_ids": [
+            "c1c_slope_failure_mechanics_train_00",
+            "c1c_slope_failure_mechanics_train_01",
+            "c1c_slope_failure_mechanics_train_02",
+            "c1c_slope_failure_mechanics_train_03",
+            "c1c_slope_failure_mechanics_test_00",
+            "c1c_slope_failure_mechanics_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "groundwater_contaminant_transport",
+          "doc_ids": [
+            "c1c_groundwater_contaminant_transport_train_00",
+            "c1c_groundwater_contaminant_transport_train_01",
+            "c1c_groundwater_contaminant_transport_train_02",
+            "c1c_groundwater_contaminant_transport_train_03",
+            "c1c_groundwater_contaminant_transport_test_00",
+            "c1c_groundwater_contaminant_transport_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "coastal_saltwater_intrusion",
+          "doc_ids": [
+            "c1c_coastal_saltwater_intrusion_train_00",
+            "c1c_coastal_saltwater_intrusion_train_01",
+            "c1c_coastal_saltwater_intrusion_train_02",
+            "c1c_coastal_saltwater_intrusion_train_03",
+            "c1c_coastal_saltwater_intrusion_test_00",
+            "c1c_coastal_saltwater_intrusion_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "census_classification",
+          "doc_ids": [
+            "c1c_census_classification_train_00",
+            "c1c_census_classification_train_01",
+            "c1c_census_classification_train_02",
+            "c1c_census_classification_train_03",
+            "c1c_census_classification_test_00",
+            "c1c_census_classification_test_01"
+          ],
+          "checks": [
+            "FAIL",
+            "FAIL",
+            "PASS"
+          ],
+          "status": "FAIL"
+        },
+        {
+          "concept_id": "cadastral_land_taxation",
+          "doc_ids": [
+            "c1c_cadastral_land_taxation_train_00",
+            "c1c_cadastral_land_taxation_train_01",
+            "c1c_cadastral_land_taxation_train_02",
+            "c1c_cadastral_land_taxation_train_03",
+            "c1c_cadastral_land_taxation_test_00",
+            "c1c_cadastral_land_taxation_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "quarantine_regimes",
+          "doc_ids": [
+            "c1c_quarantine_regimes_train_00",
+            "c1c_quarantine_regimes_train_01",
+            "c1c_quarantine_regimes_train_02",
+            "c1c_quarantine_regimes_train_03",
+            "c1c_quarantine_regimes_test_00",
+            "c1c_quarantine_regimes_test_01"
+          ],
+          "checks": [
+            "FAIL",
+            "FAIL",
+            "PASS"
+          ],
+          "status": "FAIL"
+        },
+        {
+          "concept_id": "passport_mobility_controls",
+          "doc_ids": [
+            "c1c_passport_mobility_controls_train_00",
+            "c1c_passport_mobility_controls_train_01",
+            "c1c_passport_mobility_controls_train_02",
+            "c1c_passport_mobility_controls_train_03",
+            "c1c_passport_mobility_controls_test_00",
+            "c1c_passport_mobility_controls_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "lexical_semantic_ambiguity",
+          "doc_ids": [
+            "c1c_lexical_semantic_ambiguity_train_00",
+            "c1c_lexical_semantic_ambiguity_train_01",
+            "c1c_lexical_semantic_ambiguity_train_02",
+            "c1c_lexical_semantic_ambiguity_train_03",
+            "c1c_lexical_semantic_ambiguity_test_00",
+            "c1c_lexical_semantic_ambiguity_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "syntactic_attachment_ambiguity",
+          "doc_ids": [
+            "c1c_syntactic_attachment_ambiguity_train_00",
+            "c1c_syntactic_attachment_ambiguity_train_01",
+            "c1c_syntactic_attachment_ambiguity_train_02",
+            "c1c_syntactic_attachment_ambiguity_train_03",
+            "c1c_syntactic_attachment_ambiguity_test_00",
+            "c1c_syntactic_attachment_ambiguity_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "phonological_assimilation",
+          "doc_ids": [
+            "c1c_phonological_assimilation_train_00",
+            "c1c_phonological_assimilation_train_01",
+            "c1c_phonological_assimilation_train_02",
+            "c1c_phonological_assimilation_train_03",
+            "c1c_phonological_assimilation_test_00",
+            "c1c_phonological_assimilation_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "morphological_agreement",
+          "doc_ids": [
+            "c1c_morphological_agreement_train_00",
+            "c1c_morphological_agreement_train_01",
+            "c1c_morphological_agreement_train_02",
+            "c1c_morphological_agreement_train_03",
+            "c1c_morphological_agreement_test_00",
+            "c1c_morphological_agreement_test_01"
+          ],
+          "checks": [
+            "FAIL",
+            "FAIL",
+            "FAIL"
+          ],
+          "status": "FAIL"
+        },
+        {
+          "concept_id": "feedback_control_stability",
+          "doc_ids": [
+            "c1c_feedback_control_stability_train_00",
+            "c1c_feedback_control_stability_train_01",
+            "c1c_feedback_control_stability_train_02",
+            "c1c_feedback_control_stability_train_03",
+            "c1c_feedback_control_stability_test_00",
+            "c1c_feedback_control_stability_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "dynamical_state_estimation",
+          "doc_ids": [
+            "c1c_dynamical_state_estimation_train_00",
+            "c1c_dynamical_state_estimation_train_01",
+            "c1c_dynamical_state_estimation_train_02",
+            "c1c_dynamical_state_estimation_train_03",
+            "c1c_dynamical_state_estimation_test_00",
+            "c1c_dynamical_state_estimation_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "fatigue_crack_growth",
+          "doc_ids": [
+            "c1c_fatigue_crack_growth_train_00",
+            "c1c_fatigue_crack_growth_train_01",
+            "c1c_fatigue_crack_growth_train_02",
+            "c1c_fatigue_crack_growth_train_03",
+            "c1c_fatigue_crack_growth_test_00",
+            "c1c_fatigue_crack_growth_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "concept_id": "creep_deformation",
+          "doc_ids": [
+            "c1c_creep_deformation_train_00",
+            "c1c_creep_deformation_train_01",
+            "c1c_creep_deformation_train_02",
+            "c1c_creep_deformation_train_03",
+            "c1c_creep_deformation_test_00",
+            "c1c_creep_deformation_test_01"
+          ],
+          "checks": [
+            "FAIL",
+            "FAIL",
+            "PASS"
+          ],
+          "status": "FAIL"
+        }
+      ]
+    },
+    {
+      "reviewer_id": "B",
+      "decisions": [
+        {
+          "concept_id": "automatic_memory_reclamation",
+          "document_ids": [
+            "c1c_automatic_memory_reclamation_train_00",
+            "c1c_automatic_memory_reclamation_train_01",
+            "c1c_automatic_memory_reclamation_train_02",
+            "c1c_automatic_memory_reclamation_train_03",
+            "c1c_automatic_memory_reclamation_test_00",
+            "c1c_automatic_memory_reclamation_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "failure_ids": []
+        },
+        {
+          "concept_id": "dynamic_memory_allocation",
+          "document_ids": [
+            "c1c_dynamic_memory_allocation_train_00",
+            "c1c_dynamic_memory_allocation_train_01",
+            "c1c_dynamic_memory_allocation_train_02",
+            "c1c_dynamic_memory_allocation_train_03",
+            "c1c_dynamic_memory_allocation_test_00",
+            "c1c_dynamic_memory_allocation_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "failure_ids": []
+        },
+        {
+          "concept_id": "cryptographic_authentication",
+          "document_ids": [
+            "c1c_cryptographic_authentication_train_00",
+            "c1c_cryptographic_authentication_train_01",
+            "c1c_cryptographic_authentication_train_02",
+            "c1c_cryptographic_authentication_train_03",
+            "c1c_cryptographic_authentication_test_00",
+            "c1c_cryptographic_authentication_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "failure_ids": []
+        },
+        {
+          "concept_id": "error_detecting_codes",
+          "document_ids": [
+            "c1c_error_detecting_codes_train_00",
+            "c1c_error_detecting_codes_train_01",
+            "c1c_error_detecting_codes_train_02",
+            "c1c_error_detecting_codes_train_03",
+            "c1c_error_detecting_codes_test_00",
+            "c1c_error_detecting_codes_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "failure_ids": []
+        },
+        {
+          "concept_id": "protein_quality_control",
+          "document_ids": [
+            "c1c_protein_quality_control_train_00",
+            "c1c_protein_quality_control_train_01",
+            "c1c_protein_quality_control_train_02",
+            "c1c_protein_quality_control_train_03",
+            "c1c_protein_quality_control_test_00",
+            "c1c_protein_quality_control_test_01"
+          ],
+          "checks": [
+            "FAIL",
+            "FAIL",
+            "PASS"
+          ],
+          "failure_ids": [
+            "B001",
+            "B002"
+          ]
+        },
+        {
+          "concept_id": "membrane_vesicle_trafficking",
+          "document_ids": [
+            "c1c_membrane_vesicle_trafficking_train_00",
+            "c1c_membrane_vesicle_trafficking_train_01",
+            "c1c_membrane_vesicle_trafficking_train_02",
+            "c1c_membrane_vesicle_trafficking_train_03",
+            "c1c_membrane_vesicle_trafficking_test_00",
+            "c1c_membrane_vesicle_trafficking_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "failure_ids": []
+        },
+        {
+          "concept_id": "microbial_quorum_sensing",
+          "document_ids": [
+            "c1c_microbial_quorum_sensing_train_00",
+            "c1c_microbial_quorum_sensing_train_01",
+            "c1c_microbial_quorum_sensing_train_02",
+            "c1c_microbial_quorum_sensing_train_03",
+            "c1c_microbial_quorum_sensing_test_00",
+            "c1c_microbial_quorum_sensing_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "failure_ids": []
+        },
+        {
+          "concept_id": "microbial_cross_feeding",
+          "document_ids": [
+            "c1c_microbial_cross_feeding_train_00",
+            "c1c_microbial_cross_feeding_train_01",
+            "c1c_microbial_cross_feeding_train_02",
+            "c1c_microbial_cross_feeding_train_03",
+            "c1c_microbial_cross_feeding_test_00",
+            "c1c_microbial_cross_feeding_test_01"
+          ],
+          "checks": [
+            "FAIL",
+            "FAIL",
+            "PASS"
+          ],
+          "failure_ids": [
+            "B003",
+            "B004"
+          ]
+        },
+        {
+          "concept_id": "fault_rupture_mechanics",
+          "document_ids": [
+            "c1c_fault_rupture_mechanics_train_00",
+            "c1c_fault_rupture_mechanics_train_01",
+            "c1c_fault_rupture_mechanics_train_02",
+            "c1c_fault_rupture_mechanics_train_03",
+            "c1c_fault_rupture_mechanics_test_00",
+            "c1c_fault_rupture_mechanics_test_01"
+          ],
+          "checks": [
+            "FAIL",
+            "FAIL",
+            "FAIL"
+          ],
+          "failure_ids": [
+            "B005",
+            "B006",
+            "B007"
+          ]
+        },
+        {
+          "concept_id": "slope_failure_mechanics",
+          "document_ids": [
+            "c1c_slope_failure_mechanics_train_00",
+            "c1c_slope_failure_mechanics_train_01",
+            "c1c_slope_failure_mechanics_train_02",
+            "c1c_slope_failure_mechanics_train_03",
+            "c1c_slope_failure_mechanics_test_00",
+            "c1c_slope_failure_mechanics_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "failure_ids": []
+        },
+        {
+          "concept_id": "groundwater_contaminant_transport",
+          "document_ids": [
+            "c1c_groundwater_contaminant_transport_train_00",
+            "c1c_groundwater_contaminant_transport_train_01",
+            "c1c_groundwater_contaminant_transport_train_02",
+            "c1c_groundwater_contaminant_transport_train_03",
+            "c1c_groundwater_contaminant_transport_test_00",
+            "c1c_groundwater_contaminant_transport_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "failure_ids": []
+        },
+        {
+          "concept_id": "coastal_saltwater_intrusion",
+          "document_ids": [
+            "c1c_coastal_saltwater_intrusion_train_00",
+            "c1c_coastal_saltwater_intrusion_train_01",
+            "c1c_coastal_saltwater_intrusion_train_02",
+            "c1c_coastal_saltwater_intrusion_train_03",
+            "c1c_coastal_saltwater_intrusion_test_00",
+            "c1c_coastal_saltwater_intrusion_test_01"
+          ],
+          "checks": [
+            "FAIL",
+            "FAIL",
+            "PASS"
+          ],
+          "failure_ids": [
+            "B008",
+            "B009"
+          ]
+        },
+        {
+          "concept_id": "census_classification",
+          "document_ids": [
+            "c1c_census_classification_train_00",
+            "c1c_census_classification_train_01",
+            "c1c_census_classification_train_02",
+            "c1c_census_classification_train_03",
+            "c1c_census_classification_test_00",
+            "c1c_census_classification_test_01"
+          ],
+          "checks": [
+            "FAIL",
+            "FAIL",
+            "PASS"
+          ],
+          "failure_ids": [
+            "B010",
+            "B011"
+          ]
+        },
+        {
+          "concept_id": "cadastral_land_taxation",
+          "document_ids": [
+            "c1c_cadastral_land_taxation_train_00",
+            "c1c_cadastral_land_taxation_train_01",
+            "c1c_cadastral_land_taxation_train_02",
+            "c1c_cadastral_land_taxation_train_03",
+            "c1c_cadastral_land_taxation_test_00",
+            "c1c_cadastral_land_taxation_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "failure_ids": []
+        },
+        {
+          "concept_id": "quarantine_regimes",
+          "document_ids": [
+            "c1c_quarantine_regimes_train_00",
+            "c1c_quarantine_regimes_train_01",
+            "c1c_quarantine_regimes_train_02",
+            "c1c_quarantine_regimes_train_03",
+            "c1c_quarantine_regimes_test_00",
+            "c1c_quarantine_regimes_test_01"
+          ],
+          "checks": [
+            "FAIL",
+            "FAIL",
+            "FAIL"
+          ],
+          "failure_ids": [
+            "B012",
+            "B013",
+            "B014"
+          ]
+        },
+        {
+          "concept_id": "passport_mobility_controls",
+          "document_ids": [
+            "c1c_passport_mobility_controls_train_00",
+            "c1c_passport_mobility_controls_train_01",
+            "c1c_passport_mobility_controls_train_02",
+            "c1c_passport_mobility_controls_train_03",
+            "c1c_passport_mobility_controls_test_00",
+            "c1c_passport_mobility_controls_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "failure_ids": []
+        },
+        {
+          "concept_id": "lexical_semantic_ambiguity",
+          "document_ids": [
+            "c1c_lexical_semantic_ambiguity_train_00",
+            "c1c_lexical_semantic_ambiguity_train_01",
+            "c1c_lexical_semantic_ambiguity_train_02",
+            "c1c_lexical_semantic_ambiguity_train_03",
+            "c1c_lexical_semantic_ambiguity_test_00",
+            "c1c_lexical_semantic_ambiguity_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "failure_ids": []
+        },
+        {
+          "concept_id": "syntactic_attachment_ambiguity",
+          "document_ids": [
+            "c1c_syntactic_attachment_ambiguity_train_00",
+            "c1c_syntactic_attachment_ambiguity_train_01",
+            "c1c_syntactic_attachment_ambiguity_train_02",
+            "c1c_syntactic_attachment_ambiguity_train_03",
+            "c1c_syntactic_attachment_ambiguity_test_00",
+            "c1c_syntactic_attachment_ambiguity_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "failure_ids": []
+        },
+        {
+          "concept_id": "phonological_assimilation",
+          "document_ids": [
+            "c1c_phonological_assimilation_train_00",
+            "c1c_phonological_assimilation_train_01",
+            "c1c_phonological_assimilation_train_02",
+            "c1c_phonological_assimilation_train_03",
+            "c1c_phonological_assimilation_test_00",
+            "c1c_phonological_assimilation_test_01"
+          ],
+          "checks": [
+            "FAIL",
+            "PASS",
+            "PASS"
+          ],
+          "failure_ids": [
+            "B015"
+          ]
+        },
+        {
+          "concept_id": "morphological_agreement",
+          "document_ids": [
+            "c1c_morphological_agreement_train_00",
+            "c1c_morphological_agreement_train_01",
+            "c1c_morphological_agreement_train_02",
+            "c1c_morphological_agreement_train_03",
+            "c1c_morphological_agreement_test_00",
+            "c1c_morphological_agreement_test_01"
+          ],
+          "checks": [
+            "FAIL",
+            "FAIL",
+            "FAIL"
+          ],
+          "failure_ids": [
+            "B016",
+            "B017",
+            "B018"
+          ]
+        },
+        {
+          "concept_id": "feedback_control_stability",
+          "document_ids": [
+            "c1c_feedback_control_stability_train_00",
+            "c1c_feedback_control_stability_train_01",
+            "c1c_feedback_control_stability_train_02",
+            "c1c_feedback_control_stability_train_03",
+            "c1c_feedback_control_stability_test_00",
+            "c1c_feedback_control_stability_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "failure_ids": []
+        },
+        {
+          "concept_id": "dynamical_state_estimation",
+          "document_ids": [
+            "c1c_dynamical_state_estimation_train_00",
+            "c1c_dynamical_state_estimation_train_01",
+            "c1c_dynamical_state_estimation_train_02",
+            "c1c_dynamical_state_estimation_train_03",
+            "c1c_dynamical_state_estimation_test_00",
+            "c1c_dynamical_state_estimation_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "failure_ids": []
+        },
+        {
+          "concept_id": "fatigue_crack_growth",
+          "document_ids": [
+            "c1c_fatigue_crack_growth_train_00",
+            "c1c_fatigue_crack_growth_train_01",
+            "c1c_fatigue_crack_growth_train_02",
+            "c1c_fatigue_crack_growth_train_03",
+            "c1c_fatigue_crack_growth_test_00",
+            "c1c_fatigue_crack_growth_test_01"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "failure_ids": []
+        },
+        {
+          "concept_id": "creep_deformation",
+          "document_ids": [
+            "c1c_creep_deformation_train_00",
+            "c1c_creep_deformation_train_01",
+            "c1c_creep_deformation_train_02",
+            "c1c_creep_deformation_train_03",
+            "c1c_creep_deformation_test_00",
+            "c1c_creep_deformation_test_01"
+          ],
+          "checks": [
+            "FAIL",
+            "FAIL",
+            "PASS"
+          ],
+          "failure_ids": [
+            "B019",
+            "B020"
+          ]
+        }
+      ]
+    }
+  ],
+  "pair_decisions": [
+    {
+      "reviewer_id": "A",
+      "decisions": [
+        {
+          "pair_id": "automatic_memory_reclamation__dynamic_memory_allocation",
+          "concept_ids": [
+            "automatic_memory_reclamation",
+            "dynamic_memory_allocation"
+          ],
+          "checks": [
+            "PASS"
+          ],
+          "constituent_concept_statuses": [
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "pair_id": "cryptographic_authentication__error_detecting_codes",
+          "concept_ids": [
+            "cryptographic_authentication",
+            "error_detecting_codes"
+          ],
+          "checks": [
+            "PASS"
+          ],
+          "constituent_concept_statuses": [
+            "PASS",
+            "FAIL"
+          ],
+          "status": "FAIL"
+        },
+        {
+          "pair_id": "membrane_vesicle_trafficking__protein_quality_control",
+          "concept_ids": [
+            "membrane_vesicle_trafficking",
+            "protein_quality_control"
+          ],
+          "checks": [
+            "PASS"
+          ],
+          "constituent_concept_statuses": [
+            "PASS",
+            "FAIL"
+          ],
+          "status": "FAIL"
+        },
+        {
+          "pair_id": "microbial_cross_feeding__microbial_quorum_sensing",
+          "concept_ids": [
+            "microbial_cross_feeding",
+            "microbial_quorum_sensing"
+          ],
+          "checks": [
+            "PASS"
+          ],
+          "constituent_concept_statuses": [
+            "FAIL",
+            "PASS"
+          ],
+          "status": "FAIL"
+        },
+        {
+          "pair_id": "fault_rupture_mechanics__slope_failure_mechanics",
+          "concept_ids": [
+            "fault_rupture_mechanics",
+            "slope_failure_mechanics"
+          ],
+          "checks": [
+            "FAIL"
+          ],
+          "constituent_concept_statuses": [
+            "FAIL",
+            "PASS"
+          ],
+          "status": "FAIL"
+        },
+        {
+          "pair_id": "coastal_saltwater_intrusion__groundwater_contaminant_transport",
+          "concept_ids": [
+            "coastal_saltwater_intrusion",
+            "groundwater_contaminant_transport"
+          ],
+          "checks": [
+            "PASS"
+          ],
+          "constituent_concept_statuses": [
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "pair_id": "cadastral_land_taxation__census_classification",
+          "concept_ids": [
+            "cadastral_land_taxation",
+            "census_classification"
+          ],
+          "checks": [
+            "PASS"
+          ],
+          "constituent_concept_statuses": [
+            "PASS",
+            "FAIL"
+          ],
+          "status": "FAIL"
+        },
+        {
+          "pair_id": "passport_mobility_controls__quarantine_regimes",
+          "concept_ids": [
+            "passport_mobility_controls",
+            "quarantine_regimes"
+          ],
+          "checks": [
+            "PASS"
+          ],
+          "constituent_concept_statuses": [
+            "PASS",
+            "FAIL"
+          ],
+          "status": "FAIL"
+        },
+        {
+          "pair_id": "lexical_semantic_ambiguity__syntactic_attachment_ambiguity",
+          "concept_ids": [
+            "lexical_semantic_ambiguity",
+            "syntactic_attachment_ambiguity"
+          ],
+          "checks": [
+            "PASS"
+          ],
+          "constituent_concept_statuses": [
+            "PASS",
+            "FAIL"
+          ],
+          "status": "FAIL"
+        },
+        {
+          "pair_id": "morphological_agreement__phonological_assimilation",
+          "concept_ids": [
+            "morphological_agreement",
+            "phonological_assimilation"
+          ],
+          "checks": [
+            "FAIL"
+          ],
+          "constituent_concept_statuses": [
+            "FAIL",
+            "PASS"
+          ],
+          "status": "FAIL"
+        },
+        {
+          "pair_id": "dynamical_state_estimation__feedback_control_stability",
+          "concept_ids": [
+            "dynamical_state_estimation",
+            "feedback_control_stability"
+          ],
+          "checks": [
+            "PASS"
+          ],
+          "constituent_concept_statuses": [
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS"
+        },
+        {
+          "pair_id": "creep_deformation__fatigue_crack_growth",
+          "concept_ids": [
+            "creep_deformation",
+            "fatigue_crack_growth"
+          ],
+          "checks": [
+            "PASS"
+          ],
+          "constituent_concept_statuses": [
+            "FAIL",
+            "PASS"
+          ],
+          "status": "FAIL"
+        }
+      ]
+    },
+    {
+      "reviewer_id": "B",
+      "decisions": [
+        {
+          "pair_id": "automatic_memory_reclamation__dynamic_memory_allocation",
+          "concept_ids": [
+            "automatic_memory_reclamation",
+            "dynamic_memory_allocation"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS",
+          "failure_ids": []
+        },
+        {
+          "pair_id": "cryptographic_authentication__error_detecting_codes",
+          "concept_ids": [
+            "cryptographic_authentication",
+            "error_detecting_codes"
+          ],
+          "checks": [
+            "PASS",
+            "FAIL",
+            "PASS"
+          ],
+          "status": "FAIL",
+          "failure_ids": [
+            "P001"
+          ]
+        },
+        {
+          "pair_id": "protein_quality_control__membrane_vesicle_trafficking",
+          "concept_ids": [
+            "protein_quality_control",
+            "membrane_vesicle_trafficking"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS",
+          "failure_ids": []
+        },
+        {
+          "pair_id": "microbial_quorum_sensing__microbial_cross_feeding",
+          "concept_ids": [
+            "microbial_quorum_sensing",
+            "microbial_cross_feeding"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS",
+          "failure_ids": []
+        },
+        {
+          "pair_id": "fault_rupture_mechanics__slope_failure_mechanics",
+          "concept_ids": [
+            "fault_rupture_mechanics",
+            "slope_failure_mechanics"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "FAIL"
+          ],
+          "status": "FAIL",
+          "failure_ids": [
+            "P002"
+          ]
+        },
+        {
+          "pair_id": "groundwater_contaminant_transport__coastal_saltwater_intrusion",
+          "concept_ids": [
+            "groundwater_contaminant_transport",
+            "coastal_saltwater_intrusion"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS",
+          "failure_ids": []
+        },
+        {
+          "pair_id": "census_classification__cadastral_land_taxation",
+          "concept_ids": [
+            "census_classification",
+            "cadastral_land_taxation"
+          ],
+          "checks": [
+            "PASS",
+            "FAIL",
+            "PASS"
+          ],
+          "status": "FAIL",
+          "failure_ids": [
+            "P003"
+          ]
+        },
+        {
+          "pair_id": "quarantine_regimes__passport_mobility_controls",
+          "concept_ids": [
+            "quarantine_regimes",
+            "passport_mobility_controls"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "FAIL"
+          ],
+          "status": "FAIL",
+          "failure_ids": [
+            "P004"
+          ]
+        },
+        {
+          "pair_id": "lexical_semantic_ambiguity__syntactic_attachment_ambiguity",
+          "concept_ids": [
+            "lexical_semantic_ambiguity",
+            "syntactic_attachment_ambiguity"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS",
+          "failure_ids": []
+        },
+        {
+          "pair_id": "phonological_assimilation__morphological_agreement",
+          "concept_ids": [
+            "phonological_assimilation",
+            "morphological_agreement"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "FAIL"
+          ],
+          "status": "FAIL",
+          "failure_ids": [
+            "P005"
+          ]
+        },
+        {
+          "pair_id": "feedback_control_stability__dynamical_state_estimation",
+          "concept_ids": [
+            "feedback_control_stability",
+            "dynamical_state_estimation"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS",
+          "failure_ids": []
+        },
+        {
+          "pair_id": "fatigue_crack_growth__creep_deformation",
+          "concept_ids": [
+            "fatigue_crack_growth",
+            "creep_deformation"
+          ],
+          "checks": [
+            "PASS",
+            "PASS",
+            "PASS"
+          ],
+          "status": "PASS",
+          "failure_ids": []
+        }
+      ]
+    }
+  ],
+  "failure_reasons": [
+    {
+      "reviewer_id": "A",
+      "items": [
+        {
+          "scope": "document",
+          "check": "no_named_entity_or_product",
+          "prompt_ids": [
+            "c1c_error_detecting_codes_train_03"
+          ],
+          "reason": "The request names Earth as a specific destination/place."
+        },
+        {
+          "scope": "document",
+          "check": "no_hard_negative_contamination",
+          "prompt_ids": [
+            "c1c_error_detecting_codes_test_01"
+          ],
+          "reason": "The request makes fraudulent manipulation co-equal with accidental corruption; resisting intentional manipulation centrally requires the reciprocal cryptographic-authentication concept rather than an unkeyed error-detecting code alone."
+        },
+        {
+          "scope": "document",
+          "check": "no_named_entity_or_product",
+          "prompt_ids": [
+            "c1c_microbial_cross_feeding_train_03"
+          ],
+          "reason": "The request names Earth as a specific place."
+        },
+        {
+          "scope": "document",
+          "check": "no_named_entity_or_product",
+          "prompt_ids": [
+            "c1c_fault_rupture_mechanics_train_01"
+          ],
+          "reason": "The request explicitly names Earth's crust."
+        },
+        {
+          "scope": "document",
+          "check": "no_named_entity_or_product",
+          "prompt_ids": [
+            "c1c_fault_rupture_mechanics_train_02"
+          ],
+          "reason": "The request explicitly names Earth's crust and Earth."
+        },
+        {
+          "scope": "document",
+          "check": "no_named_entity_or_product",
+          "prompt_ids": [
+            "c1c_fault_rupture_mechanics_train_03"
+          ],
+          "reason": "The request explicitly names Earth's crust."
+        },
+        {
+          "scope": "document",
+          "check": "no_named_entity_or_product",
+          "prompt_ids": [
+            "c1c_fault_rupture_mechanics_test_00"
+          ],
+          "reason": "The request explicitly names Earth's crust."
+        },
+        {
+          "scope": "document",
+          "check": "no_named_entity_or_product",
+          "prompt_ids": [
+            "c1c_fault_rupture_mechanics_test_01"
+          ],
+          "reason": "The request explicitly names Earth's layers."
+        },
+        {
+          "scope": "document",
+          "check": "no_hard_negative_contamination",
+          "prompt_ids": [
+            "c1c_census_classification_train_02"
+          ],
+          "reason": "Tax-district boundaries, landowners, property values, and fairness of tax assessment make cadastral land taxation a co-equal target rather than a peripheral setting."
+        },
+        {
+          "scope": "document",
+          "check": "central_topic_adherence",
+          "prompt_ids": [
+            "c1c_syntactic_attachment_ambiguity_test_01"
+          ],
+          "reason": "The proposed reading of 'Give the princess a golden crown' concerns semantic-role or command parsing; the sentence supplies no competing modifier attachment and is not an instance of syntactic attachment ambiguity."
+        },
+        {
+          "scope": "concept_batch",
+          "concept_id": "protein_quality_control",
+          "check": "distinct_scenarios",
+          "prompt_ids": [
+            "c1c_protein_quality_control_train_02",
+            "c1c_protein_quality_control_test_00"
+          ],
+          "reason": "Both requests use increased protein-synthesis load overwhelming folding and disposal capacity; changing nutrient influx to a drug is a surface variation of the same setup."
+        },
+        {
+          "scope": "concept_batch",
+          "concept_id": "protein_quality_control",
+          "check": "heldout_scenario_separation",
+          "prompt_ids": [
+            "c1c_protein_quality_control_train_02",
+            "c1c_protein_quality_control_test_00"
+          ],
+          "reason": "The held-out drug-induced high-synthesis scenario duplicates the discovery nutrient-induced high-synthesis scenario."
+        },
+        {
+          "scope": "concept_batch",
+          "concept_id": "fault_rupture_mechanics",
+          "check": "distinct_scenarios",
+          "prompt_ids": [
+            "c1c_fault_rupture_mechanics_train_00",
+            "c1c_fault_rupture_mechanics_train_01",
+            "c1c_fault_rupture_mechanics_train_02",
+            "c1c_fault_rupture_mechanics_train_03",
+            "c1c_fault_rupture_mechanics_test_00",
+            "c1c_fault_rupture_mechanics_test_01"
+          ],
+          "reason": "All six requests rehearse the same locked-rock, stored-energy, rupture-wave, and aftershock explanation with only analogy or user-role changes."
+        },
+        {
+          "scope": "concept_batch",
+          "concept_id": "fault_rupture_mechanics",
+          "check": "heldout_scenario_separation",
+          "prompt_ids": [
+            "c1c_fault_rupture_mechanics_train_00",
+            "c1c_fault_rupture_mechanics_train_02",
+            "c1c_fault_rupture_mechanics_train_03",
+            "c1c_fault_rupture_mechanics_test_00",
+            "c1c_fault_rupture_mechanics_test_01"
+          ],
+          "reason": "The spring held-out request repeats the compressed-block/puzzle stored-energy discovery setup, while the structural-design held-out request repeats the discovery fault-line rupture sequence."
+        },
+        {
+          "scope": "concept_batch",
+          "concept_id": "fault_rupture_mechanics",
+          "check": "style_balance",
+          "prompt_ids": [
+            "c1c_fault_rupture_mechanics_train_01",
+            "c1c_fault_rupture_mechanics_train_02",
+            "c1c_fault_rupture_mechanics_train_03",
+            "c1c_fault_rupture_mechanics_test_00",
+            "c1c_fault_rupture_mechanics_test_01"
+          ],
+          "reason": "Five of six prompts repeatedly rely on the named entity Earth and nearly identical explanatory sequencing, creating a concept-specific shortcut."
+        },
+        {
+          "scope": "concept_batch",
+          "concept_id": "census_classification",
+          "check": "distinct_scenarios",
+          "prompt_ids": [
+            "c1c_census_classification_train_01",
+            "c1c_census_classification_test_01"
+          ],
+          "reason": "Both requests ask how undercounting marginalized neighborhood populations produces inequitable allocation of local public resources."
+        },
+        {
+          "scope": "concept_batch",
+          "concept_id": "census_classification",
+          "check": "heldout_scenario_separation",
+          "prompt_ids": [
+            "c1c_census_classification_train_01",
+            "c1c_census_classification_test_01"
+          ],
+          "reason": "The held-out neighborhood infrastructure/resource-allocation scenario duplicates the discovery community-center/social-services scenario."
+        },
+        {
+          "scope": "concept_batch",
+          "concept_id": "quarantine_regimes",
+          "check": "distinct_scenarios",
+          "prompt_ids": [
+            "c1c_quarantine_regimes_train_00",
+            "c1c_quarantine_regimes_train_02",
+            "c1c_quarantine_regimes_train_03",
+            "c1c_quarantine_regimes_test_00",
+            "c1c_quarantine_regimes_test_01"
+          ],
+          "reason": "Five requests are surface reframings of the same generic outbreak controls over movement, inspection, commerce, enforcement, and relief."
+        },
+        {
+          "scope": "concept_batch",
+          "concept_id": "quarantine_regimes",
+          "check": "heldout_scenario_separation",
+          "prompt_ids": [
+            "c1c_quarantine_regimes_train_00",
+            "c1c_quarantine_regimes_train_02",
+            "c1c_quarantine_regimes_train_03",
+            "c1c_quarantine_regimes_test_00",
+            "c1c_quarantine_regimes_test_01"
+          ],
+          "reason": "The playwright and museum held-out frames directly reuse the generic public-health-control scenarios in the discovery set rather than introducing substantively new applications."
+        },
+        {
+          "scope": "concept_batch",
+          "concept_id": "morphological_agreement",
+          "check": "distinct_scenarios",
+          "prompt_ids": [
+            "c1c_morphological_agreement_train_00",
+            "c1c_morphological_agreement_train_01",
+            "c1c_morphological_agreement_train_02",
+            "c1c_morphological_agreement_train_03",
+            "c1c_morphological_agreement_test_00",
+            "c1c_morphological_agreement_test_01"
+          ],
+          "reason": "The six requests repeatedly use a computational grammar system failing on nonadjacent elements and mismatched number/gender/person features; pronoun, adjective, or verb substitutions do not make all six substantively distinct."
+        },
+        {
+          "scope": "concept_batch",
+          "concept_id": "morphological_agreement",
+          "check": "heldout_scenario_separation",
+          "prompt_ids": [
+            "c1c_morphological_agreement_train_00",
+            "c1c_morphological_agreement_train_01",
+            "c1c_morphological_agreement_test_00",
+            "c1c_morphological_agreement_test_01"
+          ],
+          "reason": "The held-out pronoun–noun system repeats the discovery possessive-pronoun system, and the held-out verb–object system repeats the discovery verb subject/object system."
+        },
+        {
+          "scope": "concept_batch",
+          "concept_id": "morphological_agreement",
+          "check": "style_balance",
+          "prompt_ids": [
+            "c1c_morphological_agreement_train_00",
+            "c1c_morphological_agreement_train_01",
+            "c1c_morphological_agreement_train_02",
+            "c1c_morphological_agreement_train_03",
+            "c1c_morphological_agreement_test_00",
+            "c1c_morphological_agreement_test_01"
+          ],
+          "reason": "Every prompt uses the same computational-system error template with distance and feature mismatch, producing a concept-specific framing shortcut."
+        },
+        {
+          "scope": "concept_batch",
+          "concept_id": "creep_deformation",
+          "check": "distinct_scenarios",
+          "prompt_ids": [
+            "c1c_creep_deformation_train_00",
+            "c1c_creep_deformation_test_01"
+          ],
+          "reason": "Both requests concern a heated, pressurized pipeline undergoing tiny permanent dimensional change over decades."
+        },
+        {
+          "scope": "concept_batch",
+          "concept_id": "creep_deformation",
+          "check": "heldout_scenario_separation",
+          "prompt_ids": [
+            "c1c_creep_deformation_train_00",
+            "c1c_creep_deformation_test_01"
+          ],
+          "reason": "The held-out deep-sea heated pipeline duplicates the discovery geothermal high-temperature steam-pipe scenario."
+        },
+        {
+          "scope": "reciprocal_pair",
+          "pair_id": "fault_rupture_mechanics__slope_failure_mechanics",
+          "check": "reciprocal_pair_style_balance",
+          "prompt_ids": [
+            "c1c_fault_rupture_mechanics_train_01",
+            "c1c_fault_rupture_mechanics_train_02",
+            "c1c_fault_rupture_mechanics_train_03",
+            "c1c_fault_rupture_mechanics_test_00",
+            "c1c_fault_rupture_mechanics_test_01"
+          ],
+          "reason": "The fault side repeatedly uses the named entity Earth and a fixed stored-energy narrative, whereas the slope side uses varied applied settings; this asymmetric template can identify the pair member independently of the target mechanics."
+        },
+        {
+          "scope": "reciprocal_pair",
+          "pair_id": "morphological_agreement__phonological_assimilation",
+          "check": "reciprocal_pair_style_balance",
+          "prompt_ids": [
+            "c1c_morphological_agreement_train_00",
+            "c1c_morphological_agreement_train_01",
+            "c1c_morphological_agreement_train_02",
+            "c1c_morphological_agreement_train_03",
+            "c1c_morphological_agreement_test_00",
+            "c1c_morphological_agreement_test_01"
+          ],
+          "reason": "All morphology prompts share a computational parser/model failure frame with distance and category mismatch, while the phonology side spans child speech, audio, singing, voice-assistant, and synthesis settings."
+        }
+      ]
+    },
+    {
+      "reviewer_id": "B",
+      "items": [
+        {
+          "failure_id": "D001",
+          "scope": "document",
+          "id": "c1c_error_detecting_codes_train_03",
+          "check_id": "no_named_entity_or_product",
+          "reason": "The request explicitly names Earth as the spacecraft telemetry destination; Earth is a proper named, specific place under the rubric's no-named-place rule."
+        },
+        {
+          "failure_id": "D002",
+          "scope": "document",
+          "id": "c1c_error_detecting_codes_test_01",
+          "check_id": "no_hard_negative_contamination",
+          "reason": "The request asks an unkeyed code derived from the balance amount to prevent fraudulent manipulation as well as accidental corruption. Deliberate anti-forgery assurance centrally requires cryptographic authentication, the reciprocal hard negative."
+        },
+        {
+          "failure_id": "D003",
+          "scope": "document",
+          "id": "c1c_microbial_cross_feeding_train_03",
+          "check_id": "no_named_entity_or_product",
+          "reason": "The request explicitly names Earth when locating the chemical source in Earth's interior; Earth is a proper named, specific place under the rubric's no-named-place rule."
+        },
+        {
+          "failure_id": "D004",
+          "scope": "document",
+          "id": "c1c_fault_rupture_mechanics_train_01",
+          "check_id": "no_named_entity_or_product",
+          "reason": "The request explicitly names Earth in references to Earth's crust and rigid layers, violating the rubric's no-named-place rule."
+        },
+        {
+          "failure_id": "D005",
+          "scope": "document",
+          "id": "c1c_fault_rupture_mechanics_train_02",
+          "check_id": "no_named_entity_or_product",
+          "reason": "The request explicitly names Earth in references to Earth's crust and wave travel through Earth, violating the rubric's no-named-place rule."
+        },
+        {
+          "failure_id": "D006",
+          "scope": "document",
+          "id": "c1c_fault_rupture_mechanics_train_03",
+          "check_id": "no_named_entity_or_product",
+          "reason": "The request explicitly names Earth in the phrase Earth's crust, violating the rubric's no-named-place rule."
+        },
+        {
+          "failure_id": "D007",
+          "scope": "document",
+          "id": "c1c_fault_rupture_mechanics_test_00",
+          "check_id": "no_named_entity_or_product",
+          "reason": "The request explicitly names Earth in the phrase Earth's crust, violating the rubric's no-named-place rule."
+        },
+        {
+          "failure_id": "D008",
+          "scope": "document",
+          "id": "c1c_fault_rupture_mechanics_test_01",
+          "check_id": "no_named_entity_or_product",
+          "reason": "The request explicitly names Earth in the phrase Earth's layers, violating the rubric's no-named-place rule."
+        },
+        {
+          "failure_id": "D009",
+          "scope": "document",
+          "id": "c1c_census_classification_train_02",
+          "check_id": "no_hard_negative_contamination",
+          "reason": "The legal dispute over taxation-district boundaries, landowners, and property values makes cadastral land taxation a co-equal explanatory target rather than merely contextual background."
+        },
+        {
+          "failure_id": "D010",
+          "scope": "document",
+          "id": "c1c_syntactic_attachment_ambiguity_test_01",
+          "check_id": "central_topic_adherence",
+          "reason": "The imperative 'Give the princess a golden crown' does not supply an attachment alternative in which the princess is the giver. The described bug concerns argument-role assignment, so a competent answer need not centrally use syntactic attachment ambiguity."
+        },
+        {
+          "failure_id": "B001",
+          "scope": "concept_batch",
+          "id": "protein_quality_control",
+          "check_id": "distinct_scenarios",
+          "reason": "Discovery train_02 and held-out test_00 both use externally increased protein-synthesis load overwhelming the cell's folding and disposal capacity; changing nutrient influx to a drug does not make the mechanism or application substantively distinct."
+        },
+        {
+          "failure_id": "B002",
+          "scope": "concept_batch",
+          "id": "protein_quality_control",
+          "check_id": "heldout_scenario_separation",
+          "reason": "Held-out test_00 duplicates discovery train_02's high-protein-production overload scenario."
+        },
+        {
+          "failure_id": "B003",
+          "scope": "concept_batch",
+          "id": "microbial_cross_feeding",
+          "check_id": "distinct_scenarios",
+          "reason": "Discovery train_00 and held-out test_00/test_01 repeatedly use engineered processing of plant or complex-carbohydrate feedstocks by metabolically dependent bacterial groups; the held-out applications are not substantively separated from the discovery bioreactor setup."
+        },
+        {
+          "failure_id": "B004",
+          "scope": "concept_batch",
+          "id": "microbial_cross_feeding",
+          "check_id": "heldout_scenario_separation",
+          "reason": "Held-out test_00 and test_01 reuse discovery train_00's engineered biomass/carbohydrate-processing consortium scenario."
+        },
+        {
+          "failure_id": "B005",
+          "scope": "concept_batch",
+          "id": "fault_rupture_mechanics",
+          "check_id": "distinct_scenarios",
+          "reason": "All six requests restate the same locked-rock stress accumulation, sudden rupture, wave propagation, and post-event adjustment sequence with only superficial framing changes."
+        },
+        {
+          "failure_id": "B006",
+          "scope": "concept_batch",
+          "id": "fault_rupture_mechanics",
+          "check_id": "heldout_scenario_separation",
+          "reason": "Held-out test_00's compressed-spring/crust analogy substantially duplicates discovery train_00's slowly compressed rock block, and test_01 again restates the discovery earthquake-mechanics setup."
+        },
+        {
+          "failure_id": "B007",
+          "scope": "concept_batch",
+          "id": "fault_rupture_mechanics",
+          "check_id": "style_balance",
+          "reason": "The six requests uniquely follow a near-identical ordered template covering accumulation, frictional locking, release, waves, and subsequent movements, unlike the varied scenario/question structures of the reciprocal slope-failure batch."
+        },
+        {
+          "failure_id": "B008",
+          "scope": "concept_batch",
+          "id": "coastal_saltwater_intrusion",
+          "check_id": "distinct_scenarios",
+          "reason": "Train_00, train_03, and held-out test_00 all center on pumping wells producing increasingly salty water; community, industrial, and farm labels do not create substantively distinct mechanisms or scenarios."
+        },
+        {
+          "failure_id": "B009",
+          "scope": "concept_batch",
+          "id": "coastal_saltwater_intrusion",
+          "check_id": "heldout_scenario_separation",
+          "reason": "Held-out test_00 duplicates the pumping-driven salinization scenarios in discovery train_00 and train_03."
+        },
+        {
+          "failure_id": "B010",
+          "scope": "concept_batch",
+          "id": "census_classification",
+          "check_id": "distinct_scenarios",
+          "reason": "Held-out test_00 revisits discovery train_00's census-to-political-representation framing, while held-out test_01 closely repeats discovery train_01's undercount-to-public-resource-allocation framing."
+        },
+        {
+          "failure_id": "B011",
+          "scope": "concept_batch",
+          "id": "census_classification",
+          "check_id": "heldout_scenario_separation",
+          "reason": "Both held-out census scenarios substantially duplicate discovery applications: political representation and undercount-driven resource disparities."
+        },
+        {
+          "failure_id": "B012",
+          "scope": "concept_batch",
+          "id": "quarantine_regimes",
+          "check_id": "distinct_scenarios",
+          "reason": "The six requests repeatedly ask the same movement restriction, inspection, commerce disruption, enforcement, and relief sequence; historian, fiction, playwright, and museum framings are surface wrappers rather than distinct applications."
+        },
+        {
+          "failure_id": "B013",
+          "scope": "concept_batch",
+          "id": "quarantine_regimes",
+          "check_id": "heldout_scenario_separation",
+          "reason": "Held-out test_00 and test_01 repeat the same generalized historical outbreak-control scenarios already used across the four discovery requests."
+        },
+        {
+          "failure_id": "B014",
+          "scope": "concept_batch",
+          "id": "quarantine_regimes",
+          "check_id": "style_balance",
+          "reason": "The quarantine requests uniquely use a repeated ordered catalogue of movement, inspection, commerce, authority, compliance, and relief, whereas the reciprocal passport batch uses materially varied historical, fictional, ethical, internal-mobility, and refugee questions."
+        },
+        {
+          "failure_id": "B015",
+          "scope": "concept_batch",
+          "id": "phonological_assimilation",
+          "check_id": "distinct_scenarios",
+          "reason": "Train_01 and train_03 are both child-pronunciation/acquisition observations seeking the same neighboring-sound explanation, so all six scenarios are not substantively distinct."
+        },
+        {
+          "failure_id": "B016",
+          "scope": "concept_batch",
+          "id": "morphological_agreement",
+          "check_id": "distinct_scenarios",
+          "reason": "The six requests repeatedly present a computational parser/model failing long-distance controller-target feature matching; train_00/test_00 and train_01/test_01 are especially close pronoun-noun and verb-object repetitions."
+        },
+        {
+          "failure_id": "B017",
+          "scope": "concept_batch",
+          "id": "morphological_agreement",
+          "check_id": "heldout_scenario_separation",
+          "reason": "Held-out test_00 duplicates discovery train_00's separated pronoun-noun agreement setup, and test_01 duplicates train_01's separated verb-argument agreement setup."
+        },
+        {
+          "failure_id": "B018",
+          "scope": "concept_batch",
+          "id": "morphological_agreement",
+          "check_id": "style_balance",
+          "reason": "All six prompts use the same program/model-failure template with distance and feature mismatch, a distinctive shortcut not shared by the more varied reciprocal phonological-assimilation batch."
+        },
+        {
+          "failure_id": "B019",
+          "scope": "concept_batch",
+          "id": "creep_deformation",
+          "check_id": "distinct_scenarios",
+          "reason": "Discovery train_00 and held-out test_01 are both heated, pressurized pipeline scenarios observed over decades, and the six requests otherwise repeatedly follow the same sustained-load/high-temperature/three-stage template."
+        },
+        {
+          "failure_id": "B020",
+          "scope": "concept_batch",
+          "id": "creep_deformation",
+          "check_id": "heldout_scenario_separation",
+          "reason": "Held-out test_01's heated deep-sea pipeline directly duplicates discovery train_00's high-temperature steam-pipe application."
+        },
+        {
+          "failure_id": "P001",
+          "scope": "reciprocal_pair",
+          "id": "cryptographic_authentication__error_detecting_codes",
+          "check_id": "hard_negative_separation",
+          "reason": "Error-detecting-codes test_01 centrally asks for protection against fraudulent manipulation, crossing into the reciprocal cryptographic-authentication target."
+        },
+        {
+          "failure_id": "P002",
+          "scope": "reciprocal_pair",
+          "id": "fault_rupture_mechanics__slope_failure_mechanics",
+          "check_id": "style_balance",
+          "reason": "Fault-rupture prompts repeat one ordered mechanics template, while slope-failure prompts use six materially different practical scenarios and question structures."
+        },
+        {
+          "failure_id": "P003",
+          "scope": "reciprocal_pair",
+          "id": "census_classification__cadastral_land_taxation",
+          "check_id": "hard_negative_separation",
+          "reason": "Census train_02 makes a landowner property-tax boundary dispute a co-equal target, crossing into cadastral surveying and land taxation."
+        },
+        {
+          "failure_id": "P004",
+          "scope": "reciprocal_pair",
+          "id": "quarantine_regimes__passport_mobility_controls",
+          "check_id": "style_balance",
+          "reason": "The quarantine side follows one repeated catalogue/template, while the passport side varies historical, speculative, ethical, internal-mobility, and refugee applications."
+        },
+        {
+          "failure_id": "P005",
+          "scope": "reciprocal_pair",
+          "id": "phonological_assimilation__morphological_agreement",
+          "check_id": "style_balance",
+          "reason": "The morphological-agreement side uniformly uses computational model/parser failure prompts centered on distance and mismatch; the phonological side uses varied speech, acquisition, transcription, synthesis, and singing contexts."
+        }
+      ]
+    }
+  ],
+  "attestation": "Both source reviews declare complete 24-concept, 144-document, 12-pair inspection without activation or endpoint access. Their full decision matrices are preserved verbatim above. Because at least one source review failed, v2 is stopped before activation extraction and no generated document may be edited or selectively regenerated."
+}

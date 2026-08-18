@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_AR",
+  "sample": {
+    "idx": 75,
+    "doc_id": 5849,
+    "position": 276,
+    "token": " assume",
+    "source": "OpenSubtitles"
+  },
+  "original_paragraphs": [
+    "Structured narrative format with ongoing dialogue: a formal anime synopsis, guiding a character's moral lesson through a battle encounter.",
+    "The sentence \"Do not assume\" establishes a directive warning against rash action, with the protagonist's emotional state of grief and uncertainty framing a cautionary statement about the fight.",
+    "Final token \"assume\" ends a prohibition clause (\"Do not assume...Do not assume\"), requiring a verb phrase — likely \"that you can decide\" or \"such authority\" or \"my role.\" or \"you are acting preemptively.\" or \"that the outcome is yours.\" or \"such liberties.\" — a specific overreach or assumption about taking the initiative or killing."
+  ],
+  "pilot_1": {
+    "condition": "paragraph_independent_paraphrase",
+    "construction": "Each paragraph was paraphrased independently using only its corresponding source paragraph. Paragraph order and every ASCII-double-quoted span are preserved exactly.",
+    "paragraphs": [
+      "An organized narrative delivered through ongoing dialogue: a formal synopsis of an anime, conveying a character's ethical lesson through a combat encounter.",
+      "The line \"Do not assume\" sets out a directive that cautions against hasty action, while the protagonist's grief and uncertainty provide the emotional frame for a warning concerning the fight.",
+      "The last token \"assume\" completes a prohibitive clause (\"Do not assume...Do not assume\") and calls for a verb phrase — probably \"that you can decide\" or \"such authority\" or \"my role.\" or \"you are acting preemptively.\" or \"that the outcome is yours.\" or \"such liberties.\" — describing a particular overstep or presumption about taking the initiative or killing."
+    ]
+  },
+  "pilot_2": {
+    "condition": "user_supplied_partial_x_mask",
+    "construction": "Verbatim user-supplied text; no additional masking or rewriting.",
+    "paragraphs": [
+      "XXXXX narrative XXXXXX with ongoing dialogue: a XXXXXX anime synopsis, guiding a character's moral lesson through a battle encounter.",
+      "XXX XXXXXXXX \"Do not assume\" XXXXXXX XXXXXXX warning against rash action, with the protagonist's emotional state of grief and uncertainty XXXXXXX a XXXXXXX XXXXXXXX about the fight.",
+      "XXXXX XXXXX \"assume\" ends a prohibition clause (\"Do not assume...Do not assume\"), XXXXXXXX a verb phrase — XXXXXX \"that you can decide\" or \"such authority\" or \"my role.\" or \"you are acting preemptively.\" or \"that the outcome is yours.\" or \"such liberties.\" — a XXXXXXXX overreach or assumption about taking the initiative or killing."
+    ]
+  },
+  "join_rule": "paragraphs joined by exactly two newline characters"
+}

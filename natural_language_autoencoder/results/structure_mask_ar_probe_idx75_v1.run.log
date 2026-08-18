@@ -1,0 +1,29 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/430 [00:00<?, ?it/s]Loading weights: 100%|██████████| 430/430 [00:00<00:00, 5937.03it/s]
+[transformers] [1mGemma3ForCausalLM LOAD REPORT[0m from: /root/autodl-tmp/models/nla-gemma3-12b-L32-ar
+Key               | Status  | 
+------------------+---------+-
+model.norm.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[NLACritic] 33 layers  d_model=3840  mse_scale=61.97
+{
+  "original_cos": 0.9961208299612508,
+  "masked_cos": 0.9907483461524507,
+  "delta_cos": -0.005372483808800177,
+  "original_mse": 0.007758340077498316,
+  "masked_mse": 0.01850330769509867,
+  "tokens": {
+    "explanation_only": {
+      "original": 135,
+      "structure_masked": 211
+    },
+    "full_ar_prompt": {
+      "original": 150,
+      "structure_masked": 226
+    },
+    "warning": "equal character count does not imply equal tokenizer count"
+  }
+}
+STRUCTURE_MASK_AR_PROBE_COMPLETE

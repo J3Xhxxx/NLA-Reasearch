@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "batch_id": 20,
+  "agent_task": "/root/luna_batch_20",
+  "role": "luna_worker",
+  "model": "gpt-5.6-luna",
+  "reasoning": "max",
+  "public_prompt_sha256": "dc91ae93cfb48ac8fcef07ecb01eef722991591a8bf81de3325b5b940b0aedb2",
+  "cases": [
+    {
+      "case_id": "case_g76qj459604ol37igd",
+      "hypothesis": "Causative make constructions introduce a resulting quality, effect, or belief.",
+      "positive_cues": [
+        "made or makes follows a subject and awaits a complement",
+        "Examples describe making games special, flaws meaningful, food tastier, or a belief justified",
+        "Rhetorical and evaluative clauses use make to connect cause with outcome"
+      ],
+      "exclusion_cues": [
+        "Not a domain-specific topic such as games, lyrics, cooking, or hacking",
+        "Not simple repetition of the word make without a resulting state or interpretation"
+      ],
+      "abstain": false,
+      "confidence": 0.84
+    },
+    {
+      "case_id": "case_hhk8dt6vusq4vaxvl1",
+      "hypothesis": "French-language text and French lexical continuations, including formatted contact details.",
+      "positive_cues": [
+        "French grammar, vocabulary, accents, and dialogue appear throughout",
+        "Phone numbers and Grenoble postal addresses are embedded in French prose",
+        "Fragments ch and b continue French words such as chuchota and battrons"
+      ],
+      "exclusion_cues": [
+        "Not English-only narrative or an English lexical completion",
+        "Numbers alone are insufficient without the surrounding French context"
+      ],
+      "abstain": false,
+      "confidence": 0.96
+    },
+    {
+      "case_id": "case_ezprp84f4vh8ecqfao",
+      "hypothesis": "Telephone contact numbers continue in standard North American formatting.",
+      "positive_cues": [
+        "Every context follows call at, call, or telephone line language",
+        "Parenthesized three-digit area codes and hyphenated digits are visible",
+        "The active fragments are immediately before additional phone-number digits"
+      ],
+      "exclusion_cues": [
+        "Not postal codes, dates, prices, or arbitrary numeric lists",
+        "Email and business prose provide contact context rather than a semantic topic"
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_p6gzwmgk4yf4x0mf4s",
+      "hypothesis": "Slow or gradual pacing is used as a descriptive or evaluative motif.",
+      "positive_cues": [
+        "The word slow appears in video, panic, rail, and dialogue-pacing descriptions",
+        "Contexts evoke contemplative movement, creeping anxiety, delay, or understated timing",
+        "Slow functions as an adjective or adverb describing temporal pace"
+      ],
+      "exclusion_cues": [
+        "Not fast, sudden, or acceleration language",
+        "Not a single fixed subject; the shared cue is slowness or gradual progression"
+      ],
+      "abstain": false,
+      "confidence": 0.94
+    },
+    {
+      "case_id": "case_aizrcwpj4w7efgr8hx",
+      "hypothesis": "Negated ability or impossibility is expressed with cannot, can't, or can never.",
+      "positive_cues": [
+        "Administration cannot fix the policy problem",
+        "We can never enter heaven and you cannot do the proposed measurement",
+        "The printer is implied to be unusable without a compatible driver"
+      ],
+      "exclusion_cues": [
+        "Not affirmative ability or permission expressed by can",
+        "Not arbitrary negation lacking an inability or impossibility consequence"
+      ],
+      "abstain": false,
+      "confidence": 0.96
+    }
+  ]
+}

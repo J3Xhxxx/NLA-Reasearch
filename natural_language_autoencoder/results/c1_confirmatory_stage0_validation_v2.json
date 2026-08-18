@@ -1,0 +1,597 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "errors": [],
+  "counts": {
+    "concepts": 24,
+    "superdomains": 6,
+    "reciprocal_pairs": 12,
+    "resolved_denied_features": 1282,
+    "reference_length_checks": 72
+  },
+  "hashes": {
+    "spec": "4e7d6b2ca3d4fe87406cde09b664f9bfee47e00f2630e0c251c0ad3b7422750e",
+    "denylist": "052e85b3174a8a6b18e5881f84b8c1804f53c1832908311ef3a336f7b05cdce2",
+    "prior_selection": "cb058a04a8fbe539391bd266abf04bfc5c446f7d64727193c6db9dd10219497d",
+    "legacy_selector": "64d3a242ebdd0091076ea568971abf7ce73d44b242aa3c3a3eb70627d9533b46",
+    "preregistration": "6291a485d7b6f3e239af7103ffb3e09c10d8a59474a991ddb4808294eb607f6a"
+  },
+  "reference_length_checks": [
+    {
+      "concept_id": "automatic_memory_reclamation",
+      "hard_negative_id": "dynamic_memory_allocation",
+      "template_index": 0,
+      "correct_tokens": 37,
+      "hard_negative_tokens": 33,
+      "ratio": 1.121212121212121
+    },
+    {
+      "concept_id": "automatic_memory_reclamation",
+      "hard_negative_id": "dynamic_memory_allocation",
+      "template_index": 1,
+      "correct_tokens": 36,
+      "hard_negative_tokens": 32,
+      "ratio": 1.125
+    },
+    {
+      "concept_id": "automatic_memory_reclamation",
+      "hard_negative_id": "dynamic_memory_allocation",
+      "template_index": 2,
+      "correct_tokens": 37,
+      "hard_negative_tokens": 33,
+      "ratio": 1.121212121212121
+    },
+    {
+      "concept_id": "dynamic_memory_allocation",
+      "hard_negative_id": "automatic_memory_reclamation",
+      "template_index": 0,
+      "correct_tokens": 33,
+      "hard_negative_tokens": 37,
+      "ratio": 0.8918918918918919
+    },
+    {
+      "concept_id": "dynamic_memory_allocation",
+      "hard_negative_id": "automatic_memory_reclamation",
+      "template_index": 1,
+      "correct_tokens": 32,
+      "hard_negative_tokens": 36,
+      "ratio": 0.8888888888888888
+    },
+    {
+      "concept_id": "dynamic_memory_allocation",
+      "hard_negative_id": "automatic_memory_reclamation",
+      "template_index": 2,
+      "correct_tokens": 33,
+      "hard_negative_tokens": 37,
+      "ratio": 0.8918918918918919
+    },
+    {
+      "concept_id": "cryptographic_authentication",
+      "hard_negative_id": "error_detecting_codes",
+      "template_index": 0,
+      "correct_tokens": 35,
+      "hard_negative_tokens": 34,
+      "ratio": 1.0294117647058822
+    },
+    {
+      "concept_id": "cryptographic_authentication",
+      "hard_negative_id": "error_detecting_codes",
+      "template_index": 1,
+      "correct_tokens": 34,
+      "hard_negative_tokens": 33,
+      "ratio": 1.0303030303030303
+    },
+    {
+      "concept_id": "cryptographic_authentication",
+      "hard_negative_id": "error_detecting_codes",
+      "template_index": 2,
+      "correct_tokens": 35,
+      "hard_negative_tokens": 34,
+      "ratio": 1.0294117647058822
+    },
+    {
+      "concept_id": "error_detecting_codes",
+      "hard_negative_id": "cryptographic_authentication",
+      "template_index": 0,
+      "correct_tokens": 34,
+      "hard_negative_tokens": 35,
+      "ratio": 0.9714285714285714
+    },
+    {
+      "concept_id": "error_detecting_codes",
+      "hard_negative_id": "cryptographic_authentication",
+      "template_index": 1,
+      "correct_tokens": 33,
+      "hard_negative_tokens": 34,
+      "ratio": 0.9705882352941176
+    },
+    {
+      "concept_id": "error_detecting_codes",
+      "hard_negative_id": "cryptographic_authentication",
+      "template_index": 2,
+      "correct_tokens": 34,
+      "hard_negative_tokens": 35,
+      "ratio": 0.9714285714285714
+    },
+    {
+      "concept_id": "protein_quality_control",
+      "hard_negative_id": "membrane_vesicle_trafficking",
+      "template_index": 0,
+      "correct_tokens": 36,
+      "hard_negative_tokens": 35,
+      "ratio": 1.0285714285714285
+    },
+    {
+      "concept_id": "protein_quality_control",
+      "hard_negative_id": "membrane_vesicle_trafficking",
+      "template_index": 1,
+      "correct_tokens": 35,
+      "hard_negative_tokens": 34,
+      "ratio": 1.0294117647058822
+    },
+    {
+      "concept_id": "protein_quality_control",
+      "hard_negative_id": "membrane_vesicle_trafficking",
+      "template_index": 2,
+      "correct_tokens": 36,
+      "hard_negative_tokens": 35,
+      "ratio": 1.0285714285714285
+    },
+    {
+      "concept_id": "membrane_vesicle_trafficking",
+      "hard_negative_id": "protein_quality_control",
+      "template_index": 0,
+      "correct_tokens": 35,
+      "hard_negative_tokens": 36,
+      "ratio": 0.9722222222222222
+    },
+    {
+      "concept_id": "membrane_vesicle_trafficking",
+      "hard_negative_id": "protein_quality_control",
+      "template_index": 1,
+      "correct_tokens": 34,
+      "hard_negative_tokens": 35,
+      "ratio": 0.9714285714285714
+    },
+    {
+      "concept_id": "membrane_vesicle_trafficking",
+      "hard_negative_id": "protein_quality_control",
+      "template_index": 2,
+      "correct_tokens": 35,
+      "hard_negative_tokens": 36,
+      "ratio": 0.9722222222222222
+    },
+    {
+      "concept_id": "microbial_quorum_sensing",
+      "hard_negative_id": "microbial_cross_feeding",
+      "template_index": 0,
+      "correct_tokens": 35,
+      "hard_negative_tokens": 38,
+      "ratio": 0.9210526315789473
+    },
+    {
+      "concept_id": "microbial_quorum_sensing",
+      "hard_negative_id": "microbial_cross_feeding",
+      "template_index": 1,
+      "correct_tokens": 34,
+      "hard_negative_tokens": 37,
+      "ratio": 0.918918918918919
+    },
+    {
+      "concept_id": "microbial_quorum_sensing",
+      "hard_negative_id": "microbial_cross_feeding",
+      "template_index": 2,
+      "correct_tokens": 35,
+      "hard_negative_tokens": 38,
+      "ratio": 0.9210526315789473
+    },
+    {
+      "concept_id": "microbial_cross_feeding",
+      "hard_negative_id": "microbial_quorum_sensing",
+      "template_index": 0,
+      "correct_tokens": 38,
+      "hard_negative_tokens": 35,
+      "ratio": 1.0857142857142856
+    },
+    {
+      "concept_id": "microbial_cross_feeding",
+      "hard_negative_id": "microbial_quorum_sensing",
+      "template_index": 1,
+      "correct_tokens": 37,
+      "hard_negative_tokens": 34,
+      "ratio": 1.088235294117647
+    },
+    {
+      "concept_id": "microbial_cross_feeding",
+      "hard_negative_id": "microbial_quorum_sensing",
+      "template_index": 2,
+      "correct_tokens": 38,
+      "hard_negative_tokens": 35,
+      "ratio": 1.0857142857142856
+    },
+    {
+      "concept_id": "fault_rupture_mechanics",
+      "hard_negative_id": "slope_failure_mechanics",
+      "template_index": 0,
+      "correct_tokens": 34,
+      "hard_negative_tokens": 37,
+      "ratio": 0.918918918918919
+    },
+    {
+      "concept_id": "fault_rupture_mechanics",
+      "hard_negative_id": "slope_failure_mechanics",
+      "template_index": 1,
+      "correct_tokens": 33,
+      "hard_negative_tokens": 36,
+      "ratio": 0.9166666666666666
+    },
+    {
+      "concept_id": "fault_rupture_mechanics",
+      "hard_negative_id": "slope_failure_mechanics",
+      "template_index": 2,
+      "correct_tokens": 34,
+      "hard_negative_tokens": 37,
+      "ratio": 0.918918918918919
+    },
+    {
+      "concept_id": "slope_failure_mechanics",
+      "hard_negative_id": "fault_rupture_mechanics",
+      "template_index": 0,
+      "correct_tokens": 37,
+      "hard_negative_tokens": 34,
+      "ratio": 1.088235294117647
+    },
+    {
+      "concept_id": "slope_failure_mechanics",
+      "hard_negative_id": "fault_rupture_mechanics",
+      "template_index": 1,
+      "correct_tokens": 36,
+      "hard_negative_tokens": 33,
+      "ratio": 1.0909090909090908
+    },
+    {
+      "concept_id": "slope_failure_mechanics",
+      "hard_negative_id": "fault_rupture_mechanics",
+      "template_index": 2,
+      "correct_tokens": 37,
+      "hard_negative_tokens": 34,
+      "ratio": 1.088235294117647
+    },
+    {
+      "concept_id": "groundwater_contaminant_transport",
+      "hard_negative_id": "coastal_saltwater_intrusion",
+      "template_index": 0,
+      "correct_tokens": 39,
+      "hard_negative_tokens": 37,
+      "ratio": 1.054054054054054
+    },
+    {
+      "concept_id": "groundwater_contaminant_transport",
+      "hard_negative_id": "coastal_saltwater_intrusion",
+      "template_index": 1,
+      "correct_tokens": 38,
+      "hard_negative_tokens": 36,
+      "ratio": 1.0555555555555556
+    },
+    {
+      "concept_id": "groundwater_contaminant_transport",
+      "hard_negative_id": "coastal_saltwater_intrusion",
+      "template_index": 2,
+      "correct_tokens": 39,
+      "hard_negative_tokens": 37,
+      "ratio": 1.054054054054054
+    },
+    {
+      "concept_id": "coastal_saltwater_intrusion",
+      "hard_negative_id": "groundwater_contaminant_transport",
+      "template_index": 0,
+      "correct_tokens": 37,
+      "hard_negative_tokens": 39,
+      "ratio": 0.9487179487179487
+    },
+    {
+      "concept_id": "coastal_saltwater_intrusion",
+      "hard_negative_id": "groundwater_contaminant_transport",
+      "template_index": 1,
+      "correct_tokens": 36,
+      "hard_negative_tokens": 38,
+      "ratio": 0.9473684210526315
+    },
+    {
+      "concept_id": "coastal_saltwater_intrusion",
+      "hard_negative_id": "groundwater_contaminant_transport",
+      "template_index": 2,
+      "correct_tokens": 37,
+      "hard_negative_tokens": 39,
+      "ratio": 0.9487179487179487
+    },
+    {
+      "concept_id": "census_classification",
+      "hard_negative_id": "cadastral_land_taxation",
+      "template_index": 0,
+      "correct_tokens": 39,
+      "hard_negative_tokens": 37,
+      "ratio": 1.054054054054054
+    },
+    {
+      "concept_id": "census_classification",
+      "hard_negative_id": "cadastral_land_taxation",
+      "template_index": 1,
+      "correct_tokens": 38,
+      "hard_negative_tokens": 36,
+      "ratio": 1.0555555555555556
+    },
+    {
+      "concept_id": "census_classification",
+      "hard_negative_id": "cadastral_land_taxation",
+      "template_index": 2,
+      "correct_tokens": 39,
+      "hard_negative_tokens": 37,
+      "ratio": 1.054054054054054
+    },
+    {
+      "concept_id": "cadastral_land_taxation",
+      "hard_negative_id": "census_classification",
+      "template_index": 0,
+      "correct_tokens": 37,
+      "hard_negative_tokens": 39,
+      "ratio": 0.9487179487179487
+    },
+    {
+      "concept_id": "cadastral_land_taxation",
+      "hard_negative_id": "census_classification",
+      "template_index": 1,
+      "correct_tokens": 36,
+      "hard_negative_tokens": 38,
+      "ratio": 0.9473684210526315
+    },
+    {
+      "concept_id": "cadastral_land_taxation",
+      "hard_negative_id": "census_classification",
+      "template_index": 2,
+      "correct_tokens": 37,
+      "hard_negative_tokens": 39,
+      "ratio": 0.9487179487179487
+    },
+    {
+      "concept_id": "quarantine_regimes",
+      "hard_negative_id": "passport_mobility_controls",
+      "template_index": 0,
+      "correct_tokens": 42,
+      "hard_negative_tokens": 37,
+      "ratio": 1.135135135135135
+    },
+    {
+      "concept_id": "quarantine_regimes",
+      "hard_negative_id": "passport_mobility_controls",
+      "template_index": 1,
+      "correct_tokens": 41,
+      "hard_negative_tokens": 36,
+      "ratio": 1.1388888888888888
+    },
+    {
+      "concept_id": "quarantine_regimes",
+      "hard_negative_id": "passport_mobility_controls",
+      "template_index": 2,
+      "correct_tokens": 42,
+      "hard_negative_tokens": 37,
+      "ratio": 1.135135135135135
+    },
+    {
+      "concept_id": "passport_mobility_controls",
+      "hard_negative_id": "quarantine_regimes",
+      "template_index": 0,
+      "correct_tokens": 37,
+      "hard_negative_tokens": 42,
+      "ratio": 0.8809523809523809
+    },
+    {
+      "concept_id": "passport_mobility_controls",
+      "hard_negative_id": "quarantine_regimes",
+      "template_index": 1,
+      "correct_tokens": 36,
+      "hard_negative_tokens": 41,
+      "ratio": 0.8780487804878049
+    },
+    {
+      "concept_id": "passport_mobility_controls",
+      "hard_negative_id": "quarantine_regimes",
+      "template_index": 2,
+      "correct_tokens": 37,
+      "hard_negative_tokens": 42,
+      "ratio": 0.8809523809523809
+    },
+    {
+      "concept_id": "lexical_semantic_ambiguity",
+      "hard_negative_id": "syntactic_attachment_ambiguity",
+      "template_index": 0,
+      "correct_tokens": 40,
+      "hard_negative_tokens": 45,
+      "ratio": 0.8888888888888888
+    },
+    {
+      "concept_id": "lexical_semantic_ambiguity",
+      "hard_negative_id": "syntactic_attachment_ambiguity",
+      "template_index": 1,
+      "correct_tokens": 39,
+      "hard_negative_tokens": 44,
+      "ratio": 0.8863636363636364
+    },
+    {
+      "concept_id": "lexical_semantic_ambiguity",
+      "hard_negative_id": "syntactic_attachment_ambiguity",
+      "template_index": 2,
+      "correct_tokens": 40,
+      "hard_negative_tokens": 45,
+      "ratio": 0.8888888888888888
+    },
+    {
+      "concept_id": "syntactic_attachment_ambiguity",
+      "hard_negative_id": "lexical_semantic_ambiguity",
+      "template_index": 0,
+      "correct_tokens": 45,
+      "hard_negative_tokens": 40,
+      "ratio": 1.125
+    },
+    {
+      "concept_id": "syntactic_attachment_ambiguity",
+      "hard_negative_id": "lexical_semantic_ambiguity",
+      "template_index": 1,
+      "correct_tokens": 44,
+      "hard_negative_tokens": 39,
+      "ratio": 1.1282051282051282
+    },
+    {
+      "concept_id": "syntactic_attachment_ambiguity",
+      "hard_negative_id": "lexical_semantic_ambiguity",
+      "template_index": 2,
+      "correct_tokens": 45,
+      "hard_negative_tokens": 40,
+      "ratio": 1.125
+    },
+    {
+      "concept_id": "phonological_assimilation",
+      "hard_negative_id": "morphological_agreement",
+      "template_index": 0,
+      "correct_tokens": 37,
+      "hard_negative_tokens": 38,
+      "ratio": 0.9736842105263158
+    },
+    {
+      "concept_id": "phonological_assimilation",
+      "hard_negative_id": "morphological_agreement",
+      "template_index": 1,
+      "correct_tokens": 36,
+      "hard_negative_tokens": 37,
+      "ratio": 0.972972972972973
+    },
+    {
+      "concept_id": "phonological_assimilation",
+      "hard_negative_id": "morphological_agreement",
+      "template_index": 2,
+      "correct_tokens": 37,
+      "hard_negative_tokens": 38,
+      "ratio": 0.9736842105263158
+    },
+    {
+      "concept_id": "morphological_agreement",
+      "hard_negative_id": "phonological_assimilation",
+      "template_index": 0,
+      "correct_tokens": 38,
+      "hard_negative_tokens": 37,
+      "ratio": 1.027027027027027
+    },
+    {
+      "concept_id": "morphological_agreement",
+      "hard_negative_id": "phonological_assimilation",
+      "template_index": 1,
+      "correct_tokens": 37,
+      "hard_negative_tokens": 36,
+      "ratio": 1.0277777777777777
+    },
+    {
+      "concept_id": "morphological_agreement",
+      "hard_negative_id": "phonological_assimilation",
+      "template_index": 2,
+      "correct_tokens": 38,
+      "hard_negative_tokens": 37,
+      "ratio": 1.027027027027027
+    },
+    {
+      "concept_id": "feedback_control_stability",
+      "hard_negative_id": "dynamical_state_estimation",
+      "template_index": 0,
+      "correct_tokens": 37,
+      "hard_negative_tokens": 34,
+      "ratio": 1.088235294117647
+    },
+    {
+      "concept_id": "feedback_control_stability",
+      "hard_negative_id": "dynamical_state_estimation",
+      "template_index": 1,
+      "correct_tokens": 36,
+      "hard_negative_tokens": 33,
+      "ratio": 1.0909090909090908
+    },
+    {
+      "concept_id": "feedback_control_stability",
+      "hard_negative_id": "dynamical_state_estimation",
+      "template_index": 2,
+      "correct_tokens": 37,
+      "hard_negative_tokens": 34,
+      "ratio": 1.088235294117647
+    },
+    {
+      "concept_id": "dynamical_state_estimation",
+      "hard_negative_id": "feedback_control_stability",
+      "template_index": 0,
+      "correct_tokens": 34,
+      "hard_negative_tokens": 37,
+      "ratio": 0.918918918918919
+    },
+    {
+      "concept_id": "dynamical_state_estimation",
+      "hard_negative_id": "feedback_control_stability",
+      "template_index": 1,
+      "correct_tokens": 33,
+      "hard_negative_tokens": 36,
+      "ratio": 0.9166666666666666
+    },
+    {
+      "concept_id": "dynamical_state_estimation",
+      "hard_negative_id": "feedback_control_stability",
+      "template_index": 2,
+      "correct_tokens": 34,
+      "hard_negative_tokens": 37,
+      "ratio": 0.918918918918919
+    },
+    {
+      "concept_id": "fatigue_crack_growth",
+      "hard_negative_id": "creep_deformation",
+      "template_index": 0,
+      "correct_tokens": 35,
+      "hard_negative_tokens": 38,
+      "ratio": 0.9210526315789473
+    },
+    {
+      "concept_id": "fatigue_crack_growth",
+      "hard_negative_id": "creep_deformation",
+      "template_index": 1,
+      "correct_tokens": 34,
+      "hard_negative_tokens": 37,
+      "ratio": 0.918918918918919
+    },
+    {
+      "concept_id": "fatigue_crack_growth",
+      "hard_negative_id": "creep_deformation",
+      "template_index": 2,
+      "correct_tokens": 35,
+      "hard_negative_tokens": 38,
+      "ratio": 0.9210526315789473
+    },
+    {
+      "concept_id": "creep_deformation",
+      "hard_negative_id": "fatigue_crack_growth",
+      "template_index": 0,
+      "correct_tokens": 38,
+      "hard_negative_tokens": 35,
+      "ratio": 1.0857142857142856
+    },
+    {
+      "concept_id": "creep_deformation",
+      "hard_negative_id": "fatigue_crack_growth",
+      "template_index": 1,
+      "correct_tokens": 37,
+      "hard_negative_tokens": 34,
+      "ratio": 1.088235294117647
+    },
+    {
+      "concept_id": "creep_deformation",
+      "hard_negative_id": "fatigue_crack_growth",
+      "template_index": 2,
+      "correct_tokens": 38,
+      "hard_negative_tokens": 35,
+      "ratio": 1.0857142857142856
+    }
+  ]
+}

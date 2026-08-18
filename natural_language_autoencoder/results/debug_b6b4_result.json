@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "experiment": "B6+B4 factorial semantic readability and polarity",
+  "status": "complete",
+  "generated_at_utc": "2026-07-26T07:42:58.090607+00:00",
+  "inputs": {
+    "selection": "/root/autodl-tmp/results/b6b4_factorial_selection.json",
+    "selection_sha256": "cb058a04a8fbe539391bd266abf04bfc5c446f7d64727193c6db9dd10219497d",
+    "vectors": "/root/autodl-tmp/results/b6b4_factorial_vectors.npz",
+    "vectors_sha256": "4a70b711e06e8ba1f88f54bb83c39cbcc6aa4f91935914c5fc0811a966670f6b",
+    "av": "/root/autodl-tmp/models/nla-gemma3-12b-L32-av",
+    "ar": "/root/autodl-tmp/models/nla-gemma3-12b-L32-ar",
+    "n_directions": 1,
+    "n_jobs": 7,
+    "n_direction_jobs": 2,
+    "n_carrier_jobs": 5
+  },
+  "generation": {
+    "samples_per_sign": 1,
+    "greedy_sample_index": 0,
+    "stochastic_temperature": 0.7,
+    "max_new_tokens": 80,
+    "seed": 20260726,
+    "av_elapsed_seconds_this_invocation": 36.32390737533569,
+    "critic_elapsed_seconds": 9.09751558303833,
+    "explanation_tag_success_fraction": 0.0,
+    "mean_generation_seconds": 3.923736810684204,
+    "runtime": {
+      "python": "3.12.3",
+      "torch": "2.5.1+cu124",
+      "numpy": "2.5.0",
+      "gpu": "NVIDIA A800-SXM4-80GB"
+    }
+  },
+  "protocol_notes": {
+    "centering": "project frozen train-document-balanced mean direction out of prediction and target before cosine",
+    "primary_unit": "feature; repeated generations are uncertainty only",
+    "negative_direction_scope": "-w_dec is an isolated off-manifold signed-axis test, not a semantic antifeature claim",
+    "heldout_valid_gate": "test AUROC>=0.75, positive heldout effect, positive support>=2",
+    "signed_candidate_count": 2,
+    "feature_candidate_count": 1
+  },
+  "summary_by_cohort_greedy": {
+    "semantic_new_intention_to_test": {
+      "n_features": 1,
+      "q_plus_mean": -0.019342784831047552,
+      "q_plus_median": -0.019342784831047552,
+      "q_plus_median_bootstrap_95": [
+        -0.019342784831047552,
+        -0.019342784831047552
+      ],
+      "r_minus_mean": 0.0466887023521358,
+      "r_minus_median": 0.0466887023521358,
+      "polarity_mean": 0.013672958760544123,
+      "polarity_median": 0.013672958760544123,
+      "polarity_median_bootstrap_95": [
+        0.013672958760544123,
+        0.013672958760544123
+      ],
+      "polarity_positive_fraction": 1.0,
+      "polarity_positive_sign_test_p_one_sided": 0.5,
+      "sign_accuracy": 0.0,
+      "signed_retrieval_top1": 0.5,
+      "signed_retrieval_top5": 1.0,
+      "signed_retrieval_mrr": 0.75,
+      "feature_retrieval_top1": 1.0,
+      "feature_retrieval_top5": 1.0,
+      "feature_retrieval_mrr": 1.0,
+      "exact_plus_minus_text_match_fraction": 0.0,
+      "mean_plus_minus_token_jaccard": 0.19444444444444445
+    },
+    "semantic_new_heldout_valid": {
+      "n": 0
+    },
+    "semantic_legacy": {
+      "n": 0
+    },
+    "structural": {
+      "n": 0
+    },
+    "active_nonselective": {
+      "n": 0
+    },
+    "gaussian": {
+      "n": 0
+    }
+  },
+  "carrier_summary": {
+    "semantic_new_intention_to_test": {
+      "n_features": 1,
+      "amplify_minus_high_cos_centered_mean": 0.0,
+      "amplify_minus_high_cos_centered_median": 0.0,
+      "amplify_minus_high_cos_centered_positive_fraction": 0.0,
+      "high_minus_ablate_cos_centered_mean": 0.0,
+      "high_minus_ablate_cos_centered_median": 0.0,
+      "high_minus_ablate_cos_centered_positive_fraction": 0.0,
+      "insert_minus_low_cos_centered_mean": 0.0,
+      "insert_minus_low_cos_centered_median": 0.0,
+      "insert_minus_low_cos_centered_positive_fraction": 0.0
+    },
+    "semantic_new_heldout_valid": {
+      "n": 0
+    },
+    "semantic_legacy": {
+      "n": 0
+    }
+  },
+  "generic_control": {
+    "texts": [
+      "The passage uses a structured informational style and continues the current topic.",
+      "This is a coherent piece of explanatory prose with ordinary grammatical structure.",
+      "The context establishes a subject and prepares a likely continuation of the discussion.",
+      "The text contains semantic and syntactic information typical of a written document.",
+      "A descriptive answer is being developed in a clear and organized format.",
+      "The final token fits a locally predictable continuation in the surrounding sentence.",
+      "The activation reflects general language structure, topical context, and discourse form.",
+      "This appears to be an informative response that elaborates on previously introduced material."
+    ],
+    "mean_abs_centered_cos_all_directions": 0.039995400563372724,
+    "max_abs_centered_cos_all_directions": 0.05129465549661928,
+    "mean_abs_centered_cos_by_group": {
+      "semantic_new": 0.039995400563372724
+    }
+  },
+  "polarity_rows": [
+    {
+      "direction_index": 0,
+      "feature": 8347,
+      "group": "semantic_new",
+      "label": "domain:biology",
+      "selection_tier": "strict",
+      "sample_index": 0,
+      "q_plus": -0.019342784831047552,
+      "q_minus_axis": -0.0466887023521358,
+      "r_minus": 0.0466887023521358,
+      "polarity": 0.013672958760544123,
+      "difference_direction_cos_centered": 0.022608064093616778,
+      "sign_correct": false,
+      "explanations_exactly_equal": false,
+      "explanation_token_jaccard": 0.19444444444444445,
+      "plus_signed_rank": 2,
+      "minus_signed_rank": 1,
+      "plus_feature_rank": 1,
+      "minus_feature_rank": 1
+    }
+  ],
+  "carrier_effects": [
+    {
+      "direction_index": 0,
+      "feature": 8347,
+      "group": "semantic_new",
+      "label": "domain:biology",
+      "selection_tier": "strict",
+      "heldout_auc": 0.5,
+      "heldout_effect": 0.0,
+      "carrier_activation": 0.0,
+      "amplify_minus_high_cos_centered": 0.0,
+      "high_minus_ablate_cos_centered": 0.0,
+      "insert_minus_low_cos_centered": 0.0,
+      "amplify_text_jaccard": 1.0,
+      "ablate_text_jaccard": 1.0,
+      "insert_text_jaccard": 1.0,
+      "amplify_text_changed": false,
+      "ablate_text_changed": false,
+      "insert_text_changed": false
+    }
+  ],
+  "stochastic_by_feature": [],
+  "scored_generation_rows": [
+    {
+      "key": "direction:f8347:s+1:sample0",
+      "probe_type": "direction",
+      "direction_index": 0,
+      "feature": 8347,
+      "group": "semantic_new",
+      "label": "domain:biology",
+      "selection_tier": "strict",
+      "sign": 1,
+      "sample_index": 0,
+      "temperature": 0.0,
+      "seed": 1304082097,
+      "raw_completion": "<explanation>\nArticle structure: a technical explainer with a recipe/tutorial format, following a pattern of describing a specific AI/ML topic with embedded code snippets.\n\nThe phrase \"import numpy as np\" signals a Python code block block, suggesting a standard NumPy import statement typical in ML documentation.\n\nFinal token \"it'\" opens a repeated phrase \"print(np.dot(...))\"",
+      "explanation": "<explanation>\nArticle structure: a technical explainer with a recipe/tutorial format, following a pattern of describing a specific AI/ML topic with embedded code snippets.\n\nThe phrase \"import numpy as np\" signals a Python code block block, suggesting a standard NumPy import statement typical in ML documentation.\n\nFinal token \"it'\" opens a repeated phrase \"print(np.dot(...))\"",
+      "explanation_tag_ok": false,
+      "generation_seconds": 4.28036904335022,
+      "completed_at_utc": "2026-07-26T07:42:25.264021+00:00",
+      "input_norm": 64446.45703125,
+      "reconstruction_norm": 54714.94921875,
+      "axis_cos_centered": -0.019342784831047552,
+      "target_cos_centered": -0.019342784831047552,
+      "target_cos_raw": 0.014111431760257184,
+      "signed_retrieval_rank": 2,
+      "feature_retrieval_rank": 1,
+      "signed_top5_indices": [
+        1,
+        0
+      ],
+      "feature_top5_direction_indices": [
+        0
+      ]
+    },
+    {
+      "key": "direction:f8347:s-1:sample0",
+      "probe_type": "direction",
+      "direction_index": 0,
+      "feature": 8347,
+      "group": "semantic_new",
+      "label": "domain:biology",
+      "selection_tier": "strict",
+      "sign": -1,
+      "sample_index": 0,
+      "temperature": 0.0,
+      "seed": 1314178586,
+      "raw_completion": "<explanation>\nTechnical bug report structure: code review context with a specific bug description, expecting a walkthrough of the problem with the Google Analytics API.\n\nThe phrase \"The function is using the `set_page_view` method\" signals a code block or snippet is incoming, likely showing the `page_view` function or the model.\n\nFinal token \"'\" ends a file metadata header",
+      "explanation": "<explanation>\nTechnical bug report structure: code review context with a specific bug description, expecting a walkthrough of the problem with the Google Analytics API.\n\nThe phrase \"The function is using the `set_page_view` method\" signals a code block or snippet is incoming, likely showing the `page_view` function or the model.\n\nFinal token \"'\" ends a file metadata header",
+      "explanation_tag_ok": false,
+      "generation_seconds": 3.8853044509887695,
+      "completed_at_utc": "2026-07-26T07:42:29.150608+00:00",
+      "input_norm": 64446.45703125,
+      "reconstruction_norm": 58433.9375,
+      "axis_cos_centered": -0.0466887023521358,
+      "target_cos_centered": 0.0466887023521358,
+      "target_cos_raw": -0.011020671434624416,
+      "signed_retrieval_rank": 1,
+      "feature_retrieval_rank": 1,
+      "signed_top5_indices": [
+        1,
+        0
+      ],
+      "feature_top5_direction_indices": [
+        0
+      ]
+    },
+    {
+      "key": "carrier:f8347:high_baseline:row883",
+      "probe_type": "carrier",
+      "direction_index": 0,
+      "feature": 8347,
+      "group": "semantic_new",
+      "label": "domain:biology",
+      "selection_tier": "strict",
+      "carrier_condition": "high_baseline",
+      "carrier_row_index": 883,
+      "carrier_doc_id": 15,
+      "intervention_coefficient": 0.0,
+      "sample_index": 0,
+      "temperature": 0.0,
+      "seed": 387219707,
+      "raw_completion": "<explanation>\nEducational biology question format signals a structured answer explaining protein synthesis, establishing a conceptual overview of gene expression.\n\nThe phrase \"This process involves many steps: transcription, RNA processing, translation\" sets up a summary statement about the journey of a protein from DNA to functional molecule.\n\nFinal token \"it'\" opens a noun phrase (\"the whole complex process...includes many players\"), immediately requiring",
+      "explanation": "<explanation>\nEducational biology question format signals a structured answer explaining protein synthesis, establishing a conceptual overview of gene expression.\n\nThe phrase \"This process involves many steps: transcription, RNA processing, translation\" sets up a summary statement about the journey of a protein from DNA to functional molecule.\n\nFinal token \"it'\" opens a noun phrase (\"the whole complex process...includes many players\"), immediately requiring",
+      "explanation_tag_ok": false,
+      "generation_seconds": 3.8441286087036133,
+      "completed_at_utc": "2026-07-26T07:42:32.995627+00:00",
+      "input_norm": 66630.9765625,
+      "reconstruction_norm": 63441.5234375
+    },
+    {
+      "key": "carrier:f8347:high_amplify:row883",
+      "probe_type": "carrier",
+      "direction_index": 0,
+      "feature": 8347,
+      "group": "semantic_new",
+      "label": "domain:biology",
+      "selection_tier": "strict",
+      "carrier_condition": "high_amplify",
+      "carrier_row_index": 883,
+      "carrier_doc_id": 15,
+      "intervention_coefficient": 0.0,
+      "sample_index": 0,
+      "temperature": 0.0,
+      "seed": 954770166,
+      "raw_completion": "<explanation>\nEducational biology question format signals a structured answer explaining protein synthesis, establishing a conceptual overview of gene expression.\n\nThe phrase \"This process involves many steps: transcription, RNA processing, translation\" sets up a summary statement about the journey of a protein from DNA to functional molecule.\n\nFinal token \"it'\" opens a noun phrase (\"the whole complex process...includes many players\"), immediately requiring",
+      "explanation": "<explanation>\nEducational biology question format signals a structured answer explaining protein synthesis, establishing a conceptual overview of gene expression.\n\nThe phrase \"This process involves many steps: transcription, RNA processing, translation\" sets up a summary statement about the journey of a protein from DNA to functional molecule.\n\nFinal token \"it'\" opens a noun phrase (\"the whole complex process...includes many players\"), immediately requiring",
+      "explanation_tag_ok": false,
+      "generation_seconds": 3.866093635559082,
+      "completed_at_utc": "2026-07-26T07:42:36.862588+00:00",
+      "input_norm": 66630.9765625,
+      "reconstruction_norm": 63441.5234375
+    },
+    {
+      "key": "carrier:f8347:high_ablate:row883",
+      "probe_type": "carrier",
+      "direction_index": 0,
+      "feature": 8347,
+      "group": "semantic_new",
+      "label": "domain:biology",
+      "selection_tier": "strict",
+      "carrier_condition": "high_ablate",
+      "carrier_row_index": 883,
+      "carrier_doc_id": 15,
+      "intervention_coefficient": 0.0,
+      "sample_index": 0,
+      "temperature": 0.0,
+      "seed": 1349480114,
+      "raw_completion": "<explanation>\nEducational biology question format signals a structured answer explaining protein synthesis, establishing a conceptual overview of gene expression.\n\nThe phrase \"This process involves many steps: transcription, RNA processing, translation\" sets up a summary statement about the journey of a protein from DNA to functional molecule.\n\nFinal token \"it'\" opens a noun phrase (\"the whole complex process...includes many players\"), immediately requiring",
+      "explanation": "<explanation>\nEducational biology question format signals a structured answer explaining protein synthesis, establishing a conceptual overview of gene expression.\n\nThe phrase \"This process involves many steps: transcription, RNA processing, translation\" sets up a summary statement about the journey of a protein from DNA to functional molecule.\n\nFinal token \"it'\" opens a noun phrase (\"the whole complex process...includes many players\"), immediately requiring",
+      "explanation_tag_ok": false,
+      "generation_seconds": 3.898569107055664,
+      "completed_at_utc": "2026-07-26T07:42:40.761943+00:00",
+      "input_norm": 66630.9765625,
+      "reconstruction_norm": 63441.5234375
+    },
+    {
+      "key": "carrier:f8347:low_baseline:row883",
+      "probe_type": "carrier",
+      "direction_index": 0,
+      "feature": 8347,
+      "group": "semantic_new",
+      "label": "domain:biology",
+      "selection_tier": "strict",
+      "carrier_condition": "low_baseline",
+      "carrier_row_index": 883,
+      "carrier_doc_id": 15,
+      "intervention_coefficient": 0.0,
+      "sample_index": 0,
+      "temperature": 0.0,
+      "seed": 1196805305,
+      "raw_completion": "<explanation>\nEducational biology question format signals a structured answer explaining protein synthesis, establishing a conceptual overview of gene expression.\n\nThe phrase \"This process involves many steps: transcription, RNA processing, translation\" sets up a summary statement about the journey of a protein from DNA to functional molecule.\n\nFinal token \"it'\" opens a noun phrase (\"the whole complex process...includes many players\"), immediately requiring",
+      "explanation": "<explanation>\nEducational biology question format signals a structured answer explaining protein synthesis, establishing a conceptual overview of gene expression.\n\nThe phrase \"This process involves many steps: transcription, RNA processing, translation\" sets up a summary statement about the journey of a protein from DNA to functional molecule.\n\nFinal token \"it'\" opens a noun phrase (\"the whole complex process...includes many players\"), immediately requiring",
+      "explanation_tag_ok": false,
+      "generation_seconds": 3.8490657806396484,
+      "completed_at_utc": "2026-07-26T07:42:44.611596+00:00",
+      "input_norm": 66630.9765625,
+      "reconstruction_norm": 63441.5234375
+    },
+    {
+      "key": "carrier:f8347:low_insert:row883",
+      "probe_type": "carrier",
+      "direction_index": 0,
+      "feature": 8347,
+      "group": "semantic_new",
+      "label": "domain:biology",
+      "selection_tier": "strict",
+      "carrier_condition": "low_insert",
+      "carrier_row_index": 883,
+      "carrier_doc_id": 15,
+      "intervention_coefficient": 0.0,
+      "sample_index": 0,
+      "temperature": 0.0,
+      "seed": 1701111632,
+      "raw_completion": "<explanation>\nEducational biology question format signals a structured answer explaining protein synthesis, establishing a conceptual overview of gene expression.\n\nThe phrase \"This process involves many steps: transcription, RNA processing, translation\" sets up a summary statement about the journey of a protein from DNA to functional molecule.\n\nFinal token \"it'\" opens a noun phrase (\"the whole complex process...includes many players\"), immediately requiring",
+      "explanation": "<explanation>\nEducational biology question format signals a structured answer explaining protein synthesis, establishing a conceptual overview of gene expression.\n\nThe phrase \"This process involves many steps: transcription, RNA processing, translation\" sets up a summary statement about the journey of a protein from DNA to functional molecule.\n\nFinal token \"it'\" opens a noun phrase (\"the whole complex process...includes many players\"), immediately requiring",
+      "explanation_tag_ok": false,
+      "generation_seconds": 3.8426270484924316,
+      "completed_at_utc": "2026-07-26T07:42:48.455448+00:00",
+      "input_norm": 66630.9765625,
+      "reconstruction_norm": 63441.5234375
+    }
+  ]
+}

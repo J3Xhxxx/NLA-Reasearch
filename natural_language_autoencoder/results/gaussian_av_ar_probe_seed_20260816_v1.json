@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "experiment": "single_gaussian_activation_av_ar_probe",
+  "scope": "exploratory OOD control; not semantic or proposition-level fidelity",
+  "created_at_utc": "2026-08-16T09:48:33.140663+00:00",
+  "generation": {
+    "seed": 20260816,
+    "bit_generator": "NumPy PCG64",
+    "dimension": 3840,
+    "distribution": "independent N(0, sigma^2) coordinates",
+    "sigma": 1064.509137364525,
+    "sigma_rule": "mean_reference_l2_norm / sqrt(dimension)",
+    "reference_mean_l2_norm": 65965.21857437487,
+    "input_activation_sha256_float32_bytes": "e30e502e794c9dea1d748db651d0c36985225bc3bbe5657deaad3f05aed5c884"
+  },
+  "models": {
+    "av_path": "/root/autodl-tmp/models/nla-gemma3-12b-L32-av",
+    "ar_path": "/root/autodl-tmp/models/nla-gemma3-12b-L32-ar",
+    "av_injection_scale": 80000.0,
+    "ar_mse_scale": 61.96773353931867,
+    "av_temperature": 0.0,
+    "av_max_new_tokens": 256
+  },
+  "reference": {
+    "path": "/root/autodl-tmp/results/n4_recon_vectors_v1.npz",
+    "sha256": "e9d89713dc64381a52f05224d6522abb0ec547777a8c6a7f08b841a72a339967",
+    "n": 200,
+    "dimension": 3840,
+    "norm_mean": 65965.21857437487,
+    "norm_median": 64771.29110025123,
+    "norm_std": 14594.913822288449
+  },
+  "input_diagnostics": {
+    "shape": [
+      3840
+    ],
+    "dtype": "float32",
+    "mean": 10.574341757038686,
+    "std": 1074.3171933530898,
+    "minimum": -4586.13525390625,
+    "maximum": 3928.42138671875,
+    "l2_norm": 66576.22634821376,
+    "reference_norm_percentile": 53.0,
+    "av_effective_injected_l2_norm": 80000.00008671873,
+    "nearest_real_raw_cosine": 0.041136739937393314,
+    "nearest_real_raw_index": 109,
+    "mean_real_raw_cosine": 0.03221944252451886,
+    "nearest_real_centered_cosine": 0.05176456961771573,
+    "nearest_real_centered_index": 109,
+    "mean_real_centered_cosine": 0.0006075974848159793,
+    "interpretation": "Norm-matched isotropic Gaussian; covariance/mean structure is not matched, so this remains an out-of-distribution random direction."
+  },
+  "av": {
+    "explanation": "Article structure: a technical explainer with a Q&A format, following a structured essay pattern of listing and analyzing the problem.\n\nThe phrase \"The following table\" signals a citation/reference pattern, likely a truncated URL or publication detail for the \"The Role of the...\"\n\nFinal token \"it'\" opens a repeated phrase (\"it.'\") — likely a truncated word or phrase like \"it.\" or \"The 1999\" or \"The article\" continuing the citation/footnote pattern, or \"The text\" or \"The phrase '...\" — likely \"The article is\" or \"The answer is\" referencing a specific academic/medical context.",
+    "explanation_utf8_sha256": "dcc83aa5b6d66d0a2533fd01868d08f027a6e262f939de8789dd78b52c824b65",
+    "seconds": 24.583941835910082
+  },
+  "ar": {
+    "reconstruction_sha256_float32_bytes": "dd3b3f4b351291812ccd4483970d2924c575562c80084f8047ae41721a7f1164",
+    "reconstruction_l2_norm": 28793.970691303275,
+    "direction_cosine": 0.03328464243369315,
+    "direction_mse": 1.9334307151326138,
+    "direction_mse_definition": "2 * (1 - direction_cosine)",
+    "centered_cosine_using_frozen_n4_mean_direction": 0.006454578584904192,
+    "raw_relative_l2_error": 1.0762258450967424,
+    "seconds": 8.334308106452227,
+    "interpretation": "These scores measure AV-to-AR direction reconstruction only; they do not validate the truth of the AV text."
+  },
+  "artifacts": {
+    "npz": "/root/autodl-tmp/results/gaussian_av_ar_probe_seed_20260816_v1.npz",
+    "json": "/root/autodl-tmp/results/gaussian_av_ar_probe_seed_20260816_v1.json",
+    "markdown": "/root/autodl-tmp/results/gaussian_av_ar_probe_seed_20260816_v1.md"
+  },
+  "runtime_seconds": 33.42881795950234
+}

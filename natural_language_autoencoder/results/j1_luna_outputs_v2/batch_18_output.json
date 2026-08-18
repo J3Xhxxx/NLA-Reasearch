@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "batch_id": 18,
+  "agent_task": "/root/luna_batch_18",
+  "role": "luna_worker",
+  "model": "gpt-5.6-luna",
+  "reasoning": "max",
+  "public_prompt_sha256": "0a46487f1c845550a88fcbebec33a569cf9ef8c44735f31728362009945d41d5",
+  "cases": [
+    {
+      "case_id": "case_gv9fw6j0dhawj0n420",
+      "hypothesis": "Chinese-language prose prompts ask for coherent continuation of unfinished clauses across varied genres.",
+      "positive_cues": [
+        "All four snippets are Chinese-looking text rendered with mojibake encoding.",
+        "Each explicitly identifies a final token or clause ending and proposes a noun-phrase continuation.",
+        "The surrounding genres include Q&A, community help, game advice, and literary narrative."
+      ],
+      "exclusion_cues": [
+        "The snippets have no shared subject matter or named entity.",
+        "Encoding corruption prevents reliable identification of an exact lexical answer.",
+        "They provide continuation descriptions rather than a completed response."
+      ],
+      "abstain": false,
+      "confidence": 0.9
+    },
+    {
+      "case_id": "case_04g6yg1gjkx0q7xfcd",
+      "hypothesis": "The passages concern weekend or Sunday activities, schedules, and availability.",
+      "positive_cues": [
+        "Weekend appears in the NPR program reference and the programming warning.",
+        "Sunday roast and Sunday lunch explicitly describe a day-specific activity.",
+        "The florist passage discusses hours varying on weekends."
+      ],
+      "exclusion_cues": [
+        "The domains differ substantially: broadcasting, food culture, programming, and retail.",
+        "The legal citation contexts do not themselves establish a weekend topic.",
+        "The exact continuation after each final token is not shown."
+      ],
+      "abstain": false,
+      "confidence": 0.96
+    },
+    {
+      "case_id": "case_4tog2zhqm7cfi2pv0w",
+      "hypothesis": "English clauses use make, makes, or made and require a causal result or complement continuation.",
+      "positive_cues": [
+        "Every highlighted position is the lemma make in the forms made, makes, or make.",
+        "The contexts describe things made special, a person made beautiful, food made tastier, or a reason someone thinks something.",
+        "Each highlighted verb opens or ends a clause needing an object, complement, or result."
+      ],
+      "exclusion_cues": [
+        "The examples span video-game reviews, romantic lyrics, food narrative, and moral dialogue.",
+        "The particular semantic roles of make differ across examples.",
+        "No single continuation phrase is supplied."
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_f0088fb7bd5n0xa8te",
+      "hypothesis": "French text contains short character or subword continuations within numbers, addresses, and narrative words.",
+      "positive_cues": [
+        "All visible contexts are French prose or French-formatted addresses and telephone numbers.",
+        "The active spans are very short fragments: digits 4 and 0, the letters ch, and the letter b.",
+        "Each fragment sits inside a larger number or word that would continue orthographically."
+      ],
+      "exclusion_cues": [
+        "The contexts mix contact information with unrelated narrative sentences.",
+        "Active-span lengths and functions differ between digits and letters.",
+        "There is no shared topic beyond French text and local fragment completion."
+      ],
+      "abstain": false,
+      "confidence": 0.88
+    },
+    {
+      "case_id": "case_y2t39786iwm5avv9fj",
+      "hypothesis": "English prose continues clauses after discourse punctuation or connective words such as semicolon, comma, But, and that.",
+      "positive_cues": [
+        "The highlighted spans are a semicolon, comma, But, and that.",
+        "Each marker occurs at a clause boundary or introduces a subordinate or contrasting clause.",
+        "The surrounding profile, news, literary, and fitness passages all need ordinary sentence continuation."
+      ],
+      "exclusion_cues": [
+        "The passages cover unrelated people, medical advice, education criticism, and book discussion.",
+        "The highlighted items are not one lexical lemma or one topic.",
+        "The exact next clause after each marker is omitted."
+      ],
+      "abstain": false,
+      "confidence": 0.95
+    }
+  ]
+}

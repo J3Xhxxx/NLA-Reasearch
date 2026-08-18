@@ -1,0 +1,111 @@
++ PY=/root/miniconda3/bin/python
++ CMP=/root/autodl-tmp/nla_compare
++ MODELS=/root/autodl-tmp/models
++ ACTS=/root/autodl-tmp/activations/acts_L32.parquet
++ RES=/root/autodl-tmp/results
++ SAE=/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small
++ cd /root/autodl-tmp/nla_compare
++ export HF_HOME=/root/autodl-tmp/hf
++ HF_HOME=/root/autodl-tmp/hf
++ /root/miniconda3/bin/python 06_pilot_wdec.py --av /root/autodl-tmp/models/nla-gemma3-12b-L32-av --ar /root/autodl-tmp/models/nla-gemma3-12b-L32-ar --sae /root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small --activations /root/autodl-tmp/activations/acts_L32.parquet --out /root/autodl-tmp/results/wdec_pilot.json
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[NLAClient] nla-gemma3-12b-L32-av: d_model=3840 inj_scale=80000.0 embed_scale=61.97 inj_char='㈜'(id=246566)
+Loading weights:   0%|          | 0/626 [00:00<?, ?it/s]Loading weights:   0%|          | 1/626 [00:00<02:26,  4.26it/s]Loading weights:   2%|▏         | 14/626 [00:00<00:11, 51.22it/s]Loading weights:   5%|▍         | 29/626 [00:00<00:07, 82.93it/s]Loading weights:   7%|▋         | 42/626 [00:00<00:06, 91.17it/s]Loading weights:   9%|▉         | 55/626 [00:00<00:06, 93.69it/s]Loading weights:  11%|█         | 68/626 [00:00<00:05, 95.35it/s]Loading weights:  13%|█▎        | 81/626 [00:00<00:05, 96.29it/s]Loading weights:  15%|█▍        | 92/626 [00:01<00:05, 99.61it/s]Loading weights:  16%|█▋        | 103/626 [00:01<00:05, 94.85it/s]Loading weights:  18%|█▊        | 113/626 [00:01<00:05, 89.51it/s]Loading weights:  20%|█▉        | 123/626 [00:01<00:05, 85.26it/s]Loading weights:  21%|██▏       | 134/626 [00:01<00:05, 91.57it/s]Loading weights:  23%|██▎       | 147/626 [00:01<00:05, 94.78it/s]Loading weights:  26%|██▌       | 160/626 [00:01<00:04, 96.78it/s]Loading weights:  28%|██▊       | 173/626 [00:01<00:04, 98.13it/s]Loading weights:  30%|██▉       | 186/626 [00:02<00:04, 97.53it/s]Loading weights:  32%|███▏      | 198/626 [00:02<00:04, 97.78it/s]Loading weights:  33%|███▎      | 209/626 [00:02<00:04, 92.75it/s]Loading weights:  35%|███▌      | 222/626 [00:02<00:03, 101.12it/s]Loading weights:  37%|███▋      | 233/626 [00:02<00:03, 98.67it/s] Loading weights:  39%|███▉      | 243/626 [00:02<00:04, 95.34it/s]Loading weights:  40%|████      | 253/626 [00:02<00:04, 88.13it/s]Loading weights:  42%|████▏     | 265/626 [00:02<00:04, 88.47it/s]Loading weights:  44%|████▍     | 277/626 [00:03<00:03, 89.18it/s]Loading weights:  46%|████▌     | 286/626 [00:03<00:03, 88.45it/s]Loading weights:  47%|████▋     | 295/626 [00:03<00:03, 83.74it/s]Loading weights:  49%|████▊     | 304/626 [00:03<00:04, 78.77it/s]Loading weights:  50%|█████     | 316/626 [00:03<00:03, 88.10it/s]Loading weights:  52%|█████▏    | 328/626 [00:03<00:03, 96.07it/s]Loading weights:  54%|█████▍    | 339/626 [00:03<00:02, 99.14it/s]Loading weights:  56%|█████▌    | 350/626 [00:03<00:02, 96.18it/s]Loading weights:  58%|█████▊    | 360/626 [00:04<00:03, 88.19it/s]Loading weights:  59%|█████▉    | 370/626 [00:04<00:02, 86.30it/s]Loading weights:  61%|██████    | 381/626 [00:04<00:02, 85.18it/s]Loading weights:  63%|██████▎   | 395/626 [00:04<00:02, 91.87it/s]Loading weights:  65%|██████▌   | 407/626 [00:04<00:02, 97.40it/s]Loading weights:  67%|██████▋   | 419/626 [00:04<00:02, 100.06it/s]Loading weights:  69%|██████▉   | 432/626 [00:04<00:01, 100.94it/s]Loading weights:  71%|███████   | 445/626 [00:04<00:01, 99.56it/s] Loading weights:  73%|███████▎  | 456/626 [00:04<00:01, 102.11it/s]Loading weights:  75%|███████▍  | 467/626 [00:05<00:01, 96.47it/s] Loading weights:  76%|███████▌  | 477/626 [00:05<00:01, 92.80it/s]Loading weights:  78%|███████▊  | 487/626 [00:05<00:01, 82.11it/s]Loading weights:  80%|███████▉  | 499/626 [00:05<00:01, 84.67it/s]Loading weights:  82%|████████▏ | 511/626 [00:05<00:01, 92.95it/s]Loading weights:  84%|████████▎ | 524/626 [00:05<00:01, 88.98it/s]Loading weights:  86%|████████▌ | 536/626 [00:05<00:00, 96.27it/s]Loading weights:  87%|████████▋ | 547/626 [00:05<00:00, 98.70it/s]Loading weights:  89%|████████▉ | 558/626 [00:06<00:00, 86.48it/s]Loading weights:  91%|█████████ | 568/626 [00:06<00:00, 85.23it/s]Loading weights:  92%|█████████▏| 577/626 [00:06<00:00, 79.17it/s]Loading weights:  94%|█████████▍| 589/626 [00:06<00:00, 88.43it/s]Loading weights:  96%|█████████▌| 600/626 [00:06<00:00, 93.11it/s]Loading weights:  98%|█████████▊| 611/626 [00:06<00:00, 97.24it/s]Loading weights:  99%|█████████▉| 621/626 [00:06<00:00, 92.91it/s]Loading weights: 100%|██████████| 626/626 [00:06<00:00, 91.34it/s]
+Loading weights:   0%|          | 0/430 [00:00<?, ?it/s]Loading weights: 100%|██████████| 430/430 [00:00<00:00, 8758.12it/s]
+[transformers] [1mGemma3ForCausalLM LOAD REPORT[0m from: /root/autodl-tmp/models/nla-gemma3-12b-L32-ar
+Key               | Status  | 
+------------------+---------+-
+model.norm.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[NLACritic] 33 layers  d_model=3840  mse_scale=61.97
+[top:161] fire=19 cos=-0.878  'Academic/forum post structure: text is a wiki/forum question with frag'
+[top:166] fire=13 cos=-0.946  'Article structure: informational blog post summarizing a research piec'
+[top:443] fire=12 cos=-0.935  'Structured article format with consistent pattern: code block, tutoria'
+[top:490] fire=11 cos=0.885  'Technical documentation pattern: structured article about a specific U'
+[top:565] fire=7 cos=-0.782  '<explanation>\nWiki/lore article structure signals a recurring pattern:'
+[top:5389] fire=7 cos=0.117  'Encyclopedic/Wikipedia structure: article format with structured secti'
+[top:1491] fire=6 cos=0.365  'Educational slideshow format with structured definitions, following a '
+[top:7508] fire=6 cos=-0.069  'Article structure: technical explainer with consistent pattern of pres'
+[top:2190] fire=6 cos=0.087  'Article structure: travel guide format with structured prose, continui'
+[top:11642] fire=6 cos=0.076  'Structured article format with technical documentation style: a review'
+[top:276] fire=5 cos=0.810  'Structured article format signals a Q&A explainer, with a technical an'
+[top:239] fire=5 cos=0.922  'Structured article format with a formal academic response, following a'
+[rand:4524] fire=0 cos=-0.499  'Article structure: informational/review format with a technical explai'
+[rand:10497] fire=0 cos=0.246  'Technical documentation pattern: structured article format with factua'
+[rand:8461] fire=0 cos=-0.080  'Structured article format with factual, journalistic tone signals a ga'
+[rand:5146] fire=0 cos=0.094  'Structured article format with consistent pattern: technical documenta'
+[rand:717] fire=0 cos=-0.790  'Article structure: a technical explainer with a consistent pattern of '
+[rand:13957] fire=0 cos=0.102  'Structured article format with factual, encyclopedic tone — following '
+[gauss:-1] fire=0 cos=0.022  'Structured academic paper format with numbered sections and citations,'
+[gauss:-2] fire=0 cos=0.019  'Structured article format with consistent pattern: code block, descrip'
+[gauss:-3] fire=0 cos=-0.001  'Structured article format with consistent pattern: technical documenta'
+[gauss:-4] fire=0 cos=0.012  'Article structure: a technical blog post with a formatted summary sect'
+
+WDEC summary: {"top": {"n": 12, "mean_cos": -0.0292, "min": -0.9462, "max": 0.9219}, "rand": {"n": 6, "mean_cos": -0.1544, "min": -0.79, "max": 0.2462}, "gauss": {"n": 4, "mean_cos": 0.0129, "min": -0.0009, "max": 0.0223}}
+wrote -> /root/autodl-tmp/results/wdec_pilot.json
++ /root/miniconda3/bin/python 07_pilot_residual.py --av /root/autodl-tmp/models/nla-gemma3-12b-L32-av --ar /root/autodl-tmp/models/nla-gemma3-12b-L32-ar --sae /root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small --activations /root/autodl-tmp/activations/acts_L32.parquet --nla /root/autodl-tmp/results/nla_results.json --out /root/autodl-tmp/results/resid_pilot.json
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[NLAClient] nla-gemma3-12b-L32-av: d_model=3840 inj_scale=80000.0 embed_scale=61.97 inj_char='㈜'(id=246566)
+Loading weights:   0%|          | 0/626 [00:00<?, ?it/s]Loading weights:   0%|          | 1/626 [00:00<02:14,  4.66it/s]Loading weights:   3%|▎         | 17/626 [00:00<00:09, 62.23it/s]Loading weights:   5%|▍         | 30/626 [00:00<00:07, 77.96it/s]Loading weights:   7%|▋         | 43/626 [00:00<00:06, 91.67it/s]Loading weights:   9%|▉         | 56/626 [00:00<00:06, 94.43it/s]Loading weights:  11%|█         | 69/626 [00:00<00:05, 101.91it/s]Loading weights:  13%|█▎        | 82/626 [00:00<00:05, 103.91it/s]Loading weights:  15%|█▌        | 95/626 [00:01<00:05, 101.25it/s]Loading weights:  17%|█▋        | 108/626 [00:01<00:04, 107.57it/s]Loading weights:  19%|█▉        | 121/626 [00:01<00:04, 104.08it/s]Loading weights:  21%|██▏       | 134/626 [00:01<00:04, 103.49it/s]Loading weights:  23%|██▎       | 147/626 [00:01<00:04, 108.72it/s]Loading weights:  26%|██▌       | 160/626 [00:01<00:04, 105.57it/s]Loading weights:  28%|██▊       | 173/626 [00:01<00:04, 103.94it/s]Loading weights:  30%|██▉       | 186/626 [00:01<00:04, 97.43it/s] Loading weights:  32%|███▏      | 200/626 [00:02<00:04, 103.46it/s]Loading weights:  34%|███▍      | 212/626 [00:02<00:03, 107.53it/s]Loading weights:  36%|███▌      | 224/626 [00:02<00:03, 110.53it/s]Loading weights:  38%|███▊      | 237/626 [00:02<00:03, 106.24it/s]Loading weights:  40%|███▉      | 250/626 [00:02<00:03, 105.32it/s]Loading weights:  42%|████▏     | 263/626 [00:02<00:03, 107.42it/s]Loading weights:  44%|████▍     | 274/626 [00:02<00:03, 107.55it/s]Loading weights:  46%|████▌     | 285/626 [00:02<00:03, 102.15it/s]Loading weights:  47%|████▋     | 296/626 [00:03<00:03, 95.87it/s] Loading weights:  49%|████▉     | 306/626 [00:03<00:03, 92.72it/s]Loading weights:  50%|█████     | 316/626 [00:03<00:03, 93.91it/s]Loading weights:  52%|█████▏    | 327/626 [00:03<00:03, 98.26it/s]Loading weights:  54%|█████▍    | 339/626 [00:03<00:02, 103.47it/s]Loading weights:  56%|█████▌    | 350/626 [00:03<00:02, 99.78it/s] Loading weights:  58%|█████▊    | 361/626 [00:03<00:02, 95.59it/s]Loading weights:  59%|█████▉    | 371/626 [00:03<00:02, 91.21it/s]Loading weights:  61%|██████    | 382/626 [00:03<00:02, 89.03it/s]Loading weights:  63%|██████▎   | 395/626 [00:04<00:02, 93.58it/s]Loading weights:  65%|██████▌   | 407/626 [00:04<00:02, 99.04it/s]Loading weights:  67%|██████▋   | 419/626 [00:04<00:01, 104.27it/s]Loading weights:  69%|██████▉   | 432/626 [00:04<00:01, 103.25it/s]Loading weights:  71%|███████   | 445/626 [00:04<00:01, 101.27it/s]Loading weights:  73%|███████▎  | 456/626 [00:04<00:01, 103.43it/s]Loading weights:  75%|███████▍  | 467/626 [00:04<00:01, 97.58it/s] Loading weights:  76%|███████▌  | 477/626 [00:04<00:01, 93.76it/s]Loading weights:  78%|███████▊  | 487/626 [00:05<00:01, 87.02it/s]Loading weights:  80%|███████▉  | 499/626 [00:05<00:01, 88.11it/s]Loading weights:  82%|████████▏ | 511/626 [00:05<00:01, 95.90it/s]Loading weights:  84%|████████▎ | 524/626 [00:05<00:01, 96.61it/s]Loading weights:  86%|████████▌ | 536/626 [00:05<00:00, 102.31it/s]Loading weights:  87%|████████▋ | 547/626 [00:05<00:00, 102.21it/s]Loading weights:  89%|████████▉ | 558/626 [00:05<00:00, 95.38it/s] Loading weights:  91%|█████████ | 568/626 [00:05<00:00, 91.58it/s]Loading weights:  92%|█████████▏| 578/626 [00:05<00:00, 88.84it/s]Loading weights:  94%|█████████▍| 589/626 [00:06<00:00, 93.99it/s]Loading weights:  96%|█████████▌| 601/626 [00:06<00:00, 100.49it/s]Loading weights:  98%|█████████▊| 612/626 [00:06<00:00, 101.19it/s]Loading weights: 100%|█████████▉| 623/626 [00:06<00:00, 95.65it/s] Loading weights: 100%|██████████| 626/626 [00:06<00:00, 97.70it/s]
+Loading weights:   0%|          | 0/430 [00:00<?, ?it/s]Loading weights: 100%|██████████| 430/430 [00:00<00:00, 9377.77it/s]
+[transformers] [1mGemma3ForCausalLM LOAD REPORT[0m from: /root/autodl-tmp/models/nla-gemma3-12b-L32-ar
+Key               | Status  | 
+------------------+---------+-
+model.norm.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[NLACritic] 33 layers  d_model=3840  mse_scale=61.97
+[1/40] frac=0.127 rr=-0.107 fr=-0.030 rx=0.973  'Article structure: informational/review format with a detail'
+[2/40] frac=0.115 rr=0.193 fr=0.285 rx=0.975  'Article structure: informational/academic tone with a struct'
+[3/40] frac=0.114 rr=0.231 fr=0.309 rx=0.978  'Structured article format with a standard FAQ/guide pattern:'
+[4/40] frac=0.159 rr=0.169 fr=0.269 rx=0.970  'Structured article format with a recipe/tutorial pattern: te'
+[5/40] frac=0.141 rr=-0.239 fr=-0.159 rx=0.973  'Structured article format with a consistent pattern: a detai'
+[6/40] frac=0.123 rr=-0.099 fr=-0.039 rx=0.975  'Article structure: a factual, encyclopedic review of a speci'
+[7/40] frac=0.142 rr=-0.055 fr=0.021 rx=0.972  'Article structure: informational/news format with a factual '
+[8/40] frac=0.115 rr=0.010 fr=0.070 rx=0.968  'Article structure: a technical review of a specific game, fo'
+[9/40] frac=0.144 rr=0.048 fr=0.142 rx=0.971  'Article structure: technical blog post format with a detaile'
+[10/40] frac=0.124 rr=0.047 fr=0.145 rx=0.975  'Article structure: a technical tutorial on a specific game/w'
+[11/40] frac=0.114 rr=0.093 fr=0.178 rx=0.981  'Structured article format with a technical explainer pattern'
+[12/40] frac=0.136 rr=-0.016 fr=0.086 rx=0.975  'Article structure: a review/tutorial format with a structure'
+[13/40] frac=0.122 rr=0.294 fr=0.365 rx=0.984  'Article structure: informational/tutorial format with a game'
+[14/40] frac=0.100 rr=0.022 fr=0.053 rx=0.965  'Article structure: educational explainer format with a stand'
+[15/40] frac=0.102 rr=0.102 fr=0.171 rx=0.976  'Encyclopedic/educational article structure: factual, informa'
+[16/40] frac=0.102 rr=0.207 fr=0.250 rx=0.975  'Structured article format with instructional tone: a detaile'
+[17/40] frac=0.137 rr=-0.263 fr=-0.180 rx=0.975  'Article structure: informational/technical writing about a s'
+[18/40] frac=0.148 rr=-0.424 fr=-0.342 rx=0.976  'Article structure: informational/analytical piece with a tec'
+[19/40] frac=0.127 rr=0.007 fr=0.083 rx=0.973  'Technical documentation pattern: structured article with cod'
+[20/40] frac=0.129 rr=-0.022 fr=0.059 rx=0.980  'Article structure: a factual, journalistic review of a speci'
+[21/40] frac=0.118 rr=-0.096 fr=-0.024 rx=0.975  'Structured article format with academic/technical documentat'
+[22/40] frac=0.137 rr=-0.379 fr=-0.320 rx=0.974  'Article structure: a technical explainer with a consistent p'
+[23/40] frac=0.147 rr=-0.136 fr=-0.043 rx=0.970  'Article structure: a technical explainer with a consistent p'
+[24/40] frac=0.125 rr=0.359 fr=0.393 rx=0.976  'Article structure: a technical explainer with a summary/revi'
+[25/40] frac=0.108 rr=-0.030 fr=0.030 rx=0.982  'Structured article format with a list of animal/plant traits'
+[26/40] frac=0.125 rr=-0.024 fr=0.059 rx=0.975  'Article structure: informational/review format with a summar'
+[27/40] frac=0.102 rr=0.129 fr=0.209 rx=0.959  'Article structure: informational/academic tone with a list o'
+[28/40] frac=0.120 rr=0.366 fr=0.430 rx=0.976  'Structured article format: informational overview of a speci'
+[29/40] frac=0.106 rr=0.051 fr=0.117 rx=0.983  'Article structure: technical explainer format with a summary'
+[30/40] frac=0.118 rr=0.240 fr=0.275 rx=0.962  'Article structure: a listicle/review format with a standard '
+[31/40] frac=0.144 rr=-0.241 fr=-0.165 rx=0.971  'Academic/technical writing structure: article is presenting '
+[32/40] frac=0.122 rr=0.281 fr=0.342 rx=0.975  'Article structure: a technical explainer with a long-form re'
+[33/40] frac=0.117 rr=-0.041 fr=0.035 rx=0.982  'Encyclopedic/educational structure: a standard textbook form'
+[34/40] frac=0.121 rr=0.261 fr=0.291 rx=0.991  'Academic/educational document structure: a pedagogical expla'
+[35/40] frac=0.129 rr=0.016 fr=0.091 rx=0.979  'Structured Q&A format with labeled sections ("What is the do'
+[36/40] frac=0.144 rr=0.495 fr=0.560 rx=0.981  'Structured article format with informational/listicle style '
+[37/40] frac=0.132 rr=-0.323 fr=-0.237 rx=0.976  'Structured article format with a Q&A pattern: "What is X?" s'
+[38/40] frac=0.101 rr=0.260 fr=0.293 rx=0.964  'Academic/analytical article structure: a policy explainer wi'
+[39/40] frac=0.128 rr=-0.224 fr=-0.160 rx=0.980  'Structured educational document format: definition of a term'
+[40/40] frac=0.101 rr=0.264 fr=0.311 rx=0.976  'Article structure: a long-form blog post with a detailed tec'
+
+RESID summary: {'n': 40, 'mean_resid_frac': 0.1242, 'mean_cos_rr': 0.0356, 'mean_cos_fr': 0.1055, 'mean_cos_rx': 0.9749}
+wrote -> /root/autodl-tmp/results/resid_pilot.json
++ echo '=== PILOTS_COMPLETE ==='
+=== PILOTS_COMPLETE ===
++ finish 0
+++ date
++ echo '=== PILOTS EXIT (status=0) at Sat Jul  4 11:43:39 CST 2026 ==='
+=== PILOTS EXIT (status=0) at Sat Jul  4 11:43:39 CST 2026 ===
++ sync
++ sleep 300

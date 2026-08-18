@@ -1,0 +1,103 @@
+{
+  "agent_task": "codex-cli://j1/luna_batch_33",
+  "batch_id": 33,
+  "cases": [
+    {
+      "abstain": false,
+      "case_id": "case_rhmw11b414wkuzt0pe",
+      "confidence": 0.88,
+      "exclusion_cues": [
+        "Mixed literary, film, fleet, and financial domains",
+        "Fragmentary contexts provide no single topic"
+      ],
+      "hypothesis": "English continuation fragments centered on “clean” as an adjective, compound-word component, or organization-name fragment across mixed literary and professional sources.",
+      "positive_cues": [
+        "Repeated active token “Clean” or “clean”",
+        "clean-shaven and Clean Fuels compounds",
+        "Incomplete noun phrases after the token"
+      ]
+    },
+    {
+      "abstain": true,
+      "case_id": "case_rvqgqv8panh7tcxxik",
+      "confidence": 0.7,
+      "exclusion_cues": [
+        "No unified subject matter",
+        "Several snippets are synthetic or incomplete"
+      ],
+      "hypothesis": "Multilingual web-text fragments involving Chinese and Japanese literary, journalistic, informational, and Q&A material, with active punctuation or function-word boundaries.",
+      "positive_cues": [
+        "Chinese and Japanese text",
+        "Book, magazine, academic, and Q&A formats",
+        "Active markers at punctuation or particles"
+      ]
+    },
+    {
+      "abstain": false,
+      "case_id": "case_pjav0zgk7lrz8wyenf",
+      "confidence": 0.96,
+      "exclusion_cues": [
+        "Substantially different genres",
+        "Active endings are truncated"
+      ],
+      "hypothesis": "German-language text spanning conversational, mathematical, encyclopedic, technical, and geographic reference contexts.",
+      "positive_cues": [
+        "German phrases and grammar",
+        "Mathematics and technical terminology",
+        "German Wikipedia-style references and locality name"
+      ]
+    },
+    {
+      "abstain": false,
+      "case_id": "case_w8vp82cmugm4z95aw0",
+      "confidence": 0.97,
+      "exclusion_cues": [
+        "Summaries conflict with the visible Russian text",
+        "Topics vary and snippets are incomplete"
+      ],
+      "hypothesis": "Russian-language fragments containing the recurring preposition “во,” despite accompanying summaries that inconsistently describe Hindi educational or biographical content.",
+      "positive_cues": [
+        "Cyrillic Russian contexts",
+        "Repeated “Во” or “во” in visible text",
+        "Examples include “Во время” and “во благо”"
+      ]
+    },
+    {
+      "abstain": false,
+      "case_id": "case_s8ab0u3zigf6po1rms",
+      "confidence": 0.99,
+      "exclusion_cues": [
+        "Fragments do not establish one exact subfield",
+        "Several contexts end at punctuation or delimiters"
+      ],
+      "hypothesis": "English mathematical discussion fragments involving topology, limits, constructions, contradiction proofs, counterexamples, and theorem references.",
+      "positive_cues": [
+        "LaTeX formulas and open-set notation",
+        "Limits and continuity",
+        "Proof by contradiction, counterexample, and theorem language"
+      ]
+    }
+  ],
+  "labeler": "luna",
+  "model": "gpt-5.6-luna",
+  "prompt_sha256": "60045aa7fe8de272fd9b42e4ce42bc726bae40ee98c487b7d15a7f6322151262",
+  "provenance": {
+    "agent_task": "codex-cli://j1/luna_batch_33",
+    "codex_cli_version": "codex-cli 0.146.1",
+    "manifest_sha256": "3a8f2003d66bea44f5a942c52d4232c557918d5ad7b3f856cf9e4c2b454dc09d",
+    "model": "gpt-5.6-luna",
+    "model_input_sha256": "106163c11bf6fa602c13292fc3fe16b25e5600b49ce7d8e9699ace50035a221d",
+    "raw_attempt_artifact": "batch_33_attempt_01.json",
+    "raw_attempt_artifact_sha256": "e01851df046a308d692e6c09c6ae4b514422e5aa229b9fb97849034dc9ba3335",
+    "reasoning": "max",
+    "role": "luna_worker",
+    "script_sha256": "a471cc4f71260461324d7c9aea4efbc66b191c09bf2f813992ef4b5f21514d51",
+    "tool_calls_detected": false,
+    "transport": "codex_cli_ephemeral"
+  },
+  "public_prompt_sha256": "845b4ee199415d709ce1718d2716c7ae7ed6e1252f79f1a26255e935cce131bc",
+  "reasoning": "max",
+  "role": "luna_worker",
+  "schema_version": 1,
+  "status": "ok"
+}

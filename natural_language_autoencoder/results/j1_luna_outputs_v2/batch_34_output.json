@@ -1,0 +1,105 @@
+{
+  "agent_task": "codex-cli://j1/luna_batch_34",
+  "batch_id": 34,
+  "cases": [
+    {
+      "abstain": false,
+      "case_id": "case_kql9ef98ucvg82vqy5",
+      "confidence": 0.92,
+      "exclusion_cues": [
+        "No formal proof structure",
+        "No legal filing format"
+      ],
+      "hypothesis": "Casual multilingual chat or forum fragment requiring a playful conversational continuation.",
+      "positive_cues": [
+        "Chinese colloquial fragments",
+        "chat and community-post registers",
+        "closing pleasantries and role-play prompts"
+      ]
+    },
+    {
+      "abstain": false,
+      "case_id": "case_8976idxj7huwt5z9ur",
+      "confidence": 0.98,
+      "exclusion_cues": [
+        "No conversational or literary framing",
+        "No legal party headings"
+      ],
+      "hypothesis": "Formal mathematical proof continuation involving topology, continuity, contradiction, or theorem justification.",
+      "positive_cues": [
+        "Topological notation and open sets",
+        "Continuity and limits",
+        "Explicit proof-by-contradiction language",
+        "Theorem and counterexample discussion"
+      ]
+    },
+    {
+      "abstain": false,
+      "case_id": "case_q7erb5i2oet24p2ld0",
+      "confidence": 0.99,
+      "exclusion_cues": [
+        "No mathematical notation",
+        "No casual dialogue"
+      ],
+      "hypothesis": "Appellate legal-document continuation involving filing language, party headings, or judicial opinion text.",
+      "positive_cues": [
+        "Appellant and petitioner terminology",
+        "Respondent and attorney-general headings",
+        "Filed dates and judicial author lines"
+      ]
+    },
+    {
+      "abstain": true,
+      "case_id": "case_nxz14ice8qql5fc7sh",
+      "confidence": 0.76,
+      "exclusion_cues": [
+        "No uniquely determined following word",
+        "Evidence does not support one specific subject domain"
+      ],
+      "hypothesis": "English fragment completion where “Clean” functions as an adjective or proper-name prefix across varied domains.",
+      "positive_cues": [
+        "Repeated active token Clean",
+        "Clean-shaven adjective usage",
+        "Company and energy-market names",
+        "Heterogeneous prose genres"
+      ]
+    },
+    {
+      "abstain": true,
+      "case_id": "case_x73fq3h7jjgr9p0ue8",
+      "confidence": 0.83,
+      "exclusion_cues": [
+        "No consistent topic across examples",
+        "Exact continuation is underdetermined"
+      ],
+      "hypothesis": "Russian-language fragment continuation beginning with “Во,” likely completing a prepositional phrase in varied prose.",
+      "positive_cues": [
+        "Repeated Russian token Во",
+        "Examples begin prepositional phrases",
+        "Religious, legal, and conversational registers"
+      ]
+    }
+  ],
+  "labeler": "luna",
+  "model": "gpt-5.6-luna",
+  "prompt_sha256": "883fb259ff189b2a8acd0501d60145e9a5f5099d885e58800d003fb66dd4b1a8",
+  "provenance": {
+    "agent_task": "codex-cli://j1/luna_batch_34",
+    "codex_cli_version": "codex-cli 0.146.1",
+    "manifest_sha256": "3a8f2003d66bea44f5a942c52d4232c557918d5ad7b3f856cf9e4c2b454dc09d",
+    "model": "gpt-5.6-luna",
+    "model_input_sha256": "19dee3731293b1dfdf5847f326964a5fba89d75e9eb7205c58a071480c845ded",
+    "raw_attempt_artifact": "batch_34_attempt_01.json",
+    "raw_attempt_artifact_sha256": "527318e97b2276a721110f97facaa84975de622c464f3f1c4047e28d0d758933",
+    "reasoning": "max",
+    "role": "luna_worker",
+    "script_sha256": "a471cc4f71260461324d7c9aea4efbc66b191c09bf2f813992ef4b5f21514d51",
+    "tool_calls_detected": false,
+    "transport": "codex_cli_ephemeral"
+  },
+  "public_prompt_sha256": "5d74114363b87d86efa2eb10f09fc2954331210993d0a5e5b2e4431558a16c26",
+  "reasoning": "max",
+  "role": "luna_worker",
+  "schema_version": 1,
+  "status": "ok"
+}

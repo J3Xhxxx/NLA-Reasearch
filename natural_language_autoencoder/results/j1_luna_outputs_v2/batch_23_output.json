@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "batch_id": 23,
+  "agent_task": "/root/luna_batch_23",
+  "role": "luna_worker",
+  "model": "gpt-5.6-luna",
+  "reasoning": "max",
+  "public_prompt_sha256": "0e45003609170051f079744a5f7d001e0bed509f77904612c711914b9163795f",
+  "cases": [
+    {
+      "case_id": "case_roq5i3b7ms2cceie17",
+      "hypothesis": "A trailing plus operator in arithmetic or JavaScript coercion text expects another operand.",
+      "positive_cues": [
+        "Final token is a plus sign in each example",
+        "Arithmetic expressions and sums are being continued",
+        "JavaScript unary-plus coercion syntax is shown"
+      ],
+      "exclusion_cues": [
+        "Ordinary prose with no operator continuation",
+        "Phone-number digits interpreted without mathematical context"
+      ],
+      "abstain": false,
+      "confidence": 0.97
+    },
+    {
+      "case_id": "case_poe3s5q0cjua5xgcwr",
+      "hypothesis": "A subject clause requiring a negative predicate expressing inability, exclusion, or unusability.",
+      "positive_cues": [
+        "Administration is expected to be unable to fix the problem",
+        "We and you introduce cannot-style predicates",
+        "Printer is described as unusable or incompatible"
+      ],
+      "exclusion_cues": [
+        "Positive predicates unrelated to inability",
+        "Standalone noun completion without a following predicate"
+      ],
+      "abstain": false,
+      "confidence": 0.94
+    },
+    {
+      "case_id": "case_rna1ltr1kauug6qyi9",
+      "hypothesis": "References to Microsoft as a company and software-platform ecosystem.",
+      "positive_cues": [
+        "Microsoft is explicitly repeated across all contexts",
+        "MSN.com and Skype are named Microsoft services",
+        "Graph API, Intune, and Windows Runtime are Microsoft technologies"
+      ],
+      "exclusion_cues": [
+        "Non-Microsoft companies or unrelated software ecosystems",
+        "Generic technology mentions without a Microsoft entity"
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_tgl96ji2cxthopat2j",
+      "hypothesis": "Health-care professional or provider terminology in medical and nursing text.",
+      "positive_cues": [
+        "Qualified healthcare professional completes a medical disclaimer",
+        "Other health professionals appear in care referrals",
+        "Health professional and health care professionals recur in clinical literature"
+      ],
+      "exclusion_cues": [
+        "Nonmedical uses of health without a care provider",
+        "General business or legal text lacking clinical context"
+      ],
+      "abstain": false,
+      "confidence": 0.98
+    },
+    {
+      "case_id": "case_sgtofuwrztn1xf6hpm",
+      "hypothesis": "Legal citation attribution naming counsel or parties after the word 'for'.",
+      "positive_cues": [
+        "All contexts are formal judicial case records",
+        "Attorney-for and counsel-for boilerplate is repeated",
+        "Plaintiff, appellant, and plaintiffs in error follow legal attributions"
+      ],
+      "exclusion_cues": [
+        "Everyday prepositional uses of 'for' outside legal filings",
+        "Nonlegal text without attorneys or listed parties"
+      ],
+      "abstain": false,
+      "confidence": 0.98
+    }
+  ]
+}

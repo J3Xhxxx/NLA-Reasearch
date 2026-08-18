@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "batch_id": 21,
+  "agent_task": "/root/luna_batch_21",
+  "role": "luna_worker",
+  "model": "gpt-5.6-luna",
+  "reasoning": "max",
+  "public_prompt_sha256": "4de33473878e09c420a7b07b569403aa2cc429701d5b8cff4f75910a806f5cc5",
+  "cases": [
+    {
+      "case_id": "case_4k89yd1plzlx3arvuq",
+      "hypothesis": "Legal brief or court-opinion text uses 'for' as a preposition introducing the party represented by named counsel.",
+      "positive_cues": [
+        "Attorney for Plaintiff-Appellant",
+        "of counsel for appellant United States",
+        "Named attorneys followed by for and a party designation"
+      ],
+      "exclusion_cues": [
+        "Ordinary prose lacks a lawyer, counsel, or party designation",
+        "The token is not shown in a phone-number or French-language fragment"
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_t8ih4hvk6p4shdn92n",
+      "hypothesis": "Opening parenthesis marks the area-code portion of a telephone number in a contact or information block.",
+      "positive_cues": [
+        "Each active span is an opening parenthesis before digits",
+        "Surrounding text explicitly gives contact, service, or telephone context",
+        "Examples show Virginia, New York, BLM, and realtor phone listings"
+      ],
+      "exclusion_cues": [
+        "A parenthesis introducing ordinary prose or nonnumeric material would not fit",
+        "No telephone or contact context would weaken this interpretation"
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_bafihdellrrmsyi9gl",
+      "hypothesis": "French-language text continuation, with the active span completing a phone number, postal code, or ordinary French word.",
+      "positive_cues": [
+        "French vocabulary and accented place names",
+        "French telephone and address formatting",
+        "French verbs such as chuchota and battrons"
+      ],
+      "exclusion_cues": [
+        "No shared English-only or legal template unifies the examples",
+        "Mixed-language or non-French evidence would weaken this hypothesis"
+      ],
+      "abstain": false,
+      "confidence": 0.98
+    },
+    {
+      "case_id": "case_15vcc6wjjtk7wftwgi",
+      "hypothesis": "English prose where the active noun or pronoun anchors a clause and the following text supplies its predicate or continuation.",
+      "positive_cues": [
+        "Administration, we, you, and printer are immediately followed by clause material",
+        "Contexts are grammatical English across commentary, religious, Q&A, and technical prose",
+        "Active spans function as subjects or noun heads"
+      ],
+      "exclusion_cues": [
+        "No single topic, named entity, or formatting marker unifies the cases",
+        "A standalone lexical or punctuation continuation would weaken this syntactic reading"
+      ],
+      "abstain": false,
+      "confidence": 0.86
+    },
+    {
+      "case_id": "case_5d2plf1u87a8lxz4ta",
+      "hypothesis": "English discourse at clause boundaries, where punctuation or a connective cues a contrastive or subordinate continuation.",
+      "positive_cues": [
+        "Semicolon follows the contrastive phrase team",
+        "Comma follows concessive community",
+        "But and that introduce further clauses",
+        "Each snippet requires an ensuing clause or predicate"
+      ],
+      "exclusion_cues": [
+        "Examples span biography, news, literary criticism, and fitness writing rather than one domain",
+        "A numeric, legal, or French fragment would not fit"
+      ],
+      "abstain": false,
+      "confidence": 0.96
+    }
+  ]
+}

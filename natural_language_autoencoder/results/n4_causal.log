@@ -1,0 +1,181 @@
+[2026-07-30T21:12:02+08:00] N4_CAUSAL_PIPELINE_START
+8321dc04fb7d3d954ea54926b6bdb62b5bfc3280707a80d7eb6a3ce5767926e6  40_n4_causal_patch.py
+65655d1af5059f3a722365fe24bb4ea21b5bc40e4eff344f54494ee215d926da  41_n4_analyze.py
+44bd48998f6436616347bb2d74d9b8a569a85a3639c314ce9711a252c8075f1c  /root/autodl-tmp/results/n4_real_content_preregistration_v1.md
+e9d89713dc64381a52f05224d6522abb0ec547777a8c6a7f08b841a72a339967  /root/autodl-tmp/results/n4_recon_vectors_v1.npz
+747f92e024a7aeb5a47e05e1d006b0403760f908229c6451f7a844c33223cdcd  /root/autodl-tmp/results/n4_recon_analysis_v1.json
+NVIDIA A800-SXM4-80GB, 81920 MiB, 0 MiB, 0 %
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]Loading weights:   0%|          | 3/1065 [00:00<00:43, 24.66it/s]Loading weights:   2%|▏         | 24/1065 [00:00<00:08, 122.19it/s]Loading weights:   4%|▍         | 42/1065 [00:00<00:07, 128.84it/s]Loading weights:   5%|▌         | 56/1065 [00:00<00:08, 122.86it/s]Loading weights:   6%|▋         | 69/1065 [00:00<00:08, 114.81it/s]Loading weights:   8%|▊         | 83/1065 [00:00<00:08, 111.98it/s]Loading weights:   9%|▉         | 96/1065 [00:00<00:08, 113.69it/s]Loading weights:  10%|█         | 109/1065 [00:00<00:08, 113.37it/s]Loading weights:  11%|█▏        | 121/1065 [00:01<00:08, 115.08it/s]Loading weights:  13%|█▎        | 135/1065 [00:01<00:08, 113.78it/s]Loading weights:  14%|█▍        | 148/1065 [00:01<00:07, 115.26it/s]Loading weights:  15%|█▌        | 161/1065 [00:01<00:07, 114.13it/s]Loading weights:  16%|█▋        | 174/1065 [00:01<00:07, 114.23it/s]Loading weights:  18%|█▊        | 187/1065 [00:01<00:07, 114.13it/s]Loading weights:  19%|█▉        | 200/1065 [00:01<00:07, 113.94it/s]Loading weights:  20%|█▉        | 212/1065 [00:01<00:07, 112.65it/s]Loading weights:  21%|██        | 226/1065 [00:01<00:07, 116.64it/s]Loading weights:  22%|██▏       | 239/1065 [00:02<00:06, 118.75it/s]Loading weights:  24%|██▍       | 257/1065 [00:02<00:06, 130.71it/s]Loading weights:  26%|██▌       | 276/1065 [00:02<00:05, 142.39it/s]Loading weights:  27%|██▋       | 291/1065 [00:02<00:05, 139.06it/s]Loading weights:  29%|██▉       | 311/1065 [00:02<00:04, 154.65it/s]Loading weights:  31%|███       | 327/1065 [00:02<00:05, 145.36it/s]Loading weights:  32%|███▏      | 342/1065 [00:02<00:05, 126.25it/s]Loading weights:  33%|███▎      | 356/1065 [00:02<00:05, 119.19it/s]Loading weights:  35%|███▌      | 374/1065 [00:03<00:05, 131.44it/s]Loading weights:  37%|███▋      | 390/1065 [00:03<00:04, 138.23it/s]Loading weights:  38%|███▊      | 405/1065 [00:03<00:04, 139.46it/s]Loading weights:  39%|███▉      | 420/1065 [00:03<00:05, 114.26it/s]Loading weights:  41%|████      | 433/1065 [00:03<00:05, 116.05it/s]Loading weights:  42%|████▏     | 447/1065 [00:03<00:05, 119.94it/s]Loading weights:  43%|████▎     | 460/1065 [00:03<00:05, 117.99it/s]Loading weights:  45%|████▍     | 479/1065 [00:03<00:04, 135.73it/s]Loading weights:  46%|████▋     | 494/1065 [00:04<00:04, 134.44it/s]Loading weights:  48%|████▊     | 508/1065 [00:04<00:04, 134.79it/s]Loading weights:  49%|████▉     | 522/1065 [00:04<00:04, 134.63it/s]Loading weights:  50%|█████     | 536/1065 [00:04<00:04, 110.13it/s]Loading weights:  51%|█████▏    | 548/1065 [00:04<00:04, 108.48it/s]Loading weights:  53%|█████▎    | 563/1065 [00:04<00:04, 117.12it/s]Loading weights:  54%|█████▍    | 577/1065 [00:04<00:04, 115.07it/s]Loading weights:  55%|█████▌    | 589/1065 [00:04<00:04, 114.51it/s]Loading weights:  56%|█████▋    | 601/1065 [00:04<00:04, 112.51it/s]Loading weights:  58%|█████▊    | 615/1065 [00:05<00:04, 103.49it/s]Loading weights:  72%|███████▏  | 767/1065 [00:05<00:00, 456.79it/s]Loading weights:  91%|█████████ | 964/1065 [00:05<00:00, 854.27it/s]Loading weights: 100%|██████████| 1065/1065 [00:05<00:00, 197.95it/s]
+[doc 1/101] id=2934 rows=2 orig_kl=0.003183 sae_big_kl=0.007852 eta=4.1m
+[doc 2/101] id=6583 rows=2 orig_kl=3.67e-07 sae_big_kl=2.397e-06 eta=3.8m
+[doc 3/101] id=2477 rows=2 orig_kl=0.02426 sae_big_kl=0.05971 eta=3.6m
+[doc 4/101] id=8924 rows=2 orig_kl=0.3514 sae_big_kl=0.3331 eta=3.2m
+[doc 5/101] id=404 rows=2 orig_kl=0.01512 sae_big_kl=0.04572 eta=3.2m
+[doc 6/101] id=8724 rows=2 orig_kl=1.272 sae_big_kl=2.005 eta=3.2m
+[doc 7/101] id=4332 rows=2 orig_kl=0.209 sae_big_kl=0.2903 eta=3.2m
+[doc 8/101] id=6387 rows=2 orig_kl=0.000978 sae_big_kl=7.859e-05 eta=3.2m
+[doc 9/101] id=504 rows=2 orig_kl=0.0001253 sae_big_kl=0.0006102 eta=3.1m
+[doc 10/101] id=5065 rows=2 orig_kl=0.5109 sae_big_kl=0.2591 eta=3.1m
+[doc 11/101] id=4107 rows=2 orig_kl=0.0268 sae_big_kl=0.03854 eta=3.0m
+[doc 12/101] id=8766 rows=2 orig_kl=0.01651 sae_big_kl=0.006529 eta=3.0m
+[doc 13/101] id=2901 rows=2 orig_kl=0.4269 sae_big_kl=0.2803 eta=2.9m
+[doc 14/101] id=1471 rows=2 orig_kl=0.3656 sae_big_kl=0.1834 eta=2.7m
+[doc 15/101] id=7703 rows=2 orig_kl=6.08e-05 sae_big_kl=0.00118 eta=2.7m
+[doc 16/101] id=4168 rows=2 orig_kl=0.352 sae_big_kl=0.2579 eta=2.7m
+[doc 17/101] id=6570 rows=2 orig_kl=0.02036 sae_big_kl=0.05276 eta=2.7m
+[doc 18/101] id=6923 rows=2 orig_kl=0.001354 sae_big_kl=6.522 eta=2.7m
+[doc 19/101] id=8079 rows=2 orig_kl=5.076e-07 sae_big_kl=3.347e-05 eta=2.7m
+[doc 20/101] id=3509 rows=2 orig_kl=2.162 sae_big_kl=2.506 eta=2.6m
+[doc 21/101] id=9589 rows=2 orig_kl=0.06253 sae_big_kl=0.03443 eta=2.5m
+[doc 22/101] id=9176 rows=2 orig_kl=0.08481 sae_big_kl=0.04614 eta=2.5m
+[doc 23/101] id=9305 rows=2 orig_kl=0.0214 sae_big_kl=0.01263 eta=2.4m
+[doc 24/101] id=9780 rows=2 orig_kl=0.001223 sae_big_kl=0.0007508 eta=2.3m
+[doc 25/101] id=10053 rows=2 orig_kl=0.33 sae_big_kl=0.3149 eta=2.3m
+[doc 26/101] id=9898 rows=2 orig_kl=1.11e-06 sae_big_kl=2.094e-06 eta=2.2m
+[doc 27/101] id=10348 rows=2 orig_kl=0.4117 sae_big_kl=0.156 eta=2.2m
+[doc 28/101] id=9522 rows=2 orig_kl=7.422e-05 sae_big_kl=7.733e-05 eta=2.1m
+[doc 29/101] id=293 rows=2 orig_kl=0.5741 sae_big_kl=1.191 eta=2.1m
+[doc 30/101] id=785 rows=2 orig_kl=0.03746 sae_big_kl=1.246 eta=2.1m
+[doc 31/101] id=1053 rows=2 orig_kl=0.1237 sae_big_kl=0.0981 eta=2.1m
+[doc 32/101] id=2376 rows=2 orig_kl=0.8781 sae_big_kl=0.07847 eta=2.0m
+[doc 33/101] id=5398 rows=2 orig_kl=0.02526 sae_big_kl=0.01433 eta=2.0m
+[doc 34/101] id=1204 rows=2 orig_kl=0.0005155 sae_big_kl=0.01614 eta=2.0m
+[doc 35/101] id=5428 rows=1 orig_kl=0.001166 sae_big_kl=0.02429 eta=1.9m
+[doc 36/101] id=6279 rows=2 orig_kl=0.09525 sae_big_kl=0.3961 eta=1.9m
+[doc 37/101] id=4432 rows=2 orig_kl=0.01521 sae_big_kl=0.01456 eta=1.9m
+[doc 38/101] id=8198 rows=2 orig_kl=0.5365 sae_big_kl=0.3259 eta=1.9m
+[doc 39/101] id=5849 rows=2 orig_kl=1.349 sae_big_kl=0.905 eta=1.8m
+[doc 40/101] id=6854 rows=2 orig_kl=0.007919 sae_big_kl=0.08731 eta=1.8m
+[doc 41/101] id=4280 rows=2 orig_kl=3.618 sae_big_kl=1.047 eta=1.8m
+[doc 42/101] id=4211 rows=2 orig_kl=0.1784 sae_big_kl=0.4922 eta=1.8m
+[doc 43/101] id=532 rows=2 orig_kl=0.2676 sae_big_kl=0.1062 eta=1.7m
+[doc 44/101] id=4304 rows=2 orig_kl=0.02773 sae_big_kl=0.0392 eta=1.7m
+[doc 45/101] id=55 rows=2 orig_kl=7.92 sae_big_kl=-2.303e-11 eta=1.7m
+[doc 46/101] id=3153 rows=2 orig_kl=0.1268 sae_big_kl=0.1656 eta=1.6m
+[doc 47/101] id=1604 rows=2 orig_kl=0.2362 sae_big_kl=0.1663 eta=1.6m
+[doc 48/101] id=8850 rows=2 orig_kl=1.27 sae_big_kl=2.147 eta=1.6m
+[doc 49/101] id=7741 rows=2 orig_kl=0.4047 sae_big_kl=0.3568 eta=1.5m
+[doc 50/101] id=9910 rows=2 orig_kl=0.2153 sae_big_kl=0.138 eta=1.5m
+[doc 51/101] id=9542 rows=2 orig_kl=0.5905 sae_big_kl=0.02992 eta=1.5m
+[doc 52/101] id=9212 rows=2 orig_kl=0.001643 sae_big_kl=0.000429 eta=1.4m
+[doc 53/101] id=9390 rows=2 orig_kl=0.1342 sae_big_kl=0.0771 eta=1.4m
+[doc 54/101] id=9661 rows=2 orig_kl=0.4564 sae_big_kl=0.4445 eta=1.4m
+[doc 55/101] id=10128 rows=2 orig_kl=0.0341 sae_big_kl=0.1005 eta=1.3m
+[doc 56/101] id=9787 rows=2 orig_kl=0.000126 sae_big_kl=3.695e-06 eta=1.3m
+[doc 57/101] id=10199 rows=2 orig_kl=0.7368 sae_big_kl=0.3797 eta=1.3m
+[doc 58/101] id=10322 rows=2 orig_kl=1.63e-05 sae_big_kl=1.651e-05 eta=1.2m
+[doc 59/101] id=9530 rows=2 orig_kl=0.0001041 sae_big_kl=4.756e-05 eta=1.2m
+[doc 60/101] id=6316 rows=2 orig_kl=0.1201 sae_big_kl=0.2733 eta=1.2m
+[doc 61/101] id=7623 rows=2 orig_kl=0.01854 sae_big_kl=0.02799 eta=1.1m
+[doc 62/101] id=5109 rows=2 orig_kl=0.04407 sae_big_kl=0.02677 eta=1.1m
+[doc 63/101] id=3422 rows=2 orig_kl=0.02408 sae_big_kl=0.07004 eta=1.1m
+[doc 64/101] id=8699 rows=2 orig_kl=1.178e-07 sae_big_kl=2.753e-05 eta=1.1m
+[doc 65/101] id=949 rows=2 orig_kl=0.07182 sae_big_kl=0.05102 eta=1.0m
+[doc 66/101] id=3627 rows=2 orig_kl=0.1551 sae_big_kl=0.6116 eta=1.0m
+[doc 67/101] id=1174 rows=2 orig_kl=0.2483 sae_big_kl=0.158 eta=1.0m
+[doc 68/101] id=5578 rows=2 orig_kl=0.5301 sae_big_kl=0.1225 eta=0.9m
+[doc 69/101] id=5024 rows=2 orig_kl=0.2783 sae_big_kl=0.2563 eta=0.9m
+[doc 70/101] id=4666 rows=2 orig_kl=0.01045 sae_big_kl=0.01647 eta=0.9m
+[doc 71/101] id=8780 rows=2 orig_kl=0.04378 sae_big_kl=0.2135 eta=0.9m
+[doc 72/101] id=2765 rows=2 orig_kl=0.1497 sae_big_kl=0.3388 eta=0.8m
+[doc 73/101] id=4833 rows=2 orig_kl=0.1195 sae_big_kl=0.3264 eta=0.8m
+[doc 74/101] id=8080 rows=2 orig_kl=0.07124 sae_big_kl=0.2475 eta=0.8m
+[doc 75/101] id=7721 rows=2 orig_kl=0.2928 sae_big_kl=0.545 eta=0.7m
+[doc 76/101] id=636 rows=2 orig_kl=0.1151 sae_big_kl=0.08565 eta=0.7m
+[doc 77/101] id=6312 rows=2 orig_kl=5.63 sae_big_kl=1.53 eta=0.7m
+[doc 78/101] id=9982 rows=2 orig_kl=0.06994 sae_big_kl=0.04446 eta=0.7m
+[doc 79/101] id=9555 rows=2 orig_kl=2.901e-11 sae_big_kl=0.0001992 eta=0.6m
+[doc 80/101] id=9280 rows=2 orig_kl=0.0001158 sae_big_kl=0.0001875 eta=0.6m
+[doc 81/101] id=9358 rows=2 orig_kl=0.2253 sae_big_kl=0.3239 eta=0.6m
+[doc 82/101] id=9758 rows=2 orig_kl=0.03285 sae_big_kl=0.1329 eta=0.5m
+[doc 83/101] id=10048 rows=2 orig_kl=0.04413 sae_big_kl=0.07094 eta=0.5m
+[doc 84/101] id=9900 rows=2 orig_kl=0.4558 sae_big_kl=0.5244 eta=0.5m
+[doc 85/101] id=10182 rows=2 orig_kl=0.001222 sae_big_kl=0.0008032 eta=0.5m
+[doc 86/101] id=10340 rows=2 orig_kl=0.1275 sae_big_kl=0.1332 eta=0.4m
+[doc 87/101] id=9529 rows=2 orig_kl=0.003697 sae_big_kl=0.001342 eta=0.4m
+[doc 88/101] id=269 rows=2 orig_kl=0.01662 sae_big_kl=0.02712 eta=0.4m
+[doc 89/101] id=6899 rows=2 orig_kl=0.1098 sae_big_kl=0.1065 eta=0.3m
+[doc 90/101] id=9102 rows=2 orig_kl=0.03746 sae_big_kl=0.0001742 eta=0.3m
+[doc 91/101] id=4815 rows=2 orig_kl=0.555 sae_big_kl=0.6689 eta=0.3m
+[doc 92/101] id=4461 rows=2 orig_kl=0.08937 sae_big_kl=0.2848 eta=0.3m
+[doc 93/101] id=3268 rows=2 orig_kl=0.1229 sae_big_kl=0.06303 eta=0.2m
+[doc 94/101] id=3557 rows=2 orig_kl=16.37 sae_big_kl=0.000145 eta=0.2m
+[doc 95/101] id=5862 rows=2 orig_kl=7.282 sae_big_kl=0.06815 eta=0.2m
+[doc 96/101] id=4716 rows=2 orig_kl=0.03065 sae_big_kl=0.09316 eta=0.1m
+[doc 97/101] id=1287 rows=2 orig_kl=1.763 sae_big_kl=0.04287 eta=0.1m
+[doc 98/101] id=7098 rows=2 orig_kl=0.3965 sae_big_kl=0.3852 eta=0.1m
+[doc 99/101] id=6087 rows=2 orig_kl=0.01487 sae_big_kl=0.01022 eta=0.1m
+[doc 100/101] id=2801 rows=2 orig_kl=1.73 sae_big_kl=1.413 eta=0.0m
+[doc 101/101] id=6007 rows=1 orig_kl=0.2448 sae_big_kl=0.3679 eta=0.0m
+
+=== N4 summary ===
+{"provenance_all_bit_exact": true, "provenance_max_abs": 0.0, "provenance_min_cosine": 0.9999999999999998, "provenance_atol": 0.0, "clean_eval_all_bit_exact_vs_frozen": true, "clean_eval_max_abs_vs_frozen": 0.0, "identity_kl_at_pos_max": 0.0, "identity_kl_tolerance": 1e-05}
+identity           KL@pos=0.00000 KL16=0.00000 CE16=2.21874
+orig               KL@pos=0.62885 KL16=0.04181 CE16=2.25920
+sae_small          KL@pos=0.67445 KL16=0.04717 CE16=2.27398
+sae_big            KL@pos=0.40488 KL16=0.02891 CE16=2.25169
+p3_only            KL@pos=0.66425 KL16=0.04593 CE16=2.26400
+p12                KL@pos=4.03059 KL16=0.25677 CE16=2.43669
+quote_strip_p3     KL@pos=9.15141 KL16=0.58284 CE16=2.74493
+dataset_mean       KL@pos=6.67164 KL16=0.42748 CE16=2.58517
+other_activation   KL@pos=13.00897 KL16=0.82637 CE16=2.99405
+gaussian           KL@pos=26.71805 KL16=1.69311 CE16=3.85311
+zero               KL@pos=12.08069 KL16=0.76696 CE16=2.94914
+N4_CAUSAL_PATCH_COMPLETE rows=200 docs=101 forwards=2301 elapsed=182.0s sha256=8dd532f65d8c9c153f04ba433cc6f160798598fbbcbee388c15fb4a75a366233 -> /root/autodl-tmp/results/n4_causal_patch_v1.json
+# N4 real-content replication — results
+
+- Cohort: **200 rows / 101 documents**, all content tokens.
+- Provenance bit-exact: **True**; identity max KL: **0**.
+- Reconstruction JSON/NPZ semantic closure: **True**.
+- H1 channel localization: **FAIL**.
+- H2 causal ranking: **FAIL**.
+- H3 causal channel: **FAIL**.
+
+## H1 — centered-cosine channel localization
+
+| Condition | Equal-doc mean cos | Share above generic | Retrieval Top-1 |
+|---|---:|---:|---:|
+| orig | +0.8357 | 1.000 | 0.995 |
+| p3_only | +0.7793 | 0.932 | 0.995 |
+| p12 | +0.6327 | 0.756 | 0.950 |
+| quote_strip_p3 | +0.1934 | 0.229 | 0.355 |
+| p1_only | +0.1972 | 0.233 | 0.290 |
+| p2_only | +0.5755 | 0.688 | 0.950 |
+| word_shuffle | +0.4522 | 0.539 | 0.990 |
+
+`p3_only - p12` = +0.1466, 95% doc-bootstrap CI [+0.127, +0.166].
+
+## H2 — causal reconstruction
+
+| Condition | KL recovered @ pos | KL @ pos | KL16 | CE16 delta |
+|---|---:|---:|---:|---:|
+| orig | -313.8704 | 0.6238 | 0.0415 | +0.0399 |
+| sae_small | +0.8561 | 0.6740 | 0.0471 | +0.0554 |
+| sae_big | -4.5678 | 0.4028 | 0.0287 | +0.0325 |
+| p3_only | -254.3812 | 0.6599 | 0.0456 | +0.0448 |
+| p12 | -156099.6242 | 3.9926 | 0.2543 | +0.2163 |
+| quote_strip_p3 | -153247.7474 | 9.0995 | 0.5795 | +0.5239 |
+| dataset_mean | -113889.5461 | 6.6791 | 0.4279 | +0.3677 |
+| zero | +0.0050 | 12.1449 | 0.7709 | +0.7351 |
+
+NLA−SAE-big recovered = -309.3026; 90% CI [-854.711, +5.421]; equivalence ±0.05: **False**.
+
+NLA−SAE-small recovered = -314.7265; 95% CI [-905.267, +0.024]; superiority: **False**.
+
+## H3 — causal paragraph mechanism
+
+`p3_only - p12` recovered = +155845.2430, 95% CI [+5761.721, +403007.145].
+`p3_only/orig` recovered retention = **NA**.
+
+## Decision
+
+H1+H2 fail: restrict F11/F12 to the original contaminated pilot
+
+Result SHA-256: `3c8a4d87d7289ac6c41b58e2bbdd6955585db46eaaa5306822d9d802259943cc`
+N4_ANALYSIS_COMPLETE -> /root/autodl-tmp/results/n4_analysis_v1.json (3c8a4d87d7289ac6c41b58e2bbdd6955585db46eaaa5306822d9d802259943cc) + /root/autodl-tmp/results/n4_analysis_v1.md
+8dd532f65d8c9c153f04ba433cc6f160798598fbbcbee388c15fb4a75a366233  /root/autodl-tmp/results/n4_causal_patch_v1.json
+3c8a4d87d7289ac6c41b58e2bbdd6955585db46eaaa5306822d9d802259943cc  /root/autodl-tmp/results/n4_analysis_v1.json
+2a448abb74e693f997c950882d689ec60fe6d1d5877cbdc67adeae6f35e9889d  /root/autodl-tmp/results/n4_analysis_v1.md
+[2026-07-30T21:15:12+08:00] N4_CAUSAL_PIPELINE_COMPLETE
+[2026-07-30T21:15:12+08:00] N4_CAUSAL_PIPELINE_EXIT status=0

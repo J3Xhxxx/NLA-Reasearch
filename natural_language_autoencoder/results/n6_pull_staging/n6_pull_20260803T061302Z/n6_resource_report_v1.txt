@@ -1,0 +1,18 @@
+captured_at=2026-08-03 14:11:45 CST
+pipeline_exit=0
+hostname=autodl-container-nzrm27bvfx-c1834b9a
+prereg=/root/autodl-tmp/results/n6_plus_preregistration_v2.md
+code_manifest=/root/autodl-tmp/results/n6_code_manifest_v2.txt
+model_manifest=/root/autodl-tmp/results/n5_model_weights_v1.sha256
+
+[df]
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/md0        150G   70G   81G  47% /root/autodl-tmp
+
+[memory]
+               total        used        free      shared  buff/cache   available
+Mem:           1.0Ti        45Gi       858Gi       1.1Gi       103Gi       954Gi
+Swap:             0B          0B          0B
+
+[gpu]
+NVIDIA A800-SXM4-80GB, GPU-b477e669-ae03-9b1f-f68d-8e8b60d11808, 81920 MiB, 0 MiB, 0 %

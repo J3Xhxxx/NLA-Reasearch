@@ -1,0 +1,65 @@
+2026-08-03 12:27:37 CST STAGE_START stage=50_extract_activations
+2026-08-03 12:27:37 CST VERIFIED sidecar label='binding N6 preregistration' sha256=cbc8a5395844b5a61a3a52a543f978c89273d6e9c786db0262d4a4c936faf6a8 path=/root/autodl-tmp/results/n6_plus_preregistration_v2.md
+2026-08-03 12:27:37 CST VERIFIED sidecar label='frozen N6 code manifest' sha256=4f7e7f612e80a73766d95f2dfd34dcdc37d1b0a6c43a82255d0f3ea87970bc0d path=/root/autodl-tmp/results/n6_code_manifest_v2.txt
+2026-08-03 12:27:37 CST VERIFIED frozen N6 code manifest entries=21 path=/root/autodl-tmp/results/n6_code_manifest_v2.txt
+2026-08-03 12:27:37 CST VERIFIED sidecar label='frozen N5 combined model manifest' sha256=4a5c6212dcf5851b9bea2313b4898f977fef0ee36aecc922d10f0375cbc94735 path=/root/autodl-tmp/results/n5_model_weights_v1.sha256
+/root/autodl-tmp/models/gemma-3-12b-it/config.json: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model.safetensors.index.json: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00001-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00002-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00003-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00004-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00005-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/config.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model.safetensors.index.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00001-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00002-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00003-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00004-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00005-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/config.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model.safetensors.index.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00001-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00002-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00003-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00004-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/value_head.safetensors: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small/config.json: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small/params.safetensors: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_big/config.json: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_big/params.safetensors: OK
+2026-08-03 12:32:41 CST VERIFIED manifest entries label='frozen N5 combined model manifest' path=/root/autodl-tmp/results/n5_model_weights_v1.sha256
+2026-08-03 12:32:41 CST VERIFIED sidecar label='stage input' sha256=d366bca81ac239bc9c68d4361b7bca151f3cd3237ca2a2459e9316280ba40bbc path=/root/autodl-tmp/results/n6_provisional_cohort_v1.json
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]Loading weights:   0%|          | 2/1065 [00:00<00:54, 19.36it/s]Loading weights:   2%|▏         | 16/1065 [00:00<00:12, 85.82it/s]Loading weights:   3%|▎         | 29/1065 [00:00<00:10, 98.68it/s]Loading weights:   4%|▍         | 42/1065 [00:00<00:10, 99.43it/s]Loading weights:   5%|▌         | 55/1065 [00:00<00:10, 100.03it/s]Loading weights:   6%|▋         | 68/1065 [00:00<00:10, 99.38it/s] Loading weights:   7%|▋         | 79/1065 [00:00<00:09, 101.62it/s]Loading weights:   8%|▊         | 90/1065 [00:00<00:09, 100.12it/s]Loading weights:   9%|▉         | 101/1065 [00:01<00:10, 95.43it/s]Loading weights:  10%|█         | 111/1065 [00:01<00:10, 93.16it/s]Loading weights:  11%|█▏        | 121/1065 [00:01<00:09, 94.98it/s]Loading weights:  13%|█▎        | 134/1065 [00:01<00:09, 96.62it/s]Loading weights:  14%|█▍        | 147/1065 [00:01<00:09, 98.42it/s]Loading weights:  15%|█▌        | 160/1065 [00:01<00:09, 97.75it/s]Loading weights:  16%|█▌        | 173/1065 [00:01<00:09, 97.91it/s]Loading weights:  17%|█▋        | 186/1065 [00:01<00:08, 98.91it/s]Loading weights:  19%|█▊        | 199/1065 [00:02<00:08, 99.96it/s]Loading weights:  20%|█▉        | 211/1065 [00:02<00:08, 102.68it/s]Loading weights:  21%|██        | 222/1065 [00:02<00:08, 96.57it/s] Loading weights:  22%|██▏       | 232/1065 [00:02<00:08, 94.16it/s]Loading weights:  23%|██▎       | 242/1065 [00:02<00:08, 92.05it/s]Loading weights:  24%|██▎       | 252/1065 [00:02<00:09, 87.52it/s]Loading weights:  25%|██▍       | 264/1065 [00:02<00:09, 88.65it/s]Loading weights:  26%|██▌       | 275/1065 [00:02<00:08, 90.84it/s]Loading weights:  27%|██▋       | 289/1065 [00:03<00:08, 96.54it/s]Loading weights:  28%|██▊       | 302/1065 [00:03<00:07, 98.08it/s]Loading weights:  29%|██▉       | 313/1065 [00:03<00:07, 100.52it/s]Loading weights:  30%|███       | 324/1065 [00:03<00:08, 87.29it/s] Loading weights:  31%|███▏      | 334/1065 [00:03<00:08, 86.99it/s]Loading weights:  32%|███▏      | 343/1065 [00:03<00:08, 82.01it/s]Loading weights:  33%|███▎      | 355/1065 [00:03<00:08, 85.68it/s]Loading weights:  34%|███▍      | 366/1065 [00:03<00:07, 88.96it/s]Loading weights:  36%|███▌      | 380/1065 [00:04<00:07, 95.35it/s]Loading weights:  37%|███▋      | 393/1065 [00:04<00:06, 97.37it/s]Loading weights:  38%|███▊      | 404/1065 [00:04<00:06, 99.75it/s]Loading weights:  39%|███▉      | 415/1065 [00:04<00:07, 85.51it/s]Loading weights:  40%|███▉      | 424/1065 [00:04<00:07, 85.33it/s]Loading weights:  41%|████      | 434/1065 [00:04<00:07, 83.01it/s]Loading weights:  42%|████▏     | 447/1065 [00:04<00:06, 88.43it/s]Loading weights:  43%|████▎     | 459/1065 [00:04<00:06, 88.48it/s]Loading weights:  44%|████▍     | 471/1065 [00:05<00:06, 93.56it/s]Loading weights:  45%|████▌     | 484/1065 [00:05<00:06, 95.83it/s]Loading weights:  47%|████▋     | 497/1065 [00:05<00:05, 97.15it/s]Loading weights:  48%|████▊     | 510/1065 [00:05<00:05, 98.80it/s]Loading weights:  49%|████▉     | 523/1065 [00:05<00:05, 91.95it/s]Loading weights:  50%|█████     | 536/1065 [00:05<00:05, 94.62it/s]Loading weights:  51%|█████▏    | 546/1065 [00:05<00:05, 86.71it/s]Loading weights:  52%|█████▏    | 557/1065 [00:05<00:05, 91.27it/s]Loading weights:  54%|█████▎    | 570/1065 [00:06<00:04, 99.28it/s]Loading weights:  55%|█████▍    | 582/1065 [00:06<00:04, 103.38it/s]Loading weights:  56%|█████▌    | 593/1065 [00:06<00:05, 91.87it/s] Loading weights:  57%|█████▋    | 603/1065 [00:06<00:05, 91.55it/s]Loading weights:  58%|█████▊    | 616/1065 [00:06<00:04, 95.54it/s]Loading weights:  70%|███████   | 749/1065 [00:06<00:00, 413.17it/s]Loading weights:  86%|████████▌ | 913/1065 [00:06<00:00, 742.08it/s]Loading weights: 100%|██████████| 1065/1065 [00:06<00:00, 154.89it/s]
+[N6 activation 1/501] uid=a1451866e1587c source=Pile-CC
+[N6 activation 20/501] uid=fec195e5102414 source=Pile-CC
+[N6 activation 40/501] uid=124798b665cb3c source=Pile-CC
+[N6 activation 60/501] uid=81ffdaa1043101 source=Wikipedia (en)
+[N6 activation 80/501] uid=b97a3d955ecd76 source=USPTO Backgrounds
+[N6 activation 100/501] uid=2b25b355dcade2 source=Pile-CC
+[N6 activation 120/501] uid=b2728327be36c7 source=StackExchange
+[N6 activation 140/501] uid=c6adfa2df4b054 source=StackExchange
+[N6 activation 160/501] uid=b2728af9f7c0d2 source=StackExchange
+[N6 activation 180/501] uid=35bbc3afbe202f source=Pile-CC
+[N6 activation 200/501] uid=8d0356f0e153bd source=Github
+[N6 activation 220/501] uid=01027c43b011b9 source=USPTO Backgrounds
+[N6 activation 240/501] uid=6779df184a1181 source=ArXiv
+[N6 activation 260/501] uid=7e3f6dd6c71205 source=Wikipedia (en)
+[N6 activation 280/501] uid=181e3e13d6505c source=Wikipedia (en)
+[N6 activation 300/501] uid=b69e881a9c5f35 source=PubMed Central
+[N6 activation 320/501] uid=1cf599c1589449 source=NIH ExPorter
+[N6 activation 340/501] uid=cae3d96a31716a source=Github
+[N6 activation 360/501] uid=659448c2502c31 source=ArXiv
+[N6 activation 380/501] uid=976caad967686d source=ArXiv
+[N6 activation 400/501] uid=31ed4339e60ad8 source=ArXiv
+[N6 activation 420/501] uid=85c543073a217c source=FreeLaw
+[N6 activation 440/501] uid=0875b95f98834d source=NIH ExPorter
+[N6 activation 460/501] uid=27278fd880031a source=DM Mathematics
+[N6 activation 480/501] uid=662c1a5b153469 source=DM Mathematics
+[N6 activation 500/501] uid=eb535bbdacbe92 source=DM Mathematics
+[N6 activation 501/501] uid=b3bdb806906b13 source=DM Mathematics
+N6_ACTIVATION_EXTRACTION_COMPLETE rows=501 width=3840 sha256=395426bbff2474e1a23408306a86eae4b3d452f5f89179f90aeaa04a47d60775
+2026-08-03 12:33:43 CST VERIFIED sidecar label='stage 50 activation parquet' sha256=395426bbff2474e1a23408306a86eae4b3d452f5f89179f90aeaa04a47d60775 path=/root/autodl-tmp/activations/acts_L32_n6_provisional_v1.parquet
+2026-08-03 12:33:43 CST VERIFIED sidecar label='stage 50 extraction report' sha256=5c3963dd41a6452824345d2b8dcc575a8b0610edf9c2b9891e5c0300755b9324 path=/root/autodl-tmp/activations/acts_L32_n6_provisional_v1.parquet.json
+2026-08-03 12:33:43 CST STAGE_COMPLETE stage=50_extract_activations

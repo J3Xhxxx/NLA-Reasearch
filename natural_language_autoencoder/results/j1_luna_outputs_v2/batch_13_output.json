@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "batch_id": 13,
+  "agent_task": "/root/luna_batch_13",
+  "role": "luna_worker",
+  "model": "gpt-5.6-luna",
+  "reasoning": "max",
+  "public_prompt_sha256": "23810fb1d8d50b03fc139de6612107e41c3b1fdf4d50153caea2ab74cafb88fe",
+  "cases": [
+    {
+      "case_id": "case_b73363xjhavcl3nv2u",
+      "hypothesis": "Turkish word-initial subword chunks ending in m before inflectional suffixes, often exposing the ma/me morpheme.",
+      "positive_cues": [
+        "anlam before Turkish suffixes in anlamadı and anlamasam",
+        "verm before the suffix in vermem",
+        "erm before the suffix in ermesinin",
+        "Every active chunk ends with the letter m"
+      ],
+      "exclusion_cues": [
+        "No shared English semantics is evident",
+        "The evidence does not show standalone m words or non-Turkish morphology"
+      ],
+      "abstain": false,
+      "confidence": 0.9
+    },
+    {
+      "case_id": "case_g0dpxb0bqclwsctjp7",
+      "hypothesis": "Singular concrete noun heads after the definite article, ending a phrase that invites a following noun or complement.",
+      "positive_cues": [
+        "the chip at a packaging-detail boundary",
+        "the pack in an instructional sentence",
+        "the lady in a conversational clause",
+        "the exam before an expected table or room continuation"
+      ],
+      "exclusion_cues": [
+        "No active verb, adjective, or pronoun is shown",
+        "The examples do not establish one shared topic beyond noun-phrase completion"
+      ],
+      "abstain": false,
+      "confidence": 0.84
+    },
+    {
+      "case_id": "case_cwq2jcqcxyhmbxt271",
+      "hypothesis": "Abstract nouns used as heads of definite noun phrases in formal prose, often followed by a relational continuation.",
+      "positive_cues": [
+        "the time to get this story right",
+        "cryptography-breaking capabilities of quantum computers",
+        "the concepts behind digital cities",
+        "the institutions and norms that the US helped"
+      ],
+      "exclusion_cues": [
+        "The active items are nouns rather than verbs or modifiers",
+        "They are not concrete object names or proper-name entities"
+      ],
+      "abstain": false,
+      "confidence": 0.9
+    },
+    {
+      "case_id": "case_nb6uod0b4wxwoji3nq",
+      "hypothesis": "Opening C-style block comments in source files, especially copyright or license header comments.",
+      "positive_cues": [
+        "Every context begins with bos followed by /* and an empty active span",
+        "Copyright 199 and Copyright (C) follow the marker",
+        "Licensed to the Apache Software follows one marker",
+        "Mantis PCI bridge driver is a file-header description"
+      ],
+      "exclusion_cues": [
+        "No function body, executable statement, or ordinary prose is active",
+        "The evidence does not show line comments beginning with //"
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_ov4zohfezh4xspci4t",
+      "hypothesis": "Attributive modifiers immediately preceding a noun, including demonstrative, evaluative, and domain-specific adjectives.",
+      "positive_cues": [
+        "this time",
+        "favorite section",
+        "This upper series",
+        "quantitative component"
+      ],
+      "exclusion_cues": [
+        "The modifiers are prenominal rather than predicative",
+        "No active item functions as a standalone noun or finite verb"
+      ],
+      "abstain": false,
+      "confidence": 0.98
+    }
+  ]
+}

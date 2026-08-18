@@ -1,0 +1,2820 @@
+{
+  "schema_version": 1,
+  "experiment": "C1 confirmatory synthetic concept cohort v2",
+  "status": "synthetic_corpus_frozen_before_activation_extraction",
+  "inputs": {
+    "base_model": "/root/autodl-tmp/models/gemma-3-12b-it",
+    "base_model_files": {
+      "config.json": "39172c4124d3470341bbbb25f2926fd97edf68f0fe3a9fa4cde6acb9b7ed2cc6",
+      "generation_config.json": "fd9324becc53c4be610db39e13a613006f09fd6ef71a95fb6320dc33157490a3",
+      "model.safetensors.index.json": "788cc42a1a92835df62d9a3791f47105f63504c7c404637a73288e9b11bc7b82",
+      "tokenizer.json": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795",
+      "tokenizer_config.json": "bfe25c2735e395407beb78456ea9a6984a1f00d8c16fa04a8b75f2a614cf53e1"
+    },
+    "spec": "/root/autodl-tmp/nla_compare/c1_confirmatory_concepts_v2.json",
+    "spec_sha256": "4e7d6b2ca3d4fe87406cde09b664f9bfee47e00f2630e0c251c0ad3b7422750e",
+    "preregistration": "/root/autodl-tmp/nla_compare/c1_confirmatory_preregistration_v2_amendment.md",
+    "preregistration_sha256": "6291a485d7b6f3e239af7103ffb3e09c10d8a59474a991ddb4808294eb607f6a",
+    "stage0_freeze": "/root/autodl-tmp/nla_compare/c1_confirmatory_stage0_freeze_v2.json",
+    "stage0_freeze_sha256": "08eb7a95ffd0b6ed61411a103df4deb0ca3a934b7d2d7756fa82a27f4782f3fe",
+    "generator_sha256": "714a5019a434982970fd4ca4bc7025c3e7df663b228125bbcf18e896ea023ad7",
+    "checkpoint": "/root/autodl-tmp/results/c1_confirmatory_corpus_checkpoint_v2.jsonl",
+    "checkpoint_sha256": "0ecca3588669c6ed030be861b8841889dd98b71d64a34ed204dfa0db60771e33"
+  },
+  "protocol": {
+    "master_seed": 20260731,
+    "max_attempts": 4,
+    "attempt_seed": "master + 100 * concept_index + attempt",
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "top_k": 64,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 1800,
+    "word_range_inclusive": [
+      70,
+      170
+    ],
+    "target_word_range": [
+      105,
+      135
+    ],
+    "max_train_test_word_5gram_jaccard": 0.15
+  },
+  "counts": {
+    "concepts": 24,
+    "superdomains": 6,
+    "documents": 144,
+    "train_documents": 96,
+    "test_documents": 48
+  },
+  "quality": [
+    {
+      "concept_id": "automatic_memory_reclamation",
+      "attempt": 0,
+      "seed": 20260731,
+      "word_counts": [
+        105,
+        101,
+        101,
+        87,
+        91,
+        91
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.29523809523809524,
+      "max_train_test_word_5gram_jaccard": 0.016574585635359115,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.168,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.19008264462809918,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.2523364485981308,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.21238938053097345,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.29523809523809524,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.12781954887218044,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.17647058823529413,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.23275862068965517,
+          "word_5gram_jaccard": 0.00546448087431694
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.19327731092436976,
+          "word_5gram_jaccard": 0.016574585635359115
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.1794871794871795,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.175,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.22807017543859648,
+          "word_5gram_jaccard": 0.00546448087431694
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.22429906542056074,
+          "word_5gram_jaccard": 0.005917159763313609
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.22641509433962265,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.1565217391304348,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "dynamic_memory_allocation",
+      "attempt": 0,
+      "seed": 20260831,
+      "word_counts": [
+        112,
+        97,
+        104,
+        99,
+        72,
+        87
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.20491803278688525,
+      "max_train_test_word_5gram_jaccard": 0.0,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.15151515151515152,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.13740458015267176,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.1953125,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.13793103448275862,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.14516129032258066,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.1532258064516129,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.20491803278688525,
+          "word_5gram_jaccard": 0.021739130434782608
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.16666666666666666,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.1826086956521739,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.16129032258064516,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.1941747572815534,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.1981981981981982,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.15454545454545454,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.17094017094017094,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.1485148514851485,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "cryptographic_authentication",
+      "attempt": 1,
+      "seed": 20260932,
+      "word_counts": [
+        102,
+        100,
+        99,
+        99,
+        84,
+        89
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.2545454545454545,
+      "max_train_test_word_5gram_jaccard": 0.011049723756906077,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.14074074074074075,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.15079365079365079,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.1693548387096774,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.14049586776859505,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.25,
+          "word_5gram_jaccard": 0.011049723756906077
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.1693548387096774,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.19834710743801653,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.2545454545454545,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.2184873949579832,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.1724137931034483,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.16216216216216217,
+          "word_5gram_jaccard": 0.005747126436781609
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.19298245614035087,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.205607476635514,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.20353982300884957,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.16216216216216217,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "error_detecting_codes",
+      "attempt": 0,
+      "seed": 20261031,
+      "word_counts": [
+        134,
+        116,
+        109,
+        113,
+        111,
+        101
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.24369747899159663,
+      "max_train_test_word_5gram_jaccard": 0.0,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.13533834586466165,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.19672131147540983,
+          "word_5gram_jaccard": 0.004273504273504274
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.13076923076923078,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.16279069767441862,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.152,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.15748031496062992,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.24369747899159663,
+          "word_5gram_jaccard": 0.0091324200913242
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.15267175572519084,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.1885245901639344,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.211864406779661,
+          "word_5gram_jaccard": 0.004694835680751174
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.19672131147540983,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.17647058823529413,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.1484375,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.1652892561983471,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.11627906976744186,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "protein_quality_control",
+      "attempt": 0,
+      "seed": 20261131,
+      "word_counts": [
+        104,
+        92,
+        104,
+        100,
+        83,
+        88
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.21495327102803738,
+      "max_train_test_word_5gram_jaccard": 0.0,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.15447154471544716,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.1746031746031746,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.15702479338842976,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.1826086956521739,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.15315315315315314,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.2,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.19327731092436976,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.1794871794871795,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.21495327102803738,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.2032520325203252,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.2,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.15254237288135594,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.19298245614035087,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.1743119266055046,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.1588785046728972,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "membrane_vesicle_trafficking",
+      "attempt": 0,
+      "seed": 20261231,
+      "word_counts": [
+        104,
+        100,
+        104,
+        96,
+        99,
+        95
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.2542372881355932,
+      "max_train_test_word_5gram_jaccard": 0.0,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.2,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.21666666666666667,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.2542372881355932,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.18699186991869918,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.1935483870967742,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.15966386554621848,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.17647058823529413,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.23214285714285715,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.1864406779661017,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.14285714285714285,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.16521739130434782,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.19298245614035087,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.1623931623931624,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.2,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.21428571428571427,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "microbial_quorum_sensing",
+      "attempt": 0,
+      "seed": 20261331,
+      "word_counts": [
+        107,
+        100,
+        95,
+        85,
+        85,
+        84
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.3069306930693069,
+      "max_train_test_word_5gram_jaccard": 0.03636363636363636,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.1640625,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.20833333333333334,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.18333333333333332,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.23684210526315788,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.19491525423728814,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.12903225806451613,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.17094017094017094,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.1724137931034483,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.1826086956521739,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.14655172413793102,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.168141592920354,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.3069306930693069,
+          "word_5gram_jaccard": 0.03636363636363636
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.1834862385321101,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.17272727272727273,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.1743119266055046,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "microbial_cross_feeding",
+      "attempt": 0,
+      "seed": 20261431,
+      "word_counts": [
+        95,
+        91,
+        98,
+        101,
+        89,
+        90
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.2543859649122807,
+      "max_train_test_word_5gram_jaccard": 0.005813953488372093,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.13138686131386862,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.14074074074074075,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.16153846153846155,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.15625,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.2184873949579832,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.1590909090909091,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.13636363636363635,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.1951219512195122,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.21008403361344538,
+          "word_5gram_jaccard": 0.005813953488372093
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.1732283464566929,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.15873015873015872,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.2543859649122807,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.144,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.1864406779661017,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.1810344827586207,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "fault_rupture_mechanics",
+      "attempt": 0,
+      "seed": 20261531,
+      "word_counts": [
+        102,
+        105,
+        113,
+        118,
+        92,
+        102
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.28448275862068967,
+      "max_train_test_word_5gram_jaccard": 0.015306122448979591,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.13533834586466165,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.1937984496124031,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.1259259259259259,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.20689655172413793,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.140625,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.208,
+          "word_5gram_jaccard": 0.004784688995215311
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.28448275862068967,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.20175438596491227,
+          "word_5gram_jaccard": 0.005319148936170213
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.2767857142857143,
+          "word_5gram_jaccard": 0.015306122448979591
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.1968503937007874,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.19658119658119658,
+          "word_5gram_jaccard": 0.00510204081632653
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.15873015873015872,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.1694915254237288,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.22033898305084745,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.17857142857142858,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "slope_failure_mechanics",
+      "attempt": 1,
+      "seed": 20261632,
+      "word_counts": [
+        121,
+        114,
+        109,
+        115,
+        100,
+        100
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.1984126984126984,
+      "max_train_test_word_5gram_jaccard": 0.0047169811320754715,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.1267605633802817,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.16911764705882354,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.1678832116788321,
+          "word_5gram_jaccard": 0.008849557522123894
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.1897810218978102,
+          "word_5gram_jaccard": 0.0047169811320754715
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.19548872180451127,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.1889763779527559,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.16030534351145037,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.10714285714285714,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.1984126984126984,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.16153846153846155,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.15789473684210525,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.19047619047619047,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.17424242424242425,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.16153846153846155,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.1323529411764706,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "groundwater_contaminant_transport",
+      "attempt": 0,
+      "seed": 20261731,
+      "word_counts": [
+        126,
+        107,
+        110,
+        120,
+        112,
+        95
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.23529411764705882,
+      "max_train_test_word_5gram_jaccard": 0.01932367149758454,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.10738255033557047,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.14788732394366197,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.16551724137931034,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.23134328358208955,
+          "word_5gram_jaccard": 0.008771929824561403
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.15328467153284672,
+          "word_5gram_jaccard": 0.0047169811320754715
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.12408759124087591,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.18518518518518517,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.2283464566929134,
+          "word_5gram_jaccard": 0.01932367149758454
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.21138211382113822,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.18796992481203006,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.203125,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.23529411764705882,
+          "word_5gram_jaccard": 0.00510204081632653
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.21212121212121213,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.1953125,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.18253968253968253,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "coastal_saltwater_intrusion",
+      "attempt": 0,
+      "seed": 20261831,
+      "word_counts": [
+        113,
+        96,
+        105,
+        110,
+        78,
+        81
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.23636363636363636,
+      "max_train_test_word_5gram_jaccard": 0.006060606060606061,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.15151515151515152,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.1590909090909091,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.21212121212121213,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.1896551724137931,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.175,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.1349206349206349,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.19047619047619047,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.18518518518518517,
+          "word_5gram_jaccard": 0.006060606060606061
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.14912280701754385,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.15267175572519084,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.22857142857142856,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.13793103448275862,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.23636363636363636,
+          "word_5gram_jaccard": 0.00558659217877095
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.20869565217391303,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.19387755102040816,
+          "word_5gram_jaccard": 0.006666666666666667
+        }
+      ]
+    },
+    {
+      "concept_id": "census_classification",
+      "attempt": 0,
+      "seed": 20261931,
+      "word_counts": [
+        110,
+        106,
+        106,
+        104,
+        92,
+        88
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.18604651162790697,
+      "max_train_test_word_5gram_jaccard": 0.005405405405405406,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.14285714285714285,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.13513513513513514,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.1232876712328767,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.18604651162790697,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.15,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.16546762589928057,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.15328467153284672,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.1484375,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.183206106870229,
+          "word_5gram_jaccard": 0.005405405405405406
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.1366906474820144,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.176,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.13138686131386862,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.1721311475409836,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.1796875,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.14754098360655737,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "cadastral_land_taxation",
+      "attempt": 0,
+      "seed": 20262031,
+      "word_counts": [
+        106,
+        99,
+        105,
+        95,
+        93,
+        78
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.20202020202020202,
+      "max_train_test_word_5gram_jaccard": 0.0,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.13138686131386862,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.16546762589928057,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.15447154471544716,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.14960629921259844,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.14166666666666666,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.145985401459854,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.12295081967213115,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.1557377049180328,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.17857142857142858,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.14285714285714285,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.15625,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.13008130081300814,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.15315315315315314,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.20202020202020202,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.16037735849056603,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "quarantine_regimes",
+      "attempt": 0,
+      "seed": 20262131,
+      "word_counts": [
+        101,
+        92,
+        94,
+        98,
+        91,
+        72
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.19166666666666668,
+      "max_train_test_word_5gram_jaccard": 0.0,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.12213740458015267,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.17886178861788618,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.14960629921259844,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.19166666666666668,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.17391304347826086,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.13114754098360656,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.13934426229508196,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.11475409836065574,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.0847457627118644,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.096,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.15517241379310345,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.13513513513513514,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.125,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.14414414414414414,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.09734513274336283,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "passport_mobility_controls",
+      "attempt": 0,
+      "seed": 20262231,
+      "word_counts": [
+        95,
+        91,
+        99,
+        98,
+        89,
+        89
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.1791044776119403,
+      "max_train_test_word_5gram_jaccard": 0.0,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.125,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.1791044776119403,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.13970588235294118,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.16129032258064516,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.16279069767441862,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.12686567164179105,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.11278195488721804,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.1322314049586777,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.06716417910447761,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.10869565217391304,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.109375,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.0962962962962963,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.15833333333333333,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.1328125,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.12605042016806722,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "lexical_semantic_ambiguity",
+      "attempt": 1,
+      "seed": 20262332,
+      "word_counts": [
+        101,
+        92,
+        95,
+        92,
+        85,
+        71
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.2545454545454545,
+      "max_train_test_word_5gram_jaccard": 0.0,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.12878787878787878,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.15384615384615385,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.23684210526315788,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.2,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.12605042016806722,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.13076923076923078,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.2545454545454545,
+          "word_5gram_jaccard": 0.005714285714285714
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.16379310344827586,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.14912280701754385,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.16806722689075632,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.1623931623931624,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.15789473684210525,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.22115384615384615,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.11818181818181818,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.10091743119266056,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "syntactic_attachment_ambiguity",
+      "attempt": 0,
+      "seed": 20262431,
+      "word_counts": [
+        119,
+        96,
+        111,
+        106,
+        91,
+        81
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.15254237288135594,
+      "max_train_test_word_5gram_jaccard": 0.0,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.12056737588652482,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.09090909090909091,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.15079365079365079,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.13178294573643412,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.1171875,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.08029197080291971,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.11382113821138211,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.15,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.10655737704918032,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.125,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.15254237288135594,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.13675213675213677,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.11607142857142858,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.14018691588785046,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.12844036697247707,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "phonological_assimilation",
+      "attempt": 0,
+      "seed": 20262531,
+      "word_counts": [
+        106,
+        111,
+        108,
+        107,
+        97,
+        90
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.2608695652173913,
+      "max_train_test_word_5gram_jaccard": 0.005319148936170213,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.1865671641791045,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.15671641791044777,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.19083969465648856,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.2608695652173913,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.2184873949579832,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.14685314685314685,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.23134328358208955,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.18461538461538463,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.203125,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.21052631578947367,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.171875,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.2396694214876033,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.208,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.1984126984126984,
+          "word_5gram_jaccard": 0.005319148936170213
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.21739130434782608,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "morphological_agreement",
+      "attempt": 0,
+      "seed": 20262631,
+      "word_counts": [
+        117,
+        113,
+        109,
+        113,
+        97,
+        106
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.3025210084033613,
+      "max_train_test_word_5gram_jaccard": 0.0,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.1619718309859155,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.16783216783216784,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.17266187050359713,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.17829457364341086,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.18181818181818182,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.1773049645390071,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.19117647058823528,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.208,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.3025210084033613,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.23308270676691728,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.18604651162790697,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.21705426356589147,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.18253968253968253,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.18604651162790697,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.19327731092436976,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "feedback_control_stability",
+      "attempt": 0,
+      "seed": 20262731,
+      "word_counts": [
+        114,
+        117,
+        118,
+        119,
+        103,
+        98
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.2366412213740458,
+      "max_train_test_word_5gram_jaccard": 0.009523809523809525,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.1366906474820144,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.1678832116788321,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.2366412213740458,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.1259259259259259,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.15873015873015872,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.13432835820895522,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.203125,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.21008403361344538,
+          "word_5gram_jaccard": 0.009523809523809525
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.1794871794871795,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.17293233082706766,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.18699186991869918,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.1864406779661017,
+          "word_5gram_jaccard": 0.004830917874396135
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.15625,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.2033898305084746,
+          "word_5gram_jaccard": 0.004807692307692308
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.15789473684210525,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "dynamical_state_estimation",
+      "attempt": 0,
+      "seed": 20262831,
+      "word_counts": [
+        115,
+        115,
+        117,
+        108,
+        108,
+        101
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.20588235294117646,
+      "max_train_test_word_5gram_jaccard": 0.009389671361502348,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.1476510067114094,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.15862068965517243,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.18181818181818182,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.15714285714285714,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.20588235294117646,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.12949640287769784,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.1791044776119403,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.14393939393939395,
+          "word_5gram_jaccard": 0.009389671361502348
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.125,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.16541353383458646,
+          "word_5gram_jaccard": 0.004629629629629629
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.16535433070866143,
+          "word_5gram_jaccard": 0.004629629629629629
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.15384615384615385,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.13740458015267176,
+          "word_5gram_jaccard": 0.004830917874396135
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.1889763779527559,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.11627906976744186,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "fatigue_crack_growth",
+      "attempt": 0,
+      "seed": 20262931,
+      "word_counts": [
+        114,
+        97,
+        94,
+        101,
+        88,
+        96
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.20833333333333334,
+      "max_train_test_word_5gram_jaccard": 0.005681818181818182,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.1619718309859155,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.18115942028985507,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.17391304347826086,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.15789473684210525,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.20634920634920634,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.14925373134328357,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.15037593984962405,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.20833333333333334,
+          "word_5gram_jaccard": 0.005681818181818182
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.16260162601626016,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.13533834586466165,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.1721311475409836,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.20512820512820512,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.14516129032258066,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.13821138211382114,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.14782608695652175,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    },
+    {
+      "concept_id": "creep_deformation",
+      "attempt": 0,
+      "seed": 20263031,
+      "word_counts": [
+        110,
+        116,
+        105,
+        111,
+        95,
+        94
+      ],
+      "exact_title_occurrences": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "max_pairwise_unigram_jaccard": 0.2857142857142857,
+      "max_train_test_word_5gram_jaccard": 0.010256410256410256,
+      "pairwise_jaccard": [
+        {
+          "left": 0,
+          "right": 1,
+          "unigram_jaccard": 0.19310344827586207,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 2,
+          "unigram_jaccard": 0.20300751879699247,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 3,
+          "unigram_jaccard": 0.26119402985074625,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 4,
+          "unigram_jaccard": 0.18382352941176472,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 0,
+          "right": 5,
+          "unigram_jaccard": 0.2857142857142857,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 2,
+          "unigram_jaccard": 0.20149253731343283,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 3,
+          "unigram_jaccard": 0.20567375886524822,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 4,
+          "unigram_jaccard": 0.2558139534883721,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 1,
+          "right": 5,
+          "unigram_jaccard": 0.2125984251968504,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "unigram_jaccard": 0.1893939393939394,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 4,
+          "unigram_jaccard": 0.20161290322580644,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 2,
+          "right": 5,
+          "unigram_jaccard": 0.24778761061946902,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "unigram_jaccard": 0.2153846153846154,
+          "word_5gram_jaccard": 0.0
+        },
+        {
+          "left": 3,
+          "right": 5,
+          "unigram_jaccard": 0.22950819672131148,
+          "word_5gram_jaccard": 0.010256410256410256
+        },
+        {
+          "left": 4,
+          "right": 5,
+          "unigram_jaccard": 0.18333333333333332,
+          "word_5gram_jaccard": 0.0
+        }
+      ]
+    }
+  ],
+  "outputs": {
+    "manifest": "/root/autodl-tmp/activations/c1_confirmatory_all_v2.jsonl",
+    "manifest_sha256": "a3d3ffdd18c8b26891031c08dba0cce5b5eea5ec8182ceef0656d8b248106c51",
+    "discovery_manifest": "/root/autodl-tmp/activations/c1_confirmatory_discovery_v2.jsonl",
+    "discovery_manifest_sha256": "7b1ce526e8bc897b7f5c22e8ec7d2b0b5e04d70a30c3ca74411f40f8bec4fd2a",
+    "heldout_manifest": "/root/autodl-tmp/activations/c1_confirmatory_heldout_v2.jsonl",
+    "heldout_manifest_sha256": "2d83053ac2bfd62722bbaa92e06e1c1408a83e5e032e0cd17ba8878db7f56b8a"
+  }
+}

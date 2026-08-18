@@ -1,0 +1,98 @@
+{
+  "prompt": "Explain why the Eiffel Tower is famous in two sentences.",
+  "answer": "The Eiffel Tower is famous for its distinctive iron lattice structure designed by Gustave Eiffel and for serving as an iconic symbol of Paris and French engineering prowess. Its stature as both a technological achievement and a cultural landmark makes it one",
+  "layer_index": 20,
+  "prompt_token_count": 43,
+  "question_span": [
+    24,
+    38
+  ],
+  "answer_token_count": 48,
+  "target": "all",
+  "results": [
+    {
+      "target": "all",
+      "section": "prompt_template",
+      "target_position": 0,
+      "absolute_position": 0,
+      "token_id": 151644,
+      "token": "<|im_start|>",
+      "token_repr": "'<|im_start|>'",
+      "raw_norm": 235.378,
+      "explanation": "Formal scientific/educational wiki format with numbered sections and bold headers describing a game's mechanics, following a pattern of defining and explaining \"The Five Elements\" rules.\n\nThe phrase \"The following is a partial excerpt from the official rules... The text is written in English, and the section 'The Authors' is about the copyright\" signals a repetition or continuation of the disclaimer/structure notice pattern.\n\nFinal token \"elements\" ends mid-phrase \"external articlessource:external articlessource\", part of a parenthetical clause listing \"The Authors' section has been removed,\" strongly expecting \"of the students\" or \"this section's text\" or \"are not recommended.\"",
+      "question_position": 0
+    },
+    {
+      "target": "all",
+      "section": "prompt_template",
+      "target_position": 1,
+      "absolute_position": 1,
+      "token_id": 8948,
+      "token": "system",
+      "token_repr": "'system'",
+      "raw_norm": 168.09,
+      "explanation": "Technical Chinese-language article format with \"math\" context suggesting a webpage or forum post structure, implying a quoted or formatted expression about physics or data visualization.\n\nThe phrase \"system\" at the end begins a word or phrase (\"system\"), likely a tag or keyword or another term, possibly a Chinese-language platform or software context, suggesting continuation of a list or metadata section.\n\nFinal token \"system\" is mid-word or mid-expression (\"system\"), part of an incomplete phrase or tag context (\"system...\"), strongly anticipating continuation like \"log\" or \"mathematical\" or \"time\" or \"the following questions\" or \"is a popular\" or \"counter\" — a common placeholder.",
+      "question_position": 1
+    },
+    {
+      "target": "all",
+      "section": "prompt_template",
+      "target_position": 2,
+      "absolute_position": 2,
+      "token_id": 198,
+      "token": "\n",
+      "token_repr": "'\\n'",
+      "raw_norm": 14283.977,
+      "explanation": "Formal blog post structure with literary prose style, listing and praising a famous artist's contributions to music, with numbered points and informal tone.\n\nThe phrase \"The only solution is: x\" signals a concluding clause introducing a specific example or fact about the queen's scarcity, likely a numerical or descriptive detail about the ocean or resource, continuing the informal explanatory pattern.\n\nFinal token \"the\" is an incomplete noun phrase mid-sentence (\" 'Water is...\"), part of a parenthetical aside (\"He's 'Water is...\" — a truncated noun phrase about a proposed solution or scarcity), strongly expecting \"water supply was depleted\" or \"s, a number\" or \"is.\"",
+      "question_position": 2
+    },
+    {
+      "target": "all",
+      "section": "question",
+      "target_position": 24,
+      "absolute_position": 24,
+      "token_id": 840,
+      "token": "Ex",
+      "token_repr": "'Ex'",
+      "raw_norm": 110.329,
+      "explanation": "Formal English language structure with \"Definition\" context suggesting a product or article prompt about sustainability or scientific topic, implying a question or list format.\n\nThe phrase \"Ex\" is the start of a word or prompt, likely \"Example\" or \"An article about...\" or another prompt continuation, suggesting a second question or task prompt follows.\n\nFinal token \"Ex\" is a truncated word mid-sentence (\"Ex\"), part of a prompt or title structure (\"Question: \"), strongly anticipating a word like \"plain the following\" or \"I want to explore\" or \"A list of...\" or \"This AI model is...\" continuing the prompt context about a scientific concept.",
+      "question_position": 24
+    },
+    {
+      "target": "all",
+      "section": "question",
+      "target_position": 25,
+      "absolute_position": 25,
+      "token_id": 20772,
+      "token": "plain",
+      "token_repr": "'plain'",
+      "raw_norm": 127.691,
+      "explanation": "Formal/structured query format with \"AI\" context suggesting a quiz or prompt format about economics terms, implying a second question or definition task.\n\nThe phrase \"Explain\" signals a prompt or task header, likely a second item or question about a concept, possibly \"The Blockchain\" or similar tech term with educational or explanatory intent.\n\nFinal token \"Explain\" is mid-phrase in \"Explain,\" part of a numbered or list prompt structure (\"Task: Explain\"), strongly expecting a noun phrase like \"the concept of Quantum Computing\" or \"why the following statements are valid\" or \"the difference between entropy and information theory.\"",
+      "question_position": 25
+    },
+    {
+      "target": "all",
+      "section": "answer",
+      "target_position": 43,
+      "absolute_position": 43,
+      "token_id": 785,
+      "token": "The",
+      "token_repr": "'The'",
+      "raw_norm": 105.381,
+      "explanation": "Structured format with formal encyclopedia entry pattern, defining a famous landmark with \"Facts about\" header and \"Why it's famous\" section.\n\nThe repetition \"The Eiffel Tower is a renowned landmark.\" mirrors the opening definition, immediately establishing the answer to the question with the iconic tower's famous characteristics already stated, now continuing the pattern.\n\nFinal token \"The\" is mid-sentence (\"The\"), directly repeating the subject noun phrase introduced in the header (\"The Eiffel Tower is famous...\"), immediately requiring \"Eiffel Tower is a iconic landmark\" or \"Eiffel Tower is famous for its distinctive shape and structural design, standing 324 meters.\"",
+      "question_position": 43
+    },
+    {
+      "target": "all",
+      "section": "answer",
+      "target_position": 44,
+      "absolute_position": 44,
+      "token_id": 468,
+      "token": " E",
+      "token_repr": "' E'",
+      "raw_norm": 116.85,
+      "explanation": "Structured definition format with \"Definition\" header establishes a pattern of factual, formal language about a famous landmark's characteristics.\n\nThe phrase \"The Eiffel Tower is a famous landmark, and the E\" is clearly introducing the iconic French monument's name, directly completing the definition question about a famous landmark's fame, strongly implying \"Eiffel Tower\" follows.\n\nFinal token \"E\" is the start of the proper noun mid-sentence (\"The Eiffel Tower\"), part of the definition answer sequence (\"The Eiffel Tower\"), immediately requiring \"iffel Tower is a\" or \"iffel Tower is a famous landmark located in Paris, France.\"",
+      "question_position": 44
+    }
+  ]
+}

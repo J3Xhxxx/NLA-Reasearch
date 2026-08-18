@@ -1,0 +1,7 @@
+ssh.exe : client_loop: send disconnect: Connection reset
+ËùÔÚÎ»ÖÃ D:\Projects\natural_language_autoencoder\server\n6_launch_monitor_pull.ps1:133 ×Ö·û: 16
++     $lines = @(& $Program @ArgumentList 2>&1 | ForEach-Object { "$_"  ...
++                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (client_loop: se...onnection reset:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

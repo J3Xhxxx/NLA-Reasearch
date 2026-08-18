@@ -1,0 +1,96 @@
+[hash] binding run to complete model weight manifests
+[input] split=heldout rows=400 checkpoint=348 missing=52 activation=0ded741dea6c7f31b7f3ddbcbba5aa8b7da2372fb7f2cf9fd7f8e90781837d21
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[NLAClient] nla-gemma3-12b-L32-av: d_model=3840 inj_scale=80000.0 embed_scale=61.97 inj_char='㈜'(id=246566)
+Loading weights:   0%|          | 0/626 [00:00<?, ?it/s]Loading weights:   0%|          | 1/626 [00:00<02:27,  4.22it/s]Loading weights:   3%|▎         | 17/626 [00:00<00:10, 60.81it/s]Loading weights:   5%|▍         | 30/626 [00:00<00:07, 83.92it/s]Loading weights:   7%|▋         | 43/626 [00:00<00:06, 96.91it/s]Loading weights:   9%|▉         | 56/626 [00:00<00:05, 106.02it/s]Loading weights:  11%|█         | 69/626 [00:00<00:05, 109.98it/s]Loading weights:  13%|█▎        | 82/626 [00:00<00:05, 107.44it/s]Loading weights:  15%|█▌        | 96/626 [00:01<00:04, 106.83it/s]Loading weights:  17%|█▋        | 109/626 [00:01<00:04, 109.30it/s]Loading weights:  19%|█▉        | 122/626 [00:01<00:04, 112.31it/s]Loading weights:  22%|██▏       | 135/626 [00:01<00:04, 113.54it/s]Loading weights:  24%|██▎       | 148/626 [00:01<00:04, 116.23it/s]Loading weights:  26%|██▌       | 161/626 [00:01<00:04, 116.19it/s]Loading weights:  28%|██▊       | 174/626 [00:01<00:03, 118.43it/s]Loading weights:  30%|██▉       | 187/626 [00:01<00:03, 118.31it/s]Loading weights:  32%|███▏      | 200/626 [00:01<00:03, 117.87it/s]Loading weights:  34%|███▍      | 213/626 [00:02<00:03, 118.13it/s]Loading weights:  36%|███▌      | 226/626 [00:02<00:03, 117.44it/s]Loading weights:  38%|███▊      | 239/626 [00:02<00:03, 119.08it/s]Loading weights:  40%|████      | 251/626 [00:02<00:03, 113.66it/s]Loading weights:  42%|████▏     | 265/626 [00:02<00:03, 117.34it/s]Loading weights:  44%|████▍     | 278/626 [00:02<00:02, 116.08it/s]Loading weights:  46%|████▋     | 291/626 [00:02<00:02, 116.61it/s]Loading weights:  49%|████▊     | 304/626 [00:02<00:02, 116.03it/s]Loading weights:  51%|█████     | 317/626 [00:02<00:02, 116.31it/s]Loading weights:  53%|█████▎    | 330/626 [00:03<00:02, 112.19it/s]Loading weights:  55%|█████▍    | 343/626 [00:03<00:02, 114.81it/s]Loading weights:  57%|█████▋    | 356/626 [00:03<00:02, 115.04it/s]Loading weights:  59%|█████▉    | 369/626 [00:03<00:02, 114.45it/s]Loading weights:  62%|██████▏   | 387/626 [00:03<00:01, 132.06it/s]Loading weights:  64%|██████▍   | 403/626 [00:03<00:01, 136.96it/s]Loading weights:  67%|██████▋   | 417/626 [00:03<00:01, 132.07it/s]Loading weights:  69%|██████▉   | 431/626 [00:03<00:01, 123.43it/s]Loading weights:  71%|███████   | 445/626 [00:03<00:01, 121.38it/s]Loading weights:  73%|███████▎  | 458/626 [00:04<00:01, 112.08it/s]Loading weights:  76%|███████▌  | 473/626 [00:04<00:01, 113.62it/s]Loading weights:  78%|███████▊  | 486/626 [00:04<00:01, 115.10it/s]Loading weights:  80%|███████▉  | 499/626 [00:04<00:01, 111.52it/s]Loading weights:  82%|████████▏ | 512/626 [00:04<00:00, 114.57it/s]Loading weights:  85%|████████▍ | 531/626 [00:04<00:00, 130.96it/s]Loading weights:  87%|████████▋ | 546/626 [00:04<00:00, 133.20it/s]Loading weights:  89%|████████▉ | 560/626 [00:04<00:00, 134.65it/s]Loading weights:  92%|█████████▏| 575/626 [00:04<00:00, 130.81it/s]Loading weights:  94%|█████████▍| 589/626 [00:05<00:00, 129.54it/s]Loading weights:  96%|█████████▋| 603/626 [00:05<00:00, 128.13it/s]Loading weights:  98%|█████████▊| 616/626 [00:05<00:00, 126.48it/s]Loading weights: 100%|██████████| 626/626 [00:05<00:00, 117.13it/s]
+[AV 349/400] split=heldout uid=ea56ee4529dcc3 paragraphs=3 chars=694
+[AV 350/400] split=heldout uid=4cb603414bf148 paragraphs=3 chars=649
+[AV 351/400] split=heldout uid=48c0914280a08b paragraphs=3 chars=708
+[AV 352/400] split=heldout uid=0acf2bad59c343 paragraphs=3 chars=541
+[AV 353/400] split=heldout uid=a2d4109343e44a paragraphs=3 chars=639
+[AV 354/400] split=heldout uid=6f37c0b06d8c12 paragraphs=3 chars=635
+[AV 355/400] split=heldout uid=8101a69ec96d3c paragraphs=3 chars=666
+[AV 356/400] split=heldout uid=b4e414db826fb5 paragraphs=3 chars=648
+[AV 357/400] split=heldout uid=353e43558530bd paragraphs=3 chars=668
+[AV 358/400] split=heldout uid=e2d49f457439a3 paragraphs=3 chars=640
+[AV 359/400] split=heldout uid=c963e73c9e1b6a paragraphs=3 chars=684
+[AV 360/400] split=heldout uid=c27485c6c78c2f paragraphs=3 chars=578
+[AV 361/400] split=heldout uid=cc1a3eaacaf9c2 paragraphs=3 chars=605
+[AV 362/400] split=heldout uid=eab612cd2642b3 paragraphs=3 chars=649
+[AV 363/400] split=heldout uid=af5b3321638046 paragraphs=3 chars=646
+[AV 364/400] split=heldout uid=042273ffa8f405 paragraphs=3 chars=605
+[AV 365/400] split=heldout uid=c8d88eb0bd6445 paragraphs=3 chars=610
+[AV 366/400] split=heldout uid=1cdcdf30a3a1da paragraphs=3 chars=607
+[AV 367/400] split=heldout uid=593f227a6c5cdf paragraphs=3 chars=579
+[AV 368/400] split=heldout uid=0f5840e7689302 paragraphs=3 chars=514
+[AV 369/400] split=heldout uid=2194a8e11e0d48 paragraphs=3 chars=594
+[AV 370/400] split=heldout uid=df1ee1f2fc91e0 paragraphs=3 chars=654
+[AV 371/400] split=heldout uid=50a2bd6cab6d99 paragraphs=3 chars=600
+[AV 372/400] split=heldout uid=3206894e5bb05f paragraphs=3 chars=626
+[AV 373/400] split=heldout uid=a015ec3c6fd6a7 paragraphs=3 chars=579
+[AV 374/400] split=heldout uid=014e14beec459a paragraphs=3 chars=535
+[AV 375/400] split=heldout uid=dfcad07f85e425 paragraphs=3 chars=571
+[AV 376/400] split=heldout uid=1d5ca89288ca51 paragraphs=3 chars=689
+[AV 377/400] split=heldout uid=527a5953e10ddb paragraphs=3 chars=732
+[AV 378/400] split=heldout uid=6304529a036bd0 paragraphs=3 chars=742
+[AV 379/400] split=heldout uid=4a65b49843313e paragraphs=3 chars=623
+[AV 380/400] split=heldout uid=eeb6acc7315ded paragraphs=3 chars=654
+[AV 381/400] split=heldout uid=6170dde73bbbc7 paragraphs=3 chars=762
+[AV 382/400] split=heldout uid=d856137b773fd4 paragraphs=3 chars=627
+[AV 383/400] split=heldout uid=3d9d343f38ebfb paragraphs=3 chars=598
+[AV 384/400] split=heldout uid=2b87a4c9d3cecd paragraphs=3 chars=650
+[AV 385/400] split=heldout uid=de908df6ea9299 paragraphs=3 chars=662
+[AV 386/400] split=heldout uid=d2887481df2d95 paragraphs=3 chars=693
+[AV 387/400] split=heldout uid=808cc05fc6fda1 paragraphs=3 chars=703
+[AV 388/400] split=heldout uid=177561e8eec44c paragraphs=3 chars=589
+[AV 389/400] split=heldout uid=0e991761c99dc3 paragraphs=3 chars=660
+[AV 390/400] split=heldout uid=6e4d085ec007a7 paragraphs=3 chars=608
+[AV 391/400] split=heldout uid=9b199dffcf9e22 paragraphs=3 chars=539
+[AV 392/400] split=heldout uid=6443801e37ba11 paragraphs=3 chars=571
+[AV 393/400] split=heldout uid=48cfde8641d6d1 paragraphs=3 chars=643
+[AV 394/400] split=heldout uid=9671227577ac75 paragraphs=3 chars=692
+[AV 395/400] split=heldout uid=c31d691396cb08 paragraphs=3 chars=607
+[AV 396/400] split=heldout uid=075671f722a88d paragraphs=3 chars=647
+[AV 397/400] split=heldout uid=3ce386914e1f0d paragraphs=3 chars=577
+[AV 398/400] split=heldout uid=d21fe8b52db163 paragraphs=3 chars=598
+[AV 399/400] split=heldout uid=6efda54ba3721c paragraphs=3 chars=606
+[AV 400/400] split=heldout uid=912f55c1a3001b paragraphs=3 chars=623
+[freeze] explanations=d59401aed157287d879373f4bde3cb225524cddb81f4d7d12aff9ef283328bff variants=13a4470bf3ab9ed80dc867bc05e0d79c3259e0322a2dd65a87d8adfbc073a3fd channel=ACTIVE
+Loading weights:   0%|          | 0/430 [00:00<?, ?it/s]Loading weights: 100%|██████████| 430/430 [00:00<00:00, 10629.94it/s]
+[transformers] [1mGemma3ForCausalLM LOAD REPORT[0m from: /root/autodl-tmp/models/nla-gemma3-12b-L32-ar
+Key               | Status  | 
+------------------+---------+-
+model.norm.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[NLACritic] 33 layers  d_model=3840  mse_scale=61.97
+[AR] 100 unique texts
+[AR] 200 unique texts
+[AR] 300 unique texts
+[AR] 400 unique texts
+[AR] 500 unique texts
+[AR] 600 unique texts
+[AR] 700 unique texts
+[AR] 800 unique texts
+[AR] p3_only complete
+[AR] 900 unique texts
+[AR] 1000 unique texts
+[AR] 1100 unique texts
+[AR] 1200 unique texts
+[AR] p12 complete
+[AR] 1300 unique texts
+[AR] 1400 unique texts
+[AR] 1500 unique texts
+[AR] 1600 unique texts
+[AR] quote_strip_p3 complete
+
+=== N5 reconstruction summary ===
+split=heldout rows=400 channel=ACTIVE route_nla=262
+orig               cos_c=+0.84157 top1=1.000
+p3_only            cos_c=+0.78562 top1=1.000
+p12                cos_c=+0.64043 top1=0.968
+quote_strip_p3     cos_c=+0.19181 top1=0.460
+sae_small          cos_c=+0.59400 top1=1.000
+sae_big            cos_c=+0.64447 top1=1.000
+N5_RECON_COMPLETE split=heldout json=fc4b1a0e431eeed3409af5459e82d07c6f2e6449817d075e022d0c32e43bcd3b npz=2203889cc09997f2630d142be477be1fb7177c279b642d2f05455d8c228d8651

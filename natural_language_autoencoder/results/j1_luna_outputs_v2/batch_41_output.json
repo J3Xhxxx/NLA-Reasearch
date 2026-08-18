@@ -1,0 +1,104 @@
+{
+  "agent_task": "codex-cli://j1/luna_batch_41",
+  "batch_id": 41,
+  "cases": [
+    {
+      "abstain": false,
+      "case_id": "case_9ybj3f4nu6wzmlq6n5",
+      "confidence": 0.96,
+      "exclusion_cues": [
+        "No Go code, HTML navigation, or ordinary narrative",
+        "Contexts are mathematical rather than licensing or API documentation"
+      ],
+      "hypothesis": "LaTeX mathematical notation uses highlighted roman/operator abbreviations inside formal topology, algebra, category-theory, or approximation expressions.",
+      "positive_cues": [
+        "Formal topology, algebra, and category-theory contexts",
+        "Roman/operator commands such as rm, operatorname, and mathrm",
+        "Displayed equations and theorem-style prose"
+      ]
+    },
+    {
+      "abstain": false,
+      "case_id": "case_8qcc7i1dyj4fdzq5zb",
+      "confidence": 0.97,
+      "exclusion_cues": [
+        "No mathematical notation or literary prose",
+        "Not primarily JavaDoc navigation or source license headers"
+      ],
+      "hypothesis": "Go-oriented technical documentation centered on type declarations, interfaces, structs, maps, and generated API schemas.",
+      "positive_cues": [
+        "Go identifiers and syntax including Discard, interface{}, Table, var, and map",
+        "Struct initialization and type-declaration descriptions",
+        "OpenAPI and Swagger schema context"
+      ]
+    },
+    {
+      "abstain": false,
+      "case_id": "case_k3naedfnyw3frj677m",
+      "confidence": 0.97,
+      "exclusion_cues": [
+        "No mathematical equations or Go type declarations",
+        "Evidence is documentation markup rather than application logic"
+      ],
+      "hypothesis": "Generated software reference documentation using HTML/JavaDoc navigation, legal boilerplate, and Markdown-style parameter tables.",
+      "positive_cues": [
+        "JavaDoc-style SUMMARY and constructor sections",
+        "Bottom navigation anchors and HTML links",
+        "Apache license text and permissions tables"
+      ]
+    },
+    {
+      "abstain": false,
+      "case_id": "case_e3scme9s49xh1cz2rr",
+      "confidence": 0.99,
+      "exclusion_cues": [
+        "No enclosing HTML or Markdown documentation structure",
+        "Shown material is comment text, not executable code"
+      ],
+      "hypothesis": "C-style block-comment license headers at the beginning of source files, with repeated copyright notices.",
+      "positive_cues": [
+        "Every context begins with /* and a highlighted asterisk",
+        "Copyright notices immediately follow",
+        "Repeated header-like boilerplate"
+      ]
+    },
+    {
+      "abstain": false,
+      "case_id": "case_zefl9tyznc9o7ndv62",
+      "confidence": 0.99,
+      "exclusion_cues": [
+        "No clear locative use such as “over there”",
+        "Not technical markup or code"
+      ],
+      "hypothesis": "Existential or anticipatory “there” introduces a clause about something existing, being present, or being possible.",
+      "positive_cues": [
+        "There is at least one pair",
+        "There's a thorn or two",
+        "There was no way",
+        "Repeated placement at clause starts"
+      ]
+    }
+  ],
+  "labeler": "luna",
+  "model": "gpt-5.6-luna",
+  "prompt_sha256": "9e5ac7e15db69c8bc1903d5fa01b438a1ddd9dd8c062269ec17d2421d3d0e911",
+  "provenance": {
+    "agent_task": "codex-cli://j1/luna_batch_41",
+    "codex_cli_version": "codex-cli 0.146.1",
+    "manifest_sha256": "3a8f2003d66bea44f5a942c52d4232c557918d5ad7b3f856cf9e4c2b454dc09d",
+    "model": "gpt-5.6-luna",
+    "model_input_sha256": "21f8f7f328525c1d681216ecbd89c4d0143907d727811a28a2e4b2f99ab0a12d",
+    "raw_attempt_artifact": "batch_41_attempt_01.json",
+    "raw_attempt_artifact_sha256": "27165a933704690f2466121986548883ba83c3c60582b6476ae43e35e84879ad",
+    "reasoning": "max",
+    "role": "luna_worker",
+    "script_sha256": "a471cc4f71260461324d7c9aea4efbc66b191c09bf2f813992ef4b5f21514d51",
+    "tool_calls_detected": false,
+    "transport": "codex_cli_ephemeral"
+  },
+  "public_prompt_sha256": "70339ca119383316256521df11425999894b0ae1209d8fd03a4d1960187cac31",
+  "reasoning": "max",
+  "role": "luna_worker",
+  "schema_version": 1,
+  "status": "ok"
+}

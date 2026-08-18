@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "experiment": "N3 cohort resample (E1-E7 replacement)",
+  "fixes": [
+    "F13 template-token contamination",
+    "F13 CE-window contamination"
+  ],
+  "args": {
+    "corpus": "/root/autodl-tmp/results/n3_corpus_v1.jsonl",
+    "base_model": "/root/autodl-tmp/models/gemma-3-12b-it",
+    "layer_index": 32,
+    "n_target": 200,
+    "per_doc": 2,
+    "min_position": 64,
+    "max_position": 480,
+    "min_continuation": 16,
+    "content_frac": 0.75,
+    "seq_len": 512,
+    "seed": 20260730,
+    "out": "/root/autodl-tmp/activations/acts_L32_n3_v1.parquet",
+    "out_json": "/root/autodl-tmp/results/n3_cohort_v1.json"
+  },
+  "corpus_sha256": "d40069ab51c294ecbe3e76845d1f2f4dff1bb66a6061c5b6b4c612f7d0ff8816",
+  "checks": {
+    "n_rows": 200,
+    "template_or_blank_tokens": 0,
+    "template_fraction": 0.0,
+    "min_position_realised": 64,
+    "min_position_requested": 64,
+    "min_position_honoured": true,
+    "position_percentiles": {
+      "5": 73.0,
+      "25": 117.5,
+      "50": 168.5,
+      "75": 310.5,
+      "95": 434.19999999999993
+    },
+    "n_docs_used": 101,
+    "by_source": {
+      "ArXiv": 8,
+      "BookCorpus2": 4,
+      "Enron Emails": 8,
+      "EuroParl": 8,
+      "FreeLaw": 8,
+      "Github": 7,
+      "Gutenberg (PG-19)": 4,
+      "HackerNews": 8,
+      "NIH ExPorter": 8,
+      "OpenSubtitles": 8,
+      "OpenWebText2": 8,
+      "PhilPapers": 8,
+      "Pile-CC": 8,
+      "PubMed Abstracts": 7,
+      "PubMed Central": 6,
+      "StackExchange": 6,
+      "USPTO Backgrounds": 6,
+      "Ubuntu IRC": 4,
+      "Wikipedia (en)": 6,
+      "YoutubeSubtitles": 6,
+      "xnli:de": 6,
+      "xnli:en": 6,
+      "xnli:es": 6,
+      "xnli:fr": 6,
+      "xnli:hi": 6,
+      "xnli:ru": 6,
+      "xnli:vi": 6,
+      "xnli:zh": 6,
+      "Books3": 6,
+      "xnli:ar": 4,
+      "xnli:tr": 4,
+      "DM Mathematics": 2
+    },
+    "by_corpus": {
+      "pile": 144,
+      "xnli": 56
+    },
+    "skipped": {
+      "no_eligible_position": 4,
+      "too_short": 2
+    },
+    "norm_mean": 65965.21875,
+    "norm_min": 37216.875,
+    "norm_max": 100437.15625
+  },
+  "outputs": {
+    "parquet": "/root/autodl-tmp/activations/acts_L32_n3_v1.parquet",
+    "parquet_sha256": "eb9a686a4cdea1f97134b2367d7c8a74a35351678d3c043eddae2f993e17ab66"
+  }
+}

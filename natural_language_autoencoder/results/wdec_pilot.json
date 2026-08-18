@@ -1,0 +1,854 @@
+{
+  "method": "wdec_pilot",
+  "target_norm": 67024.4,
+  "summary": {
+    "top": {
+      "n": 12,
+      "mean_cos": -0.0292,
+      "min": -0.9462,
+      "max": 0.9219
+    },
+    "rand": {
+      "n": 6,
+      "mean_cos": -0.1544,
+      "min": -0.79,
+      "max": 0.2462
+    },
+    "gauss": {
+      "n": 4,
+      "mean_cos": 0.0129,
+      "min": -0.0009,
+      "max": 0.0223
+    }
+  },
+  "rows": [
+    {
+      "group": "top",
+      "feature": 161,
+      "n_fire": 19,
+      "contexts": [
+        {
+          "doc_id": 0,
+          "position": 19,
+          "token": ",",
+          "value": 1134.23
+        },
+        {
+          "doc_id": 0,
+          "position": 22,
+          "token": " what",
+          "value": 8271.62
+        },
+        {
+          "doc_id": 0,
+          "position": 24,
+          "token": " typically",
+          "value": 6087.13
+        },
+        {
+          "doc_id": 0,
+          "position": 29,
+          "token": " to",
+          "value": 2147.77
+        },
+        {
+          "doc_id": 1,
+          "position": 18,
+          "token": " of",
+          "value": 3179.92
+        },
+        {
+          "doc_id": 1,
+          "position": 20,
+          "token": ",",
+          "value": 4321.09
+        },
+        {
+          "doc_id": 1,
+          "position": 22,
+          "token": ",",
+          "value": 2733.87
+        },
+        {
+          "doc_id": 2,
+          "position": 21,
+          "token": " and",
+          "value": 4011.6
+        },
+        {
+          "doc_id": 2,
+          "position": 25,
+          "token": "th",
+          "value": 3402.8
+        },
+        {
+          "doc_id": 3,
+          "position": 14,
+          "token": " covering",
+          "value": 6524.58
+        },
+        {
+          "doc_id": 3,
+          "position": 16,
+          "token": ",",
+          "value": 4018.9
+        },
+        {
+          "doc_id": 3,
+          "position": 18,
+          "token": " requirements",
+          "value": 1149.27
+        },
+        {
+          "doc_id": 3,
+          "position": 20,
+          "token": " and",
+          "value": 4920.9
+        },
+        {
+          "doc_id": 3,
+          "position": 21,
+          "token": " companionship",
+          "value": 1179.5
+        },
+        {
+          "doc_id": 4,
+          "position": 14,
+          "token": " typical",
+          "value": 5819.9
+        },
+        {
+          "doc_id": 4,
+          "position": 16,
+          "token": " democracy",
+          "value": 2626.56
+        },
+        {
+          "doc_id": 4,
+          "position": 18,
+          "token": " from",
+          "value": 4950.27
+        },
+        {
+          "doc_id": 4,
+          "position": 20,
+          "token": " to",
+          "value": 1804.91
+        },
+        {
+          "doc_id": 4,
+          "position": 22,
+          "token": " approval",
+          "value": 1868.33
+        }
+      ],
+      "explanation": "Academic/forum post structure: text is a wiki/forum question with fragmented, incoherent phrasing typical of AI/engineering content.\n\nThe phrase \"i want to know what is the best method to calculate the average\" signals a repeating question pattern, suggesting a new question or citation/reference is incoming.\n\nFinal token \"there\" ends a question fragment \"i am searching for...what is the topic of...\" — immediately expects a question prompt like \"my question\" or \"the answer\" or \"a list of...\" or \"This is a math problem\" or \"the game is...\" or \"a new post\" or \"not a fan of...\" continuing the boilerplate.",
+      "cos": -0.8781,
+      "mse_nrm": 3.7562
+    },
+    {
+      "group": "top",
+      "feature": 166,
+      "n_fire": 13,
+      "contexts": [
+        {
+          "doc_id": 0,
+          "position": 19,
+          "token": ",",
+          "value": 1777.03
+        },
+        {
+          "doc_id": 0,
+          "position": 27,
+          "token": " they",
+          "value": 5196.06
+        },
+        {
+          "doc_id": 0,
+          "position": 32,
+          "token": ".",
+          "value": 1979.82
+        },
+        {
+          "doc_id": 0,
+          "position": 34,
+          "token": "\n",
+          "value": 9053.34
+        },
+        {
+          "doc_id": 1,
+          "position": 16,
+          "token": " the",
+          "value": 2698.36
+        },
+        {
+          "doc_id": 1,
+          "position": 29,
+          "token": "<start_of_turn>",
+          "value": 5637.09
+        },
+        {
+          "doc_id": 2,
+          "position": 16,
+          "token": " the",
+          "value": 7465.57
+        },
+        {
+          "doc_id": 2,
+          "position": 18,
+          "token": "1",
+          "value": 3743.51
+        },
+        {
+          "doc_id": 2,
+          "position": 23,
+          "token": "1",
+          "value": 8475.05
+        },
+        {
+          "doc_id": 2,
+          "position": 27,
+          "token": ".",
+          "value": 2473.69
+        },
+        {
+          "doc_id": 2,
+          "position": 30,
+          "token": "<start_of_turn>",
+          "value": 2903.06
+        },
+        {
+          "doc_id": 3,
+          "position": 25,
+          "token": "<start_of_turn>",
+          "value": 11598.75
+        },
+        {
+          "doc_id": 4,
+          "position": 26,
+          "token": "<start_of_turn>",
+          "value": 7401.56
+        }
+      ],
+      "explanation": "Article structure: informational blog post summarizing a research piece, with a recurring pattern of presenting evidence against conventional wisdom on workplace diversity.\n\nThe phrase \"The Harvard Business School'\" signals a citation or elaboration on the study's findings, likely continuing with a specific statistic or quote about the benefits of diversity in organizational performance.\n\nFinal token \"it'\" opens a closing clause (\"it's...\"), immediately requiring a verb phrase continuation — likely \"s role\" or \"the full spectrum\" or \"not a coincidence that...\" or \"This article is a good read\" or \"However, the law...\" or \"team is still working...\" to complete the boilerplate boilerplate disclaimer phrase.",
+      "cos": -0.9462,
+      "mse_nrm": 3.8924
+    },
+    {
+      "group": "top",
+      "feature": 443,
+      "n_fire": 12,
+      "contexts": [
+        {
+          "doc_id": 0,
+          "position": 19,
+          "token": ",",
+          "value": 2503.09
+        },
+        {
+          "doc_id": 0,
+          "position": 24,
+          "token": " typically",
+          "value": 1893.75
+        },
+        {
+          "doc_id": 0,
+          "position": 29,
+          "token": " to",
+          "value": 1749.78
+        },
+        {
+          "doc_id": 0,
+          "position": 32,
+          "token": ".",
+          "value": 2883.08
+        },
+        {
+          "doc_id": 1,
+          "position": 20,
+          "token": ",",
+          "value": 1973.08
+        },
+        {
+          "doc_id": 1,
+          "position": 22,
+          "token": ",",
+          "value": 969.48
+        },
+        {
+          "doc_id": 1,
+          "position": 25,
+          "token": " dioxide",
+          "value": 3406.23
+        },
+        {
+          "doc_id": 2,
+          "position": 21,
+          "token": " and",
+          "value": 928.9
+        },
+        {
+          "doc_id": 2,
+          "position": 25,
+          "token": "th",
+          "value": 1034.18
+        },
+        {
+          "doc_id": 3,
+          "position": 16,
+          "token": ",",
+          "value": 1095.7
+        },
+        {
+          "doc_id": 3,
+          "position": 18,
+          "token": " requirements",
+          "value": 1311.86
+        },
+        {
+          "doc_id": 3,
+          "position": 20,
+          "token": " and",
+          "value": 1754.78
+        }
+      ],
+      "explanation": "Structured article format with consistent pattern: code block, tutorial walkthrough, and list of optimization tips for a specific game.\n\nThe phrase \"The function is: def calculate_average(data)\" is repeating the list of three players, suggesting a second character name is being enumerated.\n\nFinal token \"energy'\" closes a list of three player names (\"Alice, Bob, and Charlie\"), immediately requiring continuation like \"or\" or \"the article\" to complete the pattern — likely \"1\" or \"The Python tutorial\" or \"including the `numpy` library\" or \"This is a list of other players\" or \"to the answer.\"",
+      "cos": -0.9355,
+      "mse_nrm": 3.8709
+    },
+    {
+      "group": "top",
+      "feature": 490,
+      "n_fire": 11,
+      "contexts": [
+        {
+          "doc_id": 0,
+          "position": 19,
+          "token": ",",
+          "value": 3073.06
+        },
+        {
+          "doc_id": 0,
+          "position": 27,
+          "token": " they",
+          "value": 3053.33
+        },
+        {
+          "doc_id": 0,
+          "position": 32,
+          "token": ".",
+          "value": 3998.59
+        },
+        {
+          "doc_id": 0,
+          "position": 34,
+          "token": "\n",
+          "value": 5776.03
+        },
+        {
+          "doc_id": 1,
+          "position": 16,
+          "token": " the",
+          "value": 1843.41
+        },
+        {
+          "doc_id": 1,
+          "position": 29,
+          "token": "<start_of_turn>",
+          "value": 3405.91
+        },
+        {
+          "doc_id": 2,
+          "position": 16,
+          "token": " the",
+          "value": 4357.15
+        },
+        {
+          "doc_id": 2,
+          "position": 23,
+          "token": "1",
+          "value": 4760.11
+        },
+        {
+          "doc_id": 2,
+          "position": 27,
+          "token": ".",
+          "value": 3625.95
+        },
+        {
+          "doc_id": 2,
+          "position": 30,
+          "token": "<start_of_turn>",
+          "value": 2618.99
+        },
+        {
+          "doc_id": 4,
+          "position": 26,
+          "token": "<start_of_turn>",
+          "value": 2528.78
+        }
+      ],
+      "explanation": "Technical documentation pattern: structured article about a specific UI/code snippet, establishing context for a programming puzzle involving a dataset.\n\nThe phrase \"The goal is to find the longest sequence of consecutive days\" signals a repeating boilerplate disclaimer about the function's purpose, likely referencing the truncated/hidden implementation details.\n\nFinal token \"it'\" opens a closing clause (\"it'\"), immediately requiring a verb phrase — likely \"s\" or \"the code\" or \"to be included\" or \"This article\" or \"However, the exact constraint...\" or \"or\" continuing the sentence about the repeated \"empty set\" caveat or a citation to the timestamp/metadata context.",
+      "cos": 0.8849,
+      "mse_nrm": 0.2302
+    },
+    {
+      "group": "top",
+      "feature": 565,
+      "n_fire": 7,
+      "contexts": [
+        {
+          "doc_id": 0,
+          "position": 24,
+          "token": " typically",
+          "value": 2796.83
+        },
+        {
+          "doc_id": 1,
+          "position": 25,
+          "token": " dioxide",
+          "value": 2515.02
+        },
+        {
+          "doc_id": 2,
+          "position": 25,
+          "token": "th",
+          "value": 2486.47
+        },
+        {
+          "doc_id": 3,
+          "position": 18,
+          "token": " requirements",
+          "value": 3541.44
+        },
+        {
+          "doc_id": 3,
+          "position": 21,
+          "token": " companionship",
+          "value": 4789.78
+        },
+        {
+          "doc_id": 4,
+          "position": 16,
+          "token": " democracy",
+          "value": 2990.37
+        },
+        {
+          "doc_id": 4,
+          "position": 22,
+          "token": " approval",
+          "value": 2766.74
+        }
+      ],
+      "explanation": "<explanation>\nWiki/lore article structure signals a recurring pattern: the text follows a standard fantasy item listing format with a quest description for a specific artifact.\n\nThe phrase \"He has been the time when...\" establishes a quest card template, with the \"Time Will Tell\" section suggesting a recurring trope in the established lore context.\n\nFinal token \"it'\" ends a repeated title phrase (\"in the land of... to the time...\"), immediately requiring a repeated or restated label like \"in the realm of the future\" or \"to be continued\" or \"The question is...\" or \"by the game mechanics\" or \"to the final count\" mirroring the \"First time the artifact is.\"\n</p>\n</article>\n</time>\n</math> despite the ongoing conflict in the context of the established comic/lore entry.\n</article>\n</math>\n</math> in the context of the proposed fantasy item listing.\n</article>\n</",
+      "cos": -0.7825,
+      "mse_nrm": 3.5649
+    },
+    {
+      "group": "top",
+      "feature": 5389,
+      "n_fire": 7,
+      "contexts": [
+        {
+          "doc_id": 2,
+          "position": 16,
+          "token": " the",
+          "value": 3305.89
+        },
+        {
+          "doc_id": 2,
+          "position": 18,
+          "token": "1",
+          "value": 2078.6
+        },
+        {
+          "doc_id": 2,
+          "position": 21,
+          "token": " and",
+          "value": 1727.63
+        },
+        {
+          "doc_id": 2,
+          "position": 23,
+          "token": "1",
+          "value": 3065.46
+        },
+        {
+          "doc_id": 2,
+          "position": 25,
+          "token": "th",
+          "value": 1481.61
+        },
+        {
+          "doc_id": 2,
+          "position": 27,
+          "token": ".",
+          "value": 1665.78
+        },
+        {
+          "doc_id": 2,
+          "position": 30,
+          "token": "<start_of_turn>",
+          "value": 1713.18
+        }
+      ],
+      "explanation": "Encyclopedic/Wikipedia structure: article format with structured sections, following standard historical-academic tone for a specific topic on Galileo Galilei.\n\nThe phrase \"The painting is called the School of Athens\" signals a standard art history citation pattern, establishing a historical context about the painting and its subject matter.\n\nFinal token \"it'\" opens a repeated phrase (\"the...\"), immediately requiring a specific historical/academic reference — likely \"the Renaissance\" or \"the text\" — likely \"This\" or \"the work\" or \"by Erasmus\" or \"but...\" or \"The Pythagorean theorem\" or \"a list of...\" continuing the sentence about the specific Renaissance context of the painting.",
+      "cos": 0.1169,
+      "mse_nrm": 1.7662
+    },
+    {
+      "group": "top",
+      "feature": 1491,
+      "n_fire": 6,
+      "contexts": [
+        {
+          "doc_id": 1,
+          "position": 16,
+          "token": " the",
+          "value": 3814.89
+        },
+        {
+          "doc_id": 1,
+          "position": 18,
+          "token": " of",
+          "value": 3434.19
+        },
+        {
+          "doc_id": 1,
+          "position": 20,
+          "token": ",",
+          "value": 3080.63
+        },
+        {
+          "doc_id": 1,
+          "position": 22,
+          "token": ",",
+          "value": 4012.09
+        },
+        {
+          "doc_id": 1,
+          "position": 25,
+          "token": " dioxide",
+          "value": 2833.69
+        },
+        {
+          "doc_id": 1,
+          "position": 29,
+          "token": "<start_of_turn>",
+          "value": 3298.9
+        }
+      ],
+      "explanation": "Educational slideshow format with structured definitions, following a basic biology textbook pattern for photosynthesis/chemical reactions.\n\nThe phrase \"Photosynthesis is the process where plants use light energy to make sugar. This is called photosynthesis.\" signals a standard definition of a chemical reaction, establishing the basic equation for glucose.\n\nFinal token \"are'\" opens a chemical equation clause (\"C6H12O6 is called glucose...\"), immediately requiring a verb phrase like \"the reactants\" or \"6CO2\" to complete the photosynthesis equation. Or \"This process is called...\" or \"A molecule called...\" or \"or\" continuing the sentence about the reactants/products of the chemical reaction.",
+      "cos": 0.3646,
+      "mse_nrm": 1.2707
+    },
+    {
+      "group": "top",
+      "feature": 7508,
+      "n_fire": 6,
+      "contexts": [
+        {
+          "doc_id": 1,
+          "position": 16,
+          "token": " the",
+          "value": 2719.97
+        },
+        {
+          "doc_id": 1,
+          "position": 18,
+          "token": " of",
+          "value": 2324.8
+        },
+        {
+          "doc_id": 1,
+          "position": 20,
+          "token": ",",
+          "value": 2985.2
+        },
+        {
+          "doc_id": 1,
+          "position": 22,
+          "token": ",",
+          "value": 3527.09
+        },
+        {
+          "doc_id": 1,
+          "position": 25,
+          "token": " dioxide",
+          "value": 2386.78
+        },
+        {
+          "doc_id": 1,
+          "position": 29,
+          "token": "<start_of_turn>",
+          "value": 6160.46
+        }
+      ],
+      "explanation": "Article structure: technical explainer with consistent pattern of presenting a specific research finding, following a structured medical/academic format.\n\nThe phrase \"The algorithm is based on the following equation\" signals a standard citation of a biological process, with \"photosynthesis\" as the final topic introduced.\n\nFinal token \"it'\" opens a closing citation/reference phrase (\"the plant'\"), immediately requiring a verb phrase like \"The article\" or \"the article is...\" — likely \"s\" or \"a detailed review of...\" or \"This article is...\" or \"The answer is...\" or \"by the BBC\" to complete the boilerplate copyright/source attribution for the biological context.",
+      "cos": -0.069,
+      "mse_nrm": 2.1379
+    },
+    {
+      "group": "top",
+      "feature": 2190,
+      "n_fire": 6,
+      "contexts": [
+        {
+          "doc_id": 0,
+          "position": 22,
+          "token": " what",
+          "value": 1111.22
+        },
+        {
+          "doc_id": 0,
+          "position": 24,
+          "token": " typically",
+          "value": 1134.74
+        },
+        {
+          "doc_id": 0,
+          "position": 27,
+          "token": " they",
+          "value": 2717.83
+        },
+        {
+          "doc_id": 0,
+          "position": 29,
+          "token": " to",
+          "value": 2637.79
+        },
+        {
+          "doc_id": 0,
+          "position": 32,
+          "token": ".",
+          "value": 2157.15
+        },
+        {
+          "doc_id": 0,
+          "position": 34,
+          "token": "\n",
+          "value": 3372.87
+        }
+      ],
+      "explanation": "Article structure: travel guide format with structured prose, continuing a detailed description of a specific hotel/restaurant in Kyoto.\n\nThe sentence \"The Kiyomizu-dera Temple is one of the most famous temples in Kyoto\" is a parenthetical citation, listing the landmark name and visitor count.\n\nFinal token \"it'\" opens a parenthetical clause mid-sentence (\"including the Kiyomizu-dera...\"), immediately requiring a verb phrase like \"popular tourist attraction\" or \"the Jishu Shrine\" or \"a detailed review\" — likely \"to the Kiyomizu Temple\" or \"including the ticket price\" or \"This is...\" to complete the citation of the photo.",
+      "cos": 0.0867,
+      "mse_nrm": 1.8265
+    },
+    {
+      "group": "top",
+      "feature": 11642,
+      "n_fire": 6,
+      "contexts": [
+        {
+          "doc_id": 1,
+          "position": 16,
+          "token": " the",
+          "value": 1935.12
+        },
+        {
+          "doc_id": 1,
+          "position": 18,
+          "token": " of",
+          "value": 2692.66
+        },
+        {
+          "doc_id": 1,
+          "position": 20,
+          "token": ",",
+          "value": 1882.88
+        },
+        {
+          "doc_id": 1,
+          "position": 22,
+          "token": ",",
+          "value": 2417.12
+        },
+        {
+          "doc_id": 1,
+          "position": 25,
+          "token": " dioxide",
+          "value": 1346.53
+        },
+        {
+          "doc_id": 1,
+          "position": 29,
+          "token": "<start_of_turn>",
+          "value": 1844.51
+        }
+      ],
+      "explanation": "Structured article format with technical documentation style: a review of a specific bioinformatics tool, following a pattern of explaining the algorithm.\n\nThe phrase \"The method is based on the following code snippet\" signals a standard academic citation of a specific Python/C++ implementation, with the \"import torch\" block establishing context.\n\nFinal token \"it'\" opens a code block or citation fragment mid-sentence (\"the function...is called `torch.nn.Conv2d`\"), immediately requiring a continuation like \"s\" or \"the paper\" — likely \"from the Arabidopsis thaliana paper\" or \"mode\" or \"1. The code...\" or \"loss\" to complete the clause.",
+      "cos": 0.076,
+      "mse_nrm": 1.8481
+    },
+    {
+      "group": "top",
+      "feature": 276,
+      "n_fire": 5,
+      "contexts": [
+        {
+          "doc_id": 0,
+          "position": 37,
+          "token": "\n",
+          "value": 5158.54
+        },
+        {
+          "doc_id": 1,
+          "position": 31,
+          "token": "\n",
+          "value": 7601.67
+        },
+        {
+          "doc_id": 2,
+          "position": 32,
+          "token": "\n",
+          "value": 4094.79
+        },
+        {
+          "doc_id": 3,
+          "position": 27,
+          "token": "\n",
+          "value": 5862.13
+        },
+        {
+          "doc_id": 4,
+          "position": 28,
+          "token": "\n",
+          "value": 8743.16
+        }
+      ],
+      "explanation": "Structured article format signals a Q&A explainer, with a technical answer about a specific financial/legal topic.\n\nThe phrase \"The answer is yes\" establishes a formal response, priming a detailed explanation of the mechanism or context of the \"dividend yield\" concept.\n\nFinal token \"it.'\" opens a transitional phrase (\"So...\"), immediately requiring a standard article introduction like \"Here's what you need to know\" or \"is being answered\" — likely \"The article\" or \"First, let's...\" or \"or a FAQ format\" or \"This article is a comprehensive guide\" to introduce the answer or a closing boilerplate disclaimer.",
+      "cos": 0.8099,
+      "mse_nrm": 0.3803
+    },
+    {
+      "group": "top",
+      "feature": 239,
+      "n_fire": 5,
+      "contexts": [
+        {
+          "doc_id": 0,
+          "position": 37,
+          "token": "\n",
+          "value": 2800.82
+        },
+        {
+          "doc_id": 1,
+          "position": 31,
+          "token": "\n",
+          "value": 5057.53
+        },
+        {
+          "doc_id": 2,
+          "position": 32,
+          "token": "\n",
+          "value": 5289.88
+        },
+        {
+          "doc_id": 3,
+          "position": 27,
+          "token": "\n",
+          "value": 4832.4
+        },
+        {
+          "doc_id": 4,
+          "position": 28,
+          "token": "\n",
+          "value": 6809.09
+        }
+      ],
+      "explanation": "Structured article format with a formal academic response, following a structured overview of the field of data science/ML.\n\nThe phrase \"The role of data science is critical...\" signals a standard concluding section, with the answer addressing the broader implications of the paper.\n\nFinal token \" \" opens a section header or transitional phrase (\"In conclusion...\"), immediately requiring a topic sentence or citation reference — likely \"The topic of...\" or \"While...\" or \"The answer is not straightforward\" or \"educational content is...\" or \"This article\" or \"The limitations of the algorithm can be...\" — a boilerplate disclaimer about the answer or a repeated phrase about the domain.",
+      "cos": 0.9219,
+      "mse_nrm": 0.1562
+    },
+    {
+      "group": "rand",
+      "feature": 4524,
+      "n_fire": 0,
+      "contexts": [],
+      "explanation": "Article structure: informational/review format with a technical explainer about the 2023 US inflation/energy crisis.\n\nThe phrase \"The average cost of electricity in the US is $1.29 per kilowatt-hour\" signals a repeating pattern of factual, journalistic prose.\n\nFinal token \"20'\" opens a closing citation or section header (\"This is...\"), immediately expecting a timestamp or publication reference like \"The article\" or \"The article is...\" or \"a blog post\" or \"1. The game is...\" or \"The list of...\" — likely \"by the team\" or \"This is a standard...\" continuing the sentence.",
+      "cos": -0.4989,
+      "mse_nrm": 2.9978
+    },
+    {
+      "group": "rand",
+      "feature": 10497,
+      "n_fire": 0,
+      "contexts": [],
+      "explanation": "Technical documentation pattern: structured article format with factual, encyclopedic tone signals a game/software description for a specific Linux/networking topic.\n\nThe phrase \"The Apache HTTP Server is a web server that runs the Apache Tomcat\" establishes a standard boilerplate description, implying a code block or snippet follows.\n\nFinal token \"it'\" opens a repeated phrase (\"The Apache HTTP Server is...\"), immediately requiring a verb phrase like \"is a web server\" or \"The function\" — likely \"The function of the program is...\" or \"to the answer\" or \"This is a standard template\" or \"or\" continuing the sentence about the code block or the topic of the post.",
+      "cos": 0.2462,
+      "mse_nrm": 1.5076
+    },
+    {
+      "group": "rand",
+      "feature": 8461,
+      "n_fire": 0,
+      "contexts": [],
+      "explanation": "Structured article format with factual, journalistic tone signals a game-description summary continuing with a specific narrative beat.\n\nThe phrase \"The game is set in a world where...\" establishes a pattern of explaining the gameplay mechanics, with the sentence \"This game is a puzzle game\" now introducing a specific narrative context.\n\nFinal token \"it'\" opens a new clause mid-sentence (\"the game...is set in...\"), immediately requiring a verb phrase — likely \"the player must...\" or \"a tutorial\" or \"This article\" or \"The story follows...\" or \"The game is...\" or \"a web search\" — a standard academic/review boilerplate for the AI/math context.",
+      "cos": -0.0796,
+      "mse_nrm": 2.1592
+    },
+    {
+      "group": "rand",
+      "feature": 5146,
+      "n_fire": 0,
+      "contexts": [],
+      "explanation": "Structured article format with consistent pattern: technical documentation covering a specific topic, progressing through a detailed walkthrough of a game/library.\n\nThe phrase \"The algorithm is:\" signals a repeating section pattern — the code block or summary statement is being presented, with the \"The algorithm\" reference implying a section break.\n\nFinal token \"it'\" ends a repeated phrase \"the...\" — immediately expects a section label or citation like \"The algorithm\" or \"is a list of...\" or \"The article\" or \"to the blog post\" or \"including the full path\" or \"or\" — likely \"by the end\" or \"a review of the C++.\"",
+      "cos": 0.0938,
+      "mse_nrm": 1.8125
+    },
+    {
+      "group": "rand",
+      "feature": 717,
+      "n_fire": 0,
+      "contexts": [],
+      "explanation": "Article structure: a technical explainer with a consistent pattern of presenting a problem, then a solution, now delivering a detailed walkthrough.\n\nThe phrase \"The following code snippet is the result\" signals a repeating pattern of code block or citation block, with the \"The function is...\" sentence suggesting a closing summary statement.\n\nFinal token \"it.'\" opens a repeated phrase \"it.\" — likely continuing with \"This is the first step\" or \"the article\" or \"not enough\" or \"in the blog post\" or \"s.\" mirroring the \"The function is...\" or \"The answer is...\" or \"a list of the three...\" to complete the sentence.",
+      "cos": -0.79,
+      "mse_nrm": 3.5801
+    },
+    {
+      "group": "rand",
+      "feature": 13957,
+      "n_fire": 0,
+      "contexts": [],
+      "explanation": "Structured article format with factual, encyclopedic tone — following a pattern of listing chemical properties and uses of the fungus.\n\nThe phrase \"The fungus is used in the production of penicillin\" signals a standard list of uses for the plant, with \"the fungus\" now being enumerated as a food/industrial ingredient.\n\nFinal token \"it'\" opens a new use-case clause (\"in the kitchen.\"), immediately expecting a noun phrase like \"cooking\" or \"decorative purposes\" — likely \"The plant\" or \"meat substitute\" or \"a recipe\" or \"or...the article\" or \"1. The plant is used...\" continuing the enumerated list of human uses for the.",
+      "cos": 0.102,
+      "mse_nrm": 1.796
+    },
+    {
+      "group": "gauss",
+      "feature": -1,
+      "n_fire": 0,
+      "contexts": [],
+      "explanation": "Structured academic paper format with numbered sections and citations, following a recipe/tutorial pattern for a technical paper on the UK/US dataset.\n\nThe phrase \"The dataset consists of 1000 rows of data\" signals a standard citation block, with \"Hadoop MapReduce\" and \"Apache Spark\" establishing the reference.\n\nFinal token \"b>\" ends a URL citation fragment (\"https://www.linkedin.com/in/joshua-lee/\"), immediately requiring a URL continuation like \"s\" or \"the article\" or \"dataset description\" or \"9\" to complete the hyperlink reference to the paper, likely \"9. The query...\"",
+      "cos": 0.0223,
+      "mse_nrm": 1.9554
+    },
+    {
+      "group": "gauss",
+      "feature": -2,
+      "n_fire": 0,
+      "contexts": [],
+      "explanation": "Structured article format with consistent pattern: code block, description, and list of SQL queries for a specific UI component.\n\nThe phrase \"SELECT * FROM users WHERE role = 'admin'\" is a standard SQL idiom, establishing a pattern of listing function signatures and variable declarations for the Java/Spring framework.\n\nFinal token \"role = 'admin'.\" ends a SQL UPDATE statement mid-declaration (\"UPDATE users SET role = ...\"), immediately requiring a closing variable declaration or function call like `>` or `function` to complete the statement. Likely \"list\" or `return list;` or \"The function signature is `public static void...\" matching the Java syntax.",
+      "cos": 0.0186,
+      "mse_nrm": 1.9628
+    },
+    {
+      "group": "gauss",
+      "feature": -3,
+      "n_fire": 0,
+      "contexts": [],
+      "explanation": "Structured article format with consistent pattern: technical documentation listing game mechanics, following a Wikipedia/wiki style for a specific RPG item.\n\nThe phrase \"The function of the spell is to...\" signals a standard citation of the `return` statement, suggesting a code block or reference to the function definition.\n\nFinal token \"it'\" opens a citation/reference block (\"return 1; //...\"), immediately requiring a standard bibliographic or URL snippet like \"The function is...\" or \"3. The attack\" — likely \"is the standard Python tutorial\" or \"The attack is...\" or \"to the page\" or \"a new section header\" for a specific URL or footnote.",
+      "cos": -0.0009,
+      "mse_nrm": 2.0018
+    },
+    {
+      "group": "gauss",
+      "feature": -4,
+      "n_fire": 0,
+      "contexts": [],
+      "explanation": "Article structure: a technical blog post with a formatted summary section, following standard academic/tutorial conventions for the \"The Big Bang\" topic.\n\nThe phrase \"The method is called the Chebyshev polynomial\" signals a citation or metadata block, with the timestamp \"Published on: 2015\" suggesting a repeating pattern.\n\nFinal token \"a\n'\" ends a metadata timestamp (\"Published: 2015...\"), immediately expecting a continuation like \"the code\" or \"is the same as...\" or \"This article\" or \"mathematical analysis\" or \"a standard mathematical paper format\" or \"by the user\" — a citation or timestamp closing phrase.",
+      "cos": 0.0117,
+      "mse_nrm": 1.9765
+    }
+  ]
+}

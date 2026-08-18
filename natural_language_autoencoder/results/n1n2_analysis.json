@@ -1,0 +1,665 @@
+{
+  "n1_variant_summary": {
+    "orig": {
+      "n": 40,
+      "mean_cos_c": 0.8593,
+      "mean_cos_c_ci": [
+        0.8431,
+        0.8749
+      ],
+      "share_of_orig": 1.0,
+      "paired_delta_mean": 0.0,
+      "paired_delta_ci": [
+        0.0,
+        0.0
+      ],
+      "n_negative": 0,
+      "retrieval_top1": 0.925
+    },
+    "p1_only": {
+      "n": 40,
+      "mean_cos_c": 0.2403,
+      "mean_cos_c_ci": [
+        0.1772,
+        0.3055
+      ],
+      "share_of_orig": 0.2796,
+      "paired_delta_mean": -0.619,
+      "paired_delta_ci": [
+        -0.6821,
+        -0.5527
+      ],
+      "n_negative": 40,
+      "retrieval_top1": 0.15
+    },
+    "p2_only": {
+      "n": 40,
+      "mean_cos_c": 0.59,
+      "mean_cos_c_ci": [
+        0.5291,
+        0.6476
+      ],
+      "share_of_orig": 0.6866,
+      "paired_delta_mean": -0.2693,
+      "paired_delta_ci": [
+        -0.3253,
+        -0.2157
+      ],
+      "n_negative": 40,
+      "retrieval_top1": 0.75
+    },
+    "p3_only": {
+      "n": 40,
+      "mean_cos_c": 0.8259,
+      "mean_cos_c_ci": [
+        0.8107,
+        0.8412
+      ],
+      "share_of_orig": 0.9612,
+      "paired_delta_mean": -0.0334,
+      "paired_delta_ci": [
+        -0.045,
+        -0.0217
+      ],
+      "n_negative": 35,
+      "retrieval_top1": 0.95
+    },
+    "p12": {
+      "n": 40,
+      "mean_cos_c": 0.6087,
+      "mean_cos_c_ci": [
+        0.5472,
+        0.6681
+      ],
+      "share_of_orig": 0.7084,
+      "paired_delta_mean": -0.2505,
+      "paired_delta_ci": [
+        -0.3083,
+        -0.1952
+      ],
+      "n_negative": 40,
+      "retrieval_top1": 0.75
+    },
+    "quote_strip_p2": {
+      "n": 40,
+      "mean_cos_c": 0.854,
+      "mean_cos_c_ci": [
+        0.8373,
+        0.8694
+      ],
+      "share_of_orig": 0.9938,
+      "paired_delta_mean": -0.0053,
+      "paired_delta_ci": [
+        -0.0091,
+        -0.0015
+      ],
+      "n_negative": 26,
+      "retrieval_top1": 0.95
+    },
+    "quote_strip_p3": {
+      "n": 40,
+      "mean_cos_c": 0.1755,
+      "mean_cos_c_ci": [
+        0.1259,
+        0.2325
+      ],
+      "share_of_orig": 0.2042,
+      "paired_delta_mean": -0.6838,
+      "paired_delta_ci": [
+        -0.7404,
+        -0.6177
+      ],
+      "n_negative": 40,
+      "retrieval_top1": 0.225
+    },
+    "quote_strip_all": {
+      "n": 40,
+      "mean_cos_c": 0.1112,
+      "mean_cos_c_ci": [
+        0.0686,
+        0.162
+      ],
+      "share_of_orig": 0.1294,
+      "paired_delta_mean": -0.7481,
+      "paired_delta_ci": [
+        -0.7983,
+        -0.6879
+      ],
+      "n_negative": 40,
+      "retrieval_top1": 0.075
+    },
+    "word_shuffle": {
+      "n": 40,
+      "mean_cos_c": 0.5731,
+      "mean_cos_c_ci": [
+        0.5238,
+        0.6213
+      ],
+      "share_of_orig": 0.667,
+      "paired_delta_mean": -0.2862,
+      "paired_delta_ci": [
+        -0.3362,
+        -0.2371
+      ],
+      "n_negative": 39,
+      "retrieval_top1": 0.85
+    },
+    "entity_swap": {
+      "n": 40,
+      "mean_cos_c": 0.7711,
+      "mean_cos_c_ci": [
+        0.7302,
+        0.8081
+      ],
+      "share_of_orig": 0.8974,
+      "paired_delta_mean": -0.0881,
+      "paired_delta_ci": [
+        -0.1282,
+        -0.0529
+      ],
+      "n_negative": 34,
+      "retrieval_top1": 0.95
+    },
+    "para_tp": {
+      "n": 20,
+      "mean_cos_c": 0.8511,
+      "mean_cos_c_ci": [
+        0.8377,
+        0.8648
+      ],
+      "share_of_orig": 0.9728,
+      "paired_delta_mean": -0.0238,
+      "paired_delta_ci": [
+        -0.0338,
+        -0.0138
+      ],
+      "n_negative": 19,
+      "retrieval_top1": null
+    }
+  },
+  "n1_generic_fixed_floor": {
+    "n_texts": 8,
+    "mean_cos_c_over_40_targets": -0.0046,
+    "max_single_pair": 0.248,
+    "note": "fixed generic-text floor for the E1-E7 cohort, measured directly"
+  },
+  "n1_verification": {
+    "orig_mean_cos_c": 0.8593,
+    "orig_mean_cos_c_expected_from_E5": 0.8593,
+    "orig_mean_cos_raw": 0.996
+  },
+  "n1_channel_share_above_generic_floor": {
+    "orig": 1.0,
+    "p1_only": 0.283,
+    "p2_only": 0.688,
+    "p3_only": 0.961,
+    "p12": 0.71,
+    "quote_strip_p2": 0.994,
+    "quote_strip_p3": 0.208,
+    "quote_strip_all": 0.134,
+    "word_shuffle": 0.669,
+    "entity_swap": 0.898,
+    "para_tp": 0.991
+  },
+  "cohort_token_composition": {
+    "n_template_or_whitespace": 13,
+    "n_content": 27,
+    "template_tokens": [
+      "\n",
+      "<end_of_turn>",
+      "<start_of_turn>"
+    ],
+    "note": "02_extract_activations.py used --min-position 50 but the chat-templated prompts are only 28-38 tokens, so the documented invariant never applied and the back-half fallback selected positions, including template boundary tokens."
+  },
+  "n2_ce_window_rows_used": [
+    35,
+    40
+  ],
+  "n2_summary_robust": {
+    "identity": {
+      "n_ce_rows": 35,
+      "kl_at_pos_mean": 0.0,
+      "kl_at_pos_median": 0.0,
+      "kl_at_pos_ci": [
+        0.0,
+        0.0
+      ],
+      "kl_mean_after_mean": 0.0,
+      "ce_after_mean": 20.9959,
+      "loss_recovered_pooled_vs_zero": 1.0,
+      "loss_recovered_pooled_vs_mean": 1.0,
+      "loss_recovered_median_vs_zero": 1.0
+    },
+    "nla": {
+      "n_ce_rows": 35,
+      "kl_at_pos_mean": 2.4125,
+      "kl_at_pos_median": 0.2798,
+      "kl_at_pos_ci": [
+        1.1705,
+        4.0027
+      ],
+      "kl_mean_after_mean": 0.4742,
+      "ce_after_mean": 20.0853,
+      "loss_recovered_pooled_vs_zero": -4.3747,
+      "loss_recovered_pooled_vs_mean": 1.8402,
+      "loss_recovered_median_vs_zero": 0.9519
+    },
+    "sae_small": {
+      "n_ce_rows": 35,
+      "kl_at_pos_mean": 4.1426,
+      "kl_at_pos_median": 0.5721,
+      "kl_at_pos_ci": [
+        2.0574,
+        6.6261
+      ],
+      "kl_mean_after_mean": 0.7464,
+      "ce_after_mean": 20.1668,
+      "loss_recovered_pooled_vs_zero": -3.8932,
+      "loss_recovered_pooled_vs_mean": 1.765,
+      "loss_recovered_median_vs_zero": 0.9501
+    },
+    "sae_big": {
+      "n_ce_rows": 35,
+      "kl_at_pos_mean": 3.2466,
+      "kl_at_pos_median": 0.2387,
+      "kl_at_pos_ci": [
+        1.5985,
+        5.1165
+      ],
+      "kl_mean_after_mean": 0.7261,
+      "ce_after_mean": 20.6932,
+      "loss_recovered_pooled_vs_zero": -0.7863,
+      "loss_recovered_pooled_vs_mean": 1.2793,
+      "loss_recovered_median_vs_zero": 0.9458
+    },
+    "resid_text": {
+      "n_ce_rows": 35,
+      "kl_at_pos_mean": 7.6368,
+      "kl_at_pos_median": 6.3103,
+      "kl_at_pos_ci": [
+        5.6304,
+        9.7803
+      ],
+      "kl_mean_after_mean": 1.5222,
+      "ce_after_mean": 20.1901,
+      "loss_recovered_pooled_vs_zero": -3.7562,
+      "loss_recovered_pooled_vs_mean": 1.7435,
+      "loss_recovered_median_vs_zero": 0.4994
+    },
+    "dataset_mean": {
+      "n_ce_rows": 35,
+      "kl_at_pos_mean": 14.466,
+      "kl_at_pos_median": 9.9166,
+      "kl_at_pos_ci": [
+        10.7747,
+        18.596
+      ],
+      "kl_mean_after_mean": 2.3595,
+      "ce_after_mean": 22.0797,
+      "loss_recovered_pooled_vs_zero": 7.3966,
+      "loss_recovered_pooled_vs_mean": 0.0,
+      "loss_recovered_median_vs_zero": 0.2167
+    },
+    "other_activation": {
+      "n_ce_rows": 35,
+      "kl_at_pos_mean": 17.9329,
+      "kl_at_pos_median": 18.3413,
+      "kl_at_pos_ci": [
+        14.0537,
+        21.9153
+      ],
+      "kl_mean_after_mean": 2.6993,
+      "ce_after_mean": 22.2792,
+      "loss_recovered_pooled_vs_zero": 8.5743,
+      "loss_recovered_pooled_vs_mean": -0.1841,
+      "loss_recovered_median_vs_zero": -0.0559
+    },
+    "gaussian": {
+      "n_ce_rows": 35,
+      "kl_at_pos_mean": 31.0665,
+      "kl_at_pos_median": 28.1637,
+      "kl_at_pos_ci": [
+        28.0717,
+        34.0243
+      ],
+      "kl_mean_after_mean": 8.5139,
+      "ce_after_mean": 23.9975,
+      "loss_recovered_pooled_vs_zero": 18.716,
+      "loss_recovered_pooled_vs_mean": -1.7696,
+      "loss_recovered_median_vs_zero": -0.2902
+    },
+    "nla_as_is": {
+      "n_ce_rows": 35,
+      "kl_at_pos_mean": 2.4579,
+      "kl_at_pos_median": 0.2699,
+      "kl_at_pos_ci": [
+        1.2253,
+        3.9651
+      ],
+      "kl_mean_after_mean": 0.4894,
+      "ce_after_mean": 20.14,
+      "loss_recovered_pooled_vs_zero": -4.0513,
+      "loss_recovered_pooled_vs_mean": 1.7897,
+      "loss_recovered_median_vs_zero": 0.9568
+    },
+    "sae_small_as_is": {
+      "n_ce_rows": 35,
+      "kl_at_pos_mean": 4.1649,
+      "kl_at_pos_median": 0.5242,
+      "kl_at_pos_ci": [
+        2.0605,
+        6.6786
+      ],
+      "kl_mean_after_mean": 0.748,
+      "ce_after_mean": 20.1842,
+      "loss_recovered_pooled_vs_zero": -3.7909,
+      "loss_recovered_pooled_vs_mean": 1.749,
+      "loss_recovered_median_vs_zero": 0.9378
+    },
+    "sae_big_as_is": {
+      "n_ce_rows": 35,
+      "kl_at_pos_mean": 3.2781,
+      "kl_at_pos_median": 0.2413,
+      "kl_at_pos_ci": [
+        1.6428,
+        5.138
+      ],
+      "kl_mean_after_mean": 0.7358,
+      "ce_after_mean": 20.6998,
+      "loss_recovered_pooled_vs_zero": -0.7473,
+      "loss_recovered_pooled_vs_mean": 1.2732,
+      "loss_recovered_median_vs_zero": 0.954
+    },
+    "zero": {
+      "n_ce_rows": 35,
+      "kl_at_pos_mean": 16.3379,
+      "kl_at_pos_median": 16.009,
+      "kl_at_pos_ci": [
+        13.5187,
+        19.2647
+      ],
+      "kl_mean_after_mean": 3.8151,
+      "ce_after_mean": 20.8265,
+      "loss_recovered_pooled_vs_zero": 0.0,
+      "loss_recovered_pooled_vs_mean": 1.1563,
+      "loss_recovered_median_vs_zero": 0.0
+    }
+  },
+  "n2_ce_clean_mean": 20.9959,
+  "n2_provenance": {
+    "min_cos_captured_vs_stored": 1.0,
+    "mean_cos_captured_vs_stored": 1.0
+  },
+  "n2_ce_endpoint_invalid": {
+    "clean_ce_mean_nats": 20.996,
+    "uniform_ce_nats": 12.48,
+    "reason": "the continuation window is dominated by chat-template boundary tokens (<end_of_turn>, <start_of_turn>, model) whose clean CE is 18-53 nats, i.e. far above uniform; see 32_diag_ce_window.py. loss_recovered built on this window is not interpretable and is superseded by the KL-recovered fraction below."
+  },
+  "n2_kl_recovered": {
+    "identity": {
+      "kl_recovered_mean": 1.0,
+      "kl_recovered_median": 1.0,
+      "kl_recovered_ci": [
+        1.0,
+        1.0
+      ],
+      "kl_recovered_mean_content_tokens": 1.0,
+      "kl_recovered_mean_template_tokens": 1.0,
+      "kl_at_pos_mean_content": 0.0,
+      "kl_at_pos_mean_template": 0.0
+    },
+    "nla": {
+      "kl_recovered_mean": 0.7569,
+      "kl_recovered_median": 0.9827,
+      "kl_recovered_ci": [
+        0.6009,
+        0.8811
+      ],
+      "kl_recovered_mean_content_tokens": 0.7761,
+      "kl_recovered_mean_template_tokens": 0.717,
+      "kl_at_pos_mean_content": 1.9838,
+      "kl_at_pos_mean_template": 3.3027
+    },
+    "sae_small": {
+      "kl_recovered_mean": 0.7128,
+      "kl_recovered_median": 0.9716,
+      "kl_recovered_ci": [
+        0.5329,
+        0.8618
+      ],
+      "kl_recovered_mean_content_tokens": 0.7384,
+      "kl_recovered_mean_template_tokens": 0.6596,
+      "kl_at_pos_mean_content": 4.0101,
+      "kl_at_pos_mean_template": 4.4178
+    },
+    "sae_big": {
+      "kl_recovered_mean": 0.7712,
+      "kl_recovered_median": 0.9816,
+      "kl_recovered_ci": [
+        0.6213,
+        0.8966
+      ],
+      "kl_recovered_mean_content_tokens": 0.8647,
+      "kl_recovered_mean_template_tokens": 0.5769,
+      "kl_at_pos_mean_content": 2.2202,
+      "kl_at_pos_mean_template": 5.3783
+    },
+    "resid_text": {
+      "kl_recovered_mean": -0.943,
+      "kl_recovered_median": 0.605,
+      "kl_recovered_ci": [
+        -3.7898,
+        0.5708
+      ],
+      "kl_recovered_mean_content_tokens": -1.5931,
+      "kl_recovered_mean_template_tokens": 0.4074,
+      "kl_at_pos_mean_content": 6.1733,
+      "kl_at_pos_mean_template": 10.6764
+    },
+    "dataset_mean": {
+      "kl_recovered_mean": -1.7806,
+      "kl_recovered_median": 0.2091,
+      "kl_recovered_ci": [
+        -5.3504,
+        0.1548
+      ],
+      "kl_recovered_mean_content_tokens": -2.7836,
+      "kl_recovered_mean_template_tokens": 0.3027,
+      "kl_at_pos_mean_content": 15.1589,
+      "kl_at_pos_mean_template": 13.0269
+    },
+    "other_activation": {
+      "kl_recovered_mean": -3.0352,
+      "kl_recovered_median": -0.1108,
+      "kl_recovered_ci": [
+        -8.4371,
+        -0.1142
+      ],
+      "kl_recovered_mean_content_tokens": -4.6178,
+      "kl_recovered_mean_template_tokens": 0.2516,
+      "kl_at_pos_mean_content": 19.5885,
+      "kl_at_pos_mean_template": 14.4944
+    },
+    "gaussian": {
+      "kl_recovered_mean": -9.4114,
+      "kl_recovered_median": -1.169,
+      "kl_recovered_ci": [
+        -24.3485,
+        -1.3237
+      ],
+      "kl_recovered_mean_content_tokens": -13.3068,
+      "kl_recovered_mean_template_tokens": -1.3209,
+      "kl_at_pos_mean_content": 30.3176,
+      "kl_at_pos_mean_template": 32.6217
+    },
+    "nla_as_is": {
+      "kl_recovered_mean": 0.7505,
+      "kl_recovered_median": 0.9763,
+      "kl_recovered_ci": [
+        0.5933,
+        0.8776
+      ],
+      "kl_recovered_mean_content_tokens": 0.7595,
+      "kl_recovered_mean_template_tokens": 0.7317,
+      "kl_at_pos_mean_content": 2.1612,
+      "kl_at_pos_mean_template": 3.0741
+    },
+    "sae_small_as_is": {
+      "kl_recovered_mean": 0.7116,
+      "kl_recovered_median": 0.972,
+      "kl_recovered_ci": [
+        0.5315,
+        0.8612
+      ],
+      "kl_recovered_mean_content_tokens": 0.7383,
+      "kl_recovered_mean_template_tokens": 0.6562,
+      "kl_at_pos_mean_content": 4.0157,
+      "kl_at_pos_mean_template": 4.475
+    },
+    "sae_big_as_is": {
+      "kl_recovered_mean": 0.7715,
+      "kl_recovered_median": 0.984,
+      "kl_recovered_ci": [
+        0.6234,
+        0.8956
+      ],
+      "kl_recovered_mean_content_tokens": 0.8691,
+      "kl_recovered_mean_template_tokens": 0.569,
+      "kl_at_pos_mean_content": 2.155,
+      "kl_at_pos_mean_template": 5.6108
+    },
+    "zero": {
+      "kl_recovered_mean": 0.0,
+      "kl_recovered_median": 0.0,
+      "kl_recovered_ci": [
+        0.0,
+        0.0
+      ],
+      "kl_recovered_mean_content_tokens": 0.0,
+      "kl_recovered_mean_template_tokens": 0.0,
+      "kl_at_pos_mean_content": 15.8244,
+      "kl_at_pos_mean_template": 17.4044
+    }
+  },
+  "n2_paired": {
+    "nla_vs_sae_small": {
+      "kl_delta_mean": 1.7301,
+      "kl_delta_median": 0.0955,
+      "kl_delta_ci": [
+        0.5016,
+        3.2148
+      ],
+      "n_rows_nla_better_kl": 27,
+      "ce_delta_mean": 0.0816,
+      "ce_delta_ci": [
+        -0.5541,
+        0.7586
+      ],
+      "n_rows_nla_better_ce": "17/35",
+      "per_document_kl_delta": [
+        2.6611,
+        0.1519,
+        4.3512,
+        0.1561,
+        1.3304
+      ],
+      "n_docs_nla_better": 5
+    },
+    "nla_vs_sae_big": {
+      "kl_delta_mean": 0.8341,
+      "kl_delta_median": -0.0,
+      "kl_delta_ci": [
+        -0.2123,
+        1.9757
+      ],
+      "n_rows_nla_better_kl": 18,
+      "ce_delta_mean": 0.608,
+      "ce_delta_ci": [
+        -0.4119,
+        1.792
+      ],
+      "n_rows_nla_better_ce": "23/35",
+      "per_document_kl_delta": [
+        0.3112,
+        1.6249,
+        0.2287,
+        1.9867,
+        0.0191
+      ],
+      "n_docs_nla_better": 5
+    },
+    "nla_vs_resid_text": {
+      "kl_delta_mean": 5.2244,
+      "kl_delta_median": 3.7959,
+      "kl_delta_ci": [
+        3.0798,
+        7.5141
+      ],
+      "n_rows_nla_better_kl": 32,
+      "ce_delta_mean": 0.1048,
+      "ce_delta_ci": [
+        -0.8113,
+        0.9359
+      ],
+      "n_rows_nla_better_ce": "24/35",
+      "per_document_kl_delta": [
+        0.8905,
+        7.0781,
+        2.3379,
+        7.3959,
+        8.4194
+      ],
+      "n_docs_nla_better": 5
+    },
+    "nla_vs_dataset_mean": {
+      "kl_delta_mean": 12.0535,
+      "kl_delta_median": 8.1364,
+      "kl_delta_ci": [
+        8.4601,
+        15.9602
+      ],
+      "n_rows_nla_better_kl": 37,
+      "ce_delta_mean": 1.9944,
+      "ce_delta_ci": [
+        1.0343,
+        2.9851
+      ],
+      "n_rows_nla_better_ce": "32/35",
+      "per_document_kl_delta": [
+        5.4917,
+        9.5163,
+        12.3956,
+        17.7011,
+        15.1629
+      ],
+      "n_docs_nla_better": 5
+    }
+  },
+  "joint_cos_vs_causal": {
+    "nla": {
+      "mean_centered_cos": 0.8593,
+      "within_method_spearman_cos_vs_kl": 0.1882
+    },
+    "sae_small": {
+      "mean_centered_cos": 0.6584,
+      "within_method_spearman_cos_vs_kl": -0.4801
+    },
+    "sae_big": {
+      "mean_centered_cos": 0.7246,
+      "within_method_spearman_cos_vs_kl": -0.3379
+    },
+    "resid_text": {
+      "mean_centered_cos": 0.041,
+      "within_method_spearman_cos_vs_kl": 0.0478
+    },
+    "pooled_across_methods": {
+      "n": 160,
+      "spearman_cos_vs_kl": -0.4019
+    }
+  },
+  "notes": [
+    "loss_recovered_pooled_* is the primary form; the per-row ratio in causal_patch_v1.json summary is unstable when ce_ablate ~ ce_clean.",
+    "N2 patched only the 4 reconstruction sources plus controls; the N1 text variants were not patched, so channel attribution is cosine-side only.",
+    "5 documents are the independent units for N2 clustering."
+  ]
+}

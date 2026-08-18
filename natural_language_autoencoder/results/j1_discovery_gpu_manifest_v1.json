@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "manifest_id": "J1_DISCOVERY_GPU_MANIFEST_V1",
+  "recorded_at": "2026-08-06 Asia/Shanghai",
+  "scope": "J1-D1 GPU discovery stage and CPU artifact audit",
+  "claim_boundary": "exploratory_discovery_only_no_confirmatory_inference",
+  "authoritative_audit": {
+    "artifact": "results/j1_independent_audit_v3.json",
+    "status": "PASS",
+    "checks_passed": 26,
+    "checks_total": 26,
+    "errors": 0
+  },
+  "audit_history": [
+    {
+      "attempt": "unnumbered",
+      "status": "FAILED_BEFORE_ARTIFACT",
+      "reason": "serialization failed before an audit artifact was emitted"
+    },
+    {
+      "attempt": "v1",
+      "artifact": "results/j1_independent_audit_v1.json",
+      "status": "FAIL",
+      "checks_passed": 25,
+      "checks_total": 26,
+      "only_failure": "audit incorrectly required every hard negative to be a background row"
+    },
+    {
+      "attempt": "v2",
+      "artifact": "results/j1_independent_audit_v2.json",
+      "status": "FAIL",
+      "checks_passed": 25,
+      "checks_total": 26,
+      "only_failure": "audit incorrectly rejected tokenizer-decoded whitespace tokens"
+    },
+    {
+      "attempt": "v3",
+      "artifact": "results/j1_independent_audit_v3.json",
+      "status": "PASS",
+      "checks_passed": 26,
+      "checks_total": 26,
+      "errors": 0
+    }
+  ],
+  "counts": {
+    "features": 45,
+    "strata": 3,
+    "features_per_stratum": 15,
+    "discovery_contexts": 180,
+    "heldout_positive_contexts": 180,
+    "hard_negatives": 180,
+    "av_plans": 360,
+    "checkpoint_rows": 360,
+    "result_rows": 360,
+    "vector_rows": 1050,
+    "background_pool_rows": 690
+  },
+  "metrics": {
+    "activation_verification": {
+      "contexts": 360,
+      "atol": 1.0,
+      "rtol": 0.025,
+      "max_absolute_error": 90.22119140625,
+      "max_relative_error": 0.02016730393599307,
+      "firing_sign_mismatches": 0
+    },
+    "sae_ablation_recompute": {
+      "pairs": 360,
+      "max_ablated_absolute_error": 0.0,
+      "max_ablated_relative_error": 0.0,
+      "max_cosine_absolute_error": 0.0,
+      "max_norm_absolute_error": 0.0
+    },
+    "sae_w_dec_shape": [16384, 3840]
+  },
+  "artifacts": [
+    {
+      "role": "protocol",
+      "path": "results/J1_DISCOVERY_PILOT_PROTOCOL_2026-08-06.md",
+      "bytes": 11197,
+      "sha256": "638cb1454c4e248cd56e1148f88bc91b0840797ff7ad787f1ef095bd920777cf"
+    },
+    {
+      "role": "freeze",
+      "path": "results/j1_discovery_freeze_v1.json",
+      "bytes": 626281,
+      "sha256": "8f7690f8b12842b32ce5cb32af7ee941b2ce2f71fcc0270768cf0f84edcb50d3"
+    },
+    {
+      "role": "vectors",
+      "path": "results/j1_discovery_vectors_v1.npz",
+      "bytes": 90484418,
+      "sha256": "fa9cc13508638417d05b21740b55ed8a14d6c6933bef6271b5800078bd6df71d"
+    },
+    {
+      "role": "checkpoint",
+      "path": "results/j1_discovery_av_checkpoint_v1.jsonl",
+      "bytes": 484949,
+      "sha256": "29d184e81b5afb0e7acb8b1d3fac302279cbf6d33f57207a3f9a23d330bb9667"
+    },
+    {
+      "role": "result",
+      "path": "results/j1_discovery_result_v1.json",
+      "bytes": 508588,
+      "sha256": "d93d99e3c84b07a6f76b3b4549bb16fbe520f9c7aa59579f98e57bb2a85749a4"
+    },
+    {
+      "role": "log",
+      "path": "results/j1_discovery_full_v1.log",
+      "bytes": 27801,
+      "sha256": "e82d23e1401a71b33b55728942a087803cacf82fb026d11694faab30ebd93585"
+    },
+    {
+      "role": "audit_v1",
+      "path": "results/j1_independent_audit_v1.json",
+      "bytes": 1813935,
+      "sha256": "c0c90e81938d0102a2e7550aaf0384c561f18544d5e25ca0cdc215c7e2d387db"
+    },
+    {
+      "role": "audit_v2",
+      "path": "results/j1_independent_audit_v2.json",
+      "bytes": 1813881,
+      "sha256": "79b5882e44512eb1e8ee773d6a4bb6b6b4b3a0631e8c9019b03bb0de92fd30f0"
+    },
+    {
+      "role": "audit_v3",
+      "path": "results/j1_independent_audit_v3.json",
+      "bytes": 1813922,
+      "sha256": "f5bcb0cd9de3cd9e359120bb320583b30265351bbc2dcf49043c5affec74ea3f"
+    },
+    {
+      "role": "audit_v1_report",
+      "path": "results/j1_independent_audit_v1.md",
+      "bytes": 1389432,
+      "sha256": "093d348ba622f01e13a0b8336dc83e11e9a296f42be602e1aeb79df65bfc133e"
+    },
+    {
+      "role": "audit_v2_report",
+      "path": "results/j1_independent_audit_v2.md",
+      "bytes": 1389378,
+      "sha256": "6c298788ac2a5bd0252a740428a0aff7f5eae554795b490dfe6fd546506df7b2"
+    },
+    {
+      "role": "audit_v3_report",
+      "path": "results/j1_independent_audit_v3.md",
+      "bytes": 1389329,
+      "sha256": "9b1c8a8620842acd96215ef4e932b2e4155d03af35cf7baea9f651bcb86741ae"
+    },
+    {
+      "role": "script57",
+      "path": "server/57_j1_discovery_pilot_gpu.py",
+      "bytes": 70067,
+      "sha256": "a551287053802673a269ae364c34ebe002ca00829d9316845acf9056472f583d"
+    },
+    {
+      "role": "script60",
+      "path": "server/60_j1_independent_audit.py",
+      "bytes": 59226,
+      "sha256": "75aeaff4a63ee6c36df025b250bfd8369850215d70a69ae33f3fd331a345a100"
+    }
+  ],
+  "text_policy": "metadata_only; no AV explanation or generated semantic text is embedded"
+}

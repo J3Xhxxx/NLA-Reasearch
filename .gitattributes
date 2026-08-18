@@ -1,0 +1,4 @@
+* text=auto eol=lf
+
+natural_language_autoencoder/results/j1_discovery_vectors_v1.npz filter=lfs diff=lfs merge=lfs -text
+natural_language_autoencoder/results/n3_corpus_v1.jsonl filter=lfs diff=lfs merge=lfs -text

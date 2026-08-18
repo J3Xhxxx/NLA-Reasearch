@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "experiment": "N3 real-corpus base",
+  "status": "corpus_frozen_before_any_model_forward",
+  "purpose": [
+    "replace the synthetic 'held-out activation gate' with real cross-source evidence (F14.3)",
+    "provide a content-token cohort to replace the template-contaminated E1-E7 cohort (F13)",
+    "supply covariates for the new main question 'what predicts readability' (F14.1)"
+  ],
+  "provenance": {
+    "pile": {
+      "repo": "NeelNanda/pile-10k",
+      "file": "data/train-00000-of-00001-4746b8785c874cc7.parquet",
+      "local_sha256": "a1a9475a8684ac8f1b17a36eccb2ec49c127edd7aae9beb2f240726972d93f31",
+      "columns": [
+        "text",
+        "meta"
+      ],
+      "n_available": 10000
+    },
+    "xnli": {
+      "repo": "facebook/xnli",
+      "file": "all_languages/validation-00000-of-00001.parquet",
+      "local_sha256": "c5e6263b0872a3914c9bc165bfe3883e433aa2066c3fa3b9d142829a9b122518",
+      "langs": [
+        "en",
+        "es",
+        "zh",
+        "de",
+        "fr",
+        "ru",
+        "ar",
+        "hi",
+        "tr",
+        "vi"
+      ],
+      "n_premises": 2490,
+      "sents_per_passage": 8,
+      "passages_per_language": 124
+    }
+  },
+  "args": {
+    "pile_docs": 10000,
+    "pile_min_chars": 400,
+    "xnli_sents_per_passage": 8,
+    "xnli_max_passages": 124,
+    "out_dir": "/root/autodl-tmp/results",
+    "tag": "v1"
+  },
+  "counts": {
+    "n_docs": 10404,
+    "n_pile": 9164,
+    "n_xnli": 1240,
+    "by_source": {
+      "Pile-CC": 2283,
+      "Github": 703,
+      "OpenWebText2": 1359,
+      "StackExchange": 1377,
+      "Wikipedia (en)": 635,
+      "PubMed Abstracts": 1392,
+      "USPTO Backgrounds": 502,
+      "FreeLaw": 215,
+      "PubMed Central": 247,
+      "HackerNews": 65,
+      "NIH ExPorter": 99,
+      "Books3": 9,
+      "ArXiv": 91,
+      "DM Mathematics": 99,
+      "OpenSubtitles": 27,
+      "Enron Emails": 34,
+      "BookCorpus2": 2,
+      "Ubuntu IRC": 2,
+      "YoutubeSubtitles": 10,
+      "EuroParl": 6,
+      "PhilPapers": 5,
+      "Gutenberg (PG-19)": 2,
+      "xnli:en": 124,
+      "xnli:es": 124,
+      "xnli:zh": 124,
+      "xnli:de": 124,
+      "xnli:fr": 124,
+      "xnli:ru": 124,
+      "xnli:ar": 124,
+      "xnli:hi": 124,
+      "xnli:tr": 124,
+      "xnli:vi": 124
+    },
+    "total_chars": 61353286
+  },
+  "checks": {
+    "xnli_parallel_complete": true,
+    "xnli_languages_per_passage": 10,
+    "unique_text_sha256": true
+  },
+  "outputs": {
+    "jsonl": "/root/autodl-tmp/results/n3_corpus_v1.jsonl",
+    "jsonl_sha256": "d40069ab51c294ecbe3e76845d1f2f4dff1bb66a6061c5b6b4c612f7d0ff8816"
+  }
+}

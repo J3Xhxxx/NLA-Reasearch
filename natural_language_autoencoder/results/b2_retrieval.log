@@ -1,0 +1,6 @@
+B2_RETRIEVAL_COMPLETE
+nla: top1=0.925 top5=1.000 mrr=0.958 margin=0.3195 within_doc_top1=0.975
+sae_small: top1=0.950 top5=1.000 mrr=0.971 margin=0.2085 within_doc_top1=1.000
+sae_big: top1=0.950 top5=1.000 mrr=0.971 margin=0.2531 within_doc_top1=1.000
+residual_text_control: top1=0.175 top5=0.400 mrr=0.288 margin=-0.0507 within_doc_top1=0.275
+wrote -> /root/autodl-tmp/results/retrieval_eval.json

@@ -1,0 +1,640 @@
+{
+  "batch_count": 32,
+  "batch_ids": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "batches": [
+    {
+      "artifact_sha256": "6e5a27317c4e822e58c1f42e14d6f51b3250b8fc0bef9036cbd661e68f28e58f",
+      "batch_id": 13,
+      "case_ids": [
+        "case_b73363xjhavcl3nv2u",
+        "case_g0dpxb0bqclwsctjp7",
+        "case_cwq2jcqcxyhmbxt271",
+        "case_nb6uod0b4wxwoji3nq",
+        "case_ov4zohfezh4xspci4t"
+      ],
+      "expected_agent_task": "/root/luna_batch_13",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_13_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_13_prompt.json",
+      "prompt_sha256": "905f80a3397f2a7f6359317ae79e7b4f8f9058a66818968e177fc944ec33f207"
+    },
+    {
+      "artifact_sha256": "d1526bcc879f2ab60c07df52a2cebfc5f954441029fe72cd40f41e93ad06d177",
+      "batch_id": 14,
+      "case_ids": [
+        "case_1egrqzmtdm0rl882hh",
+        "case_u7okbbynfyvu0x5sxe",
+        "case_snv0mseu57pqytswux",
+        "case_8vxlpi6nc24mgym99s",
+        "case_3amp50pl9ljcpn1k0n"
+      ],
+      "expected_agent_task": "/root/luna_batch_14",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_14_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_14_prompt.json",
+      "prompt_sha256": "3bc680b34d22174a2195ecdf707f9b1b58bb51aba29c4561d2a6110376e29854"
+    },
+    {
+      "artifact_sha256": "1b25dd52e31e64ab4056777edded1aadc1b52fa1e1656343f2dbebfc256cba56",
+      "batch_id": 15,
+      "case_ids": [
+        "case_spqh6piig8sk1h3ww5",
+        "case_ft116k8lmg68648wr4",
+        "case_quzhec0u8ulny98ctm",
+        "case_70xf2kb3uqyb0m5g8t",
+        "case_b833a6srw2msrp3h2q"
+      ],
+      "expected_agent_task": "/root/luna_batch_15",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_15_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_15_prompt.json",
+      "prompt_sha256": "b4f0633672e341465350bce93843940917a72cea0080cd8292145ec38455bd19"
+    },
+    {
+      "artifact_sha256": "db8139c7f38ed950e1ca2d246aff9eae1cae98a5e66ec7a10d8be20f4b75b351",
+      "batch_id": 16,
+      "case_ids": [
+        "case_7chlhvnk3g33lvyytv",
+        "case_sj78fm2qewak7athvv",
+        "case_06kf77x9qbke12v06u",
+        "case_fcsrifgrfqc1swgvc6",
+        "case_6z0xpknq8y4hi3sgas"
+      ],
+      "expected_agent_task": "/root/luna_batch_16",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_16_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_16_prompt.json",
+      "prompt_sha256": "03147729d712055a44042769ba16aa3fccfe2114001c687b526e17099b8ac3d4"
+    },
+    {
+      "artifact_sha256": "8caeeac5235ff74a5d2b81df954164c0d6caa59aafede795ea35f47d7fb94025",
+      "batch_id": 17,
+      "case_ids": [
+        "case_yp0kq87cy9hafud3f3",
+        "case_f2rzfe44tufh1n9c8u",
+        "case_7m6c0p33vjrqhx7iyq",
+        "case_jyu2aae0qrmzzl0oqm",
+        "case_rjsjejb895phhsu2ym"
+      ],
+      "expected_agent_task": "/root/luna_batch_17",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_17_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_17_prompt.json",
+      "prompt_sha256": "2702b0de850d76483fa4bb69d0104135865fad528b0b0bce90c35d741595d65d"
+    },
+    {
+      "artifact_sha256": "93da3e9e16ebd16b2b29306f36d403f687d1f1d9c6fa744af4e4f3d3c3e47119",
+      "batch_id": 18,
+      "case_ids": [
+        "case_gv9fw6j0dhawj0n420",
+        "case_04g6yg1gjkx0q7xfcd",
+        "case_4tog2zhqm7cfi2pv0w",
+        "case_f0088fb7bd5n0xa8te",
+        "case_y2t39786iwm5avv9fj"
+      ],
+      "expected_agent_task": "/root/luna_batch_18",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_18_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_18_prompt.json",
+      "prompt_sha256": "f6b0ed92a214ca7cc067d66adb4b6c75a357ca90b1e22f099ca66e0d38ea2207"
+    },
+    {
+      "artifact_sha256": "315d6f3b7e6ade4468e0fa883f77abde002300789e634d15ba8501c9a17ba431",
+      "batch_id": 19,
+      "case_ids": [
+        "case_vsjj4vft07rt48tom9",
+        "case_wouu8g5w3rdpbw20ay",
+        "case_xor2kuhpign7vddgwr",
+        "case_5rbress8hi52t5rp8g",
+        "case_m0ruwcoetqjlmqr2xx"
+      ],
+      "expected_agent_task": "/root/luna_batch_19",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_19_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_19_prompt.json",
+      "prompt_sha256": "f243ab2ccce4175352eaa20a4e0b94b8d105b958eb4aa7f7170b729289924056"
+    },
+    {
+      "artifact_sha256": "9d7ffb474eaf1b3c75678821dc07df8aaf3e03d48c9fce0bc54e3f165ee95459",
+      "batch_id": 20,
+      "case_ids": [
+        "case_g76qj459604ol37igd",
+        "case_hhk8dt6vusq4vaxvl1",
+        "case_ezprp84f4vh8ecqfao",
+        "case_p6gzwmgk4yf4x0mf4s",
+        "case_aizrcwpj4w7efgr8hx"
+      ],
+      "expected_agent_task": "/root/luna_batch_20",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_20_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_20_prompt.json",
+      "prompt_sha256": "30254d1c9f65f57dce46303e80438db400b68965871f34d21a7c5b774e95f819"
+    },
+    {
+      "artifact_sha256": "3860cb51fc56ffe2ffb10a49e58227e99c6aa4ca5cc70b2bf6699cdb6ba4d13d",
+      "batch_id": 21,
+      "case_ids": [
+        "case_4k89yd1plzlx3arvuq",
+        "case_t8ih4hvk6p4shdn92n",
+        "case_bafihdellrrmsyi9gl",
+        "case_15vcc6wjjtk7wftwgi",
+        "case_5d2plf1u87a8lxz4ta"
+      ],
+      "expected_agent_task": "/root/luna_batch_21",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_21_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_21_prompt.json",
+      "prompt_sha256": "07faf5fdb0197d419a7f43a79af2c813694254d748a30bddba644ae30ae3d97f"
+    },
+    {
+      "artifact_sha256": "8983d47bd233b67393fec38da3ae4f707165fdc01ac68001d8c4f0382fe4a291",
+      "batch_id": 22,
+      "case_ids": [
+        "case_q6k6ah0flmsvmxhsuy",
+        "case_yh2i718maxt1tdcr5s",
+        "case_z1qisq1opmrfvtufrp",
+        "case_4qj5h8lqvocmfh7jlj",
+        "case_8q00xp4y1j0pch1nho"
+      ],
+      "expected_agent_task": "/root/luna_batch_22",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_22_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_22_prompt.json",
+      "prompt_sha256": "9a3c93ebfcead809ea12774f7f19bc91ba08b9eb6b05989c719a772b406259e1"
+    },
+    {
+      "artifact_sha256": "dd96a52d889ca9f392f03655829a008fbb6195fd4233d2864796c72a011a1f7d",
+      "batch_id": 23,
+      "case_ids": [
+        "case_roq5i3b7ms2cceie17",
+        "case_poe3s5q0cjua5xgcwr",
+        "case_rna1ltr1kauug6qyi9",
+        "case_tgl96ji2cxthopat2j",
+        "case_sgtofuwrztn1xf6hpm"
+      ],
+      "expected_agent_task": "/root/luna_batch_23",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_23_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_23_prompt.json",
+      "prompt_sha256": "3c463a18b47b5c7ea8636c99a7fbee7a28f1467e1b8d92bb858be1dc01ea85f4"
+    },
+    {
+      "artifact_sha256": "a32a4d832187739ac166be88247f7569423bc8bb498731baf2e45a2ab404163e",
+      "batch_id": 24,
+      "case_ids": [
+        "case_d41s7un48tsgfcaluh",
+        "case_o755u613n2mkpnfrt0",
+        "case_93fw6kqqeou1yw6dkc",
+        "case_bglmw0gzhc79fk3q14",
+        "case_1koixecno1rttxfpb9"
+      ],
+      "expected_agent_task": "/root/luna_batch_24",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_24_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_24_prompt.json",
+      "prompt_sha256": "9370429348c8e7d05b492c8fda83232d63d1b2508bf71136298cb62a98d29d6e"
+    },
+    {
+      "artifact_sha256": "47a1c6ddc97a868a5f113c8d6f81b6a7c4ce8e49ce4b4ec8f5e7b019a7217e33",
+      "batch_id": 25,
+      "case_ids": [
+        "case_umfrarwmc6q194wgyw",
+        "case_ts6dukzkt9k34hllf5",
+        "case_tj7ijzfnmyi7mwnjo5",
+        "case_eyezvg5t967617w0zz",
+        "case_v8w1cy551b5yitz77b"
+      ],
+      "expected_agent_task": "/root/luna_batch_25",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_25_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_25_prompt.json",
+      "prompt_sha256": "84e1dd2f3255b3b81840f6b30d53c69d5838953172529a2de606adc2cb7ae024"
+    },
+    {
+      "artifact_sha256": "7b83ab504e14b08ca20aeef8ee43de75179f15973cd11bc1b5b27119f135e6d5",
+      "batch_id": 26,
+      "case_ids": [
+        "case_2fycsy8r1mujoui0ol",
+        "case_28ci62y1009llthzer",
+        "case_ypa0t171iufwng9l0z",
+        "case_rchnr9d46dr1iu9eq8",
+        "case_gqrcqn635ds2ewnx7s"
+      ],
+      "expected_agent_task": "/root/luna_batch_26",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_26_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_26_prompt.json",
+      "prompt_sha256": "5f4d80713433a32ee9ed054a1a31c7eb0246b87c5d3d422bdcb7b7dac4b99aac"
+    },
+    {
+      "artifact_sha256": "c592be76e7cb3c06e7b95ae0aef3e59f14ebba382f18416a1225b76ac6ad03f5",
+      "batch_id": 27,
+      "case_ids": [
+        "case_5g3gguc944k4pfxe8o",
+        "case_84in6loonwushfpcjb",
+        "case_gbesgp45au8wati2r5",
+        "case_x12o15s2moguff96w9",
+        "case_1ab10l6istjmr4awvv"
+      ],
+      "expected_agent_task": "/root/luna_batch_27",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_27_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_27_prompt.json",
+      "prompt_sha256": "28ecab35810b967671984709d882830f71f0e212d33edb2b0194df27906ec55b"
+    },
+    {
+      "artifact_sha256": "5f25410fd07b928e4a41613e163b7a6bb969ce90570c81ccf206248631e95aeb",
+      "batch_id": 28,
+      "case_ids": [
+        "case_k74ad61ald3ebwm043",
+        "case_0naw3rq002m5m53ks0",
+        "case_06gri6a1sbyn0fk950",
+        "case_u0im1o94b0lpx1ilwn",
+        "case_au6j5fsq03mpaj11vw"
+      ],
+      "expected_agent_task": "/root/luna_batch_28",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_28_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_28_prompt.json",
+      "prompt_sha256": "fc0d7883bf5d0978e8b7237b4e3a3badcf3827e7b573813ed5d474127e86b244"
+    },
+    {
+      "artifact_sha256": "3bff099baa05bb01172fb44b7d7e6c83698d2dbcafe9ee7eb6c3ec238c5f4226",
+      "batch_id": 29,
+      "case_ids": [
+        "case_2t6w7x4m78z7rq7dcf",
+        "case_wvcx3cuwwh0afb0xie",
+        "case_px47h9uf2u11s2uy9y",
+        "case_r2z8wpptytz6tw6exn",
+        "case_jensa14bqvhd6kmkpi"
+      ],
+      "expected_agent_task": "/root/luna_batch_29",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_29_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_29_prompt.json",
+      "prompt_sha256": "1d7f010423df505293a571158bf683283dc3d67f41f3304764cc4fd5ed643db9"
+    },
+    {
+      "artifact_sha256": "889cf525ad1e7854a4f0c390cf3aefd60a7d881bb75fe138255ac7b67289de23",
+      "batch_id": 30,
+      "case_ids": [
+        "case_ri33gpa1w6sukmy11k",
+        "case_y91ax0sl2yhrvtc4d7",
+        "case_0rmnqli9n6kw6jspor",
+        "case_jyyhs8suyn4vue8gme",
+        "case_vwwj566f0jhmcikm25"
+      ],
+      "expected_agent_task": "/root/luna_batch_30",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_30_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_30_prompt.json",
+      "prompt_sha256": "719b5a5a6e061246c4c0539b57a41ba6e098d9341ce7d405318f80b17ae63cb1"
+    },
+    {
+      "artifact_sha256": "fb859a7c3ef2eb49618b5bb5bf9d3887cc49b456bd273a6e5c36725cb4339bc7",
+      "batch_id": 31,
+      "case_ids": [
+        "case_mnsq02hxz3561frwy9",
+        "case_za6fyfxi5ykt58pd8a",
+        "case_trfu0w2ptvolouzno4",
+        "case_90k5jg4zrnby1zsne0",
+        "case_kcdzlozeqjd21m1hyj"
+      ],
+      "expected_agent_task": "/root/luna_batch_31",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_31_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_31_prompt.json",
+      "prompt_sha256": "4dc5fb04b72e297df299cf6f72b7bb903b26c0ec3c4ed7b01b51b5d3b8d2c97d"
+    },
+    {
+      "artifact_sha256": "00cf97b63628251bd2bfa2ef7887521fc91f14bea90cc0a09292f212a4812bc9",
+      "batch_id": 32,
+      "case_ids": [
+        "case_ouf35a9ty3rk78sk7r",
+        "case_eqxiatsou5tvx0q28v",
+        "case_4sblnllmhz5clg5br0",
+        "case_7mr9z943wyo4k0gz3y",
+        "case_4ppw6l8zg0n43pb4t1"
+      ],
+      "expected_agent_task": "/root/luna_batch_32",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_32_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_32_prompt.json",
+      "prompt_sha256": "fc2f6f4ca6804ade039c765cd44ba5244d6fe0877ee8dc4145442752ac3936e7"
+    },
+    {
+      "artifact_sha256": "2845380565db67b44fedeed5d3bdf691d6288957f41c70c615ec59ae163c85e0",
+      "batch_id": 33,
+      "case_ids": [
+        "case_rhmw11b414wkuzt0pe",
+        "case_rvqgqv8panh7tcxxik",
+        "case_pjav0zgk7lrz8wyenf",
+        "case_w8vp82cmugm4z95aw0",
+        "case_s8ab0u3zigf6po1rms"
+      ],
+      "expected_agent_task": "/root/luna_batch_33",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_33_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_33_prompt.json",
+      "prompt_sha256": "60045aa7fe8de272fd9b42e4ce42bc726bae40ee98c487b7d15a7f6322151262"
+    },
+    {
+      "artifact_sha256": "4b1146e1f24e35890ccf12e590fa3c68382a1f2f5c9e0ee056e92361738482ec",
+      "batch_id": 34,
+      "case_ids": [
+        "case_kql9ef98ucvg82vqy5",
+        "case_8976idxj7huwt5z9ur",
+        "case_q7erb5i2oet24p2ld0",
+        "case_nxz14ice8qql5fc7sh",
+        "case_x73fq3h7jjgr9p0ue8"
+      ],
+      "expected_agent_task": "/root/luna_batch_34",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_34_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_34_prompt.json",
+      "prompt_sha256": "883fb259ff189b2a8acd0501d60145e9a5f5099d885e58800d003fb66dd4b1a8"
+    },
+    {
+      "artifact_sha256": "6ba393aad10348d89d29b24e2af148b35df5a64f46d5293cfffe9fc540f95e2f",
+      "batch_id": 35,
+      "case_ids": [
+        "case_ga5k5xbgqns6mtf0pz",
+        "case_fhjgbt30j9xgkicnn2",
+        "case_upzp6saej17igxj6r5",
+        "case_49esl6fk4xqaroq1ov",
+        "case_8bo12loe0ktjx8aqqf"
+      ],
+      "expected_agent_task": "/root/luna_batch_35",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_35_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_35_prompt.json",
+      "prompt_sha256": "3a4d0700110d71b3dd7d38aebcf35de5589250e1bb0be517ba6b0923071e44ea"
+    },
+    {
+      "artifact_sha256": "401b628ede1eac3c3a7719a823ca4e151dc3395c2f71bae0ca332165c0f9fdcd",
+      "batch_id": 36,
+      "case_ids": [
+        "case_gl813614lysvqbkpmo",
+        "case_v2avq4jsczjpt90d8p",
+        "case_gtzsap24el8gutw22r",
+        "case_c5iagv1itjfh4aukak",
+        "case_ohsa84lrn2550nz63k"
+      ],
+      "expected_agent_task": "/root/luna_batch_36",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_36_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_36_prompt.json",
+      "prompt_sha256": "a14afff368c5e269a806f1614ecb031c7c042ff5f9e7584dec69e99c709ac989"
+    },
+    {
+      "artifact_sha256": "7ca489cd0e7449a6ab296d81e7e18a887467ef5aec7ea73d3428f887ec3fd29d",
+      "batch_id": 37,
+      "case_ids": [
+        "case_zfbu76hmg7zt8bod8z",
+        "case_5auix48ioq9aprh8ul",
+        "case_gdh65xpytro42nzi7y",
+        "case_2cmmt40n21cr01whab",
+        "case_yrel9czleksq93mfj4"
+      ],
+      "expected_agent_task": "/root/luna_batch_37",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_37_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_37_prompt.json",
+      "prompt_sha256": "e4eebe3c59faef29165858b6c6a175cc14118c7009f3791f7678dd24b4db9c72"
+    },
+    {
+      "artifact_sha256": "9e54126dd27dcb9b3a75fb7b49f7a7ba9ab772492c66d77bd9c7342cb8a15c69",
+      "batch_id": 38,
+      "case_ids": [
+        "case_7kw87j3pichbtdcobj",
+        "case_i841dntel68k2dt1x4",
+        "case_qwsnmpk41894x5vgiq",
+        "case_ujuzh4hr6zl0euyxb5",
+        "case_47zkr70ekdaf0s54fj"
+      ],
+      "expected_agent_task": "/root/luna_batch_38",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_38_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_38_prompt.json",
+      "prompt_sha256": "43fc1aa4a79ef9361fc61cd63ae2fd1bb17aa6c3dd7c2e7ff3c11c2d460f2e35"
+    },
+    {
+      "artifact_sha256": "400ec43b901051a04783a3a0648c5e2b42e25bc003f3bf829dab3344b5290ba8",
+      "batch_id": 39,
+      "case_ids": [
+        "case_rfyg05x0e2e54ey6ou",
+        "case_8rkpy3tl0k2i43hciu",
+        "case_e567jp9o07db6nsu6k",
+        "case_2xfaplxdxnkweesyvi",
+        "case_syu981wzg3whcng81t"
+      ],
+      "expected_agent_task": "/root/luna_batch_39",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_39_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_39_prompt.json",
+      "prompt_sha256": "612ea74a4d0dd24f4375c9f18952c4c24f661503c5a42ee149fea70978818839"
+    },
+    {
+      "artifact_sha256": "51d69ad51b76d815915aa7c9f319ce09074491f3a0dac9375df775851fe1fe8f",
+      "batch_id": 40,
+      "case_ids": [
+        "case_umxqg4mixw0t0d2r3m",
+        "case_2nohq2lkdled63gewu",
+        "case_b4hvwh32a9hpdk6mdm",
+        "case_a7ywq8wty9k0jgsqo6",
+        "case_19ic1q6rysaby7zwok"
+      ],
+      "expected_agent_task": "/root/luna_batch_40",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_40_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_40_prompt.json",
+      "prompt_sha256": "119c1f8d8151427e0d13bb53d6b4a0eaa80733be0d23d778146ee56a7e270a81"
+    },
+    {
+      "artifact_sha256": "bc7ded7b4b25e2554297cc5fabf0d2b32d3157a7aeda09385c0224515ea688da",
+      "batch_id": 41,
+      "case_ids": [
+        "case_9ybj3f4nu6wzmlq6n5",
+        "case_8qcc7i1dyj4fdzq5zb",
+        "case_k3naedfnyw3frj677m",
+        "case_e3scme9s49xh1cz2rr",
+        "case_zefl9tyznc9o7ndv62"
+      ],
+      "expected_agent_task": "/root/luna_batch_41",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_41_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_41_prompt.json",
+      "prompt_sha256": "9e5ac7e15db69c8bc1903d5fa01b438a1ddd9dd8c062269ec17d2421d3d0e911"
+    },
+    {
+      "artifact_sha256": "917661203b03ca56b14b2cbc4bff8a5a8be16a622626a4ad57d85121210f5ebc",
+      "batch_id": 42,
+      "case_ids": [
+        "case_vdxs4jzdzndl6o29uk",
+        "case_p6cb1ws6wzjv93udmu",
+        "case_ws402byuksxfww7c6z",
+        "case_438va8r1ype3hnc9e2",
+        "case_74kwyajoajwlj3o4t2"
+      ],
+      "expected_agent_task": "/root/luna_batch_42",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_42_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_42_prompt.json",
+      "prompt_sha256": "266abe8a0e15e8a88ec35e7a1bd74a9905c8cc366246e3e99e706b6045b63dec"
+    },
+    {
+      "artifact_sha256": "f0bbaa7deb9d46684142e2583424adaff524b09dc394669fcf4fabea46a69148",
+      "batch_id": 43,
+      "case_ids": [
+        "case_ch3n2z3t0bydrczbo6",
+        "case_ch0n8tuhisoa92z6j6",
+        "case_s42uq04h3e5xcldqxx",
+        "case_iqog55gieofpms03yw",
+        "case_vz6df339ywlb8j5jzc"
+      ],
+      "expected_agent_task": "/root/luna_batch_43",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_43_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_43_prompt.json",
+      "prompt_sha256": "8ce8bb177d8fdd29dc1ba4267bb69de145e41e77ddc47931bc72a2006fd85eb9"
+    },
+    {
+      "artifact_sha256": "4cb6ffa2bf4cc1f756da53a4e00c39a8107bae1bbcc1240f2090e4d61775905e",
+      "batch_id": 44,
+      "case_ids": [
+        "case_tem9d8gv9k9acopu5k",
+        "case_t6v1vgvhj50wrfkcng",
+        "case_b5ckh6o5nhf42r8w9b",
+        "case_d2lyjys7balk2uvg0u",
+        "case_jplrl6u50kz85qttv3"
+      ],
+      "expected_agent_task": "/root/luna_batch_44",
+      "expected_model": "gpt-5.6-luna",
+      "expected_output_filename": "batch_44_output.json",
+      "expected_reasoning": "max",
+      "expected_role": "luna_worker",
+      "prompt_filename": "batch_44_prompt.json",
+      "prompt_sha256": "91a620e91a20ade65b1137893677800a4482bfbd378d4f7b0ee21020e0dc1cd8"
+    }
+  ],
+  "checkpoint_sha256": "439f8af0c438e8a79a13af5bb6dd463932ca1d56e225912da3dba9edd8cd12e4",
+  "jobs_sha256": "411c67acd230018c60d50194d51c70f3cde847c7f85b38713456450b609f4aad",
+  "output_contract": {
+    "case_count": 5,
+    "filename_pattern": "batch_XX_output.json",
+    "hypothesis_max_words": 32,
+    "model": "gpt-5.6-luna",
+    "one_fresh_worker_per_batch": true,
+    "reasoning": "max",
+    "required_top_level_fields": [
+      "batch_id",
+      "cases",
+      "agent_task",
+      "role",
+      "model",
+      "reasoning",
+      "public_prompt_sha256",
+      "output_sha256"
+    ],
+    "role": "luna_worker"
+  },
+  "protocol_sha256": "b8653f78accc76b8a3b61a460c812df73cf76ab0111bc202da6bdc1d030081e3",
+  "public_prompt_dir": "j1_luna_public_batches_v1",
+  "schema_version": 1,
+  "status": "J1_LUNA_PUBLIC_BATCH_INDEX_FROZEN"
+}

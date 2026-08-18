@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "experiment": "C1 confirmatory synthetic concept cohort v2",
+  "status": "frozen_before_manual_corpus_inspection",
+  "purpose": "Semantic and style audit after mechanical corpus generation and before any activation extraction.",
+  "review_blinding": {
+    "permitted": [
+      "frozen concept title and summary",
+      "frozen reciprocal hard-negative title and summary",
+      "the six generated requests for that concept",
+      "mechanical corpus report"
+    ],
+    "prohibited": [
+      "residual activations",
+      "SAE activations or feature IDs",
+      "AV or AR output",
+      "held-out metrics",
+      "any primary or secondary endpoint"
+    ]
+  },
+  "document_checks": [
+    {
+      "id": "central_topic_adherence",
+      "pass_rule": "A competent answer must centrally use the assigned concept rather than merely mentioning adjacent vocabulary."
+    },
+    {
+      "id": "no_hard_negative_contamination",
+      "pass_rule": "The request must not centrally require the reciprocal hard-negative concept or combine both sides as co-equal targets."
+    },
+    {
+      "id": "no_named_entity_or_product",
+      "pass_rule": "No named person, organization, branded product, specific place, URL, or four-digit year. Generic institutions and technical terms are allowed."
+    },
+    {
+      "id": "request_not_answer",
+      "pass_rule": "The text is a user request for an explanation or analysis, not a supplied answer."
+    },
+    {
+      "id": "prose_only",
+      "pass_rule": "The request is prose, without code, tables, formula blocks, or list-form content."
+    }
+  ],
+  "concept_batch_checks": [
+    {
+      "id": "distinct_scenarios",
+      "pass_rule": "All six requests use substantively distinct applications or scenarios, not surface paraphrases of one setup."
+    },
+    {
+      "id": "heldout_scenario_separation",
+      "pass_rule": "Neither held-out scenario duplicates or directly continues a discovery scenario."
+    },
+    {
+      "id": "style_balance",
+      "pass_rule": "No concept uniquely relies on code, equations, named entities, or a distinctive list/template style that can serve as a label shortcut."
+    }
+  ],
+  "decision_rule": "Every document and concept-batch check must pass. Any failure stops v2; no text is edited and no document or concept is selectively regenerated.",
+  "required_output": {
+    "status_values": [
+      "PASS",
+      "FAIL"
+    ],
+    "fields": [
+      "schema_version",
+      "experiment",
+      "status",
+      "rubric_sha256",
+      "combined_manifest_sha256",
+      "discovery_manifest_sha256",
+      "heldout_manifest_sha256",
+      "reviewers",
+      "document_decisions",
+      "concept_batch_decisions",
+      "failure_reasons",
+      "attestation"
+    ],
+    "reviewer_rule": "Two independent reviews are recorded; any disagreement or failure is resolved conservatively as FAIL before activation extraction."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "batch_id": 22,
+  "agent_task": "/root/luna_batch_22",
+  "role": "luna_worker",
+  "model": "gpt-5.6-luna",
+  "reasoning": "max",
+  "public_prompt_sha256": "2d1d4ef5a332113305060d5537d238376fc882dff8807eaf401c0318a7d1f9d2",
+  "cases": [
+    {
+      "case_id": "case_q6k6ah0flmsvmxhsuy",
+      "hypothesis": "French-language continuations in structured informational or narrative text, including numeric contact/address fragments.",
+      "positive_cues": [
+        "French phrases, accented vocabulary, and locations such as Grenoble and Les Arcs",
+        "Structured French references, addresses, dialogue, and narrative prose",
+        "Truncated numeric or alphabetic fragments are completed within French text"
+      ],
+      "exclusion_cues": [
+        "No clear English-only or non-French linguistic context is shown",
+        "The exact completion after each fragment is uncertain"
+      ],
+      "abstain": false,
+      "confidence": 0.96
+    },
+    {
+      "case_id": "case_yh2i718maxt1tdcr5s",
+      "hypothesis": "Continuation of a U.S. telephone contact number, often immediately after an opening parenthesis or a call/contact phrase.",
+      "positive_cues": [
+        "Call or contact language appears in dealership, exchange, agency, and real-estate listings",
+        "Opening parenthesis and nearby digits indicate U.S. telephone area-code formatting",
+        "The active boundary is followed by expected phone-number completion"
+      ],
+      "exclusion_cues": [
+        "Parentheses could instead enclose ordinary prose, dates, or mathematical notation",
+        "One example is a whitespace boundary rather than an explicit opening parenthesis"
+      ],
+      "abstain": false,
+      "confidence": 0.98
+    },
+    {
+      "case_id": "case_z1qisq1opmrfvtufrp",
+      "hypothesis": "Legal citation continuation after 'for', naming counsel or a plaintiff/appellant party.",
+      "positive_cues": [
+        "Legal case reports and appellate or district-court filing headers recur",
+        "The token 'for' precedes appellant, plaintiff, or plaintiffs in error",
+        "Counsel names, party labels, and jurisdictional citations are present"
+      ],
+      "exclusion_cues": [
+        "No nonlegal purpose, duration, or beneficiary use of 'for' is shown",
+        "The exact party identity following 'for' is unspecified"
+      ],
+      "abstain": false,
+      "confidence": 0.98
+    },
+    {
+      "case_id": "case_4qj5h8lqvocmfh7jlj",
+      "hypothesis": "Health or healthcare terminology in medical-care and professional-health contexts.",
+      "positive_cues": [
+        "Healthcare or health-care professional collocations surround every active token",
+        "Medical privacy, diabetes screening, nursing, and patient-care contexts recur",
+        "Active forms include healthcare, health, and health care"
+      ],
+      "exclusion_cues": [
+        "No nonmedical meaning such as public-health statistics or wellness marketing is shown",
+        "The exact downstream continuation beyond the active word is not provided"
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_8q00xp4y1j0pch1nho",
+      "hypothesis": "Microsoft and Windows software or technical-documentation context, including enterprise services and developer tooling.",
+      "positive_cues": [
+        "Explanatory snippets repeatedly reference Microsoft products, Windows, Azure, Intune, or Visual Studio",
+        "Technical-documentation and developer-event framing is consistent across snippets",
+        "Software services and printer-driver terminology support enterprise computing"
+      ],
+      "exclusion_cues": [
+        "Some literal context windows mention insurance policy, religion, or dialogue without Microsoft references",
+        "The shared Microsoft framing is not explicit in every context fragment"
+      ],
+      "abstain": false,
+      "confidence": 0.78
+    }
+  ]
+}

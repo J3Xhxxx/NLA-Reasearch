@@ -1,0 +1,103 @@
+{
+  "agent_task": "codex-cli://j1/luna_batch_27",
+  "batch_id": 27,
+  "cases": [
+    {
+      "abstain": false,
+      "case_id": "case_5g3gguc944k4pfxe8o",
+      "confidence": 0.96,
+      "exclusion_cues": [
+        "No single numeric answer is shared.",
+        "The surrounding domains differ between mathematics and JavaScript."
+      ],
+      "hypothesis": "Incomplete arithmetic or JavaScript expressions are continued after a visible plus sign.",
+      "positive_cues": [
+        "Every marked fragment contains a plus sign.",
+        "Three contexts are mathematical and one discusses JavaScript unary-plus coercion.",
+        "Each fragment visibly requires a following operand or continuation."
+      ]
+    },
+    {
+      "abstain": false,
+      "case_id": "case_84in6loonwushfpcjb",
+      "confidence": 0.93,
+      "exclusion_cues": [
+        "The terms come from unrelated subject areas.",
+        "Their grammatical roles are not consistent."
+      ],
+      "hypothesis": "The marked terms are plural common nouns naming places, institutions, or facilities in ordinary prose.",
+      "positive_cues": [
+        "The terms are facilities, Restaurants, stores, and bars.",
+        "Each functions as a noun-phrase head in its surrounding sentence.",
+        "All are visibly plural count nouns."
+      ]
+    },
+    {
+      "abstain": false,
+      "case_id": "case_gbesgp45au8wati2r5",
+      "confidence": 0.99,
+      "exclusion_cues": [
+        "No single topic or sentence-completion pattern is shared.",
+        "The terms vary in capitalization and number."
+      ],
+      "hypothesis": "The marked terms are weekend-related time expressions in cultural, casual, and service contexts.",
+      "positive_cues": [
+        "The terms include Weekend, Sunday, weekend, and weekends.",
+        "Each directly denotes a weekend period or Sunday.",
+        "The surrounding contexts discuss meals, leisure, debugging, or delivery schedules."
+      ]
+    },
+    {
+      "abstain": false,
+      "case_id": "case_x12o15s2moguff96w9",
+      "confidence": 0.98,
+      "exclusion_cues": [
+        "No single Microsoft product, role, or URL is consistently specified.",
+        "The contexts span biography, licensing, journalism, and events."
+      ],
+      "hypothesis": "The excerpts are Microsoft-centered technical or developer prose involving products, employment, documentation, and event links.",
+      "positive_cues": [
+        "Microsoft is explicitly repeated across the excerpts.",
+        "Azure, Teams, Intune, Visual Studio, and Build appear as related references.",
+        "Several excerpts use technical documentation or conference-link formats."
+      ]
+    },
+    {
+      "abstain": false,
+      "case_id": "case_1ab10l6istjmr4awvv",
+      "confidence": 0.95,
+      "exclusion_cues": [
+        "The excerpts do not share a clear subject or topic.",
+        "Punctuation and function words can occur broadly in Arabic prose."
+      ],
+      "hypothesis": "The excerpts are Arabic prose fragments containing punctuation or connective and demonstrative tokens at sentence boundaries.",
+      "positive_cues": [
+        "All contexts use Arabic script and prose syntax.",
+        "Visible marked material includes Arabic comma, period, and ذلك.",
+        "The surrounding text contains clause and sentence transitions."
+      ]
+    }
+  ],
+  "labeler": "luna",
+  "model": "gpt-5.6-luna",
+  "prompt_sha256": "28ecab35810b967671984709d882830f71f0e212d33edb2b0194df27906ec55b",
+  "provenance": {
+    "agent_task": "codex-cli://j1/luna_batch_27",
+    "codex_cli_version": "codex-cli 0.146.1",
+    "manifest_sha256": "3a8f2003d66bea44f5a942c52d4232c557918d5ad7b3f856cf9e4c2b454dc09d",
+    "model": "gpt-5.6-luna",
+    "model_input_sha256": "29fd2c6bd5d4561f5bf26ef4078c494fcdd10937a53574a7ba1abaf94fcc29c1",
+    "raw_attempt_artifact": "batch_27_attempt_01.json",
+    "raw_attempt_artifact_sha256": "c17b05da86d89cb1fe47d2f64e96c984fe47f04e3be3546d4d1da7ad902ecaa0",
+    "reasoning": "max",
+    "role": "luna_worker",
+    "script_sha256": "a471cc4f71260461324d7c9aea4efbc66b191c09bf2f813992ef4b5f21514d51",
+    "tool_calls_detected": false,
+    "transport": "codex_cli_ephemeral"
+  },
+  "public_prompt_sha256": "16c2e72588e1d5e03930d46b2c37228e5db97f2ce23ca7dd8e65df0c5043370d",
+  "reasoning": "max",
+  "role": "luna_worker",
+  "schema_version": 1,
+  "status": "ok"
+}

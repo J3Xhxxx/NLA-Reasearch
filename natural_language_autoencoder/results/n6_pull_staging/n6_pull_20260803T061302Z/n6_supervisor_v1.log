@@ -1,0 +1,52 @@
+2026-08-03 12:16:54 CST SUPERVISOR_START
+2026-08-03 12:16:54 CST VERIFIED sidecar label='binding N6 preregistration' sha256=cbc8a5395844b5a61a3a52a543f978c89273d6e9c786db0262d4a4c936faf6a8 path=/root/autodl-tmp/results/n6_plus_preregistration_v2.md
+2026-08-03 12:16:54 CST VERIFIED sidecar label='frozen N6 code manifest' sha256=4f7e7f612e80a73766d95f2dfd34dcdc37d1b0a6c43a82255d0f3ea87970bc0d path=/root/autodl-tmp/results/n6_code_manifest_v2.txt
+2026-08-03 12:16:54 CST VERIFIED frozen N6 code manifest entries=21 path=/root/autodl-tmp/results/n6_code_manifest_v2.txt
+2026-08-03 12:16:54 CST VERIFIED sidecar label='frozen N5 combined model manifest' sha256=4a5c6212dcf5851b9bea2313b4898f977fef0ee36aecc922d10f0375cbc94735 path=/root/autodl-tmp/results/n5_model_weights_v1.sha256
+/root/autodl-tmp/models/gemma-3-12b-it/config.json: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model.safetensors.index.json: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00001-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00002-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00003-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00004-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00005-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/config.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model.safetensors.index.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00001-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00002-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00003-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00004-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00005-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/config.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model.safetensors.index.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00001-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00002-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00003-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00004-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/value_head.safetensors: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small/config.json: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small/params.safetensors: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_big/config.json: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_big/params.safetensors: OK
+2026-08-03 12:21:57 CST VERIFIED manifest entries label='frozen N5 combined model manifest' path=/root/autodl-tmp/results/n5_model_weights_v1.sha256
+2026-08-03 12:21:57 CST START stage=49:freeze_cohort runner=/root/autodl-tmp/nla_compare/n6_freeze_cohort_remote.sh
+2026-08-03 12:27:37 CST COMPLETE stage=49:freeze_cohort
+2026-08-03 12:27:37 CST START stage=50:extract_activations runner=/root/autodl-tmp/nla_compare/n6_extract_activations_remote.sh
+2026-08-03 12:33:43 CST COMPLETE stage=50:extract_activations
+2026-08-03 12:33:43 CST START stage=51:generate_av runner=/root/autodl-tmp/nla_compare/n6_generate_av_remote.sh
+2026-08-03 13:37:16 CST COMPLETE stage=51:generate_av
+2026-08-03 13:37:16 CST START stage=52:freeze_variants_donor runner=/root/autodl-tmp/nla_compare/n6_freeze_variants_donor_remote.sh
+2026-08-03 13:42:37 CST COMPLETE stage=52:freeze_variants_donor
+2026-08-03 13:42:37 CST START stage=53:reconstruct runner=/root/autodl-tmp/nla_compare/n6_reconstruct_remote.sh
+2026-08-03 13:49:51 CST COMPLETE stage=53:reconstruct
+2026-08-03 13:49:51 CST START stage=54:causal_candidate_mass runner=/root/autodl-tmp/nla_compare/n6_causal_candidate_mass_remote.sh
+2026-08-03 14:01:32 CST COMPLETE stage=54:causal_candidate_mass
+2026-08-03 14:01:32 CST START stage=55:analyze runner=/root/autodl-tmp/nla_compare/n6_analyze_remote.sh
+2026-08-03 14:06:38 CST COMPLETE stage=55:analyze
+2026-08-03 14:06:38 CST START stage=56:independent_audit runner=/root/autodl-tmp/nla_compare/n6_independent_audit_remote.sh
+2026-08-03 14:11:45 CST COMPLETE stage=56:independent_audit
+2026-08-03 14:11:45 CST RESOURCE_REPORT_COMPLETE path=/root/autodl-tmp/results/n6_resource_report_v1.txt
+2026-08-03 14:11:45 CST VERIFIED sidecar label='pull-ready analysis' sha256=c31d114f9909c2f5371b49730ab60d156a59d238457ada5e48b1a9fa1999789b path=/root/autodl-tmp/results/n6_analysis_v1.json
+2026-08-03 14:11:45 CST VERIFIED sidecar label='pull-ready independent audit' sha256=d15badffd6b33e986364a5d3d0925cb95e68461dc27b172e44b447046fea6fe0 path=/root/autodl-tmp/results/n6_independent_audit_v1.json
+2026-08-03 14:11:45 CST VERIFIED sidecar label='pull-ready resource report' sha256=7eb7977ed4524387c560f142c893f25f3a0a58a511523ea5fb5a7e35c43226b5 path=/root/autodl-tmp/results/n6_resource_report_v1.txt
+2026-08-03 14:11:45 CST PULL_READY ready=/root/autodl-tmp/results/n6_pull_ready_v1.txt ack=/root/autodl-tmp/results/n6_pull_ack_v1.txt timeout=300s

@@ -1,0 +1,27 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]Loading weights:   1%|          | 11/1065 [00:00<00:09, 106.96it/s]Loading weights:   3%|▎         | 27/1065 [00:00<00:07, 137.73it/s]Loading weights:   4%|▍         | 42/1065 [00:00<00:09, 108.41it/s]Loading weights:   5%|▌         | 56/1065 [00:00<00:08, 112.95it/s]Loading weights:   6%|▋         | 68/1065 [00:00<00:08, 114.53it/s]Loading weights:   8%|▊         | 80/1065 [00:00<00:08, 114.96it/s]Loading weights:   9%|▊         | 92/1065 [00:00<00:08, 113.64it/s]Loading weights:  10%|▉         | 104/1065 [00:00<00:08, 109.32it/s]Loading weights:  11%|█         | 116/1065 [00:01<00:09, 105.41it/s]Loading weights:  12%|█▏        | 127/1065 [00:01<00:09, 97.65it/s] Loading weights:  13%|█▎        | 137/1065 [00:01<00:10, 89.07it/s]Loading weights:  14%|█▍        | 148/1065 [00:01<00:10, 91.32it/s]Loading weights:  15%|█▌        | 161/1065 [00:01<00:09, 95.67it/s]Loading weights:  16%|█▋        | 174/1065 [00:01<00:09, 97.02it/s]Loading weights:  18%|█▊        | 187/1065 [00:01<00:09, 96.84it/s]Loading weights:  19%|█▉        | 200/1065 [00:01<00:08, 97.49it/s]Loading weights:  20%|█▉        | 212/1065 [00:02<00:08, 95.62it/s]Loading weights:  21%|██        | 224/1065 [00:02<00:08, 97.49it/s]Loading weights:  22%|██▏       | 235/1065 [00:02<00:08, 96.37it/s]Loading weights:  23%|██▎       | 250/1065 [00:02<00:07, 103.92it/s]Loading weights:  25%|██▍       | 263/1065 [00:02<00:07, 100.46it/s]Loading weights:  26%|██▌       | 275/1065 [00:02<00:07, 101.04it/s]Loading weights:  27%|██▋       | 289/1065 [00:02<00:07, 107.84it/s]Loading weights:  28%|██▊       | 302/1065 [00:02<00:07, 106.66it/s]Loading weights:  30%|██▉       | 315/1065 [00:03<00:07, 101.16it/s]Loading weights:  31%|███       | 326/1065 [00:03<00:07, 99.17it/s] Loading weights:  32%|███▏      | 336/1065 [00:03<00:07, 98.28it/s]Loading weights:  32%|███▏      | 346/1065 [00:03<00:07, 94.52it/s]Loading weights:  33%|███▎      | 356/1065 [00:03<00:09, 76.96it/s]Loading weights:  35%|███▍      | 369/1065 [00:03<00:08, 85.27it/s]Loading weights:  36%|███▌      | 382/1065 [00:03<00:07, 91.02it/s]Loading weights:  37%|███▋      | 395/1065 [00:03<00:07, 93.19it/s]Loading weights:  38%|███▊      | 407/1065 [00:04<00:06, 95.43it/s]Loading weights:  39%|███▉      | 419/1065 [00:04<00:06, 98.52it/s]Loading weights:  41%|████      | 432/1065 [00:04<00:06, 98.19it/s]Loading weights:  42%|████▏     | 445/1065 [00:04<00:06, 98.16it/s]Loading weights:  43%|████▎     | 457/1065 [00:04<00:06, 94.61it/s]Loading weights:  44%|████▍     | 467/1065 [00:04<00:06, 92.56it/s]Loading weights:  45%|████▍     | 477/1065 [00:04<00:06, 89.72it/s]Loading weights:  46%|████▌     | 486/1065 [00:04<00:07, 81.74it/s]Loading weights:  47%|████▋     | 499/1065 [00:05<00:06, 90.90it/s]Loading weights:  48%|████▊     | 512/1065 [00:05<00:05, 93.26it/s]Loading weights:  49%|████▉     | 525/1065 [00:05<00:05, 96.04it/s]Loading weights:  50%|█████     | 537/1065 [00:05<00:05, 92.30it/s]Loading weights:  52%|█████▏    | 550/1065 [00:05<00:05, 97.84it/s]Loading weights:  53%|█████▎    | 563/1065 [00:05<00:04, 101.40it/s]Loading weights:  54%|█████▍    | 576/1065 [00:05<00:04, 102.83it/s]Loading weights:  55%|█████▌    | 588/1065 [00:05<00:04, 106.65it/s]Loading weights:  56%|█████▌    | 599/1065 [00:06<00:04, 98.94it/s] Loading weights:  58%|█████▊    | 614/1065 [00:06<00:04, 104.85it/s]Loading weights:  62%|██████▏   | 662/1065 [00:06<00:02, 201.38it/s]Loading weights:  77%|███████▋  | 816/1065 [00:06<00:00, 561.35it/s]Loading weights:  90%|█████████ | 961/1065 [00:06<00:00, 807.14it/s]Loading weights: 100%|██████████| 1065/1065 [00:06<00:00, 161.92it/s]
+[heldout   1/400] uid=34b8e50ea636 src=StackExchange pos=167 seq=228
+[heldout  20/400] uid=46d7ba7f220b src=Pile-CC pos=428 seq=512
+[heldout  40/400] uid=7f773877bcba src=StackExchange pos=351 seq=512
+[heldout  60/400] uid=8cd271bc4fa8 src=Pile-CC pos=443 seq=512
+[heldout  80/400] uid=a30f97c11837 src=PubMed Abstracts pos=66 seq=102
+[heldout 100/400] uid=7a853ac7ac07 src=Wikipedia (en) pos=192 seq=209
+[heldout 120/400] uid=9a3217d14abe src=USPTO Backgrounds pos=70 seq=512
+[heldout 140/400] uid=ab971610d1e9 src=Github pos=397 seq=512
+[heldout 160/400] uid=72f7b52a4bbe src=USPTO Backgrounds pos=180 seq=512
+[heldout 180/400] uid=98dad521438e src=PubMed Central pos=202 seq=512
+[heldout 200/400] uid=84b5e7dc963a src=xnli:fr pos=99 seq=135
+[heldout 220/400] uid=14c04e854e76 src=HackerNews pos=162 seq=512
+[heldout 240/400] uid=7f7547c88c4f src=ArXiv pos=406 seq=512
+[heldout 260/400] uid=b25bbd5ead87 src=HackerNews pos=206 seq=512
+[heldout 280/400] uid=d375ab9818cd src=xnli:hi pos=84 seq=115
+[heldout 300/400] uid=a911f52415fe src=DM Mathematics pos=361 seq=512
+[heldout 320/400] uid=6fe80d81ff50 src=DM Mathematics pos=81 seq=512
+[heldout 340/400] uid=dd049a1cde63 src=HackerNews pos=149 seq=489
+[heldout 360/400] uid=c27485c6c78c src=xnli:zh pos=73 seq=124
+[heldout 380/400] uid=eeb6acc7315d src=xnli:de pos=88 seq=120
+[heldout 400/400] uid=912f55c1a300 src=xnli:es pos=64 seq=117
+N5_ACTIVATION_EXTRACTION_COMPLETE
+split=heldout rows=400 width=3840 mean_norm=68231.853 elapsed=50.3s
+parquet_sha256=0ded741dea6c7f31b7f3ddbcbba5aa8b7da2372fb7f2cf9fd7f8e90781837d21
+-> /root/autodl-tmp/activations/acts_L32_n5_heldout_v2.parquet

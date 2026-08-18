@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "experiment": "J2-P0 SAE projection language loop",
+  "status": "FROZEN_BEFORE_ANY_NEW_AV_OUTPUT",
+  "confirmatory": false,
+  "freeze_date": "2026-08-06",
+  "claim_scope": "exploratory_mechanism_audit_only",
+  "cohort": {
+    "rows": 200,
+    "documents": 101,
+    "source": "frozen N4 real-content cohort",
+    "model": "Gemma-3-12B-IT",
+    "layer": 32,
+    "hook": "resid_post"
+  },
+  "frozen_inputs": {
+    "acts_L32_n3_v1.parquet": "eb9a686a4cdea1f97134b2367d7c8a74a35351678d3c043eddae2f993e17ab66",
+    "n4_recon_vectors_v1.npz": "e9d89713dc64381a52f05224d6522abb0ec547777a8c6a7f08b841a72a339967",
+    "n4_explanations_v1.json": "b656ded845c8fd122e4dcb1391ba5d81e1a903f80a69c30575bf26910e200942",
+    "n4_causal_patch_v1.json": "8dd532f65d8c9c153f04ba433cc6f160798598fbbcbee388c15fb4a75a366233",
+    "n4_analysis_v1.json": "3c8a4d87d7289ac6c41b58e2bbdd6955585db46eaaa5306822d9d802259943cc",
+    "n5_model_weights_v1.sha256": "4a5c6212dcf5851b9bea2313b4898f977fef0ee36aecc922d10f0375cbc94735",
+    "pilot_common.py": "69fb1b40d60d075c615acdaa23acf4f85c17b5b4cf02e2cc18113c4e14ecf63a"
+  },
+  "frozen_protocol": {
+    "path": "results/J2_SAE_PROJECTION_LANGUAGE_LOOP_PROTOCOL_2026-08-06.md",
+    "sha256": "a41b7d89893a270218bf79e226c3e3d7a8726f71ca1fe6d41f40b583616a700f"
+  },
+  "frozen_code": {
+    "server/66_j2_sae_projection_loop.py": "9e042a46ee469046b75bc9c634fabec3aeecbdf7dd9d72f1ab9190c0177c559f",
+    "server/67_j2_sae_projection_causal.py": "27880e7b2a4b87d9367237043dfa8062a7d3ca9a890db82182e24b288174b77b",
+    "server/68_j2_sae_projection_analyze.py": "d2c5f3809f66b7eb92a2e17a9b89210f51a03aa387d050e6fb6bd2c8fa24355a",
+    "server/69_j2_render_case_bundle.py": "64a3795d6b2a31834c21634144cd1f291f1214c8a413d53e1c5f3f501da944ef",
+    "server/run_j2_sae_projection_loop.sh": "abe8581057bec273287b268124e70d4be480afd6e4a33ba99860e432666cef97"
+  },
+  "new_conditions": {
+    "language_after_sae": [
+      "small_loop=AR(AV(SAE-small(x)))",
+      "big_loop=AR(AV(SAE-big(x)))"
+    ],
+    "reverse_order_controls": [
+      "direct_small=SAE-small(AR(AV(x)))",
+      "direct_big=SAE-big(AR(AV(x)))"
+    ]
+  },
+  "execution": {
+    "av_generations": 400,
+    "ar_reconstructions": 400,
+    "causal_new_substitutes": 4,
+    "causal_controls_recomputed": [
+      "identity",
+      "zero"
+    ],
+    "case_selection": "nine frozen metric categories x two SAE operating points x top3; overlap allowed",
+    "shutdown": "sync; /usr/bin/shutdown -h now after bounded pull-ack window on success or failure"
+  }
+}

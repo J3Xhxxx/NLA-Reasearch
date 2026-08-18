@@ -1,0 +1,873 @@
+{
+  "schema_version": 1,
+  "experiment": "C1 confirmatory v3 frozen-scenario-anchor semantic audit",
+  "status": "FAIL",
+  "created_at_utc": "2026-07-30T07:19:36Z",
+  "inputs": {
+    "scenario_anchors_v3": {
+      "path": "server/c1_confirmatory_scenario_anchors_v3.json",
+      "sha256": "061903133b748ccffe2f85f697c5e6a7d53fd631e63fb1c0302ae42fbd59e6d5"
+    },
+    "concept_spec_v2": {
+      "path": "server/c1_confirmatory_concepts_v2.json",
+      "sha256": "4e7d6b2ca3d4fe87406cde09b664f9bfee47e00f2630e0c251c0ad3b7422750e"
+    },
+    "manual_audit_rubric_v1": {
+      "path": "server/c1_confirmatory_manual_audit_rubric_v1.json",
+      "sha256": "821eb57d3b8c2109acd623137b7f6ba35cb67e74f459bded791ad2eb2d7ec48a"
+    },
+    "manual_audit_addendum_v3": {
+      "path": "server/c1_confirmatory_manual_audit_addendum_v3.json",
+      "sha256": "a390975dd97729d82f346f1d3cbd48114cfc2f94ed25ec7a29ee38e86f333b77"
+    },
+    "preregistration_v3_amendment": {
+      "path": "results/c1_confirmatory_preregistration_v3_amendment.md",
+      "sha256": "d042b93a3b8f1770da56045a65cbdd467301264ad465eccd5d18e77bbad083c4"
+    },
+    "v2_review_A": {
+      "path": "results/c1_confirmatory_manual_review_A_v1.json",
+      "sha256": "06ca5fa5eec08e6ed10f73e5905bbb3bb1e23dfb441a2c6e1b2ce5c19c84a8d3"
+    },
+    "v2_review_B": {
+      "path": "results/c1_confirmatory_manual_review_B_v1.json",
+      "sha256": "78a3708341a5efdc5d620ec1bdc2f9207ebaed3488e7d2f1b6f7b95b5818619f"
+    },
+    "v2_aggregate_audit": {
+      "path": "results/c1_confirmatory_manual_audit_v1.json",
+      "sha256": "255100f62db6e7df1b1a05c8d4451b0213cd17742b2e8e70ab7a4f233355fa35"
+    }
+  },
+  "decision_rule": "Every concept must pass target relevance, reciprocal-hard-negative safety, six-scenario substantive distinctness, held-out versus discovery separation, frozen role schedule, and the no-specific-name rule. Every reciprocal pair must pass mapping, role/style balance, and hard-negative separation. Any substantive doubt is FAIL. Pair overall status is the conjunction of pair-level checks and both constituent concept statuses.",
+  "structural_validation": {
+    "status": "PASS",
+    "concepts": 24,
+    "anchors": 144,
+    "train_anchors": 96,
+    "test_anchors": 48,
+    "reciprocal_pairs": 12,
+    "unique_anchor_ids": 144,
+    "unique_scenario_texts": 144,
+    "exactly_four_train_and_two_test_per_concept": true,
+    "concept_ids_match_spec": true,
+    "hard_negative_mappings_match_spec_and_are_reciprocal": true,
+    "ordered_slot_assignments_match_the_frozen_six-role_schedule": true,
+    "embedded_source_hashes_match_files": true
+  },
+  "summary": {
+    "concepts_pass": 4,
+    "concepts_fail": 20,
+    "pair_level_checks_pass": 11,
+    "pair_level_checks_fail": 1,
+    "pairs_overall_pass": 0,
+    "pairs_overall_fail": 12,
+    "failure_implicated_anchor_ids": 49,
+    "global_target_relevance": "PASS",
+    "global_hard_negative_safety": "PASS",
+    "global_no_specific_names": "PASS",
+    "global_role_schedule": "PASS",
+    "global_scenario_distinctness": "FAIL",
+    "global_heldout_separation": "FAIL"
+  },
+  "concept_decisions": [
+    {
+      "concept_id": "automatic_memory_reclamation",
+      "hard_negative_id": "dynamic_memory_allocation",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "automatic_memory_reclamation_train_01",
+            "automatic_memory_reclamation_test_01"
+          ],
+          "reason": "Both anchors center on generational collection of young objects, repeated survivors, promotion, and later full collection; the held-out log-reading frame is not a substantively new scenario."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "dynamic_memory_allocation",
+      "hard_negative_id": "automatic_memory_reclamation",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "dynamic_memory_allocation_train_00",
+            "dynamic_memory_allocation_train_03",
+            "dynamic_memory_allocation_test_01"
+          ],
+          "reason": "The held-out telemetry of stable free capacity split into tiny regions restates the discovery external-fragmentation and missing-coalescing failure scenario."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "cryptographic_authentication",
+      "hard_negative_id": "error_detecting_codes",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "cryptographic_authentication_train_00",
+            "cryptographic_authentication_train_03",
+            "cryptographic_authentication_test_01"
+          ],
+          "reason": "All three anchors use acceptance of duplicated authenticated requests to elicit nonce freshness and replay-state failure; changing command, transaction, and audit-record wrappers does not create a new held-out scenario."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "error_detecting_codes",
+      "hard_negative_id": "cryptographic_authentication",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "error_detecting_codes_train_01",
+            "error_detecting_codes_test_01"
+          ],
+          "reason": "Both anchors compare detection of isolated versus burst errors through code distance or cyclic-redundancy structure; the held-out controlled-noise table is the same substantive comparison."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "protein_quality_control",
+      "hard_negative_id": "membrane_vesicle_trafficking",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "protein_quality_control_train_02",
+            "protein_quality_control_test_00"
+          ],
+          "reason": "Both concern chemically damaged existing proteins under constrained refolding capacity and ask for the same refold-versus-tag-versus-degrade-versus-aggregate triage."
+        },
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "protein_quality_control_train_03",
+            "protein_quality_control_test_01"
+          ],
+          "reason": "The held-out rise in tagged protein and delayed aggregation substantially repeats the discovery disposal-bottleneck pattern."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "membrane_vesicle_trafficking",
+      "hard_negative_id": "protein_quality_control",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "membrane_vesicle_trafficking_train_01",
+            "membrane_vesicle_trafficking_test_00"
+          ],
+          "reason": "Both use a surface receptor switching between recycling and degradative routing; the held-out counterfactual directly repeats the discovery contrast."
+        },
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "membrane_vesicle_trafficking_train_03",
+            "membrane_vesicle_trafficking_test_01"
+          ],
+          "reason": "Both use cargo carriers accumulating beside the correct target membrane to diagnose tethering or fusion as the limiting step."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "microbial_quorum_sensing",
+      "hard_negative_id": "microbial_cross_feeding",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "microbial_quorum_sensing_train_01",
+            "microbial_quorum_sensing_test_00"
+          ],
+          "reason": "Both manipulate physical confinement at fixed cell count to change extracellular signal retention and concentration; droplets versus a flow chamber is a surface variation of the same scenario."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "microbial_cross_feeding",
+      "hard_negative_id": "microbial_quorum_sensing",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "microbial_cross_feeding_train_01",
+            "microbial_cross_feeding_test_00"
+          ],
+          "reason": "Both vary physical separation and diffusion distance between the same type of metabolically dependent partners to test whether exchanged metabolites sustain growth."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "fault_rupture_mechanics",
+      "hard_negative_id": "slope_failure_mechanics",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "PASS",
+        "heldout_scenario_separation": "PASS",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "slope_failure_mechanics",
+      "hard_negative_id": "fault_rupture_mechanics",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "slope_failure_mechanics_train_00",
+            "slope_failure_mechanics_train_02",
+            "slope_failure_mechanics_test_01"
+          ],
+          "reason": "The held-out instrument pattern again centers on rising pore pressure, a narrow slip surface, and drainage or structural support, recombining the discovery rainfall-failure and mitigation scenarios rather than introducing a new application."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "groundwater_contaminant_transport",
+      "hard_negative_id": "coastal_saltwater_intrusion",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "groundwater_contaminant_transport_train_02",
+            "groundwater_contaminant_transport_test_01"
+          ],
+          "reason": "Both use monitoring-well patterns in heterogeneous permeability to infer plume pathways and source location; the held-out concentration sequence is the evidence version of the discovery monitoring design."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "coastal_saltwater_intrusion",
+      "hard_negative_id": "groundwater_contaminant_transport",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "coastal_saltwater_intrusion_train_01",
+            "coastal_saltwater_intrusion_test_01"
+          ],
+          "reason": "Both directly contrast localized deep-well upconing with broader movement of the freshwater-seawater interface."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "census_classification",
+      "hard_negative_id": "cadastral_land_taxation",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "census_classification_train_00",
+            "census_classification_test_01"
+          ],
+          "reason": "Both infer that changed category labels or coding rules, rather than population change, created an abrupt apparent demographic shift."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "cadastral_land_taxation",
+      "hard_negative_id": "census_classification",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "cadastral_land_taxation_train_03",
+            "cadastral_land_taxation_test_01"
+          ],
+          "reason": "Both concern parcel subdivisions appearing late in the official ledger and ask for the consequences or sequence of delayed survey, registration, and tax-record updates."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "quarantine_regimes",
+      "hard_negative_id": "passport_mobility_controls",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "quarantine_regimes_train_01",
+            "quarantine_regimes_test_01"
+          ],
+          "reason": "Both use a settlement cordon to weigh case reduction against evasion, enforcement, relief shortages, and collateral disruption; the held-out evidence is the same substantive cordon scenario."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "passport_mobility_controls",
+      "hard_negative_id": "quarantine_regimes",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "PASS",
+        "heldout_scenario_separation": "PASS",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "lexical_semantic_ambiguity",
+      "hard_negative_id": "syntactic_attachment_ambiguity",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "lexical_semantic_ambiguity_train_03",
+            "lexical_semantic_ambiguity_test_00"
+          ],
+          "reason": "Both use an ordinary word with a specialized domain sense that sparse or ignored domain context fails to select; medical versus a new generic technical domain is only a wrapper change."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "syntactic_attachment_ambiguity",
+      "hard_negative_id": "lexical_semantic_ambiguity",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "PASS",
+        "heldout_scenario_separation": "PASS",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "concept_id": "phonological_assimilation",
+      "hard_negative_id": "morphological_agreement",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "phonological_assimilation_train_00",
+            "phonological_assimilation_test_00"
+          ],
+          "reason": "The held-out counterfactual directly reverses the neighbor order in the discovery regressive-assimilation setup to ask progressive versus regressive direction, rather than introducing the required new setting."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "morphological_agreement",
+      "hard_negative_id": "phonological_assimilation",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "morphological_agreement_train_01",
+            "morphological_agreement_test_01"
+          ],
+          "reason": "Both describe agreement errors increasing with controller-target distance when an intervening noun carries conflicting features."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "feedback_control_stability",
+      "hard_negative_id": "dynamical_state_estimation",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "feedback_control_stability_train_00",
+            "feedback_control_stability_train_01",
+            "feedback_control_stability_test_01"
+          ],
+          "reason": "The held-out step response repeats the discovery overshoot, ringing, damping, and settling pattern used to diagnose loop gain and stability."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "dynamical_state_estimation",
+      "hard_negative_id": "feedback_control_stability",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "dynamical_state_estimation_train_03",
+            "dynamical_state_estimation_test_01"
+          ],
+          "reason": "Both diagnose persistent model mismatch from biased innovations, underestimated covariance, and growing estimator disagreement."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "fatigue_crack_growth",
+      "hard_negative_id": "creep_deformation",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "FAIL",
+        "heldout_scenario_separation": "FAIL",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [
+        {
+          "check": "heldout_scenario_separation",
+          "anchor_ids": [
+            "fatigue_crack_growth_train_00",
+            "fatigue_crack_growth_train_02",
+            "fatigue_crack_growth_test_01"
+          ],
+          "reason": "The held-out inspection trajectory recombines the discovery initiation-and-growth lifecycle with the discovery inspection setting; no independent application is introduced."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "concept_id": "creep_deformation",
+      "hard_negative_id": "fatigue_crack_growth",
+      "checks": {
+        "target_relevance": "PASS",
+        "hard_negative_safety": "PASS",
+        "six_scenarios_substantively_distinct": "PASS",
+        "heldout_scenario_separation": "PASS",
+        "role_schedule": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "failures": [],
+      "status": "PASS"
+    }
+  ],
+  "pair_decisions": [
+    {
+      "pair_id": "automatic_memory_reclamation__dynamic_memory_allocation",
+      "concept_ids": [
+        "automatic_memory_reclamation",
+        "dynamic_memory_allocation"
+      ],
+      "pair_level_checks": {
+        "reciprocal_mapping": "PASS",
+        "ordered_role_balance": "PASS",
+        "content_style_balance": "PASS",
+        "hard_negative_separation": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "FAIL",
+        "FAIL"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "pair_id": "cryptographic_authentication__error_detecting_codes",
+      "concept_ids": [
+        "cryptographic_authentication",
+        "error_detecting_codes"
+      ],
+      "pair_level_checks": {
+        "reciprocal_mapping": "PASS",
+        "ordered_role_balance": "PASS",
+        "content_style_balance": "PASS",
+        "hard_negative_separation": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "FAIL",
+        "FAIL"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "pair_id": "protein_quality_control__membrane_vesicle_trafficking",
+      "concept_ids": [
+        "protein_quality_control",
+        "membrane_vesicle_trafficking"
+      ],
+      "pair_level_checks": {
+        "reciprocal_mapping": "PASS",
+        "ordered_role_balance": "PASS",
+        "content_style_balance": "PASS",
+        "hard_negative_separation": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "FAIL",
+        "FAIL"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "pair_id": "microbial_quorum_sensing__microbial_cross_feeding",
+      "concept_ids": [
+        "microbial_quorum_sensing",
+        "microbial_cross_feeding"
+      ],
+      "pair_level_checks": {
+        "reciprocal_mapping": "PASS",
+        "ordered_role_balance": "PASS",
+        "content_style_balance": "PASS",
+        "hard_negative_separation": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "FAIL",
+        "FAIL"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "pair_id": "fault_rupture_mechanics__slope_failure_mechanics",
+      "concept_ids": [
+        "fault_rupture_mechanics",
+        "slope_failure_mechanics"
+      ],
+      "pair_level_checks": {
+        "reciprocal_mapping": "PASS",
+        "ordered_role_balance": "PASS",
+        "content_style_balance": "FAIL",
+        "hard_negative_separation": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "pair_level_status": "FAIL",
+      "constituent_concept_statuses": [
+        "PASS",
+        "FAIL"
+      ],
+      "failures": [
+        {
+          "check": "content_style_balance",
+          "anchor_ids": [
+            "fault_rupture_mechanics_train_00",
+            "fault_rupture_mechanics_train_01",
+            "fault_rupture_mechanics_train_02",
+            "fault_rupture_mechanics_train_03",
+            "fault_rupture_mechanics_test_00",
+            "fault_rupture_mechanics_test_01",
+            "slope_failure_mechanics_train_00",
+            "slope_failure_mechanics_train_01",
+            "slope_failure_mechanics_train_02",
+            "slope_failure_mechanics_train_03",
+            "slope_failure_mechanics_test_00",
+            "slope_failure_mechanics_test_01"
+          ],
+          "reason": "The fault side remains uniformly framed as abstract segment or patch rupture mechanics, while the slope side ranges across rainfall, vegetation, an embankment, a weak layer, toe excavation, and field instrumentation; this asymmetric framing can identify the pair member independently of the ordered role."
+        }
+      ],
+      "status": "FAIL"
+    },
+    {
+      "pair_id": "groundwater_contaminant_transport__coastal_saltwater_intrusion",
+      "concept_ids": [
+        "groundwater_contaminant_transport",
+        "coastal_saltwater_intrusion"
+      ],
+      "pair_level_checks": {
+        "reciprocal_mapping": "PASS",
+        "ordered_role_balance": "PASS",
+        "content_style_balance": "PASS",
+        "hard_negative_separation": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "FAIL",
+        "FAIL"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "pair_id": "census_classification__cadastral_land_taxation",
+      "concept_ids": [
+        "census_classification",
+        "cadastral_land_taxation"
+      ],
+      "pair_level_checks": {
+        "reciprocal_mapping": "PASS",
+        "ordered_role_balance": "PASS",
+        "content_style_balance": "PASS",
+        "hard_negative_separation": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "FAIL",
+        "FAIL"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "pair_id": "quarantine_regimes__passport_mobility_controls",
+      "concept_ids": [
+        "quarantine_regimes",
+        "passport_mobility_controls"
+      ],
+      "pair_level_checks": {
+        "reciprocal_mapping": "PASS",
+        "ordered_role_balance": "PASS",
+        "content_style_balance": "PASS",
+        "hard_negative_separation": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "FAIL",
+        "PASS"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "pair_id": "lexical_semantic_ambiguity__syntactic_attachment_ambiguity",
+      "concept_ids": [
+        "lexical_semantic_ambiguity",
+        "syntactic_attachment_ambiguity"
+      ],
+      "pair_level_checks": {
+        "reciprocal_mapping": "PASS",
+        "ordered_role_balance": "PASS",
+        "content_style_balance": "PASS",
+        "hard_negative_separation": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "FAIL",
+        "PASS"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "pair_id": "phonological_assimilation__morphological_agreement",
+      "concept_ids": [
+        "phonological_assimilation",
+        "morphological_agreement"
+      ],
+      "pair_level_checks": {
+        "reciprocal_mapping": "PASS",
+        "ordered_role_balance": "PASS",
+        "content_style_balance": "PASS",
+        "hard_negative_separation": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "FAIL",
+        "FAIL"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "pair_id": "feedback_control_stability__dynamical_state_estimation",
+      "concept_ids": [
+        "feedback_control_stability",
+        "dynamical_state_estimation"
+      ],
+      "pair_level_checks": {
+        "reciprocal_mapping": "PASS",
+        "ordered_role_balance": "PASS",
+        "content_style_balance": "PASS",
+        "hard_negative_separation": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "FAIL",
+        "FAIL"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "pair_id": "fatigue_crack_growth__creep_deformation",
+      "concept_ids": [
+        "fatigue_crack_growth",
+        "creep_deformation"
+      ],
+      "pair_level_checks": {
+        "reciprocal_mapping": "PASS",
+        "ordered_role_balance": "PASS",
+        "content_style_balance": "PASS",
+        "hard_negative_separation": "PASS",
+        "no_specific_names": "PASS"
+      },
+      "pair_level_status": "PASS",
+      "constituent_concept_statuses": [
+        "FAIL",
+        "PASS"
+      ],
+      "status": "FAIL"
+    }
+  ],
+  "attestation": "I independently inspected all 144 frozen scenario anchors against the 24-concept specification, reciprocal hard-negative mapping, frozen rubric, v3 amendment, and both v2 reviewers' failure reasons. I applied the stated conservative rule to every concept and reciprocal pair. I did not modify the frozen anchors and did not access residual activations, SAE activations or feature IDs, AV or AR outputs, held-out metrics, or any primary or secondary endpoint."
+}

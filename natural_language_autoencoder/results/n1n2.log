@@ -1,0 +1,157 @@
++ PY=/root/miniconda3/bin/python
++ CMP=/root/autodl-tmp/nla_compare
++ MODELS=/root/autodl-tmp/models
++ RES=/root/autodl-tmp/results
++ ACTS=/root/autodl-tmp/activations/acts_L32.parquet
++ cd /root/autodl-tmp/nla_compare
++ export HF_HOME=/root/autodl-tmp/hf
++ HF_HOME=/root/autodl-tmp/hf
++ export NLA_REPO=/root/autodl-tmp/nla_repo
++ NLA_REPO=/root/autodl-tmp/nla_repo
++ export TOKENIZERS_PARALLELISM=false
++ TOKENIZERS_PARALLELISM=false
+++ date -u
++ echo 'N1N2_START Thu Jul 30 10:34:01 UTC 2026'
+N1N2_START Thu Jul 30 10:34:01 UTC 2026
++ nvidia-smi --query-gpu=memory.used,utilization.gpu --format=csv,noheader
+0 MiB, 0 %
++ /root/miniconda3/bin/python 29_score_text_variants.py --ar /root/autodl-tmp/models/nla-gemma3-12b-L32-ar --activations /root/autodl-tmp/activations/acts_L32.parquet --variants /root/autodl-tmp/results/c7b3_variants_v1.json --out /root/autodl-tmp/results/c7b3_scores_v1.json --vecs-out /root/autodl-tmp/results/c7b3_recon_v1.npz
+[freeze] variants sha256=b30a74bec1a6942bdbd3531ca935d211c7de032bace28b3fdee489b3cfd65579 verified
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/430 [00:00<?, ?it/s]Loading weights: 100%|██████████| 430/430 [00:00<00:00, 9865.50it/s]
+[transformers] [1mGemma3ForCausalLM LOAD REPORT[0m from: /root/autodl-tmp/models/nla-gemma3-12b-L32-ar
+Key               | Status  | 
+------------------+---------+-
+model.norm.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[NLACritic] 33 layers  d_model=3840  mse_scale=61.97
+[generic] 8 texts in 0.7s
+[row  0] 11 texts, 1s, orig=0.885
+[row  1] 21 texts, 2s, orig=0.876
+[row  2] 32 texts, 2s, orig=0.897
+[row  3] 42 texts, 2s, orig=0.933
+[row  4] 53 texts, 3s, orig=0.832
+[row  5] 63 texts, 3s, orig=0.744
+[row  6] 74 texts, 4s, orig=0.762
+[row  7] 84 texts, 4s, orig=0.779
+[row  8] 95 texts, 4s, orig=0.924
+[row  9] 105 texts, 5s, orig=0.898
+[row 10] 116 texts, 5s, orig=0.868
+[row 11] 126 texts, 6s, orig=0.851
+[row 12] 137 texts, 6s, orig=0.877
+[row 13] 147 texts, 6s, orig=0.763
+[row 14] 158 texts, 7s, orig=0.921
+[row 15] 168 texts, 7s, orig=0.935
+[row 16] 179 texts, 8s, orig=0.917
+[row 17] 189 texts, 8s, orig=0.840
+[row 18] 200 texts, 8s, orig=0.865
+[row 19] 210 texts, 9s, orig=0.914
+[row 20] 221 texts, 9s, orig=0.901
+[row 21] 231 texts, 10s, orig=0.825
+[row 22] 242 texts, 10s, orig=0.843
+[row 23] 252 texts, 10s, orig=0.868
+[row 24] 263 texts, 11s, orig=0.892
+[row 25] 273 texts, 11s, orig=0.842
+[row 26] 284 texts, 12s, orig=0.890
+[row 27] 294 texts, 12s, orig=0.820
+[row 28] 305 texts, 12s, orig=0.884
+[row 29] 315 texts, 13s, orig=0.739
+[row 30] 326 texts, 13s, orig=0.868
+[row 31] 336 texts, 14s, orig=0.798
+[row 32] 347 texts, 14s, orig=0.894
+[row 33] 357 texts, 14s, orig=0.888
+[row 34] 368 texts, 15s, orig=0.838
+[row 35] 378 texts, 15s, orig=0.903
+[row 36] 389 texts, 16s, orig=0.853
+[row 37] 399 texts, 16s, orig=0.781
+[row 38] 410 texts, 16s, orig=0.889
+[row 39] 420 texts, 17s, orig=0.876
+Traceback (most recent call last):
+  File "/root/autodl-tmp/nla_compare/29_score_text_variants.py", line 233, in <module>
+    main()
+  File "/root/autodl-tmp/nla_compare/29_score_text_variants.py", line 176, in main
+    Xc = perp(vecs)
+         ^^^^^^^^^^
+  File "/root/autodl-tmp/nla_compare/29_score_text_variants.py", line 73, in perp
+    return a - (a @ m_hat) * m_hat
+               ~~~~~~~~~~~~^~~~~~~
+ValueError: operands could not be broadcast together with shapes (40,) (3840,) 
++ s1=1
+++ date -u
++ echo 'N1_EXIT status=1 Thu Jul 30 10:34:28 UTC 2026'
+N1_EXIT status=1 Thu Jul 30 10:34:28 UTC 2026
++ /root/miniconda3/bin/python 30_causal_patch.py --base-model /root/autodl-tmp/models/gemma-3-12b-it --activations /root/autodl-tmp/activations/acts_L32.parquet --recon /root/autodl-tmp/results/recon_vectors.npz --out /root/autodl-tmp/results/causal_patch_v1.json
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1065 [00:00<03:30,  5.06it/s]Loading weights:   2%|▏         | 18/1065 [00:00<00:14, 70.89it/s]Loading weights:   4%|▎         | 39/1065 [00:00<00:08, 120.87it/s]Loading weights:   5%|▌         | 55/1065 [00:00<00:07, 128.33it/s]Loading weights:   7%|▋         | 70/1065 [00:00<00:08, 118.72it/s]Loading weights:   8%|▊         | 89/1065 [00:00<00:07, 138.85it/s]Loading weights:  10%|▉         | 104/1065 [00:00<00:06, 138.27it/s]Loading weights:  11%|█▏        | 120/1065 [00:00<00:06, 140.49it/s]Loading weights:  13%|█▎        | 135/1065 [00:01<00:07, 128.53it/s]Loading weights:  14%|█▍        | 154/1065 [00:01<00:06, 142.55it/s]Loading weights:  16%|█▌        | 170/1065 [00:01<00:06, 147.07it/s]Loading weights:  17%|█▋        | 186/1065 [00:01<00:07, 124.79it/s]Loading weights:  19%|█▉        | 200/1065 [00:01<00:07, 121.87it/s]Loading weights:  20%|██        | 213/1065 [00:01<00:07, 117.52it/s]Loading weights:  21%|██        | 226/1065 [00:01<00:07, 117.30it/s]Loading weights:  23%|██▎       | 244/1065 [00:01<00:06, 130.24it/s]Loading weights:  24%|██▍       | 258/1065 [00:02<00:06, 130.08it/s]Loading weights:  26%|██▌       | 272/1065 [00:02<00:06, 122.63it/s]Loading weights:  27%|██▋       | 285/1065 [00:02<00:06, 121.13it/s]Loading weights:  28%|██▊       | 302/1065 [00:02<00:06, 125.17it/s]Loading weights:  30%|██▉       | 315/1065 [00:02<00:06, 122.59it/s]Loading weights:  31%|███       | 329/1065 [00:02<00:05, 123.22it/s]Loading weights:  32%|███▏      | 342/1065 [00:02<00:05, 123.09it/s]Loading weights:  33%|███▎      | 355/1065 [00:02<00:05, 123.91it/s]Loading weights:  35%|███▍      | 369/1065 [00:02<00:05, 123.03it/s]Loading weights:  36%|███▋      | 387/1065 [00:03<00:04, 137.10it/s]Loading weights:  38%|███▊      | 406/1065 [00:03<00:04, 148.46it/s]Loading weights:  40%|███▉      | 421/1065 [00:03<00:05, 125.09it/s]Loading weights:  41%|████      | 435/1065 [00:03<00:04, 127.99it/s]Loading weights:  42%|████▏     | 449/1065 [00:03<00:04, 123.98it/s]Loading weights:  43%|████▎     | 462/1065 [00:03<00:04, 122.52it/s]Loading weights:  45%|████▍     | 475/1065 [00:03<00:04, 119.72it/s]Loading weights:  46%|████▌     | 492/1065 [00:03<00:04, 130.10it/s]Loading weights:  48%|████▊     | 506/1065 [00:04<00:04, 127.79it/s]Loading weights:  49%|████▉     | 524/1065 [00:04<00:04, 135.00it/s]Loading weights:  51%|█████     | 543/1065 [00:04<00:03, 149.27it/s]Loading weights:  53%|█████▎    | 563/1065 [00:04<00:03, 156.29it/s]Loading weights:  55%|█████▍    | 585/1065 [00:04<00:02, 172.13it/s]Loading weights:  57%|█████▋    | 603/1065 [00:04<00:02, 160.83it/s]Loading weights:  62%|██████▏   | 659/1065 [00:04<00:01, 268.42it/s]Loading weights:  88%|████████▊ | 935/1065 [00:04<00:00, 960.26it/s]Loading weights: 100%|██████████| 1065/1065 [00:04<00:00, 218.35it/s]
+[doc 0] seq=38 clean forward done (1s)
+[doc 1] seq=32 clean forward done (1s)
+[doc 2] seq=33 clean forward done (1s)
+[doc 3] seq=28 clean forward done (1s)
+[doc 4] seq=29 clean forward done (1s)
+[provenance] min cos(captured, stored) = 1.000000
+[row  0] pos= 19 nla_kl=2.964 sae_s_kl=19.314 zero_kl=8.973 (2s)
+[row  1] pos= 22 nla_kl=0.134 sae_s_kl=0.392 zero_kl=23.930 (3s)
+[row  2] pos= 24 nla_kl=0.906 sae_s_kl=0.587 zero_kl=18.188 (4s)
+[row  3] pos= 27 nla_kl=7.069 sae_s_kl=14.153 zero_kl=17.426 (5s)
+[row  4] pos= 29 nla_kl=0.134 sae_s_kl=1.585 zero_kl=27.003 (6s)
+[row  5] pos= 32 nla_kl=3.313 sae_s_kl=0.032 zero_kl=10.160 (7s)
+[row  6] pos= 34 nla_kl=23.130 sae_s_kl=22.879 zero_kl=10.767 (8s)
+[row  7] pos= 37 nla_kl=0.003 sae_s_kl=0.000 zero_kl=11.795 (9s)
+[row  8] pos= 16 nla_kl=1.393 sae_s_kl=2.764 zero_kl=11.331 (10s)
+[row  9] pos= 18 nla_kl=0.111 sae_s_kl=0.606 zero_kl=23.157 (11s)
+[row 10] pos= 20 nla_kl=0.281 sae_s_kl=0.306 zero_kl=15.504 (12s)
+[row 11] pos= 22 nla_kl=0.052 sae_s_kl=0.230 zero_kl=8.464 (13s)
+[row 12] pos= 25 nla_kl=1.180 sae_s_kl=0.027 zero_kl=1.545 (14s)
+[row 13] pos= 27 nla_kl=0.000 sae_s_kl=0.013 zero_kl=39.780 (15s)
+[row 14] pos= 29 nla_kl=2.076 sae_s_kl=2.363 zero_kl=13.465 (16s)
+[row 15] pos= 31 nla_kl=0.000 sae_s_kl=0.000 zero_kl=8.566 (17s)
+[row 16] pos= 16 nla_kl=13.355 sae_s_kl=30.610 zero_kl=21.092 (18s)
+[row 17] pos= 18 nla_kl=4.725 sae_s_kl=15.252 zero_kl=27.151 (19s)
+[row 18] pos= 21 nla_kl=0.000 sae_s_kl=0.001 zero_kl=5.609 (20s)
+[row 19] pos= 23 nla_kl=12.500 sae_s_kl=13.500 zero_kl=16.514 (22s)
+[row 20] pos= 25 nla_kl=0.008 sae_s_kl=0.037 zero_kl=17.795 (23s)
+[row 21] pos= 27 nla_kl=2.820 sae_s_kl=0.008 zero_kl=8.426 (24s)
+[row 22] pos= 30 nla_kl=4.492 sae_s_kl=13.373 zero_kl=15.348 (25s)
+[row 23] pos= 32 nla_kl=0.100 sae_s_kl=0.029 zero_kl=16.673 (26s)
+[row 24] pos= 14 nla_kl=0.102 sae_s_kl=0.695 zero_kl=24.629 (27s)
+[row 25] pos= 16 nla_kl=0.313 sae_s_kl=1.247 zero_kl=25.933 (28s)
+[row 26] pos= 18 nla_kl=0.052 sae_s_kl=0.006 zero_kl=1.600 (29s)
+[row 27] pos= 20 nla_kl=0.351 sae_s_kl=1.500 zero_kl=21.430 (29s)
+[row 28] pos= 21 nla_kl=0.395 sae_s_kl=0.486 zero_kl=2.321 (30s)
+[row 29] pos= 23 nla_kl=0.000 sae_s_kl=0.099 zero_kl=25.448 (31s)
+[row 30] pos= 25 nla_kl=6.305 sae_s_kl=4.734 zero_kl=8.557 (32s)
+[row 31] pos= 27 nla_kl=0.000 sae_s_kl=0.000 zero_kl=15.136 (33s)
+[row 32] pos= 14 nla_kl=0.279 sae_s_kl=1.207 zero_kl=20.709 (33s)
+[row 33] pos= 16 nla_kl=0.191 sae_s_kl=1.689 zero_kl=5.464 (34s)
+[row 34] pos= 18 nla_kl=0.465 sae_s_kl=0.557 zero_kl=30.846 (35s)
+[row 35] pos= 20 nla_kl=0.267 sae_s_kl=1.477 zero_kl=31.947 (36s)
+[row 36] pos= 22 nla_kl=0.203 sae_s_kl=0.003 zero_kl=0.113 (37s)
+[row 37] pos= 24 nla_kl=0.000 sae_s_kl=0.069 zero_kl=31.584 (38s)
+[row 38] pos= 26 nla_kl=6.828 sae_s_kl=13.873 zero_kl=20.036 (38s)
+[row 39] pos= 28 nla_kl=0.000 sae_s_kl=0.000 zero_kl=9.102 (39s)
+
+PROVENANCE: {"min_cos_captured_vs_stored": 1.0, "mean_cos_captured_vs_stored": 1.0}
+identity           kl@pos=  0.0000 klafter=  0.0000 LR_zero=+1.000 LR_mean=+1.000
+nla                kl@pos=  2.4125 klafter=  0.4742 LR_zero=+0.782 LR_mean=+1.378
+sae_small          kl@pos=  4.1426 klafter=  0.7464 LR_zero=+1.481 LR_mean=+0.826
+sae_big            kl@pos=  3.2466 klafter=  0.7261 LR_zero=+1.032 LR_mean=+0.835
+resid_text         kl@pos=  7.6368 klafter=  1.5222 LR_zero=+0.131 LR_mean=+0.483
+dataset_mean       kl@pos= 14.4660 klafter=  2.3595 LR_zero=+0.086 LR_mean=+0.000
+other_activation   kl@pos= 17.9329 klafter=  2.6993 LR_zero=-0.369 LR_mean=-1.575
+gaussian           kl@pos= 31.0665 klafter=  8.5139 LR_zero=-1.459 LR_mean=-2.531
+nla_as_is          kl@pos=  2.4579 klafter=  0.4894 LR_zero=+0.781 LR_mean=+1.302
+sae_small_as_is    kl@pos=  4.1650 klafter=  0.7480 LR_zero=+1.498 LR_mean=+0.822
+sae_big_as_is      kl@pos=  3.2781 klafter=  0.7358 LR_zero=+1.012 LR_mean=+0.841
+zero               kl@pos= 16.3379 klafter=  3.8151 LR_zero=+0.000 LR_mean=-0.503
+ASSOC: {"nla": {"mean_centered_cos": 0.8593, "spearman_centered_cos_vs_kl_at_pos": 0.1882, "spearman_centered_cos_vs_loss_recovered": -0.3899}, "sae_small": {"mean_centered_cos": 0.6584, "spearman_centered_cos_vs_kl_at_pos": -0.4801, "spearman_centered_cos_vs_loss_recovered": 0.464}, "sae_big": {"mean_centered_cos": 0.7246, "spearman_centered_cos_vs_kl_at_pos": -0.3379, "spearman_centered_cos_vs_loss_recovered": 0.4499}, "resid_text": {"mean_centered_cos": 0.041, "spearman_centered_cos_vs_kl_at_pos": 0.0478, "spearman_centered_cos_vs_loss_recovered": -0.1133}, "pooled_all_methods": {"n": 160, "spearman_centered_cos_vs_kl_at_pos": -0.4019}}
+CAUSAL_PATCH_COMPLETE -> /root/autodl-tmp/results/causal_patch_v1.json
++ s2=0
+++ date -u
++ echo 'N2_EXIT status=0 Thu Jul 30 10:35:19 UTC 2026'
+N2_EXIT status=0 Thu Jul 30 10:35:19 UTC 2026
+++ date -u
++ echo 'N1N2_COMPLETE Thu Jul 30 10:35:19 UTC 2026 n1=1 n2=0'
+N1N2_COMPLETE Thu Jul 30 10:35:19 UTC 2026 n1=1 n2=0
++ exit 0

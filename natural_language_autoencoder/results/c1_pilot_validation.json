@@ -1,0 +1,62 @@
+{
+  "status": "all_checks_passed",
+  "counts": {
+    "result_rows": 432,
+    "checkpoint_rows": 480,
+    "candidate_generation_rows": 48,
+    "judge_rows": 432,
+    "judge_parse_ok": 432,
+    "unique_reconstructed_texts": 166
+  },
+  "vector_shapes": {
+    "reconstructions": [
+      432,
+      3840
+    ],
+    "semantic_directions": [
+      24,
+      3840
+    ],
+    "similarity": [
+      432,
+      24
+    ]
+  },
+  "numerical": {
+    "max_abs_saved_similarity_recompute_error": 2.7995121332224926e-08,
+    "max_abs_target_score_recompute_error": 5.861977570020827e-14,
+    "max_abs_feature_rank_recompute_error": 0.0,
+    "max_abs_b6_nla_original_score_error": 1.043865278937961e-09,
+    "all_vectors_finite": true,
+    "exact_b6_nla_text_match": true
+  },
+  "runtime": {
+    "base_seconds_this_invocation": 411.84461389668286,
+    "ar_seconds": 10.764675563201308,
+    "n_candidates": 432,
+    "n_unique_texts": 166,
+    "n_checkpoint_rows": 480,
+    "judge_parse_ok": 432,
+    "gpu": "NVIDIA A800-SXM4-80GB"
+  },
+  "gpu_monitor": {
+    "n_samples": 85,
+    "sampled_span_seconds": 426.035,
+    "gpu_utilization_mean_percent": 71.5764705882353,
+    "gpu_utilization_peak_percent": 100.0,
+    "memory_peak_mib": 24669.0,
+    "power_mean_w": 213.50458823529408,
+    "power_peak_w": 407.41,
+    "temperature_peak_c": 62.0,
+    "sampled_energy_wh": 25.453281220833333,
+    "timestamp_note": "nvidia-smi timestamps are server-local Asia/Shanghai"
+  },
+  "sha256": {
+    "c1_pilot_benchmark.json": "ace56b2069130cd38b372b94c2f4631ae6f8e7d8beafbc64891985b3fd183efc",
+    "c1_pilot_result.json": "0b16d4c0602aff5d0325d94f1dce85f42bdf43d302ce7e842d8441a7a634fc79",
+    "c1_pilot_recon_vectors.npz": "ee4001d4cd521aa5c3563c9c67e18e727096d3fc97ac9cd3ec6abcbbdf2c92d5",
+    "c1_pilot_checkpoint_v2.jsonl": "8945060c57f5408a5acc912423d45b8afb57030b8667987ec6c964d2208284b8",
+    "b6b4_factorial_result.json": "ce866a9130f1c4cc35f609bbf5351eadfd00abf48d85af92523f9f42a07c8b25",
+    "c1_pilot_gpu.csv": "bd0caa3eb97c3e4b8984a16d7661d7416fb1d79906af1da7eea9f27b88aee5de"
+  }
+}

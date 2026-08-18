@@ -1,0 +1,161 @@
+Third-party semantically-equivalent paraphrases of the 40 mainline NLA
+explanations, restricted to the pre-specified even-index subset (idx 0,2,...,38;
+4 rows per document).
+
+Authoring rules, fixed before any AR score was computed:
+  R1 every proposition of the original is preserved: the genre/format claim, the
+     topic claim, the identity of the final token, the syntactic expectation, and
+     the full list of candidate continuations, in the same order.
+  R2 all quoted spans are reproduced verbatim, character for character. A faithful
+     paraphrase does not paraphrase a quotation.
+  R3 all non-quoted prose is reworded: different verbs, different clause order,
+     different register vocabulary. No sentence may share a 5-gram with the original
+     outside quoted spans.
+  R4 the three-paragraph layout and the U+FFFD separator character are preserved,
+     so form is held constant and only wording varies.
+  R5 length within +/-15% of the original character count.
+  Author: Claude Opus 5 (non-Gemma model family). The author had not seen any AR
+  score for any variant at authoring time.
+
+Format: one record per row, opened by a line "### idx N". Blank lines inside a
+record separate paragraphs and are significant.
+
+### idx 0
+A scholarly, culture-oriented interrogative frame points toward an organized reply concerning a celebrated structure, raising the matter of why the Eiffel Tower is renowned.
+
+The wording "So, what makes the Eiffel Tower so iconic?" prepares an explicit response that surveys the causes of the monument's worldwide renown and appeal.
+
+The last token "it'" begins a question phrase stated again ("Why has it become so famous,") � what has to follow is a nominal such as "its popularity" or "the Eiffel Tower's fame" or "several reasons for its iconic status" or "its fame includes..." or "the Eiffel Tower has become iconic for many reasons", echoing the cultural, media and historical causes enumerated there.
+
+### idx 2
+An interrogative exchange pattern points to a prompt soliciting a descriptive, fact-based reply concerning a visitor destination or a travel handbook.
+
+The wording "What do visitors typically" raises a matter of what the visitor encounters at the museum, which suggests an enumeration of habitual activities or sights at the Chicago Museum of Illusions.
+
+The last token "typically" begins an interrogative phrase ("What visitors typically...what visitors typically"), so a verbal phrase has to follow, e.g. "do during their visit" or "experience" � plausibly "do" or "see/find" or "expect during a tour" or "do when visiting the itinerary." or "experience during the tour include...", pointing at the habitual tourist activities or the items on an itinerary.
+
+### idx 4
+A travel-handbook layout built from organized prompts fixes an informational, descriptive register concerning a monument or destination in Paris.
+
+The wording "How to get to the Eiffel Tower? Tickets to the Eiffel Tower" raises the matter of touring the structure, and specifically of what a visit to the Parisian monument is like.
+
+The last token "to'" closes a nominal ("visited to..."), so a place noun has to follow � with near certainty "the Eiffel Tower" or "the tower" to finish the phrase, and after that plausibly "visit" or "it." or "the Eiffel Tower." or "the top" � pointing at the visitor experience or at the ticketing and booking frame for the viewing platform or that particular Parisian attraction.
+
+### idx 6
+An organized travel-handbook layout: a fact-based portrayal of a monument, which fixes the frame for the Eiffel Tower in Paris.
+
+The wording "The Eiffel Tower, a must-see attraction" points to a conventional tourist portrayal, which suggests visitor-facing information about the celebrated monument � waiting lines, ticketing, or logistics.
+
+The last token "it'" begins a nominal ("the elevators...are long") � what is expected with some force is a visitor figure or a modifier such as "Millions of visitors" or "visiting the Eiffel Tower each year" or "long queues" or "The Eiffel Tower" or "by foot or by metro" � one concrete logistical fact about the visit, or about the crowding and timing at the Parisian monument.
+
+### idx 8
+A schooling-oriented biology frame fixes an organized question-and-answer layout, which calls for photosynthesis to be defined.
+
+The wording "Photosynthesis involves two main stages" points to a textbook-style summarising sentence, which prepares a portrayal of the light-dependent reactions and of the Calvin cycle.
+
+The last token "it'" begins a fresh clause ("divided into two stages..."), so a nominal has to follow at once � plausibly "light-dependent reactions" or "the light reactions" or "two processes" or "chlorophyll a" or "the thylakoid membrane" or "first phase" � either naming the process as a whole or restating the photosynthesis equation as the capture and conversion of light energy.
+
+### idx 10
+A schooling-oriented question-and-answer layout points to an organized account of photosynthesis, fixing an interrogative topic drawn from plant biology.
+
+The wording "What are the requirements for photosynthesis? Sunlight," prepares an enumeration of inputs and requirements, which primes a summarising sentence about the process.
+
+The last token "sunlight," closes the opener of a list ("role of sunlight,") so further inputs have to be enumerated at once � plausibly "chlorophyll, carbon dioxide, and water" or "the chloroplast" or "chlorophyll and carbon dioxide" or "energy." or "cells and chlorophyll" � either naming particular components or the part played by chlorophyll and the chloroplast in capturing light during photosynthesis.
+
+### idx 12
+A schooling-oriented biology question layout: an interrogative about photosynthesis, fixing a topic that calls for an organized reply about plant processes.
+
+The wording "The reactants are water and carbon dioxide" points to an interrogative about photosynthesis, which primes an enumeration of the plant's inputs and ingredients.
+
+The last token "carbon dioxide" closes an enumeration of three inputs ("water, carbon dioxide..."), so a nominal finishing the topic has to follow at once � plausibly "in the atmosphere" or "carbon dioxide" so as to name the gas, or "and are taken in by the plant." or "as the raw materials." or "CO2." � the thing the question is about, namely the part the gas plays in photosynthesis.
+
+### idx 14
+A schooling-oriented biology frame points to photosynthesis being defined and accounted for, fixing an organized lesson layout with its topic introduced.
+
+The wording "Photosynthesis is the process by which plants make food" prepares a formal definition of photosynthesis, which primes a summarising sentence about the part the plant plays.
+
+The last token "it'" begins a restating or defining sentence ("Photosynthesis is..."), so a nominal such as "the process of converting light energy" or "food production" has to follow � plausibly "plants use photosynthesis" or "the most important process" or "creating sugar" or "by the plant is called photosynthesis." or "energy." � a subject-predicate statement about what the plant does overall.
+
+### idx 16
+A scholarly historical-survey layout points to an organized argument concerning the printing press, fixing the frame of intellectual change in early modern Europe.
+
+The wording "The invention of printing revolutionized communication. The rise of the printing press led to..." prepares a straightforward causal assertion about how the Reformation stands to the making and spreading of books.
+
+The last token "it'" begins a topic sentence about what printing brought about � plausibly "books," "ideas," or "mass dissemination of knowledge" � so that a nominal is expected with some force, such as "Reproducible texts" or "faster dissemination of humanist ideas" or "Luther's writings at lower cost" or "standardization of knowledge", as the newly arrived age of availability.
+
+### idx 18
+A scholarly historical frame fixes an organized interrogative layout, pointing to an academic reply concerning European intellectual history.
+
+The wording "the impact of the Renaissance and 16th and" points to a topic sentence that fixes the book's concern as the English Reformation, and specifically as how knowledge was transformed across the 16th and 17th centuries.
+
+The last token "15th and" begins a phrase naming a span of time ("during the 16th and"), so a matching century reference has to follow � with near certainty "17th" to finish the span, and after that plausibly "17th centuries" or "18th centuries" or "following centuries during the period."
+
+### idx 20
+A scholarly historical question layout points to an organized reply concerning English Renaissance letters, fixing the frame of intellectual transformation.
+
+The wording "This work explores the English Renaissance in the 15th and 16th" prepares a framing by period, which suggests a summary or treatment of what the book contains.
+
+The last token "16th" closes a temporal phrase said again, "in the 15th and 16th," so a matching completion such as "centuries" or "centuries" has to follow to shut the span of time. After that, plausibly "centuries" or "centuries, with..." or "periods", so as to name the period or the shifts in the poetry.
+
+### idx 22
+A historical, schooling-oriented arrangement points to an organized article layout: a topic being introduced, which fixes the frame concerning the printing press and early modern communication.
+
+The wording "Before Gutenberg, the printing press was the key invention" prepares a textbook historical narrative � the coming of the printing press as its subject.
+
+The last token "it'" begins a declarative sentence ("Before this..."), so a verbal phrase has to follow at once � plausibly "invented by Johannes Gutenberg" or "Before Johannes Gutenberg" or "The printing press, invented by Johannes Gutenberg" or "Until now, developed by Johannes Gutenberg." or "Before the invention, the movable type was a tedious process" � an earlier innovation, or its arrival.
+
+### idx 24
+An interrogative layout points to a request for an organized comparison or handbook, fixing a prompt concerning how cat breeds differ.
+
+The wording "This answer should cover the comparison, covering" points to an introductory framing, which primes an overview of the topic or an enumeration of the categories to be treated.
+
+The last token "covering" begins a directive phrase ("cover the topic, covering..."), so a nominal naming the categories of comparison has to follow � plausibly "aspects like personality, care, and history" or "diet, behavior, and cost" or "the following categories: physical traits, suitability..." or "their physical traits, care, and overall experience" � the list of topics the comparison is to treat.
+
+### idx 26
+An organized question-and-answer layout points to a prompt requesting a comparison or discussion, fixing a frame of advice about caring for pets.
+
+The wording "Let's discuss the cat, comparing care requirements" prepares a topic to be introduced � the two categories of keeping a pet (personality as against goldfish) are being framed.
+
+The last token "requirements" closes the header of a list ("Care requirements"), so a nominal such as "diet, grooming, and costs" or "by the dog" or "are relatively modest" has to follow at once � plausibly " , time, and costs" or "for the pet, basic needs" or "specific demands of dog ownership" or "and the first category", enumerating practical needs.
+
+### idx 28
+An organized pet-care and advice layout points to an enumeration of topics, fixing an interrogative about one particular behavioural trait of dogs.
+
+The wording "Discusses: care, training, and companionship" prepares a summarising sentence about the bond between dog and human, framing the central comparison of the cat with the dog.
+
+The last token "companionship" closes a category label ("Companionship...and companionship"), so a nominal completion has to follow at once � plausibly "style" or "offerings" or "with cats." or "type." or "They provide." or "behavior." � the matter of what sort of companionship the dog affords, likely set against emotional needs, or loyalty and bonding.
+
+### idx 30
+An organized pet-care handbook layout points to an enumeration of behavioural traits, fixing a textbook portrayal of the cat and its conduct.
+
+The wording "Cats are independent creatures, known for their aloofness" prepares a contrast in behaviour � the cat as self-reliant, which suggests a stereotype concerning feline independence or cleanliness.
+
+The last token "cats'" begins a nominal ("a cat...a solitary animal...cats'") � so a noun such as "self-sufficient" or "more independent" is required at once to finish the description of the trait, plausibly "often..." or "self-care" or "more affordable" or "Generally..." or "Cats tend to be...", pointing at the cat's grooming or its litter habits.
+
+### idx 32
+A scholarly, schooling-oriented frame points to an interrogative layout, fixing a definition or account of how legislation proceeds in state government in the US.
+
+The wording "In a typical" prepares an interrogative about the legislative process, which primes a general scenario or an illustrative case for the topic.
+
+The last token "typical" begins a nominal ("In a typical...in a typical"), so a noun such as "US state" or "case" has to follow to finish the question � plausibly "typical legislative session" or "United States" or "day." or "state legislative scenario" or "non-federal case." � framing the question about the process within one particular scenario in which the bill is passed.
+
+### idx 34
+A schooling-oriented explainer layout points to an organized definition and account of a process, fixing a formal overview of a legislative topic.
+
+The wording "We will walk through the journey of a bill, from" prepares a straightforward comparison or summarising sentence about the legislative process, framing the topic of bills within one particular country.
+
+The last token "from" begins a phrase of time or process ("from...to the drafting of a bill, from"), so a point of departure has to follow � plausibly "the initial idea" or "first proposal to becoming law" or "when it is first conceived to the idea." or "its inception to when it enters the legislative process" � the process entire, or what first sets it off.
+
+### idx 36
+A definitional and legal arrangement: an interrogative layout fixes a formal account of the legislative process, seeking a definition of how a bill turns into law.
+
+The wording "Final stage: bill reaches final approval" points to a procedural ordering � the drafting, the debate and the passage are being described, which implies a closing step.
+
+The last token "approval" closes a nominal ("to final approval...before final approval"), so a completion such as "by the legislature" or "and enactment." has to follow � plausibly "by the parliament" or "or ratification." or "into law." or "and the vote." or "of the legislation." � the phrase naming the final outcome the legislative process requires.
+
+### idx 38
+A definitional, schooling-oriented layout: a UK parliamentary frame fixes an organized account of the legislative process, carrying formal terms of art such as "Bill" and "Parliamentary system."
+
+The wording "The process by which a bill is introduced into Parliament" points to legislation being defined, which implies a neutral, fact-based portrayal of where the bill comes from or what it is for.
+
+The last token "it'" begins a nominal ("the idea behind a bill'") � so a noun such as "bills" or "legislation" is required at once to finish the phrase, plausibly "a proposal" or "the bill becoming law" or "a new law" or "sometimes called a Private Member's Bill", pointing at the drafting of legislation or at the intent of the policy.

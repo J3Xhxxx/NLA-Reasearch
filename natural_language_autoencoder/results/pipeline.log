@@ -1,0 +1,108 @@
++ PY=/root/miniconda3/bin/python
++ CMP=/root/autodl-tmp/nla_compare
++ MODELS=/root/autodl-tmp/models
++ ACTS=/root/autodl-tmp/activations/acts_L32.parquet
++ RES=/root/autodl-tmp/results
++ cd /root/autodl-tmp/nla_compare
++ export HF_HOME=/root/autodl-tmp/hf
++ HF_HOME=/root/autodl-tmp/hf
++ pgrep -f '[r]un_downloads'
++ /root/miniconda3/bin/python -
+++ dirname /root/autodl-tmp/activations/acts_L32.parquet
++ mkdir -p /root/autodl-tmp/results /root/autodl-tmp/activations
++ '[' '!' -f /root/autodl-tmp/activations/acts_L32.parquet ']'
++ /root/miniconda3/bin/python 03_run_nla.py --av /root/autodl-tmp/models/nla-gemma3-12b-L32-av --ar /root/autodl-tmp/models/nla-gemma3-12b-L32-ar --activations /root/autodl-tmp/activations/acts_L32.parquet --out /root/autodl-tmp/results/nla_results.json
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[NLAClient] nla-gemma3-12b-L32-av: d_model=3840 inj_scale=80000.0 embed_scale=61.97 inj_char='㈜'(id=246566)
+Loading weights:   0%|          | 0/626 [00:00<?, ?it/s]Loading weights:   0%|          | 1/626 [00:00<05:22,  1.94it/s]Loading weights:   3%|▎         | 17/626 [00:00<00:17, 33.96it/s]Loading weights:   5%|▍         | 30/626 [00:00<00:11, 52.36it/s]Loading weights:   7%|▋         | 43/626 [00:00<00:08, 65.90it/s]Loading weights:   9%|▊         | 54/626 [00:01<00:07, 76.22it/s]Loading weights:  11%|█         | 68/626 [00:01<00:06, 86.14it/s]Loading weights:  13%|█▎        | 80/626 [00:01<00:05, 94.60it/s]Loading weights:  15%|█▍        | 91/626 [00:01<00:05, 90.75it/s]Loading weights:  16%|█▌        | 101/626 [00:01<00:05, 88.36it/s]Loading weights:  18%|█▊        | 111/626 [00:01<00:06, 84.74it/s]Loading weights:  19%|█▉        | 122/626 [00:01<00:05, 90.92it/s]Loading weights:  21%|██▏       | 134/626 [00:01<00:05, 91.58it/s]Loading weights:  23%|██▎       | 144/626 [00:01<00:05, 87.17it/s]Loading weights:  24%|██▍       | 153/626 [00:02<00:07, 66.97it/s]Loading weights:  26%|██▌       | 161/626 [00:02<00:08, 56.07it/s]Loading weights:  27%|██▋       | 172/626 [00:02<00:07, 61.80it/s]Loading weights:  29%|██▊       | 179/626 [00:02<00:07, 57.68it/s]Loading weights:  30%|██▉       | 186/626 [00:02<00:08, 51.48it/s]Loading weights:  31%|███       | 192/626 [00:02<00:08, 53.16it/s]Loading weights:  32%|███▏      | 199/626 [00:03<00:07, 54.48it/s]Loading weights:  34%|███▍      | 212/626 [00:03<00:06, 67.05it/s]Loading weights:  36%|███▌      | 224/626 [00:03<00:05, 72.04it/s]Loading weights:  38%|███▊      | 235/626 [00:03<00:04, 79.50it/s]Loading weights:  39%|███▉      | 244/626 [00:03<00:05, 64.57it/s]Loading weights:  40%|████      | 252/626 [00:03<00:07, 47.08it/s]Loading weights:  42%|████▏     | 263/626 [00:04<00:06, 54.88it/s]Loading weights:  43%|████▎     | 270/626 [00:04<00:07, 50.14it/s]Loading weights:  44%|████▍     | 276/626 [00:04<00:06, 51.21it/s]Loading weights:  45%|████▌     | 282/626 [00:04<00:07, 45.28it/s]Loading weights:  46%|████▌     | 289/626 [00:04<00:07, 44.72it/s]Loading weights:  48%|████▊     | 303/626 [00:04<00:05, 60.81it/s]Loading weights:  50%|█████     | 315/626 [00:04<00:04, 73.54it/s]Loading weights:  52%|█████▏    | 326/626 [00:05<00:03, 81.66it/s]Loading weights:  54%|█████▎    | 335/626 [00:05<00:03, 78.68it/s]Loading weights:  55%|█████▍    | 344/626 [00:05<00:03, 76.93it/s]Loading weights:  57%|█████▋    | 355/626 [00:05<00:03, 84.91it/s]Loading weights:  58%|█████▊    | 366/626 [00:05<00:03, 82.17it/s]Loading weights:  60%|█████▉    | 375/626 [00:05<00:03, 79.09it/s]Loading weights:  61%|██████▏   | 384/626 [00:05<00:04, 56.20it/s]Loading weights:  63%|██████▎   | 393/626 [00:06<00:03, 58.50it/s]Loading weights:  64%|██████▍   | 400/626 [00:06<00:04, 52.24it/s]Loading weights:  65%|██████▌   | 407/626 [00:06<00:04, 51.43it/s]Loading weights:  66%|██████▌   | 413/626 [00:06<00:04, 51.55it/s]Loading weights:  67%|██████▋   | 419/626 [00:06<00:04, 51.67it/s]Loading weights:  68%|██████▊   | 425/626 [00:06<00:03, 53.39it/s]Loading weights:  69%|██████▉   | 434/626 [00:06<00:03, 59.26it/s]Loading weights:  71%|███████   | 446/626 [00:07<00:02, 68.26it/s]Loading weights:  73%|███████▎  | 456/626 [00:07<00:02, 74.80it/s]Loading weights:  74%|███████▍  | 464/626 [00:07<00:02, 61.20it/s]Loading weights:  76%|███████▌  | 473/626 [00:07<00:02, 62.87it/s]Loading weights:  78%|███████▊  | 486/626 [00:07<00:01, 73.13it/s]Loading weights:  80%|███████▉  | 499/626 [00:07<00:01, 80.49it/s]Loading weights:  81%|████████▏ | 509/626 [00:07<00:01, 81.65it/s]Loading weights:  83%|████████▎ | 518/626 [00:07<00:01, 77.26it/s]Loading weights:  84%|████████▍ | 526/626 [00:08<00:01, 55.09it/s]Loading weights:  86%|████████▌ | 536/626 [00:08<00:01, 57.72it/s]Loading weights:  87%|████████▋ | 543/626 [00:08<00:01, 54.13it/s]Loading weights:  88%|████████▊ | 549/626 [00:08<00:01, 53.69it/s]Loading weights:  89%|████████▊ | 555/626 [00:08<00:01, 46.65it/s]Loading weights:  90%|████████▉ | 563/626 [00:08<00:01, 52.51it/s]Loading weights:  92%|█████████▏| 576/626 [00:09<00:00, 65.16it/s]Loading weights:  94%|█████████▍| 588/626 [00:09<00:00, 77.60it/s]Loading weights:  96%|█████████▌| 599/626 [00:09<00:00, 85.31it/s]Loading weights:  97%|█████████▋| 609/626 [00:09<00:00, 84.20it/s]Loading weights:  99%|█████████▊| 618/626 [00:09<00:00, 80.20it/s]Loading weights: 100%|██████████| 626/626 [00:09<00:00, 65.21it/s]
+Loading weights:   0%|          | 0/430 [00:00<?, ?it/s]Loading weights: 100%|██████████| 430/430 [00:00<00:00, 7611.52it/s]
+[transformers] [1mGemma3ForCausalLM LOAD REPORT[0m from: /root/autodl-tmp/models/nla-gemma3-12b-L32-ar
+Key               | Status  | 
+------------------+---------+-
+model.norm.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[NLACritic] 33 layers  d_model=3840  mse_scale=61.97
+[1/40] pos=  19 cos=0.997 mse_nrm=0.005  'Academic/cultural question format signals a structured response about '
+[2/40] pos=  22 cos=0.997 mse_nrm=0.006  'Q&A format with factual, informational tone signals a structured answe'
+[3/40] pos=  24 cos=0.998 mse_nrm=0.005  'Question-answer format signals a prompt requesting a factual/descripti'
+[4/40] pos=  27 cos=0.997 mse_nrm=0.005  'Structured travel guide format: description of a Parisian landmark, es'
+[5/40] pos=  29 cos=0.996 mse_nrm=0.009  'Travel guide format with structured prompts establishes a factual, des'
+[6/40] pos=  32 cos=0.995 mse_nrm=0.011  'Established Q&A format signals a structured travel guide response, wit'
+[7/40] pos=  34 cos=0.993 mse_nrm=0.014  'Structured travel guide format: factual description of a landmark, est'
+[8/40] pos=  37 cos=0.995 mse_nrm=0.010  'Structured Q&A format signals a response is incoming, establishing an '
+[9/40] pos=  16 cos=0.998 mse_nrm=0.005  'Educational biology context establishes a structured Q&A format, requi'
+[10/40] pos=  18 cos=0.998 mse_nrm=0.004  'Educational biology question format: a question about photosynthesis, '
+[11/40] pos=  20 cos=0.997 mse_nrm=0.005  'Educational Q&A format signals a structured explanation of photosynthe'
+[12/40] pos=  22 cos=0.996 mse_nrm=0.009  'Educational resource format: structured Q&A format with a definition o'
+[13/40] pos=  25 cos=0.997 mse_nrm=0.005  'Educational biology question format: a question about photosynthesis, '
+[14/40] pos=  27 cos=0.986 mse_nrm=0.028  'Educational Q&A format signals a structured answer response, establish'
+[15/40] pos=  29 cos=0.998 mse_nrm=0.004  'Educational biology context signals a definition/explanation of photos'
+[16/40] pos=  31 cos=0.999 mse_nrm=0.003  'Structured educational explainer format signals a response is underway'
+[17/40] pos=  16 cos=0.998 mse_nrm=0.004  'Academic historical survey format signals a structured argument about '
+[18/40] pos=  18 cos=0.996 mse_nrm=0.007  'Historical/academic framing signals a Q&A format: a factual question a'
+[19/40] pos=  21 cos=0.996 mse_nrm=0.008  'Academic/historical context establishes a structured question format, '
+[20/40] pos=  23 cos=0.998 mse_nrm=0.004  'Historical argument structure: academic essay establishing context of '
+[21/40] pos=  25 cos=0.997 mse_nrm=0.007  'Academic historical question format signals a structured answer about '
+[22/40] pos=  27 cos=0.996 mse_nrm=0.008  'Historical framing signals a structured academic/cultural essay, estab'
+[23/40] pos=  30 cos=0.995 mse_nrm=0.009  'Historical/educational structure signals a structured article format: '
+[24/40] pos=  32 cos=0.998 mse_nrm=0.005  'Established structure signals a narrative introduction framing a histo'
+[25/40] pos=  14 cos=0.998 mse_nrm=0.004  'Question format signals a request for a structured comparison or guide'
+[26/40] pos=  16 cos=0.996 mse_nrm=0.007  'Structured article format signals a list or comparison of cat breed tr'
+[27/40] pos=  18 cos=0.998 mse_nrm=0.004  'Structured Q&A format signals a prompt requesting a comparison/discuss'
+[28/40] pos=  20 cos=0.997 mse_nrm=0.007  'Structured guide format signals a list of topics, establishing a Q&A o'
+[29/40] pos=  21 cos=0.998 mse_nrm=0.005  'Structured pet care/advice format signals a list of topics, establishi'
+[30/40] pos=  23 cos=0.985 mse_nrm=0.030  'Structured Q&A format signals a standard essay/comparison answer, esta'
+[31/40] pos=  25 cos=0.996 mse_nrm=0.009  'Structured pet care guide format signals a list of behavioral traits, '
+[32/40] pos=  27 cos=0.995 mse_nrm=0.010  'Structured article format signals a comprehensive comparison piece, es'
+[33/40] pos=  14 cos=0.998 mse_nrm=0.004  'Academic/educational context signals a question format, establishing a'
+[34/40] pos=  16 cos=0.997 mse_nrm=0.005  'Academic/political discussion prompt establishing a question format, s'
+[35/40] pos=  18 cos=0.996 mse_nrm=0.007  'Educational explainer format signals a structured definition/process d'
+[36/40] pos=  20 cos=0.998 mse_nrm=0.004  'Structured explainer format: definition of a legislative process, esta'
+[37/40] pos=  22 cos=0.997 mse_nrm=0.007  'Definitional/legal structure: question format establishes a formal exp'
+[38/40] pos=  24 cos=0.988 mse_nrm=0.025  'Q&A format signals a structured answer response, establishing a factua'
+[39/40] pos=  26 cos=0.997 mse_nrm=0.006  'Definition/educational format: UK parliamentary context establishes st'
+[40/40] pos=  28 cos=0.998 mse_nrm=0.005  'Structured Q&A format signals a response is incoming, establishing a w'
+
+NLA summary: {'n': 40, 'backend': 'local', 'mean_cos': 0.996, 'median_cos': 0.9972, 'mean_mse_nrm': 0.008}
+wrote -> /root/autodl-tmp/results/nla_results.json
++ /root/miniconda3/bin/python 04_run_sae.py --sae /root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small --activations /root/autodl-tmp/activations/acts_L32.parquet --out /root/autodl-tmp/results/sae_results.json
+SAE summary: {'n': 40, 'sae_dir': '/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small', 'width': 16384, 'config_l0': 20, 'mean_cos': 0.9925, 'median_cos': 0.9926, 'mean_mse_nrm': 0.0149, 'mean_l0': 15.2, 'fve': 0.6076}
+wrote -> /root/autodl-tmp/results/sae_results.json
++ /root/miniconda3/bin/python 04_run_sae.py --sae /root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_big --activations /root/autodl-tmp/activations/acts_L32.parquet --out /root/autodl-tmp/results/sae_results_big.json
+SAE summary: {'n': 40, 'sae_dir': '/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_big', 'width': 16384, 'config_l0': 120, 'mean_cos': 0.9936, 'median_cos': 0.9938, 'mean_mse_nrm': 0.0127, 'mean_l0': 75.5, 'fve': 0.6747}
+wrote -> /root/autodl-tmp/results/sae_results_big.json
++ /root/miniconda3/bin/python 05_compare.py --nla /root/autodl-tmp/results/nla_results.json --sae /root/autodl-tmp/results/sae_results.json --out /root/autodl-tmp/results/comparison
+# NLA vs SAE — Gemma-3-12B-IT, layer 32 (resid_post)
+
+- **NLA**  n=40  mean cos=0.996  mean mse_nrm=0.008
+- **SAE**  n=40  mean cos=0.9925  mean mse_nrm=0.0149  FVE=0.6076  mean L0=15.2  width=16384
+
+_Direction fidelity (cos, mse_nrm=2(1-cos)) is the fair head-to-head; FVE/L0 are SAE-only; the explanation column is NLA-only._
+
+| doc | pos | token | NLA cos | SAE cos | NLA mse_nrm | SAE mse_nrm | SAE L0 |
+|----:|----:|:------|--------:|--------:|------------:|------------:|-------:|
+| 0 | 19 | `,` | 0.9973 | 0.992 | 0.0053 | 0.016 | 14 |
+| 0 | 22 | `what` | 0.9972 | 0.9937 | 0.0056 | 0.0126 | 11 |
+
+wrote /root/autodl-tmp/results/comparison.json and /root/autodl-tmp/results/comparison.md
++ echo '=== PIPELINE_COMPLETE ==='
+=== PIPELINE_COMPLETE ===
++ ls -la /root/autodl-tmp/results
+total 116
+drwxr-xr-x 2 root root   150 Jul  4 10:45 .
+drwxr-xr-x 9 root root  4096 Jul  4 00:59 ..
+-rw-r--r-- 1 root root 38299 Jul  4 10:45 comparison.json
+-rw-r--r-- 1 root root  8498 Jul  4 10:45 comparison.md
+-rw-r--r-- 1 root root 35738 Jul  4 10:45 nla_results.json
+-rw-r--r-- 1 root root  9535 Jul  4 10:45 sae_results.json
+-rw-r--r-- 1 root root  9550 Jul  4 10:45 sae_results_big.json
++ finish 0
+++ date
++ echo '=== PIPELINE EXIT (status=0) at Sat Jul  4 10:45:11 CST 2026 ==='
+=== PIPELINE EXIT (status=0) at Sat Jul  4 10:45:11 CST 2026 ===
++ sync
++ sleep 600
++ shutdown
++ exit 0

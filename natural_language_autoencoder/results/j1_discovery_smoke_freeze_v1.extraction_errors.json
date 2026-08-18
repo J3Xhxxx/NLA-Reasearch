@@ -1,0 +1,110 @@
+{
+  "errors": [
+    {
+      "abs_error": 27.14990234375,
+      "actual": 4306.83349609375,
+      "atol": 1.0,
+      "context_index": 49,
+      "doc_id": 91,
+      "expected": 4333.9833984375,
+      "feature": 9630,
+      "kind": "activation_mismatch",
+      "position": 23266,
+      "rtol": 0.005
+    },
+    {
+      "abs_error": 40.701171875,
+      "actual": 4825.39990234375,
+      "atol": 1.0,
+      "context_index": 152,
+      "doc_id": 1104,
+      "expected": 4866.10107421875,
+      "feature": 3872,
+      "kind": "activation_mismatch",
+      "position": 1419,
+      "rtol": 0.005
+    },
+    {
+      "abs_error": 90.22119140625,
+      "actual": 4563.85791015625,
+      "atol": 1.0,
+      "context_index": 155,
+      "doc_id": 675,
+      "expected": 4473.63671875,
+      "feature": 3872,
+      "kind": "activation_mismatch",
+      "position": 10133,
+      "rtol": 0.005
+    },
+    {
+      "abs_error": 30.111328125,
+      "actual": 4421.8583984375,
+      "atol": 1.0,
+      "context_index": 156,
+      "doc_id": 2089,
+      "expected": 4451.9697265625,
+      "feature": 3872,
+      "kind": "activation_mismatch",
+      "position": 5011,
+      "rtol": 0.005
+    },
+    {
+      "abs_error": 40.11083984375,
+      "actual": 4395.685546875,
+      "atol": 1.0,
+      "context_index": 157,
+      "doc_id": 156,
+      "expected": 4435.79638671875,
+      "feature": 3872,
+      "kind": "activation_mismatch",
+      "position": 504,
+      "rtol": 0.005
+    },
+    {
+      "abs_error": 52.697265625,
+      "actual": 4376.2236328125,
+      "atol": 1.0,
+      "context_index": 158,
+      "doc_id": 3900,
+      "expected": 4428.9208984375,
+      "feature": 3872,
+      "kind": "activation_mismatch",
+      "position": 44,
+      "rtol": 0.005
+    },
+    {
+      "abs_error": 19.712890625,
+      "actual": 2277.708984375,
+      "atol": 1.0,
+      "context_index": 219,
+      "doc_id": 1393,
+      "expected": 2297.421875,
+      "feature": 13616,
+      "kind": "activation_mismatch",
+      "position": 416,
+      "rtol": 0.005
+    },
+    {
+      "abs_error": 28.91357421875,
+      "actual": 5399.21826171875,
+      "atol": 1.0,
+      "context_index": 271,
+      "doc_id": 10152,
+      "expected": 5370.3046875,
+      "feature": 1897,
+      "kind": "activation_mismatch",
+      "position": 5,
+      "rtol": 0.005
+    }
+  ],
+  "experiment": "J1 exploratory discovery extraction verification",
+  "inputs": {
+    "cohort_sha256": "71f66e6cf7abced2452c8ecabd7dc9ac1828457ca35f02614e1cd6ad1b55f5d2",
+    "corpus_sha256": "d40069ab51c294ecbe3e76845d1f2f4dff1bb66a6061c5b6b4c612f7d0ff8816",
+    "protocol_sha256": "fa0b3e479ff58383bd3a704f399b0692df9a30183678cd794ccd61a2b11beed4",
+    "stats_sha256": "e844e8111f4205166bb8e9438e7128b770c2c5d03f0eb996d08316d1e05a85bd"
+  },
+  "schema_version": 1,
+  "script_sha256": "71d57060f9a08657e807473368cc00e7fae9f57a2faaebe92f02da0995f0b6ff",
+  "status": "FAILED_CLOSED_BEFORE_AV"
+}

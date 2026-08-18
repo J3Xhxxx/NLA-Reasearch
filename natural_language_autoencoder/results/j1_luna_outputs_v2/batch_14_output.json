@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "batch_id": 14,
+  "agent_task": "/root/luna_batch_14",
+  "role": "luna_worker",
+  "model": "gpt-5.6-luna",
+  "reasoning": "max",
+  "public_prompt_sha256": "17267cf8be637f1be794262aa3451453bdff7c860fe7e132fa46449e4ca5fae0",
+  "cases": [
+    {
+      "case_id": "case_1egrqzmtdm0rl882hh",
+      "hypothesis": "Chinese adjectival modifiers in corrupted-encoding prose",
+      "positive_cues": [
+        "Mojibake consistently represents Chinese-language passages",
+        "Active spans are descriptive modifiers such as different, fast, interested, and distant",
+        "Modifiers occur before the following noun or noun phrase"
+      ],
+      "exclusion_cues": [
+        "No reliable evidence for a single subject domain beyond Chinese descriptive prose",
+        "Not ordinary English, Turkish, mathematical, or code text"
+      ],
+      "abstain": false,
+      "confidence": 0.91
+    },
+    {
+      "case_id": "case_u7okbbynfyvu0x5sxe",
+      "hypothesis": "Turkish verb stems awaiting agglutinative suffixes",
+      "positive_cues": [
+        "Turkish diacritics and syntax recur across forum, narrative, and news contexts",
+        "Active fragments include anlam, verm, and erm verb stems",
+        "Each fragment is naturally completed by Turkish inflectional or derivational suffixes"
+      ],
+      "exclusion_cues": [
+        "The evidence does not support one shared topic or narrative setting",
+        "Not an English-only or non-morphological completion pattern"
+      ],
+      "abstain": false,
+      "confidence": 0.94
+    },
+    {
+      "case_id": "case_snv0mseu57pqytswux",
+      "hypothesis": "Abstract nouns in formal English expository prose",
+      "positive_cues": [
+        "Active words are time, capabilities, concepts, and institutions",
+        "The surrounding passages are articles, policy writing, or argumentative exposition",
+        "Nouns denote abstract resources, ideas, or social structures"
+      ],
+      "exclusion_cues": [
+        "No shared concrete object or named entity appears across examples",
+        "Not primarily dialogue, code, mathematics, or inflectional morphology"
+      ],
+      "abstain": false,
+      "confidence": 0.86
+    },
+    {
+      "case_id": "case_8vxlpi6nc24mgym99s",
+      "hypothesis": "Formal mathematical proof setup and continuation",
+      "positive_cues": [
+        "All passages discuss axioms, closed sets, continuity, contradiction, or optimality",
+        "Active boundaries follow proof claims or headings such as given, closed, and argument",
+        "Expected continuations introduce assumptions, constructions, or justification"
+      ],
+      "exclusion_cues": [
+        "No narrative, conversational, or empirical-report context is present",
+        "The active spans are not ordinary topical prose transitions"
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_3amp50pl9ljcpn1k0n",
+      "hypothesis": "English pre-nominal determiners and adjectives introducing noun phrases",
+      "positive_cues": [
+        "Active words appear as this time, favorite section, This upper series, and quantitative component",
+        "Each active span directly modifies or determines a following noun",
+        "The pattern holds across travel, review, caving, and academic prose"
+      ],
+      "exclusion_cues": [
+        "This hypothesis does not require a shared topic or genre",
+        "Evidence is weaker if an active word is used standalone as a pronoun or noun"
+      ],
+      "abstain": false,
+      "confidence": 0.93
+    }
+  ]
+}

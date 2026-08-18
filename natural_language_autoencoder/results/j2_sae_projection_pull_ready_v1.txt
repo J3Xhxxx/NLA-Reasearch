@@ -1,0 +1,5 @@
+ack_token=d1b8408bf8d358f159056dce2d5a56c4395dccec674af54f0efc0159b2768856
+pipeline_exit=0
+ready_at=2026-08-07T11:57:11+08:00
+ack_file=/root/autodl-tmp/results/j2_sae_projection_pull_ack_v1.txt
+ack_deadline_seconds=300

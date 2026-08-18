@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "status": "ok",
+  "batch_id": 24,
+  "agent_task": "/root/luna_batch_24",
+  "role": "luna_worker",
+  "model": "gpt-5.6-luna",
+  "reasoning": "max",
+  "public_prompt_sha256": "7906c3c3a7ccb00adf9bc05a6511ee265687e72a9d40b73b117854a4787a8cfe",
+  "cases": [
+    {
+      "case_id": "case_d41s7un48tsgfcaluh",
+      "hypothesis": "Plural nouns naming physical establishments or service locations",
+      "positive_cues": [
+        "Targets are plural place or business nouns: facilities, restaurants, stores, and bars",
+        "Contexts describe venues or organizational locations that people use or visit",
+        "Each target is a count noun naming a site rather than an action or attribute"
+      ],
+      "exclusion_cues": [
+        "Not singular entities or abstract concepts",
+        "Not person or job-role names"
+      ],
+      "abstain": false,
+      "confidence": 0.97
+    },
+    {
+      "case_id": "case_o755u613n2mkpnfrt0",
+      "hypothesis": "Opening parenthesis after contact language introduces a telephone number",
+      "positive_cues": [
+        "Every target is an opening parenthesis after a contact or directions phrase",
+        "Surrounding text explicitly shows phone placeholders and area-code patterns",
+        "The documents use structured listings with contact blocks"
+      ],
+      "exclusion_cues": [
+        "Not parentheses used for dates, asides, citations, or mathematics",
+        "No evidence of non-contact parenthetical usage"
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_93fw6kqqeou1yw6dkc",
+      "hypothesis": "Microsoft technical or web prose with product mentions and URL schemes",
+      "positive_cues": [
+        "Contexts explicitly mention Microsoft products or services such as MSN, Skype, Intune, and Windows Runtime",
+        "Targets occur in technology journalism, documentation, or conference material",
+        "Two targets are URL-scheme punctuation in Microsoft or MSDN links"
+      ],
+      "exclusion_cues": [
+        "Not general nontechnical prose",
+        "Target forms vary, so an exact shared lexical token is not established"
+      ],
+      "abstain": false,
+      "confidence": 0.84
+    },
+    {
+      "case_id": "case_bglmw0gzhc79fk3q14",
+      "hypothesis": "Legal attorney-appearance phrasing where for precedes a represented party",
+      "positive_cues": [
+        "All targets are 'for' in attorney or case-caption contexts",
+        "Nearby text names counsel followed by appellant, plaintiff, or plaintiffs in error",
+        "The surrounding material has formal appellate or federal legal-document structure"
+      ],
+      "exclusion_cues": [
+        "Not ordinary purpose, duration, or causal uses of 'for'",
+        "No nonlegal examples are shown"
+      ],
+      "abstain": false,
+      "confidence": 0.99
+    },
+    {
+      "case_id": "case_1koixecno1rttxfpb9",
+      "hypothesis": "Health or healthcare care-professional terminology in medical and nursing text",
+      "positive_cues": [
+        "Targets form healthcare or health-care professional(s) phrases",
+        "Contexts are medical disclaimers, patient records, diabetes screening, and family nursing",
+        "Nearby nouns are professional or professionals, signaling provider roles"
+      ],
+      "exclusion_cues": [
+        "Not general uses of health or care unrelated to clinicians",
+        "No nonmedical institutions or occupations are indicated"
+      ],
+      "abstain": false,
+      "confidence": 0.97
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "experiment": "N5 independent held-out raw-artifact audit",
+  "status": "complete",
+  "formula_audit": {
+    "h5a_g": "sum(KL_big-KL_hybrid)/sum(KL_zero)",
+    "h5a_delta_raw": "mean(KL_big-KL_hybrid)",
+    "hybrid": "orig when frozen gate routes NLA, else SAE-big",
+    "catastrophe": "strictly KL_hybrid-KL_big > 1.0 nat",
+    "catastrophe_interval": "one-sided 95% exact Clopper-Pearson",
+    "h5b_g": "sum(KL_p12-KL_p3)/sum(KL_zero)",
+    "h5b_recovery": "R_s=1-sum(KL_s)/sum(KL_zero)",
+    "h5b_retention": "T=R_p3/R_orig",
+    "bootstrap": "50,000 shared content-group resamples stratified by Pile/XNLI; seed 20260730; gate never retrained"
+  },
+  "inputs": {
+    "gate": "D:\\Projects\\natural_language_autoencoder\\results\\n5_gate_v2.json",
+    "gate_sha256": "036477f21fb550b317978a880df0a708dcf42a5201d301ca0757fade3baea059",
+    "recon_json": "D:\\Projects\\natural_language_autoencoder\\results\\n5_heldout_recon_v2.json",
+    "recon_json_sha256": "fc4b1a0e431eeed3409af5459e82d07c6f2e6449817d075e022d0c32e43bcd3b",
+    "recon_npz": "D:\\Projects\\natural_language_autoencoder\\results\\n5_heldout_recon_vectors_v2.npz",
+    "recon_npz_sha256": "2203889cc09997f2630d142be477be1fb7177c279b642d2f05455d8c228d8651",
+    "causal": "D:\\Projects\\natural_language_autoencoder\\results\\n5_heldout_causal_v2.json",
+    "causal_sha256": "9e5050d3ba577e641ce05c444be9631c94c8e0672a05d21b7e2617832a6a2ce8"
+  },
+  "cohort": {
+    "n_rows": 400,
+    "corpus_counts": {
+      "pile": 300,
+      "xnli": 100
+    },
+    "row_uids_unique": true,
+    "content_group_itt": true
+  },
+  "router_qa": {
+    "score_recomputed_from": "NPZ pred_orig, x, and gate m_hat",
+    "reported_q_max_abs_error": 4.440892098500626e-16,
+    "reported_routes_exact": true,
+    "npz_routes_exact": true
+  },
+  "numerical_qa": {
+    "sum_kl_zero": 5318.6491740078745,
+    "negative_kl_values_clamped_to_zero": [],
+    "identity_kl_at_pos_abs_max": 0.0,
+    "identity_kl16_abs_max": 0.0
+  },
+  "bootstrap": {
+    "n_resamples": 50000,
+    "seed": 20260730,
+    "strata": [
+      "pile",
+      "xnli"
+    ],
+    "draws_shared_across_endpoints": true,
+    "quantile_method": "linear"
+  },
+  "h5a": {
+    "decision": "NO SELECTIVE CLAIM",
+    "gate_feasible": true,
+    "threshold": 0.8361008239052125,
+    "tie_hash_cutoff_inclusive": "74749fe879b06b260e6daa9dd90844233fff01a314cdd568a9e5043ee6f87e24",
+    "n_route_nla": 262,
+    "g": 0.0024192507482071637,
+    "g_one_sided_95_lower": -0.0013259254227587303,
+    "g_ci90_stratified_bootstrap": [
+      -0.0013259254227587303,
+      0.006146992633487224
+    ],
+    "g_ci95_stratified_bootstrap": [
+      -0.0019724998037311293,
+      0.006870544239443131
+    ],
+    "delta_raw": 0.03216786498417491,
+    "delta_raw_ci95_stratified_bootstrap": [
+      -0.026113930734630794,
+      0.09126087709995886
+    ],
+    "coverage": 0.655,
+    "coverage_one_sided_95_lower": 0.615,
+    "coverage_ci95_stratified_bootstrap": [
+      0.6075,
+      0.7
+    ],
+    "catastrophic_regret_count": 9,
+    "catastrophic_regret_rate": 0.0225,
+    "catastrophic_regret_one_sided_95_cp_upper": 0.038934119867710795,
+    "gates": {
+      "feasible_discovery_gate": true,
+      "coverage_lower_gt_0.10": true,
+      "g_lower_gt_0": false,
+      "catastrophe_cp_upper_lt_0.03": false,
+      "g_ci90_inside_parity_margin": true
+    }
+  },
+  "h5b": {
+    "status": "CHANNEL REPLICATED",
+    "replicated": true,
+    "g_p3_p12": 0.17948978954004674,
+    "g_p3_p12_ci95_stratified_bootstrap": [
+      0.14650383489013413,
+      0.2159963875962229
+    ],
+    "raw_p12_minus_p3_mean": 2.386608052200042,
+    "raw_p12_minus_p3_ci95_stratified_bootstrap": [
+      1.9765018477160448,
+      2.815773156500714
+    ],
+    "r": {
+      "orig": {
+        "point": 0.9645062392728406,
+        "ci95_stratified_bootstrap": [
+          0.9555727919290544,
+          0.9719658322090735
+        ]
+      },
+      "p3_only": {
+        "point": 0.9529280022766778,
+        "ci95_stratified_bootstrap": [
+          0.9422998395545679,
+          0.9620109382358842
+        ]
+      },
+      "p12": {
+        "point": 0.773438212736631,
+        "ci95_stratified_bootstrap": [
+          0.7357310467109428,
+          0.8076664586430237
+        ]
+      },
+      "quote_strip_p3": {
+        "point": 0.4022799695863296,
+        "ci95_stratified_bootstrap": [
+          0.3554731925541103,
+          0.4451263204888795
+        ]
+      }
+    },
+    "retention_t": 0.9879956847092126,
+    "retention_testable": true,
+    "retention_one_sided_95_lower": 0.9830146346758943,
+    "retention_ci95_stratified_bootstrap": [
+      0.9819467966931743,
+      0.9931853741824241
+    ],
+    "bootstrap_r_orig_min": 0.9398276920584582,
+    "sign_count_p12_minus_p3": {
+      "positive": 326,
+      "negative": 74,
+      "zero": 0
+    },
+    "gates": {
+      "g_p3_p12_ci95_lower_gt_0": true,
+      "retention_one_sided_95_lower_gt_0.90": true
+    }
+  }
+}

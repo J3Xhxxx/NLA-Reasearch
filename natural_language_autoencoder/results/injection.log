@@ -1,0 +1,98 @@
++ PY=/root/miniconda3/bin/python
++ CMP=/root/autodl-tmp/nla_compare
++ MODELS=/root/autodl-tmp/models
++ cd /root/autodl-tmp/nla_compare
++ export HF_HOME=/root/autodl-tmp/hf
++ HF_HOME=/root/autodl-tmp/hf
++ /root/miniconda3/bin/python 08_pilot_injection.py --av /root/autodl-tmp/models/nla-gemma3-12b-L32-av --ar /root/autodl-tmp/models/nla-gemma3-12b-L32-ar --sae /root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small --activations /root/autodl-tmp/activations/acts_L32.parquet --out /root/autodl-tmp/results/injection_pilot.json
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[NLAClient] nla-gemma3-12b-L32-av: d_model=3840 inj_scale=80000.0 embed_scale=61.97 inj_char='㈜'(id=246566)
+Loading weights:   0%|          | 0/626 [00:00<?, ?it/s]Loading weights:   0%|          | 1/626 [00:00<02:32,  4.10it/s]Loading weights:   3%|▎         | 17/626 [00:00<00:10, 60.36it/s]Loading weights:   7%|▋         | 41/626 [00:00<00:04, 117.04it/s]Loading weights:   9%|▉         | 56/626 [00:00<00:05, 113.50it/s]Loading weights:  12%|█▏        | 75/626 [00:00<00:04, 135.01it/s]Loading weights:  15%|█▍        | 91/626 [00:00<00:04, 132.39it/s]Loading weights:  17%|█▋        | 106/626 [00:00<00:03, 131.41it/s]Loading weights:  19%|█▉        | 120/626 [00:01<00:04, 120.64it/s]Loading weights:  21%|██        | 133/626 [00:01<00:04, 121.50it/s]Loading weights:  23%|██▎       | 146/626 [00:01<00:04, 119.95it/s]Loading weights:  25%|██▌       | 159/626 [00:01<00:04, 109.42it/s]Loading weights:  28%|██▊       | 173/626 [00:01<00:03, 113.62it/s]Loading weights:  30%|██▉       | 186/626 [00:01<00:03, 113.19it/s]Loading weights:  32%|███▏      | 200/626 [00:01<00:03, 111.75it/s]Loading weights:  34%|███▍      | 213/626 [00:01<00:03, 108.59it/s]Loading weights:  36%|███▌      | 226/626 [00:02<00:03, 110.69it/s]Loading weights:  38%|███▊      | 239/626 [00:02<00:03, 113.04it/s]Loading weights:  40%|████      | 252/626 [00:02<00:03, 117.42it/s]Loading weights:  42%|████▏     | 265/626 [00:02<00:03, 116.31it/s]Loading weights:  44%|████▍     | 278/626 [00:02<00:02, 116.50it/s]Loading weights:  46%|████▋     | 291/626 [00:02<00:02, 118.03it/s]Loading weights:  49%|████▊     | 304/626 [00:02<00:02, 119.26it/s]Loading weights:  50%|█████     | 316/626 [00:02<00:02, 109.11it/s]Loading weights:  53%|█████▎    | 330/626 [00:02<00:02, 115.48it/s]Loading weights:  55%|█████▍    | 343/626 [00:03<00:02, 117.24it/s]Loading weights:  57%|█████▋    | 356/626 [00:03<00:02, 119.75it/s]Loading weights:  59%|█████▉    | 369/626 [00:03<00:02, 119.09it/s]Loading weights:  61%|██████    | 382/626 [00:03<00:02, 120.02it/s]Loading weights:  63%|██████▎   | 395/626 [00:03<00:01, 119.48it/s]Loading weights:  65%|██████▌   | 408/626 [00:03<00:01, 119.76it/s]Loading weights:  67%|██████▋   | 421/626 [00:03<00:01, 120.44it/s]Loading weights:  69%|██████▉   | 434/626 [00:03<00:01, 120.42it/s]Loading weights:  71%|███████▏  | 447/626 [00:03<00:01, 114.45it/s]Loading weights:  73%|███████▎  | 460/626 [00:04<00:01, 112.25it/s]Loading weights:  76%|███████▌  | 473/626 [00:04<00:01, 113.17it/s]Loading weights:  78%|███████▊  | 486/626 [00:04<00:01, 116.44it/s]Loading weights:  80%|███████▉  | 500/626 [00:04<00:01, 122.74it/s]Loading weights:  82%|████████▏ | 513/626 [00:04<00:00, 123.15it/s]Loading weights:  85%|████████▍ | 531/626 [00:04<00:00, 135.97it/s]Loading weights:  88%|████████▊ | 549/626 [00:04<00:00, 135.78it/s]Loading weights:  90%|████████▉ | 563/626 [00:04<00:00, 133.80it/s]Loading weights:  92%|█████████▏| 577/626 [00:04<00:00, 124.73it/s]Loading weights:  96%|█████████▌| 601/626 [00:05<00:00, 145.33it/s]Loading weights:  98%|█████████▊| 616/626 [00:05<00:00, 128.95it/s]Loading weights: 100%|██████████| 626/626 [00:05<00:00, 119.49it/s]
+Loading weights:   0%|          | 0/430 [00:00<?, ?it/s]Loading weights: 100%|██████████| 430/430 [00:00<00:00, 9610.43it/s]
+[transformers] [1mGemma3ForCausalLM LOAD REPORT[0m from: /root/autodl-tmp/models/nla-gemma3-12b-L32-ar
+Key               | Status  | 
+------------------+---------+-
+model.norm.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[NLACritic] 33 layers  d_model=3840  mse_scale=61.97
+[r0 a=0] res=-0.107  'Article structure: informational/review format with a detail'
+[r0 f166 a=0.25] sig=-0.944 res=-0.108  'Article structure: informational/review format with a detail'
+[r0 f166 a=0.5] sig=-0.941 res=-0.106  'Article structure: informational/review format with a detail'
+[r0 f166 a=1.0] sig=-0.946 res=-0.108  'Article structure: informational/review format with a long-f'
+[r0 f166 a=2.0] sig=-0.947 res=-0.094  'Article structure: informational/review format with a factua'
+[r0 f443 a=0.25] sig=-0.941 res=-0.108  'Article structure: informational/review format with a detail'
+[r0 f443 a=0.5] sig=-0.937 res=-0.107  'Article structure: informational/review format with a detail'
+[r0 f443 a=1.0] sig=-0.939 res=-0.110  'Article structure: a long-form explainer on a specific topic'
+[r0 f443 a=2.0] sig=-0.941 res=-0.110  'Article structure: a long-form review of a specific game, fo'
+[r0 f239 a=0.25] sig=+0.897 res=-0.107  'Article structure: informational/educational format with a d'
+[r0 f239 a=0.5] sig=+0.899 res=-0.107  'Article structure: informational/educational format with a s'
+[r0 f239 a=1.0] sig=+0.901 res=-0.106  'Structured article format with a formal explainer tone signa'
+[r0 f239 a=2.0] sig=+0.904 res=-0.106  'Structured article format with a formal explainer tone signa'
+[r0 f490 a=0.25] sig=+0.857 res=-0.101  'Article structure: informational/review format with a detail'
+[r0 f490 a=0.5] sig=+0.878 res=-0.107  'Article structure: informational/review format with a summar'
+[r0 f490 a=1.0] sig=+0.884 res=-0.104  'Article structure: informational/review format with a Wikipe'
+[r0 f490 a=2.0] sig=+0.886 res=-0.098  'Article structure: informational/encyclopedic format with a '
+[r10 a=0] res=+0.093  'Structured article format with a technical explainer pattern'
+[r10 f166 a=0.25] sig=-0.950 res=+0.094  'Structured article format with a technical explainer tone si'
+[r10 f166 a=0.5] sig=-0.948 res=+0.098  'Structured article format with a technical review of a speci'
+[r10 f166 a=1.0] sig=-0.949 res=+0.092  'Article structure: a technical explainer format with a struc'
+[r10 f166 a=2.0] sig=-0.948 res=+0.092  'Article structure: automotive/HVAC technical writing with a '
+[r10 f443 a=0.25] sig=-0.942 res=+0.092  'Structured article format with a Q&A pattern: "What is X?" s'
+[r10 f443 a=0.5] sig=-0.941 res=+0.094  'Structured article format with a Q&A pattern: "What is X?" s'
+[r10 f443 a=1.0] sig=-0.940 res=+0.093  'Structured article format with a list of parameters, requiri'
+[r10 f443 a=2.0] sig=-0.940 res=+0.093  'Structured article format with a list of parameters, requiri'
+[r10 f239 a=0.25] sig=+0.903 res=+0.102  'Structured article format with a factual, encyclopedic tone '
+[r10 f239 a=0.5] sig=+0.904 res=+0.094  'Structured article format with a formal academic/technical o'
+[r10 f239 a=1.0] sig=+0.911 res=+0.092  'Structured article format with formal academic tone signals '
+[r10 f239 a=2.0] sig=+0.923 res=+0.089  'Structured article format with formal academic framing signa'
+[r10 f490 a=0.25] sig=+0.883 res=+0.091  'Structured article format with a technical review of a speci'
+[r10 f490 a=0.5] sig=+0.884 res=+0.091  'Article structure: technical blog format with structured ana'
+[r10 f490 a=1.0] sig=+0.886 res=+0.090  'Article structure: technical review of a specific automotive'
+[r10 f490 a=2.0] sig=+0.889 res=+0.089  'Technical article structure: informational/review piece abou'
+[r20 a=0] res=-0.096  'Structured article format with academic/technical documentat'
+[r20 f166 a=0.25] sig=-0.953 res=-0.097  'Structured article format with academic/technical documentat'
+[r20 f166 a=0.5] sig=-0.953 res=-0.095  'Structured article format with academic/technical writing co'
+[r20 f166 a=1.0] sig=-0.949 res=-0.092  'Structured article format with academic/technical writing co'
+[r20 f166 a=2.0] sig=-0.949 res=-0.091  'Article structure: a comprehensive historical survey of Rena'
+[r20 f443 a=0.25] sig=-0.947 res=-0.097  'Structured article format with academic/technical documentat'
+[r20 f443 a=0.5] sig=-0.946 res=-0.097  'Structured article format with technical documentation style'
+[r20 f443 a=1.0] sig=-0.946 res=-0.095  'Structured article format with code block and technical docu'
+[r20 f443 a=2.0] sig=-0.943 res=-0.095  'Structured article format with code block and technical docu'
+[r20 f239 a=0.25] sig=+0.900 res=-0.096  'Structured academic document with a formal mathematical expo'
+[r20 f239 a=0.5] sig=+0.902 res=-0.097  'Structured academic document with formal mathematical exposi'
+[r20 f239 a=1.0] sig=+0.904 res=-0.099  'Structured academic document format: a formal mathematical t'
+[r20 f239 a=2.0] sig=+0.908 res=-0.098  'Structured academic document format: formal mathematical exp'
+[r20 f490 a=0.25] sig=+0.882 res=-0.097  'Structured article format with technical documentation style'
+[r20 f490 a=0.5] sig=+0.883 res=-0.095  'Technical article structure: a structured tutorial on crypto'
+[r20 f490 a=1.0] sig=+0.883 res=-0.090  'Technical tutorial structure: article follows standard docum'
+[r20 f490 a=2.0] sig=+0.885 res=-0.088  'Technical documentation pattern: structured article about a '
+[r30 a=0] res=-0.241  'Academic/technical writing structure: article is presenting '
+[r30 f166 a=0.25] sig=-0.865 res=-0.218  'Academic/technical writing structure: article is presenting '
+[r30 f166 a=0.5] sig=-0.871 res=-0.219  'Academic/technical article structure: a structured argument '
+[r30 f166 a=1.0] sig=-0.879 res=-0.222  'Technical article structure: informational/academic tone wit'
+[r30 f166 a=2.0] sig=-0.901 res=-0.229  'Article structure: technical cybersecurity/networking explai'
+[r30 f443 a=0.25] sig=-0.858 res=-0.216  'Academic/technical writing structure: article is presenting '
+[r30 f443 a=0.5] sig=-0.864 res=-0.218  'Academic/technical article structure: a structured argument '
+[r30 f443 a=1.0] sig=-0.887 res=-0.226  'Technical article structure: a detailed analysis of a specif'
+[r30 f443 a=2.0] sig=-0.943 res=-0.242  'Technical article structure: a detailed walkthrough of a spe'
+[r30 f239 a=0.25] sig=+0.870 res=-0.228  'Academic/technical writing structure: a structured argument '
+[r30 f239 a=0.5] sig=+0.864 res=-0.227  'Academic paper structure: structured argument with citations'
+[r30 f239 a=1.0] sig=+0.897 res=-0.239  'Academic paper structure: structured argument with formal to'
+[r30 f239 a=2.0] sig=+0.903 res=-0.241  'Academic paper structure signals a structured response: form'
+[r30 f490 a=0.25] sig=+0.832 res=-0.224  'Technical article structure: academic/review format with a d'
+[r30 f490 a=0.5] sig=+0.838 res=-0.226  'Technical article structure: informational/tutorial format w'
+[r30 f490 a=1.0] sig=+0.850 res=-0.230  'Technical documentation pattern: structured article about a '
+[r30 f490 a=2.0] sig=+0.889 res=-0.238  'Technical documentation pattern: structured tutorial format '
+
+INJECTION curve: {"0.0": {"n": 16, "mean_abs_cos_sig": 0.9187, "max": 0.9572, "frac_gt_0.5": 1.0}, "0.25": {"n": 16, "mean_abs_cos_sig": 0.9014, "max": 0.9526, "frac_gt_0.5": 1.0}, "0.5": {"n": 16, "mean_abs_cos_sig": 0.9033, "max": 0.9526, "frac_gt_0.5": 1.0}, "1.0": {"n": 16, "mean_abs_cos_sig": 0.9095, "max": 0.9493, "frac_gt_0.5": 1.0}, "2.0": {"n": 16, "mean_abs_cos_sig": 0.9189, "max": 0.9491, "frac_gt_0.5": 1.0}}
+wrote -> /root/autodl-tmp/results/injection_pilot.json
++ echo '=== INJECTION_COMPLETE ==='
+=== INJECTION_COMPLETE ===
++ finish 0
+++ date
++ echo '=== INJECTION EXIT (status=0) at Fri Jul 10 23:42:10 CST 2026 ==='
+=== INJECTION EXIT (status=0) at Fri Jul 10 23:42:10 CST 2026 ===
++ sync
++ sleep 300

@@ -1,0 +1,817 @@
+{
+  "bootstrap": {
+    "draw_indices_sha256": "478a7789dfcac82b7b2c3663a60da82147e6014942fd29291e4c0a8a3688297e",
+    "draws_shared_across_every_endpoint": true,
+    "n_resamples": 50000,
+    "ordinary_content_group_bootstrap": true,
+    "quantile_method": "linear",
+    "seed": 20260803
+  },
+  "cohort": {
+    "by_source": {
+      "ArXiv": 32,
+      "DM Mathematics": 29,
+      "FreeLaw": 32,
+      "Github": 29,
+      "HackerNews": 22,
+      "NIH ExPorter": 32,
+      "OpenWebText2": 32,
+      "Pile-CC": 32,
+      "PubMed Abstracts": 32,
+      "PubMed Central": 32,
+      "StackExchange": 32,
+      "USPTO Backgrounds": 32,
+      "Wikipedia (en)": 32
+    },
+    "donor_hard_constraint_qa": {
+      "hard_source_and_candidate_count_match": true,
+      "no_shared_normalized_candidate": true,
+      "one_to_one_derangement_within_cells": true,
+      "recipient_content_document_distinct": true
+    },
+    "n_content_groups": 400,
+    "n_rows": 400,
+    "plan_status": "frozen_before_n6_model_output",
+    "selection": {
+      "cell_seed_quota": 2,
+      "discarded_cells": {},
+      "eligible_cell_sizes": {
+        "ArXiv|4": 8,
+        "ArXiv|5": 17,
+        "ArXiv|6": 11,
+        "DM Mathematics|4": 13,
+        "DM Mathematics|5": 9,
+        "DM Mathematics|6": 7,
+        "FreeLaw|4": 9,
+        "FreeLaw|5": 22,
+        "FreeLaw|6": 5,
+        "Github|4": 5,
+        "Github|5": 10,
+        "Github|6": 14,
+        "HackerNews|4": 3,
+        "HackerNews|5": 15,
+        "HackerNews|6": 4,
+        "NIH ExPorter|4": 9,
+        "NIH ExPorter|5": 17,
+        "NIH ExPorter|6": 11,
+        "OpenWebText2|4": 13,
+        "OpenWebText2|5": 16,
+        "OpenWebText2|6": 8,
+        "Pile-CC|4": 9,
+        "Pile-CC|5": 21,
+        "Pile-CC|6": 6,
+        "PubMed Abstracts|4": 9,
+        "PubMed Abstracts|5": 18,
+        "PubMed Abstracts|6": 9,
+        "PubMed Central|4": 8,
+        "PubMed Central|5": 17,
+        "PubMed Central|6": 7,
+        "StackExchange|4": 7,
+        "StackExchange|5": 19,
+        "StackExchange|6": 9,
+        "USPTO Backgrounds|4": 10,
+        "USPTO Backgrounds|5": 17,
+        "USPTO Backgrounds|6": 9,
+        "Wikipedia (en)|4": 8,
+        "Wikipedia (en)|5": 16,
+        "Wikipedia (en)|6": 9
+      },
+      "hard_cell_key": [
+        "source",
+        "candidate_count"
+      ],
+      "min_cell_size": 2,
+      "retained_cell_order": [
+        {
+          "candidate_count": 5,
+          "source": "Wikipedia (en)"
+        },
+        {
+          "candidate_count": 5,
+          "source": "OpenWebText2"
+        },
+        {
+          "candidate_count": 5,
+          "source": "FreeLaw"
+        },
+        {
+          "candidate_count": 6,
+          "source": "StackExchange"
+        },
+        {
+          "candidate_count": 6,
+          "source": "Wikipedia (en)"
+        },
+        {
+          "candidate_count": 5,
+          "source": "Pile-CC"
+        },
+        {
+          "candidate_count": 4,
+          "source": "PubMed Abstracts"
+        },
+        {
+          "candidate_count": 4,
+          "source": "USPTO Backgrounds"
+        },
+        {
+          "candidate_count": 5,
+          "source": "ArXiv"
+        },
+        {
+          "candidate_count": 6,
+          "source": "PubMed Central"
+        },
+        {
+          "candidate_count": 4,
+          "source": "NIH ExPorter"
+        },
+        {
+          "candidate_count": 6,
+          "source": "NIH ExPorter"
+        },
+        {
+          "candidate_count": 5,
+          "source": "HackerNews"
+        },
+        {
+          "candidate_count": 6,
+          "source": "PubMed Abstracts"
+        },
+        {
+          "candidate_count": 6,
+          "source": "Github"
+        },
+        {
+          "candidate_count": 6,
+          "source": "ArXiv"
+        },
+        {
+          "candidate_count": 4,
+          "source": "ArXiv"
+        },
+        {
+          "candidate_count": 4,
+          "source": "HackerNews"
+        },
+        {
+          "candidate_count": 5,
+          "source": "PubMed Abstracts"
+        },
+        {
+          "candidate_count": 6,
+          "source": "DM Mathematics"
+        },
+        {
+          "candidate_count": 5,
+          "source": "PubMed Central"
+        },
+        {
+          "candidate_count": 5,
+          "source": "USPTO Backgrounds"
+        },
+        {
+          "candidate_count": 6,
+          "source": "Pile-CC"
+        },
+        {
+          "candidate_count": 6,
+          "source": "HackerNews"
+        },
+        {
+          "candidate_count": 4,
+          "source": "PubMed Central"
+        },
+        {
+          "candidate_count": 6,
+          "source": "OpenWebText2"
+        },
+        {
+          "candidate_count": 5,
+          "source": "Github"
+        },
+        {
+          "candidate_count": 4,
+          "source": "OpenWebText2"
+        },
+        {
+          "candidate_count": 5,
+          "source": "NIH ExPorter"
+        },
+        {
+          "candidate_count": 5,
+          "source": "StackExchange"
+        },
+        {
+          "candidate_count": 4,
+          "source": "Github"
+        },
+        {
+          "candidate_count": 5,
+          "source": "DM Mathematics"
+        },
+        {
+          "candidate_count": 4,
+          "source": "Pile-CC"
+        },
+        {
+          "candidate_count": 6,
+          "source": "USPTO Backgrounds"
+        },
+        {
+          "candidate_count": 4,
+          "source": "Wikipedia (en)"
+        },
+        {
+          "candidate_count": 4,
+          "source": "DM Mathematics"
+        },
+        {
+          "candidate_count": 4,
+          "source": "StackExchange"
+        },
+        {
+          "candidate_count": 6,
+          "source": "FreeLaw"
+        },
+        {
+          "candidate_count": 4,
+          "source": "FreeLaw"
+        }
+      ],
+      "round_robin_fill_by_source": {
+        "ArXiv": 26,
+        "DM Mathematics": 23,
+        "FreeLaw": 26,
+        "Github": 23,
+        "HackerNews": 16,
+        "NIH ExPorter": 26,
+        "OpenWebText2": 26,
+        "Pile-CC": 26,
+        "PubMed Abstracts": 26,
+        "PubMed Central": 26,
+        "StackExchange": 26,
+        "USPTO Backgrounds": 26,
+        "Wikipedia (en)": 26
+      },
+      "seed": 20260803,
+      "selected_by_cell": {
+        "ArXiv|4": 8,
+        "ArXiv|5": 13,
+        "ArXiv|6": 11,
+        "DM Mathematics|4": 13,
+        "DM Mathematics|5": 9,
+        "DM Mathematics|6": 7,
+        "FreeLaw|4": 8,
+        "FreeLaw|5": 19,
+        "FreeLaw|6": 5,
+        "Github|4": 5,
+        "Github|5": 10,
+        "Github|6": 14,
+        "HackerNews|4": 3,
+        "HackerNews|5": 15,
+        "HackerNews|6": 4,
+        "NIH ExPorter|4": 9,
+        "NIH ExPorter|5": 13,
+        "NIH ExPorter|6": 10,
+        "OpenWebText2|4": 12,
+        "OpenWebText2|5": 12,
+        "OpenWebText2|6": 8,
+        "Pile-CC|4": 8,
+        "Pile-CC|5": 19,
+        "Pile-CC|6": 5,
+        "PubMed Abstracts|4": 7,
+        "PubMed Abstracts|5": 17,
+        "PubMed Abstracts|6": 8,
+        "PubMed Central|4": 8,
+        "PubMed Central|5": 17,
+        "PubMed Central|6": 7,
+        "StackExchange|4": 7,
+        "StackExchange|5": 17,
+        "StackExchange|6": 8,
+        "USPTO Backgrounds|4": 9,
+        "USPTO Backgrounds|5": 16,
+        "USPTO Backgrounds|6": 7,
+        "Wikipedia (en)|4": 8,
+        "Wikipedia (en)|5": 15,
+        "Wikipedia (en)|6": 9
+      },
+      "selected_by_source": {
+        "ArXiv": 32,
+        "DM Mathematics": 29,
+        "FreeLaw": 32,
+        "Github": 29,
+        "HackerNews": 22,
+        "NIH ExPorter": 32,
+        "OpenWebText2": 32,
+        "Pile-CC": 32,
+        "PubMed Abstracts": 32,
+        "PubMed Central": 32,
+        "StackExchange": 32,
+        "USPTO Backgrounds": 32,
+        "Wikipedia (en)": 32
+      },
+      "selected_row_uid_sequence_sha256": "652c43c41531ee36ffbf45b1c561880e57a2404ff6c32a2e443c4a4bb5d43afe",
+      "source_round_robin_order": [
+        "FreeLaw",
+        "Pile-CC",
+        "DM Mathematics",
+        "OpenWebText2",
+        "PubMed Central",
+        "Wikipedia (en)",
+        "NIH ExPorter",
+        "Github",
+        "PubMed Abstracts",
+        "StackExchange",
+        "HackerNews",
+        "ArXiv",
+        "USPTO Backgrounds"
+      ],
+      "target": 400
+    }
+  },
+  "decisions": {
+    "candidate_anchor_secondary": {
+      "label": "NO CANDIDATE DOMINANCE CLAIM",
+      "pass": false
+    },
+    "h6a": {
+      "failed_gates": [],
+      "gates": {
+        "g_content_two_sided_95_lower_gt_0": true,
+        "g_specific_two_sided_95_lower_gt_0": true,
+        "t_p3_one_sided_95_lower_gt_0.90": true
+      },
+      "label": "SAMPLE-SPECIFIC CHANNEL CONFIRMED",
+      "m_majority_is_not_a_gate": true,
+      "pass": true
+    },
+    "h6b": {
+      "a_setmass_is_secondary": true,
+      "gate": {
+        "a_meanmass_two_sided_95_lower_gt_0": true
+      },
+      "label": "PREDICTIVE ALIGNMENT CONFIRMED",
+      "pass": true
+    },
+    "headline": {
+      "label": "SAMPLE-SPECIFIC NATURAL-LANGUAGE PREDICTIVE-STATE CODE CONFIRMED",
+      "pass": true,
+      "requires_h6a_and_h6b": true
+    },
+    "majority_of_candidate_benefit": {
+      "confirmatory_h6a_gate": false,
+      "gate": "M_majority two-sided 95% CI lower bound > 0",
+      "label": "MAJORITY-OF-CANDIDATE-BENEFIT SUPPORTED",
+      "pass": true
+    }
+  },
+  "endpoints": {
+    "a_meanmass": {
+      "ci95_two_sided": [
+        8.444854715610758,
+        9.572597405045615
+      ],
+      "point": 9.008469958088124
+    },
+    "a_setmass": {
+      "ci95_two_sided": [
+        8.497824299502721,
+        9.6264273003011
+      ],
+      "point": 9.062128345467876
+    },
+    "g_candidate_anchor": {
+      "ci95_two_sided": [
+        -0.07866851790579701,
+        -0.0127787984589912
+      ],
+      "point": -0.045041812183826344
+    },
+    "g_content": {
+      "ci95_two_sided": [
+        0.13660162452981736,
+        0.17350706992971346
+      ],
+      "point": 0.15438236046376194
+    },
+    "g_specific": {
+      "ci95_two_sided": [
+        0.10286024149731587,
+        0.13399496923601967
+      ],
+      "point": 0.11795381687114537
+    },
+    "m_majority": {
+      "ci95_two_sided": [
+        0.028679587684947865,
+        0.05325245318454793
+      ],
+      "point": 0.040762636639264396
+    },
+    "raw_cross_minus_true": {
+      "ci95_two_sided": [
+        1.5917578576305893,
+        2.074946171861282
+      ],
+      "point": 1.8278825802884469
+    },
+    "recoveries": {
+      "identity": {
+        "ci95_two_sided": [
+          1.0,
+          1.0
+        ],
+        "point": 1.0
+      },
+      "orig": {
+        "ci95_two_sided": [
+          0.9733444676826136,
+          0.9845447816830231
+        ],
+        "point": 0.9794933559262631
+      },
+      "p12": {
+        "ci95_two_sided": [
+          0.7652242441834161,
+          0.8233615476819952
+        ],
+        "point": 0.7955302815606495
+      },
+      "p3_all_quote_strip": {
+        "ci95_two_sided": [
+          0.32529289405719874,
+          0.4050985897029038
+        ],
+        "point": 0.36707448694075795
+      },
+      "p3_anchor_strip": {
+        "ci95_two_sided": [
+          0.7477407827949794,
+          0.8006163911813792
+        ],
+        "point": 0.7753433863300887
+      },
+      "p3_candidate_strip": {
+        "ci95_two_sided": [
+          0.8005611722604239,
+          0.8389431200859275
+        ],
+        "point": 0.8203851985139151
+      },
+      "p3_cross_matched": {
+        "ci95_two_sided": [
+          0.8406121805157162,
+          0.8720628208272664
+        ],
+        "point": 0.8568137421065316
+      },
+      "p3_true": {
+        "ci95_two_sided": [
+          0.9685815332083777,
+          0.9799461096522537
+        ],
+        "point": 0.974767558977677
+      },
+      "sae_big": {
+        "ci95_two_sided": [
+          0.9719939345143737,
+          0.9833451212489566
+        ],
+        "point": 0.978140373462738
+      },
+      "zero": {
+        "ci95_two_sided": [
+          0.0,
+          0.0
+        ],
+        "point": 0.0
+      }
+    },
+    "t_p3": {
+      "bootstrap_nonpositive_r_orig_count": 0,
+      "ci95_two_sided": [
+        0.9927876208704802,
+        0.9975248836586645
+      ],
+      "one_sided_95_lower": 0.99319390917167,
+      "point": 0.9951752639055759,
+      "testable": true
+    }
+  },
+  "experiment": "N6 preregistered candidate-channel analysis",
+  "formula_audit": {
+    "a_meanmass": "mean(log(Ptrue/n_unique_true+1e-12)-log(Pcross/n_unique_cross+1e-12))",
+    "a_setmass_secondary": "mean(log(Ptrue+1e-12)-log(Pcross+1e-12))",
+    "g_candidate_anchor": "sum(KL_candidate_strip-KL_anchor_strip)/sum(KL_zero)",
+    "g_content": "sum(KL_candidate_strip-KL_true)/sum(KL_zero)",
+    "g_specific": "sum(KL_cross-KL_true)/sum(KL_zero)",
+    "m_majority": "[sum(KL_cross-KL_true)-0.5*sum(KL_candidate_strip-KL_true)]/sum(KL_zero)",
+    "recovery": "R_s=1-sum(KL_s)/sum(KL_zero)",
+    "retention": "T_p3=R_p3_true/R_orig",
+    "rowwise_kl_zero_division": false
+  },
+  "inputs": {
+    "analysis_script_sha256": "3c62a40990c1a15a9bc229c015eaf6ce5936ff3dccf01ba552548abb93356e27",
+    "causal_sha256": "260c1b00cb6a5d498bb436e3b8dba667861af47b77cebcd49fb684a8f6823592",
+    "code_manifest_sha256": "4f7e7f612e80a73766d95f2dfd34dcdc37d1b0a6c43a82255d0f3ea87970bc0d",
+    "model_manifest_sha256": "4a5c6212dcf5851b9bea2313b4898f977fef0ee36aecc922d10f0375cbc94735",
+    "n5_gate_sha256": "036477f21fb550b317978a880df0a708dcf42a5201d301ca0757fade3baea059",
+    "plan_sha256": "d366bca81ac239bc9c68d4361b7bca151f3cd3237ca2a2459e9316280ba40bbc",
+    "prereg_sha256": "cbc8a5395844b5a61a3a52a543f978c89273d6e9c786db0262d4a4c936faf6a8",
+    "recon_json_sha256": "2c9eef3f660003cb63decb7d6ec62b4b20c53d9014e177a96cbbdce3fa939faa",
+    "recon_npz_sha256": "f899836af62b01aad7d8b4d9fa40c8f86c911214a4ff42fc8bfdb2b765fcf1c6",
+    "variants_sha256": "8e725b66e24b6434c3164cbf2b0075c056559aaeb7b8795c7fb3b41dc6c2f5d3"
+  },
+  "mandatory_descriptives": {
+    "anchor_status": {
+      "context_anchor_contains_normalized_target_count": 387,
+      "context_anchor_is_diagnostic_only": true,
+      "target_anchor_gate_fail_count": 0,
+      "target_anchor_gate_pass_count": 400
+    },
+    "by_candidate_count": {
+      "4": {
+        "a_meanmass": 9.762470418753821,
+        "g_content": 0.1354702427989622,
+        "g_specific": 0.10679396410617664,
+        "n": 105
+      },
+      "5": {
+        "a_meanmass": 9.228699045755368,
+        "g_content": 0.1775106768591148,
+        "g_specific": 0.1262423767501973,
+        "n": 192
+      },
+      "6": {
+        "a_meanmass": 7.829304587194836,
+        "g_content": 0.12779136523557866,
+        "g_specific": 0.11230848153731106,
+        "n": 103
+      }
+    },
+    "by_source": {
+      "ArXiv": {
+        "a_meanmass": 8.906043982677877,
+        "g_content": 0.18267392596113735,
+        "g_specific": 0.18439190741056458,
+        "n": 32
+      },
+      "DM Mathematics": {
+        "a_meanmass": 5.34748985361449,
+        "g_content": 0.13560637269858472,
+        "g_specific": 0.2075400347812805,
+        "n": 29
+      },
+      "FreeLaw": {
+        "a_meanmass": 8.796660854536363,
+        "g_content": 0.09615377484461024,
+        "g_specific": 0.06865989719628358,
+        "n": 32
+      },
+      "Github": {
+        "a_meanmass": 9.580486264358509,
+        "g_content": 0.07532438674422026,
+        "g_specific": 0.0645530216267306,
+        "n": 29
+      },
+      "HackerNews": {
+        "a_meanmass": 7.9718493954488245,
+        "g_content": 0.18058208191371336,
+        "g_specific": 0.11625304148287292,
+        "n": 22
+      },
+      "NIH ExPorter": {
+        "a_meanmass": 10.211153759638684,
+        "g_content": 0.1897248150348846,
+        "g_specific": 0.10422607063042345,
+        "n": 32
+      },
+      "OpenWebText2": {
+        "a_meanmass": 9.53159124461467,
+        "g_content": 0.17693138989707505,
+        "g_specific": 0.1356000581521327,
+        "n": 32
+      },
+      "Pile-CC": {
+        "a_meanmass": 11.43836437562432,
+        "g_content": 0.12881743517674557,
+        "g_specific": 0.12209937110038659,
+        "n": 32
+      },
+      "PubMed Abstracts": {
+        "a_meanmass": 10.480792175584508,
+        "g_content": 0.2674425079451746,
+        "g_specific": 0.18809557604968516,
+        "n": 32
+      },
+      "PubMed Central": {
+        "a_meanmass": 7.820018017413304,
+        "g_content": 0.12719484767484032,
+        "g_specific": 0.09548181874626134,
+        "n": 32
+      },
+      "StackExchange": {
+        "a_meanmass": 9.11894710304379,
+        "g_content": 0.1753966264161888,
+        "g_specific": 0.11407213481756784,
+        "n": 32
+      },
+      "USPTO Backgrounds": {
+        "a_meanmass": 8.73649361069873,
+        "g_content": 0.1940558407887912,
+        "g_specific": 0.1106911904841638,
+        "n": 32
+      },
+      "Wikipedia (en)": {
+        "a_meanmass": 8.556684535985227,
+        "g_content": 0.1328553344675575,
+        "g_specific": 0.11972795863943893,
+        "n": 32
+      }
+    },
+    "candidate_hit_at_k": {
+      "1": {
+        "cross": 0.0375,
+        "true": 0.665
+      },
+      "10": {
+        "cross": 0.165,
+        "true": 0.87
+      },
+      "5": {
+        "cross": 0.1175,
+        "true": 0.84
+      },
+      "50": {
+        "cross": 0.3575,
+        "true": 0.9575
+      }
+    },
+    "centered_cosine_by_reconstruction": {
+      "orig": {
+        "mean": 0.845533362917937,
+        "median": 0.8684921793642915
+      },
+      "p12": {
+        "mean": 0.6299966175401497,
+        "median": 0.659023639411317
+      },
+      "p3_all_quote_strip": {
+        "mean": 0.043635010750605135,
+        "median": 0.03417058400134404
+      },
+      "p3_anchor_strip": {
+        "mean": 0.4059836483361859,
+        "median": 0.40291462774851416
+      },
+      "p3_candidate_strip": {
+        "mean": 0.45019897686018795,
+        "median": 0.44689121258460823
+      },
+      "p3_cross_matched": {
+        "mean": 0.39182003888538014,
+        "median": 0.39075084349599504
+      },
+      "p3_true": {
+        "mean": 0.7839938459329044,
+        "median": 0.8030312722025096
+      },
+      "sae_big": {
+        "mean": 0.6641622387438022,
+        "median": 0.6706852337624569
+      }
+    },
+    "leave_one_source_out": {
+      "ArXiv": {
+        "a_meanmass": 9.017376564645538,
+        "g_content": 0.1521289965430759,
+        "g_specific": 0.11266216214830273,
+        "n": 368
+      },
+      "DM Mathematics": {
+        "a_meanmass": 9.294638214232966,
+        "g_content": 0.15494647803137604,
+        "g_specific": 0.11526223228069618,
+        "n": 371
+      },
+      "FreeLaw": {
+        "a_meanmass": 9.02688814100567,
+        "g_content": 0.1594333212030941,
+        "g_specific": 0.12222975196931182,
+        "n": 368
+      },
+      "Github": {
+        "a_meanmass": 8.963757093177502,
+        "g_content": 0.16488389711168974,
+        "g_specific": 0.12504722417598113,
+        "n": 371
+      },
+      "HackerNews": {
+        "a_meanmass": 9.068802371786708,
+        "g_content": 0.152936481676384,
+        "g_specific": 0.11804767722232105,
+        "n": 378
+      },
+      "NIH ExPorter": {
+        "a_meanmass": 8.903888757953295,
+        "g_content": 0.15150566655871264,
+        "g_specific": 0.11907118476253722,
+        "n": 368
+      },
+      "OpenWebText2": {
+        "a_meanmass": 8.962981150564078,
+        "g_content": 0.1524628054889914,
+        "g_specific": 0.11645162670650451,
+        "n": 368
+      },
+      "Pile-CC": {
+        "a_meanmass": 8.797174791345848,
+        "g_content": 0.1566259767891111,
+        "g_specific": 0.11758999679180135,
+        "n": 368
+      },
+      "PubMed Abstracts": {
+        "a_meanmass": 8.880441939175396,
+        "g_content": 0.1453257698438149,
+        "g_specific": 0.11233516863483926,
+        "n": 368
+      },
+      "PubMed Central": {
+        "a_meanmass": 9.111813605103327,
+        "g_content": 0.157600290261689,
+        "g_specific": 0.12061361561575476,
+        "n": 368
+      },
+      "StackExchange": {
+        "a_meanmass": 8.998863249831112,
+        "g_content": 0.15247319166588466,
+        "g_specific": 0.11830647188544599,
+        "n": 368
+      },
+      "USPTO Backgrounds": {
+        "a_meanmass": 9.03212007525242,
+        "g_content": 0.15114816560447342,
+        "g_specific": 0.11854586850698055,
+        "n": 368
+      },
+      "Wikipedia (en)": {
+        "a_meanmass": 9.047755646966639,
+        "g_content": 0.15611836446571697,
+        "g_specific": 0.11781074475285386,
+        "n": 368
+      }
+    },
+    "observed_next_token_membership": {
+      "cross_rate": 0.0275,
+      "true_rate": 0.49
+    },
+    "tails": {
+      "cross_worse_than_true_by_gt_1_nat": 210,
+      "true_worse_than_sae_big_by_gt_1_nat": 18
+    },
+    "token_lengths": {
+      "individual_true_candidate": {
+        "max": 18.0,
+        "mean": 5.276276276276277,
+        "median": 5.0,
+        "min": 1.0
+      },
+      "p3_true": {
+        "max": 81.0,
+        "mean": 73.195,
+        "median": 73.0,
+        "min": 62.0
+      },
+      "total_true_candidates_per_row": {
+        "max": 45.0,
+        "mean": 26.355,
+        "median": 27.0,
+        "min": 9.0
+      }
+    },
+    "true_cross_lexical_overlap": {
+      "definition": "Jaccard overlap of Unicode-word sets across concatenated true versus matched-cross candidate text",
+      "max": 0.38461538461538464,
+      "mean": 0.05455458623550151,
+      "median": 0.05128205128205128,
+      "min": 0.0
+    }
+  },
+  "numerical_qa": {
+    "identity_kl16_abs_max": 0.0,
+    "identity_kl_at_pos_abs_max": 0.0,
+    "identity_kl_tolerance": 1e-05,
+    "negative_kl_values_clamped": [
+      {
+        "condition": "p3_true",
+        "field": "kl_at_pos",
+        "raw_value": -2.1974810859859417e-09,
+        "row_uid": "a18e723c4cd6692557d5000649ca069890d0d8b9a92ca957a40905ea8a94ad08"
+      }
+    ],
+    "sum_kl_zero": 6198.638174753616
+  },
+  "schema_version": 1,
+  "status": "complete"
+}

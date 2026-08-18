@@ -1,0 +1,83 @@
+2026-08-03 13:42:37 CST STAGE_START stage=53_reconstruct
+2026-08-03 13:42:37 CST VERIFIED sidecar label='binding N6 preregistration' sha256=cbc8a5395844b5a61a3a52a543f978c89273d6e9c786db0262d4a4c936faf6a8 path=/root/autodl-tmp/results/n6_plus_preregistration_v2.md
+2026-08-03 13:42:37 CST VERIFIED sidecar label='frozen N6 code manifest' sha256=4f7e7f612e80a73766d95f2dfd34dcdc37d1b0a6c43a82255d0f3ea87970bc0d path=/root/autodl-tmp/results/n6_code_manifest_v2.txt
+2026-08-03 13:42:37 CST VERIFIED frozen N6 code manifest entries=21 path=/root/autodl-tmp/results/n6_code_manifest_v2.txt
+2026-08-03 13:42:37 CST VERIFIED sidecar label='frozen N5 combined model manifest' sha256=4a5c6212dcf5851b9bea2313b4898f977fef0ee36aecc922d10f0375cbc94735 path=/root/autodl-tmp/results/n5_model_weights_v1.sha256
+/root/autodl-tmp/models/gemma-3-12b-it/config.json: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model.safetensors.index.json: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00001-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00002-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00003-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00004-of-00005.safetensors: OK
+/root/autodl-tmp/models/gemma-3-12b-it/model-00005-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/config.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model.safetensors.index.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00001-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00002-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00003-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00004-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-av/model-00005-of-00005.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/config.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model.safetensors.index.json: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00001-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00002-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00003-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/model-00004-of-00004.safetensors: OK
+/root/autodl-tmp/models/nla-gemma3-12b-L32-ar/value_head.safetensors: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small/config.json: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small/params.safetensors: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_big/config.json: OK
+/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_big/params.safetensors: OK
+2026-08-03 13:47:43 CST VERIFIED manifest entries label='frozen N5 combined model manifest' path=/root/autodl-tmp/results/n5_model_weights_v1.sha256
+2026-08-03 13:47:43 CST VERIFIED sidecar label='stage input' sha256=d366bca81ac239bc9c68d4361b7bca151f3cd3237ca2a2459e9316280ba40bbc path=/root/autodl-tmp/results/n6_provisional_cohort_v1.json
+2026-08-03 13:47:43 CST VERIFIED sidecar label='stage input' sha256=395426bbff2474e1a23408306a86eae4b3d452f5f89179f90aeaa04a47d60775 path=/root/autodl-tmp/activations/acts_L32_n6_provisional_v1.parquet
+2026-08-03 13:47:43 CST VERIFIED sidecar label='stage input' sha256=8e725b66e24b6434c3164cbf2b0075c056559aaeb7b8795c7fb3b41dc6c2f5d3 path=/root/autodl-tmp/results/n6_variants_donor_v1.json
+2026-08-03 13:47:43 CST VERIFIED sidecar label='stage input' sha256=036477f21fb550b317978a880df0a708dcf42a5201d301ca0757fade3baea059 path=/root/autodl-tmp/results/n5_gate_v2.json
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/430 [00:00<?, ?it/s]Loading weights: 100%|██████████| 430/430 [00:00<00:00, 7573.90it/s]
+[transformers] [1mGemma3ForCausalLM LOAD REPORT[0m from: /root/autodl-tmp/models/nla-gemma3-12b-L32-ar
+Key               | Status  | 
+------------------+---------+-
+model.norm.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[NLACritic] 33 layers  d_model=3840  mse_scale=61.97
+[N6 AR] 100 unique texts
+[N6 AR] 200 unique texts
+[N6 AR] 300 unique texts
+[N6 AR] 400 unique texts
+[N6 AR] orig complete
+[N6 AR] 500 unique texts
+[N6 AR] 600 unique texts
+[N6 AR] 700 unique texts
+[N6 AR] 800 unique texts
+[N6 AR] p3_true complete
+[N6 AR] 900 unique texts
+[N6 AR] 1000 unique texts
+[N6 AR] 1100 unique texts
+[N6 AR] 1200 unique texts
+[N6 AR] p3_cross_matched complete
+[N6 AR] 1300 unique texts
+[N6 AR] 1400 unique texts
+[N6 AR] 1500 unique texts
+[N6 AR] 1600 unique texts
+[N6 AR] p3_candidate_strip complete
+[N6 AR] 1700 unique texts
+[N6 AR] 1800 unique texts
+[N6 AR] 1900 unique texts
+[N6 AR] 2000 unique texts
+[N6 AR] p3_anchor_strip complete
+[N6 AR] 2100 unique texts
+[N6 AR] 2200 unique texts
+[N6 AR] 2300 unique texts
+[N6 AR] p3_all_quote_strip complete
+[N6 AR] 2400 unique texts
+[N6 AR] 2500 unique texts
+[N6 AR] 2600 unique texts
+[N6 AR] 2700 unique texts
+[N6 AR] p12 complete
+N6_RECON_COMPLETE rows=400 json=2c9eef3f660003cb63decb7d6ec62b4b20c53d9014e177a96cbbdce3fa939faa npz=f899836af62b01aad7d8b4d9fa40c8f86c911214a4ff42fc8bfdb2b765fcf1c6
+2026-08-03 13:49:51 CST VERIFIED sidecar label='stage 53 reconstruction JSON' sha256=2c9eef3f660003cb63decb7d6ec62b4b20c53d9014e177a96cbbdce3fa939faa path=/root/autodl-tmp/results/n6_recon_v1.json
+2026-08-03 13:49:51 CST VERIFIED sidecar label='stage 53 reconstruction NPZ' sha256=f899836af62b01aad7d8b4d9fa40c8f86c911214a4ff42fc8bfdb2b765fcf1c6 path=/root/autodl-tmp/results/n6_recon_vectors_v1.npz
+2026-08-03 13:49:51 CST STAGE_COMPLETE stage=53_reconstruct

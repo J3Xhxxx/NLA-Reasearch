@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "experiment": "C1 confirmatory synthetic concept cohort v2",
+  "status": "models_frozen_before_C1_AV_AR",
+  "created_at_utc": "2026-07-30T06:40:45Z",
+  "fingerprint_rule": "SHA256 of canonical JSON for the name-sorted files array using sort_keys=true and separators=(',',':').",
+  "models": {
+    "base": {
+      "path": "/root/autodl-tmp/models/gemma-3-12b-it",
+      "fingerprint_sha256": "693f5012864a182472b474d2bdea8ca0d002cbc5cc4c4880997af29a6bfd4e45",
+      "files": [
+        {"name": "config.json", "bytes": 916, "sha256": "39172c4124d3470341bbbb25f2926fd97edf68f0fe3a9fa4cde6acb9b7ed2cc6"},
+        {"name": "generation_config.json", "bytes": 215, "sha256": "fd9324becc53c4be610db39e13a613006f09fd6ef71a95fb6320dc33157490a3"},
+        {"name": "model-00001-of-00005.safetensors", "bytes": 4979902192, "sha256": "4847447e92599833e8dbaa3067cd201c3bb5c052efa91f11ba891e43234f7832"},
+        {"name": "model-00002-of-00005.safetensors", "bytes": 4931296592, "sha256": "891bd54eed03cba9ee1e705533a02a8217fcc29f356e4a1f53e5fd0d178883ad"},
+        {"name": "model-00003-of-00005.safetensors", "bytes": 4931296656, "sha256": "7cee411d9d57324e50ce064a192cc5a858276d508611b12fc599e0c9767112e0"},
+        {"name": "model-00004-of-00005.safetensors", "bytes": 4931296656, "sha256": "8bc75a29a730c9e743cad013feda3b0991a913fafe787c58a1c6e20afad97723"},
+        {"name": "model-00005-of-00005.safetensors", "bytes": 4601000928, "sha256": "ed14bd4908c98fed9f61e8cd410167e0846de9abd78e0452ab092072e5d9252d"},
+        {"name": "model.safetensors.index.json", "bytes": 108605, "sha256": "788cc42a1a92835df62d9a3791f47105f63504c7c404637a73288e9b11bc7b82"},
+        {"name": "tokenizer.json", "bytes": 33384568, "sha256": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795"},
+        {"name": "tokenizer_config.json", "bytes": 1156999, "sha256": "bfe25c2735e395407beb78456ea9a6984a1f00d8c16fa04a8b75f2a614cf53e1"}
+      ]
+    },
+    "av": {
+      "path": "/root/autodl-tmp/models/nla-gemma3-12b-L32-av",
+      "fingerprint_sha256": "9f41931c7759c6b14b8d58a177326bbdbdf46db06829eb41587da3f712f9b1ac",
+      "files": [
+        {"name": "config.json", "bytes": 2200, "sha256": "893b004424a5dca2bb4c2edbab79af67d842048ad79f5afafbe0a29e0748e4b7"},
+        {"name": "generation_config.json", "bytes": 151, "sha256": "7779b6f9f8da699aca8028478254727515c01d7e0c55690f78e2f14ea7700340"},
+        {"name": "model-00001-of-00005.safetensors", "bytes": 4915892992, "sha256": "1675b0df08f8317d0f926f0f3567a1353075f510e5316d5b6c35cf9e1419011d"},
+        {"name": "model-00002-of-00005.safetensors", "bytes": 4931294472, "sha256": "2d6c0853f8545378ad0d9a2b987f073951b2e676b80ee5655dcec72799d3815d"},
+        {"name": "model-00003-of-00005.safetensors", "bytes": 4931294528, "sha256": "f74c28b5073ffe600727e8c91587928ab96e455e071809d7acbdb28ea2e2646f"},
+        {"name": "model-00004-of-00005.safetensors", "bytes": 4931294528, "sha256": "440f5625f633db1433c1f1da24ebf97a6b3ae5fe84d1de0e6cbb7c5e3005eae5"},
+        {"name": "model-00005-of-00005.safetensors", "bytes": 3822364808, "sha256": "c0b3b9b392ad1b4ad2c88d0fc008e93e0cde36861a21663f4e7afed5d48a0ca5"},
+        {"name": "model.safetensors.index.json", "bytes": 52588, "sha256": "a523856badee97de852b2d7cc85e5690a7080fadf6b6710d8b91566ffa45adbf"},
+        {"name": "nla_meta.yaml", "bytes": 1162, "sha256": "e88238977af889a535ee9578ace47784545d6195dd27695e1354b700c17726a6"},
+        {"name": "tokenizer.json", "bytes": 33384568, "sha256": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795"},
+        {"name": "tokenizer_config.json", "bytes": 1155387, "sha256": "983c80895e7b188911f5ccfbb4f780a4e73fb3131ed2080a3e847ef8623cfdca"}
+      ]
+    },
+    "ar": {
+      "path": "/root/autodl-tmp/models/nla-gemma3-12b-L32-ar",
+      "fingerprint_sha256": "3584e8b51cde12d1cb52b770351114128b1e415ac2be435103ef0c5289558fce",
+      "files": [
+        {"name": "config.json", "bytes": 1761, "sha256": "d89e3a538daeedf376f0319ea56caffe502ce9dcc4afae4d7798211dc630e1b4"},
+        {"name": "generation_config.json", "bytes": 132, "sha256": "74bae8d04e6963b973b9152d244a0331a35c58bb9451fedf12717a8e8ea759d2"},
+        {"name": "model-00001-of-00004.safetensors", "bytes": 4915892992, "sha256": "1f6a4435cb023a3ce96a88138c5f248a54b1f3d814707078df6a423180965203"},
+        {"name": "model-00002-of-00004.safetensors", "bytes": 4931294472, "sha256": "0462bcfbe665045975f728ef02635dcf0839306d38482529c6ae772949f367f1"},
+        {"name": "model-00003-of-00004.safetensors", "bytes": 4931294528, "sha256": "47b59778c90ff1e9dc314e630e949fd52f9dd1dbab22dec009f62618d8e29863"},
+        {"name": "model-00004-of-00004.safetensors", "bytes": 2029159024, "sha256": "df9a43668ced42ef1e120b0692a4d808460f36ffccd9ba8c8b9d7781a6ccbc7d"},
+        {"name": "model.safetensors.index.json", "bytes": 36153, "sha256": "d69d33a9fc1fafa65f3a9aba4c503522a9dd55db57a9fa9204b5fad3bba3369e"},
+        {"name": "nla_meta.yaml", "bytes": 1239, "sha256": "6dcb8053b43f1b7118e0d8d0dbeb215d9408b781d8bd450f712cfeadcc6cf53b"},
+        {"name": "tokenizer.json", "bytes": 33384568, "sha256": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795"},
+        {"name": "tokenizer_config.json", "bytes": 1155391, "sha256": "6d9609991487040859a00f0b3dafcd96c9fa876d9d0a068beab651ab40a20b1b"},
+        {"name": "value_head.safetensors", "bytes": 29491288, "sha256": "a102c4c71c684afb5a85708247bc8379a5af5c0f7159032b6574a90599d4748c"}
+      ]
+    },
+    "sae": {
+      "path": "/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small",
+      "fingerprint_sha256": "01311bfbd7dd63578e4e0d5bc90cc60fe21befd05be0795252fe77ba24eca6f5",
+      "files": [
+        {"name": "config.json", "bytes": 248, "sha256": "cdbe14d44daa7243dc6afd9dc3129f17c2a75d6b19469b9810730790dbcdd26a"},
+        {"name": "params.safetensors", "bytes": 503463296, "sha256": "aaf2e694aac76908545ea4d52d300d5a8965dd839804780c9b23c349e62e0127"}
+      ]
+    }
+  },
+  "operations": {
+    "server_must_remain_on": true,
+    "no_shutdown_logic": true
+  }
+}

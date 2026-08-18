@@ -1,0 +1,41 @@
+{
+  "prompt": "Explain why the Eiffel Tower is famous in two sentences.",
+  "answer": "The Eiffel Tower is famous for its distinctive iron lattice structure designed by Gustave Eiffel and for serving as an iconic symbol of Paris and French engineering prowess. Its stature as both a technological achievement and a cultural landmark makes it one",
+  "layer_index": 20,
+  "prompt_token_count": 43,
+  "answer_token_count": 48,
+  "results": [
+    {
+      "answer_position": 0,
+      "absolute_position": 43,
+      "token_id": 785,
+      "token": "The",
+      "raw_norm": 105.381,
+      "explanation": "Structured format with formal encyclopedia entry pattern, defining a famous landmark with \"Facts about\" header and \"Why it's famous\" section.\n\nThe repetition \"The Eiffel Tower is a renowned landmark.\" mirrors the opening definition, immediately establishing the answer to the question with the iconic tower's famous characteristics already stated, now continuing the pattern.\n\nFinal token \"The\" is mid-sentence (\"The\"), directly repeating the subject noun phrase introduced in the header (\"The Eiffel Tower is famous...\"), immediately requiring \"Eiffel Tower is a iconic landmark\" or \"Eiffel Tower is famous for its distinctive shape and structural design, standing 324 meters.\""
+    },
+    {
+      "answer_position": 1,
+      "absolute_position": 44,
+      "token_id": 468,
+      "token": " E",
+      "raw_norm": 116.85,
+      "explanation": "Structured definition format with \"Definition\" header establishes a pattern of factual, formal language about a famous landmark's characteristics.\n\nThe phrase \"The Eiffel Tower is a famous landmark, and the E\" is clearly introducing the iconic French monument's name, directly completing the definition question about a famous landmark's fame, strongly implying \"Eiffel Tower\" follows.\n\nFinal token \"E\" is the start of the proper noun mid-sentence (\"The Eiffel Tower\"), part of the definition answer sequence (\"The Eiffel Tower\"), immediately requiring \"iffel Tower is a\" or \"iffel Tower is a famous landmark located in Paris, France.\""
+    },
+    {
+      "answer_position": 2,
+      "absolute_position": 45,
+      "token_id": 3092,
+      "token": "iff",
+      "raw_norm": 129.61,
+      "explanation": "Structured Wikipedia article format with bold headers and \"Today's Birthday\" pattern establishes a factual, informational context about a famous landmark.\n\nThe phrase \"The Eiffel Tower is a famous French monument named after its designer, Gustave Eiff\" is a direct reference to the iconic tower, strongly implying the famous Eiffel Tower's name and historical significance about the tower's construction.\n\nFinal token \"Eiff\" is a truncated mid-word (\"Eiff\"), mid-sentence continuing the name \"The Eiffel Tower,\" immediately requiring \"el Tower\" to complete the proper noun, then likely \"el\" or \"el Tower is a\" or \"ard, standing at...\" describing the structure."
+    },
+    {
+      "answer_position": 3,
+      "absolute_position": 46,
+      "token_id": 301,
+      "token": "el",
+      "raw_norm": 118.233,
+      "explanation": "Structured Wikipedia article format with bold headers and bullet points establishes a pattern of defining a famous landmark's facts and trivia.\n\nThe phrase \"The Eiffel Tower is a famous landmark named after its creator, Gustave Eiffel\" is a direct reference to the iconic Paris monument, immediately requiring the name \"Tower\" to complete the famous landmark's name and its historical significance.\n\nFinal token \"Eiffel\" is mid-word (\"The Eiffel\"), part of the answer to \"The Eiffel Tower,\" directly continuing the subject noun phrase, strongly expecting \"Tower\" or \"Tower is a famous structure\" or \"Tower was built,\" completing the iconic landmark's fame."
+    }
+  ]
+}

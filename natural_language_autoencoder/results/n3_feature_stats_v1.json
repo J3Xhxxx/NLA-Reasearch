@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "experiment": "N3 real-corpus feature statistics",
+  "args": {
+    "corpus": "/root/autodl-tmp/results/n3_corpus_v1.jsonl",
+    "base_model": "/root/autodl-tmp/models/gemma-3-12b-it",
+    "sae_root": "/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all",
+    "layer_index": 32,
+    "seq_len": 512,
+    "batch_size": 16,
+    "min_doc_tokens": 64,
+    "topk": 16,
+    "max_tokens": 0,
+    "max_pile_tokens": 8000000,
+    "shuffle_seed": 20260730,
+    "ckpt_every": 40,
+    "out_prefix": "/root/autodl-tmp/results/n3_feature_stats_v1"
+  },
+  "sources": [
+    "ArXiv",
+    "BookCorpus2",
+    "Books3",
+    "DM Mathematics",
+    "Enron Emails",
+    "EuroParl",
+    "FreeLaw",
+    "Github",
+    "Gutenberg (PG-19)",
+    "HackerNews",
+    "NIH ExPorter",
+    "OpenSubtitles",
+    "OpenWebText2",
+    "PhilPapers",
+    "Pile-CC",
+    "PubMed Abstracts",
+    "PubMed Central",
+    "StackExchange",
+    "USPTO Backgrounds",
+    "Ubuntu IRC",
+    "Wikipedia (en)",
+    "YoutubeSubtitles",
+    "xnli:ar",
+    "xnli:de",
+    "xnli:en",
+    "xnli:es",
+    "xnli:fr",
+    "xnli:hi",
+    "xnli:ru",
+    "xnli:tr",
+    "xnli:vi",
+    "xnli:zh"
+  ],
+  "corpus_sha256": "d40069ab51c294ecbe3e76845d1f2f4dff1bb66a6061c5b6b4c612f7d0ff8816",
+  "saes": {
+    "small": {
+      "dir": "/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_small",
+      "params_sha256": "aaf2e694aac76908545ea4d52d300d5a8965dd839804780c9b23c349e62e0127"
+    },
+    "big": {
+      "dir": "/root/autodl-tmp/models/gemma-scope-2-12b-it/resid_post_all/layer_32_width_16k_l0_big",
+      "params_sha256": "cf1f2609b6a90d8db8aef5285546f2dd7d06f16fd309221b4698a91b166f0d0b"
+    }
+  },
+  "totals": {
+    "n_seqs": 18745,
+    "n_tokens": 8240945,
+    "hook_calls": 1172
+  },
+  "per_sae": {
+    "small": {
+      "n_tokens": 8240945,
+      "alive_features": 16339,
+      "alive_fraction": 0.99725341796875,
+      "median_freq_alive": 0.00022327536465781533,
+      "mean_l0": 17.9579690193297
+    },
+    "big": {
+      "n_tokens": 8240945,
+      "alive_features": 16202,
+      "alive_fraction": 0.9888916015625,
+      "median_freq_alive": 0.0008617336968029759,
+      "mean_l0": 122.58732026484827
+    }
+  }
+}

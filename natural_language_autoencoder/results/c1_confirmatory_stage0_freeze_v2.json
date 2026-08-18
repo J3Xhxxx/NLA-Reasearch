@@ -1,0 +1,226 @@
+{
+  "schema_version": 2,
+  "experiment": "C1 confirmatory synthetic concept cohort v2",
+  "stage": "pre_generation",
+  "status": "frozen_after_disclosed_v1_generation_feasibility_failure",
+  "created_at_utc": "2026-07-30T06:23:54Z",
+  "created_timezone": "Asia/Shanghai",
+  "adaptation": {
+    "cause": "V1 stopped after three mechanical word-count failures before any activation, SAE, AV, AR, held-out metric, or endpoint.",
+    "changed_parameters_only": [
+      "master_seed: 20260730 -> 20260731",
+      "max_attempts: 3 -> 4",
+      "prompt_target_words: 95-125 -> 105-135",
+      "accepted_words: 80-170 -> 70-170"
+    ],
+    "unchanged_scientific_design": "24 concepts, 12 reciprocal pairs, templates, denylist, selection, scoring, primary pair estimand, exact test, and held-out embargo",
+    "paper_disclosure_required": true
+  },
+  "files": [
+    {
+      "role": "concept_spec",
+      "local_path": "server/c1_confirmatory_concepts_v2.json",
+      "remote_path": "/root/autodl-tmp/nla_compare/c1_confirmatory_concepts_v2.json",
+      "sha256": "4e7d6b2ca3d4fe87406cde09b664f9bfee47e00f2630e0c251c0ad3b7422750e",
+      "bytes": 11115
+    },
+    {
+      "role": "denylist_resolution_spec",
+      "local_path": "server/c1_confirmatory_denylist_v1.json",
+      "remote_path": "/root/autodl-tmp/nla_compare/c1_confirmatory_denylist_v1.json",
+      "sha256": "052e85b3174a8a6b18e5881f84b8c1804f53c1832908311ef3a336f7b05cdce2",
+      "bytes": 1243
+    },
+    {
+      "role": "base_preregistration",
+      "local_path": "results/c1_confirmatory_preregistration_v1.md",
+      "remote_path": "/root/autodl-tmp/nla_compare/c1_confirmatory_preregistration_v1.md",
+      "sha256": "ecd55af090d35b419194de79c19d886291e6d4f7f0cdc84249db78266ac8e64c",
+      "bytes": 9631
+    },
+    {
+      "role": "preregistration",
+      "local_path": "results/c1_confirmatory_preregistration_v2_amendment.md",
+      "remote_path": "/root/autodl-tmp/nla_compare/c1_confirmatory_preregistration_v2_amendment.md",
+      "sha256": "6291a485d7b6f3e239af7103ffb3e09c10d8a59474a991ddb4808294eb607f6a",
+      "bytes": 1869
+    },
+    {
+      "role": "v1_failure_record",
+      "local_path": "results/c1_confirmatory_generation_v1_failure.md",
+      "remote_path": "/root/autodl-tmp/nla_compare/c1_confirmatory_generation_v1_failure.md",
+      "sha256": "0df075d37d43e8a71d8af51d607cf4ccabbf803c82e3d967aa3bf10a84a385a3",
+      "bytes": 1689
+    },
+    {
+      "role": "corpus_generator",
+      "local_path": "server/20_generate_c1_confirmatory_corpus_v2.py",
+      "remote_path": "/root/autodl-tmp/nla_compare/20_generate_c1_confirmatory_corpus_v2.py",
+      "sha256": "714a5019a434982970fd4ca4bc7025c3e7df663b228125bbcf18e896ea023ad7",
+      "bytes": 26873
+    },
+    {
+      "role": "input_validator",
+      "local_path": "server/20_validate_c1_inputs.py",
+      "remote_path": "/root/autodl-tmp/nla_compare/20_validate_c1_inputs.py",
+      "sha256": "85a1259a13ff3915dca5a474595f73364ca05fbcb0b8d1f42aeae54253b8d7b6",
+      "bytes": 5582
+    },
+    {
+      "role": "prior_selection_source",
+      "local_path": "results/b6b4_factorial_selection.json",
+      "remote_path": "/root/autodl-tmp/results/b6b4_factorial_selection.json",
+      "sha256": "cb058a04a8fbe539391bd266abf04bfc5c446f7d64727193c6db9dd10219497d",
+      "bytes": 583144
+    },
+    {
+      "role": "legacy_selector_source",
+      "local_path": "server/12_select_factorial_features.py",
+      "remote_path": "/root/autodl-tmp/nla_compare/12_select_factorial_features.py",
+      "sha256": "64d3a242ebdd0091076ea568971abf7ce73d44b242aa3c3a3eb70627d9533b46",
+      "bytes": 26535
+    },
+    {
+      "role": "v1_stage0_freeze",
+      "local_path": "results/c1_confirmatory_stage0_freeze_v1.json",
+      "remote_path": "/root/autodl-tmp/nla_compare/c1_confirmatory_stage0_freeze_v1.json",
+      "sha256": "de882f4839e9cfa7d0de13f59efa3b2045c21b69a6d0a4089654b7322a0f5cf0",
+      "bytes": 7467
+    }
+  ],
+  "validation": {
+    "local_path": "results/c1_confirmatory_stage0_validation_v2.json",
+    "remote_path": "/root/autodl-tmp/results/c1_confirmatory_stage0_validation_v2.json",
+    "sha256": "7592dc5d8aec0c3aeec0d01e4f7142bfdbc1fc90281aa64f6d8b02b8d0dc61ee",
+    "bytes": 17854,
+    "status": "pass",
+    "counts": {
+      "concepts": 24,
+      "superdomains": 6,
+      "reciprocal_pairs": 12,
+      "resolved_denied_features": 1282,
+      "reference_length_checks": 72
+    },
+    "errors": []
+  },
+  "model_identity": {
+    "resolved_path": "/root/autodl-tmp/models/gemma-3-12b-it",
+    "same_identity_as_v1_stage0": true,
+    "v1_stage0_sha256": "de882f4839e9cfa7d0de13f59efa3b2045c21b69a6d0a4089654b7322a0f5cf0",
+    "config_sha256": "39172c4124d3470341bbbb25f2926fd97edf68f0fe3a9fa4cde6acb9b7ed2cc6",
+    "generation_config_sha256": "fd9324becc53c4be610db39e13a613006f09fd6ef71a95fb6320dc33157490a3",
+    "model_index_sha256": "788cc42a1a92835df62d9a3791f47105f63504c7c404637a73288e9b11bc7b82",
+    "tokenizer_json_sha256": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795",
+    "tokenizer_config_sha256": "bfe25c2735e395407beb78456ea9a6984a1f00d8c16fa04a8b75f2a614cf53e1",
+    "weight_files": [
+      {
+        "name": "model-00001-of-00005.safetensors",
+        "bytes": 4979902192,
+        "sha256": "4847447e92599833e8dbaa3067cd201c3bb5c052efa91f11ba891e43234f7832"
+      },
+      {
+        "name": "model-00002-of-00005.safetensors",
+        "bytes": 4931296592,
+        "sha256": "891bd54eed03cba9ee1e705533a02a8217fcc29f356e4a1f53e5fd0d178883ad"
+      },
+      {
+        "name": "model-00003-of-00005.safetensors",
+        "bytes": 4931296656,
+        "sha256": "7cee411d9d57324e50ce064a192cc5a858276d508611b12fc599e0c9767112e0"
+      },
+      {
+        "name": "model-00004-of-00005.safetensors",
+        "bytes": 4931296656,
+        "sha256": "8bc75a29a730c9e743cad013feda3b0991a913fafe787c58a1c6e20afad97723"
+      },
+      {
+        "name": "model-00005-of-00005.safetensors",
+        "bytes": 4601000928,
+        "sha256": "ed14bd4908c98fed9f61e8cd410167e0846de9abd78e0452ab092072e5d9252d"
+      }
+    ]
+  },
+  "generation_protocol": {
+    "seed": 20260731,
+    "attempt_seed_formula": "seed + 100 * concept_index + attempt",
+    "max_attempts": 4,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "top_k": 64,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 1800,
+    "accepted_word_range_inclusive": [
+      70,
+      170
+    ],
+    "target_word_range": [
+      105,
+      135
+    ],
+    "max_train_test_word_5gram_jaccard_exclusive": 0.15,
+    "documents_per_concept": {
+      "train": 4,
+      "test": 2
+    },
+    "concepts": 24
+  },
+  "planned_outputs": [
+    {
+      "role": "append_only_checkpoint",
+      "path": "/root/autodl-tmp/results/c1_confirmatory_corpus_checkpoint_v2.jsonl",
+      "exists_at_freeze": false
+    },
+    {
+      "role": "corpus_report",
+      "path": "/root/autodl-tmp/results/c1_confirmatory_corpus_report_v2.json",
+      "exists_at_freeze": false
+    },
+    {
+      "role": "combined_manifest",
+      "path": "/root/autodl-tmp/activations/c1_confirmatory_all_v2.jsonl",
+      "exists_at_freeze": false
+    },
+    {
+      "role": "discovery_manifest",
+      "path": "/root/autodl-tmp/activations/c1_confirmatory_discovery_v2.jsonl",
+      "exists_at_freeze": false
+    },
+    {
+      "role": "heldout_manifest",
+      "path": "/root/autodl-tmp/activations/c1_confirmatory_heldout_v2.jsonl",
+      "exists_at_freeze": false
+    }
+  ],
+  "freshness": {
+    "all_v2_planned_outputs_absent_at_freeze": true,
+    "v1_raw_text_not_reused": true,
+    "only_v1_mechanical_failure_reasons_used_for_v2_amendment": true,
+    "no_new_activation_sae_av_ar_heldout_metric_or_endpoint_inspected": true
+  },
+  "embargo": {
+    "preselection_allowed_inputs": [
+      "c1_confirmatory_discovery_v2.jsonl"
+    ],
+    "prohibited_from_extractor_and_selector_until_feature_and_candidate_freeze": [
+      "c1_confirmatory_all_v2.jsonl",
+      "c1_confirmatory_heldout_v2.jsonl"
+    ],
+    "release_requires": [
+      "feature_selection_freeze_sha256",
+      "candidate_mapping_freeze_sha256"
+    ]
+  },
+  "software": {
+    "python": "3.12.3",
+    "torch": "2.5.1+cu124",
+    "transformers": "5.12.1",
+    "cuda_runtime": "12.4",
+    "gpu": "NVIDIA A800-SXM4-80GB",
+    "nvidia_driver": "580.126.09"
+  },
+  "operations": {
+    "server_must_remain_on": true,
+    "no_shutdown_logic": true
+  }
+}

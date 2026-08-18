@@ -1,0 +1,61 @@
+{
+  "protocol": "B3 controlled minimal-edit entity substitution. Per document, the named specific referents are replaced by same-category but wrong referents. Genre words, syntactic frames, quoted structure, the final-token identity and the candidate-continuation lists are left untouched, so the only manipulated channel is referent identity. Replacements are applied longest-first, to the whole explanation including quoted spans, in both capitalised and lowercase form. Frozen before any AR score was computed.",
+  "author": "Claude Opus 5",
+  "per_document": {
+    "0": [
+      ["Chicago Museum of Illusions", "Sydney Opera House"],
+      ["Eiffel Tower's", "Sydney Opera House's"],
+      ["Eiffel Tower", "Sydney Opera House"],
+      ["London Eye", "Sydney Opera House"],
+      ["Parisian", "Sydney"],
+      ["Paris", "Sydney"],
+      ["French", "Australian"],
+      ["metro", "ferry"]
+    ],
+    "1": [
+      ["Photosynthesis", "Cellular respiration"],
+      ["photosynthesis", "cellular respiration"],
+      ["Calvin cycle", "Krebs cycle"],
+      ["chlorophyll a", "cytochrome c"],
+      ["chlorophyll", "cytochrome"],
+      ["chloroplasts", "mitochondria"],
+      ["chloroplast", "mitochondrion"],
+      ["thylakoid", "cristae"]
+    ],
+    "2": [
+      ["Johannes Gutenberg", "Samuel Morse"],
+      ["Gutenberg", "Morse"],
+      ["printing press", "telegraph"],
+      ["printing", "telegraphy"],
+      ["Reformation", "Enlightenment"],
+      ["Renaissance", "Enlightenment"],
+      ["Luther's", "Voltaire's"],
+      ["humanist", "utilitarian"]
+    ],
+    "3": [
+      ["Chinese Crested Dog", "Flemish Giant rabbit"],
+      ["goldfish", "hamster"],
+      ["feline", "leporine"],
+      ["Cats", "Rabbits"],
+      ["cats", "rabbits"],
+      ["Cat", "Rabbit"],
+      ["cat", "rabbit"],
+      ["Dogs", "Parrots"],
+      ["dogs", "parrots"],
+      ["Dog", "Parrot"],
+      ["dog", "parrot"]
+    ],
+    "4": [
+      ["Private Member's Bill", "Executive Order"],
+      ["parliamentary", "congressional"],
+      ["Parliamentary", "Congressional"],
+      ["Parliament", "Congress"],
+      ["parliament", "Congress"],
+      ["legislature", "judiciary"],
+      ["legislative", "judicial"],
+      ["Bill", "Treaty"],
+      ["bill", "treaty"],
+      ["UK", "Brazilian"]
+    ]
+  }
+}

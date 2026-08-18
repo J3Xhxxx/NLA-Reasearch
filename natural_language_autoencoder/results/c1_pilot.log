@@ -1,0 +1,98 @@
+C1_PILOT_STARTED_UTC=2026-07-30T04:44:14Z
+C1_PILOT_BENCHMARK_FROZEN
+{"features": 24, "static_candidates": 384, "generated_candidates": 48, "out": "/root/autodl-tmp/results/c1_pilot_benchmark.json"}
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[plan] feature_generations=48 pending=48 checkpoint=0
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1065 [00:00<02:54,  6.10it/s]Loading weights:   1%|▏         | 15/1065 [00:00<00:17, 59.72it/s]Loading weights:   3%|▎         | 29/1065 [00:00<00:12, 85.40it/s]Loading weights:   4%|▍         | 42/1065 [00:00<00:11, 91.61it/s]Loading weights:   5%|▍         | 53/1065 [00:00<00:10, 96.94it/s]Loading weights:   6%|▌         | 64/1065 [00:00<00:10, 94.83it/s]Loading weights:   7%|▋         | 74/1065 [00:00<00:11, 89.27it/s]Loading weights:   8%|▊         | 84/1065 [00:01<00:11, 83.87it/s]Loading weights:   9%|▉         | 95/1065 [00:01<00:10, 90.43it/s]Loading weights:  10%|█         | 109/1065 [00:01<00:09, 99.31it/s]Loading weights:  11%|█▏        | 122/1065 [00:01<00:09, 103.42it/s]Loading weights:  13%|█▎        | 135/1065 [00:01<00:08, 107.60it/s]Loading weights:  14%|█▍        | 148/1065 [00:01<00:08, 110.83it/s]Loading weights:  15%|█▌        | 161/1065 [00:01<00:08, 108.77it/s]Loading weights:  16%|█▋        | 174/1065 [00:01<00:08, 105.94it/s]Loading weights:  18%|█▊        | 187/1065 [00:01<00:08, 103.07it/s]Loading weights:  19%|█▉        | 200/1065 [00:02<00:08, 101.08it/s]Loading weights:  20%|█▉        | 212/1065 [00:02<00:08, 97.63it/s] Loading weights:  21%|██        | 224/1065 [00:02<00:08, 98.87it/s]Loading weights:  22%|██▏       | 237/1065 [00:02<00:08, 98.82it/s]Loading weights:  23%|██▎       | 250/1065 [00:02<00:07, 102.85it/s]Loading weights:  25%|██▍       | 263/1065 [00:02<00:08, 100.03it/s]Loading weights:  26%|██▌       | 274/1065 [00:02<00:08, 95.22it/s] Loading weights:  27%|██▋       | 289/1065 [00:02<00:07, 103.44it/s]Loading weights:  28%|██▊       | 301/1065 [00:03<00:07, 107.56it/s]Loading weights:  29%|██▉       | 312/1065 [00:03<00:07, 98.15it/s] Loading weights:  30%|███       | 322/1065 [00:03<00:08, 84.99it/s]Loading weights:  31%|███       | 331/1065 [00:03<00:08, 85.03it/s]Loading weights:  32%|███▏      | 343/1065 [00:03<00:08, 87.41it/s]Loading weights:  33%|███▎      | 355/1065 [00:03<00:08, 88.26it/s]Loading weights:  34%|███▍      | 367/1065 [00:03<00:07, 92.30it/s]Loading weights:  35%|███▌      | 378/1065 [00:03<00:07, 96.70it/s]Loading weights:  36%|███▋      | 388/1065 [00:04<00:07, 94.50it/s]Loading weights:  37%|███▋      | 398/1065 [00:04<00:07, 90.54it/s]Loading weights:  38%|███▊      | 408/1065 [00:04<00:08, 75.99it/s]Loading weights:  40%|███▉      | 421/1065 [00:04<00:07, 81.84it/s]Loading weights:  41%|████      | 434/1065 [00:04<00:07, 86.43it/s]Loading weights:  42%|████▏     | 446/1065 [00:04<00:06, 94.37it/s]Loading weights:  43%|████▎     | 458/1065 [00:04<00:06, 95.80it/s]Loading weights:  44%|████▍     | 468/1065 [00:05<00:06, 90.11it/s]Loading weights:  45%|████▍     | 478/1065 [00:05<00:06, 87.60it/s]Loading weights:  46%|████▌     | 487/1065 [00:05<00:06, 84.09it/s]Loading weights:  47%|████▋     | 499/1065 [00:05<00:06, 85.82it/s]Loading weights:  48%|████▊     | 511/1065 [00:05<00:05, 93.60it/s]Loading weights:  49%|████▉     | 524/1065 [00:05<00:05, 94.63it/s]Loading weights:  50%|█████     | 536/1065 [00:05<00:05, 94.13it/s]Loading weights:  51%|█████▏    | 546/1065 [00:05<00:05, 91.26it/s]Loading weights:  52%|█████▏    | 556/1065 [00:05<00:05, 88.57it/s]Loading weights:  53%|█████▎    | 565/1065 [00:06<00:05, 84.89it/s]Loading weights:  54%|█████▍    | 577/1065 [00:06<00:05, 86.35it/s]Loading weights:  55%|█████▌    | 589/1065 [00:06<00:05, 84.27it/s]Loading weights:  56%|█████▋    | 601/1065 [00:06<00:05, 88.27it/s]Loading weights:  58%|█████▊    | 614/1065 [00:06<00:04, 91.55it/s]Loading weights:  59%|█████▉    | 627/1065 [00:06<00:04, 100.42it/s]Loading weights:  74%|███████▍  | 791/1065 [00:06<00:00, 499.72it/s]Loading weights:  93%|█████████▎| 995/1065 [00:06<00:00, 916.10it/s]Loading weights: 100%|██████████| 1065/1065 [00:06<00:00, 152.54it/s]
+[base candidate 1/48] gen:f8347:base_autointerp 1.78s
+[base candidate 2/48] gen:f8347:nla_paraphrase 4.81s
+[base candidate 3/48] gen:f6809:base_autointerp 1.23s
+[base candidate 4/48] gen:f6809:nla_paraphrase 3.82s
+[base candidate 5/48] gen:f14470:base_autointerp 1.28s
+[base candidate 6/48] gen:f14470:nla_paraphrase 3.91s
+[base candidate 7/48] gen:f10000:base_autointerp 1.23s
+[base candidate 8/48] gen:f10000:nla_paraphrase 4.14s
+[base candidate 9/48] gen:f309:base_autointerp 1.17s
+[base candidate 10/48] gen:f309:nla_paraphrase 3.37s
+[base candidate 11/48] gen:f293:base_autointerp 1.03s
+[base candidate 12/48] gen:f293:nla_paraphrase 4.81s
+[base candidate 13/48] gen:f115:base_autointerp 1.16s
+[base candidate 14/48] gen:f115:nla_paraphrase 2.86s
+[base candidate 15/48] gen:f992:base_autointerp 1.15s
+[base candidate 16/48] gen:f992:nla_paraphrase 3.43s
+[base candidate 17/48] gen:f3800:base_autointerp 1.20s
+[base candidate 18/48] gen:f3800:nla_paraphrase 4.75s
+[base candidate 19/48] gen:f969:base_autointerp 1.35s
+[base candidate 20/48] gen:f969:nla_paraphrase 3.50s
+[base candidate 21/48] gen:f507:base_autointerp 0.92s
+[base candidate 22/48] gen:f507:nla_paraphrase 4.84s
+[base candidate 23/48] gen:f624:base_autointerp 1.02s
+[base candidate 24/48] gen:f624:nla_paraphrase 4.09s
+[base candidate 25/48] gen:f485:base_autointerp 0.99s
+[base candidate 26/48] gen:f485:nla_paraphrase 4.45s
+[base candidate 27/48] gen:f918:base_autointerp 1.07s
+[base candidate 28/48] gen:f918:nla_paraphrase 3.97s
+[base candidate 29/48] gen:f15207:base_autointerp 1.26s
+[base candidate 30/48] gen:f15207:nla_paraphrase 2.38s
+[base candidate 31/48] gen:f15066:base_autointerp 1.17s
+[base candidate 32/48] gen:f15066:nla_paraphrase 4.70s
+[base candidate 33/48] gen:f13887:base_autointerp 0.96s
+[base candidate 34/48] gen:f13887:nla_paraphrase 3.95s
+[base candidate 35/48] gen:f15234:base_autointerp 1.11s
+[base candidate 36/48] gen:f15234:nla_paraphrase 3.52s
+[base candidate 37/48] gen:f304:base_autointerp 0.96s
+[base candidate 38/48] gen:f304:nla_paraphrase 3.45s
+[base candidate 39/48] gen:f1394:base_autointerp 1.08s
+[base candidate 40/48] gen:f1394:nla_paraphrase 3.62s
+[base candidate 41/48] gen:f4581:base_autointerp 1.15s
+[base candidate 42/48] gen:f4581:nla_paraphrase 3.70s
+[base candidate 43/48] gen:f2725:base_autointerp 1.10s
+[base candidate 44/48] gen:f2725:nla_paraphrase 4.10s
+[base candidate 45/48] gen:f935:base_autointerp 0.95s
+[base candidate 46/48] gen:f935:nla_paraphrase 3.24s
+[base candidate 47/48] gen:f7176:base_autointerp 1.01s
+[base candidate 48/48] gen:f7176:nla_paraphrase 2.43s
+[plan] candidates=432 judge_pending=432
+[base judge 1/432] parse=True 0.66s
+[base judge 25/432] parse=True 0.60s
+[base judge 50/432] parse=True 0.59s
+[base judge 75/432] parse=True 0.66s
+[base judge 100/432] parse=True 0.70s
+[base judge 125/432] parse=True 0.68s
+[base judge 150/432] parse=True 0.65s
+[base judge 175/432] parse=True 0.60s
+[base judge 200/432] parse=True 0.65s
+[base judge 225/432] parse=True 0.66s
+[base judge 250/432] parse=True 0.64s
+[base judge 275/432] parse=True 0.59s
+[base judge 300/432] parse=True 0.60s
+[base judge 325/432] parse=True 0.66s
+[base judge 350/432] parse=True 0.67s
+[base judge 375/432] parse=True 0.64s
+[base judge 400/432] parse=True 0.65s
+[base judge 425/432] parse=True 0.63s
+[base judge 432/432] parse=True 0.68s
+Loading weights:   0%|          | 0/430 [00:00<?, ?it/s]Loading weights: 100%|██████████| 430/430 [00:00<00:00, 9071.37it/s]
+[transformers] [1mGemma3ForCausalLM LOAD REPORT[0m from: /root/autodl-tmp/models/nla-gemma3-12b-L32-ar
+Key               | Status  | 
+------------------+---------+-
+model.norm.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[NLACritic] 33 layers  d_model=3840  mse_scale=61.97
+[AR 1/166]
+[AR 50/166]
+[AR 100/166]
+[AR 150/166]
+[AR 166/166]
+C1_PILOT_COMPLETE
+{"candidates": 432, "unique_texts": 166, "judge_parse_ok": 432, "nla_recompute_error": 1.043865278937961e-09, "base_seconds": 411.84461389668286, "ar_seconds": 10.764675563201308, "out": "/root/autodl-tmp/results/c1_pilot_result.json"}
+C1_PILOT_ANALYSIS_COMPLETE
+{"primary_median": 0.008974411731099564, "primary_wins": 16, "primary_sign_p": 0.07579481601715088, "out_json": "/root/autodl-tmp/results/c1_pilot_analysis.json", "out_md": "/root/autodl-tmp/results/c1_pilot_analysis.md"}
+C1_PILOT_PIPELINE_COMPLETE
+real 430.82
+user 435.92
+sys 8.22
+C1_PILOT_EXIT_CODE=0
+C1_PILOT_FINISHED_UTC=2026-07-30T04:51:25Z
